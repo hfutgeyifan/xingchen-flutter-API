@@ -1,2 +1,0 @@
-# sendC2CCustomMessage
-
