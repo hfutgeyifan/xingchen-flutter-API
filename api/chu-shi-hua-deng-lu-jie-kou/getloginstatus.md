@@ -1,0 +1,2 @@
+# getLoginStatus
+

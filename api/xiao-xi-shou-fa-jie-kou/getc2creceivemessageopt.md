@@ -1,0 +1,2 @@
+# getC2CReceiveMessageOpt
+

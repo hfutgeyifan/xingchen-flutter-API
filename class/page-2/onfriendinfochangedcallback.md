@@ -1,0 +1,2 @@
+# OnFriendInfoChangedCallback
+
