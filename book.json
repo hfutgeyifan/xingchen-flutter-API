@@ -1,0 +1,33 @@
+{
+    "plugins": [
+         "-sharing",
+         "-fontsettings",
+         "-lunr", 
+         "-search", 
+         "search-pro",
+         "back-to-top-button",
+         "code",
+         "pageview-count",
+         "popup",
+         "splitter",
+         "theme-bookstyle",
+         "expandable-chapters",
+         "chapter-fold"
+    ],
+    "variables": {
+        "themeFexa": {
+            "nav": [
+                {
+                    "url": "http://...",
+                    "target": "_blank",
+                    "name": "联系我们"
+                }
+            ]
+        }
+    },
+    "pluginsConfig": {
+        "theme-bookstyle":{
+            "search-placeholder":"输入关键字搜索"
+        }
+    }
+}
