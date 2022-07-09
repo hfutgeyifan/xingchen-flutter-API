@@ -1,4 +1,12 @@
+---
+description: 初始化 SDK
+---
+
 # initSDK
+
+## API功能介绍
+
+初始化 SDK
 
 ## API请求案例
 
