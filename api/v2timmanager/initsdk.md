@@ -16,7 +16,7 @@ required V2TimSDKListener listener}
 | -------- | ---------------------------------------------------------------------------------------------------------------------- | ---- | ----------------------------------------------------- |
 | sdkAppID | int                                                                                                                    | 是    | 应用ID，可在[控制台](https://console.cloud.tencent.com/im)中获取 |
 | loglevel | [LogLevelEnum](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/enum\_log\_level\_enum/LogLevelEnum.html) | 是    | 配置信息                                                  |
-| listener | [V2TimSDKListener](../guan-jian-lei/listener/v2timsdklistener.md)                                                      | 是    | SDK回调                                                 |
+| listener | [V2TimSDKListener](../../class/v2timsdklistener.md)                                                                    | 是    | SDK回调                                                 |
 
 ## 返回模板
 

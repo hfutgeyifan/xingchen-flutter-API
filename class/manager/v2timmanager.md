@@ -8,7 +8,7 @@ API目录
 
 | API                                                                                                                                                        | 描述                                 |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| [initSDK](https://app.gitbook.com/s/4JQ5PGaljRZgTYPMjVSd/\~/changes/1hZkj2ETXyTDR5QtF00O/api/v2timmanager/initsdk)                                         | 初始化 SDK                            |
+| [initSDK](../../api/v2timmanager/initsdk.md)                                                                                                               | 初始化 SDK                            |
 | addGroupListener                                                                                                                                           | 添加群组监听器                            |
 | [callExperimentalAPI](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_manager/V2TIMManager/callExperimentalAPI.html)       | 实验性 API 接口                         |
 | [checkAbility](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_manager/V2TIMManager/checkAbility.html)                     | 能力位检测                              |
