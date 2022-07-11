@@ -271,7 +271,7 @@
   * [UserStatusType](class/enums/userstatustype.md)
   * [V2TIM\_IMAGE\_TYPE](class/enums/v2tim\_image\_type.md)
   * [V2TIMKeywordListMatchType](class/enums/v2timkeywordlistmatchtype.md)
-* [callbacks](class/page-2.md)
+* [Callbacks](class/page-2.md)
   * [V2TimCallback](class/v2timcallback.md)
   * [ErrorCallback](class/callbacks/errorcallback.md)
   * [OnApplicationProcessedCallback](class/callbacks/onapplicationprocessedcallback.md)
