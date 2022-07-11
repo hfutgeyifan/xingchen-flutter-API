@@ -8,16 +8,6 @@ description: 初始化 SDK
 
 初始化 SDK
 
-## API请求案例
-
-```dart
-Future<V2TimValueCallback<bool>> initSDK(
-{required int sdkAppID,
-required LogLevelEnum loglevel,
-required V2TimSDKListener listener}
-)
-```
-
 ## 参数详解
 
 | 参数名称     | 参数类型                                                                                                                   | 是否必填 | 描述                                                    |
@@ -71,7 +61,3 @@ required V2TimSDKListener listener}
       Utils.toast(imt("即时通信 SDK初始化失败"));
     } 
 ```
-
-## 相关平台接口：
-
-[IM SDK for unity](https://github.com/hfutgeyifan/gitbooktest/blob/main/api/fu-wu-duan/chu-shi-hua-deng-lu-jie-kou/broken-reference/README.md)
