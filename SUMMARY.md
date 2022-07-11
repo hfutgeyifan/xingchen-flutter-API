@@ -261,6 +261,7 @@
   * [GroupApplicationHandleStatus](class/enums/groupapplicationhandlestatus.md)
   * [GroupChangeInfoType](class/enums/groupchangeinfotype.md)
   * [GroupMemberRoleTypeEnum](class/enums/groupmemberroletypeenum.md)
+  * [GroupMemberRoleType](api/enums/groupmemberroletype.md)
   * [GroupTipsElemType](class/enums/grouptipselemtype.md)
   * [GroupType](class/enums/grouptype.md)
   * [HistoryMsgGetTypeEnum](class/enums/historymsggettypeenum.md)
