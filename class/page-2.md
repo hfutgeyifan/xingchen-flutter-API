@@ -13,6 +13,7 @@ IM API中使用到的回调函数类型
 | 回调函数名称                                                                                                                                                                                  | 说明 |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -- |
 | [V2TimCallback](https://pub.dev/documentation/tencent\_im\_sdk\_plugin\_platform\_interface/0.2.8/models\_v2\_tim\_callback/V2TimCallback-class.html)                                   |    |
+| ErrorCallback                                                                                                                                                                           |    |
 | [OnApplicationProcessedCallback](https://pub.dev/documentation/tencent\_im\_sdk\_plugin\_platform\_interface/0.2.8/enum\_callbacks/OnApplicationProcessedCallback.html)                 |    |
 | [OnBlackListAddCallback](https://pub.dev/documentation/tencent\_im\_sdk\_plugin\_platform\_interface/0.2.8/enum\_callbacks/OnBlackListAddCallback.html)                                 |    |
 | [OnBlackListDeletedCallback](https://pub.dev/documentation/tencent\_im\_sdk\_plugin\_platform\_interface/0.2.8/enum\_callbacks/OnBlackListDeletedCallback.html)                         |    |
@@ -57,4 +58,5 @@ IM API中使用到的回调函数类型
 | [OnTotalUnreadMessageCountChanged](https://pub.dev/documentation/tencent\_im\_sdk\_plugin\_platform\_interface/0.2.8/enum\_callbacks/OnTotalUnreadMessageCountChanged.html)             |    |
 | [OnUserStatusChanged](https://pub.dev/documentation/tencent\_im\_sdk\_plugin\_platform\_interface/0.2.8/enum\_callbacks/OnUserStatusChanged.html)                                       |    |
 | [V2TimUserFullInfoCallback](https://pub.dev/documentation/tencent\_im\_sdk\_plugin\_platform\_interface/0.2.8/enum\_callbacks/V2TimUserFullInfoCallback.html)                           |    |
+| V2TimValueCallback                                                                                                                                                                      |    |
 | [VoidCallback](https://pub.dev/documentation/tencent\_im\_sdk\_plugin\_platform\_interface/0.2.8/enum\_callbacks/VoidCallback.html)                                                     |    |
