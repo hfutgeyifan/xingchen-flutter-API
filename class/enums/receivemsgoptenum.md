@@ -26,4 +26,3 @@ description: 用户接收消息设置类型
 
 枚举值：V2TIM\_RECEIVE\_NOT\_NOTIFY\_MESSAGE
 
-##
