@@ -11,8 +11,8 @@
          "popup",
          "splitter",
          "theme-bookstyle",
-         "expandable-chapters",
-         "chapter-fold"
+         "chapter-fold",
+         "versions-select"
     ],
     "variables": {
         "themeFexa": {
@@ -28,6 +28,19 @@
     "pluginsConfig": {
         "theme-bookstyle":{
             "search-placeholder":"输入关键字搜索"
+        },
+        "versions": {
+            "options": [
+                {
+                    "value": "https://www.mapull.com/gitbook/default/",
+                    "text": "flutter",
+                    "selected": true
+                },
+                {
+                    "value": "https://www.mapull.com/gitbook/api/",
+                    "text": "unity"
+                }
+            ]
         }
     }
 }
