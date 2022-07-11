@@ -21,8 +21,8 @@
 
 ## 相关链接
 
-[homepage](https://cloud.tencent.com/document/product/269)
+[IM-flutter 首页](https://cloud.tencent.com/document/product/269)
 
-[docs](https://cloud.tencent.com/document/product/269/68823)
+[IM-flutter 快速入门](https://cloud.tencent.com/document/product/269/68823)
 
-[github](https://github.com/tencentyun/imApiFlutterExample)
+[IM-flutter github案例](https://github.com/tencentyun/imApiFlutterExample)
