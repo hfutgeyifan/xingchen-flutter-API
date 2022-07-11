@@ -43,6 +43,7 @@ description: 群组相关类型
 | [V2GroupMemberInfoSearchResult](https://pub.dev/documentation/tencent\_im\_sdk\_plugin\_platform\_interface/0.2.8/models\_v2\_tim\_group\_member\_search\_result/V2GroupMemberInfoSearchResult-class.html)          |    |
 | [V2TimGroupMemberFullInfo](https://pub.dev/documentation/tencent\_im\_sdk\_plugin\_platform\_interface/0.2.8/models\_v2\_tim\_group\_member\_full\_info/V2TimGroupMemberFullInfo-class.html)                        |    |
 | [V2TimGroupMemberInfo](https://pub.dev/documentation/tencent\_im\_sdk\_plugin\_platform\_interface/0.2.8/models\_v2\_tim\_group\_member\_info/V2TimGroupMemberInfo-class.html)                                      |    |
+| EnumUtils                                                                                                                                                                                                           |    |
 
 
 
