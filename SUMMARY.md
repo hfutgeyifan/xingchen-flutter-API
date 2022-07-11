@@ -252,7 +252,6 @@
   * [ConversationType](class/enums/conversationtype.md)
   * [FriendApplicationTypeEnum](class/enums/friendapplicationtypeenum.md)
   * [FriendResponseTypeEnum](class/enums/friendresponsetypeenum.md)
-  * [FriendApplicationType](class/enums/friendapplicationtype.md)
   * [FriendTypeEnum](class/enums/friendtypeenum.md)
   * [GroupAddOptTypeEnum](class/enums/groupaddopttypeenum.md)
   * [GroupApplicationTypeEnum](class/enums/groupapplicationtypeenum.md)
