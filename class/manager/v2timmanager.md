@@ -12,7 +12,6 @@ IM SDK 主核心类，负责 IM SDK 的初始化、登录、消息收发，建�
 
 | API                                                                                                                                                        | 描述                                 |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| [initSDK](../../api/v2timmanager/initsdk.md)                                                                                                               | 初始化 SDK                            |
 | addGroupListener                                                                                                                                           | 添加群组监听器                            |
 | [callExperimentalAPI](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_manager/V2TIMManager/callExperimentalAPI.html)       | 实验性 API 接口                         |
 | [checkAbility](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_manager/V2TIMManager/checkAbility.html)                     | 能力位检测                              |
@@ -29,11 +28,12 @@ IM SDK 主核心类，负责 IM SDK 的初始化、登录、消息收发，建�
 | [getUsersInfo](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_manager/V2TIMManager/getUsersInfo.html)                     | 获取用户资料                             |
 | [getUserStatus](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_manager/V2TIMManager/getUserStatus.html)                   | 获取用户在线状态 注意：4.0.3版本开始支持，web不支持     |
 | [getVersion](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_manager/V2TIMManager/getVersion.html)                         | 获取版本号                              |
+| [initSDK](../../api/v2timmanager/initsdk.md)                                                                                                               | 初始化 SDK                            |
 | [joinGroup](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_manager/V2TIMManager/joinGroup.html)                           | 加入群组                               |
+| [quitGroup](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_manager/V2TIMManager/quitGroup.html)                           | 退出群组                               |
 | [login](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_manager/V2TIMManager/login.html)                                   | 登录                                 |
 | [logout](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_manager/V2TIMManager/logout.html)                                 | 登出                                 |
 | [printWarning](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_manager/V2TIMManager/printWarning.html)                     |                                    |
-| [quitGroup](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_manager/V2TIMManager/quitGroup.html)                           | 退出群组                               |
 | [removeGroupListener](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_manager/V2TIMManager/removeGroupListener.html)       | 移除群组监听器                            |
 | [setAPNSListener](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_manager/V2TIMManager/setAPNSListener.html)               | 设置apns监听                           |
 | [setGroupListener](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_manager/V2TIMManager/setGroupListener.html)             | 设置群组监听器                            |

@@ -1,11 +1,9 @@
 # Table of contents
 
-* [readme](README.md)
-* [平台选择：flutter](flutter.md)
+* [Flutter](README.md)
 
 ## API
 
-* [Flutter](api/ke-hu-duan-gong-neng-jie-shao.md)
 * [V2TIMManager](class/manager/v2timmanager.md)
   * [addGroupListener](api/v2timmanager/addgrouplistener.md)
   * [addSimpleMsgListener（废弃）](api/v2timmanager/addsimplemsglistener-fei-qi.md)
