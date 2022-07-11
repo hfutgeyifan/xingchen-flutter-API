@@ -1,2 +1,0 @@
-# addSimpleMsgListener（废弃）
-

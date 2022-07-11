@@ -6,7 +6,6 @@
 
 * [V2TIMManager](class/manager/v2timmanager.md)
   * [addGroupListener](api/v2timmanager/addgrouplistener.md)
-  * [addSimpleMsgListener（废弃）](api/v2timmanager/addsimplemsglistener-fei-qi.md)
   * [callExperimentalAPI](api/v2timmanager/callexperimentalapi.md)
   * [checkAbility](api/v2timmanager/checkability.md)
   * [dismissGroup](api/v2timmanager/dismissgroup.md)
@@ -62,6 +61,7 @@
   * [getHistoryMessageList](api/v2timmessagemanager/gethistorymessagelist.md)
   * [getHistoryMessageListWithoutFormat](api/v2timmessagemanager/gethistorymessagelistwithoutformat.md)
   * [getMessageReadReceipts](api/v2timmessagemanager/getmessagereadreceipts.md)
+  * [initGroupAttributes](api/v2timmessagemanager/initgroupattributes.md)
   * [insertC2CMessageToLocalStorage](api/v2timmessagemanager/insertc2cmessagetolocalstorage.md)
   * [insertGroupMessageToLocalStorage](api/v2timmessagemanager/insertgroupmessagetolocalstorage.md)
   * [markAllMessageAsRead](api/v2timmessagemanager/markallmessageasread.md)
@@ -94,7 +94,6 @@
   * [getJoinedCommunityList](api/v2timgroupmanager/getjoinedcommunitylist.md)
   * [getJoinedGroupList](api/v2timgroupmanager/getjoinedgrouplist.md)
   * [getTopicInfoList](api/v2timgroupmanager/gettopicinfolist.md)
-  * [initGroupAttributes](api/v2timgroupmanager/initgroupattributes.md)
   * [inviteUserToGroup](api/v2timgroupmanager/inviteusertogroup.md)
   * [kickGroupMember](api/v2timgroupmanager/kickgroupmember.md)
   * [muteGroupMember](api/v2timgroupmanager/mutegroupmember.md)
