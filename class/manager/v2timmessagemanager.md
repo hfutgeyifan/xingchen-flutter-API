@@ -4,10 +4,6 @@ description: 提供高级消息处理相关接口
 
 # V2TIMMessageManager
 
-[markGroupMessageAsRead](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_message\_manager/V2TIMMessageManager/markGroupMessageAsRead.html)
-
-##
-
 ## V2TIMMessageManager功能介绍
 
 提供高级消息处理相关接口
@@ -29,7 +25,6 @@ description: 提供高级消息处理相关接口
 | [createMergerMessage](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_message\_manager/V2TIMMessageManager/createMergerMessage.html)                               | 创建合并消息                                                                        |
 | [createSoundMessage](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_message\_manager/V2TIMMessageManager/createSoundMessage.html)                                 | 创建音频文件                                                                        |
 | [createTargetedGroupMessage](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_message\_manager/V2TIMMessageManager/createTargetedGroupMessage.html)                 | 如果您需要在群内给指定群成员列表发消息，可以创建一条定向群消息，定向群消息只有指定群成员才能收到。                             |
-| [createTargetedGroupMessage](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_message\_manager/V2TIMMessageManager/createTargetedGroupMessage.html)                 | 如果您需要在群内给指定群成员列表发消息，可以创建一条定向群消息，定向群消息只有指定群成员才能收到。                             |
 | [createTextAtMessage](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_message\_manager/V2TIMMessageManager/createTextAtMessage.html)                               | 创建文本消息，并且可以附带 @ 提醒功能（最大支持 8KB） 提醒消息仅适用于在群组中发送的消息                              |
 | [createTextMessage](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_message\_manager/V2TIMMessageManager/createTextMessage.html)                                   | 创建文本消息                                                                        |
 | [createVideoMessage](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_message\_manager/V2TIMMessageManager/createVideoMessage.html)                                 | 创建视频文件                                                                        |
@@ -46,7 +41,10 @@ description: 提供高级消息处理相关接口
 | [getMessageReadReceipts](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_message\_manager/V2TIMMessageManager/getMessageReadReceipts.html)                         | 获取消息已读回执 3.9.3及以上版本支持 该接口暂时只支持 Group 消息。 messageIDList 里的消息Id必须在同一个 Group 会话中 |
 | [initGroupAttributes](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_group\_manager/V2TIMGroupManager/initGroupAttributes.html)                                   | 修改群消息接收选项                                                                     |
 | [insertC2CMessageToLocalStorage](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_message\_manager/V2TIMMessageManager/insertC2CMessageToLocalStorage.html)         | 向C2C消息列表中添加一条消息                                                               |
-| [insertGroupMessageToLocalStorage](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_message\_manager/V2TIMMessageManager/insertGroupMessageToLocalStorage.html)     | 设置群组消息已读                                                                      |
+| [insertGroupMessageToLocalStorage](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_message\_manager/V2TIMMessageManager/insertGroupMessageToLocalStorage.html)     | 向群组消息列表中添加一条消息                                                                |
+| [markAllMessageAsRead](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_message\_manager/V2TIMMessageManager/markAllMessageAsRead.html)                             | 标记所有消息为已读                                                                     |
+| [markC2CMessageAsRead](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_message\_manager/V2TIMMessageManager/markC2CMessageAsRead.html)                             | 设置单聊消息已读                                                                      |
+| [markGroupMessageAsRead](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_message\_manager/V2TIMMessageManager/markGroupMessageAsRead.html)                         | 设置群组消息已读                                                                      |
 | [modifyMessage](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_message\_manager/V2TIMMessageManager/modifyMessage.html)                                           | 消息变更 4.0.1及以后版本支持                                                             |
 | [removeAdvancedMsgListener](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_message\_manager/V2TIMMessageManager/removeAdvancedMsgListener.html)                   | 移除高级消息监听器                                                                     |
 | [reSendMessage](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/manager\_v2\_tim\_message\_manager/V2TIMMessageManager/reSendMessage.html)                                           | 消息重发                                                                          |
