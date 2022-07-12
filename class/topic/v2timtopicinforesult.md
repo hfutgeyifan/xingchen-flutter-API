@@ -27,3 +27,10 @@ description: 查询话题信息结果
 参数类型 : V2TimTopicInfo
 
 参数描述：如果获取成功，会返回对应的话题信息
+
+### toJson
+
+参数类型 : Map\<String, dynamic> toJson()
+
+参数描述：返回查询话题信息结果的JSON格式
+

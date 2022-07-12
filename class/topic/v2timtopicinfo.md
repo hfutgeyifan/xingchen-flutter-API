@@ -94,3 +94,9 @@ description: 话题信息属性
 
 参数描述：话题 at 信息列表
 
+### toJson
+
+参数类型 : Map\<String, dynamic> toJson()
+
+参数描述：返回话题信息属性的JSON格式
+
