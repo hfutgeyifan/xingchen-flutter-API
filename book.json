@@ -12,7 +12,8 @@
          "splitter",
          "theme-bookstyle",
          "chapter-fold",
-         "versions-select"
+         "versions-select",
+         "hints"
     ],
     "variables": {
         "themeFexa": {

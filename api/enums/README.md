@@ -37,6 +37,6 @@ IM API中使用到的枚举类型
 | [ReceiveMsgOptEnum](receivemsgoptenum.md)                                     | 用户接收消息设置类型           |
 | [SimpleMsgListenerType](simplemsglistenertype.md)                             | 简单消息监听器类型            |
 | [UserStatusType](userstatustype.md)                                           | 用户在线状态               |
-| [V2TIM\_IMAGE\_TYPE](v2tim\_image\_type-1.md)                                 | 图片类型                 |
+| [V2TIM_IMAGE_TYPE](v2tim_image_type.md)                                       | 图片类型                 |
 | [V2TIMKeywordListMatchType](v2timkeywordlistmatchtype.md)                     | 搜索信息匹配方法类型           |
 
