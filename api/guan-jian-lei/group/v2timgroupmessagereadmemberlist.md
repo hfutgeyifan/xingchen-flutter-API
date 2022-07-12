@@ -1,4 +1,4 @@
-# V2TimMemberKicked
+# V2TimGroupMessageReadMemberList
 
 ## 关键类描述
 

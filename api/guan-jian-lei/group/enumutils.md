@@ -1,5 +1,24 @@
 # EnumUtils
 
-## 方法
 
-[convertGroupMemberRoleTypeEnum](https://pub.dev/documentation/tencent\_im\_sdk\_plugin/latest/enum\_utils/EnumUtils/convertGroupMemberRoleTypeEnum.html)([GroupMemberRoleTypeEnum](https://pub.dev/documentation/tencent\_im\_sdk\_plugin\_platform\_interface/0.2.8/enum\_group\_member\_role\_enum/GroupMemberRoleTypeEnum.html) role) → [int](https://api.dart.dev/stable/2.17.3/dart-core/int-class.html)
+
+## 关键类描述
+
+查询群组用户信息结果
+
+## 参数
+
+### nextSeq
+
+* 参数类型 : String
+* 参数描述：分页拉取的 seq 如果为 0 表示拉取结束
+
+### memberInfoList
+
+* 参数类型 : List< V2TimGroupMemberFullInfo >
+* 参数描述：用户信息列表
+
+### toJson
+
+* 参数类型 : Map< String, dynamic > toJson()
+* 参数描述：返回查询群组用户信息结果的JSON格式

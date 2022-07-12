@@ -12,18 +12,15 @@ description: 群组用户信息
 
 ### userID
 
-参数类型 : String
-
-参数描述：用户 ID
+* 参数类型 : String
+* 参数描述：用户 ID
 
 ### role
 
-参数类型 : GroupMemberRoleTypeEnum
-
-参数描述：用户在群组中的角色
+* 参数类型 : GroupMemberRoleTypeEnum
+* 参数描述：用户角色
 
 ### toJson
 
-参数类型 : Map\<String, dynamic> toJson()
-
-参数描述：返回群组用户信息的JSON格式
+* 参数类型 : Map< String, dynamic > toJson()
+* 参数描述：返回群组用户信息的JSON格式
