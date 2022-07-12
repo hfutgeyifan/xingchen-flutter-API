@@ -1,24 +1,24 @@
+---
+description: 根据GroupMemberRoleTypeEnum生成GroupMemberRoleType
+---
+
 # EnumUtils
-
-
 
 ## 关键类描述
 
-查询群组用户信息结果
+根据GroupMemberRoleTypeEnum生成GroupMemberRoleType
 
 ## 参数
 
-### nextSeq
+### convertGroupMemberRoleTypeEnum
 
-* 参数类型 : String
-* 参数描述：分页拉取的 seq 如果为 0 表示拉取结束
+* 参数类型 : int convertGroupMemberRoleTypeEnum(GroupMemberRoleTypeEnum role)
+* 参数描述：根据GroupMemberRoleTypeEnum生成GroupMemberRoleType
 
-### memberInfoList
+{% hint style="info" %}
+200:群成员
 
-* 参数类型 : List< V2TimGroupMemberFullInfo >
-* 参数描述：用户信息列表
+300:群管理员
 
-### toJson
-
-* 参数类型 : Map< String, dynamic > toJson()
-* 参数描述：返回查询群组用户信息结果的JSON格式
+400:群主
+{% endhint %}

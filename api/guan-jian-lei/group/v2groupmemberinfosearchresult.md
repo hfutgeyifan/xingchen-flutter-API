@@ -1,3 +1,7 @@
+---
+description: 查询群组用户信息结果
+---
+
 # V2GroupMemberInfoSearchResult
 
 ## 关键类描述
@@ -6,15 +10,12 @@
 
 ## 参数
 
-### nextSeq
+### groupMemberSearchResultItems
 
-* 参数类型 : String
-* 参数描述：分页拉取的 seq 如果为 0 表示拉取结束
+* 参数类型 : Map< String, dynamic >
+* 参数描述：群组成员搜索结果单元
 
-### memberInfoList
 
-* 参数类型 : List< V2TimGroupMemberFullInfo >
-* 参数描述：用户信息列表
 
 ### toJson
 
