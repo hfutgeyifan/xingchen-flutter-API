@@ -10,13 +10,13 @@ description: 用户状态信息属性
 
 ## 参数
 
-### userID
+### **•**userID
 
 参数类型 : String
 
 参数描述：用户 ID
 
-### statusType
+### **•**statusType
 
 参数类型 : int
 
@@ -30,14 +30,14 @@ description: 用户状态信息属性
 
 3:未登录（如主动调用 logout 接口，或者账号注册后还未登录）
 
-### customStatus
+### **•**customStatus
 
 参数类型 : String
 
 参数描述：用户的自定义状态
 
-### toJson
+### **•**toJson
 
-参数类型 : Map\<String, dynamic> toJson()
+参数类型 : Map < String, dynamic > toJson()
 
 参数描述：返回用户状态信息的JSON格式
