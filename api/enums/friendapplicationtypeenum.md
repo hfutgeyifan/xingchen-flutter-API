@@ -8,20 +8,10 @@ description: 加好友类型
 
 加好友类型
 
-## V2TIM\_FRIEND\_APPLICATION\_COME\_IN
+## 枚举值列表
 
-枚举类型描述：别人发给我的加好友请求。
-
-枚举值：V2TIM\_FRIEND\_APPLICATION\_COME\_IN
-
-## V2TIM\_FRIEND\_APPLICATION\_SEND\_OUT
-
-枚举类型描述：我发给别人的加好友请求。
-
-枚举值：V2TIM\_FRIEND\_APPLICATION\_SEND\_OUT
-
-## V2TIM\_FRIEND\_APPLICATION\_BOTH
-
-枚举类型描述：别人发给我的和我发给别人的加好友请求。仅在拉取时有效。
-
-枚举值：V2TIM\_FRIEND\_APPLICATION\_BOTH
+| 枚举值名称                                 | 枚举类型描述                     | 枚举值 |
+| ------------------------------------- | -------------------------- | --- |
+| V2TIM\_FRIEND\_APPLICATION\_COME\_IN  | 别人发给我的加好友请求                | 1   |
+| V2TIM\_FRIEND\_APPLICATION\_SEND\_OUT | 我发给别人的加好友请求                | 2   |
+| V2TIM\_FRIEND\_APPLICATION\_BOTH      | 别人发给我的和我发给别人的加好友请求，仅在拉取时有效 | 3   |

@@ -8,32 +8,12 @@ description: 消息状态
 
 消息状态
 
-## V2TIM\_MSG\_STATUS\_SENDING
+## 枚举值列表
 
-枚举类型描述：消息发送中
-
-枚举值：1
-
-## V2TIM\_MSG\_STATUS\_SEND\_SUCC
-
-枚举类型描述：消息发送成功
-
-枚举值：2
-
-## V2TIM\_MSG\_STATUS\_SEND\_FAIL
-
-枚举类型描述：消息发送失败
-
-枚举值：3
-
-## V2TIM\_MSG\_STATUS\_HAS\_DELETED
-
-枚举类型描述：消息被删除
-
-枚举值：4
-
-## V2TIM\_MSG\_STATUS\_LOCAL\_REVOKED
-
-枚举类型描述：被撤销的消息
-
-枚举值：6
+| 枚举值名称                              | 枚举类型描述 | 枚举值 |
+| ---------------------------------- | ------ | --- |
+| V2TIM\_MSG\_STATUS\_SENDING        | 消息发送中  | 1   |
+| V2TIM\_MSG\_STATUS\_SEND\_SUCC     | 消息发送成功 | 2   |
+| V2TIM\_MSG\_STATUS\_SEND\_FAIL     | 消息发送失败 | 3   |
+| V2TIM\_MSG\_STATUS\_HAS\_DELETED   | 消息被删除  | 4   |
+| V2TIM\_MSG\_STATUS\_LOCAL\_REVOKED | 被撤销的消息 | 6   |

@@ -8,14 +8,9 @@ description: 申请加群处理结果
 
 申请加群处理结果
 
-## V2TIM\_GROUP\_APPLICATION\_HANDLE\_RESULT\_REFUSE
+## 枚举值列表
 
-枚举类型描述：拒绝申请
-
-枚举值：0
-
-## V2TIM\_GROUP\_APPLICATION\_HANDLE\_RESULT\_AGREE
-
-枚举类型描述：同意申请
-
-枚举值：1
+| 枚举值名称                                             | 枚举类型描述 | 枚举值 |
+| ------------------------------------------------- | ------ | --- |
+| V2TIM\_GROUP\_APPLICATION\_HANDLE\_RESULT\_REFUSE | 拒绝申请   | 0   |
+| V2TIM\_GROUP\_APPLICATION\_HANDLE\_RESULT\_AGREE  | 同意申请   | 1   |

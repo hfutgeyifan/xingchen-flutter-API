@@ -8,27 +8,12 @@ description: 群组类型
 
 群组类型
 
-## AVChatRoom
+## 枚举值列表
 
-枚举类型描述：直播群。
-
-枚举值：AVChatRoom
-
-## Meeting
-
-枚举类型描述：会议群。
-
-枚举值：Meeting
-
-## Public
-
-枚举类型描述：公开群。
-
-枚举值：Public
-
-## Work
-
-枚举类型描述：工作群。
-
-枚举值：Work
+| 枚举值名称      | 枚举类型描述 | 枚举值        |
+| ---------- | ------ | ---------- |
+| AVChatRoom | 直播群    | AVChatRoom |
+| Meeting    | 会议群    | Meeting    |
+| Public     | 公开群    | Public     |
+| Work       | 工作群    | Work       |
 

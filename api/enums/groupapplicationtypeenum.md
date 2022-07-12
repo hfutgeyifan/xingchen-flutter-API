@@ -8,15 +8,10 @@ description: 入群申请类型
 
 入群申请类型
 
-## V2TIM\_GROUP\_APPLICATION\_GET\_TYPE\_JOIN
+## 枚举值列表
 
-枚举类型描述：申请入群。
-
-枚举值：V2TIM\_GROUP\_APPLICATION\_GET\_TYPE\_JOIN
-
-## V2TIM\_GROUP\_APPLICATION\_GET\_TYPE\_INVITE
-
-枚举类型描述：被邀请入群。
-
-枚举值：V2TIM\_GROUP\_APPLICATION\_GET\_TYPE\_INVITE
+| 枚举值名称                                        | 枚举类型描述 | 枚举值 |
+| -------------------------------------------- | ------ | --- |
+| V2TIM\_GROUP\_APPLICATION\_GET\_TYPE\_JOIN   | 申请入群   | 0   |
+| V2TIM\_GROUP\_APPLICATION\_GET\_TYPE\_INVITE | 被邀请入群  | 1   |
 

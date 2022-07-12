@@ -8,26 +8,12 @@ description: 获取历史消息类型
 
 获取历史消息类型
 
-## V2TIM\_GET\_CLOUD\_OLDER\_MSG
+## 枚举值列表
 
-枚举类型描述：获取云端更老的消息
+| 枚举值名称                         | 枚举类型描述    | 枚举值 |
+| ----------------------------- | --------- | --- |
+| V2TIM\_GET\_CLOUD\_OLDER\_MSG | 获取云端更老的消息 | 1   |
+| V2TIM\_GET\_CLOUD\_NEWER\_MSG | 获取云端更新的消息 | 2   |
+| V2TIM\_GET\_LOCAL\_OLDER\_MSG | 获取本地更老的消息 | 3   |
+| V2TIM\_GET\_LOCAL\_NEWER\_MSG | 获取本地更新的消息 | 4   |
 
-枚举值：1
-
-## V2TIM\_GET\_CLOUD\_NEWER\_MSG
-
-枚举类型描述：获取云端更新的消息
-
-枚举值：2
-
-## V2TIM\_GET\_LOCAL\_OLDER\_MSG
-
-枚举类型描述：获取本地更老的消息
-
-枚举值：3
-
-## V2TIM\_GET\_LOCAL\_NEWER\_MSG
-
-枚举类型描述：获取本地更新的消息
-
-枚举值：4

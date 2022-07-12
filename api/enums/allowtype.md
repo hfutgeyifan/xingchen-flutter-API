@@ -13,5 +13,5 @@ description: 设置用户信息时中，是否允许其他人加你好友
 | 枚举值名称                        | 枚举类型描述    | 枚举值 |
 | ---------------------------- | --------- | --- |
 | V2TIM\_FRIEND\_ALLOW\_ANY    | 允许任何人添加好友 | 0   |
-| V2TIM\_FRIEND\_DENY\_ANY     | 拒绝任何人添加好友 | 1   |
-| V2TIM\_FRIEND\_NEED\_CONFIRM | 添加好友需要验证  | 2   |
+| V2TIM\_FRIEND\_NEED\_CONFIRM | 添加好友需要验证  | 1   |
+| V2TIM\_FRIEND\_DENY\_ANY     | 拒绝任何人添加好友 | 2   |
