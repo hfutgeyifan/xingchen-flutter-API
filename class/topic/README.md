@@ -10,7 +10,7 @@ description: 话题相关类型
 
 ## Topic包含类型目录
 
-| 类型名称                 | 描述 |
-| -------------------- | -- |
-| V2TimTopicInfo       |    |
-| V2TIMTopicInfoResult |    |
+| 类型名称                 | 描述       |
+| -------------------- | -------- |
+| V2TimTopicInfo       | 话题信息属性   |
+| V2TIMTopicInfoResult | 查询话题信息结果 |

@@ -243,7 +243,7 @@
     * [V2TimAdvancedMsgListener](class/v2timadvancedmsglistener.md)
     * [V2TimSignalingListener](class/v2timsignalinglistener.md)
     * [V2TimSimpleMsgListener](class/v2timsimplemsglistener.md)
-  * [V2TimGrantAdministrator](api/guan-jian-lei/v2timgrantadministrator.md)
+  * [V2TimGrantAdministrator](class/v2timgrantadministrator.md)
   * [V2TimRevokeAdministrator](class/v2timrevokeadministrator.md)
   * [V2TimApplicationProcessed](class/v2timapplicationprocessed.md)
 * [Enums](class/enums.md)
