@@ -12,24 +12,20 @@ description: 用户信息属性
 
 ### userID
 
-参数类型 : String
-
-参数描述：用户 ID
+* 参数类型 : String
+* 参数描述：用户 ID
 
 ### nickName
 
-参数类型 : String
-
-参数描述：用户昵称
+* 参数类型 : String
+* 参数描述：用户昵称
 
 ### faceUrl
 
-参数类型 : String
-
-参数描述：用户头像
+* 参数类型 : String
+* 参数描述：用户头像
 
 ### toJson
 
-参数类型 : Map\<String, dynamic> toJson()
-
-参数描述：返回用户信息的JSON格式
+* 参数类型 : Map \<String, dynamic> toJson()
+* 参数描述：返回用户信息的JSON格式

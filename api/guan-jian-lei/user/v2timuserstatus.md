@@ -15,7 +15,7 @@ description: 用户状态信息属性
 * 参数类型 : String
 * 参数描述：用户 ID
 
-### **•**statusType
+### statusType
 
 * 参数类型 : int
 * 参数描述：用户状态
@@ -32,12 +32,10 @@ description: 用户状态信息属性
 
 ### customStatus
 
-参数类型 : String
+* 参数类型 : String
+* 参数描述：用户的自定义状态
 
-参数描述：用户的自定义状态
+### toJson
 
-### **•**toJson
-
-参数类型 : Map < String, dynamic > toJson()
-
-参数描述：返回用户状态信息的JSON格式
+* 参数类型 : Map \<String, dynamic> toJson()
+* 参数描述：返回用户状态信息的JSON格式
