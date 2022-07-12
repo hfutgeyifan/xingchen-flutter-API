@@ -10,14 +10,12 @@ description: 监听器相关类型
 
 ## Listener包含类型目录
 
-| 类型名称                        | 描述         |
-| --------------------------- | ---------- |
-| V2TimSDKListener            | SDK的回调     |
-| V2TimGroupListener          | 群组信息的监听器回调 |
-| V2TimGrantAdministrato**r** |            |
-| V2TimConversationListener   |            |
-| V2TimFriendshipListener     |            |
-| V2TimAdvancedMsgListener    |            |
-| V2TIMAPNSListener           |            |
-| V2TimSignalingListener      |            |
-| V2TimSimpleMsgListener      |            |
+| 类型名称                      | 描述           |
+| ------------------------- | ------------ |
+| V2TimSDKListener          | SDK的回调       |
+| V2TimGroupListener        | 群组信息的监听器回调   |
+| V2TimConversationListener | 聊天的监听器回调     |
+| V2TimFriendshipListener   | 资料关系链回调      |
+| V2TimAdvancedMsgListener  | 高级消息监听器      |
+| V2TimSignalingListener    | 信令消息监听器      |
+| V2TimSimpleMsgListener    | IMSDK 基本消息回调 |
