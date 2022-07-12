@@ -37,5 +37,5 @@ description: 用户状态信息属性
 
 ### toJson
 
-* 参数类型 : Map \<String, dynamic> toJson()
+* 参数类型 : Map< String, dynamic > toJson()
 * 参数描述：返回用户状态信息的JSON格式

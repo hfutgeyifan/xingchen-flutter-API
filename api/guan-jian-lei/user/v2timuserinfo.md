@@ -27,5 +27,5 @@ description: 用户信息属性
 
 ### toJson
 
-* 参数类型 : Map \<String, dynamic> toJson()
+* 参数类型 : Map< String, dynamic > toJson()
 * 参数描述：返回用户信息的JSON格式
