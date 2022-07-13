@@ -1,27 +1,26 @@
+---
+description: 创建信息结果
+---
+
 # V2TimMsgCreateInfoResult
 
 ## 关键类描述
 
-用户信息属性
+创建信息结果
 
 ## 参数
 
-### userID
+### id
 
 * 参数类型 : String
-* 参数描述：用户 ID
+* 参数描述：创建信息的 ID
 
-### nickName
+### messageInfo
 
-* 参数类型 : String
-* 参数描述：用户昵称
-
-### faceUrl
-
-* 参数类型 : String
-* 参数描述：用户头像
+* 参数类型 : V2TimMessage
+* 参数描述：创建信息的内容
 
 ### toJson
 
 * 参数类型 : Map< String, dynamic > toJson()
-* 参数描述：返回用户信息的JSON格式
+* 参数描述：返回创建信息结果的JSON格式

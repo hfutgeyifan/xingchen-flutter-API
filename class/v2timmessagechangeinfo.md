@@ -1,29 +1,31 @@
+---
+description: 消息修改信息
+---
+
 # V2TimMessageChangeInfo
-
-
 
 ## 关键类描述
 
-用户信息属性
+消息修改信息
 
 ## 参数
 
-### userID
+### code
+
+* 参数类型 : int
+* 参数描述：修改结果码
+
+### desc
 
 * 参数类型 : String
-* 参数描述：用户 ID
+* 参数描述：描述信息
 
-### nickName
+### message
 
-* 参数类型 : String
-* 参数描述：用户昵称
-
-### faceUrl
-
-* 参数类型 : String
-* 参数描述：用户头像
+* 参数类型 : V2TimMessage
+* 参数描述：修改后的信息
 
 ### toJson
 
 * 参数类型 : Map< String, dynamic > toJson()
-* 参数描述：返回用户信息的JSON格式
+* 参数描述：返回消息修改信息的JSON格式
