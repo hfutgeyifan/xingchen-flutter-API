@@ -36,7 +36,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>
 | ---- | ------------------------------------------------------------- | -------------------------------------------------------------- |
 | code | int                                                           | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                        | 请求结果描述                                                         |
-| data | [V2TimMsgCreateInfoResult](../../class/v2timsdklistener-1.md) | 创建后的Text信息                                                     |
+| data | [V2TimMsgCreateInfoResult](../../class/v2timsdklistener-1.md) | 创建后的@Text信息                                                    |
 
 ## 使用案例  &#x20;
 
@@ -49,8 +49,8 @@ V2TimValueCallback<V2TimMsgCreateInfoResult> createTextAtMessageRes = await Tenc
  if(createTextAtMessageRes.code == 0){
        // 文本信息创建成功
     String id =  createTextAtMessageRes.data.id;
-       // 发送文本消息
-       // 在sendMessage时，必须填写groupID
+       // 发送@文本消息
+       // 在sendMessage时，必须填写groupID，receiver可为空
        //                 若填写了receiver与groupID则发群内的个人用户，消息在群聊中显示，只有指定receiver能看见
     V2TimValueCallback<V2TimMessage> sendMessageRes = await TencentImSDKPlugin.v2TIMManager.getMessageManager().sendMessage(id: id, receiver: "userID", groupID: "groupID");
     if(sendMessageRes.code == 0){

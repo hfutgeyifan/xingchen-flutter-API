@@ -38,7 +38,7 @@ description: 语音消息单体属性
 ### localUrl
 
 * 参数类型 : String
-* 参数描述：
+* 参数描述：语音下载后的本地路径
 
 ### toJson
 

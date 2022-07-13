@@ -43,6 +43,7 @@
   * [createFileMessage](api/v2timmessagemanager/createfilemessage.md)
   * [createForwardMessage](api/v2timmessagemanager/createforwardmessage.md)
   * [createImageMessage](api/v2timmessagemanager/createimagemessage.md)
+  * [Copy of createImageMessage](api/v2timmessagemanager/createimagemessage-1.md)
   * [createLocationMessage](api/v2timmessagemanager/createlocationmessage.md)
   * [createMergerMessage](api/v2timmessagemanager/createmergermessage.md)
   * [createSoundMessage](api/v2timmessagemanager/createsoundmessage.md)

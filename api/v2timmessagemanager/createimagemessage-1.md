@@ -2,7 +2,7 @@
 description: 创建图片消息（图片文件最大支持 28 MB）
 ---
 
-# createImageMessage
+# Copy of createImageMessage
 
 ## API功能介绍
 

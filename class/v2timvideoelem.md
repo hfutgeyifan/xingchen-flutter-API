@@ -68,12 +68,12 @@ description: 视频消息单体属性
 ### localVideoUrl
 
 * 参数类型 : String
-* 参数描述：
+* 参数描述：视频下载后的本地路径
 
 ### localSnapshotUrl
 
 * 参数类型 : String
-* 参数描述：
+* 参数描述：截图下载后的本地路径
 
 ### toJson
 
