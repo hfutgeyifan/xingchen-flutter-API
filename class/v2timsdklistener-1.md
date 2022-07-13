@@ -1,29 +1,27 @@
 # V2TimMsgCreateInfoResult
 
-## 参数索引
+## 关键类描述
+
+用户信息属性
 
 ## 参数
 
-### hashCode
+### userID
 
-hashCode? : _int_
+* 参数类型 : String
+* 参数描述：用户 ID
 
-此对象的hashCode
+### nickName
 
-### id
+* 参数类型 : String
+* 参数描述：用户昵称
 
-id? : [_String_](https://pub.dev/documentation/tencent\_im\_sdk\_plugin\_platform\_interface/latest/enum\_callbacks/VoidCallback.html)__
+### faceUrl
 
-此对象的id
+* 参数类型 : String
+* 参数描述：用户头像
 
-### messageInfo
+### toJson
 
-messageInfo : [_V2TimMessage_](https://pub.dev/documentation/tencent\_im\_sdk\_plugin\_platform\_interface/latest/models\_v2\_tim\_message/V2TimMessage-class.html)__
-
-正在连接的回调函数
-
-### runtimeType
-
-runtimeType? : [_Type_](https://pub.dev/documentation/tencent\_im\_sdk\_plugin\_platform\_interface/latest/enum\_callbacks/VoidCallback.html)__
-
-被踢下线的回调函数
+* 参数类型 : Map< String, dynamic > toJson()
+* 参数描述：返回用户信息的JSON格式

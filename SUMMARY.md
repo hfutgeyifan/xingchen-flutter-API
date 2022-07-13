@@ -192,7 +192,7 @@
     * [V2TimFriendInfoResult](api/guan-jian-lei/user/v2timfriendinforesult.md)
     * [V2TimFriendInfo](api/guan-jian-lei/user/v2timfriendinfo.md)
   * [Message](class/message.md)
-    * [V2TimMessage](class/v2timmessage.md)
+    * [V2TIMMessage](class/v2timmessage.md)
     * [V2TimVideoElem](class/v2timvideoelem.md)
     * [V2TimTextElem](class/v2timtextelem.md)
     * [V2TimSoundElem](class/v2timsoundelem.md)
