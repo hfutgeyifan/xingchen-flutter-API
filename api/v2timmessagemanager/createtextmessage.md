@@ -42,11 +42,11 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>
 ```dart
 // 创建文本消息
 V2TimValueCallback<V2TimMsgCreateInfoResult> createTextMessageRes = await TencentImSDKPlugin.v2TIMManager.getMessageManager().createTextMessage(
-    text: "test",
+    text: "test",// 文本信息
   );
  if(createTextMessageRes.code == 0){
        // 文本信息创建成功
-    String id =  createTextAtMessageRes.data.id;
+    String id =  createTextMessageRes.data.id;
        // 发送文本消息
        // 在sendMessage时，若只填写receiver则发个人用户单聊消息
        //                 若只填写groupID则发群组消息
