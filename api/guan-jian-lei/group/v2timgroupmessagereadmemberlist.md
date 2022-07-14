@@ -1,12 +1,12 @@
 ---
-description: 群消息已读群成员列表
+description: 群消息已读或未读群成员列表
 ---
 
 # V2TimGroupMessageReadMemberList
 
 ## 关键类描述
 
-群消息已读群成员列表
+群消息已读或未读群成员列表
 
 ## 参数
 

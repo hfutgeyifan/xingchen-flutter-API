@@ -13,7 +13,7 @@ description: 消息已读回执
 ### userID
 
 * 参数类型 : String
-* 参数描述：C2C 消息接收对象
+* 参数描述：发送次消息的用户id
 
 ### timestamp
 
