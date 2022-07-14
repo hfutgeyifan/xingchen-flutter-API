@@ -57,4 +57,26 @@ V2TimValueCallback<V2TimMsgCreateInfoResult> createTextAtMessageRes = await Tenc
       // 发送成功
     }
   }
+  
+// 在加载和更新会话处，需要调用 V2TimConversation 的 groupAtInfolist 接口获取会话的 @ 数据列表。
+// 通过列表中 V2TimGroupAtInfo 对象的 atType接口获取 @ 数据类型，并更新到当前会话的 @ 信息。
+     V2TimValueCallback<V2TimConversationResult> getConversationList =
+        await TencentImSDKPlugin.v2TIMManager
+            .getConversationManager()
+            .getConversationList(nextSeq: "", count: 10);
+    if (getConversationList.code == 0) {
+      getConversationList.data.conversationList.forEach((element) {
+        element.groupAtInfoList.forEach((element) {
+          if (element.atType == 0) {
+            // @我
+          }
+          if (element.atType == 1) {
+            // @all
+          }
+          if (element.atType == 2) {
+            // @all&@我
+          }
+        });
+      });
+    }
 ```
