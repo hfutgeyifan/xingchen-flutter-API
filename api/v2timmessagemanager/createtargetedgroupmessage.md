@@ -52,7 +52,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>
 | ---- | ------------------------------------------------------------- | -------------------------------------------------------------- |
 | code | int                                                           | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                        | 请求结果描述                                                         |
-| data | [V2TimMsgCreateInfoResult](../../class/v2timsdklistener-1.md) | 创建的合并消息                                                        |
+| data | [V2TimMsgCreateInfoResult](../../class/v2timsdklistener-1.md) | 创建的定向群消息                                                       |
 
 ## 使用案例  &#x20;
 

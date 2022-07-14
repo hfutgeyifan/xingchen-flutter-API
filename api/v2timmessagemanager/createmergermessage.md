@@ -8,28 +8,24 @@ description: 创建合并消息
 
 创建合并消息
 
-定向消息是指，向群内部分指定的成员发送消息，而未被指定的群成员无法收到该消息。可以按照下面的方式实现：
+*   如果您想实现类似于微信的合并转发功能，需要进行以下步骤：
 
-1. 调用 `createXXXMessage` (其中 XXX 表示具体的消息类型) 接口创建一条原始消息对象 `V2TIMMessage`。
-2. 调用 `createTargetedGroupMessage` 接口根据原始消息对象创建定向消息对象 `V2TimMessage`，并指定消息接收成员列表。
-3. 调用 `sendMessage` 接口发送定向消息。
+    1. 根据原始消息列表创建一条合并消息。
+    2. 把合并消息发送到对端。
+    3. 对端收到合并消息后解析出原始消息列表。
 
-{% hint style="info" %}
-注意事项：
 
-1. 仅Flutter sdk 3.8.0 及以上版本支持。
-2. 该功能需要购买旗舰版套餐包。
-3. 创建定向群消息的原始消息对象不支持群 @ 消息。
-4. 社群（Community）和直播群（AVChatRoom）不支持发送定向群消息。
-5. 定向群消息默认不计入群会话的未读计数。
-{% endhint %}
+* 我们在创建一条合并消息的时候不仅要设置合并消息列表，还要设置标题和摘要信息。
 
 ## 参数详解
 
-| 参数名称         | 参数类型          | 是否必填 | 描述         |
-| ------------ | ------------- | ---- | ---------- |
-| id           | String        | 是    | 创建的消息的id   |
-| receiverList | List\<String> | 是    | 群内部分成员id列表 |
+| 参数名称                   | 参数类型          | 是否必填 | 描述                                                           |
+| ---------------------- | ------------- | ---- | ------------------------------------------------------------ |
+| msgIDList              | String        | 是    | 原始消息ID列表                                                     |
+| title                  | String        | 是    | 标题                                                           |
+| abstractList           | List\<String> | 是    | 摘要列表                                                         |
+| compatibleText         | String        | 是    | 兼容文本信息，低版本 SDK 如果不支持合并消息，默认会收到一条文本消息，文本消息的内容为 compatibleText |
+| webMessageInstanceList | List\<String> | 否    | web端消息列表                                                     |
 
 ## 返回模板
 
@@ -57,33 +53,26 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>
 ## 使用案例  &#x20;
 
 ```dart
-// 先创建消息
-    V2TimValueCallback<V2TimMsgCreateInfoResult> target = await TencentImSDKPlugin
-        .v2TIMManager
-        .getMessageManager()
-        .createTextMessage(text: "");
-// 获取消息的发送id
-    String id = target.data.id;
-// 创建定向消息
-    V2TimValueCallback<V2TimMsgCreateInfoResult> groupTarget = await TencentImSDKPlugin
-        .v2TIMManager
-        .getMessageManager()
-        .createTargetedGroupMessage(
-            id: id,
-            receiverList: ['user1','user2'],
-             );
-// 发送消息
-    if (groupTarget.code == 0) {
-    String id = groupTarget.data.id;
-     // 发送音频消息
-     // 若只填写groupID则发群组消息
-     // 若填写了receiver与groupID则发群内的个人用户，消息在群聊中显示，只有指定receiver能看见
-    V2TimValueCallback<V2TimMessage> sendMessageRes = await TencentImSDKPlugin
-        .v2TIMManager
-        .getMessageManager()
-        .sendMessage(id: id, receiver: "userID", groupID: "groupID");
-    if (sendMessageRes.code == 0) {
-      // 发送成功
-    }
+// 创建合并消息
+V2TimValueCallback<V2TimMsgCreateInfoResult> createMergerMessageResult =
+      await TencentImSDKPlugin.v2TIMManager
+          .getMessageManager()
+          .createMergerMessage(
+            msgIDList: ["msgid1", "msgid2"],// 需要合并的消息id列表，需要被转发的消息列表，消息列表里可以包含合并消息，不能包含群 Tips 消息
+            title: "user1与user2的聊天", // 合并消息标题
+            abstractList: ["user1:hello", "user2:你好"], // 合并消息摘要列表
+            compatibleText: "当前版本不支持该消息", // 合并消息兼容文本，低版本 SDK 如果不支持合并消息，默认会收到一条文本消息，文本消息的内容为 compatibleText
+            webMessageInstanceList:"",// web端消息列表
+          );
+  if (createMergerMessageResult.code == 0) {
+     // 发送合并消息
+     // 在sendMessage时，若只填写receiver则发个人用户单聊消息
+     //                 若只填写groupID则发群组消息
+     //                 若填写了receiver与groupID则发群内的个人用户，消息在群聊中显示，只有指定receiver能看见
+    TencentImSDKPlugin.v2TIMManager.getMessageManager().sendMessage(
+          id: createMergerMessageResult.data.id,
+          receiver: "receiver",
+          groupID: "groupID",
+        );
   }
 ```
