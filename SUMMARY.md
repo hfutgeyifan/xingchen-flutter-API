@@ -73,7 +73,6 @@
   * [revokeMessage](api/v2timmessagemanager/revokemessage.md)
   * [searchLocalMessages](api/v2timmessagemanager/searchlocalmessages.md)
   * [sendMessage](api/v2timmessagemanager/sendmessage.md)
-  * [Copy of sendMessage](api/v2timmessagemanager/sendmessage-1.md)
   * [sendMessageReadReceipts](api/v2timmessagemanager/sendmessagereadreceipts.md)
   * [sendReplyMessage](api/v2timmessagemanager/sendreplymessage.md)
   * [setC2CReceiveMessageOpt](api/v2timmessagemanager/setc2creceivemessageopt.md)
