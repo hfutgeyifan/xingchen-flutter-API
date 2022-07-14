@@ -39,7 +39,6 @@ description: 提供高级消息处理相关接口
 | [getHistoryMessageList](../../api/v2timmessagemanager/gethistorymessagelist.md)                       | 获取历史消息高级接口                                            |
 | getHistoryMessageListWithoutFormat                                                                    | 获取历史消息高级接口(没有处理Native返回数据)                            |
 | [getMessageReadReceipts](../../api/v2timmessagemanager/getmessagereadreceipts.md)                     | 获取消息已读回执                                              |
-| initGroupAttributes                                                                                   | 修改群消息接收选项                                             |
 | [insertC2CMessageToLocalStorage](../../api/v2timmessagemanager/insertc2cmessagetolocalstorage.md)     | 向C2C消息列表中添加一条消息                                       |
 | [insertGroupMessageToLocalStorage](../../api/v2timmessagemanager/insertgroupmessagetolocalstorage.md) | 向群组消息列表中添加一条消息                                        |
 | markAllMessageAsRead                                                                                  | 标记所有消息为已读                                             |
