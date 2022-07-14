@@ -52,7 +52,6 @@
   * [createVideoMessage](api/v2timmessagemanager/createvideomessage.md)
   * [deleteMessageFromLocalStorage](api/v2timmessagemanager/deletemessagefromlocalstorage.md)
   * [deleteMessages](api/v2timmessagemanager/deletemessages.md)
-  * [Copy of deleteMessages](api/v2timmessagemanager/deletemessages-1.md)
   * [downloadMergerMessage](api/v2timmessagemanager/downloadmergermessage.md)
   * [findMessages](api/v2timmessagemanager/findmessages.md)
   * [getC2CHistoryMessageList](api/v2timmessagemanager/getc2chistorymessagelist.md)
