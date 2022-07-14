@@ -33,12 +33,12 @@ description: 视频消息单体属性
 ### snapshotPath
 
 * 参数类型 : String
-* 参数描述：截图文件路径（只有发送方才能获取到）
+* 参数描述：封面截图文件路径（只有发送方才能获取到）
 
 ### snapshotUUID
 
 * 参数类型 : String
-* 参数描述：截图 ID,内部标识，可用于外部缓存 key
+* 参数描述：封面截图 ID,内部标识，可用于外部缓存 key
 
 ### snapshotSize
 
@@ -48,12 +48,12 @@ description: 视频消息单体属性
 ### snapshotWidth
 
 * 参数类型 : int
-* 参数描述：截图宽
+* 参数描述：封面截图宽
 
 ### snapshotHeight
 
 * 参数类型 : int
-* 参数描述：截图高
+* 参数描述：封面截图高
 
 ### videoUrl
 
@@ -63,7 +63,7 @@ description: 视频消息单体属性
 ### snapshotUrl
 
 * 参数类型 : String
-* 参数描述：截图的 URL 下载地址
+* 参数描述：封面截图的 URL 下载地址
 
 ### localVideoUrl
 
@@ -73,7 +73,7 @@ description: 视频消息单体属性
 ### localSnapshotUrl
 
 * 参数类型 : String
-* 参数描述：截图下载后的本地路径
+* 参数描述：封面截图下载后的本地路径
 
 ### toJson
 
