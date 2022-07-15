@@ -16,4 +16,5 @@ description: 群组类型
 | Meeting    | 会议群    | Meeting    |
 | Public     | 公开群    | Public     |
 | Work       | 工作群    | Work       |
+| Community  | 社群     | Community  |
 
