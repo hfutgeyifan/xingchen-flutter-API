@@ -42,16 +42,16 @@ description: 提供高级消息处理相关接口
 | [insertC2CMessageToLocalStorage](../../api/v2timmessagemanager/insertc2cmessagetolocalstorage.md)         | 向C2C消息列表中添加一条消息                                       |
 | [insertGroupMessageToLocalStorage](../../api/v2timmessagemanager/insertgroupmessagetolocalstorage.md)     | 向群组消息列表中添加一条消息                                        |
 | [markAllMessageAsRead](../../api/v2timmessagemanager/markallmessageasread.md)                             | 标记所有消息为已读                                             |
-| markC2CMessageAsRead                                                                                      | 设置单聊消息已读                                              |
-| markGroupMessageAsRead                                                                                    | 设置群组消息已读                                              |
+| [markC2CMessageAsRead](../../api/v2timmessagemanager/markc2cmessageasread.md)                             | 设置单聊消息已读                                              |
+| [markGroupMessageAsRead](../../api/v2timmessagemanager/markgroupmessageasread.md)                         | 设置群组消息已读                                              |
 | [modifyMessage](../../api/v2timmessagemanager/modifymessage.md)                                           | 消息变更 4.0.1及以后版本支持                                     |
-| removeAdvancedMsgListener                                                                                 | 移除高级消息监听器                                             |
+| [removeAdvancedMsgListener](../../api/v2timmessagemanager/removeadvancedmsglistener.md)                   | 移除高级消息监听器                                             |
 | [reSendMessage](../../api/v2timmessagemanager/resendmessage.md)                                           | 消息重发                                                  |
 | [revokeMessage](../../api/v2timmessagemanager/revokemessage.md)                                           | 撤回消息                                                  |
-| searchLocalMessages                                                                                       | 搜索本地消息                                                |
+| [searchLocalMessages](../../api/v2timmessagemanager/searchlocalmessages.md)                               | 搜索本地消息                                                |
 | [sendMessage](../../api/v2timmessagemanager/sendmessage.md)                                               | 发送消息                                                  |
 | [sendMessageReadReceipts](../../api/v2timmessagemanager/sendmessagereadreceipts.md)                       | 发送消息已读回执                                              |
-| sendReplyMessage                                                                                          | 发送回复消息                                                |
+| [sendReplyMessage](../../api/v2timmessagemanager/sendreplymessage.md)                                     | 发送回复消息                                                |
 | [setC2CReceiveMessageOpt](../../api/v2timmessagemanager/setc2creceivemessageopt.md)                       | 设置用户消息接收选项                                            |
 | [setGroupReceiveMessageOpt](../../api/v2timmessagemanager/setgroupreceivemessageopt.md)                   | 修改群消息接收选项                                             |
 | [setLocalCustomData](../../api/v2timmessagemanager/setlocalcustomdata.md)                                 | 设置消息自定义数据（本地保存，不会发送到对端，程序卸载重装后失效）                     |
