@@ -46,7 +46,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult> createTextMessageRes = await Tencen
   );
  if(createTextMessageRes.code == 0){
        // 文本信息创建成功
-    String id =  createTextMessageRes.data.id;
+    String id =  createTextMessageRes.data?.id;
        // 发送文本消息
        // 在sendMessage时，若只填写receiver则发个人用户单聊消息
        //                 若只填写groupID则发群组消息
