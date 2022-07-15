@@ -131,6 +131,16 @@ V2TimAdvancedMsgListener listener = V2TimAdvancedMsgListener(
         message.groupTipsElem.memberChangeInfoList; // 群成员变更信息
         message.groupTipsElem.memberCount; // 当前群在线人数
       }
+      // 处理合并消息消息
+     if(message.elemType == MessageElemType.V2TIM_ELEM_TYPE_MERGER){
+        message.mergerElem.abstractList;
+        message.mergerElem.isLayersOverLimit;
+        message.mergerElem.title;
+        V2TimValueCallback<List<V2TimMessage>> download = await TencentImSDKPlugin.v2TIMManager.getMessageManager().downloadMergerMessage(msgID: message.msgID,);
+        if(download.code == 0){
+         List<V2TimMessage> messageList = download.data;
+        }
+      }
       if(message.textElem.nextElem!=null){
        //通过第一个 Elem 对象的 nextElem 方法获取下一个 Elem 对象，如果下一个 Elem 对象存在，会返回 Elem 对象实例，如果不存在，会返回 null。
       }

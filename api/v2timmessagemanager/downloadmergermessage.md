@@ -8,51 +8,56 @@ description: 获取合并消息的子消息列表
 
 获取合并消息的子消息列表
 
-*   如果您想实现类似于微信的合并转发功能，需要进行以下步骤：
-
-    1. 根据原始消息列表创建一条合并消息。
-    2. 把合并消息发送到对端。
-    3. 对端收到合并消息后解析出原始消息列表。
-
-
-* 我们在创建一条合并消息的时候不仅要设置合并消息列表，还要设置标题和摘要信息。
-
 ## 参数详解
 
-| 参数名称                   | 参数类型          | 是否必填 | 描述                                                           |
-| ---------------------- | ------------- | ---- | ------------------------------------------------------------ |
-| msgIDList              | String        | 是    | 原始消息ID列表                                                     |
-| title                  | String        | 是    | 标题                                                           |
-| abstractList           | List\<String> | 是    | 摘要列表                                                         |
-| compatibleText         | String        | 是    | 兼容文本信息，低版本 SDK 如果不支持合并消息，默认会收到一条文本消息，文本消息的内容为 compatibleText |
-| webMessageInstanceList | List\<String> | 否    | web端消息列表                                                     |
+| 参数名称  | 参数类型   | 是否必填 | 描述         |
+| ----- | ------ | ---- | ---------- |
+| msgID | String | 是    | 需要获取的合并消息的 |
 
 ## 返回模板
 
 ```dart
-V2TimValueCallback<V2TimMsgCreateInfoResult>
+V2TimValueCallback<List<V2TimMessage>>
 
 {
     code : int
     desc : String
-    data : {
-      id : String
-      messageInfo : V2TimMessage
-    }
+    data : List<V2TimMessage>
 }
 ```
 
 ## 返回参数详解
 
-| 名称   | 数值类型                                                          | 描述                                                             |
-| ---- | ------------------------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                                           | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                                        | 请求结果描述                                                         |
-| data | [V2TimMsgCreateInfoResult](../../class/v2timsdklistener-1.md) | 创建的合并消息                                                        |
+| 名称   | 数值类型                                                | 描述                                                             |
+| ---- | --------------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                                 | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                              | 请求结果描述                                                         |
+| data | List< [V2TimMessage](../../class/v2timmessage.md) > | 获取到的合并消息列表                                                     |
 
 ## 使用案例  &#x20;
 
 ```dart
+// 创建消息监听器
+V2TimAdvancedMsgListener listener = V2TimAdvancedMsgListener(
+    onRecvNewMessage: (V2TimMessage message) {
+    // 处理合并消息消息
+   if(message.elemType == MessageElemType.V2TIM_ELEM_TYPE_MERGER){
+        message.mergerElem.abstractList;// 摘要列表
+        message.mergerElem.isLayersOverLimit;// 是否超出合并上限
+        message.mergerElem.title;// 标题
+        // 根据消息id对合并消息进行下载
+        V2TimValueCallback<List<V2TimMessage>> download = await TencentImSDKPlugin.v2TIMManager.getMessageManager().downloadMergerMessage(msgID: message.msgID,);
+        if(download.code == 0){
+         List<V2TimMessage> messageList = download.data;
+        }
+      }
+    },
+  );
+  // 添加高级消息的事件监听器
+  TencentImSDKPlugin.v2TIMManager
+      .getMessageManager()
+      .addAdvancedMsgListener(listener: listener);
+
 // 创建合并消息
 V2TimValueCallback<V2TimMsgCreateInfoResult> createMergerMessageResult =
       await TencentImSDKPlugin.v2TIMManager
@@ -62,7 +67,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult> createMergerMessageResult =
             title: "user1与user2的聊天", // 合并消息标题
             abstractList: ["user1:hello", "user2:你好"], // 合并消息摘要列表
             compatibleText: "当前版本不支持该消息", // 合并消息兼容文本，低版本 SDK 如果不支持合并消息，默认会收到一条文本消息，文本消息的内容为 compatibleText
-            webMessageInstanceList:"",// web端消息列表
+            webMessageInstanceList:"",// web端消息实例列表
           );
   if (createMergerMessageResult.code == 0) {
      // 发送合并消息

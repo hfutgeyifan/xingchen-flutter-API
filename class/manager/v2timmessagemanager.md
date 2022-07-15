@@ -30,7 +30,7 @@ description: 提供高级消息处理相关接口
 | [createVideoMessage](../../api/v2timmessagemanager/createvideomessage.md)                                 | 创建视频文件                                                |
 | [deleteMessageFromLocalStorage](../../api/v2timmessagemanager/deletemessagefromlocalstorage.md)           | 删除本地消息                                                |
 | [deleteMessages](../../api/v2timmessagemanager/deletemessages.md)                                         | 删除本地及漫游消息                                             |
-| downloadMergerMessage                                                                                     | 获取合并消息的子消息列表（下载被合并的消息列表）                              |
+| [downloadMergerMessage](../../api/v2timmessagemanager/downloadmergermessage.md)                           | 获取合并消息的子消息列表（下载被合并的消息列表）                              |
 | [findMessages](../../api/v2timmessagemanager/findmessages.md)                                             | 根据 messageID 查询指定会话中的本地消息                             |
 | [getC2CHistoryMessageList](../../api/v2timmessagemanager/getc2chistorymessagelist.md)                     | 获取单聊历史消息                                              |
 | [getC2CReceiveMessageOpt](../../api/v2timmessagemanager/getc2creceivemessageopt.md)                       | 查询某个用户的 C2C 消息接收选项                                    |
