@@ -19,7 +19,7 @@ description: 群组高级接口，包含了群组的高级功能，例如群成�
 | deleteTopicFromCommunity                                                | 删除话题 4.0.1及以上版本支持 web版本不支持                 |
 | getGroupApplicationList                                                 | 获取加群的申请列表                                  |
 | getGroupAttributes                                                      | 获取指定群属性                                    |
-| getGroupMemberList                                                      | 获取群成员列表                                    |
+| [getGroupMemberList](../../api/v2timgroupmanager/getgroupmemberlist.md) | 获取群成员列表                                    |
 | getGroupMembersInfo                                                     | 获取指定的群成员资料                                 |
 | getGroupOnlineMemberCount                                               | 获取指定群在线人数                                  |
 | [getGroupsInfo](../../api/v2timgroupmanager/getgroupsinfo.md)           | 拉取群资料                                      |
@@ -28,8 +28,8 @@ description: 群组高级接口，包含了群组的高级功能，例如群成�
 | getTopicInfoList                                                        | 获取话题列表  4.0.1及以上版本支持 web版本不支持              |
 | initGroupAttributes                                                     | 初始化群属性                                     |
 | inviteUserToGroup                                                       | 邀请他人入群                                     |
-| kickGroupMember                                                         | 踢人                                         |
-| muteGroupMember                                                         | 禁言（只有管理员或群主能够调用）                           |
+| [kickGroupMember](../../api/v2timgroupmanager/kickgroupmember.md)       | 踢人                                         |
+| [muteGroupMember](../../api/v2timgroupmanager/mutegroupmember.md)       | 禁言（只有管理员或群主能够调用）                           |
 | refuseGroupApplication                                                  | 拒绝某一条加群申请                                  |
 | searchGroupByID                                                         | 通过 groupID 搜索群组  仅 web 支持该搜索方式             |
 | searchGroupMembers                                                      | 搜索群成员                                      |
