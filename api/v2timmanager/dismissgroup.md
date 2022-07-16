@@ -28,7 +28,7 @@ Work：任何人都无法解散群组。&#x20;
 ## 返回模板
 
 ```dart
-V2TimValueCallback
+V2TimCallback
 
 {
     code : int
