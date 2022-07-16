@@ -19,7 +19,7 @@ description: 关系链接口，包含了好友的添加和删除，黑名单的�
 | [addToBlackList](addtoblacklist.md)                                      | 添加用户到黑名单    |
 | [checkFriend](checkfriend.md)                                            | 检查指定用户的好友关系 |
 | [createFriendGroup](createfriendgroup.md)                                | 新建好友分组      |
-| deleteFriendApplication                                                  | 删除好友申请      |
+| [deleteFriendApplication](deletefriendapplication.md)                    | 删除好友申请      |
 | [deleteFriendGroup](deletefriendgroup.md)                                | 删除好友分组      |
 | [deleteFriendsFromFriendGroup](deletefriendsfromfriendgroup.md)          | 从好友分组中删除好友  |
 | [deleteFromBlackList](deletefromblacklist.md)                            | 把用户从黑名单中删除  |
@@ -32,7 +32,7 @@ description: 关系链接口，包含了好友的添加和删除，黑名单的�
 | [refuseFriendApplication](refusefriendapplication.md)                    | 拒绝好友申请      |
 | removeFriendListener                                                     |             |
 | [renameFriendGroup](renamefriendgroup.md)                                | 修改好友分组的名称   |
-| searchFriends                                                            | 搜索好友        |
+| [searchFriends](searchfriends.md)                                        | 搜索好友        |
 | [setFriendApplicationRead](setfriendapplicationread.md)                  | 设置好友申请已读    |
 | [setFriendInfo](setfriendinfo.md)                                        | 设置指定好友资料    |
 | setFriendListener                                                        | 设置关系链监听器    |
