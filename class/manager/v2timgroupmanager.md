@@ -20,7 +20,7 @@ description: 群组高级接口，包含了群组的高级功能，例如群成�
 | getGroupApplicationList                                                               | 获取加群的申请列表                                  |
 | getGroupAttributes                                                                    | 获取指定群属性                                    |
 | [getGroupMemberList](../../api/v2timgroupmanager/getgroupmemberlist.md)               | 获取群成员列表                                    |
-| getGroupMembersInfo                                                                   | 获取指定的群成员资料                                 |
+| [getGroupMembersInfo](../../api/v2timgroupmanager/getgroupmembersinfo.md)             | 获取指定的群成员资料                                 |
 | [getGroupOnlineMemberCount](../../api/v2timgroupmanager/getgrouponlinemembercount.md) | 获取指定群在线人数                                  |
 | [getGroupsInfo](../../api/v2timgroupmanager/getgroupsinfo.md)                         | 拉取群资料                                      |
 | getJoinedCommunityList                                                                | 获取当前用户已经加入的支持话题的社群列表 4.0.1及以上版本支持 web版本不支持 |

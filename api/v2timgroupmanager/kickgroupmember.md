@@ -6,7 +6,7 @@ description: 踢人
 
 ## API功能介绍
 
-禁言
+踢人
 
 * 普通群成员被踢后，全员（包括被踢人）会收到 `onMemberKicked` 回调。
 * 由于直播群（AVChatRoom）对进群没有限制，因此直播群（AVChatRoom）没有支持踢人的接口，您可以使用 `muteGroupMember` 禁言指定成员达到类似的成员管控的目的。
@@ -56,7 +56,7 @@ V2TimCallback
           memberList: [],// 踢出的用户id列表
           reason: ""// 踢出原因
           );
-    if (kickGroupMemberRes == 0) {
+    if (kickGroupMemberRes.code == 0) {
       // 踢出成功
     }
 
