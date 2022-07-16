@@ -13,7 +13,7 @@ description: 关系链接口，包含了好友的添加和删除，黑名单的�
 | API                                 | 描述          |
 | ----------------------------------- | ----------- |
 | acceptFriendApplication             | 同意好友申请      |
-| addFriend                           | 添加好友        |
+| [addFriend](addfriend.md)           | 添加好友        |
 | addFriendListener                   |             |
 | addFriendsToFriendGroup             | 添加好友到一个好友分组 |
 | addToBlackList                      | 添加用户到黑名单    |
@@ -27,7 +27,7 @@ description: 关系链接口，包含了好友的添加和删除，黑名单的�
 | getBlackList                        | 获取黑名单列表     |
 | getFriendApplicationList            | 获取好友申请列表    |
 | getFriendGroups                     | 获取分组信息      |
-| getFriendList                       | 获取好友列表      |
+| [getFriendList](getfriendlist.md)   | 获取好友列表      |
 | [getFriendsInfo](getfriendsinfo.md) | 获取指定好友资料    |
 | refuseFriendApplication             | 拒绝好友申请      |
 | removeFriendListener                |             |
