@@ -14,7 +14,7 @@ description: 群组高级接口，包含了群组的高级功能，例如群成�
 | ------------------------------------------------------------------------------------- | ------------------------------ |
 | acceptGroupApplication                                                                | 同意某一条加群申请                      |
 | [createGroup](../../api/v2timgroupmanager/creategroup.md)                             | 创建自定义群组                        |
-| createTopicInCommunity                                                                | 创建话题                           |
+| [createTopicInCommunity](../../api/v2timgroupmanager/createtopicincommunity.md)       | 创建话题                           |
 | [deleteGroupAttributes](../../api/v2timgroupmanager/deletegroupattributes.md)         | 删除指定群属性                        |
 | [deleteTopicFromCommunity](../../api/v2timgroupmanager/deletetopicfromcommunity.md)   | 删除话题                           |
 | getGroupApplicationList                                                               | 获取加群的申请列表                      |
@@ -25,7 +25,7 @@ description: 群组高级接口，包含了群组的高级功能，例如群成�
 | [getGroupsInfo](../../api/v2timgroupmanager/getgroupsinfo.md)                         | 拉取群资料                          |
 | [getJoinedCommunityList](../../api/v2timgroupmanager/getjoinedcommunitylist.md)       | 获取当前用户已经加入的支持话题的社群列表           |
 | [getJoinedGroupList](../../api/v2timgroupmanager/getjoinedgrouplist.md)               | 获取当前用户已经加入的群列表                 |
-| getTopicInfoList                                                                      | 获取话题列表                         |
+| [getTopicInfoList](../../api/v2timgroupmanager/gettopicinfolist.md)                   | 获取话题列表                         |
 | [initGroupAttributes](../../api/v2timgroupmanager/initgroupattributes.md)             | 初始化群属性                         |
 | inviteUserToGroup                                                                     | 邀请他人入群                         |
 | [kickGroupMember](../../api/v2timgroupmanager/kickgroupmember.md)                     | 踢人                             |
@@ -39,5 +39,5 @@ description: 群组高级接口，包含了群组的高级功能，例如群成�
 | [setGroupInfo](../../api/v2timgroupmanager/setgroupinfo.md)                           | 修改群资料                          |
 | [setGroupMemberInfo](../../api/v2timgroupmanager/setgroupmemberinfo.md)               | 修改指定的群成员资料                     |
 | [setGroupMemberRole](../../api/v2timgroupmanager/setgroupmemberrole.md)               | 设置群成员的角色                       |
-| setTopicInfo                                                                          | 设置话题属性                         |
+| [setTopicInfo](../../api/v2timgroupmanager/settopicinfo.md)                           | 设置话题属性                         |
 | [transferGroupOwner](../../api/v2timgroupmanager/transfergroupowner.md)               | 转让群主                           |
