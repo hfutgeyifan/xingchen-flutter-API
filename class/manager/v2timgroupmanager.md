@@ -12,12 +12,12 @@ description: 群组高级接口，包含了群组的高级功能，例如群成�
 
 | API                                                                                   | 描述                             |
 | ------------------------------------------------------------------------------------- | ------------------------------ |
-| acceptGroupApplication                                                                | 同意某一条加群申请                      |
+| [acceptGroupApplication](../../api/v2timgroupmanager/acceptgroupapplication.md)       | 同意某一条加群申请                      |
 | [createGroup](../../api/v2timgroupmanager/creategroup.md)                             | 创建自定义群组                        |
 | [createTopicInCommunity](../../api/v2timgroupmanager/createtopicincommunity.md)       | 创建话题                           |
 | [deleteGroupAttributes](../../api/v2timgroupmanager/deletegroupattributes.md)         | 删除指定群属性                        |
 | [deleteTopicFromCommunity](../../api/v2timgroupmanager/deletetopicfromcommunity.md)   | 删除话题                           |
-| getGroupApplicationList                                                               | 获取加群的申请列表                      |
+| [getGroupApplicationList](../../api/v2timgroupmanager/getgroupapplicationlist.md)     | 获取加群的申请列表                      |
 | [getGroupAttributes](../../api/v2timgroupmanager/getgroupattributes.md)               | 获取指定群属性                        |
 | [getGroupMemberList](../../api/v2timgroupmanager/getgroupmemberlist.md)               | 获取群成员列表                        |
 | [getGroupMembersInfo](../../api/v2timgroupmanager/getgroupmembersinfo.md)             | 获取指定的群成员资料                     |
@@ -30,7 +30,7 @@ description: 群组高级接口，包含了群组的高级功能，例如群成�
 | inviteUserToGroup                                                                     | 邀请他人入群                         |
 | [kickGroupMember](../../api/v2timgroupmanager/kickgroupmember.md)                     | 踢人                             |
 | [muteGroupMember](../../api/v2timgroupmanager/mutegroupmember.md)                     | 禁言（只有管理员或群主能够调用）               |
-| refuseGroupApplication                                                                | 拒绝某一条加群申请                      |
+| [refuseGroupApplication](../../api/v2timgroupmanager/refusegroupapplication.md)       | 拒绝某一条加群申请                      |
 | searchGroupByID                                                                       | 通过 groupID 搜索群组  仅 web 支持该搜索方式 |
 | searchGroupMembers                                                                    | 搜索群成员                          |
 | searchGroups                                                                          | 搜索群资料(需要您购买旗舰套餐)               |
