@@ -10,10 +10,10 @@ description: 添加好友到一个好友分组
 
 ## 参数详解
 
-| 参数名称       | 参数类型           | 是否必填 | 描述          |
-| ---------- | -------------- | ---- | ----------- |
-| groupName  | String         | 是    | 分组名称        |
-| userIDList | List< String > | 是    | 需要加入分组的好友id |
+| 参数名称       | 参数类型           | 是否必填 | 描述            |
+| ---------- | -------------- | ---- | ------------- |
+| groupName  | String         | 是    | 分组名称          |
+| userIDList | List< String > | 是    | 需要加入分组的好友id列表 |
 
 ## 返回模板
 
@@ -23,7 +23,7 @@ V2TimValueCallback<List<V2TimFriendOperationResult>>
 {
     code : int
     desc : String
-    data : List<V2TimFriendOperationResult>
+    data : List<V2TimFriendOperationResult>//添加分组请求的结果信息
 }
 ```
 
