@@ -25,7 +25,7 @@ IM SDK 主核心类，负责 IM SDK 的初始化、登录、消息收发，建�
 | getOfflinePushManager                                      | 离线推送功能入口                           |
 | getServerTime                                              | 获取服务器当前时间                          |
 | getSignalingManager                                        | 信令入口                               |
-| getUsersInfo                                               | 获取用户资料                             |
+| [getUsersInfo](../../api/v2timmanager/getusersinfo.md)     | 获取用户资料                             |
 | getUserStatus                                              | 获取用户在线状态 注意：4.0.3版本开始支持，web不支持     |
 | getVersion                                                 | 获取版本号                              |
 | [initSDK](../../api/v2timmanager/initsdk.md)               | 初始化 SDK                            |
@@ -37,6 +37,6 @@ IM SDK 主核心类，负责 IM SDK 的初始化、登录、消息收发，建�
 | removeGroupListener                                        | 移除群组监听器                            |
 | setAPNSListener                                            | 设置apns监听                           |
 | setGroupListener                                           | 设置群组监听器                            |
-| setSelfInfo                                                | 修改个人资料                             |
+| [setSelfInfo](../../api/v2timmanager/setselfinfo.md)       | 修改个人资料                             |
 | setSelfStatus                                              | 设置当前登录用户在线状态 注意：4.0.3版本开始支持，web不支持 |
 | unInitSDK                                                  | 反初始化 SDK                           |
