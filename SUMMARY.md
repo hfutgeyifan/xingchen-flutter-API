@@ -171,6 +171,7 @@
     * [V2TimGroupInfoResult](class/v2timgroupinforesult.md)
     * [V2TimGroupChangeInfo](api/guan-jian-lei/group/v2timgroupchangeinfo.md)
     * [V2TimGroupMemberSearchParam](class/v2timgroupmembersearchparam.md)
+    * [V2TimTopicOperationResult](api/guan-jian-lei/group/v2timtopicoperationresult.md)
     * [V2TimGroupMemberOperationResult](class/v2timgroupmemberoperationresult.md)
     * [V2TimGroupTipsElem](class/v2timgrouptipselem.md)
     * [V2TimGroupSearchParam](class/v2timgroupsearchparam.md)

@@ -22,6 +22,7 @@ description: 群组相关类型
 | [V2TimGroupInfoResult](../v2timgroupinforesult.md)                                                  | 获取群组资料结果                                                 |
 | [V2TimGroupChangeInfo](../../api/guan-jian-lei/group/v2timgroupchangeinfo.md)                       | 群 tips，群变更信息                                             |
 | [V2TimGroupMemberSearchParam](../v2timgroupmembersearchparam.md)                                    | 群成员搜索参数                                                  |
+| [V2TimTopicOperationResult](../../api/guan-jian-lei/group/v2timtopicoperationresult.md)             | 话题操作结果（添加、删除等）                                           |
 | [V2TimGroupMemberOperationResult](../v2timgroupmemberoperationresult.md)                            | 邀请其他人入群的操作结果                                             |
 | [V2TimGroupTipsElem](../v2timgrouptipselem.md)                                                      | 群 tips 消息会存消息列表，群里所有的人都会展示，比如 xxx 进群，xxx 退群，xxx 群资料被修改了等 |
 | [V2TimGroupSearchParam](../v2timgroupsearchparam.md)                                                | 群搜索参数                                                    |
