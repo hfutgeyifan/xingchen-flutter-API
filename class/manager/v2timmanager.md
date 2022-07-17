@@ -23,11 +23,11 @@ IM SDK 主核心类，负责 IM SDK 的初始化、登录、消息收发，建�
 | [getLoginUser](../../api/v2timmanager/getloginuser.md)                     | 获取当前登录用户的 UserID                   |
 | [getMessageManager](../../api/v2timmanager/getmessagemanager.md)           | 高级消息功能入口                           |
 | [getOfflinePushManager](../../api/v2timmanager/getofflinepushmanager.md)   | 离线推送功能入口                           |
-| getServerTime                                                              | 获取服务器当前时间                          |
+| [getServerTime](../../api/v2timmanager/getservertime.md)                   | 获取服务器当前时间                          |
 | [getSignalingManager](../../api/v2timmanager/getsignalingmanager.md)       | 信令入口                               |
 | [getUsersInfo](../../api/v2timmanager/getusersinfo.md)                     | 获取用户资料                             |
-| getUserStatus                                                              | 获取用户在线状态 注意：4.0.3版本开始支持，web不支持     |
-| getVersion                                                                 | 获取版本号                              |
+| getUserStatus                                                              | 获取用户在线状态                           |
+| [getVersion](../../api/v2timmanager/getversion.md)                         | 获取版本号                              |
 | [initSDK](../../api/v2timmanager/initsdk.md)                               | 初始化 SDK                            |
 | [joinGroup](../../api/v2timmanager/joingroup.md)                           | 加入群组                               |
 | [quitGroup](../../api/v2timmanager/quitgroup.md)                           | 退出群组                               |
