@@ -4,66 +4,138 @@ description: 添加群组监听器
 
 # addGroupListener
 
-
-
 ## API功能介绍
 
-用户登录
-
-首次登录一个 IM 帐号时，不需要先注册这个帐号。在登录成功后，IM 自动完成这个帐号的注册。
-
-您需要在以下场景调用 `login` 接口：
-
-* App 启动后首次使用 IM SDK 的功能。
-* 登录时票据过期：`login` 接口的回调会返回 `ERR_USER_SIG_EXPIRED（6206）` 或 `ERR_SVR_ACCOUNT_USERSIG_EXPIRED（70001）` 错误码，此时请您生成新的 userSig 重新登录。
-* 在线时票据过期：用户在线期间也可能收到 `onUserSigExpired` 回调，此时需要您生成新的 userSig 并重新登录。
-* 在线时被踢下线：用户在线情况下被踢，IM SDK 会通过 `onKickedOffline` 回调通知给您，此时可以在 UI 提示用户，并调用 `login` 重新登录。
-
-以下场景无需调用 `login` 接口：
-
-* 用户的网络断开并重新连接后，不需要调用 `login` 函数，IM SDK 会自动上线。
-* 当一个登录过程在进行时，不需要进行重复登录。
+添加群组监听器
 
 {% hint style="info" %}
-1\. 调用 IM SDK 接口成功登录后，将会开始计算 DAU，请根据业务场景合理调用登录接口，避免出现 DAU 过高的情况。
+注意：
 
-2\. 在一个 App 中，IM SDK 不支持多个帐号同时在线，如果同时登录多个帐号，只有最后登录的帐号在线。
+会议群（Meeting）和直播群（AVChatRoom）默认无onMemberInfoChanged()回调，如需回调请提交工单配置
+
+在web端时，不支持onQuitFromGroup回调
 {% endhint %}
 
 ## 参数详解
 
-| 参数名称         | 参数类型                                        | 是否必填 | 描述                                                                                   |
-| ------------ | ------------------------------------------- | ---- | ------------------------------------------------------------------------------------ |
-| userID       | String                                      | 是    | 登录用户唯一标识                                                                             |
-| logleuserSig | [LogLevelEString](../enums/loglevelenum.md) | 是    | 登录票据，计算方法请参考 [UserSig 后台 API](https://cloud.tencent.com/document/product/269/32688)。 |
+| 参数名称     | 参数类型                                                    | 是否必填 | 描述    |
+| -------- | ------------------------------------------------------- | ---- | ----- |
+| listener | [V2TimGroupListener](../../class/v2timgrouplistener.md) | 是    | 群组监听器 |
 
 ## 返回模板
 
 ```dart
-V2TimCallback
-
-{
-    code : int
-    desc : String
-}
+void
 ```
 
 ## 返回参数详解
 
-| 名称   | 数值类型   | 描述                                                             |
-| ---- | ------ | -------------------------------------------------------------- |
-| code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String | 请求结果描述                                                         |
+{% hint style="info" %}
+此方法无返回值
+{% endhint %}
 
 ## 使用案例  &#x20;
 
 ```dart
-String userID = "your user id";// 用户设置的userID
-String userSig = "userSig from your server";// 用户计算出的userSig
-V2TimCallback res = await TencentImSDKPlugin.v2TIMManager.login(userID: userID, userSig: userSig);
-if(res.code == 0){
-    // 登录成功逻辑    
-}else{
-     // 登录失败逻辑
-}
+    //设置群组监听器
+    V2TimGroupListener listener = V2TimGroupListener(
+      onApplicationProcessed: (String groupID, V2TimGroupMemberInfo opUser,
+          bool isAgreeJoin, String opReason) async {
+        //加群请求已经被群主或管理员处理了（只有申请人能够收到）
+        //groupID	群 ID
+        //opUser	处理人
+        //isAgreeJoin	是否同意加群
+        //opReason	处理原因
+      },
+      onGrantAdministrator: (String groupID, V2TimGroupMemberInfo opUser,
+          List<V2TimGroupMemberInfo> memberList) async {
+        //指定管理员身份
+        //groupID	群 ID
+        //opUser	处理人
+        //memberList	被处理的群成员
+      },
+      onGroupAttributeChanged:
+          (String groupID, Map<String, String> groupAttributeMap) async {
+        //收到群属性更新的回调
+        //groupID	群 ID
+        //groupAttributeMap	群的所有属性
+      },
+      onGroupCreated: (String groupID) async {
+        //创建群（主要用于多端同步）
+        //groupID	群 ID
+      },
+      onGroupDismissed: (String groupID, V2TimGroupMemberInfo opUser) async {
+        //群被解散了（全员能收到）
+        //groupID	群 ID
+        //opUser	处理人/
+      },
+      onGroupInfoChanged:
+          (String groupID, List<V2TimGroupChangeInfo> changeInfos) async {
+        //群成员信息被修改，仅支持禁言通知（全员能收到）。
+        //groupID	群 ID
+        //changeInfos	被修改的群成员信息
+      },
+      onGroupRecycled: (String groupID, V2TimGroupMemberInfo opUser) async {
+        //群被回收（全员能收到）
+        //groupID	群 ID
+        //changeInfos	被修改的群成员信息
+      },
+      onMemberEnter:
+          (String groupID, List<V2TimGroupMemberInfo> memberList) async {
+        //有用户加入群（全员能够收到）
+        //groupID	群 ID
+        //memberList	加入的成员
+      },
+      onMemberInfoChanged: (String groupID,
+          List<V2TimGroupMemberChangeInfo>
+              v2TIMGroupMemberChangeInfoList) async {
+        //群成员信息被修改，仅支持禁言通知（全员能收到）。
+        //groupID	群 ID
+        //v2TIMGroupMemberChangeInfoList	被修改的群成员信息
+      },
+      onMemberInvited: (String groupID, V2TimGroupMemberInfo opUser,
+          List<V2TimGroupMemberInfo> memberList) async {
+        //某些人被拉入某群（全员能够收到）
+        //groupID	群 ID
+        //opUser	处理人
+        //memberList	被拉进群成员
+      },
+      onMemberKicked: (String groupID, V2TimGroupMemberInfo opUser,
+          List<V2TimGroupMemberInfo> memberList) async {
+        //某些人被踢出某群（全员能够收到）
+        //groupID	群 ID
+        //opUser	处理人
+        //memberList	被踢成员
+      },
+      onMemberLeave: (String groupID, V2TimGroupMemberInfo member) async {
+        //有用户离开群（全员能够收到）
+        //groupID	群 ID
+        //member	离开的成员
+      },
+      onQuitFromGroup: (String groupID) async {
+        //主动退出群组（主要用于多端同步，直播群（AVChatRoom）不支持）
+        //groupID	群 ID
+      },
+      onReceiveJoinApplication:
+          (String groupID, V2TimGroupMemberInfo member, String opReason) async {
+        //有新的加群请求（只有群主或管理员会收到）
+        //groupID	群 ID
+        //member	申请人
+        //opReason	申请原因
+      },
+      onReceiveRESTCustomData: (String groupID, String customData) async {
+        //收到 RESTAPI 下发的自定义系统消息
+        //groupID	群 ID
+        //customData	自定义数据
+      },
+      onRevokeAdministrator: (String groupID, V2TimGroupMemberInfo opUser,
+          List<V2TimGroupMemberInfo> memberList) async {
+        //取消管理员身份
+        //groupID	群 ID
+        //opUser	处理人
+        //memberList	被处理的群成员
+      },
+    );
+    //添加群组监听器
+    TencentImSDKPlugin.v2TIMManager.addGroupListener(listener: listener);
 ```

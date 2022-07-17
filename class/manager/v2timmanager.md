@@ -12,7 +12,7 @@ IM SDK 主核心类，负责 IM SDK 的初始化、登录、消息收发，建�
 
 | API                                                                        | 描述                                 |
 | -------------------------------------------------------------------------- | ---------------------------------- |
-| addGroupListener                                                           | 添加群组监听器                            |
+| [addGroupListener](../../api/v2timmanager/addgrouplistener.md)             | 添加群组监听器                            |
 | callExperimentalAPI                                                        | 实验性 API 接口                         |
 | checkAbility                                                               | 能力位检测                              |
 | [dismissGroup](../../api/v2timmanager/dismissgroup.md)                     | 解散群组                               |
@@ -34,9 +34,9 @@ IM SDK 主核心类，负责 IM SDK 的初始化、登录、消息收发，建�
 | [login](../../api/v2timmanager/login.md)                                   | 用户登录                               |
 | [logout](../../api/v2timmanager/logout.md)                                 | 用户登出                               |
 | printWarning                                                               |                                    |
-| removeGroupListener                                                        | 移除群组监听器                            |
+| [removeGroupListener](../../api/v2timmanager/removegrouplistener.md)       | 移除群组监听器                            |
 | setAPNSListener                                                            | 设置apns监听                           |
-| setGroupListener                                                           | 设置群组监听器                            |
+| [setGroupListener](../../api/v2timmanager/setgrouplistener.md)             | 设置群组监听器                            |
 | [setSelfInfo](../../api/v2timmanager/setselfinfo.md)                       | 修改个人资料                             |
 | setSelfStatus                                                              | 设置当前登录用户在线状态 注意：4.0.3版本开始支持，web不支持 |
 | [unInitSDK](../../api/v2timmanager/uninitsdk.md)                           | 反初始化 SDK                           |
