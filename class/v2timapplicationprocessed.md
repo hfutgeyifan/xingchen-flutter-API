@@ -1,3 +1,0 @@
-# V2TimApplicationProcessed
-
-V2TimApplicationProcessed

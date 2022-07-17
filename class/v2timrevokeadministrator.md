@@ -1,3 +1,0 @@
-# V2TimRevokeAdministrator
-
-V2TimRevokeAdministrator
