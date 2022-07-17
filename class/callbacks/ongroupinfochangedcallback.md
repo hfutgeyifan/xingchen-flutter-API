@@ -1,12 +1,12 @@
 ---
-description: 群成员信息被修改，仅支持禁言通知（全员能收到）。
+description: 群信息被修改（全员能收到）
 ---
 
 # OnGroupInfoChangedCallback
 
 ## 回调函数功能描述
 
-群成员信息被修改，仅支持禁言通知（全员能收到）。
+群信息被修改（全员能收到）
 
 ## 回调函数模版
 
@@ -19,10 +19,10 @@ List<V2TimGroupChangeInfo> changeInfos
 
 ## 回调函数参数说明
 
-| 参数名称        | 参数类型                                                                                  | 参数描述      |
-| ----------- | ------------------------------------------------------------------------------------- | --------- |
-| groupID     | String                                                                                | 群 ID      |
-| changeInfos | List< [V2TimGroupChangeInfo](../../api/guan-jian-lei/group/v2timgroupchangeinfo.md) > | 被修改的群成员信息 |
+| 参数名称        | 参数类型                                                                                  | 参数描述   |
+| ----------- | ------------------------------------------------------------------------------------- | ------ |
+| groupID     | String                                                                                | 群 ID   |
+| changeInfos | List< [V2TimGroupChangeInfo](../../api/guan-jian-lei/group/v2timgroupchangeinfo.md) > | 修改的群信息 |
 
 ## 使用案例
 
@@ -33,7 +33,7 @@ List<V2TimGroupChangeInfo> changeInfos
           (String groupID, List<V2TimGroupChangeInfo> changeInfos) async {
         //群成员信息被修改，仅支持禁言通知（全员能收到）。
         //groupID	群 ID
-        //changeInfos	被修改的群成员信息
+        //changeInfos	修改的群信息
       }
     );
     //添加群组监听器

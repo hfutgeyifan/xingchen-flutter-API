@@ -71,9 +71,9 @@ void
       },
       onGroupInfoChanged:
           (String groupID, List<V2TimGroupChangeInfo> changeInfos) async {
-        //群成员信息被修改，仅支持禁言通知（全员能收到）。
+        //群信息被修改（全员能收到）
         //groupID	群 ID
-        //changeInfos	被修改的群成员信息
+        //changeInfos	修改的群信息
       },
       onGroupRecycled: (String groupID, V2TimGroupMemberInfo opUser) async {
         //群被回收（全员能收到）
