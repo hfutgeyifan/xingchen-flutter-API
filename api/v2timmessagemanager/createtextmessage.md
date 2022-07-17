@@ -40,20 +40,26 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>
 ## 使用案例  &#x20;
 
 ```dart
-// 创建文本消息
-V2TimValueCallback<V2TimMsgCreateInfoResult> createTextMessageRes = await TencentImSDKPlugin.v2TIMManager.getMessageManager().createTextMessage(
-    text: "test",// 文本信息
-  );
- if(createTextMessageRes.code == 0){
-       // 文本信息创建成功
-    String id =  createTextMessageRes.data?.id;
-       // 发送文本消息
-       // 在sendMessage时，若只填写receiver则发个人用户单聊消息
-       //                 若只填写groupID则发群组消息
-       //                 若填写了receiver与groupID则发群内的个人用户，消息在群聊中显示，只有指定receiver能看见
-    V2TimValueCallback<V2TimMessage> sendMessageRes = await TencentImSDKPlugin.v2TIMManager.getMessageManager().sendMessage(id: id, receiver: "userID", groupID: "groupID");
-    if(sendMessageRes.code == 0){
-      // 发送成功
+    // 创建文本消息
+    V2TimValueCallback<V2TimMsgCreateInfoResult> createTextMessageRes =
+        await TencentImSDKPlugin.v2TIMManager
+            .getMessageManager()
+            .createTextMessage(
+              text: "test", // 文本信息
+            );
+    if (createTextMessageRes.code == 0) {
+      // 文本信息创建成功
+      String? id = createTextMessageRes.data?.id;
+      // 发送文本消息
+      // 在sendMessage时，若只填写receiver则发个人用户单聊消息
+      //                 若只填写groupID则发群组消息
+      //                 若填写了receiver与groupID则发群内的个人用户，消息在群聊中显示，只有指定receiver能看见
+      V2TimValueCallback<V2TimMessage> sendMessageRes = await TencentImSDKPlugin
+          .v2TIMManager
+          .getMessageManager()
+          .sendMessage(id: id!, receiver: "userID", groupID: "groupID");
+      if (sendMessageRes.code == 0) {
+        // 发送成功
+      }
     }
-  }
 ```
