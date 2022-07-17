@@ -84,4 +84,8 @@ V2TimValueCallback<String>
             timeout: 30,//邀请超时时间
             onlineUserOnly: false,//是否只发给在线用户
             offlinePushInfo: OfflinePushInfo());//离线推送设置
+    if (inviteRes.code == 0) {
+      //创建邀请成功
+      String? inviteId = inviteRes.data;//创建的邀请id
+    }
 ```
