@@ -61,6 +61,5 @@ TencentImSDKPlugin.v2TIMManager.getMessageManager().getHistoryMessageListWithout
         // 如果同时指定了 lastMsg 和 lastMsgSeq，SDK 优先使用 lastMsg。
         // 如果均未指定 lastMsg 和 lastMsgSeq，拉取的起点取决于是否设置 getTimeBegin。设置了，则使用设置的范围作为起点；未设置，则使用最新消息作为起点。
         lastMsgSeq: -1
-
 );
 ```
