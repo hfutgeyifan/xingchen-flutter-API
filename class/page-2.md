@@ -26,10 +26,10 @@ IM API中使用到的回调函数类型
 | OnFriendListDeletedCallback                                                     |                                     |
 | [OnGrantAdministratorCallback](callbacks/ongrantadministratorcallback.md)       | 指定管理员身份                             |
 | [OnGroupAttributeChangedCallback](callbacks/ongroupattributechangedcallback.md) | 收到群属性更新的回调                          |
-| OnGroupCreatedCallback                                                          | 创建群（主要用于多端同步）                       |
-| OnGroupDismissedCallback                                                        | 群被解散了（全员能收到）                        |
-| OnGroupInfoChangedCallback                                                      | 群成员信息被修改，仅支持禁言通知（全员能收到）。            |
-| OnGroupRecycledCallback                                                         | 群被回收（全员能收到）                         |
+| [OnGroupCreatedCallback](callbacks/ongroupcreatedcallback.md)                   | 创建群（主要用于多端同步）                       |
+| [OnGroupDismissedCallback](callbacks/ongroupdismissedcallback.md)               | 群被解散了（全员能收到）                        |
+| [OnGroupInfoChangedCallback](callbacks/ongroupinfochangedcallback.md)           | 群成员信息被修改，仅支持禁言通知（全员能收到）。            |
+| [OnGroupRecycledCallback](callbacks/ongrouprecycledcallback.md)                 | 群被回收（全员能收到）                         |
 | OnInvitationCancelledCallback                                                   |                                     |
 | OnInvitationTimeoutCallback                                                     |                                     |
 | OnInviteeAcceptedCallback                                                       |                                     |

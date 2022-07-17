@@ -67,7 +67,7 @@ void
       onGroupDismissed: (String groupID, V2TimGroupMemberInfo opUser) async {
         //群被解散了（全员能收到）
         //groupID	群 ID
-        //opUser	处理人/
+        //opUser	处理人
       },
       onGroupInfoChanged:
           (String groupID, List<V2TimGroupChangeInfo> changeInfos) async {
@@ -78,7 +78,7 @@ void
       onGroupRecycled: (String groupID, V2TimGroupMemberInfo opUser) async {
         //群被回收（全员能收到）
         //groupID	群 ID
-        //changeInfos	被修改的群成员信息
+        //opUser	处理人
       },
       onMemberEnter:
           (String groupID, List<V2TimGroupMemberInfo> memberList) async {
