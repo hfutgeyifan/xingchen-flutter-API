@@ -1,2 +1,0 @@
-# OnRecvC2CCustomMessageCallback
-
