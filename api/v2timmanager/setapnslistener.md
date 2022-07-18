@@ -9,7 +9,7 @@ description: 设置苹果系统离线推送专用监听器
 设置苹果系统离线推送专用监听器
 
 * 为兼容苹果系统设置的离线推送专用监听器
-* 先调用setAPNSListener()，再调用doBackground()
+* 先调用`setAPNSListener()`，再调用[`doBackground`](../v2timofflinepushmanager/dobackground.md)`()`
 
 ## 参数详解
 

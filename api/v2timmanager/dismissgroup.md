@@ -8,8 +8,8 @@ description: 解散群组
 
 解散群组
 
-* 您可以调用 `dismissGroup` 解散群组，全员会收到 `onGroupDismissed`回调。
-* 如果您在服务器端设置了允许自动解散不活跃的群，当群被服务器端自动解散后，SDK 会收到 `onGroupRecycled`回调。
+* 您可以调用 `dismissGroup` 解散群组，全员会收到 [`onGroupDismissed`](../callbacks/ongroupdismissedcallback.md)回调。
+* 如果您在服务器端设置了允许自动解散不活跃的群，当群被服务器端自动解散后，SDK 会收到 [`onGroupRecycled`](../callbacks/ongrouprecycledcallback.md)回调。
 
 {% hint style="info" %}
 注意：

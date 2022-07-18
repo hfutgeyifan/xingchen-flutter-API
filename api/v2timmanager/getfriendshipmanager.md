@@ -8,7 +8,7 @@ description: 关系链功能入口
 
 关系链功能入口
 
-* 关系链功能方法在核心类 `TencentImSDKPlugin.v2TIMManager.`getFriendshipManager`()`中。
+* 关系链功能方法在核心类 `TencentImSDKPlugin.v2TIMManager.getFriendshipManager()`中。
 
 ## 参数详解
 
@@ -24,9 +24,9 @@ V2TIMFriendshipManager
 
 ## 返回参数详解
 
-| 名称                     | 数值类型                                       | 描述      |
-| ---------------------- | ------------------------------------------ | ------- |
-| V2TIMFriendshipManager | [V2TIMFriendshipManager](broken-reference) | 关系链功能入口 |
+| 名称                     | 数值类型                                                 | 描述      |
+| ---------------------- | ---------------------------------------------------- | ------- |
+| V2TIMFriendshipManager | [V2TIMFriendshipManager](../v2timfriendshipmanager/) | 关系链功能入口 |
 
 ## 使用案例  &#x20;
 

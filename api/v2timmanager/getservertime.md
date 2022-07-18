@@ -38,7 +38,7 @@ V2TimValueCallback<int>
 | ---- | ------ | -------------------------------------------------------------- |
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
-| data | String | 服务器当前时间                                                        |
+| data | int    | 服务器当前时间                                                        |
 
 ## 使用案例  &#x20;
 

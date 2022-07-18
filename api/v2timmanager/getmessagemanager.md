@@ -24,9 +24,9 @@ V2TIMMessageManager
 
 ## 返回参数详解
 
-| 名称                  | 数值类型                                    | 描述       |
-| ------------------- | --------------------------------------- | -------- |
-| V2TIMMessageManager | [V2TIMMessageManager](broken-reference) | 高级消息功能入口 |
+| 名称                  | 数值类型                                           | 描述       |
+| ------------------- | ---------------------------------------------- | -------- |
+| V2TIMMessageManager | [V2TIMMessageManager](../v2timmessagemanager/) | 高级消息功能入口 |
 
 ## 使用案例  &#x20;
 

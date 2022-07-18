@@ -8,7 +8,7 @@ description: 信令入口
 
 信令入口
 
-* 信令功能方法在核心类 `TencentImSDKPlugin.v2TIMManager.`getSignalingManager`()`中。
+* 信令功能方法在核心类 `TencentImSDKPlugin.v2TIMManager.getSignalingManager()`中。
 
 ## 参数详解
 
@@ -24,9 +24,9 @@ V2TIMSignalingManager
 
 ## 返回参数详解
 
-| 名称                    | 数值类型                                      | 描述   |
-| --------------------- | ----------------------------------------- | ---- |
-| V2TIMSignalingManager | [V2TIMSignalingManager](broken-reference) | 信令入口 |
+| 名称                    | 数值类型                                               | 描述   |
+| --------------------- | -------------------------------------------------- | ---- |
+| V2TIMSignalingManager | [V2TIMSignalingManager](../v2timsignalingmanager/) | 信令入口 |
 
 ## 使用案例  &#x20;
 

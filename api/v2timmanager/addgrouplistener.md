@@ -11,16 +11,16 @@ description: 添加群组监听器
 {% hint style="info" %}
 注意：
 
-会议群（Meeting）和直播群（AVChatRoom）默认无onMemberInfoChanged()回调，如需回调请提交工单配置
+会议群（Meeting）和直播群（AVChatRoom）默认无[onMemberInfoChanged](../callbacks/onmemberinfochangedcallback.md)回调，如需回调请提交工单配置
 
-在web端时，不支持onQuitFromGroup回调
+在web端时，不支持[onQuitFromGroup](../callbacks/onquitfromgroupcallback.md)回调
 {% endhint %}
 
 ## 参数详解
 
-| 参数名称     | 参数类型                                   | 是否必填 | 描述    |
-| -------- | -------------------------------------- | ---- | ----- |
-| listener | [V2TimGroupListener](broken-reference) | 是    | 群组监听器 |
+| 参数名称     | 参数类型                                                                  | 是否必填 | 描述    |
+| -------- | --------------------------------------------------------------------- | ---- | ----- |
+| listener | [V2TimGroupListener](../guan-jian-lei/listener/v2timgrouplistener.md) | 是    | 群组监听器 |
 
 ## 返回模板
 

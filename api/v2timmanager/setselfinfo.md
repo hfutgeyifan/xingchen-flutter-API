@@ -8,13 +8,13 @@ description: 修改个人资料
 
 修改个人资料
 
-* 资料修改成功后，您会收到 `onSelfInfoUpdated` 回调。
+* 资料修改成功后，您会收到 [`onSelfInfoUpdated`](../callbacks/v2timuserfullinfocallback.md) 回调。
 
 ## 参数详解
 
-| 参数名称         | 参数类型                                  | 是否必填 | 描述         |
-| ------------ | ------------------------------------- | ---- | ---------- |
-| userFullInfo | [V2TimUserFullInfo](broken-reference) | 是    | 需要修改的用户的信息 |
+| 参数名称         | 参数类型                                                            | 是否必填 | 描述         |
+| ------------ | --------------------------------------------------------------- | ---- | ---------- |
+| userFullInfo | [V2TimUserFullInfo](../guan-jian-lei/user/v2timuserfullinfo.md) | 是    | 需要修改的用户的信息 |
 
 ## 返回模板
 

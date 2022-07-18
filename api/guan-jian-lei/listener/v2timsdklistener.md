@@ -32,7 +32,7 @@ SDK的监听器回调
 
 ### onSelfInfoUpdated
 
-* 参数类型 : V2TimUserFullInfoCallback
+* 参数类型 : [V2TimUserFullInfoCallback](../../callbacks/v2timuserfullinfocallback.md)
 * 参数描述：用户信息更新的回调函数
 
 ### onUserSigExpired
