@@ -25,14 +25,14 @@ V2TimMessage message
 ## 使用案例
 
 ```dart
-    //设置群组监听器
+    //设置会话监听器
     V2TimGroupListener listener = V2TimGroupListener(
       onRecvMessageModified: (V2TimMessage message) {
         // 消息内容被修改
         // message 为被修改之后的消息对象
       },
     );
-    //添加群组监听器
+    //添加会话监听器
     TencentImSDKPlugin.v2TIMManager.addGroupListener(listener: listener);
 ```
 

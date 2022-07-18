@@ -52,9 +52,9 @@ IM API中使用到的回调函数类型
 | [OnRecvMessageModified](callbacks/onrecvmessagemodified.md)                                   | 消息内容被修改                             |
 | [OnRecvMessageReadReceipts](callbacks/onrecvmessagereadreceipts.md)                           | 消息已读回执通知                            |
 | [OnRecvMessageRevokedCallback](callbacks/onrecvmessagerevokedcallback.md)                     | 收到消息撤回的通知                           |
-| OnRecvNewMessageCallback                                                                      | 收到新消息                               |
+| [OnRecvNewMessageCallback](callbacks/onrecvnewmessagecallback.md)                             | 收到新消息                               |
 | [OnRevokeAdministratorCallback](callbacks/onrevokeadministratorcallback.md)                   | 取消管理员身份                             |
-| OnSendMessageProgressCallback                                                                 | 文件上传进度回调                            |
+| [OnSendMessageProgressCallback](callbacks/onsendmessageprogresscallback.md)                   | 文件上传进度回调                            |
 | [OnTotalUnreadMessageCountChanged](callbacks/ontotalunreadmessagecountchanged.md)             | 会话未读总数变更通知                          |
 | OnUserStatusChanged                                                                           |                                     |
 | V2TimUserFullInfoCallback                                                                     | 用户信息更新                              |

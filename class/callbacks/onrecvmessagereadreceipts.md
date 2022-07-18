@@ -27,7 +27,7 @@ List<V2TimMessageReceipt> receiptList
 ## 使用案例
 
 ```dart
-    //设置群组监听器
+    //设置会话监听器
     V2TimGroupListener listener = V2TimGroupListener(
       onRecvMessageReadReceipts: (List<V2TimMessageReceipt> receiptList) {
         //消息已读回执通知（如果自己发送的消息支持已读回执，消息接收端调用 sendMessageReadReceipts，自己会收到该通知）
@@ -41,7 +41,7 @@ List<V2TimMessageReceipt> receiptList
         }
       },
     );
-    //添加群组监听器
+    //添加会话监听器
     TencentImSDKPlugin.v2TIMManager.addGroupListener(listener: listener);
 ```
 

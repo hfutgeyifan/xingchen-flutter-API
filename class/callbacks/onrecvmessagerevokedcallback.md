@@ -25,14 +25,14 @@ String messageid
 ## 使用案例
 
 ```dart
-    //设置群组监听器
+    //设置会话监听器
     V2TimGroupListener listener = V2TimGroupListener(
       onRecvMessageRevoked: (String messageid) {
         // 收到消息撤回的通知
         // messageid 撤回消息的id
       },
     );
-    //添加群组监听器
+    //添加会话监听器
     TencentImSDKPlugin.v2TIMManager.addGroupListener(listener: listener);
 ```
 
