@@ -17,7 +17,7 @@ IM API中使用到的回调函数类型
 | [OnApplicationProcessedCallback](callbacks/onapplicationprocessedcallback.md)                 | 加群请求已经被群主或管理员处理了（只有申请人能够收到）         |
 | [OnBlackListAddCallback](callbacks/onblacklistaddcallback.md)                                 | 黑名单列表新增用户的回调                        |
 | [OnBlackListDeletedCallback](callbacks/onblacklistdeletedcallback.md)                         | 黑名单列表删除用户的回调                        |
-| OnConversationChangedCallback                                                                 |                                     |
+| [OnConversationChangedCallback](callbacks/onconversationchangedcallback.md)                   | 某些会话的关键信息发生变化                       |
 | [OnFriendApplicationListAddedCallback](callbacks/onfriendapplicationlistaddedcallback.md)     | 好友请求数量增加的回调                         |
 | [OnFriendApplicationListDeletedCallback](callbacks/onfriendapplicationlistdeletedcallback.md) | 好友请求数量减少的回调                         |
 | [OnFriendApplicationListReadCallback](callbacks/onfriendapplicationlistreadcallback.md)       | 好友请求已读的回调                           |
@@ -39,7 +39,7 @@ IM API中使用到的回调函数类型
 | [OnMemberInvitedCallback](callbacks/onmemberinvitedcallback.md)                               | 某些人被拉入某群（全员能够收到）                    |
 | [OnMemberKickedCallback](callbacks/onmemberkickedcallback.md)                                 | 某些人被踢出某群（全员能够收到）                    |
 | [OnMemberLeaveCallback](callbacks/onmemberleavecallback.md)                                   | 有用户离开群（全员能够收到）                      |
-| OnNewConversation                                                                             |                                     |
+| [OnNewConversation](callbacks/onnewconversation.md)                                           | 有新的会话                               |
 | [OnQuitFromGroupCallback](callbacks/onquitfromgroupcallback.md)                               | 主动退出群组（主要用于多端同步，直播群（AVChatRoom）不支持） |
 | [OnReceiveJoinApplicationCallback](callbacks/onreceivejoinapplicationcallback.md)             | 有新的加群请求（只有群主或管理员会收到）                |
 | [OnReceiveNewInvitationCallback](callbacks/onreceivenewinvitationcallback.md)                 | 获取新的邀请的回调                           |
@@ -55,7 +55,7 @@ IM API中使用到的回调函数类型
 | OnRecvNewMessageCallback                                                                      |                                     |
 | [OnRevokeAdministratorCallback](callbacks/onrevokeadministratorcallback.md)                   | 取消管理员身份                             |
 | OnSendMessageProgressCallback                                                                 |                                     |
-| OnTotalUnreadMessageCountChanged                                                              |                                     |
+| [OnTotalUnreadMessageCountChanged](callbacks/ontotalunreadmessagecountchanged.md)             | 会话未读总数变更通知                          |
 | OnUserStatusChanged                                                                           |                                     |
 | V2TimUserFullInfoCallback                                                                     |                                     |
 | V2TimValueCallback                                                                            |                                     |
