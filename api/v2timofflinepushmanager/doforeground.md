@@ -8,6 +8,8 @@ description: APP 检测到应用进前台时可以调用此接口
 
 APP 检测到应用退后台时可以调用此接口
 
+* 监听应用进前台方式可见[文档](https://cloud.tencent.com/document/product/269/75430#.E6.AD.A5.E9.AA.A45.3A-.E5.89.8D.E5.90.8E.E5.8F.B0.E5.88.87.E6.8D.A2.E7.9B.91.E5.90.AC.3Ca-id.3D.22step\_5.22.3E.3C.2Fa.3E)。
+
 {% hint style="info" %}
 从5.0.1（native）版本开始，如果配置了离线推送，会收到厂商的离线推送通道下发的通知栏消息。
 {% endhint %}

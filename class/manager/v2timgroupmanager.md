@@ -34,7 +34,7 @@ description: 群组高级接口，包含了群组的高级功能，例如群成�
 | [searchGroupByID](../../api/v2timgroupmanager/searchgroupbyid.md)                     | 通过 groupID 搜索群组       |
 | [searchGroupMembers](../../api/v2timgroupmanager/searchgroupmembers.md)               | 搜索群成员                 |
 | [searchGroups](../../api/v2timgroupmanager/searchgroups.md)                           | 搜索群资料                 |
-| setGroupApplicationRead                                                               | 标记申请列表为已读             |
+| [setGroupApplicationRead](../../api/v2timgroupmanager/setgroupapplicationread.md)     | 标记申请列表为已读             |
 | [setGroupAttributes](../../api/v2timgroupmanager/setgroupattributes.md)               | 设置群属性                 |
 | [setGroupInfo](../../api/v2timgroupmanager/setgroupinfo.md)                           | 修改群资料                 |
 | [setGroupMemberInfo](../../api/v2timgroupmanager/setgroupmemberinfo.md)               | 修改指定的群成员资料            |

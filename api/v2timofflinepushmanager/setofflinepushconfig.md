@@ -14,7 +14,7 @@ description: 设置离线推送配置信息
 | ----------- | ------ | ---- | ------------------------------------------------------------- |
 | businessID  | double | 是    | businessID 为对应厂商的证书 ID                                        |
 | token       | String | 是    | 应合规要求，在用户同意隐私协议登录成功后，分别初始化注册各个厂商推送服务，并在注册结果回调处保存注册成功后的 token， |
-| isTPNSToken | bool   | 否    |                                                               |
+| isTPNSToken | bool   | 否    | 传false即可。                                                     |
 
 ## 返回模板
 
@@ -44,7 +44,7 @@ V2TimCallback
         .setOfflinePushConfig(
           businessID: 0,//businessID 为对应厂商的证书 ID
           token: "",//应合规要求，在用户同意隐私协议登录成功后，分别初始化注册各个厂商推送服务，并在注册结果回调处保存注册成功后的 token
-          isTPNSToken: false);
+          isTPNSToken: false);//传false即可。
     if (setOfflinePushConfigRes.code == 0) {
         // 设置成功
         }

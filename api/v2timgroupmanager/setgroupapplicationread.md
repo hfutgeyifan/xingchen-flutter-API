@@ -1,12 +1,12 @@
 ---
-description: 标记申请列表为已读
+description: 标记所有群组申请列表为已读
 ---
 
 # setGroupApplicationRead
 
 ## API功能介绍
 
-标记申请列表为已读
+标记所有群组申请列表为已读
 
 {% hint style="info" %}
 注意：
@@ -41,7 +41,7 @@ V2TimCallback
 ## 使用案例  &#x20;
 
 ```dart
-    // 标记申请列表为已读
+    // 标记所有群组申请列表为已读
     V2TimCallback setGroupApplicationReadRes = await TencentImSDKPlugin
         .v2TIMManager
         .getGroupManager()
