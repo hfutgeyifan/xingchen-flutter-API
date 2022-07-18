@@ -45,13 +45,13 @@ void
       onInviteeAccepted: (String inviteID, String invitee, String data) async {
         //邀请被接受的回调
         //inviteID 邀请消息信令id
-        //inviter 被邀请人id
+        //invitee 被邀请人id
         //data 接受邀请时的自定义data
       },
       onInviteeRejected: (String inviteID, String invitee, String data) async {
         //邀请被拒绝的回调
         //inviteID 邀请消息信令id
-        //inviter 被邀请人id
+        //invitee 被邀请人id
         //data 拒绝邀请时的自定义data
       },
       onReceiveNewInvitation: (String inviteID, String inviter, String groupID,
