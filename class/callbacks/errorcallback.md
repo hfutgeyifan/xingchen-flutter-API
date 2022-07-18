@@ -33,8 +33,8 @@ int sdkAppID = 0;
 // 2. 添加 V2TimSDKListener 的事件监听器，sdkListener 是 V2TimSDKListener 的实现类
 V2TimSDKListener sdkListener = V2TimSDKListener(
       onConnectFailed: (code, error) {
-        print(code);
-        print(error);
+        print(code);//请求结果错误码
+        print(error);//请求结果错误描述
       },// 连接失败的回调函数
 );
 

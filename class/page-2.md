@@ -12,8 +12,8 @@ IM API中使用到的回调函数类型
 
 | 回调函数名称                                                                                        | 说明                                  |
 | --------------------------------------------------------------------------------------------- | ----------------------------------- |
-| V2TimCallback                                                                                 |                                     |
-| ErrorCallback                                                                                 |                                     |
+| VoidCallback                                                                                  |                                     |
+| [ErrorCallback](callbacks/errorcallback.md)                                                   | 请求失败的回调函数                           |
 | [OnApplicationProcessedCallback](callbacks/onapplicationprocessedcallback.md)                 | 加群请求已经被群主或管理员处理了（只有申请人能够收到）         |
 | [OnBlackListAddCallback](callbacks/onblacklistaddcallback.md)                                 | 黑名单列表新增用户的回调                        |
 | [OnBlackListDeletedCallback](callbacks/onblacklistdeletedcallback.md)                         | 黑名单列表删除用户的回调                        |
@@ -54,5 +54,3 @@ IM API中使用到的回调函数类型
 | [OnTotalUnreadMessageCountChanged](callbacks/ontotalunreadmessagecountchanged.md)             | 会话未读总数变更通知                          |
 | [OnUserStatusChanged](callbacks/onuserstatuschanged.md)                                       | 用户状态变更通知                            |
 | [V2TimUserFullInfoCallback](callbacks/v2timuserfullinfocallback.md)                           | 登录用户的资料发生了更新更新                      |
-| V2TimValueCallback                                                                            |                                     |
-| VoidCallback                                                                                  |                                     |
