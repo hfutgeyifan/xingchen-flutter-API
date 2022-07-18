@@ -38,9 +38,9 @@ LinkedHashMap<dynamic, dynamic>
 
 ## 返回参数详解
 
-| 名称            | 数值类型                                                             | 描述                      |
-| ------------- | ---------------------------------------------------------------- | ----------------------- |
-| LinkedHashMap | LinkedHashMap< [dynamic, dynamic ](../../class/v2timmessage.md)> | 获取的会话信息(没有处理Native返回数据) |
+| 名称            | 数值类型                                                  | 描述                      |
+| ------------- | ----------------------------------------------------- | ----------------------- |
+| LinkedHashMap | LinkedHashMap< [dynamic, dynamic ](broken-reference)> | 获取的会话信息(没有处理Native返回数据) |
 
 ## 使用案例  &#x20;
 

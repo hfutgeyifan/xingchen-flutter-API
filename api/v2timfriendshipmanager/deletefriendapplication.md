@@ -10,10 +10,10 @@ description: 删除好友申请
 
 ## 参数详解
 
-| 参数名称   | 参数类型                                                               | 是否必填 | 描述           |
-| ------ | ------------------------------------------------------------------ | ---- | ------------ |
-| type   | [FriendApplicationTypeEnum](../enums/friendapplicationtypeenum.md) | 是    | 加好友类型        |
-| userID | String                                                             | 是    | 被删除好友申请的用户id |
+| 参数名称   | 参数类型                                          | 是否必填 | 描述           |
+| ------ | --------------------------------------------- | ---- | ------------ |
+| type   | [FriendApplicationTypeEnum](broken-reference) | 是    | 加好友类型        |
+| userID | String                                        | 是    | 被删除好友申请的用户id |
 
 ## 返回模板
 

@@ -2,7 +2,7 @@
 description: 删除本地消息
 ---
 
-# Copy of deleteMessageFromLocalStorage
+# deleteMessageFromLocalStorage
 
 ## API功能介绍
 

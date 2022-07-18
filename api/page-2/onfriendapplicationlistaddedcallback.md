@@ -1,0 +1,40 @@
+---
+description: 好友请求数量增加的回调
+---
+
+# OnFriendApplicationListAddedCallback
+
+## 回调函数功能描述
+
+好友请求数量增加的回调
+
+## 回调函数模版
+
+```dart
+OnFriendApplicationListAddedCallback = void Function(
+List<V2TimFriendApplication> applicationList
+)
+```
+
+## 回调函数参数说明
+
+| 参数名称            | 参数类型                                               | 参数描述        |
+| --------------- | -------------------------------------------------- | ----------- |
+| applicationList | List< [V2TimFriendApplication](broken-reference) > | 新增的好友请求信息列表 |
+
+## 使用案例
+
+```dart
+    //设置关系链监听器
+    V2TimFriendshipListener listener = V2TimFriendshipListener(
+      onFriendApplicationListAdded:
+          (List<V2TimFriendApplication> applicationList) async {
+        //好友请求数量增加的回调
+        //applicationList 新增的好友请求信息列表
+      }
+    );
+    TencentImSDKPlugin.v2TIMManager
+        .getFriendshipManager()
+        .addFriendListener(listener: listener); //添加关系链监听器
+```
+

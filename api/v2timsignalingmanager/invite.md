@@ -10,13 +10,13 @@ description: 邀请某个人
 
 ## 参数详解
 
-| 参数名称            | 参数类型                                              | 是否必填 | 描述         |
-| --------------- | ------------------------------------------------- | ---- | ---------- |
-| invitee         | String                                            | 是    | 被邀请人id     |
-| data            | String                                            | 是    | 邀请时附带的定义消息 |
-| timeout         | int                                               | 否    | 邀请超时时间     |
-| onlineUserOnly  | bool                                              | 否    | 是否只发给在线用户  |
-| offlinePushInfo | [OfflinePushInfo](../../class/offlinepushinfo.md) | 否    | 离线推送设置     |
+| 参数名称            | 参数类型                                | 是否必填 | 描述         |
+| --------------- | ----------------------------------- | ---- | ---------- |
+| invitee         | String                              | 是    | 被邀请人id     |
+| data            | String                              | 是    | 邀请时附带的定义消息 |
+| timeout         | int                                 | 否    | 邀请超时时间     |
+| onlineUserOnly  | bool                                | 否    | 是否只发给在线用户  |
+| offlinePushInfo | [OfflinePushInfo](broken-reference) | 否    | 离线推送设置     |
 
 ## 返回模板
 

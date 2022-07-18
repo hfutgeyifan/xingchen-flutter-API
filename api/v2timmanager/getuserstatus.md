@@ -36,11 +36,11 @@ V2TimValueCallback<List<V2TimUserStatus>>
 
 ## 返回参数详解
 
-| 名称   | 数值类型                                                                | 描述                                                             |
-| ---- | ------------------------------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                                                 | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                                              | 请求结果描述                                                         |
-| data | List< [V2TimUserStatus](../guan-jian-lei/user/v2timuserstatus.md) > | 查询到的用户在线状态列表                                                   |
+| 名称   | 数值类型                                        | 描述                                                             |
+| ---- | ------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                         | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                      | 请求结果描述                                                         |
+| data | List< [V2TimUserStatus](broken-reference) > | 查询到的用户在线状态列表                                                   |
 
 ## 使用案例  &#x20;
 

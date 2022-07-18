@@ -2,7 +2,7 @@
 description: 删除本地及漫游消息
 ---
 
-# Copy of deleteMessages
+# deleteMessages
 
 ## API功能介绍
 

@@ -24,9 +24,9 @@ V2TIMConversationManager
 
 ## 返回参数详解
 
-| 名称                       | 数值类型                                                     | 描述     |
-| ------------------------ | -------------------------------------------------------- | ------ |
-| V2TIMConversationManager | [V2TIMConversationManager](../v2timconversationmanager/) | 会话功能入口 |
+| 名称                       | 数值类型                                         | 描述     |
+| ------------------------ | -------------------------------------------- | ------ |
+| V2TIMConversationManager | [V2TIMConversationManager](broken-reference) | 会话功能入口 |
 
 ## 使用案例  &#x20;
 

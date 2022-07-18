@@ -11,17 +11,17 @@ description: 初始化 SDK
 初始化 SDK 需要操作以下步骤：
 
 1. 准备 [SDKAppID](https://cloud.tencent.com/login)。
-2. 设置 [LogLevelEnum](../enums/loglevelenum.md)。
-3. 设置 [V2TimSDKListener](../../class/v2timsdklistener.md)。
+2. 设置 [LogLevelEnum](broken-reference)。
+3. 设置 [V2TimSDKListener](broken-reference)。
 4. 调用 initSDK 初始化 SDK。
 
 ## 参数详解
 
-| 参数名称     | 参数类型                                                | 是否必填 | 描述                                                    |
-| -------- | --------------------------------------------------- | ---- | ----------------------------------------------------- |
-| sdkAppID | int                                                 | 是    | 应用ID，可在[控制台](https://console.cloud.tencent.com/im)中获取 |
-| loglevel | [LogLevelEnum](../enums/loglevelenum.md)            | 是    | 配置信息                                                  |
-| listener | [V2TimSDKListener](../../class/v2timsdklistener.md) | 是    | SDK回调                                                 |
+| 参数名称     | 参数类型                                 | 是否必填 | 描述                                                    |
+| -------- | ------------------------------------ | ---- | ----------------------------------------------------- |
+| sdkAppID | int                                  | 是    | 应用ID，可在[控制台](https://console.cloud.tencent.com/im)中获取 |
+| loglevel | [LogLevelEnum](broken-reference)     | 是    | 配置信息                                                  |
+| listener | [V2TimSDKListener](broken-reference) | 是    | SDK回调                                                 |
 
 ## 返回模板
 

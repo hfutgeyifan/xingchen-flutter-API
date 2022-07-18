@@ -30,10 +30,10 @@ description: 用户登录
 
 ## 参数详解
 
-| 参数名称         | 参数类型                                        | 是否必填 | 描述                                                                                   |
-| ------------ | ------------------------------------------- | ---- | ------------------------------------------------------------------------------------ |
-| userID       | String                                      | 是    | 登录用户唯一标识                                                                             |
-| logleuserSig | [LogLevelEString](../enums/loglevelenum.md) | 是    | 登录票据，计算方法请参考 [UserSig 后台 API](https://cloud.tencent.com/document/product/269/32688)。 |
+| 参数名称         | 参数类型                                | 是否必填 | 描述                                                                                   |
+| ------------ | ----------------------------------- | ---- | ------------------------------------------------------------------------------------ |
+| userID       | String                              | 是    | 登录用户唯一标识                                                                             |
+| logleuserSig | [LogLevelEString](broken-reference) | 是    | 登录票据，计算方法请参考 [UserSig 后台 API](https://cloud.tencent.com/document/product/269/32688)。 |
 
 ## 返回模板
 

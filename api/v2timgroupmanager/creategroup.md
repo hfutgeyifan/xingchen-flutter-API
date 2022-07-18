@@ -20,18 +20,18 @@ description: 创建自定义群组
 
 ## 参数详解
 
-| 参数名称           | 参数类型                                                   | 是否必填 | 描述            |
-| -------------- | ------------------------------------------------------ | ---- | ------------- |
-| groupID        | String                                                 | 否    | 自定义群组 ID      |
-| groupType      | [GroupType](../enums/grouptype.md)                     | 是    | 群类型           |
-| groupName      | String                                                 | 是    | 群名称，不能为 null。 |
-| notification   | String                                                 | 否    | 群公告           |
-| introduction   | String                                                 | 否    | 群介绍           |
-| faceUrl        | String                                                 | 否    | 群头像Url        |
-| isAllMuted     | bool                                                   | 否    | 是否全体禁言        |
-| addOpt         | [GroupAddOptTypeEnum](../enums/groupaddopttypeenum.md) | 否    | 加群选项          |
-| memberList     | List< V2TimGroupMember >                               | 否    |  初始成员列表       |
-| isSupportTopic | bool                                                   | 否    | 是否支持话题        |
+| 参数名称           | 参数类型                                    | 是否必填 | 描述            |
+| -------------- | --------------------------------------- | ---- | ------------- |
+| groupID        | String                                  | 否    | 自定义群组 ID      |
+| groupType      | [GroupType](broken-reference)           | 是    | 群类型           |
+| groupName      | String                                  | 是    | 群名称，不能为 null。 |
+| notification   | String                                  | 否    | 群公告           |
+| introduction   | String                                  | 否    | 群介绍           |
+| faceUrl        | String                                  | 否    | 群头像Url        |
+| isAllMuted     | bool                                    | 否    | 是否全体禁言        |
+| addOpt         | [GroupAddOptTypeEnum](broken-reference) | 否    | 加群选项          |
+| memberList     | List< V2TimGroupMember >                | 否    |  初始成员列表       |
+| isSupportTopic | bool                                    | 否    | 是否支持话题        |
 
 ## 返回模板
 

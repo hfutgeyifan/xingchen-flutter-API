@@ -40,19 +40,19 @@ createTargetedGroupMessage：定向群消息
 
 ## 参数详解
 
-| 参数                        | 参数类型                                               | 是否必填 | 含义                     | 单聊有效   | 群聊有效   | 说明                                                    |
-| ------------------------- | -------------------------------------------------- | ---- | ---------------------- | ------ | ------ | ----------------------------------------------------- |
-| id                        | String                                             | 是    | 创建消息返回的id              | YES    | YES    | 需要通过对应的 `createXxxMessage` 接口先行创建                     |
-| receiver                  | String                                             | 是    | 单聊消息接收者 userID         | YES    | **NO** | 如果是发送 C2C 单聊消息，只需要指定 receiver 即可                      |
-| groupID                   | String                                             | 是    | 群聊 groupID             | **NO** | YES    | 如果是发送群聊消息，只需要指定 groupID 即可                            |
-| priority                  | [MessagePriorityEnum](../enums/messagepriority.md) | 否    | 消息优先级                  | **NO** | YES    | 请把重要消息设置为高优先级（例如红包、礼物消息），高频且不重要的消息设置为低优先级（例如点赞消息）     |
-| onlineUserOnly            | bool                                               | 否    | 是否只有在线用户才能收到           | YES    | YES    | 如果设置为 YES ，接收方历史消息拉取不到，常被用于实现”对方正在输入”或群组里的非重要提示等弱提示功能 |
-| offlinePushInfo           | [OfflinePushInfo](../../class/offlinepushinfo.md)  | 否    | 离线推送信息                 | YES    | YES    | 离线推送时携带的标题和内容                                         |
-| needReadReceipt           | bool                                               | 否    | 发送群消息是否支持已读            | **NO** | YES    | 发送群消息是否支持已读                                           |
-| isExcludedFromUnreadCount | bool                                               | 否    | 发送消息是否计入会话未读数          | YES    | YES    | 如果设置为 true，发送消息不会计入会话未读，默认为 false                     |
-| isExcludedFromLastMessage | bool                                               | 否    | 发送消息是否计入会话 lastMessage | YES    | YES    | 如果设置为 true，发送消息不会计入会话 lastMessage，默认为 false           |
-| cloudCustomData           | String                                             | 否    | 消息云端数据                 | YES    | YES    | 消息附带的额外的数据，存云端，消息的接受者可以访问到                            |
-| localCustomData           | String                                             | 否    | 消息本地数据                 | YES    | YES    | 消息附带的额外的数据，存本地，消息的接受者不可以访问到，App 卸载后数据丢失               |
+| 参数                        | 参数类型                                    | 是否必填 | 含义                     | 单聊有效   | 群聊有效   | 说明                                                    |
+| ------------------------- | --------------------------------------- | ---- | ---------------------- | ------ | ------ | ----------------------------------------------------- |
+| id                        | String                                  | 是    | 创建消息返回的id              | YES    | YES    | 需要通过对应的 `createXxxMessage` 接口先行创建                     |
+| receiver                  | String                                  | 是    | 单聊消息接收者 userID         | YES    | **NO** | 如果是发送 C2C 单聊消息，只需要指定 receiver 即可                      |
+| groupID                   | String                                  | 是    | 群聊 groupID             | **NO** | YES    | 如果是发送群聊消息，只需要指定 groupID 即可                            |
+| priority                  | [MessagePriorityEnum](broken-reference) | 否    | 消息优先级                  | **NO** | YES    | 请把重要消息设置为高优先级（例如红包、礼物消息），高频且不重要的消息设置为低优先级（例如点赞消息）     |
+| onlineUserOnly            | bool                                    | 否    | 是否只有在线用户才能收到           | YES    | YES    | 如果设置为 YES ，接收方历史消息拉取不到，常被用于实现”对方正在输入”或群组里的非重要提示等弱提示功能 |
+| offlinePushInfo           | [OfflinePushInfo](broken-reference)     | 否    | 离线推送信息                 | YES    | YES    | 离线推送时携带的标题和内容                                         |
+| needReadReceipt           | bool                                    | 否    | 发送群消息是否支持已读            | **NO** | YES    | 发送群消息是否支持已读                                           |
+| isExcludedFromUnreadCount | bool                                    | 否    | 发送消息是否计入会话未读数          | YES    | YES    | 如果设置为 true，发送消息不会计入会话未读，默认为 false                     |
+| isExcludedFromLastMessage | bool                                    | 否    | 发送消息是否计入会话 lastMessage | YES    | YES    | 如果设置为 true，发送消息不会计入会话 lastMessage，默认为 false           |
+| cloudCustomData           | String                                  | 否    | 消息云端数据                 | YES    | YES    | 消息附带的额外的数据，存云端，消息的接受者可以访问到                            |
+| localCustomData           | String                                  | 否    | 消息本地数据                 | YES    | YES    | 消息附带的额外的数据，存本地，消息的接受者不可以访问到，App 卸载后数据丢失               |
 
 ## 返回模板
 
@@ -107,11 +107,11 @@ V2TimValueCallback<V2TimMessage>
 
 ## 返回参数详解
 
-| 名称   | 数值类型                                        | 描述                                                             |
-| ---- | ------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                         | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                      | 请求结果描述                                                         |
-| data | [V2TimMessage](../../class/v2timmessage.md) | 发送的信息                                                          |
+| 名称   | 数值类型                             | 描述                                                             |
+| ---- | -------------------------------- | -------------------------------------------------------------- |
+| code | int                              | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                           | 请求结果描述                                                         |
+| data | [V2TimMessage](broken-reference) | 发送的信息                                                          |
 
 ## 使用案例  &#x20;
 

@@ -23,14 +23,14 @@ description: 获取历史消息高级接口(没有处理Native返回数据)
 
 ## 参数详解
 
-| 参数名称       | 参数类型                                                       | 是否必填 | 描述                                          |
-| ---------- | ---------------------------------------------------------- | ---- | ------------------------------------------- |
-| getType    | [HistoryMessageGetType](../enums/historymsggettypeenum.md) | 否    | 拉取消息的位置及方向，可以设置拉取 **本地/云端** 的 **更老/更新** 的消息 |
-| userID     | String                                                     | 否    | 拉取指定用户的单聊历史消息                               |
-| groupID    | String                                                     | 否    | 拉取指定群组的群聊历史消息                               |
-| lastMsgSeq | int                                                        | 否    | 最后一条消息 seq，表示从哪条消息开始拉取历史消息                  |
-| count      | int                                                        | 是    | 单次拉取的消息数量                                   |
-| lastMsgID  | String                                                     | 否    | lastMsgID                                   |
+| 参数名称       | 参数类型                                      | 是否必填 | 描述                                          |
+| ---------- | ----------------------------------------- | ---- | ------------------------------------------- |
+| getType    | [HistoryMessageGetType](broken-reference) | 否    | 拉取消息的位置及方向，可以设置拉取 **本地/云端** 的 **更老/更新** 的消息 |
+| userID     | String                                    | 否    | 拉取指定用户的单聊历史消息                               |
+| groupID    | String                                    | 否    | 拉取指定群组的群聊历史消息                               |
+| lastMsgSeq | int                                       | 否    | 最后一条消息 seq，表示从哪条消息开始拉取历史消息                  |
+| count      | int                                       | 是    | 单次拉取的消息数量                                   |
+| lastMsgID  | String                                    | 否    | lastMsgID                                   |
 
 ## 返回模板
 
@@ -40,9 +40,9 @@ LinkedHashMap<dynamic,dynamic>
 
 ## 返回参数详解
 
-| 名称            | 数值类型                                                             | 描述                      |
-| ------------- | ---------------------------------------------------------------- | ----------------------- |
-| LinkedHashMap | LinkedHashMap< [dynamic, dynamic ](../../class/v2timmessage.md)> | 获取的历史消息(没有处理Native返回数据) |
+| 名称            | 数值类型                                                  | 描述                      |
+| ------------- | ----------------------------------------------------- | ----------------------- |
+| LinkedHashMap | LinkedHashMap< [dynamic, dynamic ](broken-reference)> | 获取的历史消息(没有处理Native返回数据) |
 
 ## 使用案例  &#x20;
 

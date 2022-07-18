@@ -32,14 +32,14 @@ description: 添加好友
 
 ## 参数详解
 
-| 参数名称        | 参数类型                                         | 是否必填 | 描述           |
-| ----------- | -------------------------------------------- | ---- | ------------ |
-| userID      | String                                       | 是    | 需要添加的用户id    |
-| remark      | String                                       | 否    | 添加的好友的好友备注   |
-| friendGroup | String                                       | 否    | 添加好友所在分组     |
-| addWording  | String                                       | 否    | 添加好友附带信息     |
-| addSource   | String                                       | 否    | 添加来源描述       |
-| addType     | [FriendTypeEnum](../enums/friendtypeenum.md) | 是    | 设置加好友类型，默认双向 |
+| 参数名称        | 参数类型                               | 是否必填 | 描述           |
+| ----------- | ---------------------------------- | ---- | ------------ |
+| userID      | String                             | 是    | 需要添加的用户id    |
+| remark      | String                             | 否    | 添加的好友的好友备注   |
+| friendGroup | String                             | 否    | 添加好友所在分组     |
+| addWording  | String                             | 否    | 添加好友附带信息     |
+| addSource   | String                             | 否    | 添加来源描述       |
+| addType     | [FriendTypeEnum](broken-reference) | 是    | 设置加好友类型，默认双向 |
 
 ## 返回模板
 
@@ -59,11 +59,11 @@ V2TimValueCallback<V2TimFriendOperationResult>
 
 ## 返回参数详解
 
-| 名称   | 数值类型                                                                              | 描述                                                             |
-| ---- | --------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                                                               | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                                                            | 请求结果描述                                                         |
-| data | [V2TimFriendOperationResult](../guan-jian-lei/user/v2timfriendoperationresult.md) | 添加请求结果                                                         |
+| 名称   | 数值类型                                           | 描述                                                             |
+| ---- | ---------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                            | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                         | 请求结果描述                                                         |
+| data | [V2TimFriendOperationResult](broken-reference) | 添加请求结果                                                         |
 
 ## 使用案例  &#x20;
 

@@ -18,11 +18,11 @@ description: 加入群组
 
 ## 参数详解
 
-| 参数名称      | 参数类型                               | 是否必填 | 描述        |
-| --------- | ---------------------------------- | ---- | --------- |
-| groupID   | String                             | 是    | 需要加入群组 ID |
-| message   | String                             | 是    | 加群申请信息    |
-| groupType | [GroupType](../enums/grouptype.md) | 否    | 群类型       |
+| 参数名称      | 参数类型                          | 是否必填 | 描述        |
+| --------- | ----------------------------- | ---- | --------- |
+| groupID   | String                        | 是    | 需要加入群组 ID |
+| message   | String                        | 是    | 加群申请信息    |
+| groupType | [GroupType](broken-reference) | 否    | 群类型       |
 
 ## 返回模板
 

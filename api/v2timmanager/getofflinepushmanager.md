@@ -24,9 +24,9 @@ V2TIMOfflinePushManager
 
 ## 返回参数详解
 
-| 名称                      | 数值类型                                                   | 描述       |
-| ----------------------- | ------------------------------------------------------ | -------- |
-| V2TIMOfflinePushManager | [V2TIMOfflinePushManager](../v2timofflinepushmanager/) | 离线推送功能入口 |
+| 名称                      | 数值类型                                        | 描述       |
+| ----------------------- | ------------------------------------------- | -------- |
+| V2TIMOfflinePushManager | [V2TIMOfflinePushManager](broken-reference) | 离线推送功能入口 |
 
 ## 使用案例  &#x20;
 

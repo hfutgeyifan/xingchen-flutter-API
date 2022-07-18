@@ -10,18 +10,18 @@ description: 发送回复消息
 
 ## 参数详解
 
-| 参数                        | 参数类型                                               | 是否必填 | 含义             |
-| ------------------------- | -------------------------------------------------- | ---- | -------------- |
-| id                        | String                                             | 是    | 发送的回复消息的id     |
-| receiver                  | String                                             | 是    | 单聊消息接收者 userID |
-| groupID                   | String                                             | 是    | 群聊 groupID     |
-| replyMessage              | [V2TimMessage](../../class/v2timmessage.md)        | 是    | 被回复的消息         |
-| priority                  | [MessagePriorityEnum](../enums/messagepriority.md) | 否    | 消息优先级          |
-| onlineUserOnly            | bool                                               | 否    | 是否只有在线用户才能收到   |
-| needReadReceipt           | bool                                               | 否    | 消息是否需要已读回执     |
-| offlinePushInfo           | [OfflinePushInfo](../../class/offlinepushinfo.md)  | 否    | 离线推送信息         |
-| isExcludedFromUnreadCount | bool                                               | 否    | 发送消息是否计入会话未读数  |
-| localCustomData           | String                                             | 否    | 消息本地数据         |
+| 参数                        | 参数类型                                    | 是否必填 | 含义             |
+| ------------------------- | --------------------------------------- | ---- | -------------- |
+| id                        | String                                  | 是    | 发送的回复消息的id     |
+| receiver                  | String                                  | 是    | 单聊消息接收者 userID |
+| groupID                   | String                                  | 是    | 群聊 groupID     |
+| replyMessage              | [V2TimMessage](broken-reference)        | 是    | 被回复的消息         |
+| priority                  | [MessagePriorityEnum](broken-reference) | 否    | 消息优先级          |
+| onlineUserOnly            | bool                                    | 否    | 是否只有在线用户才能收到   |
+| needReadReceipt           | bool                                    | 否    | 消息是否需要已读回执     |
+| offlinePushInfo           | [OfflinePushInfo](broken-reference)     | 否    | 离线推送信息         |
+| isExcludedFromUnreadCount | bool                                    | 否    | 发送消息是否计入会话未读数  |
+| localCustomData           | String                                  | 否    | 消息本地数据         |
 
 ## 返回模板
 
@@ -76,11 +76,11 @@ V2TimValueCallback<V2TimMessage>
 
 ## 返回参数详解
 
-| 名称   | 数值类型                                        | 描述                                                             |
-| ---- | ------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                         | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                      | 请求结果描述                                                         |
-| data | [V2TimMessage](../../class/v2timmessage.md) | 创建的回复信息                                                        |
+| 名称   | 数值类型                             | 描述                                                             |
+| ---- | -------------------------------- | -------------------------------------------------------------- |
+| code | int                              | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                           | 请求结果描述                                                         |
+| data | [V2TimMessage](broken-reference) | 创建的回复信息                                                        |
 
 ## 使用案例  &#x20;
 

@@ -24,9 +24,9 @@ V2TIMSignalingManager
 
 ## 返回参数详解
 
-| 名称                    | 数值类型                                                                  | 描述   |
-| --------------------- | --------------------------------------------------------------------- | ---- |
-| V2TIMSignalingManager | [V2TIMSignalingManager](../../class/manager/v2timsignalingmanager.md) | 信令入口 |
+| 名称                    | 数值类型                                      | 描述   |
+| --------------------- | ----------------------------------------- | ---- |
+| V2TIMSignalingManager | [V2TIMSignalingManager](broken-reference) | 信令入口 |
 
 ## 使用案例  &#x20;
 

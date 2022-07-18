@@ -28,11 +28,11 @@ V2TimValueCallback<List<V2TimFriendInfo>>
 
 ## 返回参数详解
 
-| 名称   | 数值类型                                                                | 描述                                                             |
-| ---- | ------------------------------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                                                 | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                                              | 请求结果描述                                                         |
-| data | List< [V2TimFriendInfo](../guan-jian-lei/user/v2timfriendinfo.md) > | 查询到的好友列表                                                       |
+| 名称   | 数值类型                                        | 描述                                                             |
+| ---- | ------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                         | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                      | 请求结果描述                                                         |
+| data | List< [V2TimFriendInfo](broken-reference) > | 查询到的好友列表                                                       |
 
 ## 使用案例  &#x20;
 

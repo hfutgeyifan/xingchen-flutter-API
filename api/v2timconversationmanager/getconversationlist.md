@@ -48,11 +48,11 @@ V2TimValueCallback<V2TimConversationResult>
 
 ## 返回参数详解
 
-| 名称   | 数值类型                                                              | 描述                                                             |
-| ---- | ----------------------------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                                               | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                                            | 请求结果描述                                                         |
-| data | [V2TimConversationResult](../../class/v2timconversationresult.md) | 此次拉取到的消息信息                                                     |
+| 名称   | 数值类型                                        | 描述                                                             |
+| ---- | ------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                         | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                      | 请求结果描述                                                         |
+| data | [V2TimConversationResult](broken-reference) | 此次拉取到的消息信息                                                     |
 
 ## 使用案例  &#x20;
 

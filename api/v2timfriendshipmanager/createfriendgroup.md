@@ -29,11 +29,11 @@ V2TimValueCallback<List<V2TimFriendOperationResult>>
 
 ## 返回参数详解
 
-| 名称   | 数值类型                                                                                      | 描述                                                             |
-| ---- | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                                                                       | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                                                                    | 请求结果描述                                                         |
-| data | List< [V2TimFriendOperationResult](../guan-jian-lei/user/v2timfriendoperationresult.md) > | 新建结果列表                                                         |
+| 名称   | 数值类型                                                   | 描述                                                             |
+| ---- | ------------------------------------------------------ | -------------------------------------------------------------- |
+| code | int                                                    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                                 | 请求结果描述                                                         |
+| data | List< [V2TimFriendOperationResult](broken-reference) > | 新建结果列表                                                         |
 
 ## 使用案例  &#x20;
 

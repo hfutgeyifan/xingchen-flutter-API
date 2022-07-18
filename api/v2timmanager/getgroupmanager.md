@@ -24,9 +24,9 @@ V2TIMGroupManager
 
 ## 返回参数详解
 
-| 名称                | 数值类型                                                          | 描述       |
-| ----------------- | ------------------------------------------------------------- | -------- |
-| V2TIMGroupManager | [V2TIMGroupManager](../../class/manager/v2timgroupmanager.md) | 高级群组功能入口 |
+| 名称                | 数值类型                                  | 描述       |
+| ----------------- | ------------------------------------- | -------- |
+| V2TIMGroupManager | [V2TIMGroupManager](broken-reference) | 高级群组功能入口 |
 
 ## 使用案例  &#x20;
 

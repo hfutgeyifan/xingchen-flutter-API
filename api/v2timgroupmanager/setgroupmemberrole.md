@@ -19,11 +19,11 @@ description: 设置群成员的角色
 
 ## 参数详解
 
-| 参数名称    | 参数类型                                                           | 是否必填 | 描述         |
-| ------- | -------------------------------------------------------------- | ---- | ---------- |
-| groupID | String                                                         | 是    | 设置群组的id    |
-| userID  | String                                                         | 是    | 被设置角色的用户id |
-| role    | [GroupMemberRoleTypeEnum](../enums/groupmemberroletypeenum.md) | 是    | 用户被设置的角色属性 |
+| 参数名称    | 参数类型                                        | 是否必填 | 描述         |
+| ------- | ------------------------------------------- | ---- | ---------- |
+| groupID | String                                      | 是    | 设置群组的id    |
+| userID  | String                                      | 是    | 被设置角色的用户id |
+| role    | [GroupMemberRoleTypeEnum](broken-reference) | 是    | 用户被设置的角色属性 |
 
 ## 返回模板
 

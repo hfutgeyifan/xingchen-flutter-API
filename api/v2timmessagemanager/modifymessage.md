@@ -22,9 +22,9 @@ description: 消息变更 4.0.1及以后版本支持
 
 ## 参数详解
 
-| 参数名称    | 参数类型                                        | 是否必填 | 描述      |
-| ------- | ------------------------------------------- | ---- | ------- |
-| message | [V2TimMessage](../../class/v2timmessage.md) | 是    | 需要修改的消息 |
+| 参数名称    | 参数类型                             | 是否必填 | 描述      |
+| ------- | -------------------------------- | ---- | ------- |
+| message | [V2TimMessage](broken-reference) | 是    | 需要修改的消息 |
 
 ## 返回模板
 
@@ -44,11 +44,11 @@ V2TimValueCallback<V2TimMessageChangeInfo>
 
 ## 返回参数详解
 
-| 名称   | 数值类型                                                            | 描述                                                             |
-| ---- | --------------------------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                                             | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                                          | 请求结果描述                                                         |
-| data | [V2TimMessageChangeInfo](../../class/v2timmessagechangeinfo.md) | 修改后的信息                                                         |
+| 名称   | 数值类型                                       | 描述                                                             |
+| ---- | ------------------------------------------ | -------------------------------------------------------------- |
+| code | int                                        | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                     | 请求结果描述                                                         |
+| data | [V2TimMessageChangeInfo](broken-reference) | 修改后的信息                                                         |
 
 ## 使用案例  &#x20;
 

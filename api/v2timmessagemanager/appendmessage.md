@@ -70,11 +70,11 @@ V2TimValueCallback<V2TimMessage>
 
 ## 返回参数详解
 
-| 名称   | 数值类型                                        | 描述                                                             |
-| ---- | ------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                         | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                      | 请求结果描述                                                         |
-| data | [V2TimMessage](../../class/v2timmessage.md) | 添加消息后的信息                                                       |
+| 名称   | 数值类型                             | 描述                                                             |
+| ---- | -------------------------------- | -------------------------------------------------------------- |
+| code | int                              | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                           | 请求结果描述                                                         |
+| data | [V2TimMessage](broken-reference) | 添加消息后的信息                                                       |
 
 ## 使用案例  &#x20;
 
