@@ -45,18 +45,18 @@ IM API中使用到的回调函数类型
 | [OnReceiveNewInvitationCallback](callbacks/onreceivenewinvitationcallback.md)                 | 获取新的邀请的回调                           |
 | [OnReceiveRESTCustomDataCallback](callbacks/onreceiverestcustomdatacallback.md)               | 收到 RESTAPI 下发的自定义系统消息               |
 | OnRecvC2CCustomMessageCallback                                                                |                                     |
-| OnRecvC2CReadReceiptCallback                                                                  |                                     |
+| [OnRecvC2CReadReceiptCallback](callbacks/onrecvc2creadreceiptcallback.md)                     | C2C 对端用户会话已读通知                      |
 | OnRecvC2CTextMessageCallback                                                                  |                                     |
 | OnRecvGroupCustomMessageCallback                                                              |                                     |
 | OnRecvGroupTextMessageCallback                                                                |                                     |
-| OnRecvMessageModified                                                                         |                                     |
-| OnRecvMessageReadReceipts                                                                     |                                     |
-| OnRecvMessageRevokedCallback                                                                  |                                     |
-| OnRecvNewMessageCallback                                                                      |                                     |
+| [OnRecvMessageModified](callbacks/onrecvmessagemodified.md)                                   | 消息内容被修改                             |
+| [OnRecvMessageReadReceipts](callbacks/onrecvmessagereadreceipts.md)                           | 消息已读回执通知                            |
+| [OnRecvMessageRevokedCallback](callbacks/onrecvmessagerevokedcallback.md)                     | 收到消息撤回的通知                           |
+| OnRecvNewMessageCallback                                                                      | 收到新消息                               |
 | [OnRevokeAdministratorCallback](callbacks/onrevokeadministratorcallback.md)                   | 取消管理员身份                             |
-| OnSendMessageProgressCallback                                                                 |                                     |
+| OnSendMessageProgressCallback                                                                 | 文件上传进度回调                            |
 | [OnTotalUnreadMessageCountChanged](callbacks/ontotalunreadmessagecountchanged.md)             | 会话未读总数变更通知                          |
 | OnUserStatusChanged                                                                           |                                     |
-| V2TimUserFullInfoCallback                                                                     |                                     |
+| V2TimUserFullInfoCallback                                                                     | 用户信息更新                              |
 | V2TimValueCallback                                                                            |                                     |
 | VoidCallback                                                                                  |                                     |
