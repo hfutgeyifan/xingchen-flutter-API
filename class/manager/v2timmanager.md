@@ -32,7 +32,7 @@ IM SDK 主核心类，负责 IM SDK 的初始化、登录、消息收发，建�
 | [login](../../api/v2timmanager/login.md)                                   | 用户登录             |
 | [logout](../../api/v2timmanager/logout.md)                                 | 用户登出             |
 | [removeGroupListener](../../api/v2timmanager/removegrouplistener.md)       | 移除群组监听器          |
-| setAPNSListener                                                            | 设置apns监听         |
+| [setAPNSListener](../../api/v2timmanager/setapnslistener.md)               | 设置苹果系统离线推送专用监听器  |
 | [setGroupListener](../../api/v2timmanager/setgrouplistener.md)             | 设置群组监听器          |
 | [setSelfInfo](../../api/v2timmanager/setselfinfo.md)                       | 修改个人资料           |
 | [setSelfStatus](../../api/v2timmanager/setselfstatus.md)                   | 设置当前登录用户在线状态     |

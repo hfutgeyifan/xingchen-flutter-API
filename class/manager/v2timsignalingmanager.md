@@ -13,7 +13,7 @@ description: 提供了信令操作相关接口
 | API                                                                                   | 描述       |
 | ------------------------------------------------------------------------------------- | -------- |
 | [accept](../../api/v2timsignalingmanager/accept.md)                                   | 接收方接受邀请  |
-| addInvitedSignaling                                                                   | 创建一个信令请求 |
+| [addInvitedSignaling](../../api/v2timsignalingmanager/addinvitedsignaling.md)         | 创建一个信令请求 |
 | [addSignalingListener](../../api/v2timsignalingmanager/addsignalinglistener.md)       | 添加信令监听器  |
 | [cancel](../../api/v2timsignalingmanager/cancel.md)                                   | 邀请方取消邀请  |
 | [getSignalingInfo](../../api/v2timsignalingmanager/getsignalinginfo.md)               | 获取信令信息   |
