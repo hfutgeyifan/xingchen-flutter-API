@@ -24,15 +24,15 @@ description: 获取历史消息高级接口
 
 ## 参数详解
 
-| 参数名称            | 参数类型                                      | 是否必填 | 描述                                          |
-| --------------- | ----------------------------------------- | ---- | ------------------------------------------- |
-| getType         | [HistoryMessageGetType](broken-reference) | 否    | 拉取消息的位置及方向，可以设置拉取 **本地/云端** 的 **更老/更新** 的消息 |
-| userID          | String                                    | 否    | 拉取指定用户的单聊历史消息                               |
-| groupID         | String                                    | 否    | 拉取指定群组的群聊历史消息                               |
-| lastMsgSeq      | int                                       | 否    | 最后一条消息 seq，表示从哪条消息开始拉取历史消息                  |
-| count           | int                                       | 是    | 单次拉取的消息数量                                   |
-| lastMsgID       | String                                    | 否    | lastMsgID                                   |
-| messageTypeList | List\<int>                                | 否    | 用于过滤历史信息属性，若为空则拉取所有属性信息。                    |
+| 参数名称            | 参数类型                                                       | 是否必填 | 描述                                          |
+| --------------- | ---------------------------------------------------------- | ---- | ------------------------------------------- |
+| getType         | [HistoryMessageGetType](../enums/historymsggettypeenum.md) | 否    | 拉取消息的位置及方向，可以设置拉取 **本地/云端** 的 **更老/更新** 的消息 |
+| userID          | String                                                     | 否    | 拉取指定用户的单聊历史消息                               |
+| groupID         | String                                                     | 否    | 拉取指定群组的群聊历史消息                               |
+| lastMsgSeq      | int                                                        | 否    | 最后一条消息 seq，表示从哪条消息开始拉取历史消息                  |
+| count           | int                                                        | 是    | 单次拉取的消息数量                                   |
+| lastMsgID       | String                                                     | 否    | lastMsgID                                   |
+| messageTypeList | List\<int>                                                 | 否    | 用于过滤历史信息属性，若为空则拉取所有属性信息。                    |
 
 ## 返回模板
 
@@ -48,11 +48,11 @@ V2TimValueCallback<List<V2TimMessage>>
 
 ## 返回参数详解
 
-| 名称   | 数值类型                                     | 描述                                                             |
-| ---- | ---------------------------------------- | -------------------------------------------------------------- |
-| code | int                                      | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                   | 请求结果描述                                                         |
-| data | List< [V2TimMessage](broken-reference) > | 获取的历史消息                                                        |
+| 名称   | 数值类型                                                             | 描述                                                             |
+| ---- | ---------------------------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                                              | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                                           | 请求结果描述                                                         |
+| data | List< [V2TimMessage](../guan-jian-lei/message/v2timmessage.md) > | 获取的历史消息                                                        |
 
 ## 使用案例  &#x20;
 

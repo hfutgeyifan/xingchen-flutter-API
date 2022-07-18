@@ -32,11 +32,11 @@ V2TimValueCallback<List<V2TimMessage>>
 
 ## 返回参数详解
 
-| 名称   | 数值类型                                     | 描述                                                             |
-| ---- | ---------------------------------------- | -------------------------------------------------------------- |
-| code | int                                      | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                   | 请求结果描述                                                         |
-| data | List< [V2TimMessage](broken-reference) > | 获取的查询到的消息列表                                                    |
+| 名称   | 数值类型                                                             | 描述                                                             |
+| ---- | ---------------------------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                                              | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                                           | 请求结果描述                                                         |
+| data | List< [V2TimMessage](../guan-jian-lei/message/v2timmessage.md) > | 获取的查询到的消息列表                                                    |
 
 ## 使用案例  &#x20;
 

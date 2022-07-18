@@ -10,9 +10,9 @@ description: 移除高级消息监听器
 
 ## 参数详解
 
-| 参数名称     | 参数类型                                         | 是否必填 | 描述       |
-| -------- | -------------------------------------------- | ---- | -------- |
-| listener | [V2TimAdvancedMsgListener](broken-reference) | 是    | 需要移除的监听器 |
+| 参数名称     | 参数类型                                                                              | 是否必填 | 描述       |
+| -------- | --------------------------------------------------------------------------------- | ---- | -------- |
+| listener | [V2TimAdvancedMsgListener](../guan-jian-lei/listener/v2timadvancedmsglistener.md) | 是    | 需要移除的监听器 |
 
 ## 返回模板
 

@@ -13,7 +13,7 @@ description: 发送消息已读回执
 {% hint style="info" %}
 1. 3.9.3及以上版本支持
 2. 该接口暂时只支持 Group 消息。 messageIDList 里的消息Id必须在同一个 Group 会话中。
-3. 该接口调用成功后，会话未读数不会变化，消息发送者会收到 onRecvMessageReadReceipts 回调，回调里面会携带消息的最新已读信息。
+3. 该接口调用成功后，会话未读数不会变化，消息发送者会收到 [onRecvMessageReadReceipts](../callbacks/onrecvmessagereadreceipts.md) 回调，回调里面会携带消息的最新已读信息。
 4. web不支持该接口
 {% endhint %}
 

@@ -14,9 +14,9 @@ description: 搜索本地消息
 
 ## 参数详解
 
-| 参数名称        | 参数类型                                        | 是否必填 | 描述     |
-| ----------- | ------------------------------------------- | ---- | ------ |
-| searchParam | [V2TimMessageSearchParam](broken-reference) | 是    | 搜索设置参数 |
+| 参数名称        | 参数类型                                                                           | 是否必填 | 描述     |
+| ----------- | ------------------------------------------------------------------------------ | ---- | ------ |
+| searchParam | [V2TimMessageSearchParam](../guan-jian-lei/message/v2timmessagesearchparam.md) | 是    | 搜索设置参数 |
 
 ## 返回模板
 
@@ -35,11 +35,11 @@ V2TimValueCallback<V2TimMessageSearchResult>
 
 ## 返回参数详解
 
-| 名称   | 数值类型                                         | 描述                                                             |
-| ---- | -------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                          | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                       | 请求结果描述                                                         |
-| data | [V2TimMessageSearchResult](broken-reference) | 符合搜索条件的所有信息                                                    |
+| 名称   | 数值类型                                                                             | 描述                                                             |
+| ---- | -------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                                                              | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                                                           | 请求结果描述                                                         |
+| data | [V2TimMessageSearchResult](../guan-jian-lei/message/v2timmessagesearchresult.md) | 符合搜索条件的所有信息                                                    |
 
 ## 使用案例  &#x20;
 

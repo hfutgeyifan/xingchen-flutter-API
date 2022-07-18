@@ -13,12 +13,12 @@ description: 获取群消息已读或未读群成员列表
 
 ## 参数详解
 
-| 参数名称      | 参数类型                                                    | 是否必填 | 描述         |
-| --------- | ------------------------------------------------------- | ---- | ---------- |
-| messageID | String                                                  | 是    | 需要查询的消息的id |
-| filter    | [GetGroupMessageReadMemberListFilter](broken-reference) | 是    | 已读或未读的类型   |
-| nextSeq   | int                                                     | 否    | 分页拉取标志     |
-| count     | int                                                     | 否    | 拉取数量       |
+| 参数名称      | 参数类型                                                                                   | 是否必填 | 描述         |
+| --------- | -------------------------------------------------------------------------------------- | ---- | ---------- |
+| messageID | String                                                                                 | 是    | 需要查询的消息的id |
+| filter    | [GetGroupMessageReadMemberListFilter](../enums/getgroupmessagereadmemberlistfilter.md) | 是    | 已读或未读的类型   |
+| nextSeq   | int                                                                                    | 否    | 分页拉取标志     |
+| count     | int                                                                                    | 否    | 拉取数量       |
 
 ## 返回模板
 
@@ -38,11 +38,11 @@ V2TimValueCallback<V2TimGroupMessageReadMemberList>
 
 ## 返回参数详解
 
-| 名称   | 数值类型                                                | 描述                                                             |
-| ---- | --------------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                                 | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                              | 请求结果描述                                                         |
-| data | [V2TimGroupMessageReadMemberList](broken-reference) | 群消息已读或未读群成员列表                                                  |
+| 名称   | 数值类型                                                                                         | 描述                                                             |
+| ---- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                                                                          | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                                                                       | 请求结果描述                                                         |
+| data | [V2TimGroupMessageReadMemberList](../guan-jian-lei/group/v2timgroupmessagereadmemberlist.md) | 群消息已读或未读群成员列表                                                  |
 
 ## 使用案例  &#x20;
 

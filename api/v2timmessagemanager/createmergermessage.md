@@ -19,13 +19,13 @@ description: 创建合并消息
 
 ## 参数详解
 
-| 参数名称                   | 参数类型          | 是否必填 | 描述                                                           |
-| ---------------------- | ------------- | ---- | ------------------------------------------------------------ |
-| msgIDList              | String        | 是    | 原始消息ID列表                                                     |
-| title                  | String        | 是    | 标题                                                           |
-| abstractList           | List\<String> | 是    | 摘要列表                                                         |
-| compatibleText         | String        | 是    | 兼容文本信息，低版本 SDK 如果不支持合并消息，默认会收到一条文本消息，文本消息的内容为 compatibleText |
-| webMessageInstanceList | List\<String> | 否    | web端消息列表                                                     |
+| 参数名称                   | 参数类型           | 是否必填 | 描述                                                           |
+| ---------------------- | -------------- | ---- | ------------------------------------------------------------ |
+| msgIDList              | String         | 是    | 原始消息ID列表                                                     |
+| title                  | String         | 是    | 标题                                                           |
+| abstractList           | List< String > | 是    | 摘要列表                                                         |
+| compatibleText         | String         | 是    | 兼容文本信息，低版本 SDK 如果不支持合并消息，默认会收到一条文本消息，文本消息的内容为 compatibleText |
+| webMessageInstanceList | List< String > | 否    | web端消息列表                                                     |
 
 ## 返回模板
 
@@ -44,11 +44,11 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>
 
 ## 返回参数详解
 
-| 名称   | 数值类型                                         | 描述                                                             |
-| ---- | -------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                          | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                       | 请求结果描述                                                         |
-| data | [V2TimMsgCreateInfoResult](broken-reference) | 创建的合并消息                                                        |
+| 名称   | 数值类型                                                                       | 描述                                                             |
+| ---- | -------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                                                        | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                                                     | 请求结果描述                                                         |
+| data | [V2TimMsgCreateInfoResult](../guan-jian-lei/message/v2timsdklistener-1.md) | 创建的合并消息                                                        |
 
 ## 使用案例  &#x20;
 

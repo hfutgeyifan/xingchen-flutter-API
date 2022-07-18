@@ -10,10 +10,10 @@ description: 创建文本消息，并且可以附带 @ 提醒功能
 
 ## 参数详解
 
-| 参数名称       | 参数类型          | 是否必填 | 描述      |
-| ---------- | ------------- | ---- | ------- |
-| text       | String        | 是    | 消息文本    |
-| atUserList | List\<String> | 是    | @用户ID列表 |
+| 参数名称       | 参数类型           | 是否必填 | 描述      |
+| ---------- | -------------- | ---- | ------- |
+| text       | String         | 是    | 消息文本    |
+| atUserList | List< String > | 是    | @用户ID列表 |
 
 ## 返回模板
 
@@ -32,11 +32,11 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>
 
 ## 返回参数详解
 
-| 名称   | 数值类型                                         | 描述                                                             |
-| ---- | -------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                          | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                       | 请求结果描述                                                         |
-| data | [V2TimMsgCreateInfoResult](broken-reference) | 创建后的@Text信息                                                    |
+| 名称   | 数值类型                                                                       | 描述                                                             |
+| ---- | -------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                                                        | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                                                     | 请求结果描述                                                         |
+| data | [V2TimMsgCreateInfoResult](../guan-jian-lei/message/v2timsdklistener-1.md) | 创建后的@Text信息                                                    |
 
 ## 使用案例  &#x20;
 

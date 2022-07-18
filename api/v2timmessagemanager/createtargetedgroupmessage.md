@@ -12,7 +12,7 @@ description: 创建一条定向群消息
 
 1. 调用 `createXXXMessage` (其中 XXX 表示具体的消息类型) 接口创建一条原始消息对象 `V2TIMMessage`。
 2. 调用 `createTargetedGroupMessage` 接口根据原始消息对象创建定向消息对象 `V2TimMessage`，并指定消息接收成员列表。
-3. 调用 `sendMessage` 接口发送定向消息。
+3. 调用 [`sendMessage`](sendmessage.md) 接口发送定向消息。
 
 {% hint style="info" %}
 注意事项：
@@ -26,10 +26,10 @@ description: 创建一条定向群消息
 
 ## 参数详解
 
-| 参数名称         | 参数类型          | 是否必填 | 描述         |
-| ------------ | ------------- | ---- | ---------- |
-| id           | String        | 是    | 创建的消息的id   |
-| receiverList | List\<String> | 是    | 群内部分成员id列表 |
+| 参数名称         | 参数类型           | 是否必填 | 描述         |
+| ------------ | -------------- | ---- | ---------- |
+| id           | String         | 是    | 创建的消息的id   |
+| receiverList | List< String > | 是    | 群内部分成员id列表 |
 
 ## 返回模板
 
@@ -48,11 +48,11 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>
 
 ## 返回参数详解
 
-| 名称   | 数值类型                                         | 描述                                                             |
-| ---- | -------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                          | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                       | 请求结果描述                                                         |
-| data | [V2TimMsgCreateInfoResult](broken-reference) | 创建的定向群消息                                                       |
+| 名称   | 数值类型                                                                       | 描述                                                             |
+| ---- | -------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                                                        | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                                                     | 请求结果描述                                                         |
+| data | [V2TimMsgCreateInfoResult](../guan-jian-lei/message/v2timsdklistener-1.md) | 创建的定向群消息                                                       |
 
 ## 使用案例  &#x20;
 

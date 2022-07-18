@@ -8,7 +8,7 @@ description: 设置单聊消息已读
 
 设置单聊消息已读
 
-* 对端会收到 `onRecvC2CReadReceipt` 回调，回调里面会携带清空会话未读数的时间戳。
+* 对端会收到 [`onRecvC2CReadReceipt`](../callbacks/onrecvc2creadreceiptcallback.md) 回调，回调里面会携带清空会话未读数的时间戳。
 
 {% hint style="info" %}
 清空会话未读消息数功能仅增强版 5.8.1668 及以上版本支持。

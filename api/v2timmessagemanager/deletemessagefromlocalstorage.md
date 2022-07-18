@@ -9,8 +9,8 @@ description: 删除本地消息
 删除本地消息
 
 {% hint style="info" %}
-1. 该接口只能删除本地历史，消息删除后，SDK 会在本地把这条消息标记为已删除状态，调用 `getHistoryMessage` 不能再拉取到。
-2. 如果程序卸载重装，本地会失去对这条消息的删除标记，调用 `getHistoryMessage` 还能再拉取到该条消息。
+1. 该接口只能删除本地历史，消息删除后，SDK 会在本地把这条消息标记为已删除状态，调用 [getHistoryMessageList](gethistorymessagelist.md) 不能再拉取到。
+2. 如果程序卸载重装，本地会失去对这条消息的删除标记，调用 [getHistoryMessageList](gethistorymessagelist.md) 还能再拉取到该条消息。
 3. web不支持该接口
 {% endhint %}
 
