@@ -6,8 +6,6 @@
 
 * [V2TIMManager](class/manager/v2timmanager.md)
   * [addGroupListener](api/v2timmanager/addgrouplistener.md)
-  * [callExperimentalAPI](api/v2timmanager/callexperimentalapi.md)
-  * [checkAbility](api/v2timmanager/checkability.md)
   * [dismissGroup](api/v2timmanager/dismissgroup.md)
   * [getConversationManager](api/v2timmanager/getconversationmanager.md)
   * [getFriendshipManager](api/v2timmanager/getfriendshipmanager.md)
@@ -26,7 +24,6 @@
   * [quitGroup](api/v2timmanager/quitgroup.md)
   * [login](api/v2timmanager/login.md)
   * [logout](api/v2timmanager/logout.md)
-  * [printWarning](api/v2timmanager/printwarning.md)
   * [removeGroupListener](api/v2timmanager/removegrouplistener.md)
   * [setAPNSListener](api/v2timmanager/setapnslistener.md)
   * [setGroupListener](api/v2timmanager/setgrouplistener.md)

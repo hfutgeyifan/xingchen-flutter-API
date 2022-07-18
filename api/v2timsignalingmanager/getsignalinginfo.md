@@ -15,7 +15,7 @@ description: 获取信令信息
 
 | 参数名称  | 参数类型   | 是否必填 | 描述      |
 | ----- | ------ | ---- | ------- |
-| msgID | String | 是    | 邀请请求的id |
+| msgID | String | 是    | 信令消息的id |
 
 ## 返回模板
 
@@ -54,7 +54,7 @@ V2TimValueCallback<V2TimSignalingInfo>
     V2TimValueCallback<V2TimSignalingInfo> getSignalingInfoRes =
         await TencentImSDKPlugin.v2TIMManager
             .getSignalingManager()
-            .getSignalingInfo(msgID: "msgID");
+            .getSignalingInfo(msgID: "msgID");//信令消息的id
     if (getSignalingInfoRes.code == 0) {
       //查询成功
       
@@ -65,7 +65,7 @@ V2TimValueCallback<V2TimSignalingInfo>
       //4:被邀请方拒绝邀请
       //5:邀请超时
       getSignalingInfoRes.data?.actionType;//信令状态
-      getSignalingInfoRes.data?.businessID;
+      getSignalingInfoRes.data?.businessID;//传1即可
       getSignalingInfoRes.data?.data;//信令的自定义消息
       getSignalingInfoRes.data?.groupID;//发出信令的群组id
       getSignalingInfoRes.data?.inviteID;//邀请ID

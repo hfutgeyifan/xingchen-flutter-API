@@ -13,8 +13,6 @@ IM SDK 主核心类，负责 IM SDK 的初始化、登录、消息收发，建�
 | API                                                                        | 描述               |
 | -------------------------------------------------------------------------- | ---------------- |
 | [addGroupListener](../../api/v2timmanager/addgrouplistener.md)             | 添加群组监听器          |
-| callExperimentalAPI                                                        | 实验性 API 接口       |
-| checkAbility                                                               | 能力位检测            |
 | [dismissGroup](../../api/v2timmanager/dismissgroup.md)                     | 解散群组             |
 | [getConversationManager](../../api/v2timmanager/getconversationmanager.md) | 会话功能入口           |
 | [getFriendshipManager](../../api/v2timmanager/getfriendshipmanager.md)     | 关系链功能入口          |
@@ -33,7 +31,6 @@ IM SDK 主核心类，负责 IM SDK 的初始化、登录、消息收发，建�
 | [quitGroup](../../api/v2timmanager/quitgroup.md)                           | 退出群组             |
 | [login](../../api/v2timmanager/login.md)                                   | 用户登录             |
 | [logout](../../api/v2timmanager/logout.md)                                 | 用户登出             |
-| printWarning                                                               |                  |
 | [removeGroupListener](../../api/v2timmanager/removegrouplistener.md)       | 移除群组监听器          |
 | setAPNSListener                                                            | 设置apns监听         |
 | [setGroupListener](../../api/v2timmanager/setgrouplistener.md)             | 设置群组监听器          |
