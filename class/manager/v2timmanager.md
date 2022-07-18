@@ -24,7 +24,7 @@ IM SDK 主核心类，负责 IM SDK 的初始化、登录、消息收发，建�
 | [getServerTime](../../api/v2timmanager/getservertime.md)                   | 获取服务器当前时间        |
 | [getSignalingManager](../../api/v2timmanager/getsignalingmanager.md)       | 信令入口             |
 | [getUsersInfo](../../api/v2timmanager/getusersinfo.md)                     | 获取用户资料           |
-| getUserStatus                                                              | 获取用户在线状态         |
+| [getUserStatus](../../api/v2timmanager/getuserstatus.md)                   | 获取用户在线状态         |
 | [getVersion](../../api/v2timmanager/getversion.md)                         | 获取版本号            |
 | [initSDK](../../api/v2timmanager/initsdk.md)                               | 初始化 SDK          |
 | [joinGroup](../../api/v2timmanager/joingroup.md)                           | 加入群组             |
@@ -35,5 +35,5 @@ IM SDK 主核心类，负责 IM SDK 的初始化、登录、消息收发，建�
 | setAPNSListener                                                            | 设置apns监听         |
 | [setGroupListener](../../api/v2timmanager/setgrouplistener.md)             | 设置群组监听器          |
 | [setSelfInfo](../../api/v2timmanager/setselfinfo.md)                       | 修改个人资料           |
-| setSelfStatus                                                              | 设置当前登录用户在线状态     |
+| [setSelfStatus](../../api/v2timmanager/setselfstatus.md)                   | 设置当前登录用户在线状态     |
 | [unInitSDK](../../api/v2timmanager/uninitsdk.md)                           | 反初始化 SDK         |
