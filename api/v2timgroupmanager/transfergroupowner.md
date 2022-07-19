@@ -8,10 +8,10 @@ description: 转让群主
 
 转让群主
 
-* 群主转让后，全员会收到 onGroupInfoChanged 回调，其中 `V2TIMGroupChangeInfo` 的 type 为 `V2TIMGroupChangeInfo.V2TIM_GROUP_INFO_CHANGE_TYPE_OWNER`，value 值为新群主的 UserID。
+* 群主转让后，全员会收到 [onGroupInfoChanged](../callbacks/ongroupinfochangedcallback.md) 回调，其中 `V2TIMGroupChangeInfo` 的 type 为 `V2TIMGroupChangeInfo.V2TIM_GROUP_INFO_CHANGE_TYPE_OWNER`，value 值为新群主的 UserID。
 
 {% hint style="info" %}
-普通类型的群（Work、Public、Meeting）：只有群主才有权限进行群转让操作。&#x20;
+普通类型的群（Work、Public、Meeting）：只有群主才有权限进行群转让操作。
 
 直播群（AVChatRoom）：不支持转让群主。
 {% endhint %}
@@ -41,7 +41,7 @@ V2TimCallback
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     // 转让群主

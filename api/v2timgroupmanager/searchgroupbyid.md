@@ -56,13 +56,13 @@ V2TimValueCallback<V2TimGroupInfo>
 
 ## 返回值详解
 
-| 名称   | 数值类型                                      | 描述                                                             |
-| ---- | ----------------------------------------- | -------------------------------------------------------------- |
-| code | int                                       | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                    | 请求结果描述                                                         |
-| data | List< [V2TimGroupInfo](broken-reference)> | 查询到的群组信息                                                       |
+| 名称   | 数值类型                                                              | 描述                                                             |
+| ---- | ----------------------------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                                               | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                                            | 请求结果描述                                                         |
+| data | List< [V2TimGroupInfo](../guan-jian-lei/group/v2timgroupinfo.md)> | 查询到的群组信息                                                       |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     //通过 groupID 搜索群组
@@ -92,5 +92,4 @@ V2TimValueCallback<V2TimGroupInfo>
       searchGroupByIDRes.data?.recvOpt; // 当前用户在此群中接受信息的选项
       searchGroupByIDRes.data?.role; // 此用户在群中的角色
     }
-
 ```

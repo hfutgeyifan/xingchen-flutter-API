@@ -8,22 +8,22 @@ description: 设置群成员的角色
 
 修改群资料
 
-* 普通成员被授权为管理员后，全员（包括被设置的成员）会收到 `onGrantAdministrator` 回调。
-* 普通成员被取消管理员授权后，全员（包括被设置的成员）会收到 `onRevokeAdministrator` 回调。
+* 普通成员被授权为管理员后，全员（包括被设置的成员）会收到 [`onGrantAdministrator`](../callbacks/ongrantadministratorcallback.md) 回调。
+* 普通成员被取消管理员授权后，全员（包括被设置的成员）会收到 [`onRevokeAdministrator`](../callbacks/onrevokeadministratorcallback.md) 回调。
 
 {% hint style="info" %}
-公开群（Public）和会议群（Meeting）：只有群主才能对群成员进行普通成员和管理员之间的角色切换。&#x20;
+公开群（Public）和会议群（Meeting）：只有群主才能对群成员进行普通成员和管理员之间的角色切换。
 
-其他群不支持设置群成员角色。 转让群组请调用 transferGroupOwner 接口。
+其他群不支持设置群成员角色。 转让群组请调用 [transferGroupOwner](transfergroupowner.md) 接口。
 {% endhint %}
 
 ## 参数详解
 
-| 参数名称    | 参数类型                                        | 是否必填 | 描述         |
-| ------- | ------------------------------------------- | ---- | ---------- |
-| groupID | String                                      | 是    | 设置群组的id    |
-| userID  | String                                      | 是    | 被设置角色的用户id |
-| role    | [GroupMemberRoleTypeEnum](broken-reference) | 是    | 用户被设置的角色属性 |
+| 参数名称    | 参数类型                                                           | 是否必填 | 描述         |
+| ------- | -------------------------------------------------------------- | ---- | ---------- |
+| groupID | String                                                         | 是    | 设置群组的id    |
+| userID  | String                                                         | 是    | 被设置角色的用户id |
+| role    | [GroupMemberRoleTypeEnum](../enums/groupmemberroletypeenum.md) | 是    | 用户被设置的角色属性 |
 
 ## 返回值
 
@@ -43,7 +43,7 @@ V2TimCallback
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     // 设置群成员的角色

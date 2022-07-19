@@ -8,12 +8,12 @@ description: 邀请他人入群
 
 邀请他人入群
 
-* 全体群成员（包括邀请者自己）会收到 `onMemberInvited` 回调。您可以在这个回调中做一些 UI 上的提示。
+* 全体群成员（包括邀请者自己）会收到 [`onMemberInvited`](../callbacks/onmemberinvitedcallback.md) 回调。您可以在这个回调中做一些 UI 上的提示。
 
 {% hint style="info" %}
-工作群（Work）：群里的任何人都可以邀请其他人进群。&#x20;
+工作群（Work）：群里的任何人都可以邀请其他人进群。
 
-会议群（Meeting）和公开群（Public）：只有通过rest api 使用 App 管理员身份才可以邀请其他人进群。&#x20;
+会议群（Meeting）和公开群（Public）：只有通过rest api 使用 App 管理员身份才可以邀请其他人进群。
 
 直播群（AVChatRoom）：不支持此功能。
 {% endhint %}
@@ -39,13 +39,13 @@ V2TimValueCallback<List<V2TimGroupMemberOperationResult>>
 
 ## 返回值详解
 
-| 名称   | 数值类型                                                        | 描述                                                             |
-| ---- | ----------------------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                                         | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                                      | 请求结果描述                                                         |
-| data | List< [V2TimGroupMemberOperationResult](broken-reference) > | 每一个用户的请求结果                                                     |
+| 名称   | 数值类型                                                                                                 | 描述                                                             |
+| ---- | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                                                                                  | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                                                                               | 请求结果描述                                                         |
+| data | List< [V2TimGroupMemberOperationResult](../guan-jian-lei/group/v2timgroupmemberoperationresult.md) > | 每一个用户的请求结果                                                     |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     // 邀请他人入群

@@ -11,11 +11,11 @@ description: 删除指定群属性
 * 如果 `keys` 字段填 `null` ，则会清空所有的群属性。
 
 {% hint style="info" %}
-注意：&#x20;
+注意：
 
-1、目前只支持 AVChatRoom&#x20;
+1、目前只支持 AVChatRoom
 
-2、initGroupAttributes、setGroupAttributes、deleteGroupAttributes 接口合并计算， SDK 限制为5秒10次，超过后回调8511错误码；后台限制1秒5次，超过后返回10049错误码
+2、[initGroupAttributes](initgroupattributes.md)、[setGroupAttributes](setgroupattributes.md)、[deleteGroupAttributes](deletegroupattributes.md) 接口合并计算， SDK 限制为5秒10次，超过后回调8511错误码；后台限制1秒5次，超过后返回10049错误码
 {% endhint %}
 
 ## 参数详解
@@ -43,7 +43,7 @@ V2TimCallback
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     // 删除指定群属性
@@ -57,5 +57,4 @@ V2TimCallback
     if (deleteGroupAttributesRes.code == 0) {
       // 删除成功
     }
-
 ```

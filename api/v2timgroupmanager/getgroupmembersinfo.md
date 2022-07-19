@@ -31,13 +31,13 @@ V2TimValueCallback<List<V2TimGroupMemberFullInfo>>
 
 ## 返回值详解
 
-| 名称   | 数值类型                                                 | 描述                                                             |
-| ---- | ---------------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                                  | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                               | 请求结果描述                                                         |
-| data | List< [V2TimGroupMemberFullInfo](broken-reference) > | 查询到的用户信息列表                                                     |
+| 名称   | 数值类型                                                                                     | 描述                                                             |
+| ---- | ---------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                                                                      | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                                                                   | 请求结果描述                                                         |
+| data | List<  [V2TimGroupMemberFullInfo](../guan-jian-lei/group/v2timgroupmemberfullinfo.md)  > | 查询到的用户信息列表                                                     |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     // 获取指定的群成员资料
@@ -62,5 +62,4 @@ V2TimValueCallback<List<V2TimGroupMemberFullInfo>>
         element.userID;// 群成员的id
       });
     }
-
 ```

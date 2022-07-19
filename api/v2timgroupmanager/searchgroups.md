@@ -13,14 +13,14 @@ description: 搜索群资料
 {% hint style="info" %}
 注意：
 
-web 不支持关键字搜索搜索, 请使用searchGroupByID
+web 不支持关键字搜索搜索, 请使用[searchGroupByID](searchgroupbyid.md)
 {% endhint %}
 
 ## 参数详解
 
-| 参数名称        | 参数类型                                      | 是否必填 | 描述       |
-| ----------- | ----------------------------------------- | ---- | -------- |
-| searchParam | [V2TimGroupSearchParam](broken-reference) | 是    | 搜索群的搜索参数 |
+| 参数名称        | 参数类型                                                                     | 是否必填 | 描述       |
+| ----------- | ------------------------------------------------------------------------ | ---- | -------- |
+| searchParam | [V2TimGroupSearchParam](../guan-jian-lei/group/v2timgroupsearchparam.md) | 是    | 搜索群的搜索参数 |
 
 ## 返回值
 
@@ -36,13 +36,13 @@ V2TimValueCallback<List<V2TimGroupInfo>>
 
 ## 返回值详解
 
-| 名称    | 数值类型                                       | 描述                                                             |
-| ----- | ------------------------------------------ | -------------------------------------------------------------- |
-| code  | int                                        | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc  | String                                     | 请求结果描述                                                         |
-| data  | List< [V2TimGroupInfo](broken-reference) > | 搜索到的群消息列表                                                      |
+| 名称   | 数值类型                                                               | 描述                                                             |
+| ---- | ------------------------------------------------------------------ | -------------------------------------------------------------- |
+| code | int                                                                | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                                             | 请求结果描述                                                         |
+| data | List< [V2TimGroupInfo](../guan-jian-lei/group/v2timgroupinfo.md) > | 搜索到的群消息列表                                                      |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     // 搜索群资料的搜索设置
@@ -78,5 +78,4 @@ V2TimValueCallback<List<V2TimGroupInfo>>
         element.role; // 此用户在群中的角色
       });
     }
-
 ```

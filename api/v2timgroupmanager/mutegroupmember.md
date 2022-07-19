@@ -9,7 +9,7 @@ description: 禁言
 禁言
 
 * 禁言时间单位为秒，禁言信息存储于群成员的 `muteUtil` 属性字段中。
-* 群成员被禁言后，全员（包括被禁言的群成员）都会收到 `onMemberInfoChanged` 事件回调。
+* 群成员被禁言后，全员（包括被禁言的群成员）都会收到 [`onMemberInfoChanged`](../callbacks/onmemberinfochangedcallback.md) 事件回调。
 * 只有管理员或群主能够调用
 * 只有群主能将管理员禁言。
 
@@ -39,7 +39,7 @@ V2TimCallback
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
      // 禁言群组内的用户
@@ -53,5 +53,4 @@ V2TimCallback
      if (muteGroupMemberRes.code == 0) {
       // 禁言成功
      }
-
 ```

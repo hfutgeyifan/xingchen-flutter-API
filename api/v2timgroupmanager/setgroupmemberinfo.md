@@ -8,7 +8,7 @@ description: 修改指定的群成员资料
 
 修改指定的群成员资料
 
-* 群主或管理员可以调用 `setGroupMemberInfo` 接口修改群成员的群名片（`nameCard`）、自定义字段（`customInfo`）。
+* 群主或管理员可以调用 [`setGroupMemberInfo`](setgroupmemberinfo.md) 接口修改群成员的群名片（`nameCard`）、自定义字段（`customInfo`）。
 
 ## 参数详解
 
@@ -37,7 +37,7 @@ V2TimCallback
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     // 修改指定的群成员资料
@@ -52,5 +52,4 @@ V2TimCallback
     if (setGroupMemberInfoRes.code == 0) {
       // 修改成功
     }
-
 ```

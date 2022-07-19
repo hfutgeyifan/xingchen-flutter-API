@@ -18,10 +18,10 @@ web版本不支持
 
 ## 参数详解
 
-| 参数名称      | 参数类型                               | 是否必填 | 描述          |
-| --------- | ---------------------------------- | ---- | ----------- |
-| groupID   | String                             | 是    | 需要创建话题的群组id |
-| topicInfo | [V2TimTopicInfo](broken-reference) | 是    | 创建话题的设置     |
+| 参数名称      | 参数类型                                                       | 是否必填 | 描述          |
+| --------- | ---------------------------------------------------------- | ---- | ----------- |
+| groupID   | String                                                     | 是    | 需要创建话题的群组id |
+| topicInfo | [V2TimTopicInfo](../guan-jian-lei/topic/v2timtopicinfo.md) | 是    | 创建话题的设置     |
 
 ## 返回值
 
@@ -37,13 +37,13 @@ V2TimValueCallback<String>
 
 ## 返回值详解
 
-| 名称    | 数值类型   | 描述                                                             |
-| ----- | ------ | -------------------------------------------------------------- |
-| code  | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc  | String | 请求结果描述                                                         |
-| data  | String | 被创建话题的id                                                       |
+| 名称   | 数值类型   | 描述                                                             |
+| ---- | ------ | -------------------------------------------------------------- |
+| code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String | 请求结果描述                                                         |
+| data | String | 被创建话题的id                                                       |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     //创建话题
@@ -73,5 +73,4 @@ V2TimValueCallback<String>
       // 创建成功
       String? topicId = createTopicInCommunityRes.data;// 被创建话题的id
     }
-
 ```

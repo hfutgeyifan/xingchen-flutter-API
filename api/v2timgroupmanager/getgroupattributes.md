@@ -11,11 +11,11 @@ description: 获取指定群属性
 * 如果 `keys` 字段填 `null` ，则会获取所有的群属性。
 
 {% hint style="info" %}
-注意：&#x20;
+注意：
 
-1、目前只支持 AVChatRoom&#x20;
+1、目前只支持 AVChatRoom
 
-2、initGroupAttributes、setGroupAttributes、deleteGroupAttributes 接口合并计算， SDK 限制为5秒10次，超过后回调8511错误码；后台限制1秒5次，超过后返回10049错误码
+2、[initGroupAttributes](initgroupattributes.md)、[setGroupAttributes](setgroupattributes.md)、[deleteGroupAttributes](deletegroupattributes.md) 接口合并计算， SDK 限制为5秒10次，超过后回调8511错误码；后台限制1秒5次，超过后返回10049错误码
 {% endhint %}
 
 ## 参数详解
@@ -45,7 +45,7 @@ V2TimValueCallback<Map<String, String>>
 | desc | String               | 请求结果描述                                                         |
 | data | Map< String,String > | 获取到的群属性                                                        |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     // 获取指定群属性
@@ -60,5 +60,4 @@ V2TimValueCallback<Map<String, String>>
       // 获取成功
       Map<String, String>? groupAttributes = getGroupAttributesRes.data;// 获取到的群属性
     }
-
 ```

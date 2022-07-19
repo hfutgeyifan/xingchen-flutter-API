@@ -37,13 +37,13 @@ V2TimValueCallback<V2TimGroupApplicationResult>
 
 ## 返回值详解
 
-| 名称   | 数值类型                                            | 描述                                                             |
-| ---- | ----------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                             | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                          | 请求结果描述                                                         |
-| data | [V2TimGroupApplicationResult](broken-reference) | 查询到的申请加群信息                                                     |
+| 名称   | 数值类型                                                                                 | 描述                                                             |
+| ---- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------- |
+| code | int                                                                                  | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                                                               | 请求结果描述                                                         |
+| data | [V2TimGroupApplicationResult](../guan-jian-lei/group/v2timgroupapplicationresult.md) | 查询到的申请加群信息                                                     |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     // 获取加群的申请列表

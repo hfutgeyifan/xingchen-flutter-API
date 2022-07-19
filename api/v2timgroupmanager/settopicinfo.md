@@ -18,9 +18,9 @@ web版本不支持
 
 ## 参数详解
 
-| 参数名称      | 参数类型                               | 是否必填 | 描述         |
-| --------- | ---------------------------------- | ---- | ---------- |
-| topicInfo | [V2TimTopicInfo](broken-reference) | 是    | 需要修改的话题的设置 |
+| 参数名称      | 参数类型                                                       | 是否必填 | 描述         |
+| --------- | ---------------------------------------------------------- | ---- | ---------- |
+| topicInfo | [V2TimTopicInfo](../guan-jian-lei/topic/v2timtopicinfo.md) | 是    | 需要修改的话题的设置 |
 
 ## 返回值
 
@@ -40,7 +40,7 @@ V2TimCallback
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     // 设置话题属性 通过topicInfo中的topicID确定需要修改的话题
@@ -67,5 +67,4 @@ V2TimCallback
     if (setTopicInfoRes.code == 0) {
       // 设置成功
     }
-
 ```

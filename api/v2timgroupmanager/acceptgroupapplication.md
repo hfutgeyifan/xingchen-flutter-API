@@ -16,15 +16,15 @@ web 端使用时必须传入webMessageInstance 字段。 对应【群系统通�
 
 ## 参数详解
 
-| 参数名称               | 参数类型                                         | 是否必填      | 描述             |
-| ------------------ | -------------------------------------------- | --------- | -------------- |
-| groupID            | String                                       | 是         | 加入的群组id        |
-| reason             | String                                       | 否         | 同意原因           |
-| fromUser           | String                                       | 是         |  请求者id         |
-| toUser             | String                                       | 是         | 判决者id          |
-| addTime            | int                                          | 否         | 申请时间           |
-| type               | [GroupApplicationTypeEnum](broken-reference) | 否         | 申请类型           |
-| webMessageInstance | String                                       | 否（web端必填） | 对应【群系统通知】的消息实例 |
+| 参数名称               | 参数类型                                                             | 是否必填      | 描述             |
+| ------------------ | ---------------------------------------------------------------- | --------- | -------------- |
+| groupID            | String                                                           | 是         | 加入的群组id        |
+| reason             | String                                                           | 否         | 同意原因           |
+| fromUser           | String                                                           | 是         | 请求者id          |
+| toUser             | String                                                           | 是         | 判决者id          |
+| addTime            | int                                                              | 否         | 申请时间           |
+| type               | [GroupApplicationTypeEnum](../enums/groupapplicationtypeenum.md) | 否         | 申请类型           |
+| webMessageInstance | String                                                           | 否（web端必填） | 对应【群系统通知】的消息实例 |
 
 ## 返回值
 
@@ -44,7 +44,7 @@ V2TimCallback
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     // 获取加群列表

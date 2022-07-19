@@ -8,15 +8,15 @@ description: 踢人
 
 踢人
 
-* 普通群成员被踢后，全员（包括被踢人）会收到 `onMemberKicked` 回调。
-* 由于直播群（AVChatRoom）对进群没有限制，因此直播群（AVChatRoom）没有支持踢人的接口，您可以使用 `muteGroupMember` 禁言指定成员达到类似的成员管控的目的。
+* 普通群成员被踢后，全员（包括被踢人）会收到 [`onMemberKicked`](../callbacks/onmemberkickedcallback.md) 回调。
+* 由于直播群（AVChatRoom）对进群没有限制，因此直播群（AVChatRoom）没有支持踢人的接口，您可以使用 [`muteGroupMember`](mutegroupmember.md) 禁言指定成员达到类似的成员管控的目的。
 
 {% hint style="info" %}
-工作群（Work）：只有群主或 APP 管理员可以踢人。&#x20;
+工作群（Work）：只有群主或 APP 管理员可以踢人。
 
 公开群（Public）、会议群（Meeting）：群主、管理员和 APP 管理员可以踢人 。
 
-直播群（AVChatRoom）：只支持禁言（muteGroupMember），不支持踢人。
+直播群（AVChatRoom）：只支持禁言（[muteGroupMember](mutegroupmember.md)），不支持踢人。
 {% endhint %}
 
 ## 参数详解
@@ -45,7 +45,7 @@ V2TimCallback
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     //群组踢人
@@ -59,5 +59,4 @@ V2TimCallback
     if (kickGroupMemberRes.code == 0) {
       // 踢出成功
     }
-
 ```

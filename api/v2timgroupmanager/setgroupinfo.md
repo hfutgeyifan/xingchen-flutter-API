@@ -8,7 +8,7 @@ description: 修改群资料
 
 修改群资料
 
-* 如果您事先调用 `addGroupListener` 添加了群组事件监听器，群资料被修改后，全员会收到 `onGroupInfoChanged` 回调。
+* 如果您事先调用 [`addGroupListener`](../v2timmanager/addgrouplistener.md) 添加了群组事件监听器，群资料被修改后，全员会收到 [`onGroupInfoChanged`](../callbacks/ongroupinfochangedcallback.md) 回调。
 
 不同类型的群组，可以修改群资料的成员角色不同：
 
@@ -22,9 +22,9 @@ description: 修改群资料
 
 ## 参数详解
 
-| 参数名称 | 参数类型                               | 是否必填 | 描述      |
-| ---- | ---------------------------------- | ---- | ------- |
-| info | [V2TimGroupInfo](broken-reference) | 是    | 群资料设置信息 |
+| 参数名称 | 参数类型                                                       | 是否必填 | 描述      |
+| ---- | ---------------------------------------------------------- | ---- | ------- |
+| info | [V2TimGroupInfo](../guan-jian-lei/group/v2timgroupinfo.md) | 是    | 群资料设置信息 |
 
 ## 返回值
 
@@ -44,7 +44,7 @@ V2TimCallback
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     // 设置群资料设置 只有以下属性可修改，groupID为需要修改的群组id
