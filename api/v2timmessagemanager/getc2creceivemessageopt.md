@@ -4,7 +4,7 @@ description: 查询某个用户的 C2C 消息接收选项
 
 # getC2CReceiveMessageOpt
 
-## API功能介绍
+## 功能介绍
 
 查询某个用户的 C2C 消息接收选项
 
@@ -18,7 +18,7 @@ description: 查询某个用户的 C2C 消息接收选项
 | ---------- | -------------- | ---- | ----------- |
 | userIDList | List< String > | 是    | 需要查询的用户id列表 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimReceiveMessageOptInfo>>
@@ -30,7 +30,7 @@ V2TimValueCallback<List<V2TimReceiveMessageOptInfo>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                                                         | 描述                                                             |
 | ---- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
@@ -38,7 +38,7 @@ V2TimValueCallback<List<V2TimReceiveMessageOptInfo>>
 | desc | String                                                                                       | 请求结果描述                                                         |
 | data | List< [V2TimReceiveMessageOptInfo](../guan-jian-lei/message/v2timreceivemessageoptinfo.md) > | 查询到的消息接收选项列表                                                   |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
 // 查询某些用户的 C2C 消息接收选项

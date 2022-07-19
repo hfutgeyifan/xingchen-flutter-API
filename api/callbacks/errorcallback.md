@@ -24,7 +24,7 @@ String error
 | code  | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | error | String | 请求结果错误描述                                                       |
 
-## 使用案例
+## 代码示例
 
 ```dart
 // 1. 从即时通信 IM 控制台获取应用 SDKAppID。

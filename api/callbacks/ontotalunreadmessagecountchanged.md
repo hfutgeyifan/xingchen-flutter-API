@@ -24,7 +24,7 @@ int totalUnreadCount
 | ---------------- | ---- | ------ |
 | totalUnreadCount | int  | 会话未读总数 |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置群组监听器

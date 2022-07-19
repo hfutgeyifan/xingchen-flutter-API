@@ -4,7 +4,7 @@ description: 从好友分组中删除好友
 
 # deleteFriendsFromFriendGroup
 
-## API功能介绍
+## 功能介绍
 
 从好友分组中删除好友
 
@@ -15,7 +15,7 @@ description: 从好友分组中删除好友
 | groupName  | String         | 是    | 需要删除的群组名称   |
 | userIDList | List< String > | 是    | 需要删除的用户id列表 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimFriendOperationResult>>
@@ -27,7 +27,7 @@ V2TimValueCallback<List<V2TimFriendOperationResult>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                   | 描述                                                             |
 | ---- | ------------------------------------------------------ | -------------------------------------------------------------- |
@@ -35,7 +35,7 @@ V2TimValueCallback<List<V2TimFriendOperationResult>>
 | desc | String                                                 | 请求结果描述                                                         |
 | data | List< [V2TimFriendOperationResult](broken-reference) > | 操作结果说明列表                                                       |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
 // 从好友分组中删除好友

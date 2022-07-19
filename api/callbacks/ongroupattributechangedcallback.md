@@ -24,7 +24,7 @@ Map<String, String> groupAttributeMap
 | groupID           | String                | 群 ID   |
 | groupAttributeMap | Map< String, String > | 群的所有属性 |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置群组监听器

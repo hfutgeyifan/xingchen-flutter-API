@@ -4,7 +4,7 @@ description: 通过 groupID 搜索群组
 
 # searchGroupByID
 
-## API功能介绍
+## 功能介绍
 
 通过 groupID 搜索群组
 
@@ -22,7 +22,7 @@ description: 通过 groupID 搜索群组
 | ------- | ------ | ---- | ---------- |
 | groupID | String | 是    | 需要查询的群组 ID |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<V2TimGroupInfo>
@@ -54,7 +54,7 @@ V2TimValueCallback<V2TimGroupInfo>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                      | 描述                                                             |
 | ---- | ----------------------------------------- | -------------------------------------------------------------- |
@@ -62,7 +62,7 @@ V2TimValueCallback<V2TimGroupInfo>
 | desc | String                                    | 请求结果描述                                                         |
 | data | List< [V2TimGroupInfo](broken-reference)> | 查询到的群组信息                                                       |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //通过 groupID 搜索群组

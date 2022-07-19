@@ -4,7 +4,7 @@ description: 获取用户资料
 
 # getUsersInfo
 
-## API功能介绍
+## 功能介绍
 
 获取用户资料
 
@@ -22,7 +22,7 @@ userIDList 建议一次最大 100 个，因为数量过多可能会导致数据�
 | ---------- | -------------- | ---- | ----------- |
 | userIDList | List< String > | 是    | 需要查询的用户id列表 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimUserFullInfo>>
@@ -34,7 +34,7 @@ V2TimValueCallback<List<V2TimUserFullInfo>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                                    | 描述                                                             |
 | ---- | ----------------------------------------------------------------------- | -------------------------------------------------------------- |
@@ -42,7 +42,7 @@ V2TimValueCallback<List<V2TimUserFullInfo>>
 | desc | String                                                                  | 请求结果描述                                                         |
 | data | List< [V2TimUserFullInfo](../guan-jian-lei/user/v2timuserfullinfo.md) > | 查询到的用户资料列表                                                     |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //获取用户资料

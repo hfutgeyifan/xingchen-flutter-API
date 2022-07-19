@@ -24,7 +24,7 @@ String customData
 | groupID    | String | 群 ID  |
 | customData | String | 自定义数据 |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置群组监听器

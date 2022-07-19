@@ -24,7 +24,7 @@ int progress
 | message  | [V2TimMessage](broken-reference) | 上传文件的消息属性    |
 | progress | int                              | 文件上传进度 0-100 |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置会话监听器

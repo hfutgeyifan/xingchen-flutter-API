@@ -4,7 +4,7 @@ description: 获取分组信息
 
 # getFriendGroups
 
-## API功能介绍
+## 功能介绍
 
 修改好友分组的名称
 
@@ -16,7 +16,7 @@ description: 获取分组信息
 | ------------- | -------------- | ---- | -------------- |
 | groupNameList | List< String > | 是    | 要获取信息的好友分组名称列表 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimFriendGroup>>
@@ -28,7 +28,7 @@ V2TimValueCallback<List<V2TimFriendGroup>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                     | 描述                                                             |
 | ---- | ------------------------ | -------------------------------------------------------------- |
@@ -36,7 +36,7 @@ V2TimValueCallback<List<V2TimFriendGroup>>
 | desc | String                   | 请求结果描述                                                         |
 | data | List< V2TimFriendGroup > | 查询到的分组信息                                                       |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 获取分组信息

@@ -4,7 +4,7 @@ description: 获取群资料
 
 # getGroupsInfo
 
-## API功能介绍
+## 功能介绍
 
 获取群资料
 
@@ -16,7 +16,7 @@ description: 获取群资料
 | ----------- | -------------- | ---- | ------------ |
 | groupIDList | List< String > | 是    | 需要查询的群组 ID列表 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimGroupInfoResult>>
@@ -28,7 +28,7 @@ V2TimValueCallback<List<V2TimGroupInfoResult>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                             | 描述                                                             |
 | ---- | ------------------------------------------------ | -------------------------------------------------------------- |
@@ -36,7 +36,7 @@ V2TimValueCallback<List<V2TimGroupInfoResult>>
 | desc | String                                           | 请求结果描述                                                         |
 | data | List< [V2TimGroupInfoResult](broken-reference) > | 查询到的群组信息列表                                                     |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //获取群资料

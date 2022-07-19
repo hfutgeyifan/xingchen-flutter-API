@@ -4,7 +4,7 @@ description: 添加好友
 
 # addFriend
 
-## API功能介绍
+## 功能介绍
 
 添加好友
 
@@ -41,7 +41,7 @@ description: 添加好友
 | addSource   | String                             | 否    | 添加来源描述       |
 | addType     | [FriendTypeEnum](broken-reference) | 是    | 设置加好友类型，默认双向 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<V2TimFriendOperationResult>
@@ -57,7 +57,7 @@ V2TimValueCallback<V2TimFriendOperationResult>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                           | 描述                                                             |
 | ---- | ---------------------------------------------- | -------------------------------------------------------------- |
@@ -65,7 +65,7 @@ V2TimValueCallback<V2TimFriendOperationResult>
 | desc | String                                         | 请求结果描述                                                         |
 | data | [V2TimFriendOperationResult](broken-reference) | 添加请求结果                                                         |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //添加好友

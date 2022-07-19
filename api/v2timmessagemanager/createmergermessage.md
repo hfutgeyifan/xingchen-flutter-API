@@ -4,7 +4,7 @@ description: 创建合并消息
 
 # createMergerMessage
 
-## API功能介绍
+## 功能介绍
 
 创建合并消息
 
@@ -27,7 +27,7 @@ description: 创建合并消息
 | compatibleText         | String         | 是    | 兼容文本信息，低版本 SDK 如果不支持合并消息，默认会收到一条文本消息，文本消息的内容为 compatibleText |
 | webMessageInstanceList | List< String > | 否    | web端消息列表                                                     |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<V2TimMsgCreateInfoResult>
@@ -42,7 +42,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                                       | 描述                                                             |
 | ---- | -------------------------------------------------------------------------- | -------------------------------------------------------------- |
@@ -50,7 +50,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>
 | desc | String                                                                     | 请求结果描述                                                         |
 | data | [V2TimMsgCreateInfoResult](../guan-jian-lei/message/v2timsdklistener-1.md) | 创建的合并消息                                                        |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
 // 创建合并消息

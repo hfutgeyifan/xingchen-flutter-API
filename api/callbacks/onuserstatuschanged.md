@@ -26,7 +26,7 @@ List<V2TimUserStatus> userStatusList
 | -------------- | ------------------------------------------- | ----------- |
 | userStatusList | List< [V2TimUserStatus](broken-reference) > | 用户状态变化的用户列表 |
 
-## 使用案例
+## 代码示例
 
 ```dart
     // 1. 从即时通信 IM 控制台获取应用 SDKAppID。

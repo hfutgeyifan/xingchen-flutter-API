@@ -20,7 +20,7 @@ VoidCallback = void Function()
 此回调函数无返回值
 {% endhint %}
 
-## 使用案例
+## 代码示例
 
 ```dart
  // 1. 从即时通信 IM 控制台获取应用 SDKAppID。

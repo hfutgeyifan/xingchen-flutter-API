@@ -4,7 +4,7 @@ description: 添加好友到一个好友分组
 
 # addFriendsToFriendGroup
 
-## API功能介绍
+## 功能介绍
 
 添加好友到一个好友分组
 
@@ -15,7 +15,7 @@ description: 添加好友到一个好友分组
 | groupName  | String         | 是    | 分组名称          |
 | userIDList | List< String > | 是    | 需要加入分组的好友id列表 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimFriendOperationResult>>
@@ -27,7 +27,7 @@ V2TimValueCallback<List<V2TimFriendOperationResult>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                   | 描述                                                             |
 | ---- | ------------------------------------------------------ | -------------------------------------------------------------- |
@@ -35,7 +35,7 @@ V2TimValueCallback<List<V2TimFriendOperationResult>>
 | desc | String                                                 | 请求结果描述                                                         |
 | data | List< [V2TimFriendOperationResult](broken-reference) > | 添加分组请求的结果信息                                                    |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //添加好友到一个好友分组

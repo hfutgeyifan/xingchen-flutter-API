@@ -4,7 +4,7 @@ description: 发送回复消息
 
 # sendReplyMessage
 
-## API功能介绍
+## 功能介绍
 
 发送回复消息
 
@@ -23,7 +23,7 @@ description: 发送回复消息
 | isExcludedFromUnreadCount | bool                                                           | 否    | 发送消息是否计入会话未读数  |
 | localCustomData           | String                                                         | 否    | 消息本地数据         |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<V2TimMessage>
@@ -74,7 +74,7 @@ V2TimValueCallback<V2TimMessage>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                     | 描述                                                             |
 | ---- | -------------------------------------------------------- | -------------------------------------------------------------- |
@@ -82,7 +82,7 @@ V2TimValueCallback<V2TimMessage>
 | desc | String                                                   | 请求结果描述                                                         |
 | data | [V2TimMessage](../guan-jian-lei/message/v2timmessage.md) | 创建的回复信息                                                        |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
  // 创建文本消息

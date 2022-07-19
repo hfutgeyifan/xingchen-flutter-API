@@ -4,7 +4,7 @@ description: 获取当前用户已经加入的支持话题的社群列表
 
 # getJoinedCommunityList
 
-## API功能介绍
+## 功能介绍
 
 获取当前用户已经加入的支持话题的社群列表
 
@@ -22,7 +22,7 @@ web版本不支持
 此API无参数
 {% endhint %}
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimGroupInfo>>
@@ -34,7 +34,7 @@ V2TimValueCallback<List<V2TimGroupInfo>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                       | 描述                                                             |
 | ---- | ------------------------------------------ | -------------------------------------------------------------- |
@@ -42,7 +42,7 @@ V2TimValueCallback<List<V2TimGroupInfo>>
 | desc | String                                     | 请求结果描述                                                         |
 | data | List< [V2TimGroupInfo](broken-reference) > | 查询到的群组列表                                                       |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 获取当前用户已经加入的支持话题的社群列表

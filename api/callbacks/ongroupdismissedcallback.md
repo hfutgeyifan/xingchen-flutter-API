@@ -24,7 +24,7 @@ V2TimGroupMemberInfo opUser
 | groupID | String                                   | 群 ID |
 | opUser  | [V2TimGroupMemberInfo](broken-reference) | 处理人  |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置群组监听器

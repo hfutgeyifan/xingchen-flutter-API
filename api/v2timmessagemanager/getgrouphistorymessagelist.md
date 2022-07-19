@@ -4,7 +4,7 @@ description: 获取群组历史消息
 
 # getGroupHistoryMessageList
 
-## API功能介绍
+## 功能介绍
 
 获取群组历史消息
 
@@ -30,7 +30,7 @@ description: 获取群组历史消息
 | count     | int    | 是    | 拉取消息的个数，不宜太多，会影响消息拉取的速度，这里建议一次拉取 20 个。 |
 | lastMsgID | String | 否    | 获取消息的起始消息id，如果传 null，起始消息为会话的最新消息      |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimMessage>>
@@ -42,7 +42,7 @@ V2TimValueCallback<List<V2TimMessage>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                             | 描述                                                             |
 | ---- | ---------------------------------------------------------------- | -------------------------------------------------------------- |
@@ -50,7 +50,7 @@ V2TimValueCallback<List<V2TimMessage>>
 | desc | String                                                           | 请求结果描述                                                         |
 | data | List< [V2TimMessage](../guan-jian-lei/message/v2timmessage.md) > | 获取的群组历史消息                                                      |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
 // 拉取单聊历史消息

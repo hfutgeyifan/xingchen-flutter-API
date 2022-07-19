@@ -4,7 +4,7 @@ description: 反初始化 SDK
 
 # unInitSDK
 
-## API功能介绍
+## 功能介绍
 
 反初始化 SDK
 
@@ -17,7 +17,7 @@ description: 反初始化 SDK
 此API无参数
 {% endhint %}
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback
@@ -28,14 +28,14 @@ V2TimValueCallback
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型   | 描述                                                             |
 | ---- | ------ | -------------------------------------------------------------- |
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
 // 从即时通信 IM 控制台获取应用 SDKAppID。

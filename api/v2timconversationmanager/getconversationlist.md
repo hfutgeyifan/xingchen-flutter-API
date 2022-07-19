@@ -4,7 +4,7 @@ description: 获取会话列表
 
 # getConversationList
 
-## API功能介绍
+## 功能介绍
 
 获取会话列表
 
@@ -30,7 +30,7 @@ description: 获取会话列表
 | nextSeq | String | 是    | 分页拉取的游标，第一次默认取传 0，后续分页拉传上一次分页拉取成功回调里的 nextSeq |
 | count   | int    | 是    | 分页拉取的个数，一次分页拉取不宜太多，会影响拉取的速度，建议每次拉取 100 个会话    |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<V2TimConversationResult>
@@ -46,7 +46,7 @@ V2TimValueCallback<V2TimConversationResult>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                        | 描述                                                             |
 | ---- | ------------------------------------------- | -------------------------------------------------------------- |
@@ -54,7 +54,7 @@ V2TimValueCallback<V2TimConversationResult>
 | desc | String                                      | 请求结果描述                                                         |
 | data | [V2TimConversationResult](broken-reference) | 此次拉取到的消息信息                                                     |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //获取会话列表

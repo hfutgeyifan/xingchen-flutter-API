@@ -22,7 +22,7 @@ V2TimUserFullInfo info
 | ---- | ------------------------------------- | ------- |
 | info | [V2TimUserFullInfo](broken-reference) | 登录用户的资料 |
 
-## 使用案例
+## 代码示例
 
 ```dart
  // 1. 从即时通信 IM 控制台获取应用 SDKAppID。

@@ -4,7 +4,7 @@ description: 从好友列表删除好友
 
 # deleteFromFriendList
 
-## API功能介绍
+## 功能介绍
 
 添加好友
 
@@ -17,7 +17,7 @@ description: 从好友列表删除好友
 | userIDList | List< String >                     | 是    | 需要删除的用户id列表 |
 | deleteType | [FriendTypeEnum](broken-reference) | 是    | 删除操作的类型     |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimFriendOperationResult>>
@@ -29,7 +29,7 @@ V2TimValueCallback<List<V2TimFriendOperationResult>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                   | 描述                                                             |
 | ---- | ------------------------------------------------------ | -------------------------------------------------------------- |
@@ -37,7 +37,7 @@ V2TimValueCallback<List<V2TimFriendOperationResult>>
 | desc | String                                                 | 请求结果描述                                                         |
 | data | List< [V2TimFriendOperationResult](broken-reference) > | 删除请求结果列表                                                       |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //从好友列表删除好友

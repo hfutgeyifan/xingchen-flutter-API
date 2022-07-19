@@ -30,7 +30,7 @@ String data
 | inviteeList | List< String > | 被邀请人的列表     |
 | data        | String         | 邀请时的自定义data |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置群组监听器

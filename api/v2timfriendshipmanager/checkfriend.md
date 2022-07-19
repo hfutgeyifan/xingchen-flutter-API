@@ -4,7 +4,7 @@ description: 检查指定用户的好友关系
 
 # checkFriend
 
-## API功能介绍
+## 功能介绍
 
 检查指定用户的好友关系
 
@@ -15,7 +15,7 @@ description: 检查指定用户的好友关系
 | userIDList | List< String >                     | 是    | 需要检查的用户id列表 |
 | checkType  | [FriendTypeEnum](broken-reference) | 是    | 检查的类型       |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimFriendCheckResult>>
@@ -27,7 +27,7 @@ V2TimValueCallback<List<V2TimFriendCheckResult>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                               | 描述                                                             |
 | ---- | -------------------------------------------------- | -------------------------------------------------------------- |
@@ -35,7 +35,7 @@ V2TimValueCallback<List<V2TimFriendCheckResult>>
 | desc | String                                             | 请求结果描述                                                         |
 | data | List< [V2TimFriendCheckResult](broken-reference) > | 检查请求结果列表                                                       |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //检查指定用户的好友关系

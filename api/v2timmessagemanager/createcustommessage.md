@@ -4,7 +4,7 @@ description: 创建定制化消息
 
 # createCustomMessage
 
-## API功能介绍
+## 功能介绍
 
 创建定制化消息
 
@@ -16,7 +16,7 @@ description: 创建定制化消息
 | desc      | String | 否    | 自定义desc      |
 | extension | String | 否    | 自定义extension |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<V2TimMsgCreateInfoResult>
@@ -31,7 +31,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                                       | 描述                                                             |
 | ---- | -------------------------------------------------------------------------- | -------------------------------------------------------------- |
@@ -39,7 +39,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>
 | desc | String                                                                     | 请求结果描述                                                         |
 | data | [V2TimMsgCreateInfoResult](../guan-jian-lei/message/v2timsdklistener-1.md) | 创建后的自定义消息信息                                                    |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
 // 创建自定义消息

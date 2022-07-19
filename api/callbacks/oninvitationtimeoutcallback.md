@@ -24,7 +24,7 @@ List<String> inviteeList
 | inviteID    | String         | 邀请消息信令id  |
 | inviteeList | List< String > | 被邀请人的id列表 |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置信令监听器

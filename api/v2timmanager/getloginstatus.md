@@ -4,7 +4,7 @@ description: 获取登录状态
 
 # getLoginStatus
 
-## API功能介绍
+## 功能介绍
 
 获取登录状态
 
@@ -16,7 +16,7 @@ description: 获取登录状态
 此API无参数
 {% endhint %}
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<int>
@@ -28,7 +28,7 @@ V2TimValueCallback<int>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型   | 描述                                                             |
 | ---- | ------ | -------------------------------------------------------------- |
@@ -44,7 +44,7 @@ V2TimValueCallback<int>
     | V2TIM\_STATUS\_LOGININ | 登录中    | 1   |
     | V2TIM\_STATUS\_LOGOUT  | 未登陆    | 2   |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
 // 在用户登陆成功之后可调用

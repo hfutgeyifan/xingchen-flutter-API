@@ -4,7 +4,7 @@ description: 邀请他人入群
 
 # inviteUserToGroup
 
-## API功能介绍
+## 功能介绍
 
 邀请他人入群
 
@@ -25,7 +25,7 @@ description: 邀请他人入群
 | groupID  | String         | 是    | 需要加入的群组id |
 | userList | List< String > | 是    | 邀请的用户id列表 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimGroupMemberOperationResult>>
@@ -37,7 +37,7 @@ V2TimValueCallback<List<V2TimGroupMemberOperationResult>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                        | 描述                                                             |
 | ---- | ----------------------------------------------------------- | -------------------------------------------------------------- |
@@ -45,7 +45,7 @@ V2TimValueCallback<List<V2TimGroupMemberOperationResult>>
 | desc | String                                                      | 请求结果描述                                                         |
 | data | List< [V2TimGroupMemberOperationResult](broken-reference) > | 每一个用户的请求结果                                                     |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 邀请他人入群

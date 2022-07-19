@@ -4,7 +4,7 @@ description: 获取历史消息高级接口(没有处理Native返回数据)
 
 # getHistoryMessageListWithoutFormat
 
-## API功能介绍
+## 功能介绍
 
 获取历史消息高级接口(没有处理Native返回数据)
 
@@ -32,19 +32,19 @@ description: 获取历史消息高级接口(没有处理Native返回数据)
 | count      | int                                                        | 是    | 单次拉取的消息数量                                   |
 | lastMsgID  | String                                                     | 否    | lastMsgID                                   |
 
-## 返回模板
+## 返回值
 
 ```dart
 LinkedHashMap<dynamic,dynamic>
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称            | 数值类型                              | 描述                      |
 | ------------- | --------------------------------- | ----------------------- |
 | LinkedHashMap | LinkedHashMap< dynamic, dynamic > | 获取的历史消息(没有处理Native返回数据) |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
 // 拉取单聊历史消息

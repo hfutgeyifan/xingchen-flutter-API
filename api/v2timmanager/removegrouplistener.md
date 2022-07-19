@@ -4,7 +4,7 @@ description: 移除群组监听器
 
 # removeGroupListener
 
-## API功能介绍
+## 功能介绍
 
 移除群组监听器
 
@@ -14,19 +14,19 @@ description: 移除群组监听器
 | -------- | --------------------------------------------------------------------- | ---- | ---------- |
 | listener | [V2TimGroupListener](../guan-jian-lei/listener/v2timgrouplistener.md) | 是    | 需要移除的群组监听器 |
 
-## 返回模板
+## 返回值
 
 ```dart
 void
 ```
 
-## 返回参数详解
+## 返回值详解
 
 {% hint style="info" %}
 此方法无返回值
 {% endhint %}
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //设置群组监听器

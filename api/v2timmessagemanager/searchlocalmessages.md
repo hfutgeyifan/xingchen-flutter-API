@@ -4,7 +4,7 @@ description: 搜索本地消息
 
 # searchLocalMessages
 
-## API功能介绍
+## 功能介绍
 
 搜索本地消息
 
@@ -18,7 +18,7 @@ description: 搜索本地消息
 | ----------- | ------------------------------------------------------------------------------ | ---- | ------ |
 | searchParam | [V2TimMessageSearchParam](../guan-jian-lei/message/v2timmessagesearchparam.md) | 是    | 搜索设置参数 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<V2TimMessageSearchResult>
@@ -33,7 +33,7 @@ V2TimValueCallback<V2TimMessageSearchResult>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                                             | 描述                                                             |
 | ---- | -------------------------------------------------------------------------------- | -------------------------------------------------------------- |
@@ -41,7 +41,7 @@ V2TimValueCallback<V2TimMessageSearchResult>
 | desc | String                                                                           | 请求结果描述                                                         |
 | data | [V2TimMessageSearchResult](../guan-jian-lei/message/v2timmessagesearchresult.md) | 符合搜索条件的所有信息                                                    |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 创建消息搜索设置参数

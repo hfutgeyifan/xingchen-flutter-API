@@ -4,7 +4,7 @@ description: 用户登录
 
 # login
 
-## API功能介绍
+## 功能介绍
 
 用户登录
 
@@ -35,7 +35,7 @@ description: 用户登录
 | userID  | String | 是    | 登录用户唯一标识                                                                             |
 | userSig | String | 是    | 登录票据，计算方法请参考 [UserSig 后台 API](https://cloud.tencent.com/document/product/269/32688)。 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimCallback
@@ -46,14 +46,14 @@ V2TimCallback
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型   | 描述                                                             |
 | ---- | ------ | -------------------------------------------------------------- |
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
 String userID = "your user id";// 用户设置的userID

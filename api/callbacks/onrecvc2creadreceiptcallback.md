@@ -24,7 +24,7 @@ List<V2TimMessageReceipt> receiptList
 | ----------- | ----------------------------------------------- | ------ |
 | receiptList | List< [V2TimMessageReceipt](broken-reference) > | 消息已读列表 |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //创建消息监听器

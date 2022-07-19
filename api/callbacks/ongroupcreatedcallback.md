@@ -22,7 +22,7 @@ String groupID
 | ------- | ------ | ---- |
 | groupID | String | 群 ID |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置群组监听器

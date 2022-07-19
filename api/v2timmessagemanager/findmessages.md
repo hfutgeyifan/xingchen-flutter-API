@@ -4,7 +4,7 @@ description: 根据messageID 查询指定会话中的本地消息
 
 # findMessages
 
-## API功能介绍
+## 功能介绍
 
 根据messageID 查询指定会话中的本地消息
 
@@ -18,7 +18,7 @@ description: 根据messageID 查询指定会话中的本地消息
 | ------------- | -------------- | ---- | ----------- |
 | messageIDList | List< String > | 是    | 需要查询的消息id列表 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimMessage>>
@@ -30,7 +30,7 @@ V2TimValueCallback<List<V2TimMessage>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                             | 描述                                                             |
 | ---- | ---------------------------------------------------------------- | -------------------------------------------------------------- |
@@ -38,7 +38,7 @@ V2TimValueCallback<List<V2TimMessage>>
 | desc | String                                                           | 请求结果描述                                                         |
 | data | List< [V2TimMessage](../guan-jian-lei/message/v2timmessage.md) > | 获取的查询到的消息列表                                                    |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
 // 根据消息id查询消息

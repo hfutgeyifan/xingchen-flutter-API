@@ -4,7 +4,7 @@ description: 登出
 
 # logout
 
-## API功能介绍
+## 功能介绍
 
 登出
 
@@ -19,7 +19,7 @@ description: 登出
 此API无参数
 {% endhint %}
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback
@@ -30,14 +30,14 @@ V2TimValueCallback
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型   | 描述                                                             |
 | ---- | ------ | -------------------------------------------------------------- |
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
 // 在用户登陆成功之后可调用

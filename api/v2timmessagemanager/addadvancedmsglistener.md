@@ -4,7 +4,7 @@ description: 添加高级消息的事件监听器
 
 # addAdvancedMsgListener
 
-## API功能介绍
+## 功能介绍
 
 添加高级消息的事件监听器
 
@@ -16,19 +16,19 @@ description: 添加高级消息的事件监听器
 | -------- | --------------------------------------------------------------------------------- | ---- | ------- |
 | listener | [V2TimAdvancedMsgListener](../guan-jian-lei/listener/v2timadvancedmsglistener.md) | 是    | 高级消息监听器 |
 
-## 返回模板
+## 返回值
 
 ```dart
 Future<void>
 ```
 
-## 返回参数详解
+## 返回值详解
 
 {% hint style="info" %}
 此方法无返回值
 {% endhint %}
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 创建消息监听器

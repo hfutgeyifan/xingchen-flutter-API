@@ -4,7 +4,7 @@ description: 高级消息功能入口
 
 # getMessageManager
 
-## API功能介绍
+## 功能介绍
 
 高级消息功能入口
 
@@ -16,19 +16,19 @@ description: 高级消息功能入口
 此API无参数
 {% endhint %}
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TIMMessageManager
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称                  | 数值类型                                           | 描述       |
 | ------------------- | ---------------------------------------------- | -------- |
 | V2TIMMessageManager | [V2TIMMessageManager](../v2timmessagemanager/) | 高级消息功能入口 |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 使用getMessageManager创建消息的案例

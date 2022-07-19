@@ -4,7 +4,7 @@ description: 获取指定会话
 
 # getConversation
 
-## API功能介绍
+## 功能介绍
 
 获取会话列表
 
@@ -14,7 +14,7 @@ description: 获取指定会话
 | -------------- | ------ | ---- | --------------------------------------------------------------- |
 | conversationID | String | 是    | 会话唯一 ID，如果是 C2C 单聊，组成方式为 c2c\_userID，如果是群聊，组成方式为 group\_groupID |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<V2TimConversation>
@@ -42,7 +42,7 @@ V2TimValueCallback<V2TimConversation>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                  | 描述                                                             |
 | ---- | ------------------------------------- | -------------------------------------------------------------- |
@@ -50,7 +50,7 @@ V2TimValueCallback<V2TimConversation>
 | desc | String                                | 请求结果描述                                                         |
 | data | [V2TimConversation](broken-reference) | 此次拉取到的消息信息                                                     |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //获取指定会话

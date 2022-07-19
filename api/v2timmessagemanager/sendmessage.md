@@ -4,7 +4,7 @@ description: 发送消息
 
 # sendMessage
 
-## API功能介绍
+## 功能介绍
 
 发送消息
 
@@ -54,7 +54,7 @@ createTargetedGroupMessage：定向群消息
 | cloudCustomData           | String                                                         | 否    | 消息云端数据                 | YES    | YES    | 消息附带的额外的数据，存云端，消息的接受者可以访问到                            |
 | localCustomData           | String                                                         | 否    | 消息本地数据                 | YES    | YES    | 消息附带的额外的数据，存本地，消息的接受者不可以访问到，App 卸载后数据丢失               |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<V2TimMessage>
@@ -105,7 +105,7 @@ V2TimValueCallback<V2TimMessage>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                     | 描述                                                             |
 | ---- | -------------------------------------------------------- | -------------------------------------------------------------- |
@@ -113,7 +113,7 @@ V2TimValueCallback<V2TimMessage>
 | desc | String                                                   | 请求结果描述                                                         |
 | data | [V2TimMessage](../guan-jian-lei/message/v2timmessage.md) | 发送的信息                                                          |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
 // 创建文本消息

@@ -4,7 +4,7 @@ description: 高级群组功能入口
 
 # getGroupManager
 
-## API功能介绍
+## 功能介绍
 
 高级群组功能入口
 
@@ -16,19 +16,19 @@ description: 高级群组功能入口
 此API无参数
 {% endhint %}
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TIMGroupManager
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称                | 数值类型                                       | 描述       |
 | ----------------- | ------------------------------------------ | -------- |
 | V2TIMGroupManager | [V2TIMGroupManager](../v2timgroupmanager/) | 高级群组功能入口 |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 使用getGroupManager创建群组的案例

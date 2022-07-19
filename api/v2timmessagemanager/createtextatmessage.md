@@ -4,7 +4,7 @@ description: 创建文本消息，并且可以附带 @ 提醒功能
 
 # createTextAtMessage
 
-## API功能介绍
+## 功能介绍
 
 创建文本消息，并且可以附带 @ 提醒功能
 
@@ -15,7 +15,7 @@ description: 创建文本消息，并且可以附带 @ 提醒功能
 | text       | String         | 是    | 消息文本    |
 | atUserList | List< String > | 是    | @用户ID列表 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<V2TimMsgCreateInfoResult>
@@ -30,7 +30,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                                       | 描述                                                             |
 | ---- | -------------------------------------------------------------------------- | -------------------------------------------------------------- |
@@ -38,7 +38,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>
 | desc | String                                                                     | 请求结果描述                                                         |
 | data | [V2TimMsgCreateInfoResult](../guan-jian-lei/message/v2timsdklistener-1.md) | 创建后的@Text信息                                                    |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
 // 创建文本消息

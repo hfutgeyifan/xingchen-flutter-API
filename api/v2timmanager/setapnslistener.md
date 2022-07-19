@@ -4,7 +4,7 @@ description: 设置苹果系统离线推送专用监听器
 
 # setAPNSListener
 
-## API功能介绍
+## 功能介绍
 
 设置苹果系统离线推送专用监听器
 
@@ -17,19 +17,19 @@ description: 设置苹果系统离线推送专用监听器
 此API无参数
 {% endhint %}
 
-## 返回模板
+## 返回值
 
 ```dart
 void
 ```
 
-## 返回参数详解
+## 返回值详解
 
 {% hint style="info" %}
 此API无返回值
 {% endhint %}
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //首先设置苹果系统离线推送专用监听器

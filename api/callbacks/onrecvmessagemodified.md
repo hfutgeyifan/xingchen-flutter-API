@@ -22,7 +22,7 @@ V2TimMessage message
 | ------- | -------------------------------- | ---------- |
 | message | [V2TimMessage](broken-reference) | 被修改之后的消息对象 |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置会话监听器

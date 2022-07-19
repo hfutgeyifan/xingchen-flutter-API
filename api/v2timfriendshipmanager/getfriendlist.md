@@ -4,7 +4,7 @@ description: 获取好友列表
 
 # getFriendList
 
-## API功能介绍
+## 功能介绍
 
 获取好友列表
 
@@ -14,7 +14,7 @@ description: 获取好友列表
 此API无参数
 {% endhint %}
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimFriendInfo>>
@@ -26,7 +26,7 @@ V2TimValueCallback<List<V2TimFriendInfo>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                        | 描述                                                             |
 | ---- | ------------------------------------------- | -------------------------------------------------------------- |
@@ -34,7 +34,7 @@ V2TimValueCallback<List<V2TimFriendInfo>>
 | desc | String                                      | 请求结果描述                                                         |
 | data | List< [V2TimFriendInfo](broken-reference) > | 查询到的好友列表                                                       |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //获取好友列表

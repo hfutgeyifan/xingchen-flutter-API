@@ -4,7 +4,7 @@ description: 搜索群资料
 
 # searchGroups
 
-## API功能介绍
+## 功能介绍
 
 搜索群资料
 
@@ -22,7 +22,7 @@ web 不支持关键字搜索搜索, 请使用searchGroupByID
 | ----------- | ----------------------------------------- | ---- | -------- |
 | searchParam | [V2TimGroupSearchParam](broken-reference) | 是    | 搜索群的搜索参数 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimGroupInfo>>
@@ -34,7 +34,7 @@ V2TimValueCallback<List<V2TimGroupInfo>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称    | 数值类型                                       | 描述                                                             |
 | ----- | ------------------------------------------ | -------------------------------------------------------------- |
@@ -42,7 +42,7 @@ V2TimValueCallback<List<V2TimGroupInfo>>
 | desc  | String                                     | 请求结果描述                                                         |
 | data  | List< [V2TimGroupInfo](broken-reference) > | 搜索到的群消息列表                                                      |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 搜索群资料的搜索设置

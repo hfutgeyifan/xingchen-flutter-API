@@ -4,7 +4,7 @@ description: 消息重发
 
 # reSendMessage
 
-## API功能介绍
+## 功能介绍
 
 消息重发
 
@@ -19,7 +19,7 @@ description: 消息重发
 | onlineUserOnly      | bool   | 否         | 是否是发送给在线用户 |
 | webMessageInstatnce | Object | 否（web端必填） | web端消息的实例  |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<V2TimMessage>
@@ -70,7 +70,7 @@ V2TimValueCallback<V2TimMessage>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                     | 描述                                                             |
 | ---- | -------------------------------------------------------- | -------------------------------------------------------------- |
@@ -78,7 +78,7 @@ V2TimValueCallback<V2TimMessage>
 | desc | String                                                   | 请求结果描述                                                         |
 | data | [V2TimMessage](../guan-jian-lei/message/v2timmessage.md) | 重发后的消息                                                         |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
 // 创建文本消息

@@ -4,7 +4,7 @@ description: 设置群成员的角色
 
 # setGroupMemberRole
 
-## API功能介绍
+## 功能介绍
 
 修改群资料
 
@@ -25,7 +25,7 @@ description: 设置群成员的角色
 | userID  | String                                      | 是    | 被设置角色的用户id |
 | role    | [GroupMemberRoleTypeEnum](broken-reference) | 是    | 用户被设置的角色属性 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimCallback
@@ -36,14 +36,14 @@ V2TimCallback
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型   | 描述                                                             |
 | ---- | ------ | -------------------------------------------------------------- |
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 设置群成员的角色

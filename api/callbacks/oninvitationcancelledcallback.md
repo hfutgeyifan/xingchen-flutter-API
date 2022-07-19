@@ -26,7 +26,7 @@ String data
 | inviter  | String | 邀请人id          |
 | data     | String | 邀请被取消时的自定义data |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置信令监听器

@@ -4,7 +4,7 @@ description: 获取指定的群成员资料
 
 # getGroupMembersInfo
 
-## API功能介绍
+## 功能介绍
 
 获取指定的群成员资料
 
@@ -17,7 +17,7 @@ description: 获取指定的群成员资料
 | groupID    | String         | 是    | 需要查询的群组id   |
 | memberList | List< String > | 是    | 需要查询的用户id列表 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimGroupMemberFullInfo>>
@@ -29,7 +29,7 @@ V2TimValueCallback<List<V2TimGroupMemberFullInfo>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                 | 描述                                                             |
 | ---- | ---------------------------------------------------- | -------------------------------------------------------------- |
@@ -37,7 +37,7 @@ V2TimValueCallback<List<V2TimGroupMemberFullInfo>>
 | desc | String                                               | 请求结果描述                                                         |
 | data | List< [V2TimGroupMemberFullInfo](broken-reference) > | 查询到的用户信息列表                                                     |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 获取指定的群成员资料

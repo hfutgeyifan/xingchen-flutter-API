@@ -26,7 +26,7 @@ List<V2TimGroupMemberInfo> memberList
 | opUser     | [V2TimGroupMemberInfo](broken-reference)         | 处理人     |
 | memberList | List< [V2TimGroupMemberInfo](broken-reference) > | 被处理的群成员 |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置群组监听器

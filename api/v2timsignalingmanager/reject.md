@@ -4,7 +4,7 @@ description: 接收方拒绝邀请
 
 # reject
 
-## API功能介绍
+## 功能介绍
 
 接收方拒绝邀请
 
@@ -15,7 +15,7 @@ description: 接收方拒绝邀请
 | inviteID | String | 是    | 邀请请求的id       |
 | data     | String | 是    | 拒绝邀请时发送的自定义消息 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimCallback
@@ -26,14 +26,14 @@ V2TimCallback
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型   | 描述                                                             |
 | ---- | ------ | -------------------------------------------------------------- |
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
       //设置信令监听器

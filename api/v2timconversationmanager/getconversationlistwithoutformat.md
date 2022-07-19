@@ -4,7 +4,7 @@ description: 获取没有格式化的会话信息
 
 # getConversationListWithoutFormat
 
-## API功能介绍
+## 功能介绍
 
 获取会话列表
 
@@ -30,19 +30,19 @@ description: 获取没有格式化的会话信息
 | nextSeq | String | 是    | 分页拉取的游标，第一次默认取传 0，后续分页拉传上一次分页拉取成功回调里的 nextSeq |
 | count   | int    | 是    | 分页拉取的个数，一次分页拉取不宜太多，会影响拉取的速度，建议每次拉取 100 个会话    |
 
-## 返回模板
+## 返回值
 
 ```dart
 LinkedHashMap<dynamic, dynamic>
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称            | 数值类型                                                  | 描述                      |
 | ------------- | ----------------------------------------------------- | ----------------------- |
 | LinkedHashMap | LinkedHashMap< [dynamic, dynamic ](broken-reference)> | 获取的会话信息(没有处理Native返回数据) |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
         //获取没有格式化的会话信息

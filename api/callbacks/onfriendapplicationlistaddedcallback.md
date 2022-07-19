@@ -22,7 +22,7 @@ List<V2TimFriendApplication> applicationList
 | --------------- | -------------------------------------------------- | ----------- |
 | applicationList | List< [V2TimFriendApplication](broken-reference) > | 新增的好友请求信息列表 |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置关系链监听器

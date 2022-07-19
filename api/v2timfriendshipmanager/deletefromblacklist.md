@@ -4,7 +4,7 @@ description: 把用户从黑名单中删除
 
 # deleteFromBlackList
 
-## API功能介绍
+## 功能介绍
 
 把用户从黑名单中删除
 
@@ -14,7 +14,7 @@ description: 把用户从黑名单中删除
 | ---------- | -------------- | ---- | -------------- |
 | userIDList | List< String > | 是    | 需要移出黑名单的好友id列表 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimFriendOperationResult>>
@@ -26,7 +26,7 @@ V2TimValueCallback<List<V2TimFriendOperationResult>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                   | 描述                                                             |
 | ---- | ------------------------------------------------------ | -------------------------------------------------------------- |
@@ -34,7 +34,7 @@ V2TimValueCallback<List<V2TimFriendOperationResult>>
 | desc | String                                                 | 请求结果描述                                                         |
 | data | List< [V2TimFriendOperationResult](broken-reference) > | 把用户从黑名单中删除请求的结果信息                                              |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //把用户从黑名单中删除

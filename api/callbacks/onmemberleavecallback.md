@@ -24,7 +24,7 @@ V2TimGroupMemberInfo member
 | groupID | String                                   | 群 ID  |
 | member  | [V2TimGroupMemberInfo](broken-reference) | 离开的成员 |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置群组监听器

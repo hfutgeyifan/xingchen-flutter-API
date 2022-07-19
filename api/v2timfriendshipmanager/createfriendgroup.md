@@ -4,7 +4,7 @@ description: 新建好友分组
 
 # createFriendGroup
 
-## API功能介绍
+## 功能介绍
 
 新建好友分组
 
@@ -15,7 +15,7 @@ description: 新建好友分组
 | groupName  | String         | 是    | 新建的分组名称              |
 | userIDList | List< String > | 否    | 要添加到分组中的好友 userID 列表 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimFriendOperationResult>>
@@ -27,7 +27,7 @@ V2TimValueCallback<List<V2TimFriendOperationResult>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                   | 描述                                                             |
 | ---- | ------------------------------------------------------ | -------------------------------------------------------------- |
@@ -35,7 +35,7 @@ V2TimValueCallback<List<V2TimFriendOperationResult>>
 | desc | String                                                 | 请求结果描述                                                         |
 | data | List< [V2TimFriendOperationResult](broken-reference) > | 新建结果列表                                                         |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 新建好友分组

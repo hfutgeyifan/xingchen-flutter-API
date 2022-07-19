@@ -4,7 +4,7 @@ description: 创建自定义群组
 
 # createGroup
 
-## API功能介绍
+## 功能介绍
 
 创建自定义群组
 
@@ -33,7 +33,7 @@ description: 创建自定义群组
 | memberList     | List< V2TimGroupMember >                | 否    |  初始成员列表       |
 | isSupportTopic | bool                                    | 否    | 是否支持话题        |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<String>
@@ -45,7 +45,7 @@ V2TimValueCallback<String>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型   | 描述                                                             |
 | ---- | ------ | -------------------------------------------------------------- |
@@ -53,7 +53,7 @@ V2TimValueCallback<String>
 | desc | String | 请求结果描述                                                         |
 | data | String | 创建的群组id                                                        |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 创建群组

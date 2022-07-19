@@ -4,7 +4,7 @@ description: 创建话题
 
 # createTopicInCommunity
 
-## API功能介绍
+## 功能介绍
 
 创建话题
 
@@ -23,7 +23,7 @@ web版本不支持
 | groupID   | String                             | 是    | 需要创建话题的群组id |
 | topicInfo | [V2TimTopicInfo](broken-reference) | 是    | 创建话题的设置     |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<String>
@@ -35,7 +35,7 @@ V2TimValueCallback<String>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称    | 数值类型   | 描述                                                             |
 | ----- | ------ | -------------------------------------------------------------- |
@@ -43,7 +43,7 @@ V2TimValueCallback<String>
 | desc  | String | 请求结果描述                                                         |
 | data  | String | 被创建话题的id                                                       |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //创建话题

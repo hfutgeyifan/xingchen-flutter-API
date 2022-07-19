@@ -24,7 +24,7 @@ List<V2TimGroupMemberChangeInfo> v2TIMGroupMemberChangeInfoList
 | groupID                        | String                                                 | 群 ID      |
 | v2TIMGroupMemberChangeInfoList | List< [V2TimGroupMemberChangeInfo](broken-reference) > | 被修改的群成员信息 |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置群组监听器

@@ -22,7 +22,7 @@ String messageid
 | --------- | ------ | ------- |
 | messageid | String | 撤回消息的id |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置会话监听器

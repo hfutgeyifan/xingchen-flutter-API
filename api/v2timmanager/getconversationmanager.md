@@ -4,7 +4,7 @@ description: 会话功能入口
 
 # getConversationManager
 
-## API功能介绍
+## 功能介绍
 
 会话功能入口
 
@@ -16,19 +16,19 @@ description: 会话功能入口
 此API无参数
 {% endhint %}
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TIMConversationManager
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称                       | 数值类型                                                     | 描述     |
 | ------------------------ | -------------------------------------------------------- | ------ |
 | V2TIMConversationManager | [V2TIMConversationManager](../v2timconversationmanager/) | 会话功能入口 |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 使用getConversationManager获取指定会话的案例

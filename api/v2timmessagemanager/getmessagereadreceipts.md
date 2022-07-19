@@ -4,7 +4,7 @@ description: 获取消息已读回执
 
 # getMessageReadReceipts
 
-## API功能介绍
+## 功能介绍
 
 获取消息已读回执
 
@@ -21,7 +21,7 @@ description: 获取消息已读回执
 | ------------- | -------------- | ---- | --------------- |
 | messageIDList | List< String > | 是    | 需要查询已读回执消息的id列表 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimMessageReceipt>>
@@ -33,7 +33,7 @@ V2TimValueCallback<List<V2TimMessageReceipt>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                                            | 描述                                                             |
 | ---- | ------------------------------------------------------------------------------- | -------------------------------------------------------------- |
@@ -41,7 +41,7 @@ V2TimValueCallback<List<V2TimMessageReceipt>>
 | desc | String                                                                          | 请求结果描述                                                         |
 | data | List< [V2TimMessageReceipt](../guan-jian-lei/message/v2timmessagereceipt.md)  > | 消息已读回执信息列表                                                     |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 查询消息已读回执

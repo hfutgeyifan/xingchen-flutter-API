@@ -4,7 +4,7 @@ description: 消息变更 4.0.1及以后版本支持
 
 # modifyMessage
 
-## API功能介绍
+## 功能介绍
 
 消息变更 4.0.1及以后版本支持
 
@@ -26,7 +26,7 @@ description: 消息变更 4.0.1及以后版本支持
 | ------- | -------------------------------------------------------- | ---- | ------- |
 | message | [V2TimMessage](../guan-jian-lei/message/v2timmessage.md) | 是    | 需要修改的消息 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<V2TimMessageChangeInfo>
@@ -42,7 +42,7 @@ V2TimValueCallback<V2TimMessageChangeInfo>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                                         | 描述                                                             |
 | ---- | ---------------------------------------------------------------------------- | -------------------------------------------------------------- |
@@ -50,7 +50,7 @@ V2TimValueCallback<V2TimMessageChangeInfo>
 | desc | String                                                                       | 请求结果描述                                                         |
 | data | [V2TimMessageChangeInfo](../guan-jian-lei/message/v2timmessagechangeinfo.md) | 修改后的信息                                                         |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
 // 通过消息id查找到需要修改的消息

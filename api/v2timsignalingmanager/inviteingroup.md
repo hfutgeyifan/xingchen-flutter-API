@@ -4,7 +4,7 @@ description: 邀请群内的某些人
 
 # inviteInGroup
 
-## API功能介绍
+## 功能介绍
 
 邀请群内的某些人
 
@@ -18,7 +18,7 @@ description: 邀请群内的某些人
 | timeout        | int            | 否    | 邀请超时时间     |
 | onlineUserOnly | bool           | 否    | 是否只发给在线用户  |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<String>
@@ -30,7 +30,7 @@ V2TimValueCallback<String>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型   | 描述                                                             |
 | ---- | ------ | -------------------------------------------------------------- |
@@ -38,7 +38,7 @@ V2TimValueCallback<String>
 | desc | String | 请求结果描述                                                         |
 | data | String | 创建的邀请id                                                        |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
       //设置信令监听器

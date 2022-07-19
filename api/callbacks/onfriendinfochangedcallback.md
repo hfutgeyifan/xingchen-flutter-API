@@ -22,7 +22,7 @@ List<V2TimFriendInfo> infoList
 | -------- | ------------------------------------------- | ----------- |
 | infoList | List< [V2TimFriendInfo](broken-reference) > | 好友信息改变的好友列表 |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置关系链监听器

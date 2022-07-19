@@ -4,7 +4,7 @@ description: 向群组消息列表中添加一条消息
 
 # insertGroupMessageToLocalStorage
 
-## API功能介绍
+## 功能介绍
 
 向群组消息列表中添加一条消息
 
@@ -25,7 +25,7 @@ description: 向群组消息列表中添加一条消息
 | groupID | String | 是    | 接受群组id |
 | sender  | String | 是    | 发送者id  |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<V2TimMessage>
@@ -76,7 +76,7 @@ V2TimValueCallback<V2TimMessage>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                                       | 描述                                                             |
 | ---- | -------------------------------------------------------------------------- | -------------------------------------------------------------- |
@@ -84,7 +84,7 @@ V2TimValueCallback<V2TimMessage>
 | desc | String                                                                     | 请求结果描述                                                         |
 | data | [V2TimMsgCreateInfoResult](../guan-jian-lei/message/v2timsdklistener-1.md) | 创建后的Text信息                                                     |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
 // 向群组消息列表中添加一条消息

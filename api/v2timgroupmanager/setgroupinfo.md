@@ -4,7 +4,7 @@ description: 修改群资料
 
 # setGroupInfo
 
-## API功能介绍
+## 功能介绍
 
 修改群资料
 
@@ -26,7 +26,7 @@ description: 修改群资料
 | ---- | ---------------------------------- | ---- | ------- |
 | info | [V2TimGroupInfo](broken-reference) | 是    | 群资料设置信息 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimCallback
@@ -37,14 +37,14 @@ V2TimCallback
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型   | 描述                                                             |
 | ---- | ------ | -------------------------------------------------------------- |
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 设置群资料设置 只有以下属性可修改，groupID为需要修改的群组id

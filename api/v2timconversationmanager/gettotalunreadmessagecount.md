@@ -4,7 +4,7 @@ description: 获取会话未读总数
 
 # getTotalUnreadMessageCount
 
-## API功能介绍
+## 功能介绍
 
 获取会话未读总数
 
@@ -14,7 +14,7 @@ description: 获取会话未读总数
 此API无参数。
 {% endhint %}
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<int>
@@ -26,7 +26,7 @@ V2TimValueCallback<int>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型   | 描述                                                             |
 | ---- | ------ | -------------------------------------------------------------- |
@@ -34,7 +34,7 @@ V2TimValueCallback<int>
 | desc | String | 请求结果描述                                                         |
 | data | int    | 会话未读总数                                                         |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //获取会话未读总数

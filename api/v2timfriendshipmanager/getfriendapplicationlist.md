@@ -4,7 +4,7 @@ description: 获取好友申请列表
 
 # getFriendApplicationList
 
-## API功能介绍
+## 功能介绍
 
 获取好友申请列表
 
@@ -14,7 +14,7 @@ description: 获取好友申请列表
 此API无参数
 {% endhint %}
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<V2TimFriendApplicationResult>
@@ -29,7 +29,7 @@ V2TimValueCallback<V2TimFriendApplicationResult>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                             | 描述                                                             |
 | ---- | ------------------------------------------------ | -------------------------------------------------------------- |
@@ -37,7 +37,7 @@ V2TimValueCallback<V2TimFriendApplicationResult>
 | desc | String                                           | 请求结果描述                                                         |
 | data | [V2TimFriendApplicationResult](broken-reference) | 好友申请列表信息                                                       |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //获取好友申请列表

@@ -4,7 +4,7 @@ description: 获取群成员列表
 
 # getGroupMemberList
 
-## API功能介绍
+## 功能介绍
 
 获取群成员列表
 
@@ -27,7 +27,7 @@ web 端使用时，count 和 offset 为必传参数. filter 和 nextSeq 不生�
 | count   | int                                           | 否    | 需要拉取的数量。最大值：100，避免回包过大导致请求失败。若传入超过100，则只拉取前100个。       |
 | offset  | int                                           | 否    | 偏移量，默认从0开始拉取。                                          |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<V2TimGroupMemberInfoResult>
@@ -42,7 +42,7 @@ V2TimValueCallback<V2TimGroupMemberInfoResult>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                 | 描述                                                             |
 | ---- | ---------------------------------------------------- | -------------------------------------------------------------- |
@@ -50,7 +50,7 @@ V2TimValueCallback<V2TimGroupMemberInfoResult>
 | desc | String                                               | 请求结果描述                                                         |
 | data | List< [V2TimGroupMemberFullInfo](broken-reference) > | 拉取到的群成员列表表                                                     |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 获取群成员列表

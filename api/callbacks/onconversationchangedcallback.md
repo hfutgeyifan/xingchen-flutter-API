@@ -24,7 +24,7 @@ List<V2TimConversation> conversationList
 | ---------------- | --------------------------------------------- | ------- |
 | conversationList | List< [V2TimConversation](broken-reference) > | 改变的会话列表 |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置会话监听器

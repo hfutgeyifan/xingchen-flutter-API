@@ -4,7 +4,7 @@ description: 获取历史消息高级接口
 
 # getHistoryMessageList
 
-## API功能介绍
+## 功能介绍
 
 获取群组历史消息
 
@@ -34,7 +34,7 @@ description: 获取历史消息高级接口
 | lastMsgID       | String                                                     | 否    | lastMsgID                                   |
 | messageTypeList | List\<int>                                                 | 否    | 用于过滤历史信息属性，若为空则拉取所有属性信息。                    |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimMessage>>
@@ -46,7 +46,7 @@ V2TimValueCallback<List<V2TimMessage>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                             | 描述                                                             |
 | ---- | ---------------------------------------------------------------- | -------------------------------------------------------------- |
@@ -54,7 +54,7 @@ V2TimValueCallback<List<V2TimMessage>>
 | desc | String                                                           | 请求结果描述                                                         |
 | data | List< [V2TimMessage](../guan-jian-lei/message/v2timmessage.md) > | 获取的历史消息                                                        |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
 // 拉取单聊历史消息

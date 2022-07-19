@@ -4,7 +4,7 @@ description: 通过会话ID获取指定会话列表
 
 # getConversationListByConversaionIds
 
-## API功能介绍
+## 功能介绍
 
 通过会话ID获取指定会话列表
 
@@ -14,7 +14,7 @@ description: 通过会话ID获取指定会话列表
 | ------------------ | -------------- | ---- | ----------------- |
 | conversationIDList | List< String > | 是    | 需要获取会话列表数据的会话id列表 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimConversation>>
@@ -26,7 +26,7 @@ V2TimValueCallback<List<V2TimConversation>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                          | 描述                                                             |
 | ---- | --------------------------------------------- | -------------------------------------------------------------- |
@@ -34,7 +34,7 @@ V2TimValueCallback<List<V2TimConversation>>
 | desc | String                                        | 请求结果描述                                                         |
 | data | List< [V2TimConversation](broken-reference) > | 拉取到的消息信息列表                                                     |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //通过会话ID获取指定会话列表

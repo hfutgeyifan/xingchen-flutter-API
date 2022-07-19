@@ -4,7 +4,7 @@ description: 获取合并消息的子消息列表
 
 # downloadMergerMessage
 
-## API功能介绍
+## 功能介绍
 
 获取合并消息的子消息列表
 
@@ -14,7 +14,7 @@ description: 获取合并消息的子消息列表
 | ----- | ------ | ---- | ---------- |
 | msgID | String | 是    | 需要获取的合并消息的 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimMessage>>
@@ -26,7 +26,7 @@ V2TimValueCallback<List<V2TimMessage>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                             | 描述                                                             |
 | ---- | ---------------------------------------------------------------- | -------------------------------------------------------------- |
@@ -34,7 +34,7 @@ V2TimValueCallback<List<V2TimMessage>>
 | desc | String                                                           | 请求结果描述                                                         |
 | data | List< [V2TimMessage](../guan-jian-lei/message/v2timmessage.md) > | 获取到的合并消息列表                                                     |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
 // 创建消息监听器

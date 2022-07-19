@@ -4,7 +4,7 @@ description: 删除会话
 
 # deleteConversation
 
-## API功能介绍
+## 功能介绍
 
 删除会话
 
@@ -23,7 +23,7 @@ description: 删除会话
 | -------------- | ------ | ---- | --------- |
 | conversationID | String | 是    | 需要删除的会话id |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimCallback
@@ -34,14 +34,14 @@ V2TimCallback
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型   | 描述                                                             |
 | ---- | ------ | -------------------------------------------------------------- |
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //删除会话

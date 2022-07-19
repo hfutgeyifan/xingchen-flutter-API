@@ -28,7 +28,7 @@ String opReason
 | isAgreeJoin | bool                                     | 是否同意加群 |
 | opReason    | String                                   | 处理原因   |
 
-## 使用案例
+## 代码示例
 
 ```dart
         //设置群组监听器

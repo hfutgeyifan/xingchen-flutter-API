@@ -4,7 +4,7 @@ description: 获取用户在线状态
 
 # getUserStatus
 
-## API功能介绍
+## 功能介绍
 
 获取用户在线状态
 
@@ -22,7 +22,7 @@ web不支持
 | ---------- | -------------- | ---- | ------------------ |
 | userIDList | List< String > | 是    |  需要查询用户在线状态的用户id列表 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimUserStatus>>
@@ -34,7 +34,7 @@ V2TimValueCallback<List<V2TimUserStatus>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                                                | 描述                                                             |
 | ---- | ------------------------------------------------------------------- | -------------------------------------------------------------- |
@@ -42,7 +42,7 @@ V2TimValueCallback<List<V2TimUserStatus>>
 | desc | String                                                              | 请求结果描述                                                         |
 | data | List< [V2TimUserStatus](../guan-jian-lei/user/v2timuserstatus.md) > | 查询到的用户在线状态列表                                                   |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //获取用户在线状态

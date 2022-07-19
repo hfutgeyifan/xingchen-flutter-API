@@ -4,7 +4,7 @@ description: 添加关系链监听器
 
 # addFriendListener
 
-## API功能介绍
+## 功能介绍
 
 添加关系链监听器
 
@@ -20,19 +20,19 @@ description: 添加关系链监听器
 | -------- | ------------------------------------------- | ---- | ----------- |
 | listener | [V2TimFriendshipListener](broken-reference) | 是    | 需要新增的关系链监听器 |
 
-## 返回模板
+## 返回值
 
 ```dart
 void
 ```
 
-## 返回参数详解
+## 返回值详解
 
 {% hint style="info" %}
 此方法无返回值
 {% endhint %}
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //设置关系链监听器

@@ -4,7 +4,7 @@ description: 信令入口
 
 # getSignalingManager
 
-## API功能介绍
+## 功能介绍
 
 信令入口
 
@@ -16,19 +16,19 @@ description: 信令入口
 此API无参数
 {% endhint %}
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TIMSignalingManager
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称                    | 数值类型                                               | 描述   |
 | --------------------- | -------------------------------------------------- | ---- |
 | V2TIMSignalingManager | [V2TIMSignalingManager](../v2timsignalingmanager/) | 信令入口 |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
       // 使用getSignalingManager设置信令监听器与创建邀请的案例

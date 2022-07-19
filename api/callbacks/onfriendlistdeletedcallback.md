@@ -22,7 +22,7 @@ List<String> userList
 | -------- | -------------- | --------- |
 | userList | List< String > | 减少的好友id列表 |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置关系链监听器

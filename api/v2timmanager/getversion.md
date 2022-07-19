@@ -4,7 +4,7 @@ description: 获取版本号
 
 # getVersion
 
-## API功能介绍
+## 功能介绍
 
 获取版本号
 
@@ -14,7 +14,7 @@ description: 获取版本号
 此API无参数
 {% endhint %}
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<String>
@@ -26,7 +26,7 @@ V2TimValueCallback<String>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型   | 描述                                                             |
 | ---- | ------ | -------------------------------------------------------------- |
@@ -34,7 +34,7 @@ V2TimValueCallback<String>
 | desc | String | 请求结果描述                                                         |
 | data | String | 版本号                                                            |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //获取版本号

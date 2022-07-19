@@ -26,7 +26,7 @@ String opReason
 | member   | [V2TimGroupMemberInfo](broken-reference) | 申请人  |
 | opReason | String                                   | 申请原因 |
 
-## 使用案例
+## 代码示例
 
 ```dart
     //设置群组监听器

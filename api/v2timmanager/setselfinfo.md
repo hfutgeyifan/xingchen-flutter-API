@@ -4,7 +4,7 @@ description: 修改个人资料
 
 # setSelfInfo
 
-## API功能介绍
+## 功能介绍
 
 修改个人资料
 
@@ -16,7 +16,7 @@ description: 修改个人资料
 | ------------ | --------------------------------------------------------------- | ---- | ---------- |
 | userFullInfo | [V2TimUserFullInfo](../guan-jian-lei/user/v2timuserfullinfo.md) | 是    | 需要修改的用户的信息 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimCallback
@@ -27,14 +27,14 @@ V2TimCallback
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型   | 描述                                                             |
 | ---- | ------ | -------------------------------------------------------------- |
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //用户资料设置信息

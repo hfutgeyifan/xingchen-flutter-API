@@ -4,7 +4,7 @@ description: 离线推送功能入
 
 # getOfflinePushManager
 
-## API功能介绍
+## 功能介绍
 
 离线推送功能入
 
@@ -16,19 +16,19 @@ description: 离线推送功能入
 此API无参数
 {% endhint %}
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TIMOfflinePushManager
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称                      | 数值类型                                                   | 描述       |
 | ----------------------- | ------------------------------------------------------ | -------- |
 | V2TIMOfflinePushManager | [V2TIMOfflinePushManager](../v2timofflinepushmanager/) | 离线推送功能入口 |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 使用getOfflinePushManager设置离线推送配置信息的案例

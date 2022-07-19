@@ -4,7 +4,7 @@ description: 获取信令信息
 
 # getSignalingInfo
 
-## API功能介绍
+## 功能介绍
 
 获取信令信息
 
@@ -17,7 +17,7 @@ description: 获取信令信息
 | ----- | ------ | ---- | ------- |
 | msgID | String | 是    | 信令消息的id |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<V2TimSignalingInfo>
@@ -39,7 +39,7 @@ V2TimValueCallback<V2TimSignalingInfo>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                   | 描述                                                             |
 | ---- | -------------------------------------- | -------------------------------------------------------------- |
@@ -47,7 +47,7 @@ V2TimValueCallback<V2TimSignalingInfo>
 | desc | String                                 | 请求结果描述                                                         |
 | data | [V2TimSignalingInfo](broken-reference) | 查询到的信令信息                                                       |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     //获取信令信息

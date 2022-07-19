@@ -4,7 +4,7 @@ description: 初始化 SDK
 
 # initSDK
 
-## API功能介绍
+## 功能介绍
 
 初始化 SDK
 
@@ -23,7 +23,7 @@ description: 初始化 SDK
 | loglevel | [LogLevelEnum](../enums/loglevelenum.md)                          | 是    | 配置信息                                                  |
 | listener | [V2TimSDKListener](../guan-jian-lei/listener/v2timsdklistener.md) | 是    | SDK监听器                                                |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<bool>
@@ -35,7 +35,7 @@ V2TimValueCallback<bool>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型   | 描述                                                             |
 | ---- | ------ | -------------------------------------------------------------- |
@@ -43,7 +43,7 @@ V2TimValueCallback<bool>
 | desc | String | 请求结果描述                                                         |
 | data | bool   | 初始化结果                                                          |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 1. 从即时通信 IM 控制台获取应用 SDKAppID。

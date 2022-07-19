@@ -4,7 +4,7 @@ description: 获取话题属性的列表
 
 # getTopicInfoList
 
-## API功能介绍
+## 功能介绍
 
 获取话题属性的列表
 
@@ -25,7 +25,7 @@ web版本不支持
 | groupID     | String         | 是    | 需要获取话题属性的群组id   |
 | topicIDList | List< String > | 是    | 需要获取话题属性的话题id列表 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<List<V2TimTopicInfoResult>>
@@ -37,7 +37,7 @@ V2TimValueCallback<List<V2TimTopicInfoResult>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                                             | 描述                                                             |
 | ---- | ------------------------------------------------ | -------------------------------------------------------------- |
@@ -45,7 +45,7 @@ V2TimValueCallback<List<V2TimTopicInfoResult>>
 | desc | String                                           | 请求结果描述                                                         |
 | data | List< [V2TimTopicInfoResult](broken-reference) > | 获取到的话题信息列表                                                     |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 获取话题属性的列表

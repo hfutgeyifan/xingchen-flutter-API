@@ -4,7 +4,7 @@ description: 获取指定群属性
 
 # getGroupAttributes
 
-## API功能介绍
+## 功能介绍
 
 获取指定群属性
 
@@ -25,7 +25,7 @@ description: 获取指定群属性
 | groupID | String         | 是    | 需要获取属性的群组id |
 | keys    | List< String > | 是    | 获取的属性key值列表 |
 
-## 返回模板
+## 返回值
 
 ```dart
 V2TimValueCallback<Map<String, String>>
@@ -37,7 +37,7 @@ V2TimValueCallback<Map<String, String>>
 }
 ```
 
-## 返回参数详解
+## 返回值详解
 
 | 名称   | 数值类型                 | 描述                                                             |
 | ---- | -------------------- | -------------------------------------------------------------- |
@@ -45,7 +45,7 @@ V2TimValueCallback<Map<String, String>>
 | desc | String               | 请求结果描述                                                         |
 | data | Map< String,String > | 获取到的群属性                                                        |
 
-## 使用案例  &#x20;
+## 代码示例  &#x20;
 
 ```dart
     // 获取指定群属性
