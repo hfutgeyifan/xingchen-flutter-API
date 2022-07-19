@@ -10,9 +10,9 @@ description: 创建一个信令请求
 
 ## 参数详解
 
-| 参数名称 | 参数类型                                   | 是否必填 | 描述         |
-| ---- | -------------------------------------- | ---- | ---------- |
-| info | [V2TimSignalingInfo](broken-reference) | 是    | 创建的信令消息的设置 |
+| 参数名称 | 参数类型                                                                 | 是否必填 | 描述         |
+| ---- | -------------------------------------------------------------------- | ---- | ---------- |
+| info | [V2TimSignalingInfo](../guan-jian-lei/message/v2timsignalinginfo.md) | 是    | 创建的信令消息的设置 |
 
 ## 返回值
 
@@ -31,7 +31,7 @@ V2TimCallback
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     //创建的信令消息的设置

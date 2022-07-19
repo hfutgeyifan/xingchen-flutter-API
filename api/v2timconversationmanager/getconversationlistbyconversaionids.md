@@ -28,13 +28,13 @@ V2TimValueCallback<List<V2TimConversation>>
 
 ## 返回值详解
 
-| 名称   | 数值类型                                          | 描述                                                             |
-| ---- | --------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                           | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                        | 请求结果描述                                                         |
-| data | List< [V2TimConversation](broken-reference) > | 拉取到的消息信息列表                                                     |
+| 名称   | 数值类型                                                                       | 描述                                                             |
+| ---- | -------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                                                        | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                                                     | 请求结果描述                                                         |
+| data | List< [V2TimConversation](../guan-jian-lei/message/v2timconversation.md) > | 拉取到的消息信息列表                                                     |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     //通过会话ID获取指定会话列表
