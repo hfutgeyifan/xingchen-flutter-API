@@ -31,13 +31,13 @@ V2TimValueCallback<List<V2TimFriendOperationResult>>
 
 ## 返回值详解
 
-| 名称   | 数值类型                                                   | 描述                                                             |
-| ---- | ------------------------------------------------------ | -------------------------------------------------------------- |
-| code | int                                                    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                                 | 请求结果描述                                                         |
-| data | List< [V2TimFriendOperationResult](broken-reference) > | 添加黑名单请求的结果信息                                                   |
+| 名称   | 数值类型                                                                                        | 描述                                                             |
+| ---- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                                                                         | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                                                                      | 请求结果描述                                                         |
+| data | List<  [V2TimFriendOperationResult](../guan-jian-lei/user/v2timfriendoperationresult.md)  > | 添加黑名单请求的结果信息                                                   |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     //添加好友到黑名单

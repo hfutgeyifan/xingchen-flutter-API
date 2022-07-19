@@ -10,10 +10,10 @@ description: 删除好友申请
 
 ## 参数详解
 
-| 参数名称   | 参数类型                                          | 是否必填 | 描述           |
-| ------ | --------------------------------------------- | ---- | ------------ |
-| type   | [FriendApplicationTypeEnum](broken-reference) | 是    | 加好友类型        |
-| userID | String                                        | 是    | 被删除好友申请的用户id |
+| 参数名称   | 参数类型                                                               | 是否必填 | 描述           |
+| ------ | ------------------------------------------------------------------ | ---- | ------------ |
+| type   | [FriendApplicationTypeEnum](../enums/friendapplicationtypeenum.md) | 是    | 加好友类型        |
+| userID | String                                                             | 是    | 被删除好友申请的用户id |
 
 ## 返回值
 
@@ -33,7 +33,7 @@ V2TimCallback
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     //删除好友申请

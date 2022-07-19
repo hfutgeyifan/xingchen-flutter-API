@@ -10,10 +10,10 @@ description: 拒绝好友申请
 
 ## 参数详解
 
-| 参数名称   | 参数类型                                          | 是否必填 | 描述        |
-| ------ | --------------------------------------------- | ---- | --------- |
-| type   | [FriendApplicationTypeEnum](broken-reference) | 是    | 拒绝好友类型    |
-| userID | String                                        | 是    | 拒绝好友的用户id |
+| 参数名称   | 参数类型                                                               | 是否必填 | 描述        |
+| ------ | ------------------------------------------------------------------ | ---- | --------- |
+| type   | [FriendApplicationTypeEnum](../enums/friendapplicationtypeenum.md) | 是    | 拒绝好友类型    |
+| userID | String                                                             | 是    | 拒绝好友的用户id |
 
 ## 返回值
 
@@ -33,13 +33,13 @@ V2TimValueCallback<V2TimFriendOperationResult>
 
 ## 返回值详解
 
-| 名称   | 数值类型                                           | 描述                                                             |
-| ---- | ---------------------------------------------- | -------------------------------------------------------------- |
-| code | int                                            | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                                         | 请求结果描述                                                         |
-| data | [V2TimFriendOperationResult](broken-reference) | 拒绝好友申请请求的返回信息                                                  |
+| 名称   | 数值类型                                                                              | 描述                                                             |
+| ---- | --------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                                                               | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                                                            | 请求结果描述                                                         |
+| data | [V2TimFriendOperationResult](../guan-jian-lei/user/v2timfriendoperationresult.md) | 拒绝好友申请请求的返回信息                                                  |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     V2TimValueCallback<V2TimFriendOperationResult> refuseFriendApplicationRes =

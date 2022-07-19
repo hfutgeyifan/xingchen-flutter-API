@@ -30,13 +30,13 @@ V2TimValueCallback<List<V2TimFriendGroup>>
 
 ## 返回值详解
 
-| 名称   | 数值类型                     | 描述                                                             |
-| ---- | ------------------------ | -------------------------------------------------------------- |
-| code | int                      | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
-| desc | String                   | 请求结果描述                                                         |
-| data | List< V2TimFriendGroup > | 查询到的分组信息                                                       |
+| 名称   | 数值类型                                                                  | 描述                                                             |
+| ---- | --------------------------------------------------------------------- | -------------------------------------------------------------- |
+| code | int                                                                   | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
+| desc | String                                                                | 请求结果描述                                                         |
+| data | List< [V2TimFriendGroup](../guan-jian-lei/user/v2timfriendgroup.md) > | 查询到的分组信息                                                       |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
     // 获取分组信息
