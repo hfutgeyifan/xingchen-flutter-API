@@ -26,7 +26,7 @@ V2TIMConversationManager
 
 | 名称                       | 数值类型                                                     | 描述     |
 | ------------------------ | -------------------------------------------------------- | ------ |
-| V2TIMConversationManager | [V2TIMConversationManager](../v2timconversationmanager/) | 会话功能入口 |
+| V2TIMConversationManager | [V2TIMConversationManager](../v2timconversationmanager/README.md) | 会话功能入口 |
 
 ## 代码示例  &#x20;
 

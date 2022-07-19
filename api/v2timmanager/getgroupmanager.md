@@ -26,7 +26,7 @@ V2TIMGroupManager
 
 | 名称                | 数值类型                                       | 描述       |
 | ----------------- | ------------------------------------------ | -------- |
-| V2TIMGroupManager | [V2TIMGroupManager](../v2timgroupmanager/) | 高级群组功能入口 |
+| V2TIMGroupManager | [V2TIMGroupManager](../v2timgroupmanager/README.md) | 高级群组功能入口 |
 
 ## 代码示例  &#x20;
 

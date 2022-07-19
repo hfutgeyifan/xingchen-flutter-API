@@ -26,7 +26,7 @@ V2TIMFriendshipManager
 
 | 名称                     | 数值类型                                                 | 描述      |
 | ---------------------- | ---------------------------------------------------- | ------- |
-| V2TIMFriendshipManager | [V2TIMFriendshipManager](../v2timfriendshipmanager/) | 关系链功能入口 |
+| V2TIMFriendshipManager | [V2TIMFriendshipManager](../v2timfriendshipmanager/README.md) | 关系链功能入口 |
 
 ## 代码示例  &#x20;
 

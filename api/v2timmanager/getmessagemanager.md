@@ -26,7 +26,7 @@ V2TIMMessageManager
 
 | 名称                  | 数值类型                                           | 描述       |
 | ------------------- | ---------------------------------------------- | -------- |
-| V2TIMMessageManager | [V2TIMMessageManager](../v2timmessagemanager/) | 高级消息功能入口 |
+| V2TIMMessageManager | [V2TIMMessageManager](../v2timmessagemanager/README.md) | 高级消息功能入口 |
 
 ## 代码示例  &#x20;
 

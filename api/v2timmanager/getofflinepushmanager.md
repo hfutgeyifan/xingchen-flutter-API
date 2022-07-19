@@ -26,7 +26,7 @@ V2TIMOfflinePushManager
 
 | 名称                      | 数值类型                                                   | 描述       |
 | ----------------------- | ------------------------------------------------------ | -------- |
-| V2TIMOfflinePushManager | [V2TIMOfflinePushManager](../v2timofflinepushmanager/) | 离线推送功能入口 |
+| V2TIMOfflinePushManager | [V2TIMOfflinePushManager](../v2timofflinepushmanager/README.md) | 离线推送功能入口 |
 
 ## 代码示例  &#x20;
 
