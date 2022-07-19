@@ -17,7 +17,7 @@ description: 好友申请列表
 
 ### friendApplicationList
 
-* 参数类型 : List< V2TimFriendApplication >
+* 参数类型 : List< [V2TimFriendApplication](v2timfriendapplication.md) >
 * 参数描述：好友申请列表
 
 ### toJson

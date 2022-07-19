@@ -17,7 +17,7 @@ description: 群组用户信息
 
 ### role
 
-* 参数类型 : GroupMemberRoleTypeEnum
+* 参数类型 : [GroupMemberRoleTypeEnum](../../enums/groupmemberroletypeenum.md)
 * 参数描述：用户角色
 
 ### toJson

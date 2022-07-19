@@ -34,17 +34,17 @@ description: 群 tips，群变更信息
 ### value
 
 * 参数类型 : String
-* 参数描述：根据变更类型表示不同的值,例如 type = V2TIM\_GROUP\_INFO\_CHANGE\_TYPE\_NAME，value 表示群新的 groupName
+* 参数描述：根据变更类型表示不同的值,例如 type = 1，value 表示群新的 groupName
 
 ### key
 
 * 参数类型 : String
-* 参数描述：变更自定义字段的 key 值（type = V2TIM\_GROUP\_INFO\_CHANGE\_TYPE\_CUSTOM 生效） 因为历史遗留原因，如果只修改了群自定义字段，当前消息不会存漫游和 DB
+* 参数描述：变更自定义字段的 key 值（type = 6 生效） 因为历史遗留原因，如果只修改了群自定义字段，当前消息不会存漫游和数据库
 
 ### boolValue
 
 * 参数类型 : bool
-* 参数描述：根据变更类型表示不同的值，当前只有 type = V2TIM\_GROUP\_INFO\_CHANGE\_TYPE\_SHUT\_UP\_ALL 时有效
+* 参数描述：根据变更类型表示不同的值，当前只有 type = 7 时有效
 
 ### toJson
 

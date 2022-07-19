@@ -37,7 +37,7 @@ description: 好友资料获取结果
 
 ### friendInfo
 
-* 参数类型 : V2TimFriendInfo
+* 参数类型 : [V2TimFriendInfo](v2timfriendinfo.md)
 * 参数描述：好友个人资料，如果不是好友，除了 userID 字段，其他字段都为空
 
 ### toJson

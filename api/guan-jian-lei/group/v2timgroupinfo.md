@@ -108,12 +108,12 @@ description: 群资料
 ### role
 
 * 参数类型 : int
-* 参数描述：当前用户在此群组中的角色（V2TIMGroupMemberRole），切换角色请调用 setGroupMemberRole 接口
+* 参数描述：当前用户在此群组中的角色，切换角色请调用 [setGroupMemberRole](../../v2timgroupmanager/setgroupmemberrole.md) 接口
 
 ### recvOpt
 
 * 参数类型 : int
-* 参数描述：当前用户在此群组中的消息接收选项,修改群消息接收选项请调用 setGroupReceiveMessageOpt 接口
+* 参数描述：当前用户在此群组中的消息接收选项,修改群消息接收选项请调用 [setGroupReceiveMessageOpt](../../v2timmessagemanager/setgroupreceivemessageopt.md) 接口
 
 ### joinTime
 
@@ -130,7 +130,7 @@ description: 群资料
 
 &#x20;1.在 [控制台](https://console.cloud.tencent.com/im) (功能配置 -> 群自定义字段) 配置群自定义字段的 key 值，Key 为 String 类型，长度不超过 16 字节。&#x20;
 
-2.调用 setGroupInfo 接口设置该字段，value 为 NSData 数据，长度不超过 512 字节。
+2.调用 [setGroupInfo](../../v2timgroupmanager/setgroupinfo.md) 接口设置该字段，长度不超过 512 字节。
 {% endhint %}
 
 ### toJson

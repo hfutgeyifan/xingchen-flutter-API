@@ -6,14 +6,14 @@ description: 根据GroupMemberRoleTypeEnum生成GroupMemberRoleType
 
 ## 关键类描述
 
-根据GroupMemberRoleTypeEnum生成GroupMemberRoleType
+根据[GroupMemberRoleTypeEnum](../../enums/groupmemberroletypeenum.md)生成[GroupMemberRoleType](../../enums/groupmemberroletype.md)
 
 ## 参数
 
 ### convertGroupMemberRoleTypeEnum
 
-* 参数类型 : int convertGroupMemberRoleTypeEnum(GroupMemberRoleTypeEnum role)
-* 参数描述：根据GroupMemberRoleTypeEnum生成GroupMemberRoleType
+* 参数类型 : [GroupMemberRoleTypeEnum](../../enums/groupmemberroletypeenum.md)
+* 参数描述：根据[GroupMemberRoleTypeEnum](../../enums/groupmemberroletypeenum.md)生成[GroupMemberRoleType](../../enums/groupmemberroletype.md)
 
 {% hint style="info" %}
 200:群成员

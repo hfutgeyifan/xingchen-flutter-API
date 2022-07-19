@@ -22,7 +22,7 @@ description: 获取群组资料结果
 
 ### groupInfo
 
-* 参数类型 : V2TimGroupInfo
+* 参数类型 : [V2TimGroupInfo](v2timgroupinfo.md)
 * 参数描述：如果获取成功，会返回对应的 info
 
 ### toJson

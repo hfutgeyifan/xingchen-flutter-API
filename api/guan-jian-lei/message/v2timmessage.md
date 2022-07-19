@@ -110,52 +110,52 @@ description: 消息属性
 
 ### textElem
 
-* 参数类型 : V2TimTextElem
+* 参数类型 : [V2TimTextElem](v2timtextelem.md)
 * 参数描述：消息类型 为 V2TIM\_ELEM\_TYPE\_TEXT，textElem 会存储文本消息内容
 
 ### customElem
 
-* 参数类型 : V2TimCustomElem
+* 参数类型 : [V2TimCustomElem](v2timcustomelem.md)
 * 参数描述：消息类型 为 V2TIM\_ELEM\_TYPE\_CUSTOM，customElem 会存储自定义消息内容
 
 ### imageElem
 
-* 参数类型 : V2TimImageElem
+* 参数类型 : [V2TimImageElem](v2timfaceelem.md)
 * 参数描述：消息类型 为 V2TIM\_ELEM\_TYPE\_IMAGE，imageElem 会存储图片消息内容
 
 ### soundElem
 
-* 参数类型 : V2TimSoundElem
+* 参数类型 : [V2TimSoundElem](v2timsoundelem.md)
 * 参数描述：消息类型 为 V2TIM\_ELEM\_TYPE\_SOUND，soundElem 会存储语音消息内容
 
 ### videoElem
 
-* 参数类型 : V2TimVideoElem
+* 参数类型 : [V2TimVideoElem](v2timvideoelem.md)
 * 参数描述：消息类型 为 V2TIM\_ELEM\_TYPE\_VIDEO，videoElem 会存储视频消息内容
 
 ### fileElem
 
-* 参数类型 : V2TimFileElem
+* 参数类型 : [V2TimFileElem](v2timfileelem.md)
 * 参数描述：消息类型 为 V2TIM\_ELEM\_TYPE\_FILE，fileElem 会存储文件消息内容
 
 ### locationElem
 
-* 参数类型 : V2TimLocationElem
+* 参数类型 : [V2TimLocationElem](v2timlocationelem.md)
 * 参数描述：消息类型 为 V2TIM\_ELEM\_TYPE\_LOCATION，locationElem 会存储地理位置消息内容
 
 ### faceElem
 
-* 参数类型 : V2TimFaceElem
+* 参数类型 : [V2TimFaceElem](v2timfaceelem.md)
 * 参数描述：消息类型 为 V2TIM\_ELEM\_TYPE\_FACE，faceElem 会存储表情消息内容
 
 ### groupTipsElem
 
-* 参数类型 : V2TimGroupTipsElem
+* 参数类型 : [V2TimGroupTipsElem](../group/v2timgrouptipselem.md)
 * 参数描述：消息类型 为 V2TIM\_ELEM\_TYPE\_GROUP\_TIPS，groupTipsElem 会存储群 tips 消息内容
 
 ### mergerElem
 
-* 参数类型 : V2TimMergerElem
+* 参数类型 : [V2TimMergerElem](v2timmergerelem.md)
 * 参数描述：消息类型 为 V2TIM\_ELEM\_TYPE\_MERGER，mergerElem 会存储转发消息内容
 
 ### localCustomData
@@ -195,7 +195,7 @@ description: 消息属性
 
 ### offlinePushInfo
 
-* 参数类型 : V2TimOfflinePushInfo
+* 参数类型 : [V2TimOfflinePushInfo](v2timofflinepushinfo.md)
 * 参数描述：消息的离线推送信息
 
 ### groupAtUserList

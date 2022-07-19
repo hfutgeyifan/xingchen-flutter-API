@@ -22,7 +22,7 @@ description: 群消息已读或未读群成员列表
 
 ### memberInfoList
 
-* 参数类型 : List< V2TimGroupMemberInfo >
+* 参数类型 : List< [V2TimGroupMemberInfo](v2timgroupmemberinfo.md) >
 * 参数描述：群消息已读或未读群成员列表
 
 ### toJson

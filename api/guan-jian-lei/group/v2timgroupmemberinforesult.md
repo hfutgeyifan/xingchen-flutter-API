@@ -17,7 +17,7 @@ description: 查询群组用户信息结果
 
 ### memberInfoList
 
-* 参数类型 : List< V2TimGroupMemberFullInfo >
+* 参数类型 : List< [V2TimGroupMemberFullInfo](v2timgroupmemberfullinfo.md) >
 * 参数描述：用户信息列表
 
 ### toJson

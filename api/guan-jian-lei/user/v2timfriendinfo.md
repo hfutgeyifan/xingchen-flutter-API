@@ -32,7 +32,7 @@ description: 好友资料
 
 ### userProfile
 
-* 参数类型 : V2TimUserFullInfo
+* 参数类型 : [V2TimUserFullInfo](v2timuserfullinfo.md)
 * 参数描述：好友个人资料
 
 ### toJson

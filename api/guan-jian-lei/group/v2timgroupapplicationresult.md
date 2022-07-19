@@ -17,7 +17,7 @@ description: 加群申请列表
 
 ### groupApplicationList
 
-* 参数类型 : List< V2TimGroupApplication >
+* 参数类型 : List< [V2TimGroupApplication](v2timgroupapplication.md) >
 * 参数描述：加群申请的列表
 
 ### toJson

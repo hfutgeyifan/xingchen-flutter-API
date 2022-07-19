@@ -40,28 +40,28 @@ description: 群 tips 消息会存消息列表，群里所有的人都会展示�
 
 ### opMember
 
-* 参数类型 : V2TimGroupMemberInfo
+* 参数类型 : [V2TimGroupMemberInfo](v2timgroupmemberinfo.md)
 * 参数描述：操作者群成员资料
 
 ### memberList
 
-* 参数类型 : List< V2TimGroupMemberInfo >
+* 参数类型 : List< [V2TimGroupMemberInfo](v2timgroupmemberinfo.md) >
 * 参数描述：被操作人列表
 
 ### groupChangeInfoList
 
 * 参数类型 : List< V2TimGroupChangeInfo >
-* 参数描述：群信息变更（type = V2TIM\_GROUP\_TIPS\_TYPE\_INFO\_CHANGE 时有效）
+* 参数描述：群信息变更
 
 ### memberChangeInfoList
 
 * 参数类型 : List< V2TimGroupMemberChangeInfo >
-* 参数描述：成员变更（type = V2TIM\_GROUP\_TIPS\_TYPE\_MEMBER\_INFO\_CHANGE 时有效）
+* 参数描述：成员变更
 
 ### memberCount
 
 * 参数类型 : int
-* 参数描述：当前群人数（type = V2TIM\_GROUP\_TIPS\_TYPE\_INVITE、TIM\_GROUP\_TIPS\_TYPE\_QUIT\_GRP、TIM\_GROUP\_TIPS\_TYPE\_KICKED 时有效）
+* 参数描述：当前群人数
 
 ### toJson
 
