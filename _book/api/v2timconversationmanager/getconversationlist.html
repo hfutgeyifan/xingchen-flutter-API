@@ -4081,15 +4081,15 @@
 					<section class="normal markdown-section">
 						
 						<h1 id="getconversationlist">getConversationList</h1>
-<h2 id="api&#x529F;&#x80FD;&#x4ECB;&#x7ECD;">API&#x529F;&#x80FD;&#x4ECB;&#x7ECD;</h2>
+<h2 id="&#x529F;&#x80FD;&#x4ECB;&#x7ECD;">&#x529F;&#x80FD;&#x4ECB;&#x7ECD;</h2>
 <p>&#x83B7;&#x53D6;&#x4F1A;&#x8BDD;&#x5217;&#x8868;</p>
-<p>&#x7528;&#x6237;&#x7684;&#x4F1A;&#x8BDD;&#x4EE5;&#x5217;&#x8868;&#x7684;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#xFF0C;&#x5217;&#x8868;&#x4E2D;&#x5B58;&#x50A8;&#x7684;&#x662F; <code>V2TIMConversation</code> &#x5BF9;&#x8C61;&#x3002;&#x76EE;&#x524D; IM SDK &#x5BF9;&#x4F1A;&#x8BDD;&#x5217;&#x8868;&#x7684;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#x4E3A;&#xFF1A;</p>
+<p>&#x7528;&#x6237;&#x7684;&#x4F1A;&#x8BDD;&#x4EE5;&#x5217;&#x8868;&#x7684;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#xFF0C;&#x5217;&#x8868;&#x4E2D;&#x5B58;&#x50A8;&#x7684;&#x662F; <a href="../guan-jian-lei/message/v2timconversation.html"><code>V2TIMConversation</code></a> &#x5BF9;&#x8C61;&#x3002;&#x76EE;&#x524D; IM SDK &#x5BF9;&#x4F1A;&#x8BDD;&#x5217;&#x8868;&#x7684;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#x4E3A;&#xFF1A;</p>
 <ul>
 <li>Flutter sdk 3.8.0&#x53CA;&#x4EE5;&#x540E;&#x7248;&#x672C;, &#x8BE5;&#x63A5;&#x53E3;&#x83B7;&#x53D6;&#x7684;&#x4F1A;&#x8BDD;&#x5217;&#x8868;&#x9ED8;&#x8BA4;&#x5DF2;&#x7ECF;&#x6309;&#x7167;&#x4F1A;&#x8BDD;&#x5BF9;&#x8C61;&#x7684; <code>orderKey</code> &#x505A;&#x4E86;&#x6392;&#x5E8F;&#x3002;<code>orderKey</code> &#x503C;&#x8D8A;&#x5927;&#xFF0C;&#x4EE3;&#x8868;&#x8BE5;&#x4F1A;&#x8BDD;&#x6392;&#x5E8F;&#x8D8A;&#x9760;&#x524D;&#x3002;<code>orderKey</code> &#x5B57;&#x6BB5;&#x662F;&#x6574;&#x578B;&#x6570;&#xFF0C;&#x5F53;&#x53D1;&#x9001;&#x65B0;&#x6D88;&#x606F;&#x3001;&#x63A5;&#x6536;&#x65B0;&#x6D88;&#x606F;&#x3001;&#x8BBE;&#x7F6E;&#x8349;&#x7A3F;&#x6216;&#x7F6E;&#x9876;&#x4F1A;&#x8BDD;&#x65F6;&#xFF0C;&#x4F1A;&#x8BDD;&#x88AB;&#x6FC0;&#x6D3B;&#xFF0C;<code>orderKey</code> &#x5B57;&#x6BB5;&#x4F1A;&#x589E;&#x5927;&#x3002;</li>
-<li>Flutter sdk 3.8.0 &#x4EE5;&#x524D;&#x7248;&#x672C;&#xFF0C;&#x8BE5;&#x63A5;&#x53E3;&#x83B7;&#x53D6;&#x7684;&#x4F1A;&#x8BDD;&#x5217;&#x8868;&#x9ED8;&#x8BA4;&#x5DF2;&#x7ECF;&#x6309;&#x7167;&#x4F1A;&#x8BDD; <code>lastMessage</code> -&gt; <code>timestamp</code> &#x505A;&#x4E86;&#x6392;&#x5E8F;&#x3002;<code>timestamp</code> &#x8D8A;&#x5927;&#xFF0C;&#x4F1A;&#x8BDD;&#x8D8A;&#x9760;&#x524D;&#x3002;</li>
+<li>Flutter sdk 3.8.0 &#x4EE5;&#x524D;&#x7248;&#x672C;&#xFF0C;&#x8BE5;&#x63A5;&#x53E3;&#x83B7;&#x53D6;&#x7684;&#x4F1A;&#x8BDD;&#x5217;&#x8868;&#x9ED8;&#x8BA4;&#x5DF2;&#x7ECF;&#x6309;&#x7167;&#x4F1A;&#x8BDD; <code>lastMessage</code> &#x7684;<code>timestamp</code> &#x505A;&#x4E86;&#x6392;&#x5E8F;&#x3002;<code>timestamp</code> &#x8D8A;&#x5927;&#xFF0C;&#x4F1A;&#x8BDD;&#x8D8A;&#x9760;&#x524D;&#x3002;</li>
 </ul>
 <p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>&#x6CE8;&#x610F;&#xFF1A;</p>
-<p>&#x8BE5;&#x63A5;&#x53E3;&#x62C9;&#x53D6;&#x7684;&#x662F;&#x672C;&#x5730;&#x7F13;&#x5B58;&#x7684;&#x4F1A;&#x8BDD;&#xFF0C;&#x5982;&#x679C;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x8BDD;&#x6709;&#x66F4;&#x65B0;&#xFF0C;SDK &#x5185;&#x90E8;&#x4F1A;&#x81EA;&#x52A8;&#x540C;&#x6B65;&#xFF0C;&#x7136;&#x540E;&#x5728; <code>V2TIMConversationListener</code> &#x56DE;&#x8C03;&#x544A;&#x77E5;&#x5BA2;&#x6237;&#x3002;</p>
+<p>&#x8BE5;&#x63A5;&#x53E3;&#x62C9;&#x53D6;&#x7684;&#x662F;&#x672C;&#x5730;&#x7F13;&#x5B58;&#x7684;&#x4F1A;&#x8BDD;&#xFF0C;&#x5982;&#x679C;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x8BDD;&#x6709;&#x66F4;&#x65B0;&#xFF0C;SDK &#x5185;&#x90E8;&#x4F1A;&#x81EA;&#x52A8;&#x540C;&#x6B65;&#xFF0C;&#x7136;&#x540E;&#x5728; <a href="../guan-jian-lei/listener/v2timconversationlistener.html"><code>V2TIMConversationListener</code></a> &#x56DE;&#x8C03;&#x544A;&#x77E5;&#x5BA2;&#x6237;&#x3002;</p>
 <p>&#x5728;&#x67D0;&#x4E9B;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x4F1A;&#x8BDD;&#x7684; <code>lastMessage</code> &#x4E3A;&#x7A7A;&#xFF08;&#x4F8B;&#x5982;&#x6E05;&#x7A7A;&#x4F1A;&#x8BDD;&#x6D88;&#x606F;&#xFF09;&#x3002;&#x5982;&#x679C;&#x60A8;&#x4F7F;&#x7528; 5.5.892 &#x4EE5;&#x524D;&#x7684; SDK&#xFF0C;&#x4F7F;&#x7528; <code>lastMessage</code> &#x6392;&#x5E8F;&#x65F6;&#x9700;&#x8981;&#x989D;&#x5916;&#x5904;&#x7406;&#x8FD9;&#x79CD;&#x5F02;&#x5E38;&#x3002;&#x6211;&#x4EEC;&#x5EFA;&#x8BAE;&#x60A8;&#x5347;&#x7EA7;&#x5230; 5.5.892 &#x53CA;&#x4EE5;&#x540E;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x4F7F;&#x7528; <code>orderKey</code> &#x5B57;&#x6BB5;&#x6392;&#x5E8F;&#x3002;</p>
 <p>&#x6700;&#x591A;&#x80FD;&#x62C9;&#x53D6;&#x5230;&#x6700;&#x8FD1;&#x7684;5000&#x4E2A;&#x4F1A;&#x8BDD;&#x3002;</p>
 </div></div></p>
@@ -4118,7 +4118,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="&#x8FD4;&#x56DE;&#x6A21;&#x677F;">&#x8FD4;&#x56DE;&#x6A21;&#x677F;</h2>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h2>
 <pre><code class="lang-dart">V2TimValueCallback&lt;V2TimConversationResult&gt;
 
 {
@@ -4131,7 +4131,7 @@
     }
 }
 </code></pre>
-<h2 id="&#x8FD4;&#x56DE;&#x53C2;&#x6570;&#x8BE6;&#x89E3;">&#x8FD4;&#x56DE;&#x53C2;&#x6570;&#x8BE6;&#x89E3;</h2>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;&#x8BE6;&#x89E3;">&#x8FD4;&#x56DE;&#x503C;&#x8BE6;&#x89E3;</h2>
 <table>
 <thead>
 <tr>
@@ -4153,12 +4153,12 @@
 </tr>
 <tr>
 <td>data</td>
-<td><a href="broken-reference">V2TimConversationResult</a></td>
+<td><a href="../guan-jian-lei/message/v2timconversationresult.html">V2TimConversationResult</a></td>
 <td>&#x6B64;&#x6B21;&#x62C9;&#x53D6;&#x5230;&#x7684;&#x6D88;&#x606F;&#x4FE1;&#x606F;</td>
 </tr>
 </tbody>
 </table>
-<h2 id="&#x4F7F;&#x7528;&#x6848;&#x4F8B;---">&#x4F7F;&#x7528;&#x6848;&#x4F8B;   </h2>
+<h2 id="&#x4EE3;&#x7801;&#x793A;&#x4F8B;">&#x4EE3;&#x7801;&#x793A;&#x4F8B;</h2>
 <pre><code class="lang-dart">    <span class="hljs-comment">//&#x83B7;&#x53D6;&#x4F1A;&#x8BDD;&#x5217;&#x8868;</span>
     V2TimValueCallback&lt;V2TimConversationResult&gt; getConversationListRes =
         <span class="hljs-keyword">await</span> TencentImSDKPlugin.v2TIMManager
@@ -4243,7 +4243,7 @@
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"description":"获取会话列表","title":"getConversationList","level":"2.5.4","depth":2,"next":{"title":"getConversationListByConversaionIds","level":"2.5.5","depth":2,"path":"api/v2timconversationmanager/getconversationlistbyconversaionids.md","ref":"api/v2timconversationmanager/getconversationlistbyconversaionids.md","articles":[]},"previous":{"title":"getConversation","level":"2.5.3","depth":2,"path":"api/v2timconversationmanager/getconversation.md","ref":"api/v2timconversationmanager/getconversation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints","livereload"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timconversationmanager/getconversationlist.md","mtime":"2022-07-18T08:53:06.230Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-18T12:50:37.527Z"},"basePath":"../..","book":{"language":""}});
+			gitbook.page.hasChanged({"page":{"description":"获取会话列表","title":"getConversationList","level":"2.5.4","depth":2,"next":{"title":"getConversationListByConversaionIds","level":"2.5.5","depth":2,"path":"api/v2timconversationmanager/getconversationlistbyconversaionids.md","ref":"api/v2timconversationmanager/getconversationlistbyconversaionids.md","articles":[]},"previous":{"title":"getConversation","level":"2.5.3","depth":2,"path":"api/v2timconversationmanager/getconversation.md","ref":"api/v2timconversationmanager/getconversation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timconversationmanager/getconversationlist.md","mtime":"2022-07-19T02:42:03.328Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-19T03:55:17.390Z"},"basePath":"../..","book":{"language":""}});
 		});
 	</script>
 </div>
@@ -4282,10 +4282,6 @@
     
         
         <script src="../../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

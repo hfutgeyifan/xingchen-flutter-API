@@ -4081,32 +4081,32 @@
 					<section class="normal markdown-section">
 						
 						<h1 id="addfriend">addFriend</h1>
-<h2 id="api&#x529F;&#x80FD;&#x4ECB;&#x7ECD;">API&#x529F;&#x80FD;&#x4ECB;&#x7ECD;</h2>
+<h2 id="&#x529F;&#x80FD;&#x4ECB;&#x7ECD;">&#x529F;&#x80FD;&#x4ECB;&#x7ECD;</h2>
 <p>&#x6DFB;&#x52A0;&#x597D;&#x53CB;</p>
 <p>&#x6839;&#x636E;&#x5BF9;&#x65B9;&#x7528;&#x6237;&#x8D44;&#x6599;&#x4E2D;&#x7684;&#x52A0;&#x597D;&#x53CB;&#x9700;&#x8981;&#x9A8C;&#x8BC1;&#x4E0E;&#x5426;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4E24;&#x79CD;&#x5904;&#x7406;&#x6D41;&#x7A0B;&#xFF1A;</p>
 <p><strong>&#x7B2C;&#x4E00;&#x79CD;&#xFF1A;&#x52A0;&#x597D;&#x53CB;&#x4E0D;&#x9700;&#x8981;&#x5BF9;&#x65B9;&#x9A8C;&#x8BC1;</strong></p>
 <ol>
-<li>&#x7528;&#x6237; A &#x548C; B &#x8C03;&#x7528; <code>setFriendListener</code> &#x8BBE;&#x7F6E;&#x5173;&#x7CFB;&#x94FE;&#x76D1;&#x542C;&#x5668;&#x3002;</li>
-<li>&#x7528;&#x6237; B &#x901A;&#x8FC7; <code>setSelfInfo</code> &#x51FD;&#x6570;&#x91CC;&#x7684; <code>allowType</code> &#x5B57;&#x6BB5;&#x8BBE;&#x7F6E;&#x4E3A;&#x52A0;&#x597D;&#x53CB;&#x4E0D;&#x9700;&#x8981;&#x9A8C;&#x8BC1;&#xFF08;<code>V2TIM_FRIEND_ALLOW_ANY</code>&#xFF09;&#x3002;</li>
-<li>&#x7528;&#x6237; A &#x8C03;&#x7528; <code>addFriend</code> &#x7533;&#x8BF7;&#x6DFB;&#x52A0; B &#x4E3A;&#x597D;&#x53CB;&#x5373;&#x53EF;&#x6DFB;&#x52A0;&#x6210;&#x529F;&#x3002;&#x6DFB;&#x52A0;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x6309;&#x7167;&#x7533;&#x8BF7;&#x53C2;&#x6570; <code>V2TIMFriendAddApplication</code> &#x4E2D; <code>addType</code> &#x7684;&#x8BBE;&#x7F6E;&#x6709;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;<ul>
-<li>&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;&#x53CC;&#x5411;&#x597D;&#x53CB; (<code>V2TIM_FRIEND_TYPE_BOTH</code>) &#xFF0C;&#x5219;&#x7528;&#x6237; A &#x548C; B &#x90FD;&#x4F1A;&#x6536;&#x5230; <code>onFriendListAdded</code> &#x56DE;&#x8C03;&#xFF1B;</li>
-<li>&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;&#x5355;&#x5411;&#x597D;&#x53CB;&#xFF08;<code>V2TIM_FRIEND_TYPE_SINGLE</code>&#xFF09;&#xFF0C;&#x5219;&#x53EA;&#x6709;&#x7528;&#x6237; A &#x6536;&#x5230; <code>onFriendListAdded</code> &#x56DE;&#x8C03;&#x3002;</li>
+<li>&#x7528;&#x6237; A &#x548C; B &#x8C03;&#x7528; <a href="setfriendlistener.html"><code>setFriendListener</code></a> &#x8BBE;&#x7F6E;&#x5173;&#x7CFB;&#x94FE;&#x76D1;&#x542C;&#x5668;&#x3002;</li>
+<li>&#x7528;&#x6237; B &#x901A;&#x8FC7; <a href="../v2timmanager/setselfinfo.html"><code>setSelfInfo</code></a> &#x51FD;&#x6570;&#x91CC;&#x7684; <code>allowType</code> &#x5B57;&#x6BB5;&#x8BBE;&#x7F6E;&#x4E3A;&#x52A0;&#x597D;&#x53CB;&#x4E0D;&#x9700;&#x8981;&#x9A8C;&#x8BC1;&#xFF08;<code>V2TIM_FRIEND_ALLOW_ANY</code>&#xFF09;&#x3002;</li>
+<li>&#x7528;&#x6237; A &#x8C03;&#x7528; <code>addFriend</code> &#x7533;&#x8BF7;&#x6DFB;&#x52A0; B &#x4E3A;&#x597D;&#x53CB;&#x5373;&#x53EF;&#x6DFB;&#x52A0;&#x6210;&#x529F;&#x3002;&#x6DFB;&#x52A0;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x6309;&#x7167;&#x7533;&#x8BF7;&#x53C2;&#x6570; <code>addType</code> &#x7684;&#x8BBE;&#x7F6E;&#x6709;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;<ul>
+<li>&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;&#x53CC;&#x5411;&#x597D;&#x53CB; (<code>V2TIM_FRIEND_TYPE_BOTH</code>) &#xFF0C;&#x5219;&#x7528;&#x6237; A &#x548C; B &#x90FD;&#x4F1A;&#x6536;&#x5230; <a href="../callbacks/onfriendlistaddedcallback.html"><code>onFriendListAdded</code></a> &#x56DE;&#x8C03;&#xFF1B;</li>
+<li>&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;&#x5355;&#x5411;&#x597D;&#x53CB;&#xFF08;<code>V2TIM_FRIEND_TYPE_SINGLE</code>&#xFF09;&#xFF0C;&#x5219;&#x53EA;&#x6709;&#x7528;&#x6237; A &#x6536;&#x5230; <a href="../callbacks/onfriendlistaddedcallback.html"><code>onFriendListAdded</code></a> &#x56DE;&#x8C03;&#x3002;</li>
 </ul>
 </li>
 </ol>
 <p><strong>&#x7B2C;&#x4E8C;&#x79CD;&#xFF1A;&#x52A0;&#x597D;&#x53CB;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x5BF9;&#x65B9;&#x9A8C;&#x8BC1;</strong></p>
 <ol>
-<li>&#x7528;&#x6237; A &#x548C; B &#x8C03;&#x7528; <code>setFriendListener</code> &#x8BBE;&#x7F6E;&#x5173;&#x7CFB;&#x94FE;&#x76D1;&#x542C;&#x3002;</li>
-<li>&#x7528;&#x6237; B &#x901A;&#x8FC7; <code>setSelfInfo</code> &#x51FD;&#x6570;&#x91CC;&#x7684; <code>allowType</code> &#x5B57;&#x6BB5;&#x8BBE;&#x7F6E;&#x4E3A;&#x52A0;&#x597D;&#x53CB;&#x9700;&#x8981;&#x9A8C;&#x8BC1;&#xFF08;<code>V2TIM_FRIEND_NEED_CONFIRM</code>&#xFF09;&#x3002;</li>
-<li>&#x7528;&#x6237; A &#x8C03;&#x7528; <code>addFriend</code> &#x7533;&#x8BF7;&#x6DFB;&#x52A0; B &#x4E3A;&#x597D;&#x53CB;&#xFF0C;&#x63A5;&#x53E3;&#x7684;&#x6210;&#x529F;&#x56DE;&#x8C03;&#x53C2;&#x6570;&#x4E2D; <code>resultCode</code> &#x8FD4;&#x56DE; 30539&#xFF0C;&#x8868;&#x793A;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x7528;&#x6237; B &#x7684;&#x9A8C;&#x8BC1;&#x3002;&#x540C;&#x65F6; A &#x548C; B &#x90FD;&#x4F1A;&#x6536;&#x5230; <code>onFriendApplicationListAdded</code>  &#x7684;&#x56DE;&#x8C03;&#x3002;</li>
-<li>&#x7528;&#x6237; B &#x4F1A;&#x6536;&#x5230; <code>onFriendApplicationListAdded</code> &#x7684;&#x56DE;&#x8C03;&#xFF0C;&#x5F53;&#x53C2;&#x6570; <code>V2TIMFriendApplication</code> &#x4E2D;&#x7684; <code>type</code> &#x4E3A; <code>V2TIM_FRIEND_APPLICATION_COME_IN</code> &#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x63A5;&#x53D7;&#x6216;&#x8005;&#x62D2;&#x7EDD;&#xFF1A;<ul>
-<li>B &#x8C03;&#x7528; <code>acceptFriendApplication</code> &#x63A5;&#x53D7;&#x597D;&#x53CB;&#x8BF7;&#x6C42;&#x3002;&#x5982;&#x679C;&#x53C2;&#x6570;&#x63A5;&#x53D7;&#x7C7B;&#x578B;&#x4E3A;&#x4EC5;&#x540C;&#x610F;&#x52A0;&#x5355;&#x5411;&#x597D;&#x53CB;&#xFF08;<code>V2TIM_FRIEND_ACCEPT_AGREE</code>&#xFF09;&#x65F6;:<ul>
-<li>A &#x4F1A;&#x6536;&#x5230; <code>onFriendListAdded</code> &#x56DE;&#x8C03;&#xFF0C;&#x8BF4;&#x660E;&#x5355;&#x5411;&#x52A0;&#x597D;&#x53CB;&#x6210;&#x529F;&#x3002;</li>
-<li>B &#x4F1A;&#x6536;&#x5230; <code>onFriendApplicationListDeleted</code> &#x56DE;&#x8C03;&#xFF0C;&#x6B64;&#x65F6; B &#x6210;&#x4E3A; A &#x7684;&#x597D;&#x53CB;&#xFF0C;&#x4F46; A &#x4ECD;&#x4E0D;&#x662F; B &#x7684;&#x597D;&#x53CB;&#x3002;</li>
+<li>&#x7528;&#x6237; A &#x548C; B &#x8C03;&#x7528; <a href="setfriendlistener.html"><code>setFriendListener</code></a> &#x8BBE;&#x7F6E;&#x5173;&#x7CFB;&#x94FE;&#x76D1;&#x542C;&#x3002;</li>
+<li>&#x7528;&#x6237; B &#x901A;&#x8FC7; <a href="../v2timmanager/setselfinfo.html"><code>setSelfInfo</code></a> &#x51FD;&#x6570;&#x91CC;&#x7684; <code>allowType</code> &#x5B57;&#x6BB5;&#x8BBE;&#x7F6E;&#x4E3A;&#x52A0;&#x597D;&#x53CB;&#x9700;&#x8981;&#x9A8C;&#x8BC1;&#xFF08;<code>V2TIM_FRIEND_NEED_CONFIRM</code>&#xFF09;&#x3002;</li>
+<li>&#x7528;&#x6237; A &#x8C03;&#x7528; <code>addFriend</code> &#x7533;&#x8BF7;&#x6DFB;&#x52A0; B &#x4E3A;&#x597D;&#x53CB;&#xFF0C;&#x63A5;&#x53E3;&#x7684;&#x6210;&#x529F;&#x56DE;&#x8C03;&#x53C2;&#x6570;&#x4E2D; <code>resultCode</code> &#x8FD4;&#x56DE; 30539&#xFF0C;&#x8868;&#x793A;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x7528;&#x6237; B &#x7684;&#x9A8C;&#x8BC1;&#x3002;&#x540C;&#x65F6; A &#x548C; B &#x90FD;&#x4F1A;&#x6536;&#x5230; <a href="../callbacks/onfriendapplicationlistaddedcallback.html"><code>onFriendApplicationListAdded</code></a> &#x7684;&#x56DE;&#x8C03;&#x3002;</li>
+<li>&#x7528;&#x6237; B &#x4F1A;&#x6536;&#x5230; <a href="../callbacks/onfriendapplicationlistaddedcallback.html"><code>onFriendApplicationListAdded</code></a> &#x7684;&#x56DE;&#x8C03;&#xFF0C;&#x5F53;&#x53C2;&#x6570;  <code>type</code> &#x4E3A; <code>V2TIM_FRIEND_APPLICATION_COME_IN</code> &#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x63A5;&#x53D7;&#x6216;&#x8005;&#x62D2;&#x7EDD;&#xFF1A;<ul>
+<li>B &#x8C03;&#x7528; <a href="acceptfriendapplication.html"><code>acceptFriendApplication</code></a> &#x63A5;&#x53D7;&#x597D;&#x53CB;&#x8BF7;&#x6C42;&#x3002;&#x5982;&#x679C;&#x53C2;&#x6570;&#x63A5;&#x53D7;&#x7C7B;&#x578B;&#x4E3A;&#x4EC5;&#x540C;&#x610F;&#x52A0;&#x5355;&#x5411;&#x597D;&#x53CB;&#xFF08;<code>V2TIM_FRIEND_ACCEPT_AGREE</code>&#xFF09;&#x65F6;:<ul>
+<li>A &#x4F1A;&#x6536;&#x5230; <a href="../callbacks/onfriendlistaddedcallback.html"><code>onFriendListAdded</code></a> &#x56DE;&#x8C03;&#xFF0C;&#x8BF4;&#x660E;&#x5355;&#x5411;&#x52A0;&#x597D;&#x53CB;&#x6210;&#x529F;&#x3002;</li>
+<li>B &#x4F1A;&#x6536;&#x5230; <a href="../callbacks/onfriendapplicationlistdeletedcallback.html"><code>onFriendApplicationListDeleted</code></a> &#x56DE;&#x8C03;&#xFF0C;&#x6B64;&#x65F6; B &#x6210;&#x4E3A; A &#x7684;&#x597D;&#x53CB;&#xFF0C;&#x4F46; A &#x4ECD;&#x4E0D;&#x662F; B &#x7684;&#x597D;&#x53CB;&#x3002;</li>
 </ul>
 </li>
-<li>B &#x8C03;&#x7528; <code>acceptFriendApplication</code> &#x63A5;&#x53D7;&#x597D;&#x53CB;&#x8BF7;&#x6C42;&#xFF0C;&#x5982;&#x679C;&#x53C2;&#x6570;&#x63A5;&#x53D7;&#x7C7B;&#x578B;&#x4E3A;&#x540C;&#x610F;&#x52A0;&#x53CC;&#x5411;&#x597D;&#x53CB;&#x65F6;&#xFF08;<code>V2TIM_FRIEND_ACCEPT_AGREE_AND_ADD</code>&#xFF09;&#xFF0C;A &#x548C; B &#x90FD;&#x4F1A;&#x6536;&#x5230; <code>onFriendListAdded</code> &#x56DE;&#x8C03;&#xFF0C;&#x8BF4;&#x660E;&#x4E92;&#x76F8;&#x52A0;&#x597D;&#x53CB;&#x6210;&#x529F;&#x3002;</li>
-<li>B &#x8C03;&#x7528; <code>refuseFriendApplication</code>  &#x62D2;&#x7EDD;&#x597D;&#x53CB;&#x8BF7;&#x6C42;&#xFF0C;&#x53CC;&#x65B9;&#x90FD;&#x4F1A;&#x6536;&#x5230; <code>onFriendApplicationListDeleted</code> &#x56DE;&#x8C03;&#x3002;</li>
+<li>B &#x8C03;&#x7528; <a href="acceptfriendapplication.html"><code>acceptFriendApplication</code></a> &#x63A5;&#x53D7;&#x597D;&#x53CB;&#x8BF7;&#x6C42;&#xFF0C;&#x5982;&#x679C;&#x53C2;&#x6570;&#x63A5;&#x53D7;&#x7C7B;&#x578B;&#x4E3A;&#x540C;&#x610F;&#x52A0;&#x53CC;&#x5411;&#x597D;&#x53CB;&#x65F6;&#xFF08;<code>V2TIM_FRIEND_ACCEPT_AGREE_AND_ADD</code>&#xFF09;&#xFF0C;A &#x548C; B &#x90FD;&#x4F1A;&#x6536;&#x5230; <a href="../callbacks/onfriendlistaddedcallback.html"><code>onFriendListAdded</code></a> &#x56DE;&#x8C03;&#xFF0C;&#x8BF4;&#x660E;&#x4E92;&#x76F8;&#x52A0;&#x597D;&#x53CB;&#x6210;&#x529F;&#x3002;</li>
+<li>B &#x8C03;&#x7528; <a href="refusefriendapplication.html"><code>refuseFriendApplication</code></a> &#x62D2;&#x7EDD;&#x597D;&#x53CB;&#x8BF7;&#x6C42;&#xFF0C;&#x53CC;&#x65B9;&#x90FD;&#x4F1A;&#x6536;&#x5230; <a href="../callbacks/onfriendapplicationlistdeletedcallback.html"><code>onFriendApplicationListDeleted</code></a> &#x56DE;&#x8C03;&#x3002;</li>
 </ul>
 </li>
 </ol>
@@ -4153,13 +4153,13 @@
 </tr>
 <tr>
 <td>addType</td>
-<td><a href="broken-reference">FriendTypeEnum</a></td>
+<td><a href="../enums/friendtypeenum.html">FriendTypeEnum</a></td>
 <td>&#x662F;</td>
 <td>&#x8BBE;&#x7F6E;&#x52A0;&#x597D;&#x53CB;&#x7C7B;&#x578B;&#xFF0C;&#x9ED8;&#x8BA4;&#x53CC;&#x5411;</td>
 </tr>
 </tbody>
 </table>
-<h2 id="&#x8FD4;&#x56DE;&#x6A21;&#x677F;">&#x8FD4;&#x56DE;&#x6A21;&#x677F;</h2>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h2>
 <pre><code class="lang-dart">V2TimValueCallback&lt;V2TimFriendOperationResult&gt;
 
 {
@@ -4172,7 +4172,7 @@
     }
 }
 </code></pre>
-<h2 id="&#x8FD4;&#x56DE;&#x53C2;&#x6570;&#x8BE6;&#x89E3;">&#x8FD4;&#x56DE;&#x53C2;&#x6570;&#x8BE6;&#x89E3;</h2>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;&#x8BE6;&#x89E3;">&#x8FD4;&#x56DE;&#x503C;&#x8BE6;&#x89E3;</h2>
 <table>
 <thead>
 <tr>
@@ -4194,12 +4194,12 @@
 </tr>
 <tr>
 <td>data</td>
-<td><a href="broken-reference">V2TimFriendOperationResult</a></td>
+<td><a href="../guan-jian-lei/user/v2timfriendoperationresult.html">V2TimFriendOperationResult</a></td>
 <td>&#x6DFB;&#x52A0;&#x8BF7;&#x6C42;&#x7ED3;&#x679C;</td>
 </tr>
 </tbody>
 </table>
-<h2 id="&#x4F7F;&#x7528;&#x6848;&#x4F8B;---">&#x4F7F;&#x7528;&#x6848;&#x4F8B;   </h2>
+<h2 id="&#x4EE3;&#x7801;&#x793A;&#x4F8B;">&#x4EE3;&#x7801;&#x793A;&#x4F8B;</h2>
 <pre><code class="lang-dart">    <span class="hljs-comment">//&#x6DFB;&#x52A0;&#x597D;&#x53CB;</span>
     V2TimValueCallback&lt;V2TimFriendOperationResult&gt; addFriendRes =
         <span class="hljs-keyword">await</span> TencentImSDKPlugin.v2TIMManager
@@ -4259,7 +4259,7 @@
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"description":"添加好友","title":"addFriend","level":"2.6.2","depth":2,"next":{"title":"addFriendListener","level":"2.6.3","depth":2,"path":"api/v2timfriendshipmanager/addfriendlistener.md","ref":"api/v2timfriendshipmanager/addfriendlistener.md","articles":[]},"previous":{"title":"acceptFriendApplication","level":"2.6.1","depth":2,"path":"api/v2timfriendshipmanager/acceptfriendapplication.md","ref":"api/v2timfriendshipmanager/acceptfriendapplication.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints","livereload"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timfriendshipmanager/addfriend.md","mtime":"2022-07-18T08:53:06.231Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-18T12:50:37.527Z"},"basePath":"../..","book":{"language":""}});
+			gitbook.page.hasChanged({"page":{"description":"添加好友","title":"addFriend","level":"2.6.2","depth":2,"next":{"title":"addFriendListener","level":"2.6.3","depth":2,"path":"api/v2timfriendshipmanager/addfriendlistener.md","ref":"api/v2timfriendshipmanager/addfriendlistener.md","articles":[]},"previous":{"title":"acceptFriendApplication","level":"2.6.1","depth":2,"path":"api/v2timfriendshipmanager/acceptfriendapplication.md","ref":"api/v2timfriendshipmanager/acceptfriendapplication.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timfriendshipmanager/addfriend.md","mtime":"2022-07-19T02:50:55.226Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-19T03:55:17.390Z"},"basePath":"../..","book":{"language":""}});
 		});
 	</script>
 </div>
@@ -4298,10 +4298,6 @@
     
         
         <script src="../../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
