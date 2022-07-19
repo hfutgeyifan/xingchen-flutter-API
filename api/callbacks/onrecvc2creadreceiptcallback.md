@@ -8,7 +8,7 @@ description: C2C 对端用户会话已读通知
 
 C2C 对端用户会话已读通知
 
-* 如果对端用户调用 markC2CMessageAsRead 接口，自己会收到该回调
+* 如果对端用户调用 [markC2CMessageAsRead](../v2timmessagemanager/markc2cmessageasread.md) 接口，自己会收到该回调
 
 ## 回调函数模版
 
@@ -20,9 +20,9 @@ List<V2TimMessageReceipt> receiptList
 
 ## 回调函数参数说明
 
-| 参数名称        | 参数类型                                            | 参数描述   |
-| ----------- | ----------------------------------------------- | ------ |
-| receiptList | List< [V2TimMessageReceipt](broken-reference) > | 消息已读列表 |
+| 参数名称        | 参数类型                                                                           | 参数描述   |
+| ----------- | ------------------------------------------------------------------------------ | ------ |
+| receiptList | List< [V2TimMessageReceipt](../guan-jian-lei/message/v2timmessagereceipt.md) > | 消息已读列表 |
 
 ## 代码示例
 
@@ -45,4 +45,3 @@ List<V2TimMessageReceipt> receiptList
         .getMessageManager()
         .addAdvancedMsgListener(listener: listener);
 ```
-

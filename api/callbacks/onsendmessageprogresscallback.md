@@ -19,10 +19,10 @@ int progress
 
 ## 回调函数参数说明
 
-| 参数名称     | 参数类型                             | 参数描述         |
-| -------- | -------------------------------- | ------------ |
-| message  | [V2TimMessage](broken-reference) | 上传文件的消息属性    |
-| progress | int                              | 文件上传进度 0-100 |
+| 参数名称     | 参数类型                                                     | 参数描述         |
+| -------- | -------------------------------------------------------- | ------------ |
+| message  | [V2TimMessage](../guan-jian-lei/message/v2timmessage.md) | 上传文件的消息属性    |
+| progress | int                                                      | 文件上传进度 0-100 |
 
 ## 代码示例
 
@@ -38,4 +38,3 @@ int progress
     //添加会话监听器
     TencentImSDKPlugin.v2TIMManager.addGroupListener(listener: listener);
 ```
-

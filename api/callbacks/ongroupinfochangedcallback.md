@@ -19,10 +19,10 @@ List<V2TimGroupChangeInfo> changeInfos
 
 ## 回调函数参数说明
 
-| 参数名称        | 参数类型                                             | 参数描述   |
-| ----------- | ------------------------------------------------ | ------ |
-| groupID     | String                                           | 群 ID   |
-| changeInfos | List< [V2TimGroupChangeInfo](broken-reference) > | 修改的群信息 |
+| 参数名称        | 参数类型                                                                           | 参数描述   |
+| ----------- | ------------------------------------------------------------------------------ | ------ |
+| groupID     | String                                                                         | 群 ID   |
+| changeInfos | List< [V2TimGroupChangeInfo](../guan-jian-lei/group/v2timgroupchangeinfo.md) > | 修改的群信息 |
 
 ## 代码示例
 
@@ -39,4 +39,3 @@ List<V2TimGroupChangeInfo> changeInfos
     //添加群组监听器
     TencentImSDKPlugin.v2TIMManager.addGroupListener(listener: listener);
 ```
-

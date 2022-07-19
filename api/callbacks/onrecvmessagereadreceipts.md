@@ -8,7 +8,7 @@ description: 消息已读回执通
 
 消息已读回执通
 
-* 如果自己发送的消息支持已读回执，消息接收端调用 sendMessageReadReceipts，自己会收到该通知
+* 如果自己发送的消息支持已读回执，消息接收端调用 [sendMessageReadReceipts](../v2timmessagemanager/sendmessagereadreceipts.md)，自己会收到该通知
 
 ## 回调函数模版
 
@@ -20,9 +20,9 @@ List<V2TimMessageReceipt> receiptList
 
 ## 回调函数参数说明
 
-| 参数名称    | 参数类型                                            | 参数描述   |
-| ------- | ----------------------------------------------- | ------ |
-| message | List< [V2TimMessageReceipt](broken-reference) > | 消息已读列表 |
+| 参数名称    | 参数类型                                                                           | 参数描述   |
+| ------- | ------------------------------------------------------------------------------ | ------ |
+| message | List< [V2TimMessageReceipt](../guan-jian-lei/message/v2timmessagereceipt.md) > | 消息已读列表 |
 
 ## 代码示例
 
@@ -44,4 +44,3 @@ List<V2TimMessageReceipt> receiptList
     //添加会话监听器
     TencentImSDKPlugin.v2TIMManager.addGroupListener(listener: listener);
 ```
-

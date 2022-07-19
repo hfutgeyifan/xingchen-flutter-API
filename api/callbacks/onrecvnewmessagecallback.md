@@ -18,9 +18,9 @@ V2TimMessage message
 
 ## 回调函数参数说明
 
-| 参数名称    | 参数类型                             | 参数描述   |
-| ------- | -------------------------------- | ------ |
-| message | [V2TimMessage](broken-reference) | 收到的新消息 |
+| 参数名称    | 参数类型                                                     | 参数描述   |
+| ------- | -------------------------------------------------------- | ------ |
+| message | [V2TimMessage](../guan-jian-lei/message/v2timmessage.md) | 收到的新消息 |
 
 ## 代码示例
 
@@ -131,4 +131,3 @@ V2TimMessage message
     //添加会话监听器
     TencentImSDKPlugin.v2TIMManager.addGroupListener(listener: listener);
 ```
-

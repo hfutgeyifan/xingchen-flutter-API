@@ -18,9 +18,9 @@ List<V2TimFriendInfo> users
 
 ## 回调函数参数说明
 
-| 参数名称  | 参数类型                                        | 参数描述      |
-| ----- | ------------------------------------------- | --------- |
-| users | List< [V2TimFriendInfo](broken-reference) > | 新增的好友信息列表 |
+| 参数名称  | 参数类型                                                                | 参数描述      |
+| ----- | ------------------------------------------------------------------- | --------- |
+| users | List< [V2TimFriendInfo](../guan-jian-lei/user/v2timfriendinfo.md) > | 新增的好友信息列表 |
 
 ## 代码示例
 
@@ -36,4 +36,3 @@ List<V2TimFriendInfo> users
         .getFriendshipManager()
         .addFriendListener(listener: listener); //添加关系链监听器
 ```
-

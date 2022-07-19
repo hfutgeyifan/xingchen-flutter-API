@@ -18,9 +18,9 @@ V2TimUserFullInfo info
 
 ## 回调函数参数说明
 
-| 参数名称 | 参数类型                                  | 参数描述    |
-| ---- | ------------------------------------- | ------- |
-| info | [V2TimUserFullInfo](broken-reference) | 登录用户的资料 |
+| 参数名称 | 参数类型                                                            | 参数描述    |
+| ---- | --------------------------------------------------------------- | ------- |
+| info | [V2TimUserFullInfo](../guan-jian-lei/user/v2timuserfullinfo.md) | 登录用户的资料 |
 
 ## 代码示例
 
@@ -40,6 +40,4 @@ V2TimUserFullInfo info
       loglevel: LogLevelEnum.V2TIM_LOG_ALL, // 日志登记等级
       listener: sdkListener, // 事件监听器
     );
-
 ```
-

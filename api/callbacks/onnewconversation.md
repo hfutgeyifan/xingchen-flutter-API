@@ -20,9 +20,9 @@ List<V2TimConversation> conversationList
 
 ## 回调函数参数说明
 
-| 参数名称             | 参数类型                                          | 参数描述   |
-| ---------------- | --------------------------------------------- | ------ |
-| conversationList | List< [V2TimConversation](broken-reference) > | 新的会话列表 |
+| 参数名称             | 参数类型                                                                       | 参数描述   |
+| ---------------- | -------------------------------------------------------------------------- | ------ |
+| conversationList | List< [V2TimConversation](../guan-jian-lei/message/v2timconversation.md) > | 新的会话列表 |
 
 ## 代码示例
 
@@ -37,4 +37,3 @@ List<V2TimConversation> conversationList
     //添加群组监听器
     TencentImSDKPlugin.v2TIMManager.addGroupListener(listener: listener);
 ```
-

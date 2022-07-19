@@ -20,9 +20,9 @@ List<V2TimConversation> conversationList
 
 ## 回调函数参数说明
 
-| 参数名称             | 参数类型                                          | 参数描述    |
-| ---------------- | --------------------------------------------- | ------- |
-| conversationList | List< [V2TimConversation](broken-reference) > | 改变的会话列表 |
+| 参数名称             | 参数类型                                                                       | 参数描述    |
+| ---------------- | -------------------------------------------------------------------------- | ------- |
+| conversationList | List< [V2TimConversation](../guan-jian-lei/message/v2timconversation.md) > | 改变的会话列表 |
 
 ## 代码示例
 
@@ -39,4 +39,3 @@ List<V2TimConversation> conversationList
         .getConversationManager()
         .addConversationListener(listener: listener); //需要新增的会话监听器
 ```
-

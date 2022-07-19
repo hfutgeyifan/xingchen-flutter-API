@@ -9,7 +9,7 @@ description: 发送消息
 发送消息
 
 * 发送消息方法在核心类 `TencentImSDKPlugin.`[`v2TIMManager`](../v2timmanager/)`.`[`getMessageManager`](../v2timmanager/getmessagemanager.md)`()`中。
-* ``[`V2TimMessage`](../guan-jian-lei/message/v2timmessage.md) 中可以携带不同类型子类，表示不同类型的消息。
+* [`V2TimMessage`](../guan-jian-lei/message/v2timmessage.md) 中可以携带不同类型子类，表示不同类型的消息。
 * 发送消息首先通过createXXXMessage创建不同种类的信息，再通过[sendMessage](sendmessage.md)根据消息id发送。
 
 {% hint style="info" %}
@@ -113,7 +113,7 @@ V2TimValueCallback<V2TimMessage>
 | desc | String                                                   | 请求结果描述                                                         |
 | data | [V2TimMessage](../guan-jian-lei/message/v2timmessage.md) | 发送的信息                                                          |
 
-## 代码示例  &#x20;
+## 代码示例
 
 ```dart
 // 创建文本消息

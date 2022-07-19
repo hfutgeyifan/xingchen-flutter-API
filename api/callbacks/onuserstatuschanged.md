@@ -22,9 +22,9 @@ List<V2TimUserStatus> userStatusList
 
 ## 回调函数参数说明
 
-| 参数名称           | 参数类型                                        | 参数描述        |
-| -------------- | ------------------------------------------- | ----------- |
-| userStatusList | List< [V2TimUserStatus](broken-reference) > | 用户状态变化的用户列表 |
+| 参数名称           | 参数类型                                                                | 参数描述        |
+| -------------- | ------------------------------------------------------------------- | ----------- |
+| userStatusList | List< [V2TimUserStatus](../guan-jian-lei/user/v2timuserstatus.md) > | 用户状态变化的用户列表 |
 
 ## 代码示例
 
@@ -47,5 +47,4 @@ List<V2TimUserStatus> userStatusList
       loglevel: LogLevelEnum.V2TIM_LOG_ALL, // 日志登记等级
       listener: sdkListener, // 事件监听器
     );
-
 ```
