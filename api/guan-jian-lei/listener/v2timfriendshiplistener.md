@@ -12,7 +12,7 @@ description: 资料关系链回调
 
 ### onFriendApplicationListAdded
 
-* 参数类型 : OnFriendApplicationListAddedCallback
+* 参数类型 : [OnFriendApplicationListAddedCallback](../../callbacks/onfriendapplicationlistaddedcallback.md)
 * 参数描述：好友申请新增通知
 
 {% hint style="info" %}
@@ -24,7 +24,7 @@ description: 资料关系链回调
 
 ### onFriendApplicationListDeleted
 
-* 参数类型 : OnFriendApplicationListDeletedCallback
+* 参数类型 : [OnFriendApplicationListDeletedCallback](../../callbacks/onfriendapplicationlistdeletedcallback.md)
 * 参数描述：好友申请删除通知
 
 {% hint style="info" %}
@@ -38,17 +38,17 @@ description: 资料关系链回调
 
 ### onFriendApplicationListRead
 
-* 参数类型 : OnFriendApplicationListReadCallback
-* 参数描述：好友申请已读通知，如果调用 setFriendApplicationRead 设置好友申请列表已读，会收到这个回调（主要用于多端同步）
+* 参数类型 : [OnFriendApplicationListReadCallback](../../callbacks/onfriendapplicationlistreadcallback.md)
+* 参数描述：好友申请已读通知，如果调用 [setFriendApplicationRead](../../v2timfriendshipmanager/setfriendapplicationread.md) 设置好友申请列表已读，会收到这个回调（主要用于多端同步）
 
 ### onFriendListAdded
 
-* 参数类型 : OnFriendListAddedCallback
+* 参数类型 : [OnFriendListAddedCallback](../../callbacks/onfriendlistaddedcallback.md)
 * 参数描述：好友新增通知
 
 ### onFriendListDeleted
 
-* 参数类型 : OnFriendListDeletedCallback
+* 参数类型 : [OnFriendListDeletedCallback](../../callbacks/onfriendlistdeletedcallback.md)
 * 参数描述：好友删除通知
 
 {% hint style="info" %}
@@ -60,15 +60,15 @@ description: 资料关系链回调
 
 ### onBlackListAdd
 
-* 参数类型 : OnBlackListAddCallback
+* 参数类型 : [OnBlackListAddCallback](../../callbacks/onblacklistaddcallback.md)
 * 参数描述：黑名单新增通知
 
 ### onBlackListDeleted
 
-* 参数类型 : OnBlackListDeletedCallback
+* 参数类型 : [OnBlackListDeletedCallback](../../callbacks/onblacklistdeletedcallback.md)
 * 参数描述：黑名单删除通知
 
 ### onFriendInfoChanged
 
-* 参数类型 : OnFriendInfoChangedCallback
+* 参数类型 : [OnFriendInfoChangedCallback](../../callbacks/onfriendinfochangedcallback.md)
 * 参数描述：好友资料变更通知

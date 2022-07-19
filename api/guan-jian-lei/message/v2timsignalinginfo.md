@@ -64,7 +64,7 @@ description: 信令消息属性
 
 ### offlinePushInfo
 
-* 参数类型 : V2TimOfflinePushInfo
+* 参数类型 : [V2TimOfflinePushInfo](v2timofflinepushinfo.md)
 * 参数描述：离线推送信息，ios不回返回这条
 
 ### toJson

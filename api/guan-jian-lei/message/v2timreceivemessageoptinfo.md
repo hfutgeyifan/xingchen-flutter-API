@@ -10,14 +10,14 @@ description: 用户接收消息设置的属性
 
 ## 参数
 
-### c2CReceiveMessageOpt
-
-* 参数类型 : int
-* 参数描述：用户 ID
-
 ### userID
 
 * 参数类型 : String
+* 参数描述：用户 ID
+
+### c2CReceiveMessageOpt
+
+* 参数类型 : int
 * 参数描述：消息接收选项用户接收消息设置的属性
 
 {% hint style="info" %}

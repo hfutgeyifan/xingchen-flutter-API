@@ -22,7 +22,7 @@ description: 查询话题信息结果
 
 ### topicInfo
 
-* 参数类型 : V2TimTopicInfo
+* 参数类型 : [V2TimTopicInfo](v2timtopicinfo.md)
 * 参数描述：如果获取成功，会返回对应的话题信息
 
 ### toJson

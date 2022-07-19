@@ -18,7 +18,7 @@ description: 合并消息单体属性
 {% hint style="info" %}
 合并消息里面又包含合并消息我们称之为合并嵌套，合并嵌套层数不能超过 100 层。
 
-如果超过限制，layersOverLimit 会返回true，title 和 abstractList 会返回 null，downloadMergerMessage 会返回 ERR\_MERGER\_MSG\_LAYERS\_OVER\_LIMIT 错误码。
+如果超过限制，layersOverLimit 会返回true，title 和 abstractList 会返回 null，[downloadMergerMessage](../../v2timmessagemanager/downloadmergermessage.md) 会返回 ERR\_MERGER\_MSG\_LAYERS\_OVER\_LIMIT 错误码。
 {% endhint %}
 
 ### title

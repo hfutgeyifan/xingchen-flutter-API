@@ -58,13 +58,13 @@ description: 会话对象属性
 
 ### lastMessage
 
-* 参数类型 : V2TimMessage
+* 参数类型 : [V2TimMessage](v2timmessage.md)
 * 参数描述：会话最后一条消息
 
 ### draftText
 
 * 参数类型 : String
-* 参数描述：草稿信息，设置草稿信息请调用 setConversationDraft() 接口
+* 参数描述：草稿信息，设置草稿信息请调用 [setConversationDraft](../../v2timconversationmanager/setconversationdraft.md) 接口
 
 ### draftTimestamp
 
@@ -91,7 +91,7 @@ description: 会话对象属性
 
 ### groupAtInfoList
 
-* 参数类型 : List< V2TimGroupAtInfo >
+* 参数类型 : List< [V2TimGroupAtInfo](../group/v2timgroupatinfo.md) >
 * 参数描述：用户头像
 
 ### orderkey

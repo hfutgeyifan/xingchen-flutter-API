@@ -28,7 +28,7 @@ false:还有会话需要继续拉取
 
 ### conversationList
 
-* 参数类型 : List< V2TimConversation >
+* 参数类型 : List< [V2TimConversation](v2timconversation.md) >
 * 参数描述：会话列表
 
 ### toJson

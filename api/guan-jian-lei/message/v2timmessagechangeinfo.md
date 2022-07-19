@@ -22,7 +22,7 @@ description: 消息修改信息
 
 ### message
 
-* 参数类型 : V2TimMessage
+* 参数类型 : [V2TimMessage](v2timmessage.md)
 * 参数描述：修改后的信息
 
 ### toJson

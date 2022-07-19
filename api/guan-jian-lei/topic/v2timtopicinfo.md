@@ -53,7 +53,7 @@ description: 话题信息属性
 ### recvOpt
 
 * 参数类型 : int
-* 参数描述：话题消息接收选项，修改话题消息接收选项请调用 setGroupReceiveMessageOpt 接口
+* 参数描述：话题消息接收选项，修改话题消息接收选项请调用 [setGroupReceiveMessageOpt](../../v2timmessagemanager/setgroupreceivemessageopt.md) 接口
 
 {% hint style="info" %}
 0:在线正常接收消息，离线时会进行 APNs 推送
@@ -75,12 +75,12 @@ description: 话题信息属性
 
 ### lastMessage
 
-* 参数类型 : V2TimMessage
+* 参数类型 : [V2TimMessage](../message/v2timmessage.md)
 * 参数描述：话题最新消息
 
 ### groupAtInfoList
 
-* 参数类型 : List< V2TimGroupAtInfo >
+* 参数类型 : List< [V2TimGroupAtInfo](../group/v2timgroupatinfo.md) >
 * 参数描述：话题 at 信息列表
 
 ### toJson
