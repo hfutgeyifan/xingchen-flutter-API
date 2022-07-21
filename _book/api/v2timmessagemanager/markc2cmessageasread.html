@@ -6,7 +6,7 @@
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>markC2CMessageAsRead · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="设置单聊消息已读">
+        <meta name="description" content="设置单聊消息已读√">
         <meta name="generator" content="GitBook 3.2.3">
         
         
@@ -1350,20 +1350,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.20" data-path="../v2timgroupmanager/searchgroupbyid.html">
-            
-                <a href="../v2timgroupmanager/searchgroupbyid.html">
-            
-                    
-                    searchGroupByID
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3.21" data-path="../v2timgroupmanager/searchgroupmembers.html">
+        <li class="chapter " data-level="2.3.20" data-path="../v2timgroupmanager/searchgroupmembers.html">
             
                 <a href="../v2timgroupmanager/searchgroupmembers.html">
             
@@ -1376,7 +1363,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.22" data-path="../v2timgroupmanager/searchgroups.html">
+        <li class="chapter " data-level="2.3.21" data-path="../v2timgroupmanager/searchgroups.html">
             
                 <a href="../v2timgroupmanager/searchgroups.html">
             
@@ -1389,7 +1376,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.23" data-path="../v2timgroupmanager/setgroupapplicationread.html">
+        <li class="chapter " data-level="2.3.22" data-path="../v2timgroupmanager/setgroupapplicationread.html">
             
                 <a href="../v2timgroupmanager/setgroupapplicationread.html">
             
@@ -1402,7 +1389,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.24" data-path="../v2timgroupmanager/setgroupattributes.html">
+        <li class="chapter " data-level="2.3.23" data-path="../v2timgroupmanager/setgroupattributes.html">
             
                 <a href="../v2timgroupmanager/setgroupattributes.html">
             
@@ -1415,7 +1402,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.25" data-path="../v2timgroupmanager/setgroupinfo.html">
+        <li class="chapter " data-level="2.3.24" data-path="../v2timgroupmanager/setgroupinfo.html">
             
                 <a href="../v2timgroupmanager/setgroupinfo.html">
             
@@ -1428,7 +1415,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.26" data-path="../v2timgroupmanager/setgroupmemberinfo.html">
+        <li class="chapter " data-level="2.3.25" data-path="../v2timgroupmanager/setgroupmemberinfo.html">
             
                 <a href="../v2timgroupmanager/setgroupmemberinfo.html">
             
@@ -1441,7 +1428,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.27" data-path="../v2timgroupmanager/setgroupmemberrole.html">
+        <li class="chapter " data-level="2.3.26" data-path="../v2timgroupmanager/setgroupmemberrole.html">
             
                 <a href="../v2timgroupmanager/setgroupmemberrole.html">
             
@@ -1454,7 +1441,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.28" data-path="../v2timgroupmanager/settopicinfo.html">
+        <li class="chapter " data-level="2.3.27" data-path="../v2timgroupmanager/settopicinfo.html">
             
                 <a href="../v2timgroupmanager/settopicinfo.html">
             
@@ -1467,7 +1454,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.29" data-path="../v2timgroupmanager/transfergroupowner.html">
+        <li class="chapter " data-level="2.3.28" data-path="../v2timgroupmanager/transfergroupowner.html">
             
                 <a href="../v2timgroupmanager/transfergroupowner.html">
             
@@ -4139,11 +4126,11 @@
 </table>
 <h2 id="&#x4EE3;&#x7801;&#x793A;&#x4F8B;---">&#x4EE3;&#x7801;&#x793A;&#x4F8B;   </h2>
 <pre><code class="lang-dart">    <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x5355;&#x804A;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;</span>
-    V2TimCallback markC2CMessageAsReadRes =
-        <span class="hljs-keyword">await</span> TencentImSDKPlugin.v2TIMManager
-            .getMessageManager()
-            .markC2CMessageAsRead(userID: <span class="hljs-string">&quot;userID&quot;</span>)<span class="hljs-comment">// &#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x7684;&#x7528;&#x6237;id</span>
-    <span class="hljs-keyword">if</span>(markC2CMessageAsReadRes.code==<span class="hljs-number">0</span>){
+    V2TimCallback markC2CMessageAsReadRes = <span class="hljs-keyword">await</span> TencentImSDKPlugin
+        .v2TIMManager
+        .getMessageManager()
+        .markC2CMessageAsRead(userID: <span class="hljs-string">&quot;userID&quot;</span>); <span class="hljs-comment">// &#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x7684;&#x7528;&#x6237;id</span>
+    <span class="hljs-keyword">if</span> (markC2CMessageAsReadRes.code == <span class="hljs-number">0</span>) {
       <span class="hljs-comment">// &#x6807;&#x8BB0;&#x6210;&#x529F;</span>
     }
 </code></pre>
@@ -4190,7 +4177,7 @@
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"description":"设置单聊消息已读","title":"markC2CMessageAsRead","level":"2.2.31","depth":2,"next":{"title":"markGroupMessageAsRead","level":"2.2.32","depth":2,"path":"api/v2timmessagemanager/markgroupmessageasread.md","ref":"api/v2timmessagemanager/markgroupmessageasread.md","articles":[]},"previous":{"title":"markAllMessageAsRead","level":"2.2.30","depth":2,"path":"api/v2timmessagemanager/markallmessageasread.md","ref":"api/v2timmessagemanager/markallmessageasread.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timmessagemanager/markc2cmessageasread.md","mtime":"2022-07-19T02:09:57.344Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-19T06:31:12.967Z"},"basePath":"../..","book":{"language":""}});
+			gitbook.page.hasChanged({"page":{"description":"设置单聊消息已读√","title":"markC2CMessageAsRead","level":"2.2.31","depth":2,"next":{"title":"markGroupMessageAsRead","level":"2.2.32","depth":2,"path":"api/v2timmessagemanager/markgroupmessageasread.md","ref":"api/v2timmessagemanager/markgroupmessageasread.md","articles":[]},"previous":{"title":"markAllMessageAsRead","level":"2.2.30","depth":2,"path":"api/v2timmessagemanager/markallmessageasread.md","ref":"api/v2timmessagemanager/markallmessageasread.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timmessagemanager/markc2cmessageasread.md","mtime":"2022-07-20T03:28:51.047Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-21T07:07:02.352Z"},"basePath":"../..","book":{"language":""}});
 		});
 	</script>
 </div>

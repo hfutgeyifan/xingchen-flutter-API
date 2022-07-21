@@ -63,7 +63,7 @@ V2TimValueCallback<List<V2TimMessage>>
         .getMessageManager()
         .addAdvancedMsgListener(listener: listener);
 
-// 创建合并消息
+    // 创建合并消息
     V2TimValueCallback<V2TimMsgCreateInfoResult> createMergerMessageResult =
         await TencentImSDKPlugin.v2TIMManager
             .getMessageManager()

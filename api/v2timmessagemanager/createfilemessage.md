@@ -45,8 +45,8 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>
 ## 代码示例  &#x20;
 
 ```dart
-// 创建文件消息
-V2TimValueCallback<V2TimMsgCreateInfoResult> createFileMessageRes =
+  // 创建文件消息
+  V2TimValueCallback<V2TimMsgCreateInfoResult> createFileMessageRes =
       await TencentImSDKPlugin.v2TIMManager
           .getMessageManager()
           .createFileMessage(

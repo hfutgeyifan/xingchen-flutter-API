@@ -6,7 +6,7 @@
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>unInitSDK · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="反初始化 SDK">
+        <meta name="description" content="反初始化 SDK√">
         <meta name="generator" content="GitBook 3.2.3">
         
         
@@ -1350,20 +1350,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.20" data-path="../v2timgroupmanager/searchgroupbyid.html">
-            
-                <a href="../v2timgroupmanager/searchgroupbyid.html">
-            
-                    
-                    searchGroupByID
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3.21" data-path="../v2timgroupmanager/searchgroupmembers.html">
+        <li class="chapter " data-level="2.3.20" data-path="../v2timgroupmanager/searchgroupmembers.html">
             
                 <a href="../v2timgroupmanager/searchgroupmembers.html">
             
@@ -1376,7 +1363,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.22" data-path="../v2timgroupmanager/searchgroups.html">
+        <li class="chapter " data-level="2.3.21" data-path="../v2timgroupmanager/searchgroups.html">
             
                 <a href="../v2timgroupmanager/searchgroups.html">
             
@@ -1389,7 +1376,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.23" data-path="../v2timgroupmanager/setgroupapplicationread.html">
+        <li class="chapter " data-level="2.3.22" data-path="../v2timgroupmanager/setgroupapplicationread.html">
             
                 <a href="../v2timgroupmanager/setgroupapplicationread.html">
             
@@ -1402,7 +1389,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.24" data-path="../v2timgroupmanager/setgroupattributes.html">
+        <li class="chapter " data-level="2.3.23" data-path="../v2timgroupmanager/setgroupattributes.html">
             
                 <a href="../v2timgroupmanager/setgroupattributes.html">
             
@@ -1415,7 +1402,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.25" data-path="../v2timgroupmanager/setgroupinfo.html">
+        <li class="chapter " data-level="2.3.24" data-path="../v2timgroupmanager/setgroupinfo.html">
             
                 <a href="../v2timgroupmanager/setgroupinfo.html">
             
@@ -1428,7 +1415,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.26" data-path="../v2timgroupmanager/setgroupmemberinfo.html">
+        <li class="chapter " data-level="2.3.25" data-path="../v2timgroupmanager/setgroupmemberinfo.html">
             
                 <a href="../v2timgroupmanager/setgroupmemberinfo.html">
             
@@ -1441,7 +1428,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.27" data-path="../v2timgroupmanager/setgroupmemberrole.html">
+        <li class="chapter " data-level="2.3.26" data-path="../v2timgroupmanager/setgroupmemberrole.html">
             
                 <a href="../v2timgroupmanager/setgroupmemberrole.html">
             
@@ -1454,7 +1441,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.28" data-path="../v2timgroupmanager/settopicinfo.html">
+        <li class="chapter " data-level="2.3.27" data-path="../v2timgroupmanager/settopicinfo.html">
             
                 <a href="../v2timgroupmanager/settopicinfo.html">
             
@@ -1467,7 +1454,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.29" data-path="../v2timgroupmanager/transfergroupowner.html">
+        <li class="chapter " data-level="2.3.28" data-path="../v2timgroupmanager/transfergroupowner.html">
             
                 <a href="../v2timgroupmanager/transfergroupowner.html">
             
@@ -4121,10 +4108,9 @@
 </tbody>
 </table>
 <h2 id="&#x4EE3;&#x7801;&#x793A;&#x4F8B;---">&#x4EE3;&#x7801;&#x793A;&#x4F8B;   </h2>
-<pre><code class="lang-dart"><span class="hljs-comment">// &#x4ECE;&#x5373;&#x65F6;&#x901A;&#x4FE1; IM &#x63A7;&#x5236;&#x53F0;&#x83B7;&#x53D6;&#x5E94;&#x7528; SDKAppID&#x3002;</span>
+<pre><code class="lang-dart">    <span class="hljs-comment">// &#x4ECE;&#x5373;&#x65F6;&#x901A;&#x4FE1; IM &#x63A7;&#x5236;&#x53F0;&#x83B7;&#x53D6;&#x5E94;&#x7528; SDKAppID&#x3002;</span>
     <span class="hljs-built_in">int</span> sdkAppID = <span class="hljs-number">0</span>;
-
-<span class="hljs-comment">// &#x6DFB;&#x52A0; V2TimSDKListener &#x7684;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#xFF0C;sdkListener &#x662F; V2TimSDKListener &#x7684;&#x5B9E;&#x73B0;&#x7C7B;</span>
+    <span class="hljs-comment">// &#x6DFB;&#x52A0; V2TimSDKListener &#x7684;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#xFF0C;sdkListener &#x662F; V2TimSDKListener &#x7684;&#x5B9E;&#x73B0;&#x7C7B;</span>
     V2TimSDKListener sdkListener = V2TimSDKListener(
       onConnectFailed: (code, error) {}, <span class="hljs-comment">// &#x8FDE;&#x63A5;&#x5931;&#x8D25;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</span>
       onConnectSuccess: () {}, <span class="hljs-comment">// &#x8FDE;&#x63A5;&#x6210;&#x529F;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</span>
@@ -4133,18 +4119,20 @@
       onSelfInfoUpdated: (V2TimUserFullInfo info) {}, <span class="hljs-comment">// &#x7528;&#x6237;&#x4FE1;&#x606F;&#x66F4;&#x65B0;</span>
       onUserSigExpired: () {}, <span class="hljs-comment">// userSig&#x8FC7;&#x671F;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x8E22;&#x4E0B;&#x7EBF;</span>
     );
-
-<span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;</span>
-    TencentImSDKPlugin.v2TIMManager.initSDK(
+    <span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;</span>
+    V2TimValueCallback&lt;<span class="hljs-built_in">bool</span>&gt; initSDKRes =
+        <span class="hljs-keyword">await</span> TencentImSDKPlugin.v2TIMManager.initSDK(
       sdkAppID: sdkAppID, <span class="hljs-comment">// SDKAppID</span>
       loglevel: LogLevelEnum.V2TIM_LOG_ALL, <span class="hljs-comment">// &#x65E5;&#x5FD7;&#x767B;&#x8BB0;&#x7B49;&#x7EA7;</span>
       listener: sdkListener, <span class="hljs-comment">// &#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;</span>
     );
-<span class="hljs-comment">// &#x5728;&#x521D;&#x59CB;&#x5316;SDK&#x6210;&#x529F;&#x4E4B;&#x540E;&#x53EF;&#x8C03;&#x7528;</span>
-<span class="hljs-comment">// &#x8C03;&#x7528;unInitSDK&#x53CD;&#x521D;&#x59CB;&#x5316;SDK</span>
-    V2TimCallback unInitSDKRes = TencentImSDKPlugin.v2TIMManager.unInitSDK();
-    <span class="hljs-keyword">if</span>(unInitSDKRes.code == <span class="hljs-number">0</span>){
-        <span class="hljs-comment">// &#x53CD;&#x521D;&#x59CB;&#x5316;SDK&#x6210;&#x529F;&#x7684;&#x903B;&#x8F91;</span>
+    <span class="hljs-comment">// &#x5728;&#x521D;&#x59CB;&#x5316;SDK&#x6210;&#x529F;&#x4E4B;&#x540E;&#x53EF;&#x8C03;&#x7528;</span>
+    <span class="hljs-comment">// &#x8C03;&#x7528;unInitSDK&#x53CD;&#x521D;&#x59CB;&#x5316;SDK</span>
+    <span class="hljs-keyword">if</span> (initSDKRes.code == <span class="hljs-number">0</span>) {}
+    V2TimCallback unInitSDKRes =
+        <span class="hljs-keyword">await</span> TencentImSDKPlugin.v2TIMManager.unInitSDK();
+    <span class="hljs-keyword">if</span> (unInitSDKRes.code == <span class="hljs-number">0</span>) {
+      <span class="hljs-comment">// &#x53CD;&#x521D;&#x59CB;&#x5316;SDK&#x6210;&#x529F;&#x7684;&#x903B;&#x8F91;</span>
     }
 </code></pre>
 
@@ -4190,7 +4178,7 @@
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"description":"反初始化 SDK","title":"unInitSDK","level":"2.1.25","depth":2,"next":{"title":"V2TIMMessageManager","level":"2.2","depth":1,"path":"api/v2timmessagemanager/README.md","ref":"api/v2timmessagemanager/README.md","articles":[{"title":"addAdvancedMsgListener","level":"2.2.1","depth":2,"path":"api/v2timmessagemanager/addadvancedmsglistener.md","ref":"api/v2timmessagemanager/addadvancedmsglistener.md","articles":[]},{"title":"appendMessage","level":"2.2.2","depth":2,"path":"api/v2timmessagemanager/appendmessage.md","ref":"api/v2timmessagemanager/appendmessage.md","articles":[]},{"title":"clearC2CHistoryMessage","level":"2.2.3","depth":2,"path":"api/v2timmessagemanager/clearc2chistorymessage.md","ref":"api/v2timmessagemanager/clearc2chistorymessage.md","articles":[]},{"title":"clearGroupHistoryMessage","level":"2.2.4","depth":2,"path":"api/v2timmessagemanager/cleargrouphistorymessage.md","ref":"api/v2timmessagemanager/cleargrouphistorymessage.md","articles":[]},{"title":"createCustomMessage","level":"2.2.5","depth":2,"path":"api/v2timmessagemanager/createcustommessage.md","ref":"api/v2timmessagemanager/createcustommessage.md","articles":[]},{"title":"createFaceMessage","level":"2.2.6","depth":2,"path":"api/v2timmessagemanager/createfacemessage.md","ref":"api/v2timmessagemanager/createfacemessage.md","articles":[]},{"title":"createFileMessage","level":"2.2.7","depth":2,"path":"api/v2timmessagemanager/createfilemessage.md","ref":"api/v2timmessagemanager/createfilemessage.md","articles":[]},{"title":"createForwardMessage","level":"2.2.8","depth":2,"path":"api/v2timmessagemanager/createforwardmessage.md","ref":"api/v2timmessagemanager/createforwardmessage.md","articles":[]},{"title":"createImageMessage","level":"2.2.9","depth":2,"path":"api/v2timmessagemanager/createimagemessage.md","ref":"api/v2timmessagemanager/createimagemessage.md","articles":[]},{"title":"createLocationMessage","level":"2.2.10","depth":2,"path":"api/v2timmessagemanager/createlocationmessage.md","ref":"api/v2timmessagemanager/createlocationmessage.md","articles":[]},{"title":"createMergerMessage","level":"2.2.11","depth":2,"path":"api/v2timmessagemanager/createmergermessage.md","ref":"api/v2timmessagemanager/createmergermessage.md","articles":[]},{"title":"createSoundMessage","level":"2.2.12","depth":2,"path":"api/v2timmessagemanager/createsoundmessage.md","ref":"api/v2timmessagemanager/createsoundmessage.md","articles":[]},{"title":"createTargetedGroupMessage","level":"2.2.13","depth":2,"path":"api/v2timmessagemanager/createtargetedgroupmessage.md","ref":"api/v2timmessagemanager/createtargetedgroupmessage.md","articles":[]},{"title":"createTextAtMessage","level":"2.2.14","depth":2,"path":"api/v2timmessagemanager/createtextatmessage.md","ref":"api/v2timmessagemanager/createtextatmessage.md","articles":[]},{"title":"createTextMessage","level":"2.2.15","depth":2,"path":"api/v2timmessagemanager/createtextmessage.md","ref":"api/v2timmessagemanager/createtextmessage.md","articles":[]},{"title":"createVideoMessage","level":"2.2.16","depth":2,"path":"api/v2timmessagemanager/createvideomessage.md","ref":"api/v2timmessagemanager/createvideomessage.md","articles":[]},{"title":"deleteMessageFromLocalStorage","level":"2.2.17","depth":2,"path":"api/v2timmessagemanager/deletemessagefromlocalstorage.md","ref":"api/v2timmessagemanager/deletemessagefromlocalstorage.md","articles":[]},{"title":"deleteMessages","level":"2.2.18","depth":2,"path":"api/v2timmessagemanager/deletemessages.md","ref":"api/v2timmessagemanager/deletemessages.md","articles":[]},{"title":"downloadMergerMessage","level":"2.2.19","depth":2,"path":"api/v2timmessagemanager/downloadmergermessage.md","ref":"api/v2timmessagemanager/downloadmergermessage.md","articles":[]},{"title":"findMessages","level":"2.2.20","depth":2,"path":"api/v2timmessagemanager/findmessages.md","ref":"api/v2timmessagemanager/findmessages.md","articles":[]},{"title":"getC2CHistoryMessageList","level":"2.2.21","depth":2,"path":"api/v2timmessagemanager/getc2chistorymessagelist.md","ref":"api/v2timmessagemanager/getc2chistorymessagelist.md","articles":[]},{"title":"getC2CReceiveMessageOpt","level":"2.2.22","depth":2,"path":"api/v2timmessagemanager/getc2creceivemessageopt.md","ref":"api/v2timmessagemanager/getc2creceivemessageopt.md","articles":[]},{"title":"getGroupHistoryMessageList","level":"2.2.23","depth":2,"path":"api/v2timmessagemanager/getgrouphistorymessagelist.md","ref":"api/v2timmessagemanager/getgrouphistorymessagelist.md","articles":[]},{"title":"getGroupMessageReadMemberList","level":"2.2.24","depth":2,"path":"api/v2timmessagemanager/getgroupmessagereadmemberlist.md","ref":"api/v2timmessagemanager/getgroupmessagereadmemberlist.md","articles":[]},{"title":"getHistoryMessageList","level":"2.2.25","depth":2,"path":"api/v2timmessagemanager/gethistorymessagelist.md","ref":"api/v2timmessagemanager/gethistorymessagelist.md","articles":[]},{"title":"getHistoryMessageListWithoutFormat","level":"2.2.26","depth":2,"path":"api/v2timmessagemanager/gethistorymessagelistwithoutformat.md","ref":"api/v2timmessagemanager/gethistorymessagelistwithoutformat.md","articles":[]},{"title":"getMessageReadReceipts","level":"2.2.27","depth":2,"path":"api/v2timmessagemanager/getmessagereadreceipts.md","ref":"api/v2timmessagemanager/getmessagereadreceipts.md","articles":[]},{"title":"insertC2CMessageToLocalStorage","level":"2.2.28","depth":2,"path":"api/v2timmessagemanager/insertc2cmessagetolocalstorage.md","ref":"api/v2timmessagemanager/insertc2cmessagetolocalstorage.md","articles":[]},{"title":"insertGroupMessageToLocalStorage","level":"2.2.29","depth":2,"path":"api/v2timmessagemanager/insertgroupmessagetolocalstorage.md","ref":"api/v2timmessagemanager/insertgroupmessagetolocalstorage.md","articles":[]},{"title":"markAllMessageAsRead","level":"2.2.30","depth":2,"path":"api/v2timmessagemanager/markallmessageasread.md","ref":"api/v2timmessagemanager/markallmessageasread.md","articles":[]},{"title":"markC2CMessageAsRead","level":"2.2.31","depth":2,"path":"api/v2timmessagemanager/markc2cmessageasread.md","ref":"api/v2timmessagemanager/markc2cmessageasread.md","articles":[]},{"title":"markGroupMessageAsRead","level":"2.2.32","depth":2,"path":"api/v2timmessagemanager/markgroupmessageasread.md","ref":"api/v2timmessagemanager/markgroupmessageasread.md","articles":[]},{"title":"modifyMessage","level":"2.2.33","depth":2,"path":"api/v2timmessagemanager/modifymessage.md","ref":"api/v2timmessagemanager/modifymessage.md","articles":[]},{"title":"removeAdvancedMsgListener","level":"2.2.34","depth":2,"path":"api/v2timmessagemanager/removeadvancedmsglistener.md","ref":"api/v2timmessagemanager/removeadvancedmsglistener.md","articles":[]},{"title":"reSendMessage","level":"2.2.35","depth":2,"path":"api/v2timmessagemanager/resendmessage.md","ref":"api/v2timmessagemanager/resendmessage.md","articles":[]},{"title":"revokeMessage","level":"2.2.36","depth":2,"path":"api/v2timmessagemanager/revokemessage.md","ref":"api/v2timmessagemanager/revokemessage.md","articles":[]},{"title":"searchLocalMessages","level":"2.2.37","depth":2,"path":"api/v2timmessagemanager/searchlocalmessages.md","ref":"api/v2timmessagemanager/searchlocalmessages.md","articles":[]},{"title":"sendMessage","level":"2.2.38","depth":2,"path":"api/v2timmessagemanager/sendmessage.md","ref":"api/v2timmessagemanager/sendmessage.md","articles":[]},{"title":"sendMessageReadReceipts","level":"2.2.39","depth":2,"path":"api/v2timmessagemanager/sendmessagereadreceipts.md","ref":"api/v2timmessagemanager/sendmessagereadreceipts.md","articles":[]},{"title":"sendReplyMessage","level":"2.2.40","depth":2,"path":"api/v2timmessagemanager/sendreplymessage.md","ref":"api/v2timmessagemanager/sendreplymessage.md","articles":[]},{"title":"setC2CReceiveMessageOpt","level":"2.2.41","depth":2,"path":"api/v2timmessagemanager/setc2creceivemessageopt.md","ref":"api/v2timmessagemanager/setc2creceivemessageopt.md","articles":[]},{"title":"setGroupReceiveMessageOpt","level":"2.2.42","depth":2,"path":"api/v2timmessagemanager/setgroupreceivemessageopt.md","ref":"api/v2timmessagemanager/setgroupreceivemessageopt.md","articles":[]},{"title":"setLocalCustomData","level":"2.2.43","depth":2,"path":"api/v2timmessagemanager/setlocalcustomdata.md","ref":"api/v2timmessagemanager/setlocalcustomdata.md","articles":[]},{"title":"setLocalCustomInt","level":"2.2.44","depth":2,"path":"api/v2timmessagemanager/setlocalcustomint.md","ref":"api/v2timmessagemanager/setlocalcustomint.md","articles":[]}]},"previous":{"title":"setSelfStatus","level":"2.1.24","depth":2,"path":"api/v2timmanager/setselfstatus.md","ref":"api/v2timmanager/setselfstatus.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timmanager/uninitsdk.md","mtime":"2022-07-19T02:09:57.326Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-19T06:31:12.967Z"},"basePath":"../..","book":{"language":""}});
+			gitbook.page.hasChanged({"page":{"description":"反初始化 SDK√","title":"unInitSDK","level":"2.1.25","depth":2,"next":{"title":"V2TIMMessageManager","level":"2.2","depth":1,"path":"api/v2timmessagemanager/README.md","ref":"api/v2timmessagemanager/README.md","articles":[{"title":"addAdvancedMsgListener","level":"2.2.1","depth":2,"path":"api/v2timmessagemanager/addadvancedmsglistener.md","ref":"api/v2timmessagemanager/addadvancedmsglistener.md","articles":[]},{"title":"appendMessage","level":"2.2.2","depth":2,"path":"api/v2timmessagemanager/appendmessage.md","ref":"api/v2timmessagemanager/appendmessage.md","articles":[]},{"title":"clearC2CHistoryMessage","level":"2.2.3","depth":2,"path":"api/v2timmessagemanager/clearc2chistorymessage.md","ref":"api/v2timmessagemanager/clearc2chistorymessage.md","articles":[]},{"title":"clearGroupHistoryMessage","level":"2.2.4","depth":2,"path":"api/v2timmessagemanager/cleargrouphistorymessage.md","ref":"api/v2timmessagemanager/cleargrouphistorymessage.md","articles":[]},{"title":"createCustomMessage","level":"2.2.5","depth":2,"path":"api/v2timmessagemanager/createcustommessage.md","ref":"api/v2timmessagemanager/createcustommessage.md","articles":[]},{"title":"createFaceMessage","level":"2.2.6","depth":2,"path":"api/v2timmessagemanager/createfacemessage.md","ref":"api/v2timmessagemanager/createfacemessage.md","articles":[]},{"title":"createFileMessage","level":"2.2.7","depth":2,"path":"api/v2timmessagemanager/createfilemessage.md","ref":"api/v2timmessagemanager/createfilemessage.md","articles":[]},{"title":"createForwardMessage","level":"2.2.8","depth":2,"path":"api/v2timmessagemanager/createforwardmessage.md","ref":"api/v2timmessagemanager/createforwardmessage.md","articles":[]},{"title":"createImageMessage","level":"2.2.9","depth":2,"path":"api/v2timmessagemanager/createimagemessage.md","ref":"api/v2timmessagemanager/createimagemessage.md","articles":[]},{"title":"createLocationMessage","level":"2.2.10","depth":2,"path":"api/v2timmessagemanager/createlocationmessage.md","ref":"api/v2timmessagemanager/createlocationmessage.md","articles":[]},{"title":"createMergerMessage","level":"2.2.11","depth":2,"path":"api/v2timmessagemanager/createmergermessage.md","ref":"api/v2timmessagemanager/createmergermessage.md","articles":[]},{"title":"createSoundMessage","level":"2.2.12","depth":2,"path":"api/v2timmessagemanager/createsoundmessage.md","ref":"api/v2timmessagemanager/createsoundmessage.md","articles":[]},{"title":"createTargetedGroupMessage","level":"2.2.13","depth":2,"path":"api/v2timmessagemanager/createtargetedgroupmessage.md","ref":"api/v2timmessagemanager/createtargetedgroupmessage.md","articles":[]},{"title":"createTextAtMessage","level":"2.2.14","depth":2,"path":"api/v2timmessagemanager/createtextatmessage.md","ref":"api/v2timmessagemanager/createtextatmessage.md","articles":[]},{"title":"createTextMessage","level":"2.2.15","depth":2,"path":"api/v2timmessagemanager/createtextmessage.md","ref":"api/v2timmessagemanager/createtextmessage.md","articles":[]},{"title":"createVideoMessage","level":"2.2.16","depth":2,"path":"api/v2timmessagemanager/createvideomessage.md","ref":"api/v2timmessagemanager/createvideomessage.md","articles":[]},{"title":"deleteMessageFromLocalStorage","level":"2.2.17","depth":2,"path":"api/v2timmessagemanager/deletemessagefromlocalstorage.md","ref":"api/v2timmessagemanager/deletemessagefromlocalstorage.md","articles":[]},{"title":"deleteMessages","level":"2.2.18","depth":2,"path":"api/v2timmessagemanager/deletemessages.md","ref":"api/v2timmessagemanager/deletemessages.md","articles":[]},{"title":"downloadMergerMessage","level":"2.2.19","depth":2,"path":"api/v2timmessagemanager/downloadmergermessage.md","ref":"api/v2timmessagemanager/downloadmergermessage.md","articles":[]},{"title":"findMessages","level":"2.2.20","depth":2,"path":"api/v2timmessagemanager/findmessages.md","ref":"api/v2timmessagemanager/findmessages.md","articles":[]},{"title":"getC2CHistoryMessageList","level":"2.2.21","depth":2,"path":"api/v2timmessagemanager/getc2chistorymessagelist.md","ref":"api/v2timmessagemanager/getc2chistorymessagelist.md","articles":[]},{"title":"getC2CReceiveMessageOpt","level":"2.2.22","depth":2,"path":"api/v2timmessagemanager/getc2creceivemessageopt.md","ref":"api/v2timmessagemanager/getc2creceivemessageopt.md","articles":[]},{"title":"getGroupHistoryMessageList","level":"2.2.23","depth":2,"path":"api/v2timmessagemanager/getgrouphistorymessagelist.md","ref":"api/v2timmessagemanager/getgrouphistorymessagelist.md","articles":[]},{"title":"getGroupMessageReadMemberList","level":"2.2.24","depth":2,"path":"api/v2timmessagemanager/getgroupmessagereadmemberlist.md","ref":"api/v2timmessagemanager/getgroupmessagereadmemberlist.md","articles":[]},{"title":"getHistoryMessageList","level":"2.2.25","depth":2,"path":"api/v2timmessagemanager/gethistorymessagelist.md","ref":"api/v2timmessagemanager/gethistorymessagelist.md","articles":[]},{"title":"getHistoryMessageListWithoutFormat","level":"2.2.26","depth":2,"path":"api/v2timmessagemanager/gethistorymessagelistwithoutformat.md","ref":"api/v2timmessagemanager/gethistorymessagelistwithoutformat.md","articles":[]},{"title":"getMessageReadReceipts","level":"2.2.27","depth":2,"path":"api/v2timmessagemanager/getmessagereadreceipts.md","ref":"api/v2timmessagemanager/getmessagereadreceipts.md","articles":[]},{"title":"insertC2CMessageToLocalStorage","level":"2.2.28","depth":2,"path":"api/v2timmessagemanager/insertc2cmessagetolocalstorage.md","ref":"api/v2timmessagemanager/insertc2cmessagetolocalstorage.md","articles":[]},{"title":"insertGroupMessageToLocalStorage","level":"2.2.29","depth":2,"path":"api/v2timmessagemanager/insertgroupmessagetolocalstorage.md","ref":"api/v2timmessagemanager/insertgroupmessagetolocalstorage.md","articles":[]},{"title":"markAllMessageAsRead","level":"2.2.30","depth":2,"path":"api/v2timmessagemanager/markallmessageasread.md","ref":"api/v2timmessagemanager/markallmessageasread.md","articles":[]},{"title":"markC2CMessageAsRead","level":"2.2.31","depth":2,"path":"api/v2timmessagemanager/markc2cmessageasread.md","ref":"api/v2timmessagemanager/markc2cmessageasread.md","articles":[]},{"title":"markGroupMessageAsRead","level":"2.2.32","depth":2,"path":"api/v2timmessagemanager/markgroupmessageasread.md","ref":"api/v2timmessagemanager/markgroupmessageasread.md","articles":[]},{"title":"modifyMessage","level":"2.2.33","depth":2,"path":"api/v2timmessagemanager/modifymessage.md","ref":"api/v2timmessagemanager/modifymessage.md","articles":[]},{"title":"removeAdvancedMsgListener","level":"2.2.34","depth":2,"path":"api/v2timmessagemanager/removeadvancedmsglistener.md","ref":"api/v2timmessagemanager/removeadvancedmsglistener.md","articles":[]},{"title":"reSendMessage","level":"2.2.35","depth":2,"path":"api/v2timmessagemanager/resendmessage.md","ref":"api/v2timmessagemanager/resendmessage.md","articles":[]},{"title":"revokeMessage","level":"2.2.36","depth":2,"path":"api/v2timmessagemanager/revokemessage.md","ref":"api/v2timmessagemanager/revokemessage.md","articles":[]},{"title":"searchLocalMessages","level":"2.2.37","depth":2,"path":"api/v2timmessagemanager/searchlocalmessages.md","ref":"api/v2timmessagemanager/searchlocalmessages.md","articles":[]},{"title":"sendMessage","level":"2.2.38","depth":2,"path":"api/v2timmessagemanager/sendmessage.md","ref":"api/v2timmessagemanager/sendmessage.md","articles":[]},{"title":"sendMessageReadReceipts","level":"2.2.39","depth":2,"path":"api/v2timmessagemanager/sendmessagereadreceipts.md","ref":"api/v2timmessagemanager/sendmessagereadreceipts.md","articles":[]},{"title":"sendReplyMessage","level":"2.2.40","depth":2,"path":"api/v2timmessagemanager/sendreplymessage.md","ref":"api/v2timmessagemanager/sendreplymessage.md","articles":[]},{"title":"setC2CReceiveMessageOpt","level":"2.2.41","depth":2,"path":"api/v2timmessagemanager/setc2creceivemessageopt.md","ref":"api/v2timmessagemanager/setc2creceivemessageopt.md","articles":[]},{"title":"setGroupReceiveMessageOpt","level":"2.2.42","depth":2,"path":"api/v2timmessagemanager/setgroupreceivemessageopt.md","ref":"api/v2timmessagemanager/setgroupreceivemessageopt.md","articles":[]},{"title":"setLocalCustomData","level":"2.2.43","depth":2,"path":"api/v2timmessagemanager/setlocalcustomdata.md","ref":"api/v2timmessagemanager/setlocalcustomdata.md","articles":[]},{"title":"setLocalCustomInt","level":"2.2.44","depth":2,"path":"api/v2timmessagemanager/setlocalcustomint.md","ref":"api/v2timmessagemanager/setlocalcustomint.md","articles":[]}]},"previous":{"title":"setSelfStatus","level":"2.1.24","depth":2,"path":"api/v2timmanager/setselfstatus.md","ref":"api/v2timmanager/setselfstatus.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timmanager/uninitsdk.md","mtime":"2022-07-19T09:31:44.844Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-21T07:07:02.352Z"},"basePath":"../..","book":{"language":""}});
 		});
 	</script>
 </div>

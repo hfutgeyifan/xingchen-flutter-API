@@ -1350,20 +1350,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.20" data-path="../v2timgroupmanager/searchgroupbyid.html">
-            
-                <a href="../v2timgroupmanager/searchgroupbyid.html">
-            
-                    
-                    searchGroupByID
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3.21" data-path="../v2timgroupmanager/searchgroupmembers.html">
+        <li class="chapter " data-level="2.3.20" data-path="../v2timgroupmanager/searchgroupmembers.html">
             
                 <a href="../v2timgroupmanager/searchgroupmembers.html">
             
@@ -1376,7 +1363,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.22" data-path="../v2timgroupmanager/searchgroups.html">
+        <li class="chapter " data-level="2.3.21" data-path="../v2timgroupmanager/searchgroups.html">
             
                 <a href="../v2timgroupmanager/searchgroups.html">
             
@@ -1389,7 +1376,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.23" data-path="../v2timgroupmanager/setgroupapplicationread.html">
+        <li class="chapter " data-level="2.3.22" data-path="../v2timgroupmanager/setgroupapplicationread.html">
             
                 <a href="../v2timgroupmanager/setgroupapplicationread.html">
             
@@ -1402,7 +1389,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.24" data-path="../v2timgroupmanager/setgroupattributes.html">
+        <li class="chapter " data-level="2.3.23" data-path="../v2timgroupmanager/setgroupattributes.html">
             
                 <a href="../v2timgroupmanager/setgroupattributes.html">
             
@@ -1415,7 +1402,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.25" data-path="../v2timgroupmanager/setgroupinfo.html">
+        <li class="chapter " data-level="2.3.24" data-path="../v2timgroupmanager/setgroupinfo.html">
             
                 <a href="../v2timgroupmanager/setgroupinfo.html">
             
@@ -1428,7 +1415,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.26" data-path="../v2timgroupmanager/setgroupmemberinfo.html">
+        <li class="chapter " data-level="2.3.25" data-path="../v2timgroupmanager/setgroupmemberinfo.html">
             
                 <a href="../v2timgroupmanager/setgroupmemberinfo.html">
             
@@ -1441,7 +1428,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.27" data-path="../v2timgroupmanager/setgroupmemberrole.html">
+        <li class="chapter " data-level="2.3.26" data-path="../v2timgroupmanager/setgroupmemberrole.html">
             
                 <a href="../v2timgroupmanager/setgroupmemberrole.html">
             
@@ -1454,7 +1441,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.28" data-path="../v2timgroupmanager/settopicinfo.html">
+        <li class="chapter " data-level="2.3.27" data-path="../v2timgroupmanager/settopicinfo.html">
             
                 <a href="../v2timgroupmanager/settopicinfo.html">
             
@@ -1467,7 +1454,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.29" data-path="../v2timgroupmanager/transfergroupowner.html">
+        <li class="chapter " data-level="2.3.28" data-path="../v2timgroupmanager/transfergroupowner.html">
             
                 <a href="../v2timgroupmanager/transfergroupowner.html">
             
@@ -4082,7 +4069,7 @@
 						
 						<h1 id="createtextatmessage">createTextAtMessage</h1>
 <h2 id="&#x529F;&#x80FD;&#x4ECB;&#x7ECD;">&#x529F;&#x80FD;&#x4ECB;&#x7ECD;</h2>
-<p>&#x521B;&#x5EFA;&#x6587;&#x672C;&#x6D88;&#x606F;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x9644;&#x5E26; @ &#x63D0;&#x9192;&#x529F;&#x80FD;</p>
+<p>&#x521B;&#x5EFA;&#x6587;&#x672C;&#x6D88;&#x606F;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x9644;&#x5E26; @ &#x63D0;&#x9192;&#x529F;&#x80FD;(&#x76F4;&#x64AD;&#x7FA4;&#x4E0D;&#x652F;&#x6301;)</p>
 <h2 id="&#x53C2;&#x6570;&#x8BE6;&#x89E3;">&#x53C2;&#x6570;&#x8BE6;&#x89E3;</h2>
 <table>
 <thead>
@@ -4148,43 +4135,26 @@
 </tbody>
 </table>
 <h2 id="&#x4EE3;&#x7801;&#x793A;&#x4F8B;---">&#x4EE3;&#x7801;&#x793A;&#x4F8B;   </h2>
-<pre><code class="lang-dart"><span class="hljs-comment">// &#x521B;&#x5EFA;&#x6587;&#x672C;&#x6D88;&#x606F;</span>
-V2TimValueCallback&lt;V2TimMsgCreateInfoResult&gt; createTextAtMessageRes = <span class="hljs-keyword">await</span> TencentImSDKPlugin.v2TIMManager.getMessageManager().createTextAtMessage(
-    text: <span class="hljs-string">&quot;test&quot;</span>,<span class="hljs-comment">// &#x6587;&#x672C;&#x4FE1;&#x606F;</span>
-    atUserList: [],<span class="hljs-comment">// @&#x7528;&#x6237;ID&#x5217;&#x8868;</span>
-  );
- <span class="hljs-keyword">if</span>(createTextAtMessageRes.code == <span class="hljs-number">0</span>){
-       <span class="hljs-comment">// &#x6587;&#x672C;&#x4FE1;&#x606F;&#x521B;&#x5EFA;&#x6210;&#x529F;</span>
-    <span class="hljs-built_in">String</span> id =  createTextAtMessageRes.data.id;
-       <span class="hljs-comment">// &#x53D1;&#x9001;@&#x6587;&#x672C;&#x6D88;&#x606F;</span>
-       <span class="hljs-comment">// &#x5728;sendMessage&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x586B;&#x5199;groupID&#xFF0C;receiver&#x53EF;&#x4E3A;&#x7A7A;</span>
-       <span class="hljs-comment">//                 &#x82E5;&#x586B;&#x5199;&#x4E86;receiver&#x4E0E;groupID&#x5219;&#x53D1;&#x7FA4;&#x5185;&#x7684;&#x4E2A;&#x4EBA;&#x7528;&#x6237;&#xFF0C;&#x6D88;&#x606F;&#x5728;&#x7FA4;&#x804A;&#x4E2D;&#x663E;&#x793A;&#xFF0C;&#x53EA;&#x6709;&#x6307;&#x5B9A;receiver&#x80FD;&#x770B;&#x89C1;</span>
-    V2TimValueCallback&lt;V2TimMessage&gt; sendMessageRes = <span class="hljs-keyword">await</span> TencentImSDKPlugin.v2TIMManager.getMessageManager().sendMessage(id: id, receiver: <span class="hljs-string">&quot;userID&quot;</span>, groupID: <span class="hljs-string">&quot;groupID&quot;</span>);
-    <span class="hljs-keyword">if</span>(sendMessageRes.code == <span class="hljs-number">0</span>){
-      <span class="hljs-comment">// &#x53D1;&#x9001;&#x6210;&#x529F;</span>
-    }
-  }
-
-<span class="hljs-comment">// &#x5728;&#x52A0;&#x8F7D;&#x548C;&#x66F4;&#x65B0;&#x4F1A;&#x8BDD;&#x5904;&#xFF0C;&#x9700;&#x8981;&#x8C03;&#x7528; V2TimConversation &#x7684; groupAtInfolist &#x63A5;&#x53E3;&#x83B7;&#x53D6;&#x4F1A;&#x8BDD;&#x7684; @ &#x6570;&#x636E;&#x5217;&#x8868;&#x3002;</span>
-<span class="hljs-comment">// &#x901A;&#x8FC7;&#x5217;&#x8868;&#x4E2D; V2TimGroupAtInfo &#x5BF9;&#x8C61;&#x7684; atType&#x63A5;&#x53E3;&#x83B7;&#x53D6; @ &#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x5E76;&#x66F4;&#x65B0;&#x5230;&#x5F53;&#x524D;&#x4F1A;&#x8BDD;&#x7684; @ &#x4FE1;&#x606F;&#x3002;</span>
-     V2TimValueCallback&lt;V2TimConversationResult&gt; getConversationList =
+<pre><code class="lang-dart">    <span class="hljs-comment">// &#x521B;&#x5EFA;&#x6587;&#x672C;&#x6D88;&#x606F;</span>
+    V2TimValueCallback&lt;V2TimMsgCreateInfoResult&gt; createTextAtMessageRes =
         <span class="hljs-keyword">await</span> TencentImSDKPlugin.v2TIMManager
-            .getConversationManager()
-            .getConversationList(nextSeq: <span class="hljs-string">&quot;&quot;</span>, count: <span class="hljs-number">10</span>);
-    <span class="hljs-keyword">if</span> (getConversationList.code == <span class="hljs-number">0</span>) {
-      getConversationList.data.conversationList.forEach((element) {
-        element.groupAtInfoList.forEach((element) {
-          <span class="hljs-keyword">if</span> (element.atType == <span class="hljs-number">0</span>) {
-            <span class="hljs-comment">// @&#x6211;</span>
-          }
-          <span class="hljs-keyword">if</span> (element.atType == <span class="hljs-number">1</span>) {
-            <span class="hljs-comment">// @all</span>
-          }
-          <span class="hljs-keyword">if</span> (element.atType == <span class="hljs-number">2</span>) {
-            <span class="hljs-comment">// @all&amp;@&#x6211;</span>
-          }
-        });
-      });
+            .getMessageManager()
+            .createTextAtMessage(
+      text: <span class="hljs-string">&quot;test&quot;</span>, <span class="hljs-comment">// &#x6587;&#x672C;&#x4FE1;&#x606F;</span>
+      atUserList: [], <span class="hljs-comment">// @&#x7528;&#x6237;ID&#x5217;&#x8868;</span>
+    );
+    <span class="hljs-keyword">if</span> (createTextAtMessageRes.code == <span class="hljs-number">0</span>) {
+      <span class="hljs-comment">// &#x6587;&#x672C;&#x4FE1;&#x606F;&#x521B;&#x5EFA;&#x6210;&#x529F;</span>
+      <span class="hljs-built_in">String</span>? id = createTextAtMessageRes.data?.id;
+      <span class="hljs-comment">// &#x53D1;&#x9001;@&#x6587;&#x672C;&#x6D88;&#x606F;</span>
+      <span class="hljs-comment">// &#x5728;sendMessage&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x586B;&#x5199;groupID&#xFF0C;receiver&#x5FC5;&#x987B;&#x4E3A;&#x7A7A;&#xFF0C;&#x5426;&#x5219;&#x65E0;&#x6CD5;&#x53D1;&#x9001;&#x6D88;&#x606F;</span>
+      V2TimValueCallback&lt;V2TimMessage&gt; sendMessageRes = <span class="hljs-keyword">await</span> TencentImSDKPlugin
+          .v2TIMManager
+          .getMessageManager()
+          .sendMessage(id: id!, receiver: <span class="hljs-string">&quot;&quot;</span>, groupID: <span class="hljs-string">&quot;groupID&quot;</span>);
+      <span class="hljs-keyword">if</span> (sendMessageRes.code == <span class="hljs-number">0</span>) {
+        <span class="hljs-comment">// &#x53D1;&#x9001;&#x6210;&#x529F;</span>
+      }
     }
 </code></pre>
 
@@ -4230,7 +4200,7 @@ V2TimValueCallback&lt;V2TimMsgCreateInfoResult&gt; createTextAtMessageRes = <spa
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"description":"创建文本消息，并且可以附带 @ 提醒功能","title":"createTextAtMessage","level":"2.2.14","depth":2,"next":{"title":"createTextMessage","level":"2.2.15","depth":2,"path":"api/v2timmessagemanager/createtextmessage.md","ref":"api/v2timmessagemanager/createtextmessage.md","articles":[]},"previous":{"title":"createTargetedGroupMessage","level":"2.2.13","depth":2,"path":"api/v2timmessagemanager/createtargetedgroupmessage.md","ref":"api/v2timmessagemanager/createtargetedgroupmessage.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timmessagemanager/createtextatmessage.md","mtime":"2022-07-19T02:09:57.344Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-19T06:31:12.967Z"},"basePath":"../..","book":{"language":""}});
+			gitbook.page.hasChanged({"page":{"description":"创建文本消息，并且可以附带 @ 提醒功能","title":"createTextAtMessage","level":"2.2.14","depth":2,"next":{"title":"createTextMessage","level":"2.2.15","depth":2,"path":"api/v2timmessagemanager/createtextmessage.md","ref":"api/v2timmessagemanager/createtextmessage.md","articles":[]},"previous":{"title":"createTargetedGroupMessage","level":"2.2.13","depth":2,"path":"api/v2timmessagemanager/createtargetedgroupmessage.md","ref":"api/v2timmessagemanager/createtargetedgroupmessage.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timmessagemanager/createtextatmessage.md","mtime":"2022-07-20T03:01:30.295Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-21T07:07:02.352Z"},"basePath":"../..","book":{"language":""}});
 		});
 	</script>
 </div>

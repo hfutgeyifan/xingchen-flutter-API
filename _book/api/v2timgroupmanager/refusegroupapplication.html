@@ -6,7 +6,7 @@
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>refuseGroupApplication · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="拒绝某一条加群申请">
+        <meta name="description" content="拒绝某一条加群申请√">
         <meta name="generator" content="GitBook 3.2.3">
         
         
@@ -85,7 +85,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="searchgroupbyid.html" />
+    <link rel="next" href="searchgroupmembers.html" />
     
     
     <link rel="prev" href="mutegroupmember.html" />
@@ -1350,20 +1350,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.20" data-path="searchgroupbyid.html">
-            
-                <a href="searchgroupbyid.html">
-            
-                    
-                    searchGroupByID
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3.21" data-path="searchgroupmembers.html">
+        <li class="chapter " data-level="2.3.20" data-path="searchgroupmembers.html">
             
                 <a href="searchgroupmembers.html">
             
@@ -1376,7 +1363,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.22" data-path="searchgroups.html">
+        <li class="chapter " data-level="2.3.21" data-path="searchgroups.html">
             
                 <a href="searchgroups.html">
             
@@ -1389,7 +1376,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.23" data-path="setgroupapplicationread.html">
+        <li class="chapter " data-level="2.3.22" data-path="setgroupapplicationread.html">
             
                 <a href="setgroupapplicationread.html">
             
@@ -1402,7 +1389,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.24" data-path="setgroupattributes.html">
+        <li class="chapter " data-level="2.3.23" data-path="setgroupattributes.html">
             
                 <a href="setgroupattributes.html">
             
@@ -1415,7 +1402,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.25" data-path="setgroupinfo.html">
+        <li class="chapter " data-level="2.3.24" data-path="setgroupinfo.html">
             
                 <a href="setgroupinfo.html">
             
@@ -1428,7 +1415,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.26" data-path="setgroupmemberinfo.html">
+        <li class="chapter " data-level="2.3.25" data-path="setgroupmemberinfo.html">
             
                 <a href="setgroupmemberinfo.html">
             
@@ -1441,7 +1428,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.27" data-path="setgroupmemberrole.html">
+        <li class="chapter " data-level="2.3.26" data-path="setgroupmemberrole.html">
             
                 <a href="setgroupmemberrole.html">
             
@@ -1454,7 +1441,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.28" data-path="settopicinfo.html">
+        <li class="chapter " data-level="2.3.27" data-path="settopicinfo.html">
             
                 <a href="settopicinfo.html">
             
@@ -1467,7 +1454,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.29" data-path="transfergroupowner.html">
+        <li class="chapter " data-level="2.3.28" data-path="transfergroupowner.html">
             
                 <a href="transfergroupowner.html">
             
@@ -4186,15 +4173,16 @@
               .v2TIMManager
               .getGroupManager()
               .refuseGroupApplication(
-                groupID: element.groupID,<span class="hljs-comment">// &#x52A0;&#x5165;&#x7684;&#x7FA4;&#x7EC4;id</span>
-                fromUser: <span class="hljs-string">&quot;&quot;</span>,<span class="hljs-comment">//  &#x8BF7;&#x6C42;&#x8005;id</span>
-                toUser: <span class="hljs-string">&quot;&quot;</span>,<span class="hljs-comment">// &#x5224;&#x51B3;&#x8005;id</span>
-                reason: <span class="hljs-string">&quot;&quot;</span>,<span class="hljs-comment">// &#x62D2;&#x7EDD;&#x539F;&#x56E0;</span>
-                addTime: element.addTime,<span class="hljs-comment">// &#x7533;&#x8BF7;&#x65F6;&#x95F4;</span>
-                type: GroupApplicationTypeEnum.V2TIM_GROUP_APPLICATION_GET_TYPE_INVITE,<span class="hljs-comment">// &#x7533;&#x8BF7;&#x7C7B;&#x578B;</span>
-                webMessageInstance: <span class="hljs-string">&quot;&quot;</span>,<span class="hljs-comment">// &#x5BF9;&#x5E94;&#x3010;&#x7FA4;&#x7CFB;&#x7EDF;&#x901A;&#x77E5;&#x3011;&#x7684;&#x6D88;&#x606F;&#x5B9E;&#x4F8B;</span>
+                groupID: element.groupID, <span class="hljs-comment">// &#x52A0;&#x5165;&#x7684;&#x7FA4;&#x7EC4;id</span>
+                fromUser: element.fromUser!, <span class="hljs-comment">//  &#x8BF7;&#x6C42;&#x8005;id</span>
+                toUser: element.toUser!, <span class="hljs-comment">// &#x5224;&#x51B3;&#x8005;id</span>
+                reason: <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-comment">// &#x62D2;&#x7EDD;&#x539F;&#x56E0;</span>
+                addTime: element.addTime!, <span class="hljs-comment">// &#x7533;&#x8BF7;&#x65F6;&#x95F4;</span>
+                type: GroupApplicationTypeEnum
+                    .V2TIM_GROUP_APPLICATION_GET_TYPE_INVITE, <span class="hljs-comment">// &#x7533;&#x8BF7;&#x7C7B;&#x578B;</span>
+                webMessageInstance: <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-comment">// &#x5BF9;&#x5E94;&#x3010;&#x7FA4;&#x7CFB;&#x7EDF;&#x901A;&#x77E5;&#x3011;&#x7684;&#x6D88;&#x606F;&#x5B9E;&#x4F8B;</span>
               );
-        <span class="hljs-keyword">if</span> (refuseGroupApplicationRes.code == <span class="hljs-number">0</span>) {
+          <span class="hljs-keyword">if</span> (refuseGroupApplicationRes.code == <span class="hljs-number">0</span>) {
             <span class="hljs-comment">// &#x62D2;&#x7EDD;&#x6210;&#x529F;</span>
           }
         }
@@ -4234,7 +4222,7 @@
 		</a>
 		
 		
-		<a href="searchgroupbyid.html" class="navigation navigation-next " aria-label="Next page: searchGroupByID">
+		<a href="searchgroupmembers.html" class="navigation navigation-next " aria-label="Next page: searchGroupMembers">
 			<i class="fa fa-angle-right"></i>
 		</a>
 		
@@ -4244,7 +4232,7 @@
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"description":"拒绝某一条加群申请","title":"refuseGroupApplication","level":"2.3.19","depth":2,"next":{"title":"searchGroupByID","level":"2.3.20","depth":2,"path":"api/v2timgroupmanager/searchgroupbyid.md","ref":"api/v2timgroupmanager/searchgroupbyid.md","articles":[]},"previous":{"title":"muteGroupMember","level":"2.3.18","depth":2,"path":"api/v2timgroupmanager/mutegroupmember.md","ref":"api/v2timgroupmanager/mutegroupmember.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timgroupmanager/refusegroupapplication.md","mtime":"2022-07-19T02:22:24.859Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-19T06:31:12.967Z"},"basePath":"../..","book":{"language":""}});
+			gitbook.page.hasChanged({"page":{"description":"拒绝某一条加群申请√","title":"refuseGroupApplication","level":"2.3.19","depth":2,"next":{"title":"searchGroupMembers","level":"2.3.20","depth":2,"path":"api/v2timgroupmanager/searchgroupmembers.md","ref":"api/v2timgroupmanager/searchgroupmembers.md","articles":[]},"previous":{"title":"muteGroupMember","level":"2.3.18","depth":2,"path":"api/v2timgroupmanager/mutegroupmember.md","ref":"api/v2timgroupmanager/mutegroupmember.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timgroupmanager/refusegroupapplication.md","mtime":"2022-07-20T08:16:37.302Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-21T07:07:02.352Z"},"basePath":"../..","book":{"language":""}});
 		});
 	</script>
 </div>

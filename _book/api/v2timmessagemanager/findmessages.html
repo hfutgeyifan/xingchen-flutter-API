@@ -6,7 +6,7 @@
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>findMessages · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="根据messageID 查询指定会话中的本地消息">
+        <meta name="description" content="根据messageID 查询指定会话中的本地消息√">
         <meta name="generator" content="GitBook 3.2.3">
         
         
@@ -1350,20 +1350,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.20" data-path="../v2timgroupmanager/searchgroupbyid.html">
-            
-                <a href="../v2timgroupmanager/searchgroupbyid.html">
-            
-                    
-                    searchGroupByID
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3.21" data-path="../v2timgroupmanager/searchgroupmembers.html">
+        <li class="chapter " data-level="2.3.20" data-path="../v2timgroupmanager/searchgroupmembers.html">
             
                 <a href="../v2timgroupmanager/searchgroupmembers.html">
             
@@ -1376,7 +1363,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.22" data-path="../v2timgroupmanager/searchgroups.html">
+        <li class="chapter " data-level="2.3.21" data-path="../v2timgroupmanager/searchgroups.html">
             
                 <a href="../v2timgroupmanager/searchgroups.html">
             
@@ -1389,7 +1376,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.23" data-path="../v2timgroupmanager/setgroupapplicationread.html">
+        <li class="chapter " data-level="2.3.22" data-path="../v2timgroupmanager/setgroupapplicationread.html">
             
                 <a href="../v2timgroupmanager/setgroupapplicationread.html">
             
@@ -1402,7 +1389,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.24" data-path="../v2timgroupmanager/setgroupattributes.html">
+        <li class="chapter " data-level="2.3.23" data-path="../v2timgroupmanager/setgroupattributes.html">
             
                 <a href="../v2timgroupmanager/setgroupattributes.html">
             
@@ -1415,7 +1402,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.25" data-path="../v2timgroupmanager/setgroupinfo.html">
+        <li class="chapter " data-level="2.3.24" data-path="../v2timgroupmanager/setgroupinfo.html">
             
                 <a href="../v2timgroupmanager/setgroupinfo.html">
             
@@ -1428,7 +1415,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.26" data-path="../v2timgroupmanager/setgroupmemberinfo.html">
+        <li class="chapter " data-level="2.3.25" data-path="../v2timgroupmanager/setgroupmemberinfo.html">
             
                 <a href="../v2timgroupmanager/setgroupmemberinfo.html">
             
@@ -1441,7 +1428,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.27" data-path="../v2timgroupmanager/setgroupmemberrole.html">
+        <li class="chapter " data-level="2.3.26" data-path="../v2timgroupmanager/setgroupmemberrole.html">
             
                 <a href="../v2timgroupmanager/setgroupmemberrole.html">
             
@@ -1454,7 +1441,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.28" data-path="../v2timgroupmanager/settopicinfo.html">
+        <li class="chapter " data-level="2.3.27" data-path="../v2timgroupmanager/settopicinfo.html">
             
                 <a href="../v2timgroupmanager/settopicinfo.html">
             
@@ -1467,7 +1454,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.29" data-path="../v2timgroupmanager/transfergroupowner.html">
+        <li class="chapter " data-level="2.3.28" data-path="../v2timgroupmanager/transfergroupowner.html">
             
                 <a href="../v2timgroupmanager/transfergroupowner.html">
             
@@ -4144,12 +4131,14 @@
 </tbody>
 </table>
 <h2 id="&#x4EE3;&#x7801;&#x793A;&#x4F8B;---">&#x4EE3;&#x7801;&#x793A;&#x4F8B;   </h2>
-<pre><code class="lang-dart"><span class="hljs-comment">// &#x6839;&#x636E;&#x6D88;&#x606F;id&#x67E5;&#x8BE2;&#x6D88;&#x606F;</span>
+<pre><code class="lang-dart">    <span class="hljs-comment">// &#x6839;&#x636E;&#x6D88;&#x606F;id&#x67E5;&#x8BE2;&#x6D88;&#x606F;</span>
     V2TimValueCallback&lt;<span class="hljs-built_in">List</span>&lt;V2TimMessage&gt;&gt; msgListRes = <span class="hljs-keyword">await</span> TencentImSDKPlugin
         .v2TIMManager
         .getMessageManager()
-        .findMessages(messageIDList: [<span class="hljs-string">&apos;msgid&apos;</span>]);<span class="hljs-comment">// &#x9700;&#x8981;&#x67E5;&#x8BE2;&#x7684;&#x6D88;&#x606F;id&#x5217;&#x8868;</span>
-  }
+        .findMessages(messageIDList: [<span class="hljs-string">&apos;msgid&apos;</span>]); <span class="hljs-comment">// &#x9700;&#x8981;&#x67E5;&#x8BE2;&#x7684;&#x6D88;&#x606F;id&#x5217;&#x8868;</span>
+    <span class="hljs-keyword">if</span> (msgListRes.code == <span class="hljs-number">0</span>) {
+      <span class="hljs-comment">//&#x67E5;&#x8BE2;&#x6210;&#x529F;</span>
+    }
 </code></pre>
 
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
@@ -4194,7 +4183,7 @@
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"description":"根据messageID 查询指定会话中的本地消息","title":"findMessages","level":"2.2.20","depth":2,"next":{"title":"getC2CHistoryMessageList","level":"2.2.21","depth":2,"path":"api/v2timmessagemanager/getc2chistorymessagelist.md","ref":"api/v2timmessagemanager/getc2chistorymessagelist.md","articles":[]},"previous":{"title":"downloadMergerMessage","level":"2.2.19","depth":2,"path":"api/v2timmessagemanager/downloadmergermessage.md","ref":"api/v2timmessagemanager/downloadmergermessage.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timmessagemanager/findmessages.md","mtime":"2022-07-19T02:09:57.345Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-19T06:31:12.967Z"},"basePath":"../..","book":{"language":""}});
+			gitbook.page.hasChanged({"page":{"description":"根据messageID 查询指定会话中的本地消息√","title":"findMessages","level":"2.2.20","depth":2,"next":{"title":"getC2CHistoryMessageList","level":"2.2.21","depth":2,"path":"api/v2timmessagemanager/getc2chistorymessagelist.md","ref":"api/v2timmessagemanager/getc2chistorymessagelist.md","articles":[]},"previous":{"title":"downloadMergerMessage","level":"2.2.19","depth":2,"path":"api/v2timmessagemanager/downloadmergermessage.md","ref":"api/v2timmessagemanager/downloadmergermessage.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timmessagemanager/findmessages.md","mtime":"2022-07-20T07:20:44.249Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-21T07:07:02.352Z"},"basePath":"../..","book":{"language":""}});
 		});
 	</script>
 </div>

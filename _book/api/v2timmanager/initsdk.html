@@ -6,7 +6,7 @@
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>initSDK · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="初始化 SDK">
+        <meta name="description" content="初始化 SDK√">
         <meta name="generator" content="GitBook 3.2.3">
         
         
@@ -1350,20 +1350,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.20" data-path="../v2timgroupmanager/searchgroupbyid.html">
-            
-                <a href="../v2timgroupmanager/searchgroupbyid.html">
-            
-                    
-                    searchGroupByID
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3.21" data-path="../v2timgroupmanager/searchgroupmembers.html">
+        <li class="chapter " data-level="2.3.20" data-path="../v2timgroupmanager/searchgroupmembers.html">
             
                 <a href="../v2timgroupmanager/searchgroupmembers.html">
             
@@ -1376,7 +1363,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.22" data-path="../v2timgroupmanager/searchgroups.html">
+        <li class="chapter " data-level="2.3.21" data-path="../v2timgroupmanager/searchgroups.html">
             
                 <a href="../v2timgroupmanager/searchgroups.html">
             
@@ -1389,7 +1376,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.23" data-path="../v2timgroupmanager/setgroupapplicationread.html">
+        <li class="chapter " data-level="2.3.22" data-path="../v2timgroupmanager/setgroupapplicationread.html">
             
                 <a href="../v2timgroupmanager/setgroupapplicationread.html">
             
@@ -1402,7 +1389,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.24" data-path="../v2timgroupmanager/setgroupattributes.html">
+        <li class="chapter " data-level="2.3.23" data-path="../v2timgroupmanager/setgroupattributes.html">
             
                 <a href="../v2timgroupmanager/setgroupattributes.html">
             
@@ -1415,7 +1402,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.25" data-path="../v2timgroupmanager/setgroupinfo.html">
+        <li class="chapter " data-level="2.3.24" data-path="../v2timgroupmanager/setgroupinfo.html">
             
                 <a href="../v2timgroupmanager/setgroupinfo.html">
             
@@ -1428,7 +1415,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.26" data-path="../v2timgroupmanager/setgroupmemberinfo.html">
+        <li class="chapter " data-level="2.3.25" data-path="../v2timgroupmanager/setgroupmemberinfo.html">
             
                 <a href="../v2timgroupmanager/setgroupmemberinfo.html">
             
@@ -1441,7 +1428,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.27" data-path="../v2timgroupmanager/setgroupmemberrole.html">
+        <li class="chapter " data-level="2.3.26" data-path="../v2timgroupmanager/setgroupmemberrole.html">
             
                 <a href="../v2timgroupmanager/setgroupmemberrole.html">
             
@@ -1454,7 +1441,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.28" data-path="../v2timgroupmanager/settopicinfo.html">
+        <li class="chapter " data-level="2.3.27" data-path="../v2timgroupmanager/settopicinfo.html">
             
                 <a href="../v2timgroupmanager/settopicinfo.html">
             
@@ -1467,7 +1454,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.29" data-path="../v2timgroupmanager/transfergroupowner.html">
+        <li class="chapter " data-level="2.3.28" data-path="../v2timgroupmanager/transfergroupowner.html">
             
                 <a href="../v2timgroupmanager/transfergroupowner.html">
             
@@ -4192,11 +4179,15 @@
       },
     );
     <span class="hljs-comment">// 3.&#x521D;&#x59CB;&#x5316;SDK</span>
-    TencentImSDKPlugin.v2TIMManager.initSDK(
+    V2TimValueCallback&lt;<span class="hljs-built_in">bool</span>&gt; initSDKRes =
+        <span class="hljs-keyword">await</span> TencentImSDKPlugin.v2TIMManager.initSDK(
       sdkAppID: sdkAppID, <span class="hljs-comment">// SDKAppID</span>
       loglevel: LogLevelEnum.V2TIM_LOG_ALL, <span class="hljs-comment">// &#x65E5;&#x5FD7;&#x767B;&#x8BB0;&#x7B49;&#x7EA7;</span>
       listener: sdkListener, <span class="hljs-comment">// &#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;</span>
     );
+    <span class="hljs-keyword">if</span> (initSDKRes.code == <span class="hljs-number">0</span>) {
+      <span class="hljs-comment">//&#x521D;&#x59CB;&#x5316;&#x6210;&#x529F;</span>
+    }
 </code></pre>
 
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
@@ -4241,7 +4232,7 @@
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"description":"初始化 SDK","title":"initSDK","level":"2.1.15","depth":2,"next":{"title":"joinGroup","level":"2.1.16","depth":2,"path":"api/v2timmanager/joingroup.md","ref":"api/v2timmanager/joingroup.md","articles":[]},"previous":{"title":"getVersion","level":"2.1.14","depth":2,"path":"api/v2timmanager/getversion.md","ref":"api/v2timmanager/getversion.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timmanager/initsdk.md","mtime":"2022-07-19T02:09:57.326Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-19T06:31:12.967Z"},"basePath":"../..","book":{"language":""}});
+			gitbook.page.hasChanged({"page":{"description":"初始化 SDK√","title":"initSDK","level":"2.1.15","depth":2,"next":{"title":"joinGroup","level":"2.1.16","depth":2,"path":"api/v2timmanager/joingroup.md","ref":"api/v2timmanager/joingroup.md","articles":[]},"previous":{"title":"getVersion","level":"2.1.14","depth":2,"path":"api/v2timmanager/getversion.md","ref":"api/v2timmanager/getversion.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timmanager/initsdk.md","mtime":"2022-07-19T08:55:51.468Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-21T07:07:02.352Z"},"basePath":"../..","book":{"language":""}});
 		});
 	</script>
 </div>

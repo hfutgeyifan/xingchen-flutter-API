@@ -6,7 +6,7 @@
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>createVideoMessage · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="创建视频文件">
+        <meta name="description" content="创建视频文件√">
         <meta name="generator" content="GitBook 3.2.3">
         
         
@@ -1350,20 +1350,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.20" data-path="../v2timgroupmanager/searchgroupbyid.html">
-            
-                <a href="../v2timgroupmanager/searchgroupbyid.html">
-            
-                    
-                    searchGroupByID
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3.21" data-path="../v2timgroupmanager/searchgroupmembers.html">
+        <li class="chapter " data-level="2.3.20" data-path="../v2timgroupmanager/searchgroupmembers.html">
             
                 <a href="../v2timgroupmanager/searchgroupmembers.html">
             
@@ -1376,7 +1363,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.22" data-path="../v2timgroupmanager/searchgroups.html">
+        <li class="chapter " data-level="2.3.21" data-path="../v2timgroupmanager/searchgroups.html">
             
                 <a href="../v2timgroupmanager/searchgroups.html">
             
@@ -1389,7 +1376,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.23" data-path="../v2timgroupmanager/setgroupapplicationread.html">
+        <li class="chapter " data-level="2.3.22" data-path="../v2timgroupmanager/setgroupapplicationread.html">
             
                 <a href="../v2timgroupmanager/setgroupapplicationread.html">
             
@@ -1402,7 +1389,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.24" data-path="../v2timgroupmanager/setgroupattributes.html">
+        <li class="chapter " data-level="2.3.23" data-path="../v2timgroupmanager/setgroupattributes.html">
             
                 <a href="../v2timgroupmanager/setgroupattributes.html">
             
@@ -1415,7 +1402,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.25" data-path="../v2timgroupmanager/setgroupinfo.html">
+        <li class="chapter " data-level="2.3.24" data-path="../v2timgroupmanager/setgroupinfo.html">
             
                 <a href="../v2timgroupmanager/setgroupinfo.html">
             
@@ -1428,7 +1415,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.26" data-path="../v2timgroupmanager/setgroupmemberinfo.html">
+        <li class="chapter " data-level="2.3.25" data-path="../v2timgroupmanager/setgroupmemberinfo.html">
             
                 <a href="../v2timgroupmanager/setgroupmemberinfo.html">
             
@@ -1441,7 +1428,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.27" data-path="../v2timgroupmanager/setgroupmemberrole.html">
+        <li class="chapter " data-level="2.3.26" data-path="../v2timgroupmanager/setgroupmemberrole.html">
             
                 <a href="../v2timgroupmanager/setgroupmemberrole.html">
             
@@ -1454,7 +1441,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.28" data-path="../v2timgroupmanager/settopicinfo.html">
+        <li class="chapter " data-level="2.3.27" data-path="../v2timgroupmanager/settopicinfo.html">
             
                 <a href="../v2timgroupmanager/settopicinfo.html">
             
@@ -1467,7 +1454,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.29" data-path="../v2timgroupmanager/transfergroupowner.html">
+        <li class="chapter " data-level="2.3.28" data-path="../v2timgroupmanager/transfergroupowner.html">
             
                 <a href="../v2timgroupmanager/transfergroupowner.html">
             
@@ -4177,10 +4164,10 @@ V2TimValueCallback&lt;V2TimMsgCreateInfoResult&gt; createVideoMessageRes =
       <span class="hljs-keyword">await</span> TencentImSDKPlugin.v2TIMManager
           .getMessageManager()
           .createVideoMessage(
-            videoFilePath: <span class="hljs-string">&quot;&#x672C;&#x5730;&#x89C6;&#x9891;&#x6587;&#x4EF6;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&quot;</span>,
+            videoFilePath: <span class="hljs-string">&quot;&#x672C;&#x5730;&#x89C6;&#x9891;&#x6587;&#x4EF6;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&quot;</span>,<span class="hljs-comment">// &#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x7F51;&#x7EDC;Url</span>
             type: <span class="hljs-string">&quot;mp4&quot;</span>, <span class="hljs-comment">// &#x89C6;&#x9891;&#x7C7B;&#x578B; &#x4F1A;&#x5728;&#x63A5;&#x6536;&#x7684;&#x6D88;&#x606F;&#x5C5E;&#x6027;&#x91CC;&#x663E;&#x793A;&#xFF0C;&#x4E00;&#x822C;&#x7528;&#x4E8E;&#x56DE;&#x663E;&#x6587;&#x4EF6;&#x7C7B;&#x578B;</span>
             duration: <span class="hljs-number">10</span>,<span class="hljs-comment">// &#x89C6;&#x9891;&#x65F6;&#x957F; &#x4F1A;&#x5728;&#x63A5;&#x6536;&#x7684;&#x6D88;&#x606F;&#x5C5E;&#x6027;&#x91CC;&#x663E;&#x793A;&#xFF0C;&#x4E00;&#x822C;&#x7528;&#x4E8E;&#x56DE;&#x663E;&#x6587;&#x4EF6;&#x5C5E;&#x6027;</span>
-            snapshotPath: <span class="hljs-string">&quot;&#x672C;&#x5730;&#x89C6;&#x9891;&#x5C01;&#x9762;&#x6587;&#x4EF6;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&quot;</span>,
+            snapshotPath: <span class="hljs-string">&quot;&#x672C;&#x5730;&#x89C6;&#x9891;&#x5C01;&#x9762;&#x6587;&#x4EF6;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&quot;</span>,<span class="hljs-comment">// &#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x7F51;&#x7EDC;Url</span>
           );
   <span class="hljs-keyword">if</span> (createVideoMessageRes.code == <span class="hljs-number">0</span>) {
     <span class="hljs-built_in">String</span> id = createVideoMessageRes.data.id;
@@ -4240,7 +4227,7 @@ V2TimValueCallback&lt;V2TimMsgCreateInfoResult&gt; createVideoMessageRes =
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"description":"创建视频文件","title":"createVideoMessage","level":"2.2.16","depth":2,"next":{"title":"deleteMessageFromLocalStorage","level":"2.2.17","depth":2,"path":"api/v2timmessagemanager/deletemessagefromlocalstorage.md","ref":"api/v2timmessagemanager/deletemessagefromlocalstorage.md","articles":[]},"previous":{"title":"createTextMessage","level":"2.2.15","depth":2,"path":"api/v2timmessagemanager/createtextmessage.md","ref":"api/v2timmessagemanager/createtextmessage.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timmessagemanager/createvideomessage.md","mtime":"2022-07-19T02:09:57.344Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-19T06:31:12.967Z"},"basePath":"../..","book":{"language":""}});
+			gitbook.page.hasChanged({"page":{"description":"创建视频文件√","title":"createVideoMessage","level":"2.2.16","depth":2,"next":{"title":"deleteMessageFromLocalStorage","level":"2.2.17","depth":2,"path":"api/v2timmessagemanager/deletemessagefromlocalstorage.md","ref":"api/v2timmessagemanager/deletemessagefromlocalstorage.md","articles":[]},"previous":{"title":"createTextMessage","level":"2.2.15","depth":2,"path":"api/v2timmessagemanager/createtextmessage.md","ref":"api/v2timmessagemanager/createtextmessage.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timmessagemanager/createvideomessage.md","mtime":"2022-07-20T09:53:48.915Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-21T07:07:02.352Z"},"basePath":"../..","book":{"language":""}});
 		});
 	</script>
 </div>
