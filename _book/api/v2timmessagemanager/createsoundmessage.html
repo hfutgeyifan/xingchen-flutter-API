@@ -4139,26 +4139,28 @@
 </tbody>
 </table>
 <h2 id="&#x4EE3;&#x7801;&#x793A;&#x4F8B;---">&#x4EE3;&#x7801;&#x793A;&#x4F8B;   </h2>
-<pre><code class="lang-dart"><span class="hljs-comment">// &#x521B;&#x5EFA;&#x97F3;&#x9891;&#x6D88;&#x606F;</span>
-  V2TimValueCallback&lt;V2TimMsgCreateInfoResult&gt; createSoundMessageRes =
-      <span class="hljs-keyword">await</span> TencentImSDKPlugin.v2TIMManager.getMessageManager().createSoundMessage(
-        soundPath: <span class="hljs-string">&quot;&#x672C;&#x5730;&#x5F55;&#x97F3;&#x6587;&#x4EF6;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&quot;</span>,<span class="hljs-comment">// &#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x7F51;&#x7EDC;Url</span>
-        duration: <span class="hljs-number">10</span>,<span class="hljs-comment">// &#x5F55;&#x97F3;&#x65F6;&#x957F;&#xFF0C;&#x9700;&#x8981;&#x7528;&#x6237;&#x81EA;&#x5DF1;&#x8BFB;&#x53D6;</span>
-      );
-  <span class="hljs-keyword">if</span> (createSoundMessageRes.code == <span class="hljs-number">0</span>) {
-    <span class="hljs-built_in">String</span> id = createSoundMessageRes.data.id;
-     <span class="hljs-comment">// &#x53D1;&#x9001;&#x97F3;&#x9891;&#x6D88;&#x606F;</span>
-     <span class="hljs-comment">// &#x5728;sendMessage&#x65F6;&#xFF0C;&#x82E5;&#x53EA;&#x586B;&#x5199;receiver&#x5219;&#x53D1;&#x4E2A;&#x4EBA;&#x7528;&#x6237;&#x5355;&#x804A;&#x6D88;&#x606F;</span>
-     <span class="hljs-comment">//                 &#x82E5;&#x53EA;&#x586B;&#x5199;groupID&#x5219;&#x53D1;&#x7FA4;&#x7EC4;&#x6D88;&#x606F;</span>
-     <span class="hljs-comment">//                 &#x82E5;&#x586B;&#x5199;&#x4E86;receiver&#x4E0E;groupID&#x5219;&#x53D1;&#x7FA4;&#x5185;&#x7684;&#x4E2A;&#x4EBA;&#x7528;&#x6237;&#xFF0C;&#x6D88;&#x606F;&#x5728;&#x7FA4;&#x804A;&#x4E2D;&#x663E;&#x793A;&#xFF0C;&#x53EA;&#x6709;&#x6307;&#x5B9A;receiver&#x80FD;&#x770B;&#x89C1;</span>
-    V2TimValueCallback&lt;V2TimMessage&gt; sendMessageRes = <span class="hljs-keyword">await</span> TencentImSDKPlugin
-        .v2TIMManager
-        .getMessageManager()
-        .sendMessage(id: id, receiver: <span class="hljs-string">&quot;userID&quot;</span>, groupID: <span class="hljs-string">&quot;groupID&quot;</span>);
-    <span class="hljs-keyword">if</span> (sendMessageRes.code == <span class="hljs-number">0</span>) {
-      <span class="hljs-comment">// &#x53D1;&#x9001;&#x6210;&#x529F;</span>
+<pre><code class="lang-dart">    <span class="hljs-comment">// &#x521B;&#x5EFA;&#x97F3;&#x9891;&#x6D88;&#x606F;</span>
+    V2TimValueCallback&lt;V2TimMsgCreateInfoResult&gt; createSoundMessageRes =
+        <span class="hljs-keyword">await</span> TencentImSDKPlugin.v2TIMManager
+            .getMessageManager()
+            .createSoundMessage(
+              soundPath: <span class="hljs-string">&quot;&#x672C;&#x5730;&#x5F55;&#x97F3;&#x6587;&#x4EF6;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&quot;</span>, <span class="hljs-comment">// &#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x7F51;&#x7EDC;Url</span>
+              duration: <span class="hljs-number">10</span>, <span class="hljs-comment">// &#x5F55;&#x97F3;&#x65F6;&#x957F;&#xFF0C;&#x9700;&#x8981;&#x7528;&#x6237;&#x81EA;&#x5DF1;&#x8BFB;&#x53D6;</span>
+            );
+    <span class="hljs-keyword">if</span> (createSoundMessageRes.code == <span class="hljs-number">0</span>) {
+      <span class="hljs-built_in">String</span>? id = createSoundMessageRes.data?.id;
+      <span class="hljs-comment">// &#x53D1;&#x9001;&#x97F3;&#x9891;&#x6D88;&#x606F;</span>
+      <span class="hljs-comment">// &#x5728;sendMessage&#x65F6;&#xFF0C;&#x82E5;&#x53EA;&#x586B;&#x5199;receiver&#x5219;&#x53D1;&#x4E2A;&#x4EBA;&#x7528;&#x6237;&#x5355;&#x804A;&#x6D88;&#x606F;</span>
+      <span class="hljs-comment">//                 &#x82E5;&#x53EA;&#x586B;&#x5199;groupID&#x5219;&#x53D1;&#x7FA4;&#x7EC4;&#x6D88;&#x606F;</span>
+      <span class="hljs-comment">//                 &#x82E5;&#x586B;&#x5199;&#x4E86;receiver&#x4E0E;groupID&#x5219;&#x53D1;&#x7FA4;&#x5185;&#x7684;&#x4E2A;&#x4EBA;&#x7528;&#x6237;&#xFF0C;&#x6D88;&#x606F;&#x5728;&#x7FA4;&#x804A;&#x4E2D;&#x663E;&#x793A;&#xFF0C;&#x53EA;&#x6709;&#x6307;&#x5B9A;receiver&#x80FD;&#x770B;&#x89C1;</span>
+      V2TimValueCallback&lt;V2TimMessage&gt; sendMessageRes = <span class="hljs-keyword">await</span> TencentImSDKPlugin
+          .v2TIMManager
+          .getMessageManager()
+          .sendMessage(id: id!, receiver: <span class="hljs-string">&quot;userID&quot;</span>, groupID: <span class="hljs-string">&quot;groupID&quot;</span>);
+      <span class="hljs-keyword">if</span> (sendMessageRes.code == <span class="hljs-number">0</span>) {
+        <span class="hljs-comment">// &#x53D1;&#x9001;&#x6210;&#x529F;</span>
+      }
     }
-  }
 </code></pre>
 
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
@@ -4203,7 +4205,7 @@
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"description":"创建音频消息","title":"createSoundMessage","level":"2.2.12","depth":2,"next":{"title":"createTargetedGroupMessage","level":"2.2.13","depth":2,"path":"api/v2timmessagemanager/createtargetedgroupmessage.md","ref":"api/v2timmessagemanager/createtargetedgroupmessage.md","articles":[]},"previous":{"title":"createMergerMessage","level":"2.2.11","depth":2,"path":"api/v2timmessagemanager/createmergermessage.md","ref":"api/v2timmessagemanager/createmergermessage.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timmessagemanager/createsoundmessage.md","mtime":"2022-07-20T09:53:15.071Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-21T07:07:02.352Z"},"basePath":"../..","book":{"language":""}});
+			gitbook.page.hasChanged({"page":{"description":"创建音频消息","title":"createSoundMessage","level":"2.2.12","depth":2,"next":{"title":"createTargetedGroupMessage","level":"2.2.13","depth":2,"path":"api/v2timmessagemanager/createtargetedgroupmessage.md","ref":"api/v2timmessagemanager/createtargetedgroupmessage.md","articles":[]},"previous":{"title":"createMergerMessage","level":"2.2.11","depth":2,"path":"api/v2timmessagemanager/createmergermessage.md","ref":"api/v2timmessagemanager/createmergermessage.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timmessagemanager/createsoundmessage.md","mtime":"2022-07-21T07:15:32.564Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-21T07:19:43.599Z"},"basePath":"../..","book":{"language":""}});
 		});
 	</script>
 </div>

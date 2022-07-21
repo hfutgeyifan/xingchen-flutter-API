@@ -1,6 +1,6 @@
 # Flutter
 
-即时通信 IM 为您准备了 Flutter 的 API 调用示例，您可以访问 [GitHub](https://github.com/tencentyun/imApiFlutterExample) 获取源码。扫描下方二维码即可体验 API 调用示例 Demo：
+即时通信 IM 为您准备了 Flutter 的 API 调用示例，您可以访问 [GitHub](https://github.com/TencentCloud/TIMSDK/tree/master/Flutter/Demo/im-flutter-uikit) 获取源码。扫描下方二维码即可体验 API 调用示例 Demo：
 
 ![](https://main.qcloudimg.com/raw/4658a0d24c33f6ec42b07bc8e36234d9.png)
 
@@ -25,4 +25,4 @@
 
 [IM-flutter 快速入门](https://cloud.tencent.com/document/product/269/68823)
 
-[IM-flutter github案例](https://github.com/tencentyun/imApiFlutterExample)
+[IM-flutter github案例](https://github.com/TencentCloud/TIMSDK/tree/master/Flutter/IMSDK/im-flutter-plugin/tencent_im_sdk_plugin)

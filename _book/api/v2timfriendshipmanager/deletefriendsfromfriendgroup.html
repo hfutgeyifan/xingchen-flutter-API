@@ -4132,22 +4132,21 @@
 </tbody>
 </table>
 <h2 id="&#x4EE3;&#x7801;&#x793A;&#x4F8B;">&#x4EE3;&#x7801;&#x793A;&#x4F8B;</h2>
-<pre><code class="lang-dart"><span class="hljs-comment">// &#x4ECE;&#x597D;&#x53CB;&#x5206;&#x7EC4;&#x4E2D;&#x5220;&#x9664;&#x597D;&#x53CB;&#xFF08;&#x53EA;&#x662F;&#x5C06;&#x597D;&#x53CB;&#x79FB;&#x51FA;&#x6B64;&#x5217;&#x8868;&#xFF0C;&#x4E0D;&#x5220;&#x9664;&#x597D;&#x53CB;&#x5173;&#x7CFB;&#xFF09;</span>
-V2TimValueCallback&lt;<span class="hljs-built_in">List</span>&lt;V2TimFriendOperationResult&gt;&gt;
-    deleteFriendsFromFriendGroupRes = <span class="hljs-keyword">await</span> TencentImSDKPlugin.v2TIMManager
-        .getFriendshipManager()
-        .deleteFriendsFromFriendGroup(
-          groupName: <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-comment">//&#x9700;&#x8981;&#x5220;&#x9664;&#x7684;&#x7FA4;&#x7EC4;&#x540D;&#x79F0;</span>
-          userIDList: [] <span class="hljs-comment">//&#x9700;&#x8981;&#x5220;&#x9664;&#x7684;&#x7528;&#x6237;id&#x5217;&#x8868;</span>
-          );
-<span class="hljs-keyword">if</span> (deleteFriendsFromFriendGroupRes.code == <span class="hljs-number">0</span>) {
-  <span class="hljs-comment">// &#x6DFB;&#x52A0;&#x6210;&#x529F;</span>
-  deleteFriendsFromFriendGroupRes.data?.forEach((element) {
-    element.resultCode;<span class="hljs-comment">//&#x6B64;&#x6761;&#x8BB0;&#x5F55;&#x7684;&#x9519;&#x8BEF;&#x7801;</span>
-    element.resultInfo;<span class="hljs-comment">//&#x6B64;&#x6761;&#x8BB0;&#x5F55;&#x64CD;&#x4F5C;&#x7ED3;&#x679C;&#x8BF4;&#x660E;</span>
-    element.userID;<span class="hljs-comment">//&#x6B64;&#x6761;&#x8BB0;&#x5F55;&#x88AB;&#x64CD;&#x4F5C;&#x7684;&#x7528;&#x6237;id</span>
-  });
-}
+<pre><code class="lang-dart">    <span class="hljs-comment">// &#x4ECE;&#x597D;&#x53CB;&#x5206;&#x7EC4;&#x4E2D;&#x5220;&#x9664;&#x597D;&#x53CB;&#xFF08;&#x53EA;&#x662F;&#x5C06;&#x597D;&#x53CB;&#x79FB;&#x51FA;&#x6B64;&#x5217;&#x8868;&#xFF0C;&#x4E0D;&#x5220;&#x9664;&#x597D;&#x53CB;&#x5173;&#x7CFB;&#xFF09;</span>
+    V2TimValueCallback&lt;<span class="hljs-built_in">List</span>&lt;V2TimFriendOperationResult&gt;&gt;
+        deleteFriendsFromFriendGroupRes = <span class="hljs-keyword">await</span> TencentImSDKPlugin.v2TIMManager
+            .getFriendshipManager()
+            .deleteFriendsFromFriendGroup(groupName: <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-comment">//&#x9700;&#x8981;&#x5220;&#x9664;&#x7684;&#x7FA4;&#x7EC4;&#x540D;&#x79F0;</span>
+                userIDList: [] <span class="hljs-comment">//&#x9700;&#x8981;&#x5220;&#x9664;&#x7684;&#x7528;&#x6237;id&#x5217;&#x8868;</span>
+                );
+    <span class="hljs-keyword">if</span> (deleteFriendsFromFriendGroupRes.code == <span class="hljs-number">0</span>) {
+      <span class="hljs-comment">// &#x6DFB;&#x52A0;&#x6210;&#x529F;</span>
+      deleteFriendsFromFriendGroupRes.data?.forEach((element) {
+        element.resultCode; <span class="hljs-comment">//&#x6B64;&#x6761;&#x8BB0;&#x5F55;&#x7684;&#x9519;&#x8BEF;&#x7801;</span>
+        element.resultInfo; <span class="hljs-comment">//&#x6B64;&#x6761;&#x8BB0;&#x5F55;&#x64CD;&#x4F5C;&#x7ED3;&#x679C;&#x8BF4;&#x660E;</span>
+        element.userID; <span class="hljs-comment">//&#x6B64;&#x6761;&#x8BB0;&#x5F55;&#x88AB;&#x64CD;&#x4F5C;&#x7684;&#x7528;&#x6237;id</span>
+      });
+    }
 </code></pre>
 <h1 id="">#</h1>
 <p><code>dart</code></p>
@@ -4194,7 +4193,7 @@ V2TimValueCallback&lt;<span class="hljs-built_in">List</span>&lt;V2TimFriendOper
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"description":"从好友分组中删除好友√","title":"deleteFriendsFromFriendGroup","level":"2.6.10","depth":2,"next":{"title":"deleteFromBlackList","level":"2.6.11","depth":2,"path":"api/v2timfriendshipmanager/deletefromblacklist.md","ref":"api/v2timfriendshipmanager/deletefromblacklist.md","articles":[]},"previous":{"title":"deleteFriendGroup","level":"2.6.9","depth":2,"path":"api/v2timfriendshipmanager/deletefriendgroup.md","ref":"api/v2timfriendshipmanager/deletefriendgroup.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timfriendshipmanager/deletefriendsfromfriendgroup.md","mtime":"2022-07-20T09:11:06.055Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-21T07:07:02.352Z"},"basePath":"../..","book":{"language":""}});
+			gitbook.page.hasChanged({"page":{"description":"从好友分组中删除好友√","title":"deleteFriendsFromFriendGroup","level":"2.6.10","depth":2,"next":{"title":"deleteFromBlackList","level":"2.6.11","depth":2,"path":"api/v2timfriendshipmanager/deletefromblacklist.md","ref":"api/v2timfriendshipmanager/deletefromblacklist.md","articles":[]},"previous":{"title":"deleteFriendGroup","level":"2.6.9","depth":2,"path":"api/v2timfriendshipmanager/deletefriendgroup.md","ref":"api/v2timfriendshipmanager/deletefriendgroup.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"nav":[{"url":"http://...","target":"_blank","name":"联系我们"}]}},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://www.mapull.com/gitbook/default/","text":"flutter","selected":true},{"value":"https://www.mapull.com/gitbook/api/","text":"unity"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/v2timfriendshipmanager/deletefriendsfromfriendgroup.md","mtime":"2022-07-21T07:11:04.944Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-21T07:19:43.599Z"},"basePath":"../..","book":{"language":""}});
 		});
 	</script>
 </div>
