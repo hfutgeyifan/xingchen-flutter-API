@@ -1,5 +1,5 @@
 ---
-description: 消息重发
+description: 消息重发√
 ---
 
 # reSendMessage
@@ -81,7 +81,7 @@ V2TimValueCallback<V2TimMessage>
 ## 代码示例  &#x20;
 
 ```dart
-// 创建文本消息
+    // 创建文本消息
     V2TimValueCallback<V2TimMsgCreateInfoResult> createTextMessageRes =
         await TencentImSDKPlugin.v2TIMManager
             .getMessageManager()
@@ -90,7 +90,7 @@ V2TimValueCallback<V2TimMessage>
             );
     if (createTextMessageRes.code == 0) {
       // 文本信息创建成功
-      String id = createTextMessageRes.data.id;
+      String? id = createTextMessageRes.data?.id;
       // 发送文本消息
       // 在sendMessage时，若只填写receiver则发个人用户单聊消息
       //                 若只填写groupID则发群组消息
@@ -98,18 +98,17 @@ V2TimValueCallback<V2TimMessage>
       V2TimValueCallback<V2TimMessage> sendMessageRes = await TencentImSDKPlugin
           .v2TIMManager
           .getMessageManager()
-          .sendMessage(id: id, receiver: "userID", groupID: "groupID");
+          .sendMessage(id: id!, receiver: "userID", groupID: "groupID");
       if (sendMessageRes.code == 0) {
         // 发送成功
       } else {
         V2TimValueCallback<V2TimMessage> reSendMessageRes =
-            await TencentImSDKPlugin
-                .v2TIMManager
+            await TencentImSDKPlugin.v2TIMManager
                 .getMessageManager()
                 .reSendMessage(
-                    msgID: id,// 需要重发的消息id
-                    onlineUserOnly: false,// 是否是发送给在线用户
-                    webMessageInstatnce: ""//web端消息的实例);
+                    msgID: id, // 需要重发的消息id
+                    onlineUserOnly: false, // 是否是发送给在线用户
+                    webMessageInstatnce: ""); //web端消息的实例);
         if (reSendMessageRes.code == 0) {
           // 重发成功
         }

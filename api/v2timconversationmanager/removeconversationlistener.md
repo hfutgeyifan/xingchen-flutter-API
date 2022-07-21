@@ -1,5 +1,5 @@
 ---
-description: 移除会话监听器
+description: 移除会话监听器√
 ---
 
 # removeConversationListener

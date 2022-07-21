@@ -1,5 +1,5 @@
 ---
-description: 获取登录状态
+description: 获取登录状态√
 ---
 
 # getLoginStatus
@@ -36,28 +36,21 @@ V2TimValueCallback<int>
 | desc | String | 请求结果描述                                                         |
 | data | int    | 登录用户的UserID                                                    |
 
-*   IM SDK 支持的登录状态，如下表所示：
-
-    | 枚举值名称                  | 枚举类型描述 | 枚举值 |
-    | ---------------------- | ------ | --- |
-    | V2TIM\_STATUS\_LOGINED | 已登录    | 0   |
-    | V2TIM\_STATUS\_LOGININ | 登录中    | 1   |
-    | V2TIM\_STATUS\_LOGOUT  | 未登陆    | 2   |
-
 ## 代码示例  &#x20;
 
 ```dart
-// 在用户登陆成功之后可调用
-// 调用getLoginStatus获取登录成功的用户的状态
-V2TimValueCallback<int> getLoginStatusRes = await TencentImSDKPlugin.v2TIMManager.getLoginStatus();
-if(getLoginStatusRes.code == 0){
-  int status = getLoginStatusRes.data;// getLoginStatusRes.data为用户登录状态值
-  if(status == 0){
+    // 在用户登陆成功之后可调用
+    // 调用getLoginStatus获取登录成功的用户的状态
+    V2TimValueCallback<int> getLoginStatusRes =
+        await TencentImSDKPlugin.v2TIMManager.getLoginStatus();
+    if (getLoginStatusRes.code == 0) {
+      int? status = getLoginStatusRes.data; // getLoginStatusRes.data为用户登录状态值
+      if (status == 1) {
         // 已登录
-  } else if(status == 1){
+      } else if (status == 2) {
         // 登录中
-  } else if(status == 2){
+      } else if (status == 3) {
         // 未登录
-  }
-}
+      }
+    }
 ```

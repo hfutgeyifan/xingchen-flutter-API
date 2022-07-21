@@ -1,5 +1,5 @@
 ---
-description: 撤回消息
+description: 撤回消息√
 ---
 
 # revokeMessage
@@ -41,12 +41,13 @@ V2TimCallback
 ## 代码示例  &#x20;
 
 ```dart
-// 清空单聊本地及云端的消息（不删除会话）
-TencentImSDKPlugin
-    .v2TIMManager
-    .getMessageManager()
-    .revokeMessage(
-    msgID: "msgID"，// 需要撤回的消息id
-    webMessageInstatnce:"webMessageInstatnce",// 需要撤回的web端消息实例
-    );
+    // 撤回消息
+    V2TimCallback revokeMessageRes =
+        await TencentImSDKPlugin.v2TIMManager.getMessageManager().revokeMessage(
+              msgID: "msgID", // 需要撤回的消息id
+              webMessageInstatnce: "webMessageInstatnce", // 需要撤回的web端消息实例
+            );
+    if (revokeMessageRes.code == 0) {
+      //撤回成功
+    }
 ```

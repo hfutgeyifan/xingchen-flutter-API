@@ -1,5 +1,5 @@
 ---
-description: 获取指定的群成员资料
+description: 获取指定的群成员资料√
 ---
 
 # getGroupMembersInfo

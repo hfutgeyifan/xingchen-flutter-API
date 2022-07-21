@@ -1,5 +1,5 @@
 ---
-description: 邀请方取消邀请
+description: 邀请方取消邀请√
 ---
 
 # cancel

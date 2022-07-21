@@ -1,5 +1,5 @@
 ---
-description: 获取指定群属性
+description: 获取指定群属性√
 ---
 
 # getGroupAttributes
@@ -48,6 +48,7 @@ V2TimValueCallback<Map<String, String>>
 ## 代码示例
 
 ```dart
+    // 注意：需要先调用joinGroup进入直播群才能进行获取  
     // 获取指定群属性
     V2TimValueCallback<Map<String, String>> getGroupAttributesRes =
         await TencentImSDKPlugin.v2TIMManager

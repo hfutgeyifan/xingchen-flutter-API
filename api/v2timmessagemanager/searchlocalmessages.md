@@ -1,5 +1,5 @@
 ---
-description: 搜索本地消息
+description: 搜索本地消息√
 ---
 
 # searchLocalMessages
@@ -56,7 +56,7 @@ V2TimValueCallback<V2TimMessageSearchResult>
           pageIndex: 0,// 分页的页号：用于分页展示查找结果，从零开始起步。
           pageSize: 10);// 每页结果数量：用于分页展示查找结果，如不希望分页可将其设置成 0，但如果结果太多，可能会带来性能问题。默认为100。
     // 搜索历史信息
-    V2TimValueCallback<V2TimMessage> searchLocalMessagesRes = await TencentImSDKPlugin
+    V2TimValueCallback<V2TimMessageSearchResult> searchLocalMessagesRes = await TencentImSDKPlugin
     .v2TIMManager
     .getMessageManager()
     .searchLocalMessages(

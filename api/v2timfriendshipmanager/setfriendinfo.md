@@ -1,5 +1,5 @@
 ---
-description: 设置指定好友资料
+description: 设置指定好友资料√
 ---
 
 # setFriendInfo
@@ -43,7 +43,7 @@ V2TimCallback
         .setFriendInfo(
             userID: "userID",//需要修改的用户id
             friendRemark: "",//修改的好友备注
-            friendCustomInfo: {"custom": "custom"});//修改的好友自定义信息
+            friendCustomInfo: {"custom": "custom"});//修改的好友自定义信息 旗舰版支持此属性
     if (setFriendInfoRes.code == 0) {
       // 修改成功
     }

@@ -1,5 +1,5 @@
 ---
-description: 删除指定群属性
+description: 删除指定群属性√
 ---
 
 # deleteGroupAttributes
@@ -46,6 +46,7 @@ V2TimCallback
 ## 代码示例
 
 ```dart
+    // 注意：需要先调用joinGroup进入直播群才能进行设置
     // 删除指定群属性
     V2TimCallback deleteGroupAttributesRes = await TencentImSDKPlugin
         .v2TIMManager

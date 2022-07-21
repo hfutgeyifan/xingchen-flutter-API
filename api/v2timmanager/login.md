@@ -1,5 +1,5 @@
 ---
-description: 用户登录
+description: 用户登录√
 ---
 
 # login
@@ -56,12 +56,13 @@ V2TimCallback
 ## 代码示例  &#x20;
 
 ```dart
-String userID = "your user id";// 用户设置的userID
-String userSig = "userSig from your server";// 用户计算出的userSig
-V2TimCallback res = await TencentImSDKPlugin.v2TIMManager.login(userID: userID, userSig: userSig);
-if(res.code == 0){
-    // 登录成功逻辑    
-}else{
-    // 登录失败逻辑
-}
+    String userID = "your user id"; // 用户设置的userID
+    String userSig = "userSig from your server"; // 用户计算出的userSig
+    V2TimCallback loginRes = await TencentImSDKPlugin.v2TIMManager
+        .login(userID: userID, userSig: userSig);
+    if (loginRes.code == 0) {
+      // 登录成功逻辑
+    } else {
+      // 登录失败逻辑
+    }
 ```

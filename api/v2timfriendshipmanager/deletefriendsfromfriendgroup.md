@@ -1,5 +1,5 @@
 ---
-description: 从好友分组中删除好友
+description: 从好友分组中删除好友√
 ---
 
 # deleteFriendsFromFriendGroup
@@ -38,7 +38,7 @@ V2TimValueCallback<List<V2TimFriendOperationResult>>
 ## 代码示例
 
 ```dart
-// 从好友分组中删除好友
+// 从好友分组中删除好友（只是将好友移出此列表，不删除好友关系）
 V2TimValueCallback<List<V2TimFriendOperationResult>>
     deleteFriendsFromFriendGroupRes = await TencentImSDKPlugin.v2TIMManager
         .getFriendshipManager()

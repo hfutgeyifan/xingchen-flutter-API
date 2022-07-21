@@ -95,7 +95,6 @@
   * [kickGroupMember](api/v2timgroupmanager/kickgroupmember.md)
   * [muteGroupMember](api/v2timgroupmanager/mutegroupmember.md)
   * [refuseGroupApplication](api/v2timgroupmanager/refusegroupapplication.md)
-  * [searchGroupByID](api/v2timgroupmanager/searchgroupbyid.md)
   * [searchGroupMembers](api/v2timgroupmanager/searchgroupmembers.md)
   * [searchGroups](api/v2timgroupmanager/searchgroups.md)
   * [setGroupApplicationRead](api/v2timgroupmanager/setgroupapplicationread.md)

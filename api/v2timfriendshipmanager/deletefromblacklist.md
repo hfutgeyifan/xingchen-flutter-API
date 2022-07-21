@@ -1,5 +1,5 @@
 ---
-description: 把用户从黑名单中删除
+description: 把用户从黑名单中删除√
 ---
 
 # deleteFromBlackList

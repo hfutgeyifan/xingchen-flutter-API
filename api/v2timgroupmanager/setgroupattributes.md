@@ -1,5 +1,5 @@
 ---
-description: 设置群属性
+description: 设置群属性√
 ---
 
 # setGroupAttributes
@@ -52,6 +52,7 @@ V2TimCallback
 ## 代码示例
 
 ```dart
+    // 注意：需要先调用joinGroup进入直播群才能进行设置
     // 设置群属性
     V2TimCallback setGroupAttributesRes = await TencentImSDKPlugin.v2TIMManager
         .getGroupManager()

@@ -1,5 +1,5 @@
 ---
-description: 通过会话ID获取指定会话列表
+description: 通过会话ID获取指定会话列表√
 ---
 
 # getConversationListByConversaionIds

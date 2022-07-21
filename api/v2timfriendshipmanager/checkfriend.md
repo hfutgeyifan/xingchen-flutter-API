@@ -1,5 +1,5 @@
 ---
-description: 检查指定用户的好友关系
+description: 检查指定用户的好友关系√
 ---
 
 # checkFriend
@@ -47,7 +47,7 @@ V2TimValueCallback<List<V2TimFriendCheckResult>>
       checkType: FriendTypeEnum.V2TIM_FRIEND_TYPE_BOTH,//检查的类型
     );
     if (checkFriendRes.code == 0) {
-      // 删除请求发送成功
+      // 查询发送成功
       checkFriendRes.data?.forEach((element) {
         element.resultCode;//检查结果错误码
         element.resultInfo;//检查结果信息

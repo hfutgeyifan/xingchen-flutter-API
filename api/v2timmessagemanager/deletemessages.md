@@ -1,5 +1,5 @@
 ---
-description: 删除本地及漫游消息
+description: 删除本地及漫游消息√
 ---
 
 # deleteMessages
@@ -44,12 +44,13 @@ V2TimCallback
 ## 代码示例  &#x20;
 
 ```dart
-// 删除本地及漫游消息
-TencentImSDKPlugin
-    .v2TIMManager
-    .getMessageManager()
-    .deleteMessages(
-    msgIDs: ['messageid']，// 需要删除的消息id
-    webMessageInstanceList:[]// 需要删除的web端消息实例列表
-    );
+    // 删除本地及漫游消息
+    V2TimCallback deleteMessagesRes = await TencentImSDKPlugin.v2TIMManager
+        .getMessageManager()
+        .deleteMessages(msgIDs: ['messageid'], // 需要删除的消息id
+            webMessageInstanceList: [] // 需要删除的web端消息实例列表
+            );
+    if (deleteMessagesRes.code == 0) {
+      //删除成功
+    }
 ```

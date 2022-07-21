@@ -1,5 +1,5 @@
 ---
-description: 修改好友分组的名称
+description: 修改好友分组的名称√
 ---
 
 # renameFriendGroup

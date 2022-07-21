@@ -1,5 +1,5 @@
 ---
-description: 设置群组消息接收选项
+description: 设置群组消息接收选项√
 ---
 
 # setGroupReceiveMessageOpt
@@ -36,8 +36,15 @@ V2TimCallback
 ## 代码示例  &#x20;
 
 ```dart
-// 设置在线和离线都不接收消息
-    TencentImSDKPlugin.v2TIMManager.getMessageManager().setGroupReceiveMessageOpt(
-        groupID: "groupID",// 需要设置的群组id
-        opt: ReceiveMsgOptEnum.V2TIM_NOT_RECEIVE_MESSAGE);// 群组消息接收选项属性
+    //设置群组消息接收选项
+    // 设置在线和离线都不接收消息
+    V2TimCallback setGroupReceiveMessageOptRes = await TencentImSDKPlugin
+        .v2TIMManager
+        .getMessageManager()
+        .setGroupReceiveMessageOpt(
+            groupID: "groupID", // 需要设置的群组id
+            opt: ReceiveMsgOptEnum.V2TIM_NOT_RECEIVE_MESSAGE); // 用户消息接收选项属性
+    if (setGroupReceiveMessageOptRes.code == 0) {
+      //设置成功
+    }
 ```

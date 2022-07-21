@@ -1,5 +1,5 @@
 ---
-description: 加入群组
+description: 加入群组√
 ---
 
 # joinGroup
@@ -45,7 +45,7 @@ V2TimCallback
 ## 代码示例  &#x20;
 
 ```dart
-// 加入群组
+    // 加入群组
     V2TimCallback joinGroupRes = await TencentImSDKPlugin.v2TIMManager
         .joinGroup(
           groupID: "groupID",// 需要加入群组 ID
@@ -54,6 +54,4 @@ V2TimCallback
     if (joinGroupRes.code == 0) {
       // 加入成功
     }
-    
-    
 ```

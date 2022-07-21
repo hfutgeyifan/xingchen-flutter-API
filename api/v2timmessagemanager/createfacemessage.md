@@ -1,5 +1,5 @@
 ---
-description: 创建表情消息
+description: 创建表情消息√
 ---
 
 # createFaceMessage
@@ -53,7 +53,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult> createFaceMessageRes =
             data: "自定义消息",
           );
   if (createFaceMessageRes.code == 0) {
-    String id = createFaceMessageRes.data.id;
+    String? id = createFaceMessageRes.data?.id;
        // 发送表情消息
        // 在sendMessage时，若只填写receiver则发个人用户单聊消息
        //                 若只填写groupID则发群组消息
@@ -61,7 +61,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult> createFaceMessageRes =
     V2TimValueCallback<V2TimMessage> sendMessageRes = await TencentImSDKPlugin
         .v2TIMManager
         .getMessageManager()
-        .sendMessage(id: id, receiver: "userID", groupID: "groupID");
+        .sendMessage(id: id!, receiver: "userID", groupID: "groupID");
     if (sendMessageRes.code == 0) {
       // 发送成功
     }

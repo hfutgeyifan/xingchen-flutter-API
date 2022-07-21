@@ -1,5 +1,5 @@
 ---
-description: 反初始化 SDK
+description: 反初始化 SDK√
 ---
 
 # unInitSDK
@@ -38,10 +38,9 @@ V2TimValueCallback
 ## 代码示例  &#x20;
 
 ```dart
-// 从即时通信 IM 控制台获取应用 SDKAppID。
+    // 从即时通信 IM 控制台获取应用 SDKAppID。
     int sdkAppID = 0;
-
-// 添加 V2TimSDKListener 的事件监听器，sdkListener 是 V2TimSDKListener 的实现类
+    // 添加 V2TimSDKListener 的事件监听器，sdkListener 是 V2TimSDKListener 的实现类
     V2TimSDKListener sdkListener = V2TimSDKListener(
       onConnectFailed: (code, error) {}, // 连接失败的回调函数
       onConnectSuccess: () {}, // 连接成功的回调函数
@@ -50,17 +49,19 @@ V2TimValueCallback
       onSelfInfoUpdated: (V2TimUserFullInfo info) {}, // 用户信息更新
       onUserSigExpired: () {}, // userSig过期，相当于踢下线
     );
-
-// 初始化
-    TencentImSDKPlugin.v2TIMManager.initSDK(
+    // 初始化
+    V2TimValueCallback<bool> initSDKRes =
+        await TencentImSDKPlugin.v2TIMManager.initSDK(
       sdkAppID: sdkAppID, // SDKAppID
       loglevel: LogLevelEnum.V2TIM_LOG_ALL, // 日志登记等级
       listener: sdkListener, // 事件监听器
     );
-// 在初始化SDK成功之后可调用
-// 调用unInitSDK反初始化SDK
-    V2TimCallback unInitSDKRes = TencentImSDKPlugin.v2TIMManager.unInitSDK();
-    if(unInitSDKRes.code == 0){
-        // 反初始化SDK成功的逻辑
+    // 在初始化SDK成功之后可调用
+    // 调用unInitSDK反初始化SDK
+    if (initSDKRes.code == 0) {}
+    V2TimCallback unInitSDKRes =
+        await TencentImSDKPlugin.v2TIMManager.unInitSDK();
+    if (unInitSDKRes.code == 0) {
+      // 反初始化SDK成功的逻辑
     }
 ```

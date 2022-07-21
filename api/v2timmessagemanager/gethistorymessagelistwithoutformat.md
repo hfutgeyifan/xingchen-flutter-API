@@ -1,5 +1,5 @@
 ---
-description: 获取历史消息高级接口(没有处理Native返回数据)
+description: 获取历史消息高级接口(没有处理Native返回数据)√
 ---
 
 # getHistoryMessageListWithoutFormat
@@ -47,19 +47,24 @@ LinkedHashMap<dynamic,dynamic>
 ## 代码示例  &#x20;
 
 ```dart
-// 拉取单聊历史消息
-// 首次拉取，lastMsgID 设置为 null
-// 再次拉取时，lastMsgID 可以使用返回的消息列表中的最后一条消息的id
-TencentImSDKPlugin.v2TIMManager.getMessageManager().getHistoryMessageListWithoutFormat(
-        getType:HistoryMsgGetTypeEnum.V2TIM_GET_LOCAL_OLDER_MSG,// 拉取消息的位置及方向
-        userID: "userID",// 用户id 拉取单聊消息，需要指定对方的 userID，此时 groupID 传空即可。
-        groupID: "groupID",// 群组id 拉取群聊消息，需要指定群聊的 groupID，此时 userID 传空即可。
-        count: 10,// 拉取数据数量
-        lastMsgID: null,// 拉取起始消息id
-        // 仅能在群聊中使用该字段。
-        // 设置 lastMsgSeq 作为拉取的起点，返回的消息列表中包含这条消息。
-        // 如果同时指定了 lastMsg 和 lastMsgSeq，SDK 优先使用 lastMsg。
-        // 如果均未指定 lastMsg 和 lastMsgSeq，拉取的起点取决于是否设置 getTimeBegin。设置了，则使用设置的范围作为起点；未设置，则使用最新消息作为起点。
-        lastMsgSeq: -1
-);
+    // 拉取单聊历史消息
+    // 首次拉取，lastMsgID 设置为 null
+    // 再次拉取时，lastMsgID 可以使用返回的消息列表中的最后一条消息的id
+    LinkedHashMap<dynamic, dynamic> getHistoryMessageListWithoutFormatRes =
+        await TencentImSDKPlugin.v2TIMManager
+            .getMessageManager()
+            .getHistoryMessageListWithoutFormat(
+                getType: HistoryMsgGetTypeEnum
+                    .V2TIM_GET_LOCAL_OLDER_MSG, // 拉取消息的位置及方向
+                userID: "userID", // 用户id 拉取单聊消息，需要指定对方的 userID，此时 groupID 传空即可。
+                groupID:
+                    "groupID", // 群组id 拉取群聊消息，需要指定群聊的 groupID，此时 userID 传空即可。
+                count: 10, // 拉取数据数量
+                lastMsgID: null, // 拉取起始消息id
+                // 仅能在群聊中使用该字段。
+                // 设置 lastMsgSeq 作为拉取的起点，返回的消息列表中包含这条消息。
+                // 如果同时指定了 lastMsg 和 lastMsgSeq，SDK 优先使用 lastMsg。
+                // 如果均未指定 lastMsg 和 lastMsgSeq，拉取的起点取决于是否设置 getTimeBegin。设置了，则使用设置的范围作为起点；未设置，则使用最新消息作为起点。
+                lastMsgSeq: -1);
+  }
 ```

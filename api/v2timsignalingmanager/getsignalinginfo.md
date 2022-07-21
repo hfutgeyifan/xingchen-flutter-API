@@ -1,5 +1,5 @@
 ---
-description: 获取信令信息
+description: 获取信令信息√
 ---
 
 # getSignalingInfo

@@ -1,5 +1,5 @@
 ---
-description: 获取服务器当前时间
+description: 获取服务器当前时间√
 ---
 
 # getServerTime
@@ -48,6 +48,6 @@ V2TimValueCallback<int>
         await TencentImSDKPlugin.v2TIMManager.getServerTime();
     if (getServerTimeRes.code == 0) {
       //获取成功
-      int? serverTime = getServerTimeRes.data;//服务器当前时间
+      getServerTimeRes.data;//服务器当前时间
     }
 ```

@@ -1,5 +1,5 @@
 ---
-description: 禁言
+description: 禁言√
 ---
 
 # muteGroupMember

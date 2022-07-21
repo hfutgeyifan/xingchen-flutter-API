@@ -1,5 +1,5 @@
 ---
-description: 高级群组功能入口
+description: 高级群组功能入口√
 ---
 
 # getGroupManager

@@ -1,5 +1,5 @@
 ---
-description: 获取会话未读总数
+description: 获取会话未读总数√
 ---
 
 # getTotalUnreadMessageCount

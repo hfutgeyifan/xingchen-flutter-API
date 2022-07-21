@@ -1,5 +1,5 @@
 ---
-description: 邀请他人入群
+description: 邀请他人入群√
 ---
 
 # inviteUserToGroup

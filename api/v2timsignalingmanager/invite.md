@@ -1,5 +1,5 @@
 ---
-description: 邀请某个人
+description: 邀请某个人√
 ---
 
 # invite

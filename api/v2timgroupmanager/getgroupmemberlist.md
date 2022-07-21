@@ -1,5 +1,5 @@
 ---
-description: 获取群成员列表
+description: 获取群成员列表√
 ---
 
 # getGroupMemberList
@@ -60,7 +60,7 @@ V2TimValueCallback<V2TimGroupMemberInfoResult>
             .getGroupMemberList(
                 groupID: "groupID",// 需要查询的群组 ID
                 filter:GroupMemberFilterTypeEnum.V2TIM_GROUP_MEMBER_FILTER_ADMIN,//查询群成员类型
-                nextSeq: "0"// 分页拉取标志，第一次拉取填0，回调成功如果 nextSeq 不为零，需要分页，传入返回值再次拉取，直至为0。
+                nextSeq: "0",// 分页拉取标志，第一次拉取填0，回调成功如果 nextSeq 不为零，需要分页，传入返回值再次拉取，直至为0。
                 count: 100,// 需要拉取的数量。最大值：100，避免回包过大导致请求失败。若传入超过100，则只拉取前100个。
                 offset:0,// 偏移量，默认从0开始拉取。
                 );

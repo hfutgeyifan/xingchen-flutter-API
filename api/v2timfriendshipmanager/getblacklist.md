@@ -1,5 +1,5 @@
 ---
-description: 获取黑名单列表
+description: 获取黑名单列表√
 ---
 
 # getBlackList

@@ -1,5 +1,5 @@
 ---
-description: 获取登录用户的UserID
+description: 获取登录用户的UserID√
 ---
 
 # getLoginUser
@@ -40,10 +40,12 @@ V2TimValueCallback<String>
 ## 代码示例  &#x20;
 
 ```dart
-// 在用户登陆成功之后可调用
-// 调用getLoginUser获取登录成功的用户 UserID
-V2TimValueCallback<String> getLoginUserRes = await TencentImSDKPlugin.v2TIMManager.getLoginUser();
-if(getLoginUserRes.code == 0){
-  userID = getLoginUserRes.data;// getLoginUserRes.data为查询到的登录用户的UserID
-}
+    // 在用户登陆成功之后可调用
+    // 调用getLoginUser获取登录成功的用户 UserID
+    V2TimValueCallback<String> getLoginUserRes =
+        await TencentImSDKPlugin.v2TIMManager.getLoginUser();
+    if (getLoginUserRes.code == 0) {
+      //获取成功
+      getLoginUserRes.data; // getLoginUserRes.data为查询到的登录用户的UserID
+    }
 ```

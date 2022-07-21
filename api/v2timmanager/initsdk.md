@@ -1,5 +1,5 @@
 ---
-description: 初始化 SDK
+description: 初始化 SDK√
 ---
 
 # initSDK
@@ -80,9 +80,13 @@ V2TimValueCallback<bool>
       },
     );
     // 3.初始化SDK
-    TencentImSDKPlugin.v2TIMManager.initSDK(
+    V2TimValueCallback<bool> initSDKRes =
+        await TencentImSDKPlugin.v2TIMManager.initSDK(
       sdkAppID: sdkAppID, // SDKAppID
       loglevel: LogLevelEnum.V2TIM_LOG_ALL, // 日志登记等级
       listener: sdkListener, // 事件监听器
     );
+    if (initSDKRes.code == 0) {
+      //初始化成功
+    }
 ```

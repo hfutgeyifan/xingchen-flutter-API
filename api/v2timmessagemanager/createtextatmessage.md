@@ -6,7 +6,7 @@ description: 创建文本消息，并且可以附带 @ 提醒功能
 
 ## 功能介绍
 
-创建文本消息，并且可以附带 @ 提醒功能
+创建文本消息，并且可以附带 @ 提醒功能(直播群不支持)
 
 ## 参数详解
 
@@ -41,42 +41,25 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>
 ## 代码示例  &#x20;
 
 ```dart
-// 创建文本消息
-V2TimValueCallback<V2TimMsgCreateInfoResult> createTextAtMessageRes = await TencentImSDKPlugin.v2TIMManager.getMessageManager().createTextAtMessage(
-    text: "test",// 文本信息
-    atUserList: [],// @用户ID列表
-  );
- if(createTextAtMessageRes.code == 0){
-       // 文本信息创建成功
-    String id =  createTextAtMessageRes.data.id;
-       // 发送@文本消息
-       // 在sendMessage时，必须填写groupID，receiver可为空
-       //                 若填写了receiver与groupID则发群内的个人用户，消息在群聊中显示，只有指定receiver能看见
-    V2TimValueCallback<V2TimMessage> sendMessageRes = await TencentImSDKPlugin.v2TIMManager.getMessageManager().sendMessage(id: id, receiver: "userID", groupID: "groupID");
-    if(sendMessageRes.code == 0){
-      // 发送成功
-    }
-  }
-  
-// 在加载和更新会话处，需要调用 V2TimConversation 的 groupAtInfolist 接口获取会话的 @ 数据列表。
-// 通过列表中 V2TimGroupAtInfo 对象的 atType接口获取 @ 数据类型，并更新到当前会话的 @ 信息。
-     V2TimValueCallback<V2TimConversationResult> getConversationList =
+    // 创建文本消息
+    V2TimValueCallback<V2TimMsgCreateInfoResult> createTextAtMessageRes =
         await TencentImSDKPlugin.v2TIMManager
-            .getConversationManager()
-            .getConversationList(nextSeq: "", count: 10);
-    if (getConversationList.code == 0) {
-      getConversationList.data.conversationList.forEach((element) {
-        element.groupAtInfoList.forEach((element) {
-          if (element.atType == 0) {
-            // @我
-          }
-          if (element.atType == 1) {
-            // @all
-          }
-          if (element.atType == 2) {
-            // @all&@我
-          }
-        });
-      });
+            .getMessageManager()
+            .createTextAtMessage(
+      text: "test", // 文本信息
+      atUserList: [], // @用户ID列表
+    );
+    if (createTextAtMessageRes.code == 0) {
+      // 文本信息创建成功
+      String? id = createTextAtMessageRes.data?.id;
+      // 发送@文本消息
+      // 在sendMessage时，必须填写groupID，receiver必须为空，否则无法发送消息
+      V2TimValueCallback<V2TimMessage> sendMessageRes = await TencentImSDKPlugin
+          .v2TIMManager
+          .getMessageManager()
+          .sendMessage(id: id!, receiver: "", groupID: "groupID");
+      if (sendMessageRes.code == 0) {
+        // 发送成功
+      }
     }
 ```

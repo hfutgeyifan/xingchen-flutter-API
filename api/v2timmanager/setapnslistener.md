@@ -1,5 +1,5 @@
 ---
-description: 设置苹果系统离线推送专用监听器
+description: 设置苹果系统离线推送专用监听器√
 ---
 
 # setAPNSListener

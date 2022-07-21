@@ -1,5 +1,5 @@
 ---
-description: 根据messageID 查询指定会话中的本地消息
+description: 根据messageID 查询指定会话中的本地消息√
 ---
 
 # findMessages
@@ -41,10 +41,12 @@ V2TimValueCallback<List<V2TimMessage>>
 ## 代码示例  &#x20;
 
 ```dart
-// 根据消息id查询消息
+    // 根据消息id查询消息
     V2TimValueCallback<List<V2TimMessage>> msgListRes = await TencentImSDKPlugin
         .v2TIMManager
         .getMessageManager()
-        .findMessages(messageIDList: ['msgid']);// 需要查询的消息id列表
-  }
+        .findMessages(messageIDList: ['msgid']); // 需要查询的消息id列表
+    if (msgListRes.code == 0) {
+      //查询成功
+    }
 ```

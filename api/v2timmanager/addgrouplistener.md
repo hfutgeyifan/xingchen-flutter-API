@@ -1,5 +1,5 @@
 ---
-description: 添加群组监听器
+description: 添加群组监听器√
 ---
 
 # addGroupListener
@@ -13,7 +13,7 @@ description: 添加群组监听器
 
 会议群（Meeting）和直播群（AVChatRoom）默认无[onMemberInfoChanged](../callbacks/onmemberinfochangedcallback.md)回调，如需回调请提交工单配置
 
-在web端时，不支持[onQuitFromGroup](../callbacks/onquitfromgroupcallback.md)回调
+在web端时，不支持此API
 {% endhint %}
 
 ## 参数详解

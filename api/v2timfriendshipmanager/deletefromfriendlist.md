@@ -1,5 +1,5 @@
 ---
-description: 从好友列表删除好友
+description: 从好友列表删除好友√
 ---
 
 # deleteFromFriendList

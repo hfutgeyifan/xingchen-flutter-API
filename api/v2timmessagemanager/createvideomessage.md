@@ -1,5 +1,5 @@
 ---
-description: 创建视频文件
+description: 创建视频文件√
 ---
 
 # createVideoMessage
@@ -50,10 +50,10 @@ V2TimValueCallback<V2TimMsgCreateInfoResult> createVideoMessageRes =
       await TencentImSDKPlugin.v2TIMManager
           .getMessageManager()
           .createVideoMessage(
-            videoFilePath: "本地视频文件绝对路径",
+            videoFilePath: "本地视频文件绝对路径",// 不能使用网络Url
             type: "mp4", // 视频类型 会在接收的消息属性里显示，一般用于回显文件类型
             duration: 10,// 视频时长 会在接收的消息属性里显示，一般用于回显文件属性
-            snapshotPath: "本地视频封面文件绝对路径",
+            snapshotPath: "本地视频封面文件绝对路径",// 不能使用网络Url
           );
   if (createVideoMessageRes.code == 0) {
     String id = createVideoMessageRes.data.id;

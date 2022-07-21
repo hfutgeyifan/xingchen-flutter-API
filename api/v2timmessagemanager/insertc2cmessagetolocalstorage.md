@@ -1,5 +1,5 @@
 ---
-description: 向C2C消息列表中添加一条消息
+description: 向C2C消息列表中添加一条消息√
 ---
 
 # insertC2CMessageToLocalStorage
@@ -87,12 +87,16 @@ V2TimValueCallback<V2TimMessage>
 ## 代码示例  &#x20;
 
 ```dart
-// 向C2C消息列表中添加一条消息
-TencentImSDKPlugin.v2TIMManager
-.getMessageManager()
-.insertC2CMessageToLocalStorage(
-        data: "data", // 文本消息内容
-        userID: "userID", // 接受信息用户id
-        sender: "sender"// 发送者id
-        );
+    // 向C2C消息列表中添加一条消息
+    V2TimValueCallback<V2TimMessage> insertC2CMessageToLocalStorageRes =
+        await TencentImSDKPlugin.v2TIMManager
+            .getMessageManager()
+            .insertC2CMessageToLocalStorage(
+                data: "data", // 文本消息内容
+                userID: "userID", // 接受信息用户id
+                sender: "sender" // 发送者id
+                );
+    if (insertC2CMessageToLocalStorageRes.code == 0) {
+      //添加成功
+    }
 ```

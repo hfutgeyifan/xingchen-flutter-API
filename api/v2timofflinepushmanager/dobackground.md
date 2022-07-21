@@ -1,5 +1,5 @@
 ---
-description: APP 检测到应用退后台时可以调用此接口
+description: APP 检测到应用退后台时可以调用此接口√
 ---
 
 # doBackground

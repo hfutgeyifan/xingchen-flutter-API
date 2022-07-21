@@ -1,5 +1,5 @@
 ---
-description: 获取单聊历史消息
+description: 获取单聊历史消息√
 ---
 
 # getC2CHistoryMessageList
@@ -49,12 +49,18 @@ V2TimValueCallback<List<V2TimMessage>>
 ## 代码示例  &#x20;
 
 ```dart
-// 拉取单聊历史消息
-// 首次拉取，lastMsgID 设置为 null
-// 再次拉取时，lastMsgID 可以使用返回的消息列表中的最后一条消息的id
-TencentImSDKPlugin.v2TIMManager.getMessageManager().getC2CHistoryMessageList(
-        userID: "userId",// 单聊用户id
-        count: 10,// 拉取数据数量
-        lastMsgID: null,// 拉取起始消息id
-);
+    // 拉取单聊历史消息
+    // 首次拉取，lastMsgID 设置为 null
+    // 再次拉取时，lastMsgID 可以使用返回的消息列表中的最后一条消息的id
+    V2TimValueCallback<List<V2TimMessage>> getC2CHistoryMessageListRes =
+        await TencentImSDKPlugin.v2TIMManager
+            .getMessageManager()
+            .getC2CHistoryMessageList(
+              userID: "userId", // 单聊用户id
+              count: 10, // 拉取数据数量
+              lastMsgID: null, // 拉取起始消息id
+            );
+    if (getC2CHistoryMessageListRes.code == 0) {
+      //拉取成功
+    }
 ```

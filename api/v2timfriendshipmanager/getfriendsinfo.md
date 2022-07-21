@@ -1,5 +1,5 @@
 ---
-description: 获取指定好友资料
+description: 获取指定好友资料√
 ---
 
 # getFriendsInfo

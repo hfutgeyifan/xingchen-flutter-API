@@ -1,5 +1,5 @@
 ---
-description: 获取群资料
+description: 获取群资料√
 ---
 
 # getGroupsInfo

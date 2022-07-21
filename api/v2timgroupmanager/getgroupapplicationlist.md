@@ -1,5 +1,5 @@
 ---
-description: 获取加群的申请列表
+description: 获取加群的申请列表√
 ---
 
 # getGroupApplicationList

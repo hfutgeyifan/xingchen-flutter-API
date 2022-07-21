@@ -1,5 +1,5 @@
 ---
-description: 获取消息已读回执
+description: 获取消息已读回执√
 ---
 
 # getMessageReadReceipts

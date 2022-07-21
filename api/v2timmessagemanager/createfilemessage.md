@@ -1,5 +1,5 @@
 ---
-description: 创建文件消息
+description: 创建文件消息√
 ---
 
 # createFileMessage
@@ -50,7 +50,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult> createFileMessageRes =
       await TencentImSDKPlugin.v2TIMManager
           .getMessageManager()
           .createFileMessage(
-            filePath: "本地文件绝对路径",
+            filePath: "本地文件绝对路径",// 不能使用网络Url
             fileName: "文件名",
           );
   if (createFileMessageRes.code == 0) {

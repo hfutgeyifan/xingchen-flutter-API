@@ -1,5 +1,5 @@
 ---
-description: 获取指定群在线人数
+description: 获取指定群在线人数√
 ---
 
 # getGroupOnlineMemberCount
@@ -49,7 +49,7 @@ V2TimValueCallback<int>
             .getGroupOnlineMemberCount(
               groupID: "groupID",
             );
-    if (getGroupOnlineMemberCountRes == 0) {
+    if (getGroupOnlineMemberCountRes.code == 0) {
       // 查询成功
       int? groupOnlineMemberCount = getGroupOnlineMemberCountRes.data;// 查询到的群在线人数
     }

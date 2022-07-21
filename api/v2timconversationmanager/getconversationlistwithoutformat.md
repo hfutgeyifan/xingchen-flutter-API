@@ -1,5 +1,5 @@
 ---
-description: 获取没有格式化的会话信息
+description: 获取没有格式化的会话信息√
 ---
 
 # getConversationListWithoutFormat
@@ -45,12 +45,13 @@ LinkedHashMap<dynamic, dynamic>
 ## 代码示例
 
 ```dart
-        //获取没有格式化的会话信息
-        LinkedHashMap<dynamic, dynamic> getConversationListWithoutFormatRes =
+    //获取没有格式化的会话信息
+    LinkedHashMap<dynamic, dynamic> getConversationListWithoutFormatRes =
         await TencentImSDKPlugin.v2TIMManager
             .getConversationManager()
             .getConversationListWithoutFormat(
-            count: 100, //分页拉取的个数，一次分页拉取不宜太多，会影响拉取的速度，建议每次拉取 100 个会话
-            nextSeq: "0"//分页拉取的游标，第一次默认取传 0，后续分页拉传上一次分页拉取成功回调里的 nextSeq
-            );
+                count: 100, //分页拉取的个数，一次分页拉取不宜太多，会影响拉取的速度，建议每次拉取 100 个会话
+                nextSeq: "0" //分页拉取的游标，第一次默认取传 0，后续分页拉传上一次分页拉取成功回调里的 nextSeq
+                );
+    print(getConversationListWithoutFormatRes);//{code: 0, data: {nextSeq: 0, conversationList: [], isFinished: true}, desc: ok}
 ```

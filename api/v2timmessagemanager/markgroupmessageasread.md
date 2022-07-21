@@ -1,5 +1,5 @@
 ---
-description: 设置群组消息已读
+description: 设置群组消息已读√
 ---
 
 # markGroupMessageAsRead
@@ -45,7 +45,7 @@ V2TimCallback
     V2TimCallback markGroupMessageAsReadRes =
         await TencentImSDKPlugin.v2TIMManager
             .getMessageManager()
-            .markGroupMessageAsRead(groupID: "groupID")// 需要设置消息已读的群组id
+            .markGroupMessageAsRead(groupID: "groupID");// 需要设置消息已读的群组id
     if(markGroupMessageAsReadRes.code==0){
       // 标记成功
     }

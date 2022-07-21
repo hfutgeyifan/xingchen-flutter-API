@@ -1,5 +1,5 @@
 ---
-description: 移除群组监听器
+description: 移除群组监听器√
 ---
 
 # removeGroupListener

@@ -1,5 +1,5 @@
 ---
-description: 获取当前用户已经加入的群列
+description: 获取当前用户已经加入的群列√
 ---
 
 # getJoinedGroupList

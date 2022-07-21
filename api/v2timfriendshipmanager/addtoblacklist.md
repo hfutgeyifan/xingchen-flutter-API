@@ -1,5 +1,5 @@
 ---
-description: 添加用户到黑名单
+description: 添加用户到黑名单√
 ---
 
 # addToBlackList

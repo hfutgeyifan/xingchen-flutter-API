@@ -1,5 +1,5 @@
 ---
-description: 移除信令监听器
+description: 移除信令监听器√
 ---
 
 # removeSignalingListener

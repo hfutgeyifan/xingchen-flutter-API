@@ -1,5 +1,5 @@
 ---
-description: 创建自定义群组
+description: 创建自定义群组√
 ---
 
 # createGroup
@@ -59,7 +59,7 @@ V2TimValueCallback<String>
     // 创建群组
     V2TimValueCallback<String> createGroupRes =
         await TencentImSDKPlugin.v2TIMManager.getGroupManager().createGroup(
-      groupType: "Publich",// 群类型
+      groupType: "Public",// 群类型
       groupName: "groupName",// 群名称，不能为 null。
       notification: "",// 群公告
       introduction: "",// 群介绍
@@ -71,6 +71,6 @@ V2TimValueCallback<String>
     );
     if (createGroupRes.code == 0) {
       // 创建成功
-      var groupId = createGroupRes.data;// 创建的群号
+      createGroupRes.data;// 创建的群号
     }
 ```

@@ -1,5 +1,5 @@
 ---
-description: 获取版本号
+description: 获取版本号√
 ---
 
 # getVersion
@@ -42,6 +42,6 @@ V2TimValueCallback<String>
         await TencentImSDKPlugin.v2TIMManager.getVersion();
     if (getVersionRes.code == 0) {
       //获取成功
-      String? version = getVersionRes.data; //版本号
+      getVersionRes.data; //版本号
     }
 ```

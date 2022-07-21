@@ -1,5 +1,5 @@
 ---
-description: 查询某个用户的 C2C 消息接收选项
+description: 查询某个用户的 C2C 消息接收选项√
 ---
 
 # getC2CReceiveMessageOpt
@@ -41,14 +41,16 @@ V2TimValueCallback<List<V2TimReceiveMessageOptInfo>>
 ## 代码示例  &#x20;
 
 ```dart
-// 查询某些用户的 C2C 消息接收选项
-    V2TimValueCallback<List<V2TimReceiveMessageOptInfo>> messageOpt =
-        await TencentImSDKPlugin.v2TIMManager
+    // 查询某些用户的 C2C 消息接收选项
+    V2TimValueCallback<List<V2TimReceiveMessageOptInfo>>
+        getC2CReceiveMessageOptRes = await TencentImSDKPlugin.v2TIMManager
             .getMessageManager()
             .getC2CReceiveMessageOpt(userIDList: ['user1', 'user2']);
-    messageOpt.data.forEach((element) {
-      // 接收消息选项
-      element.c2CReceiveMessageOpt;// 此用户的消息接收选项
-      element.userID;// 此用户的id
-    });
+    if (getC2CReceiveMessageOptRes.code == 0) {
+      //查询成功
+      getC2CReceiveMessageOptRes.data?.forEach((element) {
+        element.c2CReceiveMessageOpt; // 此用户的消息接收选项
+        element.userID; // 此用户的id
+      });
+    }
 ```

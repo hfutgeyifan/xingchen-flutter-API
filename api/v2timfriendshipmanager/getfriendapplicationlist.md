@@ -1,5 +1,5 @@
 ---
-description: 获取好友申请列表
+description: 获取好友申请列表√
 ---
 
 # getFriendApplicationList
@@ -50,7 +50,7 @@ V2TimValueCallback<V2TimFriendApplicationResult>
       getFriendApplicationListRes.data?.unreadCount;//未读申请数量
       getFriendApplicationListRes.data?.friendApplicationList
           ?.forEach((element) {
-        element?.addSource;//申请添加来源
+        element?.addSource;//申请添加来源 flutter会在发出请求的source前添加AddSource_Type_
         element?.addTime;//申请时间
         element?.addWording;//申请添加的信息
         element?.faceUrl;//申请好友头像Url

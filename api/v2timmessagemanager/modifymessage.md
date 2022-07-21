@@ -1,5 +1,5 @@
 ---
-description: 消息变更 4.0.1及以后版本支持
+description: 消息变更 4.0.1及以后版本支持√
 ---
 
 # modifyMessage
@@ -57,26 +57,26 @@ V2TimValueCallback<V2TimMessageChangeInfo>
 ## 代码示例  &#x20;
 
 ```dart
-// 通过消息id查找到需要修改的消息
-V2TimValueCallback<List<V2TimMessage>> msgListRes = await TencentImSDKPlugin
-    .v2TIMManager
-    .getMessageManager()
-    .findMessages(messageIDList: ['msgid']);// 查找需要修改消息的id
-// 编辑消息
-  if(msgListRes.code == 0){
-    List<V2TimMessage> messageList = msgListRes.data;
-    if(messageList.isNotEmpty){
-      V2TimMessage originMessage = messageList[0];
-      originMessage.cloudCustomData = "change data";// 修改消息的信息
-     V2TimValueCallback<V2TimMessageChangeInfo> modify = await TencentImSDKPlugin
-         .v2TIMManager
-         .getMessageManager()
-         .modifyMessage(message: originMessage);
-     if(modify.code == 0){
-       if(modify.data.code ==0){
-         // 修改成功
-       }
-     }
+    // 通过消息id查找到需要修改的消息
+    V2TimValueCallback<List<V2TimMessage>> msgListRes = await TencentImSDKPlugin
+        .v2TIMManager
+        .getMessageManager()
+        .findMessages(messageIDList: ['msgid']); // 查找需要修改消息的id
+    // 编辑消息
+    if (msgListRes.code == 0) {
+      List<V2TimMessage>? messageList = msgListRes.data;
+      if (messageList!.isNotEmpty) {
+        V2TimMessage originMessage = messageList[0];
+        originMessage.cloudCustomData = "change data"; // 修改消息的信息
+        V2TimValueCallback<V2TimMessageChangeInfo> modifyMessageRes =
+            await TencentImSDKPlugin.v2TIMManager
+                .getMessageManager()
+                .modifyMessage(message: originMessage);
+        if (modifyMessageRes.code == 0) {
+          if (modifyMessageRes.data?.code == 0) {
+            // 修改成功
+          }
+        }
+      }
     }
-  }
 ```

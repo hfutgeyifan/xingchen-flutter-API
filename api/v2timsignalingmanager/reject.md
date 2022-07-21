@@ -1,5 +1,5 @@
 ---
-description: 接收方拒绝邀请
+description: 接收方拒绝邀请√
 ---
 
 # reject

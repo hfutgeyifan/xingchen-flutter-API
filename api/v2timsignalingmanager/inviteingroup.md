@@ -1,5 +1,5 @@
 ---
-description: 邀请群内的某些人
+description: 邀请群内的某些人√
 ---
 
 # inviteInGroup

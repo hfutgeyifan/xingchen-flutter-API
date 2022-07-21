@@ -1,5 +1,5 @@
 ---
-description: 添加信令监听器
+description: 添加信令监听器√
 ---
 
 # addSignalingListener

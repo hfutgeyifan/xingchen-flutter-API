@@ -1,5 +1,5 @@
 ---
-description: 添加高级消息的事件监听器
+description: 添加高级消息的事件监听器√
 ---
 
 # addAdvancedMsgListener

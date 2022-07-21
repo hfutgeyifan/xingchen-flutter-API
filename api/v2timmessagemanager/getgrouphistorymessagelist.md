@@ -1,5 +1,5 @@
 ---
-description: 获取群组历史消息
+description: 获取群组历史消息√
 ---
 
 # getGroupHistoryMessageList
@@ -53,12 +53,18 @@ V2TimValueCallback<List<V2TimMessage>>
 ## 代码示例  &#x20;
 
 ```dart
-// 拉取单聊历史消息
-// 首次拉取，lastMsgID 设置为 null
-// 再次拉取时，lastMsgID 可以使用返回的消息列表中的最后一条消息的id
-TencentImSDKPlugin.v2TIMManager.getMessageManager().getGroupHistoryMessageList(
-        groupID: "groupID",// 单聊用户id
-        count: 10,// 拉取数据数量
-        lastMsgID: null,// 拉取起始消息id
-);
+    // 拉取单聊历史消息
+    // 首次拉取，lastMsgID 设置为 null
+    // 再次拉取时，lastMsgID 可以使用返回的消息列表中的最后一条消息的id
+    V2TimValueCallback<List<V2TimMessage>> getGroupHistoryMessageListRes =
+        await TencentImSDKPlugin.v2TIMManager
+            .getMessageManager()
+            .getGroupHistoryMessageList(
+              groupID: "groupID", // 单聊用户id
+              count: 10, // 拉取数据数量
+              lastMsgID: null, // 拉取起始消息id
+            );
+    if (getGroupHistoryMessageListRes.code == 0) {
+      //获取成功
+    }
 ```

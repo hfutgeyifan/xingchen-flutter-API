@@ -1,5 +1,5 @@
 ---
-description: 清空单聊本地及云端的消息（不删除会话）
+description: 清空单聊本地及云端的消息（不删除会话）√
 ---
 
 # clearC2CHistoryMessage
@@ -41,11 +41,12 @@ V2TimCallback
 ## 代码示例  &#x20;
 
 ```dart
-// 清空单聊本地及云端的消息（不删除会话）
-TencentImSDKPlugin
-    .v2TIMManager
-    .getMessageManager()
-    .clearC2CHistoryMessage(
-    userID: "userID"，// 需要清空记录的用户id
-    );
+    //清空单聊本地及云端的消息（不删除会话）
+    V2TimCallback clearC2CHistoryMessageRes = await TencentImSDKPlugin
+        .v2TIMManager
+        .getMessageManager()
+        .clearC2CHistoryMessage(userID: "userID"); // 需要清空记录的用户id
+    if (clearC2CHistoryMessageRes.code == 0) {
+      //清除成功
+    }
 ```

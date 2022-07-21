@@ -1,5 +1,5 @@
 ---
-description: 获取会话列表
+description: 获取会话列表√
 ---
 
 # getConversationList

@@ -1,5 +1,5 @@
 ---
-description: 设置用户消息接收选项
+description: 设置用户消息接收选项√
 ---
 
 # setC2CReceiveMessageOpt
@@ -42,8 +42,15 @@ V2TimCallback
 ## 代码示例  &#x20;
 
 ```dart
-// 设置在线和离线都不接收消息
-    TencentImSDKPlugin.v2TIMManager.getMessageManager().setC2CReceiveMessageOpt(
-        userIDList: ['user1', 'user2'],// 需要设置的用户id列表
-        opt: ReceiveMsgOptEnum.V2TIM_NOT_RECEIVE_MESSAGE);// 用户消息接收选项属性
+    //设置用户消息接收选项
+    // 设置在线和离线都不接收消息
+    V2TimCallback setC2CReceiveMessageOptRes = await TencentImSDKPlugin
+        .v2TIMManager
+        .getMessageManager()
+        .setC2CReceiveMessageOpt(
+            userIDList: ['user1', 'user2'], // 需要设置的用户id列表
+            opt: ReceiveMsgOptEnum.V2TIM_NOT_RECEIVE_MESSAGE); // 用户消息接收选项属性
+    if (setC2CReceiveMessageOptRes.code == 0) {
+      //设置成功
+    }
 ```

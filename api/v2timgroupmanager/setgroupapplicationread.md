@@ -1,5 +1,5 @@
 ---
-description: 标记所有群组申请列表为已读
+description: 标记所有群组申请列表为已读√
 ---
 
 # setGroupApplicationRead

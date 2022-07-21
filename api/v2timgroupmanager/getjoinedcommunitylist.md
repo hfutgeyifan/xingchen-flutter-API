@@ -1,5 +1,5 @@
 ---
-description: 获取当前用户已经加入的支持话题的社群列表
+description: 获取当前用户已经加入的支持话题的社群列表√
 ---
 
 # getJoinedCommunityList

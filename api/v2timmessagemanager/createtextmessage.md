@@ -1,5 +1,5 @@
 ---
-description: 创建文本消息
+description: 创建文本消息√
 ---
 
 # createTextMessage

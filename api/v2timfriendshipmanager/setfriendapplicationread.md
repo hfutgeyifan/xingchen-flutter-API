@@ -1,5 +1,5 @@
 ---
-description: 设置好友申请已读
+description: 设置好友申请已读√
 ---
 
 # setFriendApplicationRead

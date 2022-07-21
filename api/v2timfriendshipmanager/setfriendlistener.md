@@ -1,5 +1,5 @@
 ---
-description: 设置关系链监听器
+description: 设置关系链监听器√
 ---
 
 # setFriendListener

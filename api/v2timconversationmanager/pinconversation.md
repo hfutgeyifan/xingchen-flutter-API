@@ -1,5 +1,5 @@
 ---
-description: 会话置顶
+description: 会话置顶√
 ---
 
 # pinConversation

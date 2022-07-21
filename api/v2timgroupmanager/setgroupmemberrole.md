@@ -1,5 +1,5 @@
 ---
-description: 设置群成员的角色
+description: 设置群成员的角色√
 ---
 
 # setGroupMemberRole
@@ -54,7 +54,7 @@ V2TimCallback
           userID: "userID",// 被设置角色的用户id
           role: GroupMemberRoleTypeEnum.V2TIM_GROUP_MEMBER_ROLE_ADMIN// 用户被设置的角色属性
           );
-    if (setGroupMemberRoleRes == 0) {
+    if (setGroupMemberRoleRes.code == 0) {
       // 设置成功
     }
 ```

@@ -1,5 +1,5 @@
 ---
-description: 离线推送功能入
+description: 离线推送功能入√
 ---
 
 # getOfflinePushManager

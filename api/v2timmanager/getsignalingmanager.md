@@ -1,5 +1,5 @@
 ---
-description: 信令入口
+description: 信令入口√
 ---
 
 # getSignalingManager

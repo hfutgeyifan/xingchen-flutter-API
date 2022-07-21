@@ -1,5 +1,5 @@
 ---
-description: 高级消息功能入口
+description: 高级消息功能入口√
 ---
 
 # getMessageManager

@@ -1,5 +1,5 @@
 ---
-description: 修改指定的群成员资料
+description: 修改指定的群成员资料√
 ---
 
 # setGroupMemberInfo
@@ -47,7 +47,7 @@ V2TimCallback
           groupID: "groupID",// 需要修改的群组id
           userID: "userID",// 需要修改的用户id
           nameCard: "",// 修改名片属性
-          customInfo: {"custom":"custom"}// 修改自定义属性 
+          customInfo: {"custom":"custom"}// 修改自定义属性 需开通此功能
           );
     if (setGroupMemberInfoRes.code == 0) {
       // 修改成功

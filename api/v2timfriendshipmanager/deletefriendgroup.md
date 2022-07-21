@@ -1,5 +1,5 @@
 ---
-description: 删除好友分组
+description: 删除好友分组√
 ---
 
 # deleteFriendGroup

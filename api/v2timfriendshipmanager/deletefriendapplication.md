@@ -1,5 +1,5 @@
 ---
-description: 删除好友申请
+description: 删除好友申请√
 ---
 
 # deleteFriendApplication
@@ -41,7 +41,7 @@ V2TimCallback
         .v2TIMManager
         .getFriendshipManager()
         .deleteFriendApplication(
-          type: FriendApplicationTypeEnum.V2TIM_FRIEND_APPLICATION_BOTH,//加好友类型
+          type: FriendApplicationTypeEnum.V2TIM_FRIEND_APPLICATION_BOTH,//加好友类型 要与getApplicationList查询到的type相同，否则会报错。
           userID: "",//被删除好友申请的用户id
         );
     if (deleteFriendApplicationRes.code == 0) {

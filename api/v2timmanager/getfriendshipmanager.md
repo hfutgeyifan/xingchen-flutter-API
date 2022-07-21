@@ -1,5 +1,5 @@
 ---
-description: 关系链功能入口
+description: 关系链功能入口√
 ---
 
 # getFriendshipManager

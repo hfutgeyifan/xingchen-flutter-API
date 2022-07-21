@@ -1,5 +1,5 @@
 ---
-description: 创建话题
+description: 创建话题√
 ---
 
 # createTopicInCommunity
@@ -8,7 +8,7 @@ description: 创建话题
 
 创建话题
 
-* 4.0.1及以上版本支持
+* 4.0.1及以上版本支持，就算为
 
 {% hint style="info" %}
 注意：

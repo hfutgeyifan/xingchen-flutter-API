@@ -1,5 +1,5 @@
 ---
-description: 标记所有消息为已读
+description: 标记所有消息为已读√
 ---
 
 # markAllMessageAsRead
@@ -41,12 +41,12 @@ V2TimCallback
 ## 代码示例  &#x20;
 
 ```dart
-// 标记所有消息为已读
-    V2TimCallback markAllMessageAsReadRes =
-        await TencentImSDKPlugin.v2TIMManager
-            .getMessageManager()
-            .markAllMessageAsRead()
-    if(markAllMessageAsReadRes.code==0){
+    // 标记所有消息为已读
+    V2TimCallback markAllMessageAsReadRes = await TencentImSDKPlugin
+        .v2TIMManager
+        .getMessageManager()
+        .markAllMessageAsRead();
+    if (markAllMessageAsReadRes.code == 0) {
       // 标记成功
     }
 ```

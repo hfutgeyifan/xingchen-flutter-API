@@ -1,5 +1,5 @@
 ---
-description: 设置群组监听器
+description: 设置群组监听器√
 ---
 
 # setGroupListener

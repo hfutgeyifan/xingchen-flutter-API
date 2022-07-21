@@ -1,5 +1,5 @@
 ---
-description: 新建好友分组
+description: 新建好友分组√
 ---
 
 # createFriendGroup
@@ -51,7 +51,7 @@ V2TimValueCallback<List<V2TimFriendOperationResult>>
       createFriendGroupRes.data?.forEach((element) {
         element.resultCode;//此条操作的错误码
         element.resultInfo;//此条操作的结果描述
-        element.userID;//此条操作的用户id
+        element.userID;//此条被操作的用户id
       });
     }
 ```

@@ -1,5 +1,5 @@
 ---
-description: 搜索好友
+description: 搜索好友√
 ---
 
 # searchFriends

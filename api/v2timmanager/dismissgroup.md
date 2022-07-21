@@ -1,5 +1,5 @@
 ---
-description: 解散群组
+description: 解散群组√
 ---
 
 # dismissGroup
@@ -46,14 +46,10 @@ V2TimCallback
 ## 代码示例  &#x20;
 
 ```dart
-// 事件监听
-    TencentImSDKPlugin.v2TIMManager.addGroupListener(
-        listener: V2TimGroupListener(onGroupDismissed: (groupID, opUser) {
-      // 群被解散
-    }, onGroupRecycled: (groupID, opUser) {
-      // 群被回收
-    }));
-// 解散群组
-    TencentImSDKPlugin.v2TIMManager.dismissGroup(groupID: "groupID");// 需要解散的群组id
-
+    // 解散群组
+    V2TimCallback dismissGroupRes = await TencentImSDKPlugin.v2TIMManager
+        .dismissGroup(groupID: "groupID"); // 需要解散的群组id
+    if (dismissGroupRes.code == 0) {
+      //解散成功
+    }
 ```

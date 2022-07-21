@@ -1,5 +1,5 @@
 ---
-description: 获取指定会话
+description: 获取指定会话√
 ---
 
 # getConversation

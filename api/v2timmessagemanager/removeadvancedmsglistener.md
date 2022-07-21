@@ -1,5 +1,5 @@
 ---
-description: 移除高级消息监听器
+description: 移除高级消息监听器√
 ---
 
 # removeAdvancedMsgListener

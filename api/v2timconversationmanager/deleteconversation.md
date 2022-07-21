@@ -1,5 +1,5 @@
 ---
-description: 删除会话
+description: 删除会话√
 ---
 
 # deleteConversation

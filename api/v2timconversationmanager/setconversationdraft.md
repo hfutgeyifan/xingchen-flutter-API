@@ -1,5 +1,5 @@
 ---
-description: 设置会话草稿
+description: 设置会话草稿√
 ---
 
 # setConversationDraft

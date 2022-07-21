@@ -1,5 +1,5 @@
 ---
-description: 拒绝好友申请
+description: 拒绝好友申请√
 ---
 
 # refuseFriendApplication

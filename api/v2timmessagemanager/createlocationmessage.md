@@ -1,5 +1,5 @@
 ---
-description: 创建位置信息
+description: 创建位置信息√
 ---
 
 # createLocationMessage
@@ -54,7 +54,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult> createLocationMessage =
             latitude: 20, // 纬度
           );
   if (createLocationMessage.code == 0) {
-    String id = createLocationMessage.data.id;
+    String? id = createLocationMessage.data?.id;
        // 发送位置消息
        // 在sendMessage时，若只填写receiver则发个人用户单聊消息
        //                 若只填写groupID则发群组消息
@@ -62,7 +62,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult> createLocationMessage =
     V2TimValueCallback<V2TimMessage> sendMessageRes = await TencentImSDKPlugin
         .v2TIMManager
         .getMessageManager()
-        .sendMessage(id: id, receiver: "userID", groupID: "groupID");
+        .sendMessage(id: id!, receiver: "userID", groupID: "groupID");
     if (sendMessageRes.code == 0) {
       // 发送成功
     }

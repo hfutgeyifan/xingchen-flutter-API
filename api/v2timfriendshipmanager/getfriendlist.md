@@ -1,5 +1,5 @@
 ---
-description: 获取好友列表
+description: 获取好友列表√
 ---
 
 # getFriendList

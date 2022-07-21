@@ -1,5 +1,5 @@
 ---
-description: 会话功能入口
+description: 会话功能入口√
 ---
 
 # getConversationManager

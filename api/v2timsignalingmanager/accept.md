@@ -1,5 +1,5 @@
 ---
-description: 接收方接受邀请
+description: 接收方接受邀请√
 ---
 
 # accept

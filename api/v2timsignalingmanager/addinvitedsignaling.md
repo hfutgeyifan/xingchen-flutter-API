@@ -1,5 +1,5 @@
 ---
-description: 创建一个信令请求
+description: 创建一个信令请求√
 ---
 
 # addInvitedSignaling

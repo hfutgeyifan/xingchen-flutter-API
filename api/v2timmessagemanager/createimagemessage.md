@@ -1,5 +1,5 @@
 ---
-description: 创建图片消息（图片文件最大支持 28 MB）
+description: 创建图片消息（图片文件最大支持 28 MB）√
 ---
 
 # createImageMessage

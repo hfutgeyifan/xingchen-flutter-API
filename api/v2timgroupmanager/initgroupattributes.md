@@ -1,5 +1,5 @@
 ---
-description: 初始化群属性
+description: 初始化群属性√
 ---
 
 # initGroupAttributes
@@ -52,6 +52,7 @@ V2TimCallback
 ## 代码示例
 
 ```dart
+    // 注意：需要先调用joinGroup进入直播群才能进行设置
     // 初始化群属性
     V2TimCallback initGroupAttributesRes = await TencentImSDKPlugin.v2TIMManager
         .getGroupManager()

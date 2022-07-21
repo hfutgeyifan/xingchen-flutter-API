@@ -1,5 +1,5 @@
 ---
-description: 添加多Element消息
+description: 添加多Element消息√
 ---
 
 # appendMessage
@@ -79,7 +79,7 @@ V2TimValueCallback<V2TimMessage>
 ## 代码示例  &#x20;
 
 ```dart
-    // 创建文本消息
+     // 创建文本消息
     V2TimValueCallback<V2TimMsgCreateInfoResult> createTextMessageRes =
         await TencentImSDKPlugin.v2TIMManager
             .getMessageManager()
@@ -95,23 +95,26 @@ V2TimValueCallback<V2TimMessage>
             );
     if (createTextMessageRes.code == 0 && createAppendMessageRes.code == 0) {
       // 文本信息创建成功
-      String id = createTextMessageRes.data.id;
-      String appendId=createAppendMessageRes.data.id
+      String? id = createTextMessageRes.data?.id;
+      String? appendId = createAppendMessageRes.data?.id;
       // 为第一个消息添加一个Text消息
-      V2TimValueCallback<V2TimMessage> appendMessageRes = await TencentImSDKPlugin.v2TIMManager
-          .getMessageManager().appendMessage(createMessageBaseId: id, createMessageAppendId: appendId)
-          if(appendMessageRes.code==0){
-      // 发送文本消息
-      // 在sendMessage时，若只填写receiver则发个人用户单聊消息
-      //                 若只填写groupID则发群组消息
-      //                 若填写了receiver与groupID则发群内的个人用户，消息在群聊中显示，只有指定receiver能看见
-      V2TimValueCallback<V2TimMessage> sendMessageRes = await TencentImSDKPlugin
-          .v2TIMManager
-          .getMessageManager()
-          .sendMessage(id: appendMessageRes.data.id, receiver: "userID", groupID: "groupID");
-      if (sendMessageRes.code == 0) {
-        // 发送成功
-        // append的Text消息在sendMessageRes.data.textElem.nextElem中
+      V2TimValueCallback<V2TimMessage> appendMessageRes =
+          await TencentImSDKPlugin.v2TIMManager
+              .getMessageManager()
+              .appendMessage(
+                  createMessageBaseId: id!, createMessageAppendId: appendId!);
+      if (appendMessageRes.code == 0) {
+        // 发送文本消息
+        // 在sendMessage时，若只填写receiver则发个人用户单聊消息
+        //                 若只填写groupID则发群组消息
+        //                 若填写了receiver与groupID则发群内的个人用户，消息在群聊中显示，只有指定receiver能看见
+        V2TimValueCallback<V2TimMessage> sendMessageRes =
+            await TencentImSDKPlugin.v2TIMManager
+                .getMessageManager()
+                .sendMessage(id: id, receiver: "userID", groupID: "groupID");//注意此时的id为被添加的消息id
+        if (sendMessageRes.code == 0) {
+          // 发送成功
+          // append的Text消息在sendMessageRes.data.textElem.nextElem中
         }
       }
     }

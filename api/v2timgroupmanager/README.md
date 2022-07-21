@@ -31,7 +31,6 @@ description: 群组高级接口，包含了群组的高级功能，例如群成�
 | [kickGroupMember](kickgroupmember.md)                     | 踢人                    |
 | [muteGroupMember](mutegroupmember.md)                     | 禁言（只有管理员或群主能够调用）      |
 | [refuseGroupApplication](refusegroupapplication.md)       | 拒绝某一条加群申请             |
-| [searchGroupByID](searchgroupbyid.md)                     | 通过 groupID 搜索群组       |
 | [searchGroupMembers](searchgroupmembers.md)               | 搜索群成员                 |
 | [searchGroups](searchgroups.md)                           | 搜索群资料                 |
 | [setGroupApplicationRead](setgroupapplicationread.md)     | 标记申请列表为已读             |

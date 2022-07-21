@@ -1,5 +1,5 @@
 ---
-description: 设置单聊消息已读
+description: 设置单聊消息已读√
 ---
 
 # markC2CMessageAsRead
@@ -42,11 +42,11 @@ V2TimCallback
 
 ```dart
     // 设置单聊消息已读
-    V2TimCallback markC2CMessageAsReadRes =
-        await TencentImSDKPlugin.v2TIMManager
-            .getMessageManager()
-            .markC2CMessageAsRead(userID: "userID")// 需要设置消息已读的用户id
-    if(markC2CMessageAsReadRes.code==0){
+    V2TimCallback markC2CMessageAsReadRes = await TencentImSDKPlugin
+        .v2TIMManager
+        .getMessageManager()
+        .markC2CMessageAsRead(userID: "userID"); // 需要设置消息已读的用户id
+    if (markC2CMessageAsReadRes.code == 0) {
       // 标记成功
     }
 ```

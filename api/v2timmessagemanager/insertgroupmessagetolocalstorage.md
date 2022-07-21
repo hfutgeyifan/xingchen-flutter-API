@@ -1,5 +1,5 @@
 ---
-description: 向群组消息列表中添加一条消息
+description: 向群组消息列表中添加一条消息√
 ---
 
 # insertGroupMessageToLocalStorage
@@ -87,12 +87,16 @@ V2TimValueCallback<V2TimMessage>
 ## 代码示例  &#x20;
 
 ```dart
-// 向群组消息列表中添加一条消息
-TencentImSDKPlugin.v2TIMManager
-.getMessageManager()
-.insertGroupMessageToLocalStorage(
-        data: "data", // 文本消息内容
-        groupID: "groupID", // 接收群组id
-        sender: "sender"// 发送者id
-        );
+    // 向群组消息列表中添加一条消息
+    V2TimValueCallback<V2TimMessage> insertGroupMessageToLocalStorageRes =
+        await TencentImSDKPlugin.v2TIMManager
+            .getMessageManager()
+            .insertGroupMessageToLocalStorage(
+                data: "data", // 文本消息内容
+                groupID: "groupID", // 接收群组id
+                sender: "sender" // 发送者id
+                );
+    if (insertGroupMessageToLocalStorageRes.code == 0) {
+      //添加成功
+    }
 ```

@@ -1,5 +1,5 @@
 ---
-description: 设置离线推送配置信息
+description: 设置离线推送配置信息√
 ---
 
 # setOfflinePushConfig

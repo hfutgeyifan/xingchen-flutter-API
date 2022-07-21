@@ -1,5 +1,5 @@
 ---
-description: 修改群资料
+description: 修改群资料√
 ---
 
 # setGroupInfo
@@ -52,18 +52,18 @@ V2TimCallback
       groupID: 'groupID',// 需要修改的群组id
       groupType: "Public",// 群类型
       groupName: 'groupName',// 群名
-      isSupportTopic: false,// 是否支持话题
+      isSupportTopic: false,// 是否支持话题 不支持修改此属性，在创建时确定
       notification: "",// 群公告
       introduction: "",// 群介绍
       faceUrl: "",// 群头像Url
       isAllMuted: false,// 是否全体禁言
       groupAddOpt: 0,// 入群设置
-      customInfo: {"custom": "custom"},// 群自定义属性
+      customInfo: {"custom": "custom"},// 群自定义属性 旗舰版支持此参数
     );
     V2TimCallback setGroupInfoRes = await TencentImSDKPlugin.v2TIMManager
         .getGroupManager()
         .setGroupInfo(info: info);
-    if (setGroupInfoRes == 0) {
+    if (setGroupInfoRes.code == 0) {
       // 修改成功
     }
 ```

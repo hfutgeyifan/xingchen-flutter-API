@@ -1,5 +1,5 @@
 ---
-description: 登出
+description: 登出√
 ---
 
 # logout
@@ -40,10 +40,10 @@ V2TimValueCallback
 ## 代码示例  &#x20;
 
 ```dart
-// 在用户登陆成功之后可调用
-// 调用logout登出当前用户账号
-V2TimCallback logoutRes = await TencentImSDKPlugin.v2TIMManager.logout();
-if(logoutRes.code == 0){
-    // 登出成功的逻辑
-}
+    // 在用户登陆成功之后可调用
+    // 调用logout登出当前用户账号
+    V2TimCallback logoutRes = await TencentImSDKPlugin.v2TIMManager.logout();
+    if (logoutRes.code == 0) {
+      // 登出成功的逻辑
+    }
 ```

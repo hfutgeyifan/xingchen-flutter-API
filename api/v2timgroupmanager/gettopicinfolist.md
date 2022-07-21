@@ -1,5 +1,5 @@
 ---
-description: 获取话题属性的列表
+description: 获取话题属性的列表√
 ---
 
 # getTopicInfoList

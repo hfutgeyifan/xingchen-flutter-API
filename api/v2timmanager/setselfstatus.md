@@ -1,5 +1,5 @@
 ---
-description: 设置当前登录用户在线状态
+description: 设置当前登录用户在线状态√
 ---
 
 # setSelfStatus

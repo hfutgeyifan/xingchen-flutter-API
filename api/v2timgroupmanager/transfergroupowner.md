@@ -1,5 +1,5 @@
 ---
-description: 转让群主
+description: 转让群主√
 ---
 
 # transferGroupOwner
@@ -51,7 +51,7 @@ V2TimCallback
           groupID: "groupID",
           userID: "userID",
           );
-    if (transferGroupOwnerRes == 0) {
+    if (transferGroupOwnerRes.code == 0) {
       // 转让成功
     }
 ```

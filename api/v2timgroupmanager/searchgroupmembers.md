@@ -1,5 +1,5 @@
 ---
-description: 搜索群成员
+description: 搜索群成员√
 ---
 
 # searchGroupMembers
@@ -8,7 +8,7 @@ description: 搜索群成员
 
 搜索群成员
 
-* SDK 会在本地搜索指定群 ID 列表中，群成员信息（名片、好友备注、昵称、userID）包含于关键字列表 keywordList 的所有群成员并返回群 ID 和群成员列表的 map，关键字列表最多支持5个。
+* SDK 会在本地搜索指定群 ID 列表中，群成员信息（名片、好友备注、昵称、userID）包含于关键字列表 keywordList 的所有群成员并返回群 ID 和群成员列表的 map，如搜索不到请先调用getGroupMemberList将成员信息存储到本地数据库再调用此接口进行搜索，关键字列表最多支持5个。
 
 {% hint style="info" %}
 注意：

@@ -1,5 +1,5 @@
 ---
-description: 踢人
+description: 踢人√
 ---
 
 # kickGroupMember
@@ -49,13 +49,12 @@ V2TimCallback
 
 ```dart
     //群组踢人
-    V2TimCallback kickGroupMemberRes = await TencentImSDKPlugin.v2TIMManager
-        .getGroupManager()
-        .kickGroupMember(
-          groupID: "groupID",// 需要踢人的群组id
-          memberList: [],// 踢出的用户id列表
-          reason: ""// 踢出原因
-          );
+    V2TimCallback kickGroupMemberRes =
+        await TencentImSDKPlugin.v2TIMManager.getGroupManager().kickGroupMember(
+            groupID: "groupID", // 需要踢人的群组id
+            memberList: [], // 踢出的用户id列表
+            reason: "" // 踢出原因
+            );
     if (kickGroupMemberRes.code == 0) {
       // 踢出成功
     }

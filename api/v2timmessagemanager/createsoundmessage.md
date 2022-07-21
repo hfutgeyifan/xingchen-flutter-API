@@ -47,7 +47,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>
 // 创建音频消息
   V2TimValueCallback<V2TimMsgCreateInfoResult> createSoundMessageRes =
       await TencentImSDKPlugin.v2TIMManager.getMessageManager().createSoundMessage(
-        soundPath: "本地录音文件绝对路径",
+        soundPath: "本地录音文件绝对路径",// 不能使用网络Url
         duration: 10,// 录音时长，需要用户自己读取
       );
   if (createSoundMessageRes.code == 0) {

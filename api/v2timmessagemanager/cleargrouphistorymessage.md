@@ -1,5 +1,5 @@
 ---
-description: 清空群聊本地及云端的消息（不删除会话）
+description: 清空群聊本地及云端的消息（不删除会话）√
 ---
 
 # clearGroupHistoryMessage
@@ -41,11 +41,12 @@ V2TimCallback
 ## 代码示例  &#x20;
 
 ```dart
-// 清空群聊本地及云端的消息（不删除会话）
-TencentImSDKPlugin
-    .v2TIMManager
-    .getMessageManager()
-    .clearGroupHistoryMessage(
-    groupID: "groupID"，// 需要清空记录的群组id
-    );
+    // 清空群聊本地及云端的消息（不删除会话）
+    V2TimCallback clearGroupHistoryMessageRes = await TencentImSDKPlugin
+        .v2TIMManager
+        .getMessageManager()
+        .clearGroupHistoryMessage(groupID: "groupID"); // 需要清空记录的群组id
+    if (clearGroupHistoryMessageRes.code == 0) {
+      //清除成功
+    }
 ```

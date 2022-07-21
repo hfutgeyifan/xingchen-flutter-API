@@ -1,5 +1,5 @@
 ---
-description: 退出群组
+description: 退出群组√
 ---
 
 # quitGroup
@@ -43,12 +43,11 @@ V2TimCallback
 
 ```dart
 // 加入群组
-    V2TimCallback quitGroupRes = await TencentImSDKPlugin.v2TIMManager
-        .quitGroup(
-          groupID: "groupID",// 需要退出的群组 ID
+    V2TimCallback quitGroupRes =
+        await TencentImSDKPlugin.v2TIMManager.quitGroup(
+      groupID: "groupID",
+    ); // 需要退出的群组 ID
     if (quitGroupRes.code == 0) {
       // 退出成功
     }
-    
-    
 ```

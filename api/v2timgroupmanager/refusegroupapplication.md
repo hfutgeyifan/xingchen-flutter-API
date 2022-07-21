@@ -1,5 +1,5 @@
 ---
-description: 拒绝某一条加群申请
+description: 拒绝某一条加群申请√
 ---
 
 # refuseGroupApplication
@@ -61,15 +61,16 @@ V2TimCallback
               .v2TIMManager
               .getGroupManager()
               .refuseGroupApplication(
-                groupID: element.groupID,// 加入的群组id
-                fromUser: "",//  请求者id
-                toUser: "",// 判决者id
-                reason: "",// 拒绝原因
-                addTime: element.addTime,// 申请时间
-                type: GroupApplicationTypeEnum.V2TIM_GROUP_APPLICATION_GET_TYPE_INVITE,// 申请类型
-                webMessageInstance: "",// 对应【群系统通知】的消息实例
+                groupID: element.groupID, // 加入的群组id
+                fromUser: element.fromUser!, //  请求者id
+                toUser: element.toUser!, // 判决者id
+                reason: "", // 拒绝原因
+                addTime: element.addTime!, // 申请时间
+                type: GroupApplicationTypeEnum
+                    .V2TIM_GROUP_APPLICATION_GET_TYPE_INVITE, // 申请类型
+                webMessageInstance: "", // 对应【群系统通知】的消息实例
               );
-        if (refuseGroupApplicationRes.code == 0) {
+          if (refuseGroupApplicationRes.code == 0) {
             // 拒绝成功
           }
         }

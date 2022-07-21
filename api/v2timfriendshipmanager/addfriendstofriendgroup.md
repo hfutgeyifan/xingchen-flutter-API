@@ -1,5 +1,5 @@
 ---
-description: 添加好友到一个好友分组
+description: 添加好友到一个好友分组√
 ---
 
 # addFriendsToFriendGroup
@@ -51,7 +51,7 @@ V2TimValueCallback<List<V2TimFriendOperationResult>>
       addFriendsToFriendGroupRes.data?.forEach((element) {
         element.resultCode;//此条记录的错误码
         element.resultInfo;//此条记录的操作结果描述
-        element.userID;//被操作的用户id
+        element.userID;//此条记录被操作的用户id
       });
     }
 ```

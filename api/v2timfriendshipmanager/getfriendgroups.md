@@ -1,5 +1,5 @@
 ---
-description: 获取分组信息
+description: 获取分组信息√
 ---
 
 # getFriendGroups
@@ -43,7 +43,7 @@ V2TimValueCallback<List<V2TimFriendGroup>>
     V2TimValueCallback<List<V2TimFriendGroup>> getFriendGroupsRes =
         await TencentImSDKPlugin.v2TIMManager
             .getFriendshipManager()
-            .getFriendGroups(groupNameList: []);
+            .getFriendGroups(groupNameList: []);//要获取信息的好友分组名称列表
     if (getFriendGroupsRes.code == 0) {
       // 查询成功
       getFriendGroupsRes.data?.forEach((element) {

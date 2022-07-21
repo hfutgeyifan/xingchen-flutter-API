@@ -1,5 +1,5 @@
 ---
-description: 同意好友申请
+description: 同意好友申请√
 ---
 
 # acceptFriendApplication
@@ -49,7 +49,7 @@ V2TimValueCallback<V2TimFriendOperationResult>
             .getFriendshipManager()
             .acceptFriendApplication(
                 responseType: FriendResponseTypeEnum.V2TIM_FRIEND_ACCEPT_AGREE,//建立好友关系时选择单向/双向好友关系
-                type: FriendApplicationTypeEnum.V2TIM_FRIEND_APPLICATION_BOTH,//加好友类型
+                type: FriendApplicationTypeEnum.V2TIM_FRIEND_APPLICATION_BOTH,//加好友类型 要与getApplicationList查询到的type相同，否则会报错。
                 userID: "");//同意好友的用户id
     if (acceptFriendApplicationRes.code == 0) {
       // 同意成功

@@ -1,5 +1,5 @@
 ---
-description: 移除关系链监听器
+description: 移除关系链监听器√
 ---
 
 # removeFriendListener

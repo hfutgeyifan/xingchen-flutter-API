@@ -1,5 +1,5 @@
 ---
-description: 删除本地消息
+description: 删除本地消息√
 ---
 
 # deleteMessageFromLocalStorage
@@ -41,9 +41,12 @@ V2TimCallback
 ## 代码示例  &#x20;
 
 ```dart
-// 删除本地消息
-TencentImSDKPlugin
-    .v2TIMManager
-    .getMessageManager()
-    .deleteMessageFromLocalStorage(msgID: "");// 需要删除的消息id
+    // 删除本地消息
+    V2TimCallback deleteMessageFromLocalStorageRes = await TencentImSDKPlugin
+        .v2TIMManager
+        .getMessageManager()
+        .deleteMessageFromLocalStorage(msgID: ""); // 需要删除的消息id
+    if (deleteMessageFromLocalStorageRes.code == 0) {
+      //删除成功
+    }
 ```

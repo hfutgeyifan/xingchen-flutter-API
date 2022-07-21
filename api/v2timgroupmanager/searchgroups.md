@@ -1,5 +1,5 @@
 ---
-description: 搜索群资料
+description: 搜索群资料√
 ---
 
 # searchGroups
@@ -9,12 +9,6 @@ description: 搜索群资料
 搜索群资料
 
 * SDK 会搜索群名称包含于关键字列表 keywordList 的所有群并返回群信息列表。关键字列表最多支持5个。
-
-{% hint style="info" %}
-注意：
-
-web 不支持关键字搜索搜索, 请使用[searchGroupByID](searchgroupbyid.md)
-{% endhint %}
 
 ## 参数详解
 
