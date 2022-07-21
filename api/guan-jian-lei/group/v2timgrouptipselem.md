@@ -50,12 +50,12 @@ description: 群 tips 消息会存消息列表，群里所有的人都会展示�
 
 ### groupChangeInfoList
 
-* 参数类型 : List< V2TimGroupChangeInfo >
+* 参数类型 : List< [V2TimGroupChangeInfo](v2timgroupchangeinfo.md) >
 * 参数描述：群信息变更
 
 ### memberChangeInfoList
 
-* 参数类型 : List< V2TimGroupMemberChangeInfo >
+* 参数类型 : List< [V2TimGroupMemberChangeInfo](v2timgroupmemberchangeinfo.md) >
 * 参数描述：成员变更
 
 ### memberCount

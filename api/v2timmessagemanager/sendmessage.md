@@ -8,7 +8,7 @@ description: 发送消息√
 
 发送消息
 
-* 发送消息方法在核心类 `TencentImSDKPlugin.`[`v2TIMManager`](../v2timmanager/)`.`[`getMessageManager`](../v2timmanager/getmessagemanager.md)`()`中。
+* 发送消息方法在核心类 `TencentImSDKPlugin.`[`v2TIMManager`](../v2timmanager/README.md)`.`[`getMessageManager`](../v2timmanager/getmessagemanager.md)`()`中。
 * [`V2TimMessage`](../guan-jian-lei/message/v2timmessage.md) 中可以携带不同类型子类，表示不同类型的消息。
 * 发送消息首先通过createXXXMessage创建不同种类的信息，再通过[sendMessage](sendmessage.md)根据消息id发送。
 
