@@ -11,6 +11,8 @@ description: 设置用户消息接收选项√
 * 您可以通过参数 userIDList 设置一批用户，但一次最大允许设置 30 个用户
 
 {% hint style="info" %}
+注意：
+
 该接口调用频率被限制为 1 秒内最多调用 5 次。
 {% endhint %}
 

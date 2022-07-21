@@ -9,13 +9,15 @@ description: 创建自定义群组√
 创建自定义群组
 
 {% hint style="info" %}
-不支持在同一个 SDKAppID 下创建两个相同 groupID 的群
+注意：
 
-memberList 指定初始的群成员（直播群 AVChatRoom 不支持指定初始群成员，memberList 请传 null）
+1. 不支持在同一个 SDKAppID 下创建两个相同 groupID 的群
 
-社群（Community）功能仅 SDK 5.8.1668 增强版及以上版本、Web SDK 2.17.0 及以上版本支持，您需 [购买旗舰版套餐包](https://buy.cloud.tencent.com/avc?from=17182) 并 [申请开通](https://cloud.tencent.com/document/product/269/3916?from=17212) 后方可使用。
+2. memberList 指定初始的群成员（直播群 AVChatRoom 不支持指定初始群成员，memberList 请传 null）
 
-专业版或旗舰版 SDKAppID 下，所有群类型日净增群组数上限为 1 万个。免费峰值群组数为 10 万个/月，超出免费量将产生 [套餐外超量费用](https://cloud.tencent.com/document/product/269/11673#jc)。
+3. 社群（Community）功能仅 SDK 5.8.1668 增强版及以上版本、Web SDK 2.17.0 及以上版本支持，您需 [购买旗舰版套餐包](https://buy.cloud.tencent.com/avc?from=17182) 并 [申请开通](https://cloud.tencent.com/document/product/269/3916?from=17212) 后方可使用。
+
+4. 专业版或旗舰版 SDKAppID 下，所有群类型日净增群组数上限为 1 万个。免费峰值群组数为 10 万个/月，超出免费量将产生 [套餐外超量费用](https://cloud.tencent.com/document/product/269/11673#jc)。
 {% endhint %}
 
 ## 参数详解

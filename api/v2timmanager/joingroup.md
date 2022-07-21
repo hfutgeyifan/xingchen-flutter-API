@@ -13,7 +13,9 @@ description: 加入群组√
 * 其他群：可以直接入群。
 
 {% hint style="info" %}
-注意：当在web端时，加入直播群时groupType字段必填
+注意：
+
+当在web端时，加入直播群时groupType字段必填
 {% endhint %}
 
 ## 参数详解

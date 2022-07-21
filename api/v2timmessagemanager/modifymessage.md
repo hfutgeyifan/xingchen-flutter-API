@@ -12,16 +12,19 @@ description: 消息变更 4.0.1及以后版本支持√
 * 修改消息时，IM SDK 仅限制了会话参与者才能修改，如果您需要更多限制，比如限制只有消息发送者才能修改，可以自行在业务层处理。
 
 {% hint style="info" %}
+注意：
+
 目前消息支持修改的信息如下：
-1、`localCustomData` 
 
-2、`localCustomInt` 
+1. localCustomData
 
-3、`cloudCustomData` 
+2. localCustomInt
 
-4、`V2TIMTextElem` 
+3. cloudCustomData
 
-5、`V2TIMCustomElem`&#x20;
+4. V2TIMTextElem
+
+5. V2TIMCustomElem
 {% endhint %}
 
 ## 参数详解

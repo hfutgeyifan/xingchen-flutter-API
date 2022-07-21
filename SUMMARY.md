@@ -249,7 +249,7 @@
   * [ReceiveMsgOptEnum](api/enums/receivemsgoptenum.md)
   * [SimpleMsgListenerType](api/enums/simplemsglistenertype.md)
   * [UserStatusType](api/enums/userstatustype.md)
-  * [V2TIM\_IMAGE\_TYPE](api/enums/v2tim\_image\_type.md)
+  * [V2TIM\_IMAGE\_TYPE](api/enums/v2tim_image_type.md)
   * [V2TIMKeywordListMatchType](api/enums/v2timkeywordlistmatchtype.md)
 * [Callbacks](api/callbacks/README.md)
   * [VoidCallback](api/callbacks/voidcallback.md)

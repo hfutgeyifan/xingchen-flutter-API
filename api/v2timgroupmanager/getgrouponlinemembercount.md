@@ -9,6 +9,8 @@ description: 获取指定群在线人数√
 获取指定群在线人数
 
 {% hint style="info" %}
+注意：
+
 1. 目前仅直播群（AVChatRoom）支持获取群在线人数。
 2. SDK 调用频率限制为 60 秒 1 次。
 {% endhint %}

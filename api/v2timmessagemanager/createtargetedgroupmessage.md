@@ -15,7 +15,7 @@ description: 创建一条定向群消息√
 3. 调用 [`sendMessage`](sendmessage.md) 接口发送定向消息。
 
 {% hint style="info" %}
-注意事项：
+注意：
 
 1. 仅Flutter sdk 3.8.0 及以上版本支持。
 2. 该功能需要购买旗舰版套餐包。

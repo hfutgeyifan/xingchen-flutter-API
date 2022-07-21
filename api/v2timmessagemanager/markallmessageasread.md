@@ -10,10 +10,6 @@ description: 标记所有消息为已读√
 
 * 调用次API后会收到 [`onConversationChanged`](../callbacks/onconversationchangedcallback.md) 回调，可以在此回调中更新 UI。
 
-{% hint style="info" %}
-清空会话未读消息数功能仅增强版 5.8.1668 及以上版本支持。
-{% endhint %}
-
 ## 参数详解
 
 {% hint style="info" %}

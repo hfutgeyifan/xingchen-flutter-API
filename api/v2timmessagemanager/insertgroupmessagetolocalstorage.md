@@ -14,7 +14,9 @@ description: 向群组消息列表中添加一条消息√
 * 通过该接口 save 的消息只存本地，程序卸载后会丢失。
 
 {% hint style="info" %}
-注意： web不支持该接口
+注意： 
+
+web不支持该接口
 {% endhint %}
 
 ## 参数详解

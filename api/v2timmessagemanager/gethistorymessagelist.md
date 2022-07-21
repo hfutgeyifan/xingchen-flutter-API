@@ -15,11 +15,10 @@ description: 获取历史消息高级接口√
 * 支持拉取本地指定的消息类型：文本、图片、语音、视频、文件、表情、群 tips 消息、合并消息、自定义消息等。
 
 {% hint style="info" %}
-请注意：&#x20;
+注意：
 
 1. 如果设置为拉取云端消息，当 SDK 检测到没有网络，默认会直接返回本地数据 只有会议群（Meeting）才能拉取到进群前的历史消息，直播群（AVChatRoom）消息不存漫游和本地数据库，调用这个接口无效
-
-&#x20; 2\. web 端使用该接口，消息都是从远端拉取，不支持lastMsgSeq
+2. web 端使用该接口，消息都是从远端拉取，不支持lastMsgSeq
 {% endhint %}
 
 ## 参数详解
@@ -32,7 +31,7 @@ description: 获取历史消息高级接口√
 | lastMsgSeq      | int                                                        | 否    | 最后一条消息 seq，表示从哪条消息开始拉取历史消息                  |
 | count           | int                                                        | 是    | 单次拉取的消息数量                                   |
 | lastMsgID       | String                                                     | 否    | lastMsgID                                   |
-| messageTypeList | List\<int>                                                 | 否    | 用于过滤历史信息属性，若为空则拉取所有属性信息。                    |
+| messageTypeList | List< int >                                                 | 否    | 用于过滤历史信息属性，若为空则拉取所有属性信息。                    |
 
 ## 返回值
 
