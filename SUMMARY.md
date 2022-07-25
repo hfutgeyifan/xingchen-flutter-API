@@ -2,12 +2,6 @@
 
 * [Flutter](README.md)
 
-## demo体验
-
-## 快速集成
-
-## UIKit SDK API
-
 ## SDKAPI
 
 * [V2TIMManager](api/v2timmanager/README.md)
