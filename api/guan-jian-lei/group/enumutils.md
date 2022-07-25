@@ -13,7 +13,7 @@ description: 根据GroupMemberRoleTypeEnum生成GroupMemberRoleType
 ### convertGroupMemberRoleTypeEnum
 
 * 参数类型 : [GroupMemberRoleTypeEnum](../../enums/groupmemberroletypeenum.md)
-* 参数描述：根据[GroupMemberRoleTypeEnum](../../enums/groupmemberroletypeenum.md)生成[GroupMemberRoleType](../../enums/groupmemberroletype.md)
+* 参数描述 : 根据[GroupMemberRoleTypeEnum](../../enums/groupmemberroletypeenum.md)生成[GroupMemberRoleType](../../enums/groupmemberroletype.md)
 
 {% hint style="info" %}
 200:群成员

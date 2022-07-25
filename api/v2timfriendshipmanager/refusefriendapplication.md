@@ -42,16 +42,29 @@ V2TimValueCallback<V2TimFriendOperationResult>
 ## 代码示例
 
 ```dart
-    V2TimValueCallback<V2TimFriendOperationResult> refuseFriendApplicationRes =
-        await TencentImSDKPlugin.v2TIMManager
+    //获取好友申请列表
+    V2TimValueCallback<V2TimFriendApplicationResult>
+        getFriendApplicationListRes = await TencentImSDKPlugin.v2TIMManager
             .getFriendshipManager()
-            .refuseFriendApplication(
-                type: FriendApplicationTypeEnum.V2TIM_FRIEND_APPLICATION_BOTH,//拒绝好友类型
-                userID: "");//拒绝好友的用户id
-    if (refuseFriendApplicationRes.code == 0) {
-      // 拒绝成功
-      refuseFriendApplicationRes.data?.resultCode;//操作结果错误码
-      refuseFriendApplicationRes.data?.resultInfo;//操作结果描述
-      refuseFriendApplicationRes.data?.userID;//拒绝好友的id
+            .getFriendApplicationList();
+    if (getFriendApplicationListRes.code == 0) {
+      // 查询成功
+      getFriendApplicationListRes.data?.unreadCount; //未读申请数量
+      getFriendApplicationListRes.data?.friendApplicationList
+          ?.forEach((element) async {
+        V2TimValueCallback<V2TimFriendOperationResult>
+            refuseFriendApplicationRes = await TencentImSDKPlugin.v2TIMManager
+                .getFriendshipManager()
+                .refuseFriendApplication(
+                    type: FriendApplicationTypeEnum
+                        .values[element!.type], //拒绝好友类型
+                    userID: ""); //拒绝好友的用户id
+        if (refuseFriendApplicationRes.code == 0) {
+          // 拒绝成功
+          refuseFriendApplicationRes.data?.resultCode; //操作结果错误码
+          refuseFriendApplicationRes.data?.resultInfo; //操作结果描述
+          refuseFriendApplicationRes.data?.userID; //拒绝好友的id
+        }
+      });
     }
 ```

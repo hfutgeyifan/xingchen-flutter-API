@@ -34,7 +34,6 @@ description: 提供高级消息处理相关接口
 | [getC2CHistoryMessageList](getc2chistorymessagelist.md)                     | 获取单聊历史消息                                              |
 | [getGroupHistoryMessageList](getgrouphistorymessagelist.md)                 | 获取群组历史消息                                              |
 | [getHistoryMessageList](gethistorymessagelist.md)                           | 获取历史消息高级接口                                            |
-| [getHistoryMessageListWithoutFormat](gethistorymessagelistwithoutformat.md) | 获取历史消息高级接口(没有处理Native返回数据)                            |
 | [appendMessage](appendmessage.md)                                           | 添加多Element消息                                          |
 | [reSendMessage](resendmessage.md)                                           | 消息重发                                                  |
 | [sendReplyMessage](sendreplymessage.md)                                     | 发送回复消息                                                |
@@ -49,7 +48,6 @@ description: 提供高级消息处理相关接口
 | [clearGroupHistoryMessage](cleargrouphistorymessage.md)                     | 清空群聊本地及云端的消息（不删除会话）                                   |
 | [insertC2CMessageToLocalStorage](insertc2cmessagetolocalstorage.md)         | 向C2C消息列表中添加一条消息                                       |
 | [insertGroupMessageToLocalStorage](insertgroupmessagetolocalstorage.md)     | 向群组消息列表中添加一条消息                                        |
-| [findMessages](findmessages.md)                                             | 根据 messageID 查询指定会话中的本地消息                             |
 | [searchLocalMessages](searchlocalmessages.md)                               | 搜索本地消息                                                |
 | [sendMessageReadReceipts](sendmessagereadreceipts.md)                       | 发送消息已读回执                                              |
 | [getMessageReadReceipts](getmessagereadreceipts.md)                         | 获取消息已读回执                                              |

@@ -13,47 +13,47 @@ description: 群申请信息
 ### groupID
 
 * 参数类型 : String
-* 参数描述：群组 ID
+* 参数描述 : 群组 ID
 
 ### fromUser
 
 * 参数类型 : String
-* 参数描述：请求者 userID
+* 参数描述 : 请求者 userID
 
 ### fromUserNickName
 
 * 参数类型 : String
-* 参数描述：请求者昵称
+* 参数描述 : 请求者昵称
 
 ### fromUserFaceUrl
 
 * 参数类型 : String
-* 参数描述：请求者头像
+* 参数描述 : 请求者头像
 
 ### toUser
 
 * 参数类型 : String
-* 参数描述：判决者id，有人请求加群:0，邀请其他人加群:被邀请人用户 ID
+* 参数描述 : 判决者id，有人请求加群:0，邀请其他人加群:被邀请人用户 ID
 
 ### addTime
 
 * 参数类型 : int
-* 参数描述：申请时间
+* 参数描述 : 申请时间
 
 ### requestMsg
 
 * 参数类型 : String
-* 参数描述：申请或邀请附加信息
+* 参数描述 : 申请或邀请附加信息
 
 ### handledMsg
 
 * 参数类型 : String
-* 参数描述：审批信息：同意或拒绝信息
+* 参数描述 : 审批信息：同意或拒绝信息
 
 ### type
 
 * 参数类型 : int
-* 参数描述：请求类型
+* 参数描述 : 请求类型
 
 {% hint style="info" %}
 0:申请入群
@@ -64,7 +64,7 @@ description: 群申请信息
 ### handleStatus
 
 * 参数类型 : int
-* 参数描述：处理标志
+* 参数描述 : 处理标志
 
 {% hint style="info" %}
 0:未处理
@@ -77,7 +77,7 @@ description: 群申请信息
 ### handleResult
 
 * 参数类型 : int
-* 参数描述：处理结果
+* 参数描述 : 处理结果
 
 {% hint style="info" %}
 0:拒绝申请
@@ -88,4 +88,4 @@ description: 群申请信息
 ### toJson
 
 * 参数类型 : Map< String, dynamic > toJson()
-* 参数描述：返回群申请信息的JSON格式
+* 参数描述 : 返回群申请信息的JSON格式

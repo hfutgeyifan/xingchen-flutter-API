@@ -13,7 +13,7 @@ description: 创建文本消息，并且可以附带 @ 提醒功能
 | 参数名称       | 参数类型           | 是否必填 | 描述      |
 | ---------- | -------------- | ---- | ------- |
 | text       | String         | 是    | 消息文本    |
-| atUserList | List< String > | 是    | @用户ID列表 |
+| atUserList | List< String > | 是    | @用户ID列表，如果需要 @ALL，请传入 kImSDK_MesssageAtALL 常量字符串。 |
 
 ## 返回值
 

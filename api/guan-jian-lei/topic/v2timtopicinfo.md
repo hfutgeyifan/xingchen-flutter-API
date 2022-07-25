@@ -13,47 +13,47 @@ description: 话题信息属性
 ### topicID
 
 * 参数类型 : String
-* 参数描述：话题 ID
+* 参数描述 : 话题 ID
 
 ### topicName
 
 * 参数类型 : String
-* 参数描述：话题名称
+* 参数描述 : 话题名称
 
 ### topicFaceUrl
 
 * 参数类型 : String
-* 参数描述：话题头像
+* 参数描述 : 话题头像
 
 ### introduction
 
 * 参数类型 : String
-* 参数描述：话题介绍
+* 参数描述 : 话题介绍
 
 ### notification
 
 * 参数类型 : String
-* 参数描述：话题公告
+* 参数描述 : 话题公告
 
 ### isAllMute
 
 * 参数类型 : bool
-* 参数描述：话题全员禁言
+* 参数描述 : 话题全员禁言
 
 ### selfMuteTime
 
 * 参数类型 : int
-* 参数描述：当前用户在话题中的禁言时间
+* 参数描述 : 当前用户在话题中的禁言时间
 
 ### customString
 
 * 参数类型 : String
-* 参数描述：话题自定义字段
+* 参数描述 : 话题自定义字段
 
 ### recvOpt
 
 * 参数类型 : int
-* 参数描述：话题消息接收选项，修改话题消息接收选项请调用 [setGroupReceiveMessageOpt](../../v2timmessagemanager/setgroupreceivemessageopt.md) 接口
+* 参数描述 : 话题消息接收选项，修改话题消息接收选项请调用 [setGroupReceiveMessageOpt](../../v2timmessagemanager/setgroupreceivemessageopt.md) 接口
 
 {% hint style="info" %}
 0:在线正常接收消息，离线时会进行 APNs 推送
@@ -66,25 +66,25 @@ description: 话题信息属性
 ### draftText
 
 * 参数类型 : String
-* 参数描述：话题草稿
+* 参数描述 : 话题草稿
 
 ### unreadCount
 
 * 参数类型 : int
-* 参数描述：话题消息未读数量
+* 参数描述 : 话题消息未读数量
 
 ### lastMessage
 
 * 参数类型 : [V2TimMessage](../message/v2timmessage.md)
-* 参数描述：话题最新消息
+* 参数描述 : 话题最新消息
 
 ### groupAtInfoList
 
 * 参数类型 : List< [V2TimGroupAtInfo](../group/v2timgroupatinfo.md) >
-* 参数描述：话题 at 信息列表
+* 参数描述 : 话题 at 信息列表
 
 ### toJson
 
 * 参数类型 : Map< String, dynamic > toJson()
-* 参数描述：返回话题信息属性的JSON格式
+* 参数描述 : 返回话题信息属性的JSON格式
 

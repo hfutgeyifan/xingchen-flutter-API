@@ -10,6 +10,7 @@ description: 消息重发√
 
 * 当环境网络环境较差或文件上传失败等原因会导致信息发送失败，此时需要调用消息重发的API。
 * 具体消息发送失败的原因可见sendMessage返回的错误码。
+* 当使用reSendMessage时，需要将原来发送的消息[删除](deletemessages.md)。
 
 ## 参数详解
 

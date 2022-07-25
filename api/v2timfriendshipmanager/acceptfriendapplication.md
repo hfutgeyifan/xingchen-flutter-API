@@ -43,18 +43,31 @@ V2TimValueCallback<V2TimFriendOperationResult>
 ## 代码示例
 
 ```dart
-    //同意好友申请
-    V2TimValueCallback<V2TimFriendOperationResult> acceptFriendApplicationRes =
-        await TencentImSDKPlugin.v2TIMManager
+    //获取好友申请列表
+    V2TimValueCallback<V2TimFriendApplicationResult>
+        getFriendApplicationListRes = await TencentImSDKPlugin.v2TIMManager
             .getFriendshipManager()
-            .acceptFriendApplication(
-                responseType: FriendResponseTypeEnum.V2TIM_FRIEND_ACCEPT_AGREE,//建立好友关系时选择单向/双向好友关系
-                type: FriendApplicationTypeEnum.V2TIM_FRIEND_APPLICATION_BOTH,//加好友类型 要与getApplicationList查询到的type相同，否则会报错。
-                userID: "");//同意好友的用户id
-    if (acceptFriendApplicationRes.code == 0) {
-      // 同意成功
-      acceptFriendApplicationRes.data?.resultCode;//操作结果错误码
-      acceptFriendApplicationRes.data?.resultInfo;//操作结果描述
-      acceptFriendApplicationRes.data?.userID;//同意好友的id
+            .getFriendApplicationList();
+    if (getFriendApplicationListRes.code == 0) {
+      // 查询成功
+      getFriendApplicationListRes.data?.unreadCount; //未读申请数量
+      getFriendApplicationListRes.data?.friendApplicationList
+          ?.forEach((element) async {
+        //同意好友申请
+        V2TimValueCallback<V2TimFriendOperationResult>
+            acceptFriendApplicationRes = await TencentImSDKPlugin.v2TIMManager
+                .getFriendshipManager()
+                .acceptFriendApplication(
+                    responseType: FriendResponseTypeEnum
+                        .V2TIM_FRIEND_ACCEPT_AGREE, //建立好友关系时选择单向/双向好友关系
+                    type: FriendApplicationTypeEnum.values[element!.type], //加好友类型 要与getApplicationList查询到的type相同，否则会报错。
+                    userID: ""); //同意好友的用户id
+        if (acceptFriendApplicationRes.code == 0) {
+          // 同意成功
+          acceptFriendApplicationRes.data?.resultCode; //操作结果错误码
+          acceptFriendApplicationRes.data?.resultInfo; //操作结果描述
+          acceptFriendApplicationRes.data?.userID; //同意好友的id
+        }
+      });
     }
 ```

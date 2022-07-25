@@ -13,17 +13,17 @@ description: 会话搜索结果单体属性
 ### conversationID
 
 * 参数类型 : String
-* 参数描述：会话ID
+* 参数描述 : 会话ID
 
 ### messageCount
 
 * 参数类型 : int
-* 参数描述：当前会话一共搜索到了多少条符合要求的消息
+* 参数描述 : 当前会话一共搜索到了多少条符合要求的消息
 
 ### messageList
 
 * 参数类型 : List< [V2TimMessage](v2timmessage.md) >
-* 参数描述：满足搜索条件的消息列表
+* 参数描述 : 满足搜索条件的消息列表
 
 {% hint style="info" %}
 
@@ -39,4 +39,4 @@ description: 会话搜索结果单体属性
 ### toJson
 
 * 参数类型 : Map< String, dynamic > toJson()
-* 参数描述：返回会话搜索结果单体属性的JSON格式
+* 参数描述 : 返回会话搜索结果单体属性的JSON格式

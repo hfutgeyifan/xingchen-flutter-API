@@ -66,8 +66,7 @@ V2TimCallback
                 toUser: element.toUser!, // 判决者id
                 reason: "", // 同意原因
                 addTime: element.addTime, // 申请时间
-                type: GroupApplicationTypeEnum
-                    .V2TIM_GROUP_APPLICATION_GET_TYPE_INVITE, // 申请类型
+                type: GroupApplicationTypeEnum.values[element.type], // 申请类型
                 webMessageInstance: "", // 对应【群系统通知】的消息实例
               );
           if (acceptGroupApplicationRes.code == 0) {

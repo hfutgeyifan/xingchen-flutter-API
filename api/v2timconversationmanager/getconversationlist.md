@@ -18,9 +18,9 @@ description: 获取会话列表√
 
 该接口拉取的是本地缓存的会话，如果服务器会话有更新，SDK 内部会自动同步，然后在 [`V2TIMConversationListener`](../guan-jian-lei/listener/v2timconversationlistener.md) 回调告知客户。
 
-在某些场景下，可能出现会话的 `lastMessage` 为空（例如清空会话消息）。如果您使用 5.5.892 以前的 SDK，使用 `lastMessage` 排序时需要额外处理这种异常。我们建议您升级到 5.5.892 及以后的版本，使用 `orderKey` 字段排序。
+在某些场景下，可能出现会话的 `lastMessage` 为空（例如清空会话消息）。如果您使用 3.8.0 以前的 SDK，使用 `lastMessage` 排序时需要额外处理这种异常。我们建议您升级到 3.8.0 及以后的版本，使用 `orderKey` 字段排序。
 
-最多能拉取到最近的5000个会话。
+最多能拉取到最近的500个会话（默认为100，旗舰版可升级至500）。
 {% endhint %}
 
 ## 参数详解

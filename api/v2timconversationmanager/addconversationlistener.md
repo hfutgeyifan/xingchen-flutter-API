@@ -12,6 +12,8 @@ description: 添加会话监听器√
 注意：
 
 添加监听器后，您才能接收到会话变更事件。
+
+使用addConversationListener会在所有的会话监听器列表中新增一个会话监听器。
 {% endhint %}
 
 ## 参数详解

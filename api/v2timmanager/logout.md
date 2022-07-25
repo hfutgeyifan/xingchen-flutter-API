@@ -22,7 +22,7 @@ description: 登出√
 ## 返回值
 
 ```dart
-V2TimValueCallback
+V2TimCallback
 
 {
     code : int

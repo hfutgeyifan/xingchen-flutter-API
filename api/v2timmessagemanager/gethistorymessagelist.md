@@ -31,7 +31,7 @@ description: 获取历史消息高级接口√
 | lastMsgSeq      | int                                                        | 否    | 最后一条消息 seq，表示从哪条消息开始拉取历史消息                  |
 | count           | int                                                        | 是    | 单次拉取的消息数量                                   |
 | lastMsgID       | String                                                     | 否    | lastMsgID                                   |
-| messageTypeList | List< int >                                                 | 否    | 用于过滤历史信息属性，若为空则拉取所有属性信息。                    |
+| messageTypeList | List< int >                                                 | 否    | 用于过滤历史信息属性，若为空则拉取所有属性信息。详情见[MessageElemType](../enums/messageelemtype.md)                    |
 
 ## 返回值
 

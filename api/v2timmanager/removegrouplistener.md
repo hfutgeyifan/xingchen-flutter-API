@@ -8,6 +8,12 @@ description: 移除群组监听器√
 
 移除群组监听器
 
+{% hint style="info" %}
+注意：
+
+若listener为null则删除所有群组监听器
+{% endhint %}
+
 ## 参数详解
 
 | 参数名称     | 参数类型                                                                  | 是否必填 | 描述         |

@@ -4,7 +4,7 @@ description: 好友请求数量减少的回调
 
 # OnFriendApplicationListDeletedCallback
 
-## 回调函数功能描述
+## 功能介绍
 
 好友请求数量减少的回调
 
@@ -16,7 +16,7 @@ List<String> userIDList
 )
 ```
 
-## 回调函数参数说明
+## 参数详解
 
 | 参数名称       | 参数类型           | 参数描述             |
 | ---------- | -------------- | ---------------- |

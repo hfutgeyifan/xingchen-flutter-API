@@ -11,7 +11,7 @@ description: 向C2C消息列表中添加一条消息√
 * 只能插入文本消息，参数data为本文内容
 * 该接口主要用于满足向C2C聊天会话中插入一些提示性消息的需求，比如“您已成功发送消息”，这类消息有展示 在聊天消息区的需求，但并没有发送给其他人的必要。
 * insertC2CMessageToLocalStorage() 相当于一个被禁用了网络发送能力的 [sendMessage](sendmessage.md)() 接口。
-* 通过该接口 save 的消息只存本地，程序卸载后会丢失。
+* 通过该接口 insert 的消息只存本地，程序卸载后会丢失。
 
 {% hint style="info" %}
 注意： 

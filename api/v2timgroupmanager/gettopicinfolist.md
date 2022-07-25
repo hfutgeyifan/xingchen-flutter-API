@@ -60,7 +60,7 @@ V2TimValueCallback<List<V2TimTopicInfoResult>>
       // 查询成功
       getTopicInfoListoRes.data?.forEach((element) {
         element.errorCode;// 查询结果错误码
-        element.errorMessage;。// 查询结果描述
+        element.errorMessage;// 查询结果描述
         element.topicInfo?.customString;// 此条话题的自定义信息
         element.topicInfo?.draftText;// 此条话题的草稿
         element.topicInfo?.groupAtInfoList;// 此条话题的@信息列表

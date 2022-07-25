@@ -8,11 +8,17 @@ description: 移除高级消息监听器√
 
 移除高级消息监听器
 
+{% hint style="info" %}
+注意：
+
+若listener为null则删除所有的高级消息监听器
+{% endhint %}
+
 ## 参数详解
 
 | 参数名称     | 参数类型                                                                              | 是否必填 | 描述       |
 | -------- | --------------------------------------------------------------------------------- | ---- | -------- |
-| listener | [V2TimAdvancedMsgListener](../guan-jian-lei/listener/v2timadvancedmsglistener.md) | 是    | 需要移除的监听器 |
+| listener | [V2TimAdvancedMsgListener](../guan-jian-lei/listener/v2timadvancedmsglistener.md) | 是    | 需要移除的高级消息监听器 |
 
 ## 返回值
 

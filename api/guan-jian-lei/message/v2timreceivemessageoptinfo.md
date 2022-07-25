@@ -13,12 +13,12 @@ description: 用户接收消息设置的属性
 ### userID
 
 * 参数类型 : String
-* 参数描述：用户 ID
+* 参数描述 : 用户 ID
 
 ### c2CReceiveMessageOpt
 
 * 参数类型 : int
-* 参数描述：消息接收选项用户接收消息设置的属性
+* 参数描述 : 消息接收选项用户接收消息设置的属性
 
 {% hint style="info" %}
 0:在线正常接收消息，离线时会进行离线推送
@@ -31,4 +31,4 @@ description: 用户接收消息设置的属性
 ### toJson
 
 * 参数类型 : Map< String, dynamic > toJson()
-* 参数描述：返回用户接收消息设置的属性的JSON格式
+* 参数描述 : 返回用户接收消息设置的属性的JSON格式

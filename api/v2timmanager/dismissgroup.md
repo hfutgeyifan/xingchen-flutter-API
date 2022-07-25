@@ -14,7 +14,7 @@ description: 解散群组√
 {% hint style="info" %}
 注意：
 
-Work：任何人都无法解散群组。&#x20;
+Work：只有app管理员可以解散群组。&#x20;
 
 其他群：群主可以解散群组。
 {% endhint %}

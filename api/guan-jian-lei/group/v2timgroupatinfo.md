@@ -13,12 +13,12 @@ description: 群组@ 信息
 ### seq
 
 * 参数类型 : String
-* 参数描述：@ 消息序列号，即带有 “@我” 或者 “@所有人” 标记的消息的序列号
+* 参数描述 : @ 消息序列号，即带有 “@我” 或者 “@所有人” 标记的消息的序列号
 
 ### memberInfoList
 
 * 参数类型 : int
-* 参数描述：@ 提醒类型
+* 参数描述 : @ 提醒类型
 
 {% hint style="info" %}
 0:@我
@@ -31,4 +31,4 @@ description: 群组@ 信息
 ### toJson
 
 * 参数类型 : Map< String, dynamic > toJson()
-* 参数描述：返回群组@ 信息的JSON格式
+* 参数描述 : 返回群组@ 信息的JSON格式

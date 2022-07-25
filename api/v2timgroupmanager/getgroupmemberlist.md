@@ -26,7 +26,7 @@ description: 获取群成员列表√
 | groupID | String                                                             | 是    | 需要查询的群组 ID                                             |
 | filter  | [GroupMemberFilterTypeEnum](../enums/groupmemberfiltertypeenum.md) | 是    | 查询群成员类型                                                |
 | nextSeq | String                                                             | 是    | 分页拉取标志，第一次拉取填0，回调成功如果 nextSeq 不为零，需要分页，传入返回值再次拉取，直至为0。 |
-| count   | int                                                                | 否    | 需要拉取的数量。最大值：100，避免回包过大导致请求失败。若传入超过100，则只拉取前100个。       |
+| count   | int                                                                | 否    | 需要拉取的数量。count暂时失效。       |
 | offset  | int                                                                | 否    | 偏移量，默认从0开始拉取。                                          |
 
 ## 返回值

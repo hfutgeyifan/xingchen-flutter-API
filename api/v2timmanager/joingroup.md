@@ -8,8 +8,8 @@ description: 加入群组√
 
 加入群组
 
-* 工作群（Work）：不能主动入群，只能通过群成员调用 [`V2TIMManager`](./README.md)`.`[`getGroupManager`](getgroupmanager.md)`().`[`inviteUserToGroup`](../v2timgroupmanager/inviteusertogroup.md)`()` 接口邀请入群。
-* 公开群（Public）：申请入群后，需要管理员审批，管理员在收到 [V2TIMGroupListener](../guan-jian-lei/listener/v2timgrouplistener.md) 的 [`onReceiveJoinApplication`](../callbacks/onreceivejoinapplicationcallback.md) 回调后调用 [`V2TIMManager`](./README.md)`.`[`getGroupManager`](getgroupmanager.md)`().`[`getGroupApplicationList`](../v2timgroupmanager/getgroupapplicationlist.md)`()` 接口处理加群请求。
+* 工作群（Work）：不能主动入群，只能通过群成员调用 [`V2TIMManager`](./README.md).[`getGroupManager`](getgroupmanager.md)().[`inviteUserToGroup`](../v2timgroupmanager/inviteusertogroup.md)()接口邀请入群。
+* 公开群（Public）：申请入群后，根据群组的[groupAddOpt](../guan-jian-lei/group/v2timgroupinfo.md)确定是否需要审批。如果需要，管理员在收到 [V2TIMGroupListener](../guan-jian-lei/listener/v2timgrouplistener.md) 的 [`onReceiveJoinApplication`](../callbacks/onreceivejoinapplicationcallback.md) 回调后调用 [`V2TIMManager`](./README.md).[`getGroupManager`](getgroupmanager.md)().[`getGroupApplicationList`](../v2timgroupmanager/getgroupapplicationlist.md)()接口处理加群请求。
 * 其他群：可以直接入群。
 
 {% hint style="info" %}

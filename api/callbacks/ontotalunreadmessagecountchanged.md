@@ -4,7 +4,7 @@ description: 会话未读总数变更通知
 
 # OnTotalUnreadMessageCountChanged
 
-## 回调函数功能描述
+## 功能介绍
 
 会话未读总数变更通知
 
@@ -18,7 +18,7 @@ int totalUnreadCount
 )
 ```
 
-## 回调函数参数说明
+## 参数详解
 
 | 参数名称             | 参数类型 | 参数描述   |
 | ---------------- | ---- | ------ |

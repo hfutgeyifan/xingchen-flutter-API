@@ -13,12 +13,12 @@ description: 群 tips 消息会存消息列表，群里所有的人都会展示�
 ### groupID
 
 * 参数类型 : String
-* 参数描述：群组 ID
+* 参数描述 : 群组 ID
 
 ### type
 
 * 参数类型 : int
-* 参数描述：群Tips类型
+* 参数描述 : 群Tips类型
 
 {% hint style="info" %}
 1:主动入群（memberList 加入群组，非 Work 群有效）
@@ -41,29 +41,29 @@ description: 群 tips 消息会存消息列表，群里所有的人都会展示�
 ### opMember
 
 * 参数类型 : [V2TimGroupMemberInfo](v2timgroupmemberinfo.md)
-* 参数描述：操作者群成员资料
+* 参数描述 : 操作者群成员资料
 
 ### memberList
 
 * 参数类型 : List< [V2TimGroupMemberInfo](v2timgroupmemberinfo.md) >
-* 参数描述：被操作人列表
+* 参数描述 : 被操作人列表
 
 ### groupChangeInfoList
 
 * 参数类型 : List< [V2TimGroupChangeInfo](v2timgroupchangeinfo.md) >
-* 参数描述：群信息变更
+* 参数描述 : 群信息变更
 
 ### memberChangeInfoList
 
 * 参数类型 : List< [V2TimGroupMemberChangeInfo](v2timgroupmemberchangeinfo.md) >
-* 参数描述：成员变更
+* 参数描述 : 成员变更
 
 ### memberCount
 
 * 参数类型 : int
-* 参数描述：当前群人数
+* 参数描述 : 当前群人数
 
 ### toJson
 
 * 参数类型 : Map< String, dynamic > toJson()
-* 参数描述：返回查询群组用户信息结果的JSON格式
+* 参数描述 : 返回查询群组用户信息结果的JSON格式

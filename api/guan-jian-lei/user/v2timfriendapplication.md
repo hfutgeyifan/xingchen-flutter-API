@@ -13,37 +13,37 @@ description: 好友申请信息
 ### userID
 
 * 参数类型 : String
-* 参数描述：用户 ID
+* 参数描述 : 用户 ID
 
 ### nickName
 
 * 参数类型 : String
-* 参数描述：用户昵称
+* 参数描述 : 用户昵称
 
 ### faceUrl
 
 * 参数类型 : String
-* 参数描述：用户头像
+* 参数描述 : 用户头像
 
 ### addTime
 
 * 参数类型 : int
-* 参数描述：添加时间
+* 参数描述 : 添加时间
 
 ### addSource
 
 * 参数类型 : String
-* 参数描述：来源
+* 参数描述 : 来源
 
 ### addWording
 
 * 参数类型 : String
-* 参数描述：加好友附言
+* 参数描述 : 加好友附言
 
 ### type
 
 * 参数类型 : int
-* 参数描述：好友申请类型
+* 参数描述 : 好友申请类型
 
 {% hint style="info" %}
 0:别人发给我的
@@ -56,4 +56,4 @@ description: 好友申请信息
 ### toJson
 
 * 参数类型 : Map< String, dynamic > toJson()
-* 参数描述：返回好友申请信息的JSON格式
+* 参数描述 : 返回好友申请信息的JSON格式

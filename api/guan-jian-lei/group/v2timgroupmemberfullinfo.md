@@ -13,12 +13,12 @@ description: 群组成员详细信息
 ### userID
 
 * 参数类型 : String
-* 参数描述：群成员 userID
+* 参数描述 : 群成员 userID
 
 ### role
 
 * 参数类型 : int
-* 参数描述：群成员角色
+* 参数描述 : 群成员角色
 
 {% hint style="info" %}
 1:群成员
@@ -31,39 +31,39 @@ description: 群组成员详细信息
 ### muteUntil
 
 * 参数类型 : int
-* 参数描述：禁言持续时间
+* 参数描述 : 群成员禁言结束时间戳
 
 ### joinTime
 
 * 参数类型 : int
-* 参数描述：群成员入群时间，自动生成，不可修改。
+* 参数描述 : 群成员入群时间，自动生成，不可修改。
 
 ### customInfo
 
 * 参数类型 : Map< String, String >
-* 参数描述：群成员自定义字段
+* 参数描述 : 群成员自定义字段
 
 ### nickName
 
 * 参数类型 : String
-* 参数描述：群成员昵称
+* 参数描述 : 群成员昵称
 
 ### nameCard
 
 * 参数类型 : String
-* 参数描述：群成员名片
+* 参数描述 : 群成员名片
 
 ### friendRemark
 
 * 参数类型 : String
-* 参数描述：好友备注
+* 参数描述 : 好友备注
 
 ### faceUrl
 
 * 参数类型 : String
-* 参数描述：用户头像 url
+* 参数描述 : 用户头像 url
 
 ### toJson
 
 * 参数类型 : Map< String, dynamic > toJson()
-* 参数描述：返回群组成员详细信息的JSON格式
+* 参数描述 : 返回群组成员详细信息的JSON格式

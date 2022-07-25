@@ -9,13 +9,14 @@ description: 添加多Element消息√
 添加多Element消息
 
 * 为一个消息添加额外的消息，一般用于为图片消息添加text消息进行描述等场景。
+* 只能在创建message的阶段进行appendMessage操作。
 
 ## 参数详解
 
 | 参数名称                  | 参数类型   | 是否必填 | 描述               |
 | --------------------- | ------ | ---- | ---------------- |
-| createMessageBaseId   | String | 是    | 需要添加Element的消息id |
-| createMessageAppendId | String | 是    | 添加的消息id          |
+| createMessageBaseId   | String | 是    | 需要添加Element的创建的消息id |
+| createMessageAppendId | String | 是    | 添加的创建消息id          |
 
 ## 返回值
 

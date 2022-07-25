@@ -13,14 +13,14 @@ description: 加群申请列表
 ### unreadCount
 
 * 参数类型 : int
-* 参数描述：未读的申请数量
+* 参数描述 : 未读的申请数量
 
 ### groupApplicationList
 
 * 参数类型 : List< [V2TimGroupApplication](v2timgroupapplication.md) >
-* 参数描述：加群申请的列表
+* 参数描述 : 加群申请的列表
 
 ### toJson
 
 * 参数类型 : Map< String, dynamic > toJson()
-* 参数描述：返回加群申请列表的JSON格式
+* 参数描述 : 返回加群申请列表的JSON格式

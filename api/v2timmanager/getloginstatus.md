@@ -24,7 +24,7 @@ V2TimValueCallback<int>
 {
     code : int
     desc : String
-    data : int
+    data : int// 用户的登录状态 1:已登录 2:登录中 3:无登录
 }
 ```
 
@@ -34,7 +34,7 @@ V2TimValueCallback<int>
 | ---- | ------ | -------------------------------------------------------------- |
 | code | int    | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String | 请求结果描述                                                         |
-| data | int    | 登录用户的UserID                                                    |
+| data | int    | 用户的登录状态                                                   |
 
 ## 代码示例  &#x20;
 

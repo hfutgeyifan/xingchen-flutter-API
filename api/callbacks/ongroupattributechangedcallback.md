@@ -4,7 +4,7 @@ description: 收到群属性更新的回调
 
 # OnGroupAttributeChangedCallback
 
-## 回调函数功能描述
+## 功能介绍
 
 收到群属性更新的回调
 
@@ -17,7 +17,7 @@ Map<String, String> groupAttributeMap
 )
 ```
 
-## 回调函数参数说明
+## 参数详解
 
 | 参数名称              | 参数类型                  | 参数描述   |
 | ----------------- | --------------------- | ------ |

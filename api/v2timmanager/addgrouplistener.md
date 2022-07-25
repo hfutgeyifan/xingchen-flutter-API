@@ -14,6 +14,8 @@ description: 添加群组监听器√
 会议群（Meeting）和直播群（AVChatRoom）默认无[onMemberInfoChanged](../callbacks/onmemberinfochangedcallback.md)回调，如需回调请提交工单配置
 
 在web端时，不支持此API
+
+使用addFriendListener会在所有的群组监听器列表中新增一个群组监听器。
 {% endhint %}
 
 ## 参数详解

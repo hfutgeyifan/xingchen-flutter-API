@@ -4,7 +4,7 @@ description: 无返回参数的回调函数
 
 # VoidCallback
 
-## 回调函数功能描述
+## 功能介绍
 
 无返回参数的回调函数
 
@@ -14,7 +14,7 @@ description: 无返回参数的回调函数
 VoidCallback = void Function()
 ```
 
-## 回调函数参数说明
+## 参数详解
 
 {% hint style="info" %}
 此回调函数无返回值

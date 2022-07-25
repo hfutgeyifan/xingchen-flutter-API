@@ -13,6 +13,7 @@ description: 获取当前用户已经加入的群列√
 
 1. 直播群（AVChatRoom）和 社群（Community，**支持**话题的社群）不包含在此列表中。
 2. 该接口有频限检测，SDK 限制调用频率为1 秒 10 次，超过限制后会报 ERR\_SDK\_COMM\_API\_CALL\_FREQUENCY\_LIMIT （7008）错误
+3. 若查询的群组为工作群(Work)，需要此群先存在发送的消息将群激活才能查询到。
 {% endhint %}
 
 ## 参数详解

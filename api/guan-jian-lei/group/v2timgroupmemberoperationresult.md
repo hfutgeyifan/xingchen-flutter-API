@@ -13,12 +13,12 @@ description: 邀请其他人入群的操作结果
 ### memberID
 
 * 参数类型 : String
-* 参数描述：被操作成员 ID
+* 参数描述 : 被操作成员 ID
 
 ### result
 
 * 参数类型 : int
-* 参数描述：返回状态
+* 参数描述 : 返回状态
 
 {% hint style="info" %}
 0:操作失败
@@ -35,4 +35,4 @@ description: 邀请其他人入群的操作结果
 ### toJson
 
 * 参数类型 : Map< String, dynamic > toJson()
-* 参数描述：返回邀请其他人入群的操作结果的JSON格式
+* 参数描述 : 返回邀请其他人入群的操作结果的JSON格式

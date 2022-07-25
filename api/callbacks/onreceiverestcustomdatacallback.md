@@ -4,7 +4,7 @@ description: 收到 RESTAPI 下发的自定义系统消息
 
 # OnReceiveRESTCustomDataCallback
 
-## 回调函数功能描述
+## 功能介绍
 
 有新的加群请求（只有群主或管理员会收到）
 
@@ -17,7 +17,7 @@ String customData
 )
 ```
 
-## 回调函数参数说明
+## 参数详解
 
 | 参数名称       | 参数类型   | 参数描述  |
 | ---------- | ------ | ----- |

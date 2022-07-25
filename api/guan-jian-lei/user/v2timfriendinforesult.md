@@ -13,17 +13,17 @@ description: 好友资料获取结果
 ### resultCode
 
 * 参数类型 : int
-* 参数描述：返回码
+* 参数描述 : 返回码
 
 ### resultInfo
 
 * 参数类型 : String
-* 参数描述：返回结果表述
+* 参数描述 : 返回结果表述
 
 ### relation
 
 * 参数类型 : int
-* 参数描述：好友类型
+* 参数描述 : 好友类型
 
 {% hint style="info" %}
 0:不是好友
@@ -38,9 +38,9 @@ description: 好友资料获取结果
 ### friendInfo
 
 * 参数类型 : [V2TimFriendInfo](v2timfriendinfo.md)
-* 参数描述：好友个人资料，如果不是好友，除了 userID 字段，其他字段都为空
+* 参数描述 : 好友个人资料，如果不是好友，除了 userID 字段，其他字段都为空
 
 ### toJson
 
 * 参数类型 : Map< String, dynamic > toJson()
-* 参数描述：返回好友资料获取结果的JSON格式
+* 参数描述 : 返回好友资料获取结果的JSON格式

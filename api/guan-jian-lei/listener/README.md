@@ -18,4 +18,3 @@ description: 监听器相关类型
 | [V2TimFriendshipListener](v2timfriendshiplistener.md)     | 资料关系链回调      |
 | [V2TimAdvancedMsgListener](v2timadvancedmsglistener.md)   | 高级消息监听器      |
 | [V2TimSignalingListener](v2timsignalinglistener.md)       | 信令消息监听器      |
-| [V2TimSimpleMsgListener](v2timsimplemsglistener.md)       | IMSDK 基本消息回调 |

@@ -4,7 +4,7 @@ description: 好友请求已读的回调
 
 # OnFriendApplicationListReadCallback
 
-## 回调函数功能描述
+## 功能介绍
 
 好友请求已读的回调
 
@@ -14,7 +14,7 @@ description: 好友请求已读的回调
 OnFriendApplicationListReadCallback = void Function()
 ```
 
-## 回调函数参数说明
+## 参数详解
 
 {% hint style="info" %}
 该回调函数无参数

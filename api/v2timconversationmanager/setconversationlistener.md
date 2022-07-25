@@ -8,6 +8,12 @@ description: 设置会话监听器√
 
 添加关系链监听器
 
+{% hint style="info" %}
+注意：
+
+使用setConversationListener会覆盖会话监听器列表中最新设置的监听器。
+{% endhint %}
+
 ## 参数详解
 
 | 参数名称     | 参数类型                                                                                | 是否必填 | 描述         |
