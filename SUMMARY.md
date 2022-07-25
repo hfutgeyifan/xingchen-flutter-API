@@ -1,6 +1,30 @@
 # Table of contents
 
 * [Flutter](README.md)
+* [demo体验](demo-ti-yan.md)
+
+## 快速集成
+* [TUIKit 快速集成方案（推荐）](kuai-su-ji-cheng/tuikit/README.md)
+  * [插件市场使用指南](kuai-su-ji-cheng/tuikit/cha-jian-shi-chang-shi-yong-zhi-nan.md)
+  * [快速集成方案](kuai-su-ji-cheng/tuikit/kuai-su-ji-cheng-fang-an.md)
+  * [UI 组成文档](kuai-su-ji-cheng/tuikit/ui-zu-cheng-wen-dang.md)
+  * [音视频通话插件集成](kuai-su-ji-cheng/tuikit/yin-shi-ping-tong-hua-cha-jian-ji-cheng.md)
+  * [厂商消息推送插件集成](kuai-su-ji-cheng/tuikit/chang-shang-xiao-xi-tui-song-cha-jian-ji-cheng.md)
+  * [自定义表情插件集成](kuai-su-ji-cheng/tuikit/zi-ding-yi-biao-qing-cha-jian-ji-cheng.md)
+  * [地理位置插件集成](kuai-su-ji-cheng/tuikit/di-li-wei-zhi-cha-jian-ji-cheng.md)
+* [自实现 UI 快速集成方案](kuai-su-ji-cheng/zi-shi-xian-ui/README.md)
+  * [集成 SDK](kuai-su-ji-cheng/zi-shi-xian-ui/ji-cheng-sdk.md)
+  * [初始化](kuai-su-ji-cheng/zi-shi-xian-ui/chu-shi-hua.md)
+  * [登录登出](kuai-su-ji-cheng/zi-shi-xian-ui/deng-lu-deng-chu.md)
+  * [消息相关](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan.md)
+  * [会话相关](kuai-su-ji-cheng/zi-shi-xian-ui/hui-hua-xiang-guan.md)
+  * [群组相关](kuai-su-ji-cheng/zi-shi-xian-ui/qun-zu-xiang-guan.md)
+  * [用户管理](kuai-su-ji-cheng/zi-shi-xian-ui/yong-hu-guan-li.md)
+  * [离线推送](kuai-su-ji-cheng/zi-shi-xian-ui/li-xian-tui-song.md)
+  * [本地搜索](kuai-su-ji-cheng/zi-shi-xian-ui/ben-di-sou-suo.md)
+  * [信令相关](kuai-su-ji-cheng/zi-shi-xian-ui/xin-ling-xiang-guan.md)
+
+## UIKit SDK API
 
 ## SDKAPI
 

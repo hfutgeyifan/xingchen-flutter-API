@@ -13,8 +13,8 @@ IM API中使用到的回调函数类型
 | 回调函数名称                                                                              | 说明                                  |
 | ----------------------------------------------------------------------------------- | ----------------------------------- |
 | [VoidCallback](voidcallback.md)                                                     | 无返回参数的回调函数                          |
-| [ErrorCallback](broken-reference)                                                   | 请求失败的回调函数                           |
-| [OnApplicationProcessedCallback](broken-reference)                                  | 加群请求已经被群主或管理员处理了（只有申请人能够收到）         |
+| [ErrorCallback](errorcallback.md)                                                   | 请求失败的回调函数                           |
+| [OnApplicationProcessedCallback](onapplicationprocessedcallback.md)                                  | 加群请求已经被群主或管理员处理了（只有申请人能够收到）         |
 | [OnBlackListAddCallback](onblacklistaddcallback.md)                                 | 黑名单列表新增用户的回调                        |
 | [OnBlackListDeletedCallback](onblacklistdeletedcallback.md)                         | 黑名单列表删除用户的回调                        |
 | [OnConversationChangedCallback](onconversationchangedcallback.md)                   | 某些会话的关键信息发生变化                       |
