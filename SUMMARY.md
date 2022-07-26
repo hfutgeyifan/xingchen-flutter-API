@@ -72,6 +72,7 @@
 * [TIMUIKitAddFriend](uikit-sdk-api/TIMUIKitAddFriend.md)
 * [TIMUIKitAddGroup](uikit-sdk-api/TIMUIKitAddGroup.md)
 * [TIMUIKitBlackList](uikit-sdk-api/TIMUIKitBlackList.md)
+* [TIMUIKitChat](uikit-sdk-api/TIMUIKitChat.md)
 * [TIMUIKitContact](uikit-sdk-api/TIMUIKitContact.md)
 * [TIMUIKitConversation](uikit-sdk-api/TIMUIKitConversation.md)
 * [TIMUIKitGroup](uikit-sdk-api/TIMUIKitGroup.md)
