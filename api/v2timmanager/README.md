@@ -30,6 +30,8 @@ IM SDK 主核心类，负责 IM SDK 的初始化、登录、消息收发，建�
 | [getUserStatus](getuserstatus.md)                   | 获取用户在线状态         |
 | [setSelfInfo](setselfinfo.md)                       | 修改个人资料           |
 | [setSelfStatus](setselfstatus.md)                   | 设置当前登录用户在线状态     |
+| [subscribeUserStatus](subscribeuserstatus.md)       | 订阅用户状态     |
+| [unsubscribeUserStatus](unsubscribeuserstatus.md)   | 取消订阅用户状态     |
 | [getConversationManager](getconversationmanager.md) | 会话功能入口           |
 | [getFriendshipManager](getfriendshipmanager.md)     | 关系链功能入口          |
 | [getGroupManager](getgroupmanager.md)               | 高级群组功能入口         |

@@ -21,6 +21,7 @@ web版本不支持
 | 参数名称      | 参数类型                                                       | 是否必填 | 描述         |
 | --------- | ---------------------------------------------------------- | ---- | ---------- |
 | topicInfo | [V2TimTopicInfo](../guan-jian-lei/topic/v2timtopicinfo.md) | 是    | 需要修改的话题的设置 |
+| groupID   |  String                                                    | 是    | 话题所在的群组id |
 
 ## 返回值
 
@@ -45,24 +46,23 @@ V2TimCallback
 ```dart
     // 设置话题属性 通过topicInfo中的topicID确定需要修改的话题
     V2TimTopicInfo topicInfo = V2TimTopicInfo(
-      customString: "",// 话题自定义字段
-      draftText: "",// 话题草稿
-      groupAtInfoList: [],// 话题 at 信息列表
-      introduction: "",// 话题介绍
-      isAllMute: false,// 话题是否全员禁言
-      lastMessage: null,// 话题最新消息
-      notification: "",// 话题公告
-      selfMuteTime: 0,// 当前用户在话题中的禁言时间
-      topicFaceUrl: "",// 话题头像Url
-      topicID: "",// 需要修改的话题的id
-      topicName: "",// 话题名称
-      unreadCount: 0,// 话题消息未读数量
+      customString: "", // 话题自定义字段
+      draftText: "", // 话题草稿
+      groupAtInfoList: [], // 话题 at 信息列表
+      introduction: "", // 话题介绍
+      isAllMute: false, // 话题是否全员禁言
+      lastMessage: null, // 话题最新消息
+      notification: "", // 话题公告
+      selfMuteTime: 0, // 当前用户在话题中的禁言时间
+      topicFaceUrl: "", // 话题头像Url
+      topicID: "", // 需要修改的话题的id
+      topicName: "", // 话题名称
+      unreadCount: 0, // 话题消息未读数量
     );
     V2TimCallback setTopicInfoRes =
-        await TencentImSDKPlugin.v2TIMManager
-            .getGroupManager()
-            .setTopicInfo(
-              topicInfo: topicInfo,// 需要修改的话题的设置
+        await TencentImSDKPlugin.v2TIMManager.getGroupManager().setTopicInfo(
+              topicInfo: topicInfo, // 需要修改的话题的设置
+              groupID: "", // 话题所在的群组id
             );
     if (setTopicInfoRes.code == 0) {
       // 设置成功
