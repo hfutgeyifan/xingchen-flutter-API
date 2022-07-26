@@ -4,6 +4,7 @@
 * [demo体验](demo-ti-yan.md)
 
 ## 快速集成
+
 * [TUIKit 快速集成方案（推荐）](kuai-su-ji-cheng/tuikit/README.md)
   * [插件市场使用指南](kuai-su-ji-cheng/tuikit/cha-jian-shi-chang-shi-yong-zhi-nan.md)
   * [快速集成方案](kuai-su-ji-cheng/tuikit/kuai-su-ji-cheng-fang-an.md)
@@ -19,7 +20,7 @@
   * [消息相关](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/README.md)
     * [消息介绍](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/xiao-xi-jie-shao.md)
     * [发送消息](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/fa-song-xiao-xi.md)
-    * [接收消息](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan//jie-shou-xiao-xi.md)
+    * [接收消息](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/jie-shou-xiao-xi.md)
     * [历史消息](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/li-shi-xiao-xi.md)
     * [转发消息](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/zhuan-fa-xiao-xi.md)
     * [消息变更](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/xiao-xi-bian-geng.md)
@@ -30,7 +31,7 @@
     * [在线消息](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/zai-xian-xiao-xi.md)
     * [已读回执](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/yi-du-hui-zhi.md)
     * [查询消息](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/cha-xun-xiao-xi.md)
-    * [群 @ 消息](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/qun-%40-xiao-xi.md)
+    * [群 @ 消息](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/qun-@-xiao-xi.md)
     * [群定向消息](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/qun-ding-xiang-xiao-xi.md)
     * [消息免打扰](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/xiao-xi-mian-da-rao.md)
   * [会话相关](kuai-su-ji-cheng/zi-shi-xian-ui/hui-hua-xiang-guan/README.md)
@@ -67,6 +68,7 @@
     * [信令管理](kuai-su-ji-cheng/zi-shi-xian-ui/xin-ling-xiang-guan/xin-ling-guan-li.md)
 
 ## UIKit SDK API
+
 * [TIMUIKitAddFriend](uikit-sdk-api/TIMUIKitAddFriend.md)
 * [TIMUIKitAddGroup](uikit-sdk-api/TIMUIKitAddGroup.md)
 * [TIMUIKitBlackList](uikit-sdk-api/TIMUIKitBlackList.md)
@@ -332,7 +334,7 @@
   * [ReceiveMsgOptEnum](api/enums/receivemsgoptenum.md)
   * [SimpleMsgListenerType](api/enums/simplemsglistenertype.md)
   * [UserStatusType](api/enums/userstatustype.md)
-  * [V2TIM\_IMAGE\_TYPE](api/enums/v2tim_image_type.md)
+  * [V2TIM\_IMAGE\_TYPE](api/enums/v2tim\_image\_type.md)
   * [V2TIMKeywordListMatchType](api/enums/v2timkeywordlistmatchtype.md)
 * [Callbacks](api/callbacks/README.md)
   * [VoidCallback](api/callbacks/voidcallback.md)
