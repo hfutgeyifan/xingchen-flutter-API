@@ -14,6 +14,7 @@ IM API中使用到的枚举类型
 | ----------------------------------------------------------------------------- | -------------------- |
 | [AllowType](allowtype.md)                                                     | 设置用户信息时中，是否允许其他人加你好友 |
 | [ConversationType](conversationtype.md)                                       | 会话类型                 |
+| [V2TimConversationMarkType](../../sdkapi/enums/v2timconversationmarktype.md)  | 会话标记类型               |
 | [FriendApplicationTypeEnum](friendapplicationtypeenum.md)                     | 加好友类型                |
 | [FriendResponseTypeEnum](friendresponsetypeenum.md)                           | 建立好友关系时选择单向/双向好友关系   |
 | [FriendTypeEnum](friendtypeenum.md)                                           | 好友类型                 |
@@ -37,5 +38,5 @@ IM API中使用到的枚举类型
 | [ReceiveMsgOptEnum](receivemsgoptenum.md)                                     | 用户接收消息设置类型           |
 | [SimpleMsgListenerType](simplemsglistenertype.md)                             | 简单消息监听器类型            |
 | [UserStatusType](userstatustype.md)                                           | 用户在线状态               |
-| [V2TIM\_IMAGE\_TYPE](v2tim_image_type.md)                                   | 图片类型                 |
+| [V2TIM\_IMAGE\_TYPE](v2tim\_image\_type.md)                                   | 图片类型                 |
 | [V2TIMKeywordListMatchType](v2timkeywordlistmatchtype.md)                     | 搜索信息匹配方法类型           |
