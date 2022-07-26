@@ -67,16 +67,16 @@
     * [信令管理](kuai-su-ji-cheng/zi-shi-xian-ui/xin-ling-xiang-guan/xin-ling-guan-li.md)
 
 ## UIKit SDK API
-* [TIMUIKitAddFriend](uikit-sdk-api)
-* [TIMUIKitAddGroup](uikit-sdk-api)
-* [TIMUIKitBlackList](uikit-sdk-api)
-* [TIMUIKitContact](uikit-sdk-api)
-* [TIMUIKitConversation](uikit-sdk-api)
-* [TIMUIKitGroup](uikit-sdk-api)
-* [TIMUIKitGroupProfile](uikit-sdk-api)
-* [TIMUIKitNewContact](uikit-sdk-api)
-* [TIMUIKitProfile](uikit-sdk-api)
-* [TIMUIKitSearch](uikit-sdk-api)
+* [TIMUIKitAddFriend](uikit-sdk-api/TIMUIKitAddFriend.md)
+* [TIMUIKitAddGroup](uikit-sdk-api/TIMUIKitAddGroup.md)
+* [TIMUIKitBlackList](uikit-sdk-api/TIMUIKitBlackList.md)
+* [TIMUIKitContact](uikit-sdk-api/TIMUIKitContact.md)
+* [TIMUIKitConversation](uikit-sdk-api/TIMUIKitConversation.md)
+* [TIMUIKitGroup](uikit-sdk-api/TIMUIKitGroup.md)
+* [TIMUIKitGroupProfile](uikit-sdk-api/TIMUIKitGroupProfile.md)
+* [TIMUIKitNewContact](uikit-sdk-api/TIMUIKitNewContact.md)
+* [TIMUIKitProfile](uikit-sdk-api/TIMUIKitProfile.md)
+* [TIMUIKitSearch](uikit-sdk-api/TIMUIKitSearch.md)
 
 ## SDKAPI
 
