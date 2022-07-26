@@ -208,7 +208,7 @@
   * [renameConversationGroup](api/v2timconversationmanager/renameconversationgroup.md)
   * [addConversationsToGroup](api/v2timconversationmanager/addconversationstogroup.md)
   * [deleteConversationsFromGroup](api/v2timconversationmanager/deleteconversationsfromgroup.md)
-  * [markConversation](api/v2timconversationmanager/setconversationcustomdata.md)
+  * [markConversation](api/v2timconversationmanager/markconversation.md)
   * [getTotalUnreadMessageCount](api/v2timconversationmanager/gettotalunreadmessagecount.md)
   * [pinConversation](api/v2timconversationmanager/pinconversation.md)
   * [setConversationListener](api/v2timconversationmanager/setconversationlistener.md)
