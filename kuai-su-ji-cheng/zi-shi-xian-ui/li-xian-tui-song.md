@@ -236,7 +236,8 @@ flutter pub add tim_ui_kit_push_plugin
 ![](https://qcloudimg.tencent-cloud.cn/raw/d490ff0743604effa7f43f35c14668de.png)
 2. 请将这些信息，配上厂商渠道的账号信息，实例化一个静态的`PushAppInfo`类，汇总起来。后续步骤需要传入此对象。
 3. 该类支持配置所有您需要接入厂商推送机型的信息。无需完整填写构造函数字段。若需要使用某个厂商平台，请完整填写该平台相关字段。
- ```Dart
+
+```Dart
 import 'package:tim_ui_kit_push_plugin/model/appInfo.dart';
 
 static final PushAppInfo appInfo = PushAppInfo(
@@ -255,7 +256,7 @@ static final PushAppInfo appInfo = PushAppInfo(
   google_buz_id: , // Google FCM证书ID
   apple_buz_id: , // Apple证书ID
 );
- ```
+```
 
 {% hint style="info" %}
 说明：
@@ -686,6 +687,7 @@ void handleClickNotification(Map<String, dynamic> msg) async {
 #### Flutter 通话插件接入
 1. 如果您使用到我们的 [tim_ui_kit_calling_plugin](https://pub.dev/packages/tim_ui_kit_calling_plugin) 插件，请将其升级至0.2.0版本以上，即可使用离线推送能力。
 2. 参见如下示例，直接在`call`方法第三个参数中，传入`offlinePush`对象即可。
+
 ```Dart
 final user = await sdkInstance.getLoginUser();
 final myId = user.data;
