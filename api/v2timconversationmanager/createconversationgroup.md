@@ -12,6 +12,7 @@ description: 创建会话分组√
 注意：
 
 1. 4.0.8及以后版本支持。
+2. web不支持
 {% endhint %}
 
 ## 参数详解
@@ -54,9 +55,9 @@ V2TimValueCallback<List<V2TimConversationOperationResult>>
     if (setConversationCustomDataRes.code == 0) {
       // 创建设置成功
       setConversationCustomDataRes.data?.forEach((element) {
-        element.conversationID;
-        element.resultCode;
-        element.resultInfo;
+        element.conversationID; // 被添加的会话id
+        element.resultCode; // 此条会话的操作结果错误码
+        element.resultInfo; // 此条会话的操作结果描述
       });
     }
 ```

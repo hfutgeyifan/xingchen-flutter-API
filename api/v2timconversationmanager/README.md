@@ -22,11 +22,11 @@ description: 会话接口，包含了会话的获取，删除和更新的逻辑
 | [setConversationDraft](setconversationdraft.md)                               | 设置会话草稿         |
 | [setConversationCustomData](setconversationcustomdata.md)                     | 设置会话自定义消息      |
 | [createConversationGroup](createconversationgroup.md)                         | 创建会话分组         |
-| getConversationGroupList                                                      | 获取会话分组列表       |
-| deleteConversationGroup                                                       | 删除会话分组         |
-| renameConversationGroup                                                       | 重命名会话分组        |
-| addConversationsToGroup                                                       | 添加会话到一个会话分组    |
-| deleteConversationsFromGroup                                                  | 从一个会话分组中删除会话   |
+| [getConversationGroupList](getconversationgroupList.md)                       | 获取会话分组列表       |
+| [deleteConversationGroup](deleteconversationgroup.md)                         | 删除会话分组         |
+| [renameConversationGroup](renameconversationgroup.md)                         | 重命名会话分组        |
+| [addConversationsToGroup](addconversationstogroup.md)                         | 添加会话到一个会话分组    |
+| [deleteConversationsFromGroup](deleteconversationsfromgroup.md)               | 从一个会话分组中删除会话   |
 | markConversation                                                              | 标记会话           |
 | [getTotalUnreadMessageCount](gettotalunreadmessagecount.md)                   | 获取会话未读总数       |
 | [pinConversation](pinconversation.md)                                         | 会话置顶           |
