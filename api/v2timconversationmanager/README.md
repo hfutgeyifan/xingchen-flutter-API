@@ -20,8 +20,8 @@ description: 会话接口，包含了会话的获取，删除和更新的逻辑
 | [getConversationListByConversaionIds](getconversationlistbyconversaionids.md) | 通过会话ID获取指定会话列表 |
 | [deleteConversation](deleteconversation.md)                                   | 删除会话           |
 | [setConversationDraft](setconversationdraft.md)                               | 设置会话草稿         |
-| setConversationCustomData                                                     | 设置会话自定义消息      |
-| createConversationGroup                                                       | 创建会话分组         |
+| [setConversationCustomData](setconversationcustomdata.md)                     | 设置会话自定义消息      |
+| [createConversationGroup](createconversationgroup.md)                         | 创建会话分组         |
 | getConversationGroupList                                                      | 获取会话分组列表       |
 | deleteConversationGroup                                                       | 删除会话分组         |
 | renameConversationGroup                                                       | 重命名会话分组        |
