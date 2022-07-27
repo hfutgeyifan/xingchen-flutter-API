@@ -19,7 +19,7 @@ description: 用户信息组件
 | profileWidgetBuilder | 用于自定义构建用户信息页面不同部分的构造器                                                  | ProfileWidgetBuilder      | 否    |
 | profileWidgetsOrder  | 用于自定义构建用户信息页面不同部分的排序设置                                                 | List< ProfileWidgetEnum > | 否    |
 | builder              | 用于自定义构建整个用户信息页面的构造器（若使用此属性则profileWidgetBuilder与profileWidgetsOrder失效） | ProfileBuilder            | 否    |
-| lifeCycle            | 用户信息操作钩子                                                               | OnSelProfileLifeCycle     | 否    |
+| lifeCycle            | 用户信息操作时的钩子函数                                                           | OnSelProfileLifeCycle     | 否    |
 
 ## 代码示例与效果展示
 
