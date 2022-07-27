@@ -6,7 +6,7 @@
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>TIMUIKitProfile · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="">
+        <meta name="description" content="用户信息组件">
         <meta name="generator" content="GitBook 3.2.3">
         
         
@@ -1052,7 +1052,20 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" data-path="TIMUIKitContact.html">
+        <li class="chapter " data-level="3.4" data-path="TIMUIKitChat.html">
+            
+                <a href="TIMUIKitChat.html">
+            
+                    
+                    TIMUIKitChat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="TIMUIKitContact.html">
             
                 <a href="TIMUIKitContact.html">
             
@@ -1065,7 +1078,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5" data-path="TIMUIKitConversation.html">
+        <li class="chapter " data-level="3.6" data-path="TIMUIKitConversation.html">
             
                 <a href="TIMUIKitConversation.html">
             
@@ -1078,7 +1091,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.6" data-path="TIMUIKitGroup.html">
+        <li class="chapter " data-level="3.7" data-path="TIMUIKitGroup.html">
             
                 <a href="TIMUIKitGroup.html">
             
@@ -1091,7 +1104,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.7" data-path="TIMUIKitGroupProfile.html">
+        <li class="chapter " data-level="3.8" data-path="TIMUIKitGroupProfile.html">
             
                 <a href="TIMUIKitGroupProfile.html">
             
@@ -1104,7 +1117,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.8" data-path="TIMUIKitNewContact.html">
+        <li class="chapter " data-level="3.9" data-path="TIMUIKitNewContact.html">
             
                 <a href="TIMUIKitNewContact.html">
             
@@ -1117,7 +1130,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.9" data-path="TIMUIKitProfile.html">
+        <li class="chapter active" data-level="3.10" data-path="TIMUIKitProfile.html">
             
                 <a href="TIMUIKitProfile.html">
             
@@ -1130,7 +1143,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.10" data-path="TIMUIKitSearch.html">
+        <li class="chapter " data-level="3.11" data-path="TIMUIKitSearch.html">
             
                 <a href="TIMUIKitSearch.html">
             
@@ -5180,7 +5193,68 @@
     
 					<section class="normal markdown-section">
 						
-						
+						<h1 id="timuikitprofile">TIMUIKitProfile</h1>
+<h2 id="&#x7EC4;&#x4EF6;&#x4ECB;&#x7ECD;&#x53CA;&#x4F7F;&#x7528;&#x573A;&#x666F;-">&#x7EC4;&#x4EF6;&#x4ECB;&#x7ECD;&#x53CA;&#x4F7F;&#x7528;&#x573A;&#x666F; <a href="#he-shi-shi-yong" id="he-shi-shi-yong"></a></h2>
+<p>&#x7EC4;&#x4EF6;&#x4ECB;&#x7ECD;&#xFF1A;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x7EC4;&#x4EF6;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF1A;&#x5C55;&#x793A;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x65F6;&#x4F7F;&#x7528;&#x3002;</p>
+<h2 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h2>
+<h3 id="&#x5FC5;&#x586B;&#x53C2;&#x6570;&#x5217;&#x8868;">&#x5FC5;&#x586B;&#x53C2;&#x6570;&#x5217;&#x8868;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x7C7B;&#x578B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>userID</td>
+<td>&#x9700;&#x8981;&#x5C55;&#x793A;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x7684;&#x7528;&#x6237;id</td>
+<td>String</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x53EF;&#x9009;&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53EF;&#x9009;&#x53C2;&#x6570;&#x5217;&#x8868;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x7C7B;&#x578B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>controller</td>
+<td>&#x5173;&#x4E8E;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x64CD;&#x4F5C;&#x7684;&#x63A7;&#x5236;&#x5668;</td>
+<td>TIMUIKitProfileController</td>
+</tr>
+<tr>
+<td>profileWidgetBuilder</td>
+<td>&#x7528;&#x4E8E;&#x81EA;&#x5B9A;&#x4E49;&#x6784;&#x5EFA;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x9875;&#x9762;&#x4E0D;&#x540C;&#x90E8;&#x5206;&#x7684;&#x6784;&#x9020;&#x5668;</td>
+<td>ProfileWidgetBuilder</td>
+</tr>
+<tr>
+<td>profileWidgetsOrder</td>
+<td>&#x7528;&#x4E8E;&#x81EA;&#x5B9A;&#x4E49;&#x6784;&#x5EFA;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x9875;&#x9762;&#x4E0D;&#x540C;&#x90E8;&#x5206;&#x7684;&#x6392;&#x5E8F;&#x8BBE;&#x7F6E;</td>
+<td>List&lt; ProfileWidgetEnum &gt;</td>
+</tr>
+<tr>
+<td>builder</td>
+<td>&#x7528;&#x4E8E;&#x81EA;&#x5B9A;&#x4E49;&#x6784;&#x5EFA;&#x6574;&#x4E2A;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x9875;&#x9762;&#x7684;&#x6784;&#x9020;&#x5668;&#xFF08;&#x82E5;&#x4F7F;&#x7528;&#x6B64;&#x5C5E;&#x6027;&#x5219;profileWidgetBuilder&#x4E0E;profileWidgetsOrder&#x5931;&#x6548;&#xFF09;</td>
+<td>ProfileBuilder</td>
+</tr>
+<tr>
+<td>lifeCycle</td>
+<td>&#x7528;&#x6237;&#x4FE1;&#x606F;&#x64CD;&#x4F5C;&#x94A9;&#x5B50;</td>
+<td>OnSelProfileLifeCycle</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x4EE3;&#x7801;&#x793A;&#x4F8B;">&#x4EE3;&#x7801;&#x793A;&#x4F8B;</h2>
+<h2 id="&#x6548;&#x679C;&#x5C55;&#x793A;">&#x6548;&#x679C;&#x5C55;&#x793A;</h2>
+
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
 						
 					</section>
@@ -5223,7 +5297,7 @@
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"title":"TIMUIKitProfile","level":"3.9","depth":1,"next":{"title":"TIMUIKitSearch","level":"3.10","depth":1,"path":"uikit-sdk-api/TIMUIKitSearch.md","ref":"uikit-sdk-api/TIMUIKitSearch.md","articles":[]},"previous":{"title":"TIMUIKitNewContact","level":"3.8","depth":1,"path":"uikit-sdk-api/TIMUIKitNewContact.md","ref":"uikit-sdk-api/TIMUIKitNewContact.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints","livereload"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://testcomm.qq.com/im/doc/flutter/index.html","text":"flutter","selected":true}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"uikit-sdk-api/TIMUIKitProfile.md","mtime":"2022-07-26T11:02:14.790Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-26T13:44:00.843Z"},"basePath":"..","book":{"language":""}});
+			gitbook.page.hasChanged({"page":{"description":"用户信息组件","title":"TIMUIKitProfile","level":"3.10","depth":1,"next":{"title":"TIMUIKitSearch","level":"3.11","depth":1,"path":"uikit-sdk-api/TIMUIKitSearch.md","ref":"uikit-sdk-api/TIMUIKitSearch.md","articles":[]},"previous":{"title":"TIMUIKitNewContact","level":"3.9","depth":1,"path":"uikit-sdk-api/TIMUIKitNewContact.md","ref":"uikit-sdk-api/TIMUIKitNewContact.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints","livereload"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://testcomm.qq.com/im/doc/flutter/index.html","text":"flutter","selected":true}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"uikit-sdk-api/TIMUIKitProfile.md","mtime":"2022-07-27T08:48:00.427Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-27T08:48:12.262Z"},"basePath":"..","book":{"language":""}});
 		});
 	</script>
 </div>

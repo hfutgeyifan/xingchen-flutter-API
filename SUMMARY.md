@@ -78,7 +78,12 @@
 * [TIMUIKitGroup](uikit-sdk-api/TIMUIKitGroup.md)
 * [TIMUIKitGroupProfile](uikit-sdk-api/TIMUIKitGroupProfile.md)
 * [TIMUIKitNewContact](uikit-sdk-api/TIMUIKitNewContact.md)
-* [TIMUIKitProfile](uikit-sdk-api/TIMUIKitProfile.md)
+* [TIMUIKitProfile](uikit-sdk-api/TIMUIKitProfile/README.md)
+  * [TIMUIKitProfileController](uikit-sdk-api/TIMUIKitProfile/TIMUIKitProfileController.md)
+  * [ProfileWidgetBuilder](uikit-sdk-api/TIMUIKitProfile/ProfileWidgetBuilder.md)
+  * [ProfileWidgetEnum](uikit-sdk-api/TIMUIKitProfile/ProfileWidgetEnum.md)
+  * [ProfileBuilder](uikit-sdk-api/TIMUIKitProfile/ProfileBuilder.md)
+  * [OnSelProfileLifeCycle](uikit-sdk-api/TIMUIKitProfile/OnSelProfileLifeCycle.md)
 * [TIMUIKitSearch](uikit-sdk-api/TIMUIKitSearch.md)
 
 ## SDKAPI
