@@ -27,5 +27,5 @@ description: 用户信息操作时的钩子函数
 
 ### didGetFriendInfo
 
-* 参数类型 : Future\<V2TimFriendInfo?> Function( V2TimFriendInfo? friendInfo)
+* 参数类型 : Future< [V2TimFriendInfo](../../api/guan-jian-lei/user/v2timfriendinfo.md)? > Function( [V2TimFriendInfo](../../api/guan-jian-lei/user/v2timfriendinfo.md)? friendInfo)
 * 参数描述 : 在获取用户信息前的钩子函数
