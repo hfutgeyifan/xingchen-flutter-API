@@ -34,4 +34,4 @@ Widget
 
 ## 代码示例
 
-代码示例可见[TIMUIKitGroupProfile](./)
+代码示例可见[TIMUIKitGroupProfile](./README.md)

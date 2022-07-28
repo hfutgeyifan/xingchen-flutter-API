@@ -36,4 +36,4 @@ Widget
 
 ## 代码示例
 
-代码示例可见[TIMUIKitProfile](../TIMUIKitAddFriend/)
+代码示例可见[TIMUIKitProfile](./README.md)
