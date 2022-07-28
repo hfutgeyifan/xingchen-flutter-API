@@ -15,7 +15,7 @@ description: 群组信息组件
 | 参数                   | 说明                                                                      | 类型                                                          | 是否必填 |
 | -------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------- | ---- |
 | groupID              | 需要展示群组信息的群组id                                                           | String                                                      | 是    |
-| backGroundColor      |                                                                         | Color                                                       | 否    |
+| backGroundColor      | 群组信息页面背景颜色                                                              | Color                                                       | 否    |
 | profileWidgetBuilder | 用于自定义构建群组信息页面不同部分的构造器                                                   | [GroupProfileWidgetBuilder](GroupProfileWidgetBuilder.md)   | 否    |
 | profileWidgetsOrder  | 用于自定义构建群组信息页面不同部分的排序设置                                                  | List< [GroupProfileWidgetEnum](GroupProfileWidgetEnum.md) > | 否    |
 | builder              | 用于自定义构建整个用群组信息页面的构造器（若使用此属性则profileWidgetBuilder与profileWidgetsOrder失效） | [GroupProfileBuilder](GroupProfileBuilder.md)               | 否    |
