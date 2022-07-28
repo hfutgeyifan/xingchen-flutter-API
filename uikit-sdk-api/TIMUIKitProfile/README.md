@@ -175,3 +175,154 @@ profileWidgetBuilder决定了在TIMUIKitProfile中不同名称的组件的渲染
 #### 效果展示
 
 ![](../../.gitbook/assets/profileWidgetBuilder+profileWidgetsOrder1.png) ![](../../.gitbook/assets/profileWidgetBuilder+profileWidgetsOrder2.png)
+
+### lifeCycle
+
+#### 代码示例
+
+lifeCycle为用户信息操作时的钩子函数
+
+* 代码示例为使用shouldAddFriend做到添加好友前跳出弹窗的案例。
+
+```dart
+  @override
+  Widget build(BuildContext context) {
+    final theme = Provider.of<DefaultThemeData>(context).theme;
+    ProfileLifeCycle lifeCycle = ProfileLifeCycle(
+      shouldAddToBlockList: (String userID) async {
+        //用户被添加入黑名单前的逻辑
+        return true;
+      },
+      shouldAddFriend: (String userID) async {
+        //发送好友请求前的逻辑
+        // 弹出对话框
+        Future<bool?> showShouldAddToBlockListDialog() {
+          return showDialog<bool>(
+            context: context,
+            builder: (context) {
+              return AlertDialog(
+                title: const Text("提示"),
+                content: const Text("您确定要添加此好友吗?"),
+                actions: <Widget>[
+                  TextButton(
+                    child: const Text("取消"),
+                    onPressed: () => Navigator.of(context).pop(), // 关闭对话框
+                  ),
+                  TextButton(
+                    child: const Text("确定"),
+                    onPressed: () {
+                      //关闭对话框并返回true
+                      Navigator.of(context).pop(true);
+                    },
+                  ),
+                ],
+              );
+            },
+          );
+        }
+
+        bool? isAdd = await showShouldAddToBlockListDialog();
+        return isAdd ?? false;
+      },
+      shouldDeleteFriend: (String userID) async {
+        //删除好友前的逻辑
+        return true;
+      },
+      didGetFriendInfo: (V2TimFriendInfo? friendInfo) async {
+        //获取好友信息前的逻辑
+        return friendInfo;
+      },
+    );
+    return Scaffold(
+      appBar: AppBar(
+        shadowColor: Colors.white,
+        title: Text(
+          imt("详细资料"),
+          style: const TextStyle(color: Colors.white, fontSize: 17),
+        ),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(colors: [
+              theme.lightPrimaryColor ?? CommonColor.lightPrimaryColor,
+              theme.primaryColor ?? CommonColor.primaryColor
+            ]),
+          ),
+        ),
+        iconTheme: const IconThemeData(
+          color: Colors.white,
+        ),
+        leading: IconButton(
+          padding: const EdgeInsets.only(left: 16),
+          icon: Image.asset(
+            'images/arrow_back.png',
+            package: 'tim_ui_kit',
+            height: 34,
+            width: 34,
+          ),
+          onPressed: () {
+            Navigator.pop(context, newUserMARK);
+          },
+        ),
+      ),
+      body: Container(
+        color: theme.weakBackgroundColor,
+        child: TIMUIKitProfile(
+          lifeCycle: lifeCycle,
+          userID: widget.userID,
+          profileWidgetBuilder: ProfileWidgetBuilder(
+              searchBar: (conversation) => TIMUIKitProfileWidget.searchBar(
+                      context, conversation, handleTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Search(
+                              conversation: conversation,
+                              onTapConversation:
+                                  (V2TimConversation conversation,
+                                      [V2TimMessage? targetMsg]) {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => Chat(
+                                        selectedConversation: conversation,
+                                        initFindingMsg: targetMsg,
+                                      ),
+                                    ));
+                              }),
+                        ));
+                  }),
+              customBuilderOne: (bool isFriend, V2TimFriendInfo friendInfo,
+                  V2TimConversation conversation) {
+                if (!isFriend) {
+                  return Container();
+                }
+                return Column(
+                    children: _buildBottomOperationList(
+                        context, conversation, theme));
+              }),
+          controller: _timuiKitProfileController,
+          profileWidgetsOrder: const [
+            ProfileWidgetEnum.userInfoCard,
+            ProfileWidgetEnum.operationDivider,
+            ProfileWidgetEnum.remarkBar,
+            ProfileWidgetEnum.genderBar,
+            ProfileWidgetEnum.birthdayBar,
+            ProfileWidgetEnum.operationDivider,
+            ProfileWidgetEnum.searchBar,
+            ProfileWidgetEnum.operationDivider,
+            ProfileWidgetEnum.addToBlockListBar,
+            ProfileWidgetEnum.pinConversationBar,
+            ProfileWidgetEnum.messageMute,
+            ProfileWidgetEnum.operationDivider,
+            ProfileWidgetEnum.customBuilderOne,
+            ProfileWidgetEnum.addAndDeleteArea
+          ],
+        ),
+      ),
+    );
+  }
+```
+
+#### 效果展示
+
+![](../../.gitbook/assets/lifeCycle1.png) ![](../../.gitbook/assets/lifeCycle2.png)
