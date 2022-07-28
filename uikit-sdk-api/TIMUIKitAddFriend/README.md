@@ -122,8 +122,77 @@ lifeCycle为添加好友操作时的钩子函数
 #### 代码示例
 
 ```dart
-  
+  @override
+  Widget build(BuildContext context) {
+    AddFriendLifeCycle lifeCycle = AddFriendLifeCycle(
+      shouldAddFriend: (String userID, String? remark, String? friendGroup,
+          String? addWording,
+          [BuildContext? applicationContext]) async {
+        //发送好友请求前的逻辑
+        // 弹出对话框
+        Future<bool?> showShouldAddToBlockListDialog() {
+          return showDialog<bool>(
+            context: applicationContext!,
+            builder: (applicationContext) {
+              return AlertDialog(
+                title: const Text("提示"),
+                content: const Text("您确定要添加此好友吗?"),
+                actions: <Widget>[
+                  TextButton(
+                    child: const Text("取消"),
+                    onPressed: () =>
+                        Navigator.of(applicationContext).pop(), // 关闭对话框
+                  ),
+                  TextButton(
+                    child: const Text("确定"),
+                    onPressed: () {
+                      //关闭对话框并返回true
+                      Navigator.of(applicationContext).pop(true);
+                    },
+                  ),
+                ],
+              );
+            },
+          );
+        }
+
+        bool? isAdd = await showShouldAddToBlockListDialog();
+        return isAdd ?? false;
+      },
+    );
+    final theme = Provider.of<DefaultThemeData>(context).theme;
+    return Scaffold(
+      appBar: AppBar(
+          title: Text(
+            imt("添加好友"),
+            style: const TextStyle(color: Colors.white, fontSize: 17),
+          ),
+          shadowColor: theme.weakDividerColor,
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(colors: [
+                theme.lightPrimaryColor ?? CommonColor.lightPrimaryColor,
+                theme.primaryColor ?? CommonColor.primaryColor
+              ]),
+            ),
+          ),
+          iconTheme: const IconThemeData(
+            color: Colors.white,
+          )),
+      body: TIMUIKitAddFriend(
+        lifeCycle: lifeCycle,
+        onTapAlreadyFriendsItem: (String userID) {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => UserProfile(userID: userID),
+              ));
+        },
+      ),
+    );
+  }
 ```
 
 #### 效果展示
 
+![](../../.gitbook/assets/TIMUIKitAddFriend-lifeCircle.gif)
