@@ -32,7 +32,7 @@ profileWidgetsOrder决定了profileWidgetBuilder中组件在页面的排列顺�
 profileWidgetBuilder决定了在TIMUIKitProfile中不同名称的组件的渲染结果。
 
 * profileWidgetBuilder中除了searchBar与customBuilder(One-Five)，其余均有默认组件。
-* 代码示例为自定义searchBar与customBuilderOne的示例，如用户需要自定义其余组件，在传入TIMUIKitProfile的profileWidgetBuilder属性中添加[组件名](ProfileWidgetEnum.md)即可。
+* 代码示例为自定义searchBar与customBuilderOne的示例，如用户需要自定义其余组件，在传入TIMUIKitProfile的profileWidgetBuilder属性中添加[组件名](ProfileWidgetBuilder.md)即可。
 
 #### 代码示例
 
