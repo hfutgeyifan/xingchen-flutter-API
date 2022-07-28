@@ -71,7 +71,8 @@
 
 * [TIMUIKitAddFriend](uikit-sdk-api/TIMUIKitAddFriend/README.md)
   * [AddFriendLifeCycle](uikit-sdk-api/TIMUIKitAddFriend/AddFriendLifeCycle.md)
-* [TIMUIKitAddGroup](uikit-sdk-api/TIMUIKitAddGroup.md)
+* [TIMUIKitAddGroup](uikit-sdk-api/TIMUIKitAddGroup/README.md)
+  * [AddGroupLifeCycle](uikit-sdk-api/TIMUIKitAddGroup/AddGroupLifeCycle.md)
 * [TIMUIKitBlackList](uikit-sdk-api/TIMUIKitBlackList.md)
 * [TIMUIKitChat](uikit-sdk-api/TIMUIKitChat.md)
 * [TIMUIKitContact](uikit-sdk-api/TIMUIKitContact.md)
