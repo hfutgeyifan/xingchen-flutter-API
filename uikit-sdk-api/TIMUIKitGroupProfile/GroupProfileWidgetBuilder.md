@@ -13,84 +13,84 @@ description: 用于自定义构建群组信息页面不同部分的构造器
 ### detailCard
 
 * 参数类型 : Widget Function([V2TimGroupInfo](../../api/guan-jian-lei/group/v2timgroupinfo.md) groupInfo, Function(String updateGroupName)? updateGroupName)
-* 参数描述 : 分割线组件
+* 参数描述 : 群组详细信息
 
 ### memberListTile
 
 * 参数类型 : Widget Function(List< [V2TimGroupMemberFullInfo](../../api/guan-jian-lei/group/v2timgroupmemberfullinfo.md)? > memberList)
-* 参数描述 : 用户备注
+* 参数描述 : 群组成员列表
 
 ### groupNotice
 
 * 参数类型 : Widget Function(String currentNotice, Function() toDefaultNoticeEditPage, Function(String newNotice) setGroupNotice)
-* 参数描述 : 添加黑名单功能
+* 参数描述 : 群公告
 
 ### groupManage
 
 * 参数类型 : Widget Function(Function() toDefaultGroupManagementPage)
-* 参数描述 : 会话置顶功能
+* 参数描述 : 群管理
 
 ### searchMessage
 
 * 参数类型 : Widget Function()
-* 参数描述 : 禁言用户功能
+* 参数描述 : 查找聊天内容
 
 ### operationDivider
 
 * 参数类型 : Widget Function()
-* 参数描述 : 用于重构默认操作栏样式
+* 参数描述 : 分割线
 
 ### groupTypeBar
 
 * 参数类型 : Widget Function(String groupType)
-* 参数描述 : 搜索组件（自定义）
+* 参数描述 : 群类型栏
 
 ### groupJoiningModeBar
 
 * 参数类型 : Widget Function(int [groupAddOptType](../../api/enums/groupaddopttypeenum.md), Function(int addOpt) handleActionTap)
-* 参数描述 : 用户头像栏
+* 参数描述 : 加群方式设置
 
 ### nameCardBar
 
 * 参数类型 : Widget Function(String nameCard, Function(String newName)
-* 参数描述 : 用户昵称栏
+* 参数描述 : 我的群昵称
 
 ### muteGroupMessageBar
 
 * 参数类型 : Widget Function(bool isMute, Function(bool isMute) setMute)
-* 参数描述 : 用户账号栏
+* 参数描述 : 消息免打扰
 
 ### pinedConversationBar
 
 * 参数类型 : Widget Function(bool isPined, Function(bool isMute) pinedConversation)
-* 参数描述 : 用户签名栏
+* 参数描述 : 置顶聊天功能
 
 ### buttonArea
 
 * 参数类型 : Widget Function([V2TimGroupInfo](../../api/guan-jian-lei/group/v2timgroupinfo.md) groupInfo, List< [V2TimGroupMemberFullInfo](../../api/guan-jian-lei/group/v2timgroupmemberfullinfo.md)? > groupMemberList)
-* 参数描述 : 用户性别
+* 参数描述 : 按钮功能区
 
 ### customBuilderOne
 
-* 参数类型 : Widget Function(bool isFriend, [V2TimFriendInfo](../../api/guan-jian-lei/user/v2timfriendinfo.md) friendInfo, [V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md) conversation)
+* 参数类型 : Widget Function([V2TimGroupInfo](../../api/guan-jian-lei/group/v2timgroupinfo.md) groupInfo, List< [V2TimGroupMemberFullInfo](../../api/guan-jian-lei/group/v2timgroupmemberfullinfo.md)? > groupMemberList)
 * 参数描述 : 自定义区域一（自定义）
 
 ### customBuilderTwo
 
-* 参数类型 : Widget Function(bool isFriend, [V2TimFriendInfo](../../api/guan-jian-lei/user/v2timfriendinfo.md) friendInfo, [V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md) conversation)
+* 参数类型 : Widget Function([V2TimGroupInfo](../../api/guan-jian-lei/group/v2timgroupinfo.md) groupInfo, List< [V2TimGroupMemberFullInfo](../../api/guan-jian-lei/group/v2timgroupmemberfullinfo.md)? > groupMemberList)
 * 参数描述 : 自定义区域二（自定义）
 
 ### customBuilderThree
 
-* 参数类型 : Widget Function(bool isFriend, [V2TimFriendInfo](../../api/guan-jian-lei/user/v2timfriendinfo.md) friendInfo, [V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md) conversation)
+* 参数类型 : Widget Function([V2TimGroupInfo](../../api/guan-jian-lei/group/v2timgroupinfo.md) groupInfo, List< [V2TimGroupMemberFullInfo](../../api/guan-jian-lei/group/v2timgroupmemberfullinfo.md)? > groupMemberList)
 * 参数描述 : 自定义区域三（自定义）
 
 ### customBuilderFour
 
-* 参数类型 : Widget Function(bool isFriend, [V2TimFriendInfo](../../api/guan-jian-lei/user/v2timfriendinfo.md) friendInfo, [V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md) conversation)
+* 参数类型 : Widget Function([V2TimGroupInfo](../../api/guan-jian-lei/group/v2timgroupinfo.md) groupInfo, List< [V2TimGroupMemberFullInfo](../../api/guan-jian-lei/group/v2timgroupmemberfullinfo.md)? > groupMemberList)
 * 参数描述 : 自定义区域四（自定义）
 
 ### customBuilderFive
 
-* 参数类型 : Widget Function(bool isFriend, [V2TimFriendInfo](../../api/guan-jian-lei/user/v2timfriendinfo.md) friendInfo, [V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md) conversation)
+* 参数类型 : Widget Function([V2TimGroupInfo](../../api/guan-jian-lei/group/v2timgroupinfo.md) groupInfo, List< [V2TimGroupMemberFullInfo](../../api/guan-jian-lei/group/v2timgroupmemberfullinfo.md)? > groupMemberList)
 * 参数描述 : 自定义区域五（自定义）

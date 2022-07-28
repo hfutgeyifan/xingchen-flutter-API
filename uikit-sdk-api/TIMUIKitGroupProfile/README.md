@@ -27,20 +27,125 @@ description: 群组信息组件
 
 profileWidgetsOrder决定了profileWidgetBuilder中组件在页面的排列顺序。
 
-* 例如，当profileWidgetsOrder为\[ProfileWidgetEnum.userInfoCard,ProfileWidgetEnum.portraitBar]时，userInfoCard组件会在portraitBar组件的上方。
+* 例如，当profileWidgetsOrder为\[GroupProfileWidgetEnum.detailCard,GroupProfileWidgetEnum.memberListTile]时，detailCard组件会在memberListTile组件的上方。
 
-profileWidgetBuilder决定了在TIMUIKitProfile中不同名称的组件的渲染结果。
+profileWidgetBuilder决定了在TIMUIKitGroupProfile中不同名称的组件的渲染结果。
 
 * profileWidgetBuilder中除了searchBar与customBuilder(One-Five)，其余均有默认组件。
-* 代码示例为自定义searchBar与customBuilderOne的示例，如用户需要自定义其余组件，在传入TIMUIKitProfile的profileWidgetBuilder属性中添加[组件名](ProfileWidgetBuilder.md)即可。
+* 代码示例为自定义searchBar与customBuilderOne的示例，如用户需要自定义其余组件，在传入TIMUIKitGroupProfile的profileWidgetBuilder属性中添加[组件名](GroupProfileWidgetBuilder.md)即可。
 
 #### 代码示例
 
 ```dart
-  
+  @override
+  Widget build(BuildContext context) {
+    final List<GroupProfileWidgetEnum> widgetOrder = [
+      GroupProfileWidgetEnum.detailCard, //群组详细信息
+      GroupProfileWidgetEnum.operationDivider, //分割线
+      GroupProfileWidgetEnum.memberListTile, //群组成员列表
+      GroupProfileWidgetEnum.operationDivider, //分割线
+      GroupProfileWidgetEnum.searchMessage, //查找聊天内容
+      GroupProfileWidgetEnum.operationDivider, //分割线
+      GroupProfileWidgetEnum.groupNotice, //群公告
+      GroupProfileWidgetEnum.groupManage, //群管理
+      GroupProfileWidgetEnum.groupJoiningModeBar, //加群方式设置
+      GroupProfileWidgetEnum.groupTypeBar, //群类型栏
+      GroupProfileWidgetEnum.operationDivider, //分割线
+      GroupProfileWidgetEnum.pinedConversationBar, //置顶聊天功能
+      GroupProfileWidgetEnum.muteGroupMessageBar, //消息免打扰
+      GroupProfileWidgetEnum.operationDivider, //分割线
+      GroupProfileWidgetEnum.nameCardBar, //我的群昵称
+      GroupProfileWidgetEnum.operationDivider, //分割线
+      GroupProfileWidgetEnum.buttonArea, //按钮功能区
+      GroupProfileWidgetEnum.customBuilderOne //自定义区域一
+    ];
+    final theme = Provider.of<DefaultThemeData>(context).theme;
+    return Scaffold(
+        appBar: AppBar(
+            title: Text(
+              imt("群聊"),
+              style: const TextStyle(color: Colors.white, fontSize: 17),
+            ),
+            shadowColor: Colors.white,
+            flexibleSpace: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(colors: [
+                  theme.lightPrimaryColor ?? CommonColor.lightPrimaryColor,
+                  theme.primaryColor ?? CommonColor.primaryColor
+                ]),
+              ),
+            ),
+            iconTheme: const IconThemeData(
+              color: Colors.white,
+            )),
+        body: SafeArea(
+          child: TIMUIKitGroupProfile(
+            profileWidgetsOrder: widgetOrder,
+            lifeCycle: GroupProfileLifeCycle(didLeaveGroup: () async {
+              Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const HomePage(
+                            pageIndex: 1,
+                          )),
+                  (route) => false);
+            }),
+            groupID: groupID,
+            profileWidgetBuilder: GroupProfileWidgetBuilder(
+              searchMessage: () {
+                return TIMUIKitGroupProfileWidget.searchMessage(
+                    (V2TimConversation? conversation) {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Search(
+                                onTapConversation:
+                                    (V2TimConversation conversation,
+                                        V2TimMessage? targetMsg) {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => Chat(
+                                          selectedConversation: conversation,
+                                          initFindingMsg: targetMsg,
+                                        ),
+                                      ));
+                                },
+                                conversation: conversation,
+                              )));
+                });
+              },
+              customBuilderOne: (groupInfo, groupMemberList) {
+                return Container(
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border(
+                          bottom: BorderSide(
+                              color: theme.weakDividerColor ??
+                                  CommonColor.weakDividerColor))),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        TIM_t("如使用自定义区域，请在profileWidgetBuilder传入对应组件"),
+                        style:
+                            TextStyle(fontSize: 12, color: theme.darkTextColor),
+                      ),
+                    ],
+                  ),
+                );
+              },
+            ),
+          ),
+        ));
+  }
 ```
 
 #### 效果展示
+
+![](../../.gitbook/assets/profileWidgetBuilder1.png) ![](../../.gitbook/assets/profileWidgetBuilder2.png)
 
 ### builder
 
@@ -49,23 +154,130 @@ profileWidgetBuilder决定了在TIMUIKitProfile中不同名称的组件的渲染
 builder为用于自定义构建整个用户信息页面的构造器
 
 * 若使用此属性则profileWidgetBuilder与profileWidgetsOrder失效
-* 代码示例为使用自定义builder只展示用户信息卡片、用户性别、用户生日的案例
+* 代码示例为使用自定义builder只展示群组信息卡片、群组成员信息的案例
 
 ```dart
+  @override
+  Widget build(BuildContext context) {
+    final theme = Provider.of<DefaultThemeData>(context).theme;
+    return Scaffold(
+        appBar: AppBar(
+            title: Text(
+              imt("群聊"),
+              style: const TextStyle(color: Colors.white, fontSize: 17),
+            ),
+            shadowColor: Colors.white,
+            flexibleSpace: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(colors: [
+                  theme.lightPrimaryColor ?? CommonColor.lightPrimaryColor,
+                  theme.primaryColor ?? CommonColor.primaryColor
+                ]),
+              ),
+            ),
+            iconTheme: const IconThemeData(
+              color: Colors.white,
+            )),
+        body: SafeArea(
+          child: TIMUIKitGroupProfile(
+            lifeCycle: GroupProfileLifeCycle(didLeaveGroup: () async {
+              Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const HomePage(
+                            pageIndex: 1,
+                          )),
+                  (route) => false);
+            }),
+            groupID: groupID,
+            builder: (context, groupInfo, groupMemberList) {
+              return Column(
+                children: [
+                  TIMUIKitGroupProfileWidget.detailCard(groupInfo: groupInfo),
+                  TIMUIKitGroupProfileWidget.operationDivider(),
+                  TIMUIKitGroupProfileWidget.memberTile()
+                ],
+              );
+            },
+          ),
+        ));
+  }
 ```
 
 #### 效果展示
+
+![](../../.gitbook/assets/TIMUIKitGroupProfileBuilder.png)
 
 ### lifeCycle
 
 #### 代码示例
 
-lifeCycle为用户信息操作时的钩子函数
+lifeCycle为群组信息操作时的钩子函数
 
-* 代码示例为使用shouldAddFriend做到添加好友前跳出弹窗的案例。
+* 代码示例为使用didLeaveGroup做到退出群组后回到联系人页面的案例。
 
 ```dart
-  
+  @override
+  Widget build(BuildContext context) {
+    final theme = Provider.of<DefaultThemeData>(context).theme;
+    return Scaffold(
+        appBar: AppBar(
+            title: Text(
+              imt("群聊"),
+              style: const TextStyle(color: Colors.white, fontSize: 17),
+            ),
+            shadowColor: Colors.white,
+            flexibleSpace: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(colors: [
+                  theme.lightPrimaryColor ?? CommonColor.lightPrimaryColor,
+                  theme.primaryColor ?? CommonColor.primaryColor
+                ]),
+              ),
+            ),
+            iconTheme: const IconThemeData(
+              color: Colors.white,
+            )),
+        body: SafeArea(
+          child: TIMUIKitGroupProfile(
+            lifeCycle: GroupProfileLifeCycle(didLeaveGroup: () async {
+              Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const HomePage(
+                            pageIndex: 1,
+                          )),
+                  (route) => false);
+            }),
+            groupID: groupID,
+            profileWidgetBuilder: GroupProfileWidgetBuilder(searchMessage: () {
+              return TIMUIKitGroupProfileWidget.searchMessage(
+                  (V2TimConversation? conversation) {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => Search(
+                              onTapConversation:
+                                  (V2TimConversation conversation,
+                                      V2TimMessage? targetMsg) {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => Chat(
+                                        selectedConversation: conversation,
+                                        initFindingMsg: targetMsg,
+                                      ),
+                                    ));
+                              },
+                              conversation: conversation,
+                            )));
+              });
+            }),
+          ),
+        ));
+  }
 ```
 
-img{ display: inline-block; width:250px; height:400px; }
+#### 效果展示
+
+![](../../.gitbook/assets/didquitgroup.gif)
