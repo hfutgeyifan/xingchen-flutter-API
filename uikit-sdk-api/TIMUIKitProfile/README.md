@@ -15,7 +15,7 @@ description: 用户信息组件
 | 参数                   | 说明                                                                     | 类型                                                        | 是否必填 |
 | -------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------- | ---- |
 | userID               | 需要展示用户信息的用户id                                                          | String                                                    | 是    |
-| controller           | 关于用户信息操作的控制器                                                           | [TIMUIKitProfileController](TIMUIKitProfileController.md) | 否    |
+| controller           | 关于用户信息操作的控制器(不可自定义)                                                    | [TIMUIKitProfileController](TIMUIKitProfileController.md) | 否    |
 | profileWidgetBuilder | 用于自定义构建用户信息页面不同部分的构造器                                                  | [ProfileWidgetBuilder](ProfileWidgetBuilder.md)           | 否    |
 | profileWidgetsOrder  | 用于自定义构建用户信息页面不同部分的排序设置                                                 | List< [ProfileWidgetEnum](ProfileWidgetEnum.md) >         | 否    |
 | builder              | 用于自定义构建整个用户信息页面的构造器（若使用此属性则profileWidgetBuilder与profileWidgetsOrder失效） | [ProfileBuilder](ProfileBuilder.md)                       | 否    |
@@ -175,6 +175,76 @@ profileWidgetBuilder决定了在TIMUIKitProfile中不同名称的组件的渲染
 #### 效果展示
 
 ![](../../.gitbook/assets/profileWidgetBuilder+profileWidgetsOrder1.png) ![](../../.gitbook/assets/profileWidgetBuilder+profileWidgetsOrder2.png)
+
+### builder
+
+#### 代码示例
+
+builder为用于自定义构建整个用户信息页面的构造器
+
+* 若使用此属性则profileWidgetBuilder与profileWidgetsOrder失效
+* 代码示例为使用自定义builder只展示用户信息卡片、用户性别、用户生日的案例
+
+```dart
+  @override
+  Widget build(BuildContext context) {
+    final theme = Provider.of<DefaultThemeData>(context).theme;
+    return Scaffold(
+      appBar: AppBar(
+        shadowColor: Colors.white,
+        title: Text(
+          imt("详细资料"),
+          style: const TextStyle(color: Colors.white, fontSize: 17),
+        ),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(colors: [
+              theme.lightPrimaryColor ?? CommonColor.lightPrimaryColor,
+              theme.primaryColor ?? CommonColor.primaryColor
+            ]),
+          ),
+        ),
+        iconTheme: const IconThemeData(
+          color: Colors.white,
+        ),
+        leading: IconButton(
+          padding: const EdgeInsets.only(left: 16),
+          icon: Image.asset(
+            'images/arrow_back.png',
+            package: 'tim_ui_kit',
+            height: 34,
+            width: 34,
+          ),
+          onPressed: () {
+            Navigator.pop(context, newUserMARK);
+          },
+        ),
+      ),
+      body: Container(
+        color: theme.weakBackgroundColor,
+        child: TIMUIKitProfile(
+          builder: (context, friendInfo, conversation, friendType, isMute) {
+            return Column(
+              children: [
+                TIMUIKitProfileUserInfoCard(userInfo: friendInfo.userProfile),
+                TIMUIKitProfileWidget.genderBar(
+                    friendInfo.userProfile?.gender ?? 0),
+                TIMUIKitProfileWidget.birthdayBar(
+                    friendInfo.userProfile?.birthday)
+              ],
+            );
+          },
+          userID: widget.userID,
+          controller: _timuiKitProfileController,
+        ),
+      ),
+    );
+  }
+```
+
+#### 效果展示
+
+![](../../.gitbook/assets/builder.png)
 
 ### lifeCycle
 

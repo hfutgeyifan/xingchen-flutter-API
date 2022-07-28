@@ -14,13 +14,13 @@ description: 用于自定义构建整个用户信息页面的构造器
 
 ## 参数详解
 
-| 参数名称         | 参数类型                                                                      | 是否必填 | 描述 |
-| ------------ | ------------------------------------------------------------------------- | ---- | -- |
-| context      | BuildContext                                                              | 是    |    |
-| friendInfo   | [V2TimFriendInfo](../../api/guan-jian-lei/user/v2timfriendinfo.md)        | 是    |    |
-| conversation | [V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md) | 是    |    |
-| friendType   | int                                                                       | 是    |    |
-| isMute       | bool                                                                      | 是    |    |
+| 参数名称         | 参数类型                                                                      | 是否必填 | 描述     |
+| ------------ | ------------------------------------------------------------------------- | ---- | ------ |
+| context      | BuildContext                                                              | 是    | 构造器上下文 |
+| friendInfo   | [V2TimFriendInfo](../../api/guan-jian-lei/user/v2timfriendinfo.md)        | 是    | 用户信息   |
+| conversation | [V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md) | 是    | 会话信息   |
+| friendType   | int                                                                       | 是    | 好友类型   |
+| isMute       | bool                                                                      | 是    | 是否禁言   |
 
 ## 返回值
 
@@ -36,5 +36,4 @@ Widget
 
 ## 代码示例
 
-```dart
-```
+代码示例可见[TIMUIKitProfile](./)
