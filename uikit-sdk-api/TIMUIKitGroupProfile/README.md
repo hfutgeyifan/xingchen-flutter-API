@@ -149,12 +149,12 @@ profileWidgetBuilder决定了在TIMUIKitGroupProfile中不同名称的组件的�
 
 ### builder
 
-#### 代码示例
-
 builder为用于自定义构建整个用户信息页面的构造器
 
 * 若使用此属性则profileWidgetBuilder与profileWidgetsOrder失效
 * 代码示例为使用自定义builder只展示群组信息卡片、群组成员信息的案例
+
+#### 代码示例
 
 ```dart
   @override
@@ -210,11 +210,11 @@ builder为用于自定义构建整个用户信息页面的构造器
 
 ### lifeCycle
 
-#### 代码示例
-
 lifeCycle为群组信息操作时的钩子函数
 
 * 代码示例为使用didLeaveGroup做到退出群组后回到联系人页面的案例。
+
+#### 代码示例
 
 ```dart
   @override
