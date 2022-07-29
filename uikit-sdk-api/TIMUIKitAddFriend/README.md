@@ -64,7 +64,7 @@ isShowDefaultGroup决定了在发送好友申请页面是否展示用户被添�
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitAddFriend-isShowDefaultGroup.png)
+![](../../\_book/.gitbook/assets/TIMUIKitAddFriend-isShowDefaultGroup.png)
 
 ### onTapAlreadyFriendsItem
 
@@ -111,7 +111,7 @@ onTapAlreadyFriendsItem为当添加已经是好友的用户时的函数
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitAddFriend-onTapAlreadyFriendsItem.gif)
+![](../../\_book/.gitbook/assets/TIMUIKitAddFriend-onTapAlreadyFriendsItem.gif)
 
 ### lifeCycle
 
@@ -130,7 +130,7 @@ lifeCycle为添加好友操作时的钩子函数
           [BuildContext? applicationContext]) async {
         //发送好友请求前的逻辑
         // 弹出对话框
-        Future<bool?> showShouldAddToBlockListDialog() {
+        Future<bool?> shouldAddFriendDialog() {
           return showDialog<bool>(
             context: applicationContext!,
             builder: (applicationContext) {
@@ -156,7 +156,7 @@ lifeCycle为添加好友操作时的钩子函数
           );
         }
 
-        bool? isAdd = await showShouldAddToBlockListDialog();
+        bool? isAdd = await shouldAddFriendDialog();
         return isAdd ?? false;
       },
     );
@@ -195,4 +195,4 @@ lifeCycle为添加好友操作时的钩子函数
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitAddFriend-lifeCircle.gif)
+![](../../\_book/.gitbook/assets/TIMUIKitAddFriend-lifeCircle.gif)

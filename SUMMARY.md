@@ -74,7 +74,6 @@
 * [TIMUIKitAddGroup](uikit-sdk-api/TIMUIKitAddGroup/README.md)
   * [AddGroupLifeCycle](uikit-sdk-api/TIMUIKitAddGroup/AddGroupLifeCycle.md)
 * [TIMUIKitBlackList](uikit-sdk-api/TIMUIKitBlackList/README.md)
-  * [BlackListItemBuilder](uikit-sdk-api/TIMUIKitBlackList/BlackListItemBuilder.md)
   * [BlockListLifeCycle](uikit-sdk-api/TIMUIKitBlackList/BlockListLifeCycle.md)
 * [TIMUIKitChat](uikit-sdk-api/TIMUIKitChat.md)
 * [TIMUIKitContact](uikit-sdk-api/TIMUIKitContact.md)

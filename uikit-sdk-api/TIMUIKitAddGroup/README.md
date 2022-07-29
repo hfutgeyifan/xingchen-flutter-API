@@ -66,7 +66,7 @@ onTapExistGroup当添加已在群组时的函数
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitAddGroup-onTapExistGroup.gif)
+![](../../\_book/.gitbook/assets/TIMUIKitAddGroup-onTapExistGroup.gif)
 
 ### lifeCycle
 
@@ -84,7 +84,7 @@ lifeCycle为添加群组操作时的钩子函数
           [BuildContext? applicationContext]) async {
         //发送添加群组请求前的逻辑
         // 弹出对话框
-        Future<bool?> showShouldAddToBlockListDialog() {
+        Future<bool?> shouldAddGroupDialog() {
           return showDialog<bool>(
             context: applicationContext!,
             builder: (applicationContext) {
@@ -110,7 +110,7 @@ lifeCycle为添加群组操作时的钩子函数
           );
         }
 
-        bool? isAdd = await showShouldAddToBlockListDialog();
+        bool? isAdd = await shouldAddGroupDialog();
         return isAdd ?? false;
       },
     );
@@ -151,4 +151,4 @@ lifeCycle为添加群组操作时的钩子函数
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitAddGroup-lifeCircle.gif)
+![](../../\_book/.gitbook/assets/TIMUIKitAddGroup-lifeCircle.gif)

@@ -12,5 +12,5 @@ description: 添加群组操作时的钩子函数
 
 ### shouldAddGroup
 
-* 参数类型 : Function(String groupID, String message, \[BuildContext? context])
+* 参数类型 : Future< bool > Function(String groupID, String message, \[BuildContext? context])
 * 参数描述 : 在添加群组前的钩子函数
