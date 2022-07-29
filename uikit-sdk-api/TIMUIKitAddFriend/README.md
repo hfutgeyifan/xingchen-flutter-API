@@ -64,7 +64,7 @@ isShowDefaultGroup决定了在发送好友申请页面是否展示用户被添�
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitAddFriend-isShowDefaultGroup.png)
+![](../../.gitbook/assets/TIMUIKitAddFriend-isShowDefaultGroup.png)
 
 ### onTapAlreadyFriendsItem
 
@@ -111,7 +111,7 @@ onTapAlreadyFriendsItem为当添加已经是好友的用户时的函数
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitAddFriend-onTapAlreadyFriendsItem.gif)
+![](../../.gitbook/assets/TIMUIKitAddFriend-onTapAlreadyFriendsItem.gif)
 
 ### lifeCycle
 
@@ -195,4 +195,4 @@ lifeCycle为添加好友操作时的钩子函数
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitAddFriend-lifeCircle.gif)
+![](../../.gitbook/assets/TIMUIKitAddFriend-lifeCircle.gif)
