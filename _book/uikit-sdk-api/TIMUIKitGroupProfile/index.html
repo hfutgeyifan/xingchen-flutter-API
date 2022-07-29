@@ -1013,9 +1013,9 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../TIMUIKitAddFriend.html">
+        <li class="chapter " data-level="3.1" data-path="../TIMUIKitAddFriend/">
             
-                <a href="../TIMUIKitAddFriend.html">
+                <a href="../TIMUIKitAddFriend/">
             
                     
                     TIMUIKitAddFriend
@@ -1024,11 +1024,30 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../TIMUIKitAddFriend/AddFriendLifeCycle.html">
+            
+                <a href="../TIMUIKitAddFriend/AddFriendLifeCycle.html">
+            
+                    
+                    AddFriendLifeCycle
+            
+                </a>
+            
+
+            
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../TIMUIKitAddGroup.html">
+
+            </ul>
             
-                <a href="../TIMUIKitAddGroup.html">
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../TIMUIKitAddGroup/">
+            
+                <a href="../TIMUIKitAddGroup/">
             
                     
                     TIMUIKitAddGroup
@@ -1036,6 +1055,25 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../TIMUIKitAddGroup/AddGroupLifeCycle.html">
+            
+                <a href="../TIMUIKitAddGroup/AddGroupLifeCycle.html">
+            
+                    
+                    AddGroupLifeCycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -5345,7 +5383,7 @@
 </tr>
 <tr>
 <td>backGroundColor</td>
-<td></td>
+<td>&#x7FA4;&#x7EC4;&#x4FE1;&#x606F;&#x9875;&#x9762;&#x80CC;&#x666F;&#x989C;&#x8272;</td>
 <td>Color</td>
 <td>&#x5426;</td>
 </tr>
@@ -5495,12 +5533,12 @@
 <h4 id="&#x6548;&#x679C;&#x5C55;&#x793A;">&#x6548;&#x679C;&#x5C55;&#x793A;</h4>
 <p><img src="../../.gitbook/assets/profileWidgetBuilder1.png" alt=""> <img src="../../.gitbook/assets/profileWidgetBuilder2.png" alt=""></p>
 <h3 id="builder">builder</h3>
-<h4 id="&#x4EE3;&#x7801;&#x793A;&#x4F8B;">&#x4EE3;&#x7801;&#x793A;&#x4F8B;</h4>
 <p>builder&#x4E3A;&#x7528;&#x4E8E;&#x81EA;&#x5B9A;&#x4E49;&#x6784;&#x5EFA;&#x6574;&#x4E2A;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x9875;&#x9762;&#x7684;&#x6784;&#x9020;&#x5668;</p>
 <ul>
 <li>&#x82E5;&#x4F7F;&#x7528;&#x6B64;&#x5C5E;&#x6027;&#x5219;profileWidgetBuilder&#x4E0E;profileWidgetsOrder&#x5931;&#x6548;</li>
 <li>&#x4EE3;&#x7801;&#x793A;&#x4F8B;&#x4E3A;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;builder&#x53EA;&#x5C55;&#x793A;&#x7FA4;&#x7EC4;&#x4FE1;&#x606F;&#x5361;&#x7247;&#x3001;&#x7FA4;&#x7EC4;&#x6210;&#x5458;&#x4FE1;&#x606F;&#x7684;&#x6848;&#x4F8B;</li>
 </ul>
+<h4 id="&#x4EE3;&#x7801;&#x793A;&#x4F8B;">&#x4EE3;&#x7801;&#x793A;&#x4F8B;</h4>
 <pre><code class="lang-dart">  <span class="hljs-meta">@override</span>
   Widget build(BuildContext context) {
     <span class="hljs-keyword">final</span> theme = Provider.of&lt;DefaultThemeData&gt;(context).theme;
@@ -5550,11 +5588,11 @@
 <h4 id="&#x6548;&#x679C;&#x5C55;&#x793A;">&#x6548;&#x679C;&#x5C55;&#x793A;</h4>
 <p><img src="../../.gitbook/assets/TIMUIKitGroupProfileBuilder.png" alt=""></p>
 <h3 id="lifecycle">lifeCycle</h3>
-<h4 id="&#x4EE3;&#x7801;&#x793A;&#x4F8B;">&#x4EE3;&#x7801;&#x793A;&#x4F8B;</h4>
 <p>lifeCycle&#x4E3A;&#x7FA4;&#x7EC4;&#x4FE1;&#x606F;&#x64CD;&#x4F5C;&#x65F6;&#x7684;&#x94A9;&#x5B50;&#x51FD;&#x6570;</p>
 <ul>
 <li>&#x4EE3;&#x7801;&#x793A;&#x4F8B;&#x4E3A;&#x4F7F;&#x7528;didLeaveGroup&#x505A;&#x5230;&#x9000;&#x51FA;&#x7FA4;&#x7EC4;&#x540E;&#x56DE;&#x5230;&#x8054;&#x7CFB;&#x4EBA;&#x9875;&#x9762;&#x7684;&#x6848;&#x4F8B;&#x3002;</li>
 </ul>
+<h4 id="&#x4EE3;&#x7801;&#x793A;&#x4F8B;">&#x4EE3;&#x7801;&#x793A;&#x4F8B;</h4>
 <pre><code class="lang-dart">  <span class="hljs-meta">@override</span>
   Widget build(BuildContext context) {
     <span class="hljs-keyword">final</span> theme = Provider.of&lt;DefaultThemeData&gt;(context).theme;
@@ -5660,7 +5698,7 @@
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"description":"群组信息组件","title":"TIMUIKitGroupProfile","level":"3.8","depth":1,"next":{"title":"GroupProfileWidgetBuilder","level":"3.8.1","depth":2,"path":"uikit-sdk-api/TIMUIKitGroupProfile/GroupProfileWidgetBuilder.md","ref":"uikit-sdk-api/TIMUIKitGroupProfile/GroupProfileWidgetBuilder.md","articles":[]},"previous":{"title":"TIMUIKitGroup","level":"3.7","depth":1,"path":"uikit-sdk-api/TIMUIKitGroup.md","ref":"uikit-sdk-api/TIMUIKitGroup.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints","livereload"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://testcomm.qq.com/im/doc/flutter/index.html","text":"flutter","selected":true}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"uikit-sdk-api/TIMUIKitGroupProfile/README.md","mtime":"2022-07-28T10:03:05.536Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-28T10:03:25.752Z"},"basePath":"../..","book":{"language":""}});
+			gitbook.page.hasChanged({"page":{"description":"群组信息组件","title":"TIMUIKitGroupProfile","level":"3.8","depth":1,"next":{"title":"GroupProfileWidgetBuilder","level":"3.8.1","depth":2,"path":"uikit-sdk-api/TIMUIKitGroupProfile/GroupProfileWidgetBuilder.md","ref":"uikit-sdk-api/TIMUIKitGroupProfile/GroupProfileWidgetBuilder.md","articles":[]},"previous":{"title":"TIMUIKitGroup","level":"3.7","depth":1,"path":"uikit-sdk-api/TIMUIKitGroup.md","ref":"uikit-sdk-api/TIMUIKitGroup.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints","livereload"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://testcomm.qq.com/im/doc/flutter/index.html","text":"flutter","selected":true}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"uikit-sdk-api/TIMUIKitGroupProfile/README.md","mtime":"2022-07-28T14:57:41.475Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-28T15:23:32.983Z"},"basePath":"../..","book":{"language":""}});
 		});
 	</script>
 </div>
