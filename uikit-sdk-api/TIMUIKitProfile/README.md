@@ -174,7 +174,7 @@ profileWidgetBuilder决定了在TIMUIKitProfile中不同名称的组件的渲染
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/profileWidgetBuilder+profileWidgetsOrder1.png) ![](../../\_book/.gitbook/assets/profileWidgetBuilder+profileWidgetsOrder2.png)
+![](../../.gitbook/assets/profileWidgetBuilder+profileWidgetsOrder1.png) ![](../../.gitbook/assets/profileWidgetBuilder+profileWidgetsOrder2.png)
 
 ### builder
 
@@ -244,7 +244,7 @@ builder为用于自定义构建整个用户信息页面的构造器
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/builder.png)
+![](../../.gitbook/assets/builder.png)
 
 ### lifeCycle
 
@@ -395,4 +395,4 @@ lifeCycle为用户信息操作时的钩子函数
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/lifeCycle1.png) ![](../../\_book/.gitbook/assets/lifeCycle2.png)
+![](../../.gitbook/assets/lifeCycle1.png) ![](../../.gitbook/assets/lifeCycle2.png)
