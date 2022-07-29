@@ -78,6 +78,7 @@
 * [TIMUIKitChat](uikit-sdk-api/TIMUIKitChat.md)
 * [TIMUIKitContact](uikit-sdk-api/TIMUIKitContact/README.md)
   * [FriendListLifeCycle](uikit-sdk-api/TIMUIKitContact/FriendListLifeCycle.md)
+  * [TopListItem](uikit-sdk-api/TIMUIKitContact/TopListItem.md)
 * [TIMUIKitConversation](uikit-sdk-api/TIMUIKitConversation.md)
 * [TIMUIKitGroup](uikit-sdk-api/TIMUIKitGroup/README.md)
 * [TIMUIKitGroupProfile](uikit-sdk-api/TIMUIKitGroupProfile/README.md)
