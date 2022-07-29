@@ -78,7 +78,7 @@
 * [TIMUIKitChat](uikit-sdk-api/TIMUIKitChat.md)
 * [TIMUIKitContact](uikit-sdk-api/TIMUIKitContact.md)
 * [TIMUIKitConversation](uikit-sdk-api/TIMUIKitConversation.md)
-* [TIMUIKitGroup](uikit-sdk-api/TIMUIKitGroup.md)
+* [TIMUIKitGroup](uikit-sdk-api/TIMUIKitGroup/README.md)
 * [TIMUIKitGroupProfile](uikit-sdk-api/TIMUIKitGroupProfile/README.md)
   * [GroupProfileWidgetBuilder](uikit-sdk-api/TIMUIKitGroupProfile/GroupProfileWidgetBuilder.md)
   * [GroupProfileWidgetEnum](uikit-sdk-api/TIMUIKitGroupProfile/GroupProfileWidgetEnum.md)
