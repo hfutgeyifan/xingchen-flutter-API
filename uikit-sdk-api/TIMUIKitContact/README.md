@@ -204,17 +204,26 @@ topListItemBuilder决定了好友列表顶部功能栏模块的样式。
 
 ### emptyBuilder
 
-emptyBuilder决定了当用户黑名单列表为空时黑名单列表页面的样式。
+emptyBuilder决定了当用户好友列表为空时好友列表页面的样式。
 
-* 代码示例为使用自定义emptyBuilder展示暂无黑名单的页面样式。
+* 代码示例为使用自定义emptyBuilder展示暂无好友的页面样式。
 
 #### 代码示例
 
 ```dart
-  
+  @override
+  Widget build(BuildContext context) {
+    return TIMUIKitContact(
+      emptyBuilder: (context) => Center(
+        child: Text(imt("无联系人")),
+      ),
+    );
+  }
 ```
 
 #### 效果展示
+
+![](../../.gitbook/assets/TIMUIKitContact-emptybuilder.png)
 
 ### lifeCycle
 
