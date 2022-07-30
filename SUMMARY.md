@@ -71,7 +71,6 @@
 
 * [TIMUIKitConversation](uikit-sdk-api/TIMUIKitConversation/README.md)
   * [TIMUIKitConversationController](uikit-sdk-api/TIMUIKitConversation/TIMUIKitConversationController.md)
-  * [LastMessageBuilder](uikit-sdk-api/TIMUIKitConversation/LastMessageBuilder.md)
   * [ConversationLifeCycle](uikit-sdk-api/TIMUIKitConversation/ConversationLifeCycle.md)
 * [TIMUIKitChat](uikit-sdk-api/TIMUIKitChat.md)
 * [TIMUIKitAddFriend](uikit-sdk-api/TIMUIKitAddFriend/README.md)
