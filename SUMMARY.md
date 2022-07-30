@@ -69,17 +69,17 @@
 
 ## UIKit SDK API
 
+* [TIMUIKitConversation](uikit-sdk-api/TIMUIKitConversation.md)
+* [TIMUIKitChat](uikit-sdk-api/TIMUIKitChat.md)
 * [TIMUIKitAddFriend](uikit-sdk-api/TIMUIKitAddFriend/README.md)
   * [AddFriendLifeCycle](uikit-sdk-api/TIMUIKitAddFriend/AddFriendLifeCycle.md)
 * [TIMUIKitAddGroup](uikit-sdk-api/TIMUIKitAddGroup/README.md)
   * [AddGroupLifeCycle](uikit-sdk-api/TIMUIKitAddGroup/AddGroupLifeCycle.md)
 * [TIMUIKitBlackList](uikit-sdk-api/TIMUIKitBlackList/README.md)
   * [BlockListLifeCycle](uikit-sdk-api/TIMUIKitBlackList/BlockListLifeCycle.md)
-* [TIMUIKitChat](uikit-sdk-api/TIMUIKitChat.md)
 * [TIMUIKitContact](uikit-sdk-api/TIMUIKitContact/README.md)
   * [FriendListLifeCycle](uikit-sdk-api/TIMUIKitContact/FriendListLifeCycle.md)
   * [TopListItem](uikit-sdk-api/TIMUIKitContact/TopListItem.md)
-* [TIMUIKitConversation](uikit-sdk-api/TIMUIKitConversation.md)
 * [TIMUIKitGroup](uikit-sdk-api/TIMUIKitGroup/README.md)
 * [TIMUIKitGroupProfile](uikit-sdk-api/TIMUIKitGroupProfile/README.md)
   * [GroupProfileWidgetBuilder](uikit-sdk-api/TIMUIKitGroupProfile/GroupProfileWidgetBuilder.md)
@@ -94,7 +94,7 @@
   * [ProfileWidgetEnum](uikit-sdk-api/TIMUIKitProfile/ProfileWidgetEnum.md)
   * [ProfileBuilder](uikit-sdk-api/TIMUIKitProfile/ProfileBuilder.md)
   * [OnSelProfileLifeCycle](uikit-sdk-api/TIMUIKitProfile/OnSelProfileLifeCycle.md)
-* [TIMUIKitSearch](uikit-sdk-api/TIMUIKitSearch.md)
+* [TIMUIKitSearch](uikit-sdk-api/TIMUIKitSearch/README.md)
 
 ## SDKAPI
 
