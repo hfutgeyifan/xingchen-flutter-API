@@ -12,10 +12,10 @@ description: 搜索组件
 
 ## 参数列表
 
-| 参数                  | 说明                             | 类型                                                                                                                | 是否必填 |
-| ------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------- | ---- |
-| onTapConversation   | 点击用户模块、群组模块、搜索详细聊天记录内信息模块的回调函数 | Function([V2TimConversation](../api/guan-jian-lei/message/v2timconversation.md), V2TimMessage?)                   | 是    |
-| onEnterConversation | 点击聊天历史模块的回调函数                  | Function([V2TimConversation](../api/guan-jian-lei/message/v2timconversation.md) conversation, String initKeyword) | 是    |
+| 参数                  | 说明                             | 类型                                                                                                                   | 是否必填 |
+| ------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------- | ---- |
+| onTapConversation   | 点击用户模块、群组模块、搜索详细聊天记录内信息模块的回调函数 | Function([V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md), V2TimMessage?)                   | 是    |
+| onEnterConversation | 点击聊天历史模块的回调函数                  | Function([V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md) conversation, String initKeyword) | 是    |
 
 ## 代码示例与效果展示
 
@@ -94,7 +94,7 @@ onTapConversation为点击用户模块、群组模块、搜索详细聊天记录
 
 #### 效果展示
 
-![](../.gitbook/assets/TIMUIKitSearch-ontapconversation1.gif) ![](../.gitbook/assets/TIMUIKitSearch-ontapconversation2.gif) ![](../.gitbook/assets/TIMUIKitSearch-ontapconversation3.gif)
+![](../../.gitbook/assets/TIMUIKitSearch-ontapconversation1.gif) ![](../../.gitbook/assets/TIMUIKitSearch-ontapconversation2.gif) ![](<../../.gitbook/assets/TIMUIKitSearch-ontapconversation3 (1).gif>)
 
 ### onEnterConversation
 
@@ -171,4 +171,4 @@ onEnterConversation为点击聊天历史模块的回调函数。
 
 #### 效果展示
 
-![](<../.gitbook/assets/TIMUIKitSearch-ontapconversation3 (1).gif>)
+![](../../.gitbook/assets/TIMUIKitSearch-ontapconversation3.gif)

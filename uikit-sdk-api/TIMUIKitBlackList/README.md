@@ -67,7 +67,7 @@ onTapItem为黑名单用户模块点击触发的函数。
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitBlackList-ontapitem.png)
+![](../../\_book/.gitbook/assets/TIMUIKitBlackList-ontapitem.png)
 
 ### emptyBuilder
 
@@ -113,7 +113,7 @@ emptyBuilder决定了当用户黑名单列表为空时黑名单列表页面的�
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitBlackList-emptyBuilder.png)
+![](../../\_book/.gitbook/assets/TIMUIKitBlackList-emptyBuilder.png)
 
 ### itemBuilder
 
@@ -221,7 +221,7 @@ itemBuilder为用于自定义构建黑名单用户模块的构造器
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitBlackList-itemBuilder.png)
+![](../../\_book/.gitbook/assets/TIMUIKitBlackList-itemBuilder.png)
 
 ### lifeCycle
 
@@ -303,4 +303,4 @@ lifeCycle为用户信息操作时的钩子函数
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitBlackList-lifecircle.gif)
+![](../../\_book/.gitbook/assets/TIMUIKitBlackList-lifecircle.gif)
