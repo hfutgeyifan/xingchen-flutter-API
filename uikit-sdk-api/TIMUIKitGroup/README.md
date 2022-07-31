@@ -88,7 +88,7 @@ onTapItem为群组模块点击触发的函数。
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitGroup-ontapitem.gif)
+![](../../.gitbook/assets/TIMUIKitGroup-ontapitem.gif)
 
 ### emptyBuilder
 
@@ -141,7 +141,7 @@ emptyBuilder决定了当群组列表为空时群组列表页面的样式。
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitGroup-emptybuilder.png)
+![](../../.gitbook/assets/TIMUIKitGroup-emptybuilder.png)
 
 ### itemBuilder
 
@@ -249,7 +249,7 @@ itemBuilder为用于自定义构建群组模块的构造器
 
 #### 效果展示
 
-![](<../../.gitbook/assets/TIMUIKitGroup-itembuilder (1) (1).png>)
+![](<../../.gitbook/assets/TIMUIKitGroup-itembuilder (1) (1) (1).png>)
 
 ### groupCollector
 
@@ -302,4 +302,4 @@ groupCollector为群组列表展示的过滤器
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitGroup-groupCollector1.png) ![](../../\_book/.gitbook/assets/TIMUIKitGroup-groupCollector2.png)
+![](../../.gitbook/assets/TIMUIKitGroup-groupCollector1.png) ![](../../.gitbook/assets/TIMUIKitGroup-groupCollector2.png)

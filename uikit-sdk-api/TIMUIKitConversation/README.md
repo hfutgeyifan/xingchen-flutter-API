@@ -137,7 +137,7 @@ itemBuilder为用于自定义构建会话模块的构造器
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitConversation-itembuilder.png)
+![](<../../.gitbook/assets/TIMUIKitConversation-itembuilder (1).png>)
 
 ### itemSlidableBuilder
 

@@ -53,7 +53,7 @@ onTapItem为用户模块点击触发的函数。
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitContact-ontapitem.gif)
+![](../../.gitbook/assets/TIMUIKitContact-ontapitem.gif)
 
 ### topList与topListItemBuilder
 
@@ -200,7 +200,7 @@ topListItemBuilder决定了好友列表顶部功能栏模块的样式。
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitContact-toplist.gif)
+![](../../.gitbook/assets/TIMUIKitContact-toplist.gif)
 
 ### emptyBuilder
 
@@ -263,7 +263,7 @@ lifeCycle为好友列表操作时的钩子函数
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitContact-lifecircle.png)
+![](../../.gitbook/assets/TIMUIKitContact-lifecircle.png)
 
 ### isShowOnlineStatus
 
@@ -294,4 +294,4 @@ isShowOnlineStatus为在好友列表中好友头像处是否展示好友在线�
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitContact-isShowOnlineStatus.png)
+![](../../.gitbook/assets/TIMUIKitContact-isShowOnlineStatus.png)
