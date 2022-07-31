@@ -295,3 +295,10 @@ isShowOnlineStatus为在好友列表中好友头像处是否展示好友在线�
 #### 效果展示
 
 ![](../../.gitbook/assets/TIMUIKitContact-isShowOnlineStatus.png)
+
+<style>
+  img{
+    width:220px;
+    height:400px;
+  }
+</style>

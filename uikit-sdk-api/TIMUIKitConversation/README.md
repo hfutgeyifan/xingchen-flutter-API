@@ -137,7 +137,7 @@ itemBuilder为用于自定义构建会话模块的构造器
 
 #### 效果展示
 
-![](<../../.gitbook/assets/TIMUIKitConversation-itembuilder (1) (1).png>)
+![](../../.gitbook/assets/TIMUIKitConversation-itembuilder.png)
 
 ### itemSlidableBuilder
 
@@ -402,3 +402,10 @@ isShowOnlineStatus为在会话列表中好友头像处是否展示好友在线�
 #### 效果展示
 
 ![](../../.gitbook/assets/TIMUIKitConversation-isShowOnlineStatus.png)
+
+<style>
+  img{
+    width:220px;
+    height:400px;
+  }
+</style>

@@ -346,3 +346,10 @@ lifeCycle为添加群组操作时的钩子函数
 #### 效果展示
 
 ![](../../.gitbook/assets/TIMUIKitNewContact-lifecircle.gif)
+
+<style>
+  img{
+    width:220px;
+    height:400px;
+  }
+</style>

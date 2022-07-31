@@ -396,3 +396,10 @@ lifeCycle为用户信息操作时的钩子函数
 #### 效果展示
 
 ![](../../.gitbook/assets/lifeCycle1.png) ![](../../.gitbook/assets/lifeCycle2.png)
+
+<style>
+  img{
+    width:220px;
+    height:400px;
+  }
+</style>

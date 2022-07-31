@@ -66,7 +66,7 @@ onTapExistGroup当添加已在群组时的函数
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitAddGroup-onTapExistGroup.gif)
+![](../../.gitbook/assets/TIMUIKitAddGroup-onTapExistGroup.gif)
 
 ### lifeCycle
 
@@ -151,4 +151,11 @@ lifeCycle为添加群组操作时的钩子函数
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitAddGroup-lifeCircle.gif)
+![](../../.gitbook/assets/TIMUIKitAddGroup-lifeCircle.gif)
+
+<style>
+  img{
+    width:220px;
+    height:400px;
+  }
+</style>
