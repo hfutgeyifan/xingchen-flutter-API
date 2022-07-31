@@ -13,37 +13,37 @@ description: 消息页面设置
 ### isShowReadingStatus
 
 * 参数类型 : bool
-* 参数描述 :&#x20;
+* 参数描述 : 是否展示消息的阅读状态
 
 ### isShowGroupReadingStatus
 
 * 参数类型 : bool
-* 参数描述 :&#x20;
+* 参数描述 : 是否展示群组消息的阅读状态
 
 ### isAllowLongPressMessage
 
 * 参数类型 : bool
-* 参数描述 :&#x20;
+* 参数描述 : 是否允许使用长按消息出现消息操作功能
 
 ### isAllowClickAvatar
 
 * 参数类型 : bool
-* 参数描述 :&#x20;
+* 参数描述 : 是否允许使用点击头像的回调函数
 
 ### isAllowEmojiPanel
 
 * 参数类型 : bool
-* 参数描述 :&#x20;
+* 参数描述 : 是否允许使用表情面板
 
 ### isAllowShowMorePanel
 
 * 参数类型 : bool
-* 参数描述 :&#x20;
+* 参数描述 : 是否允许使用更多操作面板
 
 ### isAllowSoundMessage
 
 * 参数类型 : bool
-* 参数描述 :&#x20;
+* 参数描述 : 是否允许发送语音消息
 
 ### isAtWhenReply
 
