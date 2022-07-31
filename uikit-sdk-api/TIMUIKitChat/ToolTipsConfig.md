@@ -8,7 +8,7 @@
 
 ### showReplyMessage
 
-* 参数类型 : bool
+* 参数类型 :&#x20;
 * 参数描述 : 在将新的消息加入到历史消息列表前的钩子函数
 
 ### showMultipleChoiceMessage

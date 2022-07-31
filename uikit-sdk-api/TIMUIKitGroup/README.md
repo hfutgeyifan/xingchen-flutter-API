@@ -249,7 +249,7 @@ itemBuilder为用于自定义构建群组模块的构造器
 
 #### 效果展示
 
-![](<../../\_book/.gitbook/assets/TIMUIKitGroup-itembuilder (1).png>)
+![](<../../.gitbook/assets/TIMUIKitGroup-itembuilder (1) (1).png>)
 
 ### groupCollector
 
