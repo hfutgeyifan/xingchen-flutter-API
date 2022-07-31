@@ -73,6 +73,7 @@
   * [TIMUIKitConversationController](uikit-sdk-api/TIMUIKitConversation/TIMUIKitConversationController.md)
   * [ConversationLifeCycle](uikit-sdk-api/TIMUIKitConversation/ConversationLifeCycle.md)
 * [TIMUIKitChat](uikit-sdk-api/TIMUIKitChat/README.md)
+  * [MessageListTongueType](uikit-sdk-api/TIMUIKitChat/MessageListTongueType.md)
   * [MessageItemBuilder](uikit-sdk-api/TIMUIKitChat/MessageItemBuilder.md)
   * [MorePanelConfig](uikit-sdk-api/TIMUIKitChat/MorePanelConfig.md)
     * [MorePanelItem](uikit-sdk-api/TIMUIKitChat/MorePanelItem.md)
