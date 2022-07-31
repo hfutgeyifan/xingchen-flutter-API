@@ -18,7 +18,7 @@ description: 聊天列表操作时的钩子函数
 ### shouldClearHistoricalMessageForConversation
 
 * 参数类型 : Future< bool > Function(String conversationID)
-* 参数描述 : 在将用户清除历史信息前的钩子函数
+* 参数描述 : 在将用户清除会话历史信息前的钩子函数
 
 ### conversationListWillMount
 
