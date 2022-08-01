@@ -25,7 +25,7 @@ description: 聊天组件
 | initFindingMsg             | 进入页面需要查询的消息             | [V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md)                                                                                                            | 否    |
 | textFieldHintText          | 输入框默认提示语                | String                                                                                                                                                                     | 否    |
 | appBarConfig               | 上方抬头栏设置                 | AppBar                                                                                                                                                                     | 否    |
-| mainHistoryListConfig      | 历史消息列表的ListView配置       | ListView                                                                                                                                                                   | 否    |
+| mainHistoryListConfig      | 历史消息列表的ListView配置       | TIMUIKitHistoryMessageListConfig                                                                                                                                           | 否    |
 | morePanelConfig            | 更多操作选项设置                | [MorePanelConfig](MorePanelConfig.md)                                                                                                                                      | 否    |
 | tongueItemBuilder          | 小舌头构造器（右下角按钮提示框样式构造器）   | Widget Function( [VoidCallback](../../api/callbacks/voidcallback.md) onClick, [MessageListTongueType](MessageListTongueType.md) valueType, int unreadCount)                | 否    |
 | groupAtInfoList            | 群组消息@信息列表               | List< [V2TimGroupAtInfo](../../api/guan-jian-lei/group/v2timgroupatinfo.md)? >                                                                                             | 否    |
@@ -70,6 +70,8 @@ conversationShowName为聊天页面的聊天对象名称。
 ```
 
 #### 效果展示
+
+![](../../.gitbook/assets/TIMUIKitChat-conversationShowName.png)
 
 ### onTapAvatar
 
@@ -118,6 +120,8 @@ onTapAvatar为点击头像的回调函数
 
 #### 效果展示
 
+![](../../.gitbook/assets/TIMUIKitChat-onTapAvatar.gif)
+
 ### messageItemBuilder
 
 messageItemBuilder为用于自定义不同种类消息样式的构造器
@@ -164,6 +168,8 @@ messageItemBuilder为用于自定义不同种类消息样式的构造器
 
 #### 效果展示
 
+![](../../.gitbook/assets/TIMUIKitChat-messageItemBuilder.png)
+
 ### showTotalUnReadCount
 
 showTotalUnReadCount为是否展示当前未读消息总数的设置
@@ -196,6 +202,8 @@ showTotalUnReadCount为是否展示当前未读消息总数的设置
 ```
 
 #### 效果展示
+
+![](../../.gitbook/assets/TIMUIKitChat-showTotalUnReadCount.png)
 
 ### extraTipsActionItemBuilder
 
@@ -271,6 +279,8 @@ extraTipsActionItemBuilder为新增的长按弹出消息操作功能的自定义
 
 #### 效果展示
 
+![](../../.gitbook/assets/TIMUIKitChat-extraTipsActionItemBuilder.png)
+
 ### draftText
 
 draftText为会话的草稿文本
@@ -308,6 +318,8 @@ draftText为会话的草稿文本
 ```
 
 #### 效果展示
+
+![](../../.gitbook/assets/TIMUIKitChat-draftText.gif)
 
 ### initFindingMsg
 
@@ -506,13 +518,35 @@ appBarConfig为上方抬头栏设置
 
 ### mainHistoryListConfig
 
-mainHistoryListConfig为在会话列表中好友头像处是否展示好友在线状态的设置
+mainHistoryListConfig为历史消息列表的ListView配置
 
-* 代码示例为使用isShowOnlineStatus做到在会话列表中展示好友在线状态。
+* 代码示例为使用isShowOnlineStatus做到历史消息列表中聊天对象头像右移。
 
 #### 代码示例
 
 ```dart
+  @override
+  Widget build(BuildContext context) {
+    String? _getConvID() {
+      return widget.selectedConversation.type == 1
+          ? widget.selectedConversation.userID
+          : widget.selectedConversation.groupID;
+    }
+
+    String _getTitle() {
+      return backRemark ?? widget.selectedConversation.showName ?? "";
+    }
+
+    return TIMUIKitChat(
+        mainHistoryListConfig: TIMUIKitHistoryMessageListConfig(
+          padding: const EdgeInsets.only(left: 28),
+        ),
+        key: tuiChatField,
+        conversationID: _getConvID() ?? '',
+        conversationType:
+            widget.selectedConversation.type ?? ConversationType.V2TIM_C2C,
+        conversationShowName: _getTitle());
+  }
 ```
 
 #### 效果展示
@@ -968,15 +1002,120 @@ lifeCycle为聊天消息操作时的钩子函数
 
 #### 效果展示
 
-### is
+### topFixWidget
 
-isShowOnlineStatus为在会话列表中好友头像处是否展示好友在线状态的设置
+topFixWidget为聊天页面上方自定义widget
 
-* 代码示例为使用isShowOnlineStatus做到在会话列表中展示好友在线状态。
+* 代码示例为使用topFixWidget做到在聊天页面上方显示自定义widget。
 
 #### 代码示例
 
 ```dart
+  @override
+  Widget build(BuildContext context) {
+    String? _getConvID() {
+      return widget.selectedConversation.type == 1
+          ? widget.selectedConversation.userID
+          : widget.selectedConversation.groupID;
+    }
+
+    String _getTitle() {
+      return backRemark ?? widget.selectedConversation.showName ?? "";
+    }
+
+    return TIMUIKitChat(
+        topFixWidget: Row(
+          children: [
+            Expanded(
+              child: Stack(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    height: 86,
+                    color: const Color.fromRGBO(255, 149, 1, 0.1),
+                    child: Text(
+                      imt("【安全提示】本APP仅用于体验腾讯云即时通信 IM 产品功能，不可用于业务洽谈与拓展。请勿轻信汇款、中奖等涉及钱款等信息，勿轻易拨打陌生电话，谨防上当受骗。"),
+                      style: TextStyle(
+                        color: hexToColor("FF8C39"),
+                        fontSize: 12,
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    bottom: 16,
+                    right: 16,
+                    child: GestureDetector(
+                      onTap: _openTSWebview,
+                      child: Text(
+                        imt("点此投诉"),
+                        style: TextStyle(
+                          color: hexToColor("006EFF"),
+                          fontSize: 12,
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
+        key: tuiChatField,
+        conversationID: _getConvID() ?? '',
+        conversationType:
+            widget.selectedConversation.type ?? ConversationType.V2TIM_C2C,
+        conversationShowName: _getTitle());
+  }
+```
+
+#### 效果展示
+
+### customStickerPanel
+
+customStickerPanel为自定义表情的选择框
+
+* 代码示例为使用customStickerPanel做到自定义表情的选择框。
+* [customStickerPackageList](https://cloud.tencent.com/document/product/269/72486)为自定义表情列表。
+
+#### 代码示例
+
+```dart
+  @override
+  Widget build(BuildContext context) {
+    String? _getConvID() {
+      return widget.selectedConversation.type == 1
+          ? widget.selectedConversation.userID
+          : widget.selectedConversation.groupID;
+    }
+
+    String _getTitle() {
+      return backRemark ?? widget.selectedConversation.showName ?? "";
+    }
+
+    Widget renderCustomStickerPanel(
+        {sendTextMessage, sendFaceMessage, deleteText, addText}) {
+      final theme = Provider.of<DefaultThemeData>(context).theme;
+      final customStickerPackageList =
+          Provider.of<CustomStickerPackageData>(context)
+              .customStickerPackageList;
+      return StickerPanel(
+          sendTextMsg: sendTextMessage,
+          sendFaceMsg: sendFaceMessage,
+          deleteText: deleteText,
+          addText: addText,
+          customStickerPackageList: customStickerPackageList,
+          backgroundColor: theme.weakBackgroundColor,
+          lightPrimaryColor: theme.lightPrimaryColor);
+    }
+
+    return TIMUIKitChat(
+        customStickerPanel: renderCustomStickerPanel,
+        key: tuiChatField,
+        conversationID: _getConvID() ?? '',
+        conversationType:
+            widget.selectedConversation.type ?? ConversationType.V2TIM_C2C,
+        conversationShowName: _getTitle());
+  }
 ```
 
 #### 效果展示
