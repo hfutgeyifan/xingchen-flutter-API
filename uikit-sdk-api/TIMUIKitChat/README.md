@@ -22,7 +22,7 @@ description: 聊天组件
 | showTotalUnReadCount        |                   | bool                                                                                                                                                                       | 否    |
 | exteraTipsActionItemBuilder |                   | Widget? Function([V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md) message, Function() closeTooltip, \[Key? key])                                            | 否    |
 | extraTipsActionItemBuilder  |                   | Widget? Function([V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md) message, Function() closeTooltip, \[Key? key])                                            | 否    |
-| draftText                   | 草稿文本              | String                                                                                                                                                                     | 否    |
+| draftText                   | 会话的草稿文本           | String                                                                                                                                                                     | 否    |
 | initFindingMsg              | 进入页面需要查询的消息       | [V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md)                                                                                                            | 否    |
 | textFieldHintText           |                   | String                                                                                                                                                                     | 否    |
 | appBarConfig                | 上方抬头栏设置           | AppBar                                                                                                                                                                     | 否    |
@@ -35,8 +35,8 @@ description: 聊天组件
 | abstractMessageBuilder      |                   | String Function([V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md) message)                                                                                   | 否    |
 | toolTipsConfig              | 长按消息显示的消息操作选项设置   | [ToolTipsConfig](ToolTipsConfig.md)                                                                                                                                        | 否    |
 | lifeCycle                   | 聊天消息操作时的钩子函数      | [ChatLifeCycle](ChatLifeCycle.md)                                                                                                                                          | 否    |
-| topFixWidget                |                   | Widget                                                                                                                                                                     |      |
-| customStickerPanel          |                   | Widget Function( {void Function() sendTextMessage, void Function(int index, String data) sendFaceMessage, void Function() deleteText, void Function(int unicode) addText}) |      |
+| topFixWidget                | 聊天页面上方自定义widget   | Widget                                                                                                                                                                     | 否    |
+| customStickerPanel          |                   | Widget Function( {void Function() sendTextMessage, void Function(int index, String data) sendFaceMessage, void Function() deleteText, void Function(int unicode) addText}) | 否    |
 
 ## 代码示例与效果展示
 
@@ -128,6 +128,44 @@ messageItemBuilder为用于自定义不同种类消息样式的构造器
 #### 代码示例
 
 ```dart
+```
+
+#### 效果展示
+
+### draftText
+
+draftText为会话的草稿文本
+
+* 代码示例为使用draftText做到自定义会话的草稿文本。
+* 您也可以通过[setConversationDraft](../../api/v2timconversationmanager/setconversationdraft.md)为一个会话设置草稿文本，通过会话属性中的[draftText](../../api/guan-jian-lei/message/v2timconversation.md)来获取会话草稿。
+
+#### 代码示例
+
+```dart
+  @override
+  Widget build(BuildContext context) {
+    String? _getConvID() {
+      return widget.selectedConversation.type == 1
+          ? widget.selectedConversation.userID
+          : widget.selectedConversation.groupID;
+    }
+
+    String _getTitle() {
+      return backRemark ?? widget.selectedConversation.showName ?? "";
+    }
+
+    String? _getDraftText() {
+      return widget.selectedConversation.draftText;
+    }
+
+    return TIMUIKitChat(
+        draftText: 'customDraftText',
+        key: tuiChatField,
+        conversationID: _getConvID() ?? '',
+        conversationType:
+            widget.selectedConversation.type ?? ConversationType.V2TIM_C2C,
+        conversationShowName: _getTitle());
+  }
 ```
 
 #### 效果展示
