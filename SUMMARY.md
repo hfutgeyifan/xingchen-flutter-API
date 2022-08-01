@@ -78,6 +78,7 @@
   * [MorePanelConfig](uikit-sdk-api/TIMUIKitChat/MorePanelConfig.md)
     * [MorePanelItem](uikit-sdk-api/TIMUIKitChat/MorePanelItem.md)
   * [TIMUIKitChatConfig](uikit-sdk-api/TIMUIKitChat/TIMUIKitChatConfig.md)
+    * [GroupReceptAllowType](uikit-sdk-api/TIMUIKitChat/GroupReceptAllowType.md)
     * [UrlPreviewType](uikit-sdk-api/TIMUIKitChat/UrlPreviewType.md)
     * [ConvType](uikit-sdk-api/TIMUIKitChat/ConvType.md)
   * [ToolTipsConfig](uikit-sdk-api/TIMUIKitChat/ToolTipsConfig.md)
