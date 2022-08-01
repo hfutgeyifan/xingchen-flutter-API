@@ -145,7 +145,7 @@ profileWidgetBuilder决定了在TIMUIKitGroupProfile中不同名称的组件的�
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/profileWidgetBuilder1.png) ![](../../\_book/.gitbook/assets/profileWidgetBuilder2.png)
+![](../../.gitbook/assets/profileWidgetBuilder1.png) ![](../../.gitbook/assets/profileWidgetBuilder2.png)
 
 ### builder
 
@@ -206,7 +206,7 @@ builder为用于自定义构建整个用户信息页面的构造器
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitGroupProfileBuilder.png)
+![](../../.gitbook/assets/TIMUIKitGroupProfileBuilder.png)
 
 ### lifeCycle
 
@@ -280,6 +280,6 @@ lifeCycle为群组信息操作时的钩子函数
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/didquitgroup.gif)
+![](../../.gitbook/assets/didquitgroup.gif)
 
 img{ width:220px; height:400px; }
