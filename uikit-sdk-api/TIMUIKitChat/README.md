@@ -1006,7 +1006,7 @@ lifeCycle为聊天消息操作时的钩子函数
 
 topFixWidget为聊天页面上方自定义widget
 
-* 代码示例为使用topFixWidget做到在聊天页面上方显示自定义widget。
+* 代码示例为使用topFixWidget做到在聊天页面上方显示自定义widget
 
 #### 代码示例
 
