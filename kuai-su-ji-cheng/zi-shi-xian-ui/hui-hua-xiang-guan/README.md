@@ -9,5 +9,5 @@
 * [置顶会话](zhi-ding-hui-hua.md)
 * [删除会话](shan-chu-hui-hua.md)
 * [会话草稿](hui-hua-cao-gao.md)
-* [会话标记](hui-hua-biao-ji.md)
+* [会话标记](../yong-hu-guan-li/yong-hu-zhuang-tai.md)
 * [会话分组](hui-hua-fen-zu.md)

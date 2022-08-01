@@ -673,15 +673,231 @@ morePanelConfig为更多操作选项设置
 
 #### 效果展示
 
-### is
+### tongueItemBuilder
 
-isShowOnlineStatus为在会话列表中好友头像处是否展示好友在线状态的设置
+tongueItemBuilder为小舌头构造器（右下角按钮提示框样式构造器）
 
-* 代码示例为使用isShowOnlineStatus做到在会话列表中展示好友在线状态。
+* 代码示例为使用tongueItemBuilder自定义跳转到底部的小舌头。
 
 #### 代码示例
 
 ```dart
+  @override
+  Widget build(BuildContext context) {
+    String? _getConvID() {
+      return widget.selectedConversation.type == 1
+          ? widget.selectedConversation.userID
+          : widget.selectedConversation.groupID;
+    }
+
+    String _getTitle() {
+      return backRemark ?? widget.selectedConversation.showName ?? "";
+    }
+
+    return TIMUIKitChat(
+        tongueItemBuilder: (onClick, valueType, unreadCount) {
+          if (valueType == MessageListTongueType.toLatest) {
+            return GestureDetector(
+              child: Container(
+                child: Text('jumptodown'),
+                decoration: BoxDecoration(color: Colors.white),
+              ),
+              onTap: () {
+                onClick();
+              },
+            );
+          }
+          return Container();
+        },
+        key: tuiChatField,
+        conversationID: _getConvID() ?? '',
+        conversationType:
+            widget.selectedConversation.type ?? ConversationType.V2TIM_C2C,
+        conversationShowName: _getTitle());
+  }
+```
+
+#### 效果展示
+
+### groupAtInfoList
+
+groupAtInfoList为群组消息@信息列表
+
+* 代码示例为使用groupAtInfoList获取群组消息@信息列表。
+
+#### 代码示例
+
+```dart
+  @override
+  Widget build(BuildContext context) {
+    String? _getConvID() {
+      return widget.selectedConversation.type == 1
+          ? widget.selectedConversation.userID
+          : widget.selectedConversation.groupID;
+    }
+
+    String _getTitle() {
+      return backRemark ?? widget.selectedConversation.showName ?? "";
+    }
+
+    return TIMUIKitChat(
+        groupAtInfoList: widget.selectedConversation.groupAtInfoList,
+        key: tuiChatField,
+        conversationID: _getConvID() ?? '',
+        conversationType:
+            widget.selectedConversation.type ?? ConversationType.V2TIM_C2C,
+        conversationShowName: _getTitle());
+  }
+```
+
+#### 效果展示
+
+### config
+
+config为消息页面设置
+
+* 代码示例为使用config中的做到不允许使用表情面板。
+
+#### 代码示例
+
+```dart
+ @override
+  Widget build(BuildContext context) {
+    String? _getConvID() {
+      return widget.selectedConversation.type == 1
+          ? widget.selectedConversation.userID
+          : widget.selectedConversation.groupID;
+    }
+
+    String _getTitle() {
+      return backRemark ?? widget.selectedConversation.showName ?? "";
+    }
+
+    return TIMUIKitChat(
+        config: TIMUIKitChatConfig(isAllowEmojiPanel: false),
+        key: tuiChatField,
+        conversationID: _getConvID() ?? '',
+        conversationType:
+            widget.selectedConversation.type ?? ConversationType.V2TIM_C2C,
+        conversationShowName: _getTitle());
+  }
+```
+
+#### 效果展示
+
+### onDealWithGroupApplication
+
+onDealWithGroupApplication为点击处理加群申请后的回调函数
+
+* 代码示例为使用onDealWithGroupApplication做到在点击处理加群申请后跳转到群申请页面。
+
+#### 代码示例
+
+```dart
+  @override
+  Widget build(BuildContext context) {
+    String? _getConvID() {
+      return widget.selectedConversation.type == 1
+          ? widget.selectedConversation.userID
+          : widget.selectedConversation.groupID;
+    }
+
+    String _getTitle() {
+      return backRemark ?? widget.selectedConversation.showName ?? "";
+    }
+
+    return TIMUIKitChat(
+        onDealWithGroupApplication: (String groupId) {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => GroupApplicationList(
+                groupID: groupId,
+              ),
+            ),
+          );
+        },
+        key: tuiChatField,
+        conversationID: _getConvID() ?? '',
+        conversationType:
+            widget.selectedConversation.type ?? ConversationType.V2TIM_C2C,
+        conversationShowName: _getTitle());
+  }
+```
+
+#### 效果展示
+
+### abstractMessageBuilder
+
+abstractMessageBuilder为针对不同类型消息概述构造器
+
+* 代码示例为使用abstractMessageBuilder做到自定义文本消息的概述。
+
+#### 代码示例
+
+```dart
+  @override
+  Widget build(BuildContext context) {
+    String? _getConvID() {
+      return widget.selectedConversation.type == 1
+          ? widget.selectedConversation.userID
+          : widget.selectedConversation.groupID;
+    }
+
+    String _getTitle() {
+      return backRemark ?? widget.selectedConversation.showName ?? "";
+    }
+
+    return TIMUIKitChat(
+        abstractMessageBuilder: (message) {
+          if (message.elemType == MessageElemType.V2TIM_ELEM_TYPE_TEXT) {
+            return 'customAbstract';
+          }
+          return "";
+        },
+        key: tuiChatField,
+        conversationID: _getConvID() ?? '',
+        conversationType:
+            widget.selectedConversation.type ?? ConversationType.V2TIM_C2C,
+        conversationShowName: _getTitle());
+  }
+```
+
+#### 效果展示
+
+### toolTipsConfig
+
+toolTipsConfig为长按消息显示的消息操作选项设置
+
+* 代码示例为使用toolTipsConfig做到只显示多选和删除操作。
+
+#### 代码示例
+
+```dart
+  @override
+  Widget build(BuildContext context) {
+    String? _getConvID() {
+      return widget.selectedConversation.type == 1
+          ? widget.selectedConversation.userID
+          : widget.selectedConversation.groupID;
+    }
+
+    String _getTitle() {
+      return backRemark ?? widget.selectedConversation.showName ?? "";
+    }
+
+    return TIMUIKitChat(
+        toolTipsConfig: ToolTipsConfig(
+            showCopyMessage: false,
+            showForwardMessage: false,
+            showRecallMessage: false,
+            showReplyMessage: false),
+        key: tuiChatField,
+        conversationID: _getConvID() ?? '',
+        conversationType:
+            widget.selectedConversation.type ?? ConversationType.V2TIM_C2C,
+        conversationShowName: _getTitle());
+  }
 ```
 
 #### 效果展示
