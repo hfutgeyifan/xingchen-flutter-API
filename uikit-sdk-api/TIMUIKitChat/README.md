@@ -12,31 +12,31 @@ description: 聊天组件
 
 ## 参数列表
 
-| 参数                          | 说明 | 类型                                                                                                                                                                         | 是否必填 |
-| --------------------------- | -- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
-| conversationID              |    | String                                                                                                                                                                     |      |
-| conversationType            |    | int                                                                                                                                                                        |      |
-| conversationShowName        |    | String                                                                                                                                                                     |      |
-| onTapAvatar                 |    | void Function(String userID)                                                                                                                                               |      |
-| messageItemBuilder          |    | [MessageItemBuilder](MessageItemBuilder.md)                                                                                                                                |      |
-| showTotalUnReadCount        |    | bool                                                                                                                                                                       |      |
-| exteraTipsActionItemBuilder |    | Widget? Function([V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md) message, Function() closeTooltip, \[Key? key])                                            |      |
-| extraTipsActionItemBuilder  |    | Widget? Function([V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md) message, Function() closeTooltip, \[Key? key])                                            |      |
-| draftText                   |    | String                                                                                                                                                                     | 否    |
-| initFindingMsg              |    | [V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md)                                                                                                            |      |
-| textFieldHintText           |    | String                                                                                                                                                                     |      |
-| appBarConfig                |    | AppBar                                                                                                                                                                     |      |
-| mainHistoryListConfig       |    | ListView                                                                                                                                                                   |      |
-| morePanelConfig             |    | [MorePanelConfig](MorePanelConfig.md)                                                                                                                                      |      |
-| tongueItemBuilder           |    | Widget Function( VoidCallback onClick, MessageListTongueType valueType, int unreadCount)                                                                                   |      |
-| groupAtInfoList             |    | List< [V2TimGroupAtInfo](../../api/guan-jian-lei/group/v2timgroupatinfo.md)? >                                                                                             |      |
-| config                      |    | TIMUIKitChatConfig                                                                                                                                                         |      |
-| onDealWithGroupApplication  |    | ValueChanged< String >                                                                                                                                                     |      |
-| abstractMessageBuilder      |    | String Function([V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md) message)                                                                                   |      |
-| toolTipsConfig              |    | [ToolTipsConfig](ToolTipsConfig.md)                                                                                                                                        |      |
-| lifeCycle                   |    | [ChatLifeCycle](ChatLifeCycle.md)                                                                                                                                          |      |
-| topFixWidget                |    | Widget                                                                                                                                                                     |      |
-| customStickerPanel          |    | Widget Function( {void Function() sendTextMessage, void Function(int index, String data) sendFaceMessage, void Function() deleteText, void Function(int unicode) addText}) |      |
+| 参数                          | 说明              | 类型                                                                                                                                                                         | 是否必填 |
+| --------------------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+| conversationID              | 聊天的会话id         | String                                                                                                                                                                     | 是    |
+| conversationType            | 聊天的会话类型         | int                                                                                                                                                                        | 是    |
+| conversationShowName        | 聊天页面的页面展示名      | String                                                                                                                                                                     | 是    |
+| onTapAvatar                 | 点击头像的回调函数       | void Function(String userID)                                                                                                                                               | 否    |
+| messageItemBuilder          |                 | [MessageItemBuilder](MessageItemBuilder.md)                                                                                                                                | 否    |
+| showTotalUnReadCount        |                 | bool                                                                                                                                                                       | 否    |
+| exteraTipsActionItemBuilder |                 | Widget? Function([V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md) message, Function() closeTooltip, \[Key? key])                                            | 否    |
+| extraTipsActionItemBuilder  |                 | Widget? Function([V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md) message, Function() closeTooltip, \[Key? key])                                            | 否    |
+| draftText                   | 草稿文本            | String                                                                                                                                                                     | 否    |
+| initFindingMsg              | 进入页面需要查询的消息     | [V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md)                                                                                                            | 否    |
+| textFieldHintText           |                 | String                                                                                                                                                                     | 否    |
+| appBarConfig                | 上方抬头栏设置         | AppBar                                                                                                                                                                     | 否    |
+| mainHistoryListConfig       |                 | ListView                                                                                                                                                                   | 否    |
+| morePanelConfig             | 更多操作选项设置        | [MorePanelConfig](MorePanelConfig.md)                                                                                                                                      | 否    |
+| tongueItemBuilder           |                 | Widget Function( [VoidCallback](../../api/callbacks/voidcallback.md) onClick, [MessageListTongueType](MessageListTongueType.md) valueType, int unreadCount)                | 否    |
+| groupAtInfoList             |                 | List< [V2TimGroupAtInfo](../../api/guan-jian-lei/group/v2timgroupatinfo.md)? >                                                                                             | 否    |
+| config                      | 消息页面设置          | [TIMUIKitChatConfig](TIMUIKitChatConfig.md)                                                                                                                                | 否    |
+| onDealWithGroupApplication  |                 | ValueChanged< String >                                                                                                                                                     | 否    |
+| abstractMessageBuilder      |                 | String Function([V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md) message)                                                                                   | 否    |
+| toolTipsConfig              | 长按消息显示的消息操作选项设置 | [ToolTipsConfig](ToolTipsConfig.md)                                                                                                                                        | 否    |
+| lifeCycle                   | 聊天消息操作时的钩子函数    | [ChatLifeCycle](ChatLifeCycle.md)                                                                                                                                          | 否    |
+| topFixWidget                |                 | Widget                                                                                                                                                                     |      |
+| customStickerPanel          |                 | Widget Function( {void Function() sendTextMessage, void Function(int index, String data) sendFaceMessage, void Function() deleteText, void Function(int unicode) addText}) |      |
 
 ## 代码示例与效果展示
 
