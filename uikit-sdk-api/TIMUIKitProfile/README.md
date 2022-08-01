@@ -19,7 +19,7 @@ description: 用户信息组件
 | profileWidgetBuilder | 用于自定义构建用户信息页面不同部分的构造器                                                  | [ProfileWidgetBuilder](ProfileWidgetBuilder.md)           | 否    |
 | profileWidgetsOrder  | 用于自定义构建用户信息页面不同部分的排序设置                                                 | List< [ProfileWidgetEnum](ProfileWidgetEnum.md) >         | 否    |
 | builder              | 用于自定义构建整个用户信息页面的构造器（若使用此属性则profileWidgetBuilder与profileWidgetsOrder失效） | [ProfileBuilder](ProfileBuilder.md)                       | 否    |
-| lifeCycle            | 用户信息操作时的钩子函数                                                           | [OnSelProfileLifeCycle](OnSelProfileLifeCycle.md)         | 否    |
+| lifeCycle            | 用户信息操作时的钩子函数                                                           | [ProfileLifeCycle](OnSelProfileLifeCycle.md)              | 否    |
 
 ## 代码示例与效果展示
 
@@ -174,7 +174,7 @@ profileWidgetBuilder决定了在TIMUIKitProfile中不同名称的组件的渲染
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/profileWidgetBuilder+profileWidgetsOrder1.png) ![](../../\_book/.gitbook/assets/profileWidgetBuilder+profileWidgetsOrder2.png)
+![](../../.gitbook/assets/profileWidgetBuilder+profileWidgetsOrder1.png) ![](../../.gitbook/assets/profileWidgetBuilder+profileWidgetsOrder2.png)
 
 ### builder
 
@@ -244,7 +244,7 @@ builder为用于自定义构建整个用户信息页面的构造器
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/builder.png)
+![](../../.gitbook/assets/builder.png)
 
 ### lifeCycle
 
@@ -395,6 +395,6 @@ lifeCycle为用户信息操作时的钩子函数
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/lifeCycle1.png) ![](../../\_book/.gitbook/assets/lifeCycle2.png)
+![](../../.gitbook/assets/lifeCycle1.png) ![](../../.gitbook/assets/lifeCycle2.png)
 
 img{ width:220px; height:400px; }

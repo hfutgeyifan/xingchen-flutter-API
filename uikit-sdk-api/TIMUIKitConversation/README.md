@@ -63,7 +63,7 @@ onTapItem为会话模块点击触发的函数。
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitConversation-onitemtap.gif)
+![](../../.gitbook/assets/TIMUIKitConversation-onitemtap.gif)
 
 ### itemBuilder
 
@@ -137,7 +137,7 @@ itemBuilder为用于自定义构建会话模块的构造器
 
 #### 效果展示
 
-![](<../../.gitbook/assets/TIMUIKitConversation-itembuilder (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/TIMUIKitConversation-itembuilder (1) (1) (1) (2).png>)
 
 ### itemSlidableBuilder
 
@@ -201,7 +201,7 @@ itemSlidableBuilder为用于自定义构建会话模块中的边缘滑动操作�
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitConversation-itemSlidableBuilder.gif)
+![](../../.gitbook/assets/TIMUIKitConversation-itemSlidableBuilder.gif)
 
 ### emptyBuilder
 
@@ -235,7 +235,7 @@ emptyBuilder决定了当会话列表为空时会话列表页面的样式。
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitConversation-emptybuilder.png)
+![](../../.gitbook/assets/TIMUIKitConversation-emptybuilder.png)
 
 ### conversationCollector
 
@@ -279,7 +279,7 @@ conversationCollector为会话列表展示的过滤器
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitConversation-conversationCollector1.png) ![](../../\_book/.gitbook/assets/TIMUIKitConversation-conversationCollector2.png)
+![](../../.gitbook/assets/TIMUIKitConversation-conversationCollector1.png) ![](../../.gitbook/assets/TIMUIKitConversation-conversationCollector2.png)
 
 ### lastMessageBuilder
 
@@ -311,7 +311,7 @@ lastMessageBuilder为当前会话最后一条消息的样式构造器
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitConversation-lastmessagebuilder.png)
+![](../../.gitbook/assets/TIMUIKitConversation-lastmessagebuilder.png)
 
 ### lifeCycle
 
@@ -374,7 +374,7 @@ lifeCycle为聊天列表操作时的钩子函数
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitConversation-lifecircle.gif)
+![](../../.gitbook/assets/TIMUIKitConversation-lifecircle.gif)
 
 ### isShowOnlineStatus
 
@@ -401,6 +401,6 @@ isShowOnlineStatus为在会话列表中好友头像处是否展示好友在线�
 
 #### 效果展示
 
-![](../../\_book/.gitbook/assets/TIMUIKitConversation-isShowOnlineStatus.png)
+![](../../.gitbook/assets/TIMUIKitConversation-isShowOnlineStatus.png)
 
 img{ width:220px; height:400px; }

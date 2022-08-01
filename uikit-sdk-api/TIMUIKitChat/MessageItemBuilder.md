@@ -73,4 +73,4 @@ description: 用于自定义不同种类消息样式的构造器
 ### messageRowBuilder
 
 * 参数类型 : Widget Function([V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md) message, Widget messageWidget, Function onScrollToIndex, bool isNeedShowJumpStatus, [VoidCallback](../../api/callbacks/voidcallback.md) clearJumpStatus, Function onScrollToIndexBegin)
-* 参数描述 : 自定义整个消息样式的构造器
+* 参数描述 : 自定义整行消息样式的构造器。除了消息Widget本身外，您可以使用我们提供的消息Widget，也可以根据V2TimMessage自定义消息。

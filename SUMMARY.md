@@ -105,7 +105,7 @@
   * [ProfileWidgetBuilder](uikit-sdk-api/TIMUIKitProfile/ProfileWidgetBuilder.md)
   * [ProfileWidgetEnum](uikit-sdk-api/TIMUIKitProfile/ProfileWidgetEnum.md)
   * [ProfileBuilder](uikit-sdk-api/TIMUIKitProfile/ProfileBuilder.md)
-  * [OnSelProfileLifeCycle](uikit-sdk-api/TIMUIKitProfile/OnSelProfileLifeCycle.md)
+  * [ProfileLifeCycle](uikit-sdk-api/TIMUIKitProfile/OnSelProfileLifeCycle.md)
 * [TIMUIKitSearch](uikit-sdk-api/TIMUIKitSearch/README.md)
 
 ## SDKAPI

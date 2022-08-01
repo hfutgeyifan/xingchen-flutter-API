@@ -1,8 +1,12 @@
+---
+description: url信息预览类型
+---
+
 # UrlPreviewType
 
 ## 枚举类型介绍
 
-
+url信息预览类型
 
 ## 枚举值列表
 

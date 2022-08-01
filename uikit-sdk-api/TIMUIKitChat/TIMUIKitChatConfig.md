@@ -57,7 +57,7 @@ description: 消息页面设置
 
 ### groupReadReceiptPermisionList
 
-* 参数类型 : List< GroupReceptAllowType >
+* 参数类型 : List< [GroupReceptAllowType](GroupReceptAllowType.md) >
 * 参数描述 : 限定可展示群消息已读回执的群类型
 
 ### notificationTitle

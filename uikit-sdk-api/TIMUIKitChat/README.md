@@ -122,11 +122,151 @@ onTapAvatar为点击头像的回调函数
 
 messageItemBuilder为用于自定义不同种类消息样式的构造器
 
-* 代码示例为使用messageItemBuilder构造自定义消息样式的案例。
+* 代码示例为使用messageItemBuilder结合UIKit中的TIMUIKitTextElem构造自定义消息样式的案例。
 
 #### 代码示例
 
 ```dart
+  @override
+  Widget build(BuildContext context) {
+    final TUIChatViewModel model = serviceLocator<TUIChatViewModel>();
+    String? _getConvID() {
+      return widget.selectedConversation.type == 1
+          ? widget.selectedConversation.userID
+          : widget.selectedConversation.groupID;
+    }
+
+    String _getTitle() {
+      return backRemark ?? widget.selectedConversation.showName ?? "";
+    }
+
+    return TIMUIKitChat(
+        messageItemBuilder: MessageItemBuilder(
+            textMessageItemBuilder: ((message, isShowJump, clearJump) {
+          if (message.elemType == MessageElemType.V2TIM_ELEM_TYPE_TEXT) {
+            message.textElem!.text = 'customData';
+          }
+          return TIMUIKitTextElem(
+            chatModel: model,
+            message: message,
+            isFromSelf: message.isSelf ?? false,
+            clearJump: () => model.jumpMsgID = "",
+            isShowJump: isShowJump,
+          );
+        })),
+        key: tuiChatField,
+        conversationID: _getConvID() ?? '',
+        conversationType:
+            widget.selectedConversation.type ?? ConversationType.V2TIM_C2C,
+        conversationShowName: _getTitle());
+  }
+```
+
+#### 效果展示
+
+### showTotalUnReadCount
+
+showTotalUnReadCount为是否展示当前未读消息总数的设置
+
+* 代码示例为使用showTotalUnReadCount做到展示当前未读消息总数。
+
+#### 代码示例
+
+```dart
+  @override
+  Widget build(BuildContext context) {
+    String? _getConvID() {
+      return widget.selectedConversation.type == 1
+          ? widget.selectedConversation.userID
+          : widget.selectedConversation.groupID;
+    }
+
+    String _getTitle() {
+      return backRemark ?? widget.selectedConversation.showName ?? "";
+    }
+
+    return TIMUIKitChat(
+        showTotalUnReadCount: true,
+        key: tuiChatField,
+        conversationID: _getConvID() ?? '',
+        conversationType:
+            widget.selectedConversation.type ?? ConversationType.V2TIM_C2C,
+        conversationShowName: _getTitle());
+  }
+```
+
+#### 效果展示
+
+### extraTipsActionItemBuilder
+
+extraTipsActionItemBuilder为新增的长按弹出消息操作功能的自定义选项的构造器
+
+* 代码示例为使用extraTipsActionItemBuilder做到在长按显示面板做后增加自定义操作。
+
+#### 代码示例
+
+```dart
+ @override
+  Widget build(BuildContext context) {
+    Widget ItemInkWell({
+      Widget? child,
+      GestureTapCallback? onTap,
+    }) {
+      return SizedBox(
+        width: 50,
+        child: InkWell(
+          onTap: onTap,
+          child: Container(
+            decoration: const BoxDecoration(
+              color: Colors.white,
+            ),
+            child: child,
+          ),
+        ),
+      );
+    }
+
+    String? _getConvID() {
+      return widget.selectedConversation.type == 1
+          ? widget.selectedConversation.userID
+          : widget.selectedConversation.groupID;
+    }
+
+    String _getTitle() {
+      return backRemark ?? widget.selectedConversation.showName ?? "";
+    }
+
+    return TIMUIKitChat(
+        extraTipsActionItemBuilder: (message, closeTooltip, [key]) {
+          return Material(
+            child: ItemInkWell(
+                onTap: () {
+                  closeTooltip();
+                },
+                child: Column(children: [
+                  const Icon(
+                    Icons.add_business,
+                    size: 20,
+                  ),
+                  const SizedBox(
+                    height: 4,
+                  ),
+                  Text(
+                    'custom',
+                    style: TextStyle(
+                      decoration: TextDecoration.none,
+                      fontSize: 10,
+                    ),
+                  ),
+                ])),
+          );
+        },
+        key: tuiChatField,
+        conversationID: _getConvID() ?? '',
+        conversationType:
+            widget.selectedConversation.type ?? ConversationType.V2TIM_C2C,
+        conversationShowName: _getTitle());
+  }
 ```
 
 #### 效果展示
@@ -165,6 +305,19 @@ draftText为会话的草稿文本
             widget.selectedConversation.type ?? ConversationType.V2TIM_C2C,
         conversationShowName: _getTitle());
   }
+```
+
+#### 效果展示
+
+### initFindingMsg
+
+initFindingMsg为进入页面需要查询的消息
+
+* 代码示例为使用initFindingMsg做到进入聊天页面并查询消息。
+
+#### 代码示例
+
+```dart
 ```
 
 #### 效果展示
