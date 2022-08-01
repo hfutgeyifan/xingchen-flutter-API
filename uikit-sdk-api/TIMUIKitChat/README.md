@@ -71,8 +71,6 @@ conversationShowName为聊天页面的聊天对象名称。
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitChat-conversationShowName.png)
-
 ### onTapAvatar
 
 onTapAvatar为点击头像的回调函数
@@ -120,8 +118,6 @@ onTapAvatar为点击头像的回调函数
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitChat-onTapAvatar.gif)
-
 ### messageItemBuilder
 
 messageItemBuilder为用于自定义不同种类消息样式的构造器
@@ -168,8 +164,6 @@ messageItemBuilder为用于自定义不同种类消息样式的构造器
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitChat-messageItemBuilder.png)
-
 ### showTotalUnReadCount
 
 showTotalUnReadCount为是否展示当前未读消息总数的设置
@@ -202,8 +196,6 @@ showTotalUnReadCount为是否展示当前未读消息总数的设置
 ```
 
 #### 效果展示
-
-![](../../.gitbook/assets/TIMUIKitChat-showTotalUnReadCount.png)
 
 ### extraTipsActionItemBuilder
 
@@ -279,8 +271,6 @@ extraTipsActionItemBuilder为新增的长按弹出消息操作功能的自定义
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitChat-extraTipsActionItemBuilder.png)
-
 ### draftText
 
 draftText为会话的草稿文本
@@ -318,8 +308,6 @@ draftText为会话的草稿文本
 ```
 
 #### 效果展示
-
-![](../../.gitbook/assets/TIMUIKitChat-draftText.gif)
 
 ### initFindingMsg
 
