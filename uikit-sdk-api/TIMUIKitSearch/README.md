@@ -94,7 +94,7 @@ onTapConversation为点击用户模块、群组模块、搜索详细聊天记录
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitSearch-ontapconversation1.gif) ![](../../.gitbook/assets/TIMUIKitSearch-ontapconversation2.gif) ![](../../.gitbook/assets/TIMUIKitSearch-ontapconversation3.gif)
+![](../../\_book/.gitbook/assets/TIMUIKitSearch-ontapconversation1.gif) ![](../../\_book/.gitbook/assets/TIMUIKitSearch-ontapconversation2.gif) ![](<../../.gitbook/assets/TIMUIKitSearch-ontapconversation3 (1).gif>)
 
 ### onEnterSearchInConversation
 
@@ -171,6 +171,6 @@ onEnterSearchInConversation为点击聊天历史模块的回调函数。
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitSearch-ontapconversation3.gif)
+![](<../../.gitbook/assets/TIMUIKitSearch-ontapconversation3 (1).gif>)
 
 img{ width:220px; height:400px; }

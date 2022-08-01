@@ -68,7 +68,7 @@ onAccept与onRefuse为在用户接受或拒绝好友请求**后**的回调函数
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitNewContact-onaccept.gif)
+![](../../\_book/.gitbook/assets/TIMUIKitNewContact-onaccept.gif)
 
 ### emptyBuilder
 
@@ -111,7 +111,7 @@ emptyBuilder决定了当新的联系人列表为空时黑名单列表页面的�
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitNewContact-emptybuilder.png)
+![](../../\_book/.gitbook/assets/TIMUIKitNewContact-emptybuilder.png)
 
 ### itemBuilder
 
@@ -262,7 +262,7 @@ itemBuilder为用于自定义构建新的联系人用户模块的构造器
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitNewContact-itemBuilder.png)
+![](../../\_book/.gitbook/assets/TIMUIKitNewContact-itemBuilder.png)
 
 ### lifeCycle
 
@@ -345,6 +345,6 @@ lifeCycle为添加群组操作时的钩子函数
 
 #### 效果展示
 
-![](../../.gitbook/assets/TIMUIKitNewContact-lifecircle.gif)
+![](../../\_book/.gitbook/assets/TIMUIKitNewContact-lifecircle.gif)
 
 img{ width:220px; height:400px; }

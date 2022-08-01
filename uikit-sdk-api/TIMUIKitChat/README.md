@@ -318,6 +318,370 @@ initFindingMsg为进入页面需要查询的消息
 #### 代码示例
 
 ```dart
+  @override
+  Widget build(BuildContext context) {
+    String? _getConvID() {
+      return widget.selectedConversation.type == 1
+          ? widget.selectedConversation.userID
+          : widget.selectedConversation.groupID;
+    }
+
+    String _getTitle() {
+      return backRemark ?? widget.selectedConversation.showName ?? "";
+    }
+
+    return TIMUIKitChat(
+        initFindingMsg: widget.selectedConversation.lastMessage,
+        key: tuiChatField,
+        conversationID: _getConvID() ?? '',
+        conversationType:
+            widget.selectedConversation.type ?? ConversationType.V2TIM_C2C,
+        conversationShowName: _getTitle());
+  }
+```
+
+#### 效果展示
+
+### textFieldHintText
+
+textFieldHintText为输入框默认提示语
+
+* 代码示例为使用textFieldHintText做到自定义输入框默认提示语。
+
+#### 代码示例
+
+```dart
+  @override
+  Widget build(BuildContext context) {
+    String? _getConvID() {
+      return widget.selectedConversation.type == 1
+          ? widget.selectedConversation.userID
+          : widget.selectedConversation.groupID;
+    }
+
+    String _getTitle() {
+      return backRemark ?? widget.selectedConversation.showName ?? "";
+    }
+
+    return TIMUIKitChat(
+        textFieldHintText: 'customHintText',
+        key: tuiChatField,
+        conversationID: _getConvID() ?? '',
+        conversationType:
+            widget.selectedConversation.type ?? ConversationType.V2TIM_C2C,
+        conversationShowName: _getTitle());
+  }
+```
+
+#### 效果展示
+
+### appBarConfig
+
+appBarConfig为上方抬头栏设置
+
+* 代码示例为使用appBarConfig自定义添加分享功能。
+
+#### 代码示例
+
+```dart
+  @override
+  Widget build(BuildContext context) {
+    String? _getConvID() {
+      return widget.selectedConversation.type == 1
+          ? widget.selectedConversation.userID
+          : widget.selectedConversation.groupID;
+    }
+
+    String _getTitle() {
+      return backRemark ?? widget.selectedConversation.showName ?? "";
+    }
+
+    return TIMUIKitChat(
+        appBarConfig: AppBar(
+          actions: [
+            if (IMDemoConfig.openShareFeature)
+              IconButton(
+                  onPressed: () async {
+                    showModalBottomSheet(
+                        backgroundColor: Colors.transparent,
+                        context: context,
+                        builder: (BuildContext context) {
+                          return ShareWidget(
+                            ShareInfo('腾讯云IM',
+                                'https://comm.qq.com/im_demo_download/#/discuss-share',
+                                img: WeChatImage.network(
+                                    "https://imgcache.qq.com/operation/dianshi/other/logo.ac7337705ff26825bf66a8e074460759465c48d7.png"),
+                                describe:
+                                    "即时通信 IM (Instant Messaging)基于 QQ 底层 IM 能力开发，仅需植入 SDK 即可轻松集成聊天、会话、群组、资料管理和直播弹幕能力，也支持通过信令消息与白板等其他产品打通，全面覆盖您的业务场景，支持各大平台小程序接入使用，全面满足通信需要"),
+                            list: [
+                              ShareOpt(
+                                  title: '微信好友',
+                                  img: Image.asset(
+                                    'assets/icon_wechat.png',
+                                    width: 25.0,
+                                    height: 25.0,
+                                    fit: BoxFit.fill,
+                                  ),
+                                  shareType: ShareType.SESSION,
+                                  doAction: (shareType, shareInfo) async {
+                                    if (!_installedWechat) {
+                                      Toast.showToast(
+                                          ToastType.fail, "未检测到微信安装", context);
+                                      return;
+                                    }
+                                    var model =
+                                        _getShareModel(shareType, shareInfo);
+                                    shareToWeChat(model);
+                                  }),
+                              ShareOpt(
+                                  title: '朋友圈',
+                                  img: Image.asset(
+                                    'assets/icon_wechat_moments.jpg',
+                                    width: 25.0,
+                                    height: 25.0,
+                                    fit: BoxFit.fill,
+                                  ),
+                                  shareType: ShareType.TIMELINE,
+                                  doAction: (shareType, shareInfo) {
+                                    if (!_installedWechat) {
+                                      Toast.showToast(
+                                          ToastType.fail, "未检测到微信安装", context);
+                                      return;
+                                    }
+                                    var model =
+                                        _getShareModel(shareType, shareInfo);
+                                    shareToWeChat(model);
+                                  }),
+                            ],
+                          );
+                        });
+                  },
+                  icon: const Icon(Icons.share)),
+            IconButton(
+                padding: const EdgeInsets.only(left: 8, right: 16),
+                onPressed: () async {
+                  final conversationType = widget.selectedConversation.type;
+
+                  if (conversationType == 1) {
+                    final userID = widget.selectedConversation.userID;
+                    // if had remark modifed its will back new remark
+                    String? newRemark = await Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => UserProfile(userID: userID!),
+                        ));
+                    setState(() {
+                      backRemark = newRemark;
+                    });
+                  } else {
+                    final groupID = widget.selectedConversation.groupID;
+                    if (groupID != null) {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => GroupProfilePage(
+                              groupID: groupID,
+                            ),
+                          ));
+                    }
+                  }
+                },
+                icon: Image.asset(
+                  'images/more.png',
+                  package: 'tim_ui_kit',
+                  height: 34,
+                  width: 34,
+                ))
+          ],
+        ),
+        key: tuiChatField,
+        conversationID: _getConvID() ?? '',
+        conversationType:
+            widget.selectedConversation.type ?? ConversationType.V2TIM_C2C,
+        conversationShowName: _getTitle());
+  }
+```
+
+#### 效果展示
+
+### mainHistoryListConfig
+
+mainHistoryListConfig为在会话列表中好友头像处是否展示好友在线状态的设置
+
+* 代码示例为使用isShowOnlineStatus做到在会话列表中展示好友在线状态。
+
+#### 代码示例
+
+```dart
+```
+
+#### 效果展示
+
+### morePanelConfig
+
+morePanelConfig为更多操作选项设置
+
+* 代码示例为使用morePanelConfig做到在更多操作中添加语音与视频操作。
+
+#### 代码示例
+
+```dart
+ @override
+  Widget build(BuildContext context) {
+    String? _getConvID() {
+      return widget.selectedConversation.type == 1
+          ? widget.selectedConversation.userID
+          : widget.selectedConversation.groupID;
+    }
+
+    String _getTitle() {
+      return backRemark ?? widget.selectedConversation.showName ?? "";
+    }
+
+    _goToVideoUI() async {
+      final hasCameraPermission =
+          await Permissions.checkPermission(context, Permission.camera.value);
+      final hasMicphonePermission = await Permissions.checkPermission(
+          context, Permission.microphone.value);
+      if (!hasCameraPermission || !hasMicphonePermission) {
+        return;
+      }
+      final isGroup = widget.selectedConversation.type == 2;
+      tuiChatField.currentState.textFieldController.hideAllPanel();
+      if (isGroup) {
+        List<V2TimGroupMemberFullInfo>? selectedMember = await Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => SelectCallInviter(
+              groupID: widget.selectedConversation.groupID,
+            ),
+          ),
+        );
+        if (selectedMember != null) {
+          final inviteMember = selectedMember.map((e) => e.userID).toList();
+          _calling?.groupCall(inviteMember, CallingScenes.Video,
+              widget.selectedConversation.groupID);
+        }
+      } else {
+        final user = await sdkInstance.getLoginUser();
+        final myId = user.data;
+        OfflinePushInfo offlinePush = OfflinePushInfo(
+          title: "",
+          desc: imt("邀请你视频通话"),
+          ext: "{\"conversationID\": \"c2c_$myId\"}",
+          disablePush: false,
+          androidOPPOChannelID: PushConfig.OPPOChannelID,
+          ignoreIOSBadge: false,
+        );
+
+        _calling?.call(widget.selectedConversation.userID!, CallingScenes.Video,
+            offlinePush);
+      }
+    }
+
+    _goToVoiceUI() async {
+      final hasMicphonePermission = await Permissions.checkPermission(
+          context, Permission.microphone.value);
+      if (!hasMicphonePermission) {
+        return;
+      }
+      final isGroup = widget.selectedConversation.type == 2;
+      tuiChatField.currentState.textFieldController.hideAllPanel();
+      if (isGroup) {
+        List<V2TimGroupMemberFullInfo>? selectedMember = await Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => SelectCallInviter(
+              groupID: widget.selectedConversation.groupID,
+            ),
+          ),
+        );
+        if (selectedMember != null) {
+          final inviteMember = selectedMember.map((e) => e.userID).toList();
+          _calling?.groupCall(inviteMember, CallingScenes.Audio,
+              widget.selectedConversation.groupID);
+        }
+      } else {
+        final user = await sdkInstance.getLoginUser();
+        final myId = user.data;
+        OfflinePushInfo offlinePush = OfflinePushInfo(
+          title: "",
+          desc: imt("邀请你语音通话"),
+          ext: "{\"conversationID\": \"c2c_$myId\"}",
+          disablePush: false,
+          ignoreIOSBadge: false,
+          androidOPPOChannelID: PushConfig.OPPOChannelID,
+        );
+
+        _calling?.call(widget.selectedConversation.userID!, CallingScenes.Audio,
+            offlinePush);
+      }
+    }
+
+    return TIMUIKitChat(
+        morePanelConfig: MorePanelConfig(
+          extraAction: [
+            MorePanelItem(
+                id: "voiceCall",
+                title: imt("语音通话"),
+                onTap: (c) {
+                  _goToVoiceUI();
+                },
+                icon: Container(
+                  height: 64,
+                  width: 64,
+                  margin: const EdgeInsets.only(bottom: 4),
+                  decoration: const BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.all(Radius.circular(5))),
+                  child: SvgPicture.asset(
+                    "images/voice-call.svg",
+                    package: 'tim_ui_kit',
+                    height: 64,
+                    width: 64,
+                  ),
+                )),
+            MorePanelItem(
+                id: "videoCall",
+                title: imt("视频通话"),
+                onTap: (c) {
+                  _goToVideoUI();
+                },
+                icon: Container(
+                  height: 64,
+                  width: 64,
+                  margin: const EdgeInsets.only(bottom: 4),
+                  decoration: const BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.all(Radius.circular(5))),
+                  child: SvgPicture.asset(
+                    "images/video-call.svg",
+                    package: 'tim_ui_kit',
+                    height: 64,
+                    width: 64,
+                  ),
+                ))
+          ],
+        ),
+        key: tuiChatField,
+        conversationID: _getConvID() ?? '',
+        conversationType:
+            widget.selectedConversation.type ?? ConversationType.V2TIM_C2C,
+        conversationShowName: _getTitle());
+  }
+```
+
+#### 效果展示
+
+### is
+
+isShowOnlineStatus为在会话列表中好友头像处是否展示好友在线状态的设置
+
+* 代码示例为使用isShowOnlineStatus做到在会话列表中展示好友在线状态。
+
+#### 代码示例
+
+```dart
 ```
 
 #### 效果展示
