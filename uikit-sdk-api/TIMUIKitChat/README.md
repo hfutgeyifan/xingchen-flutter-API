@@ -313,7 +313,7 @@ draftText为会话的草稿文本
 
 initFindingMsg为进入页面需要查询的消息
 
-* 代码示例为使用initFindingMsg做到进入聊天页面并查询消息。
+* 代码示例为使用initFindingMsg做到进入聊天页面并查询此会话最后一条消息。
 
 #### 代码示例
 
