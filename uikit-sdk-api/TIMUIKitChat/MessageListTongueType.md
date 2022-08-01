@@ -11,5 +11,5 @@
 | none       |        | 0   |
 | toLatest   |        | 1   |
 | showUnread |        | 2   |
-| atMe       |        |     |
-| atAll      |        |     |
+| atMe       |        | 3   |
+| atAll      |        | 4   |
