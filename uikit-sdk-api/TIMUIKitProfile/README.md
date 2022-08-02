@@ -397,4 +397,6 @@ lifeCycle为用户信息操作时的钩子函数
 
 ![](../../.gitbook/assets/lifeCycle1.png) ![](../../.gitbook/assets/lifeCycle2.png)
 
-img{ width:220px; height:400px; }
+<style>
+img{ width:240px; height:400px; }
+</style>

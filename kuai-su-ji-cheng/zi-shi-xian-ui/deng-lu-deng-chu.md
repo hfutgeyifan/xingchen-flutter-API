@@ -10,7 +10,7 @@
 
 ## 登录
 首次登录一个 IM 帐号时，不需要先注册这个帐号。在登录成功后，IM 自动完成这个帐号的注册。
-您可以调用 `login`([Dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/method_channel_im_flutter/MethodChannelIm/login.html)) 接口进行登录。
+您可以调用 [`login`](../../api/v2timmanager/login.md) 接口进行登录。
 
 `login` 接口的关键参数如下：
 
@@ -22,8 +22,8 @@
 您需要在以下场景调用 `login` 接口：
 * App 启动后首次使用 IM SDK 的功能。
 * 登录时票据过期：`login` 接口的回调会返回 `ERR_USER_SIG_EXPIRED（6206）` 或 `ERR_SVR_ACCOUNT_USERSIG_EXPIRED（70001）` 错误码，此时请您生成新的 userSig 重新登录。
-* 在线时票据过期：用户在线期间也可能收到 `onUserSigExpired`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_V2TimSDKListener/V2TimSDKListener/onUserSigExpired.html)) 回调，此时需要您生成新的 userSig 并重新登录。
-* 在线时被踢下线：用户在线情况下被踢，IM SDK 会通过 `onKickedOffline`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_V2TimSDKListener/V2TimSDKListener/onKickedOffline.html)) 回调通知给您，此时可以在 UI 提示用户，并调用 `login` 重新登录。
+* 在线时票据过期：用户在线期间也可能收到 [`onUserSigExpired`](../../api/guan-jian-lei/listener/v2timsdklistener.md) 回调，此时需要您生成新的 userSig 并重新登录。
+* 在线时被踢下线：用户在线情况下被踢，IM SDK 会通过 [`onKickedOffline`](../../api/guan-jian-lei/listener/v2timsdklistener.md) 回调通知给您，此时可以在 UI 提示用户，并调用 `login` 重新登录。
 
 以下场景无需调用 `login` 接口：
 * 用户的网络断开并重新连接后，不需要调用 `login` 函数，IM SDK 会自动上线。
@@ -53,7 +53,7 @@ if(res.code == 0){
 
 ### 获取登录用户
 
-在登录成功后，通过调用`getLoginUser`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/getLoginUser.html)) 获取登录用户 UserID。
+在登录成功后，通过调用[`getLoginUser`](../../api/v2timmanager/getloginuser.md) 获取登录用户 UserID。
 如果登录失败，获取的登录用户 UserID 为空。
 
 示例代码如下：
@@ -71,7 +71,7 @@ if(getLoginUserRes.code == 0){
 
 ### 获取登录状态
 
-通过调用`getLoginStatus`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/getLoginStatus.html)) 获取登录状态，如果用户已经处于已登录和登录中状态，请勿再频繁调用登录接口登录。IM SDK 支持的登录状态，如下表所示：
+通过调用[`getLoginStatus`](../../api/v2timmanager/getloginstatus.md) 获取登录状态，如果用户已经处于已登录和登录中状态，请勿再频繁调用登录接口登录。IM SDK 支持的登录状态，如下表所示：
 
 | 登录状态 | 含义 |
 |---------|---------|
@@ -107,8 +107,8 @@ if(getLoginStatusRes.code == 0){
 此功能仅限旗舰版使用。目前 Web 端可同时在线个数最多为 10 个。Android、iPhone、iPad、Windows、Mac（Flutter以实际编译结果为准） 平台可同时在线设备个数最多为 3 个。
 相关配置请参考：[登录设置](https://cloud.tencent.com/document/product/269/38656#.E7.99.BB.E5.BD.95.E8.AE.BE.E7.BD.AE)。
 
-调用 `login`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/login.html)) 接口时，如果同一个帐号的多端登录策略超出限制，新登录的实例会把之前已登录的实例踢下线。
-被踢下线的一方，会收到 `onKickedOffline`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_V2TimSDKListener/V2TimSDKListener/onKickedOffline.html)) 回调。
+调用 [`login`](../../api/v2timmanager/login.md) 接口时，如果同一个帐号的多端登录策略超出限制，新登录的实例会把之前已登录的实例踢下线。
+被踢下线的一方，会收到 [`onKickedOffline`](../../api/guan-jian-lei/listener/v2timsdklistener.md) 回调。
 
 
 ## 登出
@@ -127,11 +127,12 @@ if(logoutRes.code == 0){
 
 
 ## 帐号切换
-如果您希望在应用中实现帐号切换的需求，只需要每次切换帐号时调用 `login`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/login.html)) 即可。
+如果您希望在应用中实现帐号切换的需求，只需要每次切换帐号时调用 [`login`](../../api/v2timmanager/login.md) 即可。
 
-例如已经登录了 alice，现在要切换到 bob，只需要直接 login bob 即可。[login](#login_code) bob 前无需显式调用 logout alice，IM SDK 内部会自动处理。
+例如已经登录了 alice，现在要切换到 bob，只需要直接 login bob 即可。login bob 前无需显式调用 logout alice，IM SDK 内部会自动处理。
 
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/19392e3ac5f15401b960bc887a9572ea.png" />

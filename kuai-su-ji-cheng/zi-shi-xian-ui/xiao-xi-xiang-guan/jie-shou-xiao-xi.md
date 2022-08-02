@@ -1,5 +1,5 @@
 ## 功能描述
-* 通过 `addAdvancedMsgListener` 监听接收所有类型消息（文本、自定义、富媒体消息），相关回调在 `V2TimAdvancedMsgListener` 协议中定义。
+* 通过 [`addAdvancedMsgListener`](../../../api/v2timmessagemanager/addadvancedmsglistener.md) 监听接收所有类型消息（文本、自定义、富媒体消息），相关回调在 [`V2TimAdvancedMsgListener`](../../../api/guan-jian-lei/listener/v2timadvancedmsglistener.md) 协议中定义。
 
 
 ## 设置消息监听器
@@ -7,7 +7,7 @@
 ### 高级消息监听器
 
 #### 添加监听器
-接收方调用 `addAdvancedMsgListener` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/addAdvancedMsgListener.html)) 添加高级消息监听器。一般建议在比较靠前的时间点调用，例如例如聊天消息界面初始化后，确保 App 能及时收到消息。
+接收方调用 [`addAdvancedMsgListener`](../../../api/v2timmessagemanager/addadvancedmsglistener.md) 添加高级消息监听器。一般建议在比较靠前的时间点调用，例如例如聊天消息界面初始化后，确保 App 能及时收到消息。
 
 示例代码如下：
 
@@ -27,7 +27,7 @@ TencentImSDKPlugin.v2TIMManager.getMessageManager().addAdvancedMsgListener(
 
 
 #### 移除监听器
-如果想停止接收消息，接收方可调用 `removeAdvancedMsgListener` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/removeAdvancedMsgListener.html)) 移除高级消息监听器。
+如果想停止接收消息，接收方可调用 [`removeAdvancedMsgListener`](../../../api/v2timmessagemanager/removeadvancedmsglistener.md) 移除高级消息监听器。
 
 示例代码如下：
 

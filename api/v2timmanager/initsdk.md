@@ -21,7 +21,7 @@ description: 初始化 SDK√
 | 参数名称     | 参数类型                                                              | 是否必填 | 描述                                                    |
 | -------- | ----------------------------------------------------------------- | ---- | ----------------------------------------------------- |
 | sdkAppID | int                                                               | 是    | 应用ID，可在[控制台](https://console.cloud.tencent.com/im)中获取 |
-| loglevel | [LogLevelEnum](../enums/loglevelenum.md)                          | 是    | 配置信息                                                  |
+| loglevel | [LogLevelEnum](../enums/loglevelenum.md)                          | 是    | 打印日志等级                                               |
 | listener | [V2TimSDKListener](../guan-jian-lei/listener/v2timsdklistener.md) | 是    | SDK监听器                                                |
 
 ## 返回值

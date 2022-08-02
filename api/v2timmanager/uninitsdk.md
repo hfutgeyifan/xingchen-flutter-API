@@ -20,7 +20,7 @@ description: 反初始化 SDK√
 ## 返回值
 
 ```dart
-V2TimValueCallback
+V2TimCallback
 
 {
     code : int

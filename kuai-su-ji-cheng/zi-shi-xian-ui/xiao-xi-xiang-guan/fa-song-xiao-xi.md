@@ -4,7 +4,7 @@
 * `V2TimMessage` 中可以携带不同类型子类，表示不同类型的消息。
 
 ## 重点接口说明
-接口 `sendMessage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/sendMessage.html)) 是发送消息中最核心的接口。该接口支持发送所有类型的消息。
+接口 [`sendMessage`](../../../api/v2timmessagemanager/sendmessage.md) 是发送消息中最核心的接口。该接口支持发送所有类型的消息。
 
 {% hint style="info" %}
 说明：
@@ -138,8 +138,8 @@ Future<V2TimValueCallback<V2TimMessage>> sendMessage(
 #### 高级接口
 
 调用高级接口发送单聊文本消息分两步：
-1. 调用 `createTextMessage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/createTextMessage.html)) 创建文本消息。
-2. 调用 `sendMessage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/sendMessage.html)) 发送消息。
+1. 调用 [`createTextMessage`](../../../api/v2timmessagemanager/createtextmessage.md) 创建文本消息。
+2. 调用 [`sendMessage`](../../../api/v2timmessagemanager/sendmessage.md) 发送消息。
 
 示例代码如下：
 ```dart
@@ -167,8 +167,8 @@ V2TimValueCallback<V2TimMsgCreateInfoResult> createTextMessage = await TencentIm
 #### 高级接口
 
 调用高级接口发送群聊文本消息分两步：
-1. 调用 `createTextMessage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/createTextMessage.html))  创建文本消息。
-2. 调用 `sendMessage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/sendMessage.html)) 发送消息。
+1. 调用 [`createTextMessage`](../../../api/v2timmessagemanager/createtextmessage.md) 创建文本消息。
+2. 调用 [`sendMessage`](../../../api/v2timmessagemanager/sendmessage.md) 发送消息。
 
 示例代码如下：
 ```dart
@@ -192,7 +192,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult> createTextAtMessageRes = await Tenc
 ## 发送自定义消息
 
 自定义消息区分单聊和群聊，涉及的接口或者传参有所区别。发送自定义消息可以采用两种接口：普通接口和高级接口。
-高级接口即上文中已介绍过的 `sendMessage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/sendMessage.html))，比普通接口能设置更多的发送参数（例如优先级、离线推送信息等）。
+高级接口即上文中已介绍过的 [`sendMessage`](../../../api/v2timmessagemanager/sendmessage.md)，比普通接口能设置更多的发送参数（例如优先级、离线推送信息等）。
 
 
 ### 单聊自定义消息
@@ -201,8 +201,8 @@ V2TimValueCallback<V2TimMsgCreateInfoResult> createTextAtMessageRes = await Tenc
 #### 高级接口
 
 调用高级接口发送单聊自定义消息分两步：
-1. 调用 `createCustomMessage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin/latest/manager_v2_tim_message_manager/V2TIMMessageManager/createCustomMessage.html))  创建自定义消息。
-2. 调用 `sendMessage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/sendMessage.html)) 发送消息。
+1. 调用 [`createCustomMessage`](../../../api/v2timmessagemanager/createcustommessage.md)  创建自定义消息。
+2. 调用 [`sendMessage`](../../../api/v2timmessagemanager/sendmessage.md) 发送消息。
 
 示例代码如下：
 ```java
@@ -230,8 +230,8 @@ V2TimValueCallback<V2TimMsgCreateInfoResult> createCustomMessageRes = await Tenc
 #### 高级接口
 
 调用高级接口发送群聊自定义消息分两步：
-1. 调用 `createCustomMessage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/createCustomMessage.html)) 创建自定义消息。
-2. 调用 `sendMessage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/sendMessage.html)) 发送消息。
+1. 调用 [`createCustomMessage`](../../../api/v2timmessagemanager/createcustommessage.md)  创建自定义消息。
+2. 调用 [`sendMessage`](../../../api/v2timmessagemanager/sendmessage.md) 发送消息。
 
 代码示例如下：
 ```java
@@ -259,7 +259,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult> createCustomMessageRes = await Tenc
 富媒体消息发送没有普通接口，都需要使用高级接口，步骤是：
 
 1. 调用 `createXxxMessage` 创建指定类型的富媒体消息对象，其中 Xxx 表示具体的消息类型。
-2. 调用 `sendMessage`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/sendMessage.html)) 发送消息。
+2. 调用 [`sendMessage`](../../../api/v2timmessagemanager/sendmessage.md) 发送消息。
 3. 在消息回调中获取消息是否发送成功或失败。
 
 ### 图片消息
@@ -424,5 +424,6 @@ V2TimValueCallback<V2TimMsgCreateInfoResult> createFaceMessageRes =
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png" />
 

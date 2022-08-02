@@ -4,15 +4,16 @@ Flutter TUIKit 是基于 Flutter IM SDK 实现的一套 UI 组件，其中包含
 
 目前包含的组件如下：
 
-- [TIMUIKitCore](https://cloud.tencent.com/document/product/269/70747#timuikitcore) 核心
-- [TIMUIKitConversation](https://cloud.tencent.com/document/product/269/70747#timuikitconversation) 会话
-- [TIMUIKitChat](https://cloud.tencent.com/document/product/269/70747#timuikitchat) 聊天
-- [TIMUIKitContact](https://cloud.tencent.com/document/product/269/70747#timuikitcontact) 联系人
-- [TIMUIKitProfile](https://cloud.tencent.com/document/product/269/70747#timuikitprofile) 好友管理
-- [TIMUIKitGroupProfile](https://cloud.tencent.com/document/product/269/70747#timuikitgroupprofile) 群管理
-- [TIMUIKitGroup](https://cloud.tencent.com/document/product/269/70747#timuikitgroup) 我的群聊
-- [TIMUIKitBlackList](https://cloud.tencent.com/document/product/269/70747#timuikitblacklist) 黑名单
-- [TIMUIKitNewContact](https://cloud.tencent.com/document/product/269/70747#timuikitnewcontact) 新的联系人
+- [TIMUIKitCore](../../uikit-sdk-api/TIMUIKitCore/README.md) 核心
+- [TIMUIKitConversation](../../uikit-sdk-api/TIMUIKitConversation/README.md) 会话
+- [TIMUIKitChat](../../uikit-sdk-api/TIMUIKitChat/README.md) 聊天
+- [TIMUIKitContact](../../uikit-sdk-api/TIMUIKitContact/README.md) 联系人
+- [TIMUIKitProfile](../../uikit-sdk-api/TIMUIKitProfile/README.md) 好友管理
+- [TIMUIKitGroupProfile](../../uikit-sdk-api/TIMUIKitGroupProfile/README.md) 群管理
+- [TIMUIKitGroup](../../uikit-sdk-api/TIMUIKitGroup/README.md) 我的群聊
+- [TIMUIKitBlackList](../../uikit-sdk-api/TIMUIKitBlackList/README.md) 黑名单
+- [TIMUIKitNewContact](../../uikit-sdk-api/TIMUIKitNewContact/README.md) 新的联系人
+- [TIMUIKitSearch](../../uikit-sdk-api/TIMUIKitSearch/README.md) 本地搜索
 
 ![](https://qcloudimg.tencent-cloud.cn/raw/bbfe2ade260d26e77296f0c27f6af36e.png)
 上图项目源码：[im-flutter-uikit](https://github.com/tencentyun/TIMSDK/tree/master/Flutter/Demo/im-flutter-uikit)，项目已开源，您可直接使用。
@@ -23,11 +24,67 @@ Flutter TUIKit 是基于 Flutter IM SDK 实现的一套 UI 组件，其中包含
 ## 操作步骤
 如下会介绍如何使用 Flutter TUIKit 快速构建一个简单的即时通信应用。
 
-### 步骤1: 创建 Flutter 应用
+### 步骤1: 创建 Flutter 应用并添加权限
 请参见 [Flutter 文档](https://flutter.cn/docs/get-started/test-drive?tab=terminal) 快速创建一个 Flutter 应用。
+
+#### 配置权限
+
+由于 TUIKit 运行，需要拍摄/相册/录音/网络等权限，需要您在 Native 的文件中手动声明，才可正常使用相关能力。
+
+**Android**
+
+打开 `android/app/src/main/AndroidManifest.xml` ，在 `<manifest></manifest>`中，添加如下权限。
+
+```xml
+    <uses-permission
+        android:name="android.permission.INTERNET"/>
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission
+        android:name="android.permission.VIBRATE"/>
+    <uses-permission
+        android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission
+        android:name="android.permission.CAMERA"/>
+```
+
+**iOS**
+
+打开 `ios/Podfile` ，在文件末尾新增如下权限代码。
+
+```
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    flutter_additional_ios_build_settings(target)
+    target.build_configurations.each do |config|
+          config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= [
+            '$(inherited)',
+            'PERMISSION_MICROPHONE=1',
+            'PERMISSION_CAMERA=1',
+            'PERMISSION_PHOTOS=1',
+          ]
+        end
+  end
+end
+```
+
+{% hint style="info" %}
+说明：
+
+如您需要用到推送能力，还需要添加推送相关权限，详情可查看 [Flutter 厂商消息推送插件集成指南](https://cloud.tencent.com/document/product/269/74605)。
+{% endhint %}
 
 ### 步骤2: 安装依赖
 在 pubspec.yaml 文件中的 `dependencies` 下添加 `tim_ui_kit`。或者执行如下命令：
+
 ```
 // step 1:
 flutter pub add tim_ui_kit
@@ -101,6 +158,7 @@ class _MyHomePageState extends State<MyHomePage> {
 {% endhint %}
 
 添加两个 `TextField` 用于输入 `UserID` 和 `UserSig`。单击**登录**后调用登录接口。
+
 ```dart
 /// main.dart
 /// 省略
@@ -161,7 +219,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ### 步骤5: 集成所需组件
 - 创建 `message.dart` 文件集成 `TIMUIKitConversation` 和 `TIMUIKitChat` 包含不仅限于此。可根据您的需求集成更多的组件。
-- 修改 `main.dart` 中代码，登录成功后跳转至该页面。
+- 修改 `main.dart` 中代码，登录成功后跳转至该页面。 
 
 ```dart
 /// message.dart
@@ -234,9 +292,8 @@ void _login() async {
     }
   }
 ```
-
 ### 常见问题
 #### 1. 引入了 TUIKit 还需要引入 IM SDK 吗？
-不需要再次引入 IM SDK 了。如果需要使用 IM SDK 相关的接口，可通过 `TIMUIKitCore.getSDKInstance()` 获取。为了保证 IM SDK 版本的一致性，我们推荐您使用该方式使用 SDK。
+不需要再次引入 IM SDK 了。如果需要使用 IM SDK 相关的接口，可通过 [`TIMUIKitCore.getSDKInstance()`](../../uikit-sdk-api/TIMUIKitCore/getSDKInstance.md) 获取。为了保证 IM SDK 版本的一致性，我们推荐您使用该方式使用 SDK。
 #### 2. 发送语音、图片、文件等消息闪退?
 请查看是否打开了**相机**、**麦克风**、**相册**等权限。

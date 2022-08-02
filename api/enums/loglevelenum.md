@@ -1,12 +1,12 @@
 ---
-description: 日志登记
+description: 打印日志等级
 ---
 
 # LogLevelEnum
 
 ## 枚举类型介绍
 
-日志登记
+打印日志等级
 
 ## 枚举值列表
 

@@ -167,13 +167,17 @@ OPPO 对于公信通道有每日上限，对于通讯类型消息，建议参见
 
 获取 SHA256 证书指纹，并在华为推送平台中配置证书指纹，**单击 <img src="https://main.qcloudimg.com/raw/f74e3aa948316533ce91f9add4a81a29.png"></img> 保存**。证书指纹获取可参见 [生成签名证书指纹](https://developer.huawei.com/consumer/cn/doc/development/HMS-Guides/Preparations#generate_finger)。
 
-> ?如果您的应用需要经过流水线编译发布，每次编译在不同的构建机上进行，可在本地创建`keystore.jks`密钥文件，得到该 keystore 的 SHA256 值，填入华为推送平台中。
-> 
->  在流水线的构建脚本中，对完成构建后的产物进行归档对齐，及使用刚才的 keystore 签名。此时该最终产物签名 SHA256 值即可保持一致。代码如下：
->  ```shell
->  zipalign -v -p 4 构建生成的apk.apk 打包生成的apk_aligned.apk 
->  apksigner sign --ks keystore.jks --ks-pass pass:您创建的keystore密码 --out 最终签名  完成的apk.apk 打包生成的apk_aligned.apk
->  ```
+{% hint style="info" %}
+说明：
+
+如果您的应用需要经过流水线编译发布，每次编译在不同的构建机上进行，可在本地创建`keystore.jks`密钥文件，得到该 keystore 的 SHA256 值，填入华为推送平台中。
+
+在流水线的构建脚本中，对完成构建后的产物进行归档对齐，及使用刚才的 keystore 签名。此时该最终产物签名 SHA256 值即可保持一致。代码如下：
+```shell
+zipalign -v -p 4 构建生成的apk.apk 打包生成的apk_aligned.apk 
+apksigner sign --ks keystore.jks --ks-pass pass:您创建的keystore密码 --out 最终签名  完成的apk.apk 打包生成的apk_aligned.apk
+```
+{% endhint %}
 
 ##### 获取华为推送配置文件
 
@@ -293,6 +297,7 @@ dependencies:
 2. 执行`flutter pub get`完成安装。
 3. 在控制台内，执行以下命令，结合操作提示，完成配置 Google Firebase Flutter 项目。
 详见[ Google FlutterFire 官方文档](https://firebase.flutter.dev/docs/overview)。
+
 ```shell
 // 安装Firebase CLI 
 npm install -g firebase-tools
@@ -306,6 +311,7 @@ flutterfire configure
 4. 执行该步骤后，会将此项目与您在 Google Firebase 创建的项目关联起来，执行结果可以参见下图：
 ![](https://qcloudimg.tencent-cloud.cn/raw/21aa8a7fc710746e7fafd28178f1e047.png)
 `main()`方法中初始化 FirebaseAPP。
+
 ```Dart
 WidgetsFlutterBinding.ensureInitialized();
 
@@ -703,6 +709,7 @@ void handleClickNotification(Map<String, dynamic> msg) async {
 #### Flutter 通话插件接入
 1. 如果您使用到我们的 [tim_ui_kit_calling_plugin](https://pub.dev/packages/tim_ui_kit_calling_plugin) 插件，请将其升级至0.2.0版本以上，即可使用离线推送能力。
 2. 参见如下示例，直接在`call`方法第三个参数中，传入`offlinePush`对象即可。
+
 ```Dart
 final user = await sdkInstance.getLoginUser();
 final myId = user.data;

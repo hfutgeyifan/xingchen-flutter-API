@@ -20,6 +20,7 @@ description: 群组信息组件
 | profileWidgetsOrder  | 用于自定义构建群组信息页面不同部分的排序设置                                                  | List< [GroupProfileWidgetEnum](GroupProfileWidgetEnum.md) > | 否    |
 | builder              | 用于自定义构建整个用群组信息页面的构造器（若使用此属性则profileWidgetBuilder与profileWidgetsOrder失效） | [GroupProfileBuilder](GroupProfileBuilder.md)               | 否    |
 | lifeCycle            | 群组信息操作时的钩子函数                                                            | [GroupProfileLifeCycle](GroupProfileLifeCycle.md)           | 否    |
+| onClickUser            | 点击群成员列表中的群成员的回调函数               | Function(String userID)           | 否    |
 
 ## 代码示例与效果展示
 
@@ -282,4 +283,37 @@ lifeCycle为群组信息操作时的钩子函数
 
 ![](../../.gitbook/assets/didquitgroup.gif)
 
-img{ width:220px; height:400px; }
+### onClickUser
+
+onClickUser为点击群成员列表中的群成员的回调函数
+
+* 代码示例为使用onClickUser做到点击群成员列表中的群成员进入成员用户信息页面的案例。
+
+#### 代码示例
+
+```dart
+  @override
+    Widget build(BuildContext context) {
+      return Scaffold(
+          body: SafeArea(
+        child: TIMUIKitGroupProfile(
+          groupID: groupID,
+          onClickUser: (String userID) {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => UserProfile(userID: userID),
+                ));
+          },
+        ),
+      ));
+    }
+```
+
+#### 效果展示
+
+![](../../.gitbook/assets/TIMUIKitGroupProfile-onclickuser.gif)
+
+<style>
+img{ width:240px; height:400px; }
+</style>

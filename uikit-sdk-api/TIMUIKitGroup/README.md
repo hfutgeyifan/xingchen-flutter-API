@@ -249,7 +249,7 @@ itemBuilder为用于自定义构建群组模块的构造器
 
 #### 效果展示
 
-![](<../../.gitbook/assets/TIMUIKitGroup-itembuilder (1).png>)
+![](../../.gitbook/assets/TIMUIKitGroup-itembuilder.png)
 
 ### groupCollector
 
@@ -304,4 +304,6 @@ groupCollector为群组列表展示的过滤器
 
 ![](../../.gitbook/assets/TIMUIKitGroup-groupCollector1.png) ![](../../.gitbook/assets/TIMUIKitGroup-groupCollector2.png)
 
-img{ width:220px; height:400px; }
+<style>
+img{ width:240px; height:400px; }
+</style>

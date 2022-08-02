@@ -25,6 +25,7 @@ TUICalling 是基于腾讯云实时音视频（TRTC）和即时通信 IM 服务�
 ## 前置条件
 - 创建一个 Flutter 应用。
 - 在 pubspec.yaml 文件中的 `dependencies` 下添加 `tim_ui_kit_calling_plugin`。或者执行如下命令：
+
 ```dart
 /// step 1:
 flutter pub add tim_ui_kit_calling_plugin
@@ -38,6 +39,7 @@ flutter pub get
 ## 操作步骤
 ### 步骤1：引入 navigatorKey
 在您的`MateriaApp`中添加`navigatorKey`。其目的用于在接受到语音通话邀请时可以打开通话窗口。
+
 ```dart
 import 'package:tim_ui_kit_calling_plugin/tim_ui_kit_calling_plugin.dart';
 

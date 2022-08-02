@@ -18,6 +18,7 @@ TUIKit Sticker Plugin 是提供定义自定义表情包数据，生成表情包 
 2. 业务侧通过 TUIKit Sticker Plugin 的 CustomStickerPackage 生成表情包所需的数据。
 3. 业务侧通过 TUIKit Sticker Plugin 的 StickerPanel 生成表情包 panel 组件。
 4. 将组件回传至 TUIKit 生成 表情包 panel。
+
 ![](https://qcloudimg.tencent-cloud.cn/raw/0dbe707b55706006543881b63bf081fc.png)
 
 

@@ -173,4 +173,6 @@ onEnterSearchInConversation为点击聊天历史模块的回调函数。
 
 ![](../../.gitbook/assets/TIMUIKitSearch-ontapconversation3.gif)
 
-img{ width:220px; height:400px; }
+<style>
+img{ width:240px; height:400px; }
+</style>

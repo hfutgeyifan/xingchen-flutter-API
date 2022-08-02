@@ -197,4 +197,6 @@ lifeCycle为添加好友操作时的钩子函数
 
 ![](../../.gitbook/assets/TIMUIKitAddFriend-lifeCircle.gif)
 
-img{ width:220px; height:400px; }
+<style>
+img{ width:240px; height:400px; }
+</style>

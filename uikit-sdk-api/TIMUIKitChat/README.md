@@ -25,7 +25,7 @@ description: 聊天组件
 | initFindingMsg             | 进入页面需要查询的消息             | [V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md)                                                                                                            | 否    |
 | textFieldHintText          | 输入框默认提示语                | String                                                                                                                                                                     | 否    |
 | appBarConfig               | 上方抬头栏设置                 | AppBar                                                                                                                                                                     | 否    |
-| mainHistoryListConfig      | 历史消息列表的ListView配置       | TIMUIKitHistoryMessageListConfig                                                                                                                                           | 否    |
+| mainHistoryListConfig      | 历史消息列表的ListView配置       | [TIMUIKitHistoryMessageListConfig](TIMUIKitHistoryMessageListConfig.md)                                                                                                                                           | 否    |
 | morePanelConfig            | 更多操作选项设置                | [MorePanelConfig](MorePanelConfig.md)                                                                                                                                      | 否    |
 | tongueItemBuilder          | 小舌头构造器（右下角按钮提示框样式构造器）   | Widget Function( [VoidCallback](../../api/callbacks/voidcallback.md) onClick, [MessageListTongueType](MessageListTongueType.md) valueType, int unreadCount)                | 否    |
 | groupAtInfoList            | 群组消息@信息列表               | List< [V2TimGroupAtInfo](../../api/guan-jian-lei/group/v2timgroupatinfo.md)? >                                                                                             | 否    |
@@ -354,6 +354,8 @@ initFindingMsg为进入页面需要查询的消息
 
 #### 效果展示
 
+![](../../.gitbook/assets/TIMUIKitChat-initFindingMsg.gif)
+
 ### textFieldHintText
 
 textFieldHintText为输入框默认提示语
@@ -386,6 +388,8 @@ textFieldHintText为输入框默认提示语
 ```
 
 #### 效果展示
+
+![](../../.gitbook/assets/TIMUIKitChat-textFieldHintText.png)
 
 ### appBarConfig
 
@@ -516,6 +520,8 @@ appBarConfig为上方抬头栏设置
 
 #### 效果展示
 
+![](../../.gitbook/assets/TIMUIKitChat-appBarConfig.gif)
+
 ### mainHistoryListConfig
 
 mainHistoryListConfig为历史消息列表的ListView配置
@@ -550,6 +556,8 @@ mainHistoryListConfig为历史消息列表的ListView配置
 ```
 
 #### 效果展示
+
+![](../../.gitbook/assets/TIMUIKitChat-mainHistoryListConfig.png)
 
 ### morePanelConfig
 
@@ -707,6 +715,8 @@ morePanelConfig为更多操作选项设置
 
 #### 效果展示
 
+![](../../.gitbook/assets/TIMUIKitChat-morePanelConfig.png)
+
 ### tongueItemBuilder
 
 tongueItemBuilder为小舌头构造器（右下角按钮提示框样式构造器）
@@ -753,6 +763,8 @@ tongueItemBuilder为小舌头构造器（右下角按钮提示框样式构造器
 
 #### 效果展示
 
+![](../../.gitbook/assets/TIMUIKitChat-tongueItemBuilder.gif)
+
 ### groupAtInfoList
 
 groupAtInfoList为群组消息@信息列表
@@ -786,6 +798,8 @@ groupAtInfoList为群组消息@信息列表
 
 #### 效果展示
 
+![](../../.gitbook/assets/TIMUIKitChat-groupAtInfoList.png)
+
 ### config
 
 config为消息页面设置
@@ -818,6 +832,8 @@ config为消息页面设置
 ```
 
 #### 效果展示
+
+![](../../.gitbook/assets/TIMUIKitChat-config1.png)  ![](../../.gitbook/assets/TIMUIKitChat-config2.png)
 
 ### onDealWithGroupApplication
 
@@ -861,6 +877,8 @@ onDealWithGroupApplication为点击处理加群申请后的回调函数
 
 #### 效果展示
 
+![](../../.gitbook/assets/TIMUIKitChat-onDealWithGroupApplication.gif)
+
 ### abstractMessageBuilder
 
 abstractMessageBuilder为针对不同类型消息概述构造器
@@ -899,6 +917,8 @@ abstractMessageBuilder为针对不同类型消息概述构造器
 
 #### 效果展示
 
+![](../../.gitbook/assets/TIMUIKitChat-abstractMessageBuilder.gif)
+
 ### toolTipsConfig
 
 toolTipsConfig为长按消息显示的消息操作选项设置
@@ -935,6 +955,8 @@ toolTipsConfig为长按消息显示的消息操作选项设置
 ```
 
 #### 效果展示
+
+![](../../.gitbook/assets/TIMUIKitChat-toolTipsConfig.png)
 
 ### lifeCycle
 
@@ -1001,6 +1023,8 @@ lifeCycle为聊天消息操作时的钩子函数
 ```
 
 #### 效果展示
+
+![](../../.gitbook/assets/TIMUIKitChat-lifecircle.gif)
 
 ### topFixWidget
 
@@ -1070,6 +1094,8 @@ topFixWidget为聊天页面上方自定义widget
 
 #### 效果展示
 
+![](../../.gitbook/assets/TIMUIKitChat-topFixWidget.png)
+
 ### customStickerPanel
 
 customStickerPanel为自定义表情的选择框
@@ -1119,3 +1145,10 @@ customStickerPanel为自定义表情的选择框
 ```
 
 #### 效果展示
+
+![](../../.gitbook/assets/TIMUIKitChat-customStickerPanel.png)
+
+
+<style>
+img{ width:240px; height:400px; }
+</style>

@@ -39,6 +39,7 @@ V2TimCallback
 ```dart
     //用户资料设置信息
     V2TimUserFullInfo userFullInfo = V2TimUserFullInfo(
+      nickName: "", // 用户昵称
       allowType: 0,//用户的好友验证方式 0:允许所有人加我好友 1:不允许所有人加我好友 2:加我好友需我确认
       birthday: 0,//用户生日
       customInfo: {"custom":"custom"},//用户的自定义状态 旗舰版支持修改此属性
