@@ -8,13 +8,13 @@
 
 ### 删除本地消息
 
-您可以调用 `deleteMessageFromLocalStorage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/deleteMessageFromLocalStorage.html)) 删除本地消息。
+您可以调用 [`deleteMessageFromLocalStorage`](../../../api/v2timmessagemanager/deletemessagefromlocalstorage.md) 删除本地消息。
 
 {% hint style="info" %}
 说明：
 
-1. 该接口只能删除本地历史，消息删除后，SDK 会在本地把这条消息标记为已删除状态，调用 `getHistoryMessage` 不能再拉取到。
-2. 如果程序卸载重装，本地会失去对这条消息的删除标记，调用 `getHistoryMessage` 还能再拉取到该条消息。
+1. 该接口只能删除本地历史，消息删除后，SDK 会在本地把这条消息标记为已删除状态，调用 [`getHistoryMessage`](../../../api/v2timmessagemanager/gethistorymessagelist.md) 不能再拉取到。
+2. 如果程序卸载重装，本地会失去对这条消息的删除标记，调用 [`getHistoryMessage`](../../../api/v2timmessagemanager/gethistorymessagelist.md) 还能再拉取到该条消息。
 {% endhint %}
 
 示例代码如下：
@@ -28,7 +28,7 @@ TencentImSDKPlugin.v2TIMManager.getMessageManager().deleteMessageFromLocalStorag
 
 ### 删除云端存储的消息
 
-您可以调用 `deleteMessages` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/deleteMessages.html)) 删除云端存储的消息。
+您可以调用 [`deleteMessages`](../../../api/v2timmessagemanager/deletemessages.md) 删除云端存储的消息。
 
 该接口会在删除本地消息的基础上，同步删除云端存储的消息，且无法恢复。
 
@@ -51,5 +51,6 @@ TencentImSDKPlugin.v2TIMManager.getMessageManager().deleteMessages(msgIDs: ['mes
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png" />
 

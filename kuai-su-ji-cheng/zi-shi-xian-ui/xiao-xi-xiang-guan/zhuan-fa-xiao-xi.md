@@ -15,7 +15,7 @@
 ### 创建并发送合并转发消息
 
 我们在创建一条合并消息的时候不仅要设置合并消息列表，还要设置标题和摘要信息，实现流程如下：
-1. 调用 `createMergerMessage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/createMergerMessage.html)) 接口创建一条合并消息，创建合并消息的时候需要设置原始消息列表，合并消息标题、合并消息摘要等信息。
+1. 调用 [`createMergerMessage`](../../../api/v2timmessagemanager/createmergermessage.md) 接口创建一条合并消息，创建合并消息的时候需要设置原始消息列表，合并消息标题、合并消息摘要等信息。
 
 <img src="https://qcloudimg.tencent-cloud.cn/raw/27de8638efbd212c09452918db7f62ec.png" width = "450" />
 
@@ -54,7 +54,7 @@ V2TimValueCallback<V2TimMsgCreateInfoResult> createMergerMessageResult =
 ### 接收合并转发消息
 
 #### 添加监听器
-接收方调用 `addAdvancedMsgListener` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/addAdvancedMsgListener.html)) 添加高级消息监听器。
+接收方调用 [`addAdvancedMsgListener`](../../../api/v2timmessagemanager/addadvancedmsglistener.md) 添加高级消息监听器。
 一般建议在比较靠前的时间点调用，例如例如聊天消息界面初始化后，确保 App 能及时收到消息。
 
 示例代码如下：
@@ -68,9 +68,9 @@ TencentImSDKPlugin.v2TIMManager
 
 
 #### 解析消息
-添加监听器后，接收方会在 `onRecvNewMessage` 中收到合并消息 `V2TimMessage`。
-可以先通过合并消息元素 `V2TimMergerElem` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/models_v2_tim_merger_elem/V2TimMergerElem-class.html)) 获取 `title` 和  `abstractList`  UI 展示。
-当用户点击合并消息的时候再调用 `downloadMergerMessage`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin/latest/manager_v2_tim_message_manager/V2TIMMessageManager/downloadMergerMessage.html)) 接口下载合并消息列表 UI 展示。
+添加监听器后，接收方会在 [`onRecvNewMessage`](../../../api/callbacks/onrecvnewmessagecallback.md) 中收到合并消息 [`V2TimMessage`](../../../api/guan-jian-lei/message/v2timmessage.md)。
+可以先通过合并消息元素 [`V2TimMergerElem`](../../../api/guan-jian-lei/message/v2timmergerelem.md) 获取 `title` 和  `abstractList`  UI 展示。
+当用户点击合并消息的时候再调用 [`downloadMergerMessage`](../../../api/v2timmessagemanager/downloadmergermessage.md) 接口下载合并消息列表 UI 展示。
 
 示例代码如下：
 
@@ -90,7 +90,7 @@ if(message.elemType == MessageElemType.V2TIM_ELEM_TYPE_MERGER){
 
 
 ## 逐条转发消息
-如果您需要转发单条消息，可以先通过 `createForwardMessage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin/latest/manager_v2_tim_message_manager/V2TIMMessageManager/createForwardMessage.html)) 接口创建一条和原消息内容完全一样的转发消息，再调用 `sendMessage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin/latest/manager_v2_tim_message_manager/V2TIMMessageManager/sendMessage.html)) 接口把转发消息发送出去。
+如果您需要转发单条消息，可以先通过 [`createForwardMessage`](../../../api/v2timmessagemanager/createforwardmessage.md) 接口创建一条和原消息内容完全一样的转发消息，再调用 [`sendMessage`](../../../api/v2timmessagemanager/sendmessage.md) 接口把转发消息发送出去。
 
 示例代码如下：
 
@@ -108,5 +108,6 @@ V2TimValueCallback<V2TimMsgCreateInfoResult>  createForwardMessageRes = await Te
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png" />
 

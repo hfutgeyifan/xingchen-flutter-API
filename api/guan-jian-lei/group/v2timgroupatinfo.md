@@ -15,7 +15,7 @@ description: 群组@ 信息
 * 参数类型 : String
 * 参数描述 : @ 消息序列号，即带有 “@我” 或者 “@所有人” 标记的消息的序列号
 
-### memberInfoList
+### atType
 
 * 参数类型 : int
 * 参数描述 : @ 提醒类型

@@ -113,7 +113,7 @@ if(getLoginStatusRes.code == 0){
 
 ## 登出
 普通情况下，如果您的应用生命周期跟 IM SDK 生命周期一致，退出应用前可以不登出，直接退出即可。
-但有些特殊场景，例如您只在进入特定界面后才使用 IM SDK，退出界面后不再使用，此时可以调用`logout`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/logout.html)) 接口登出 SDK。登出成功后，不会再收到其他人发送的新消息。注意这种情况下，登出成功后还需要调 `unInitSDK`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/unInitSDK.html)) 对 SDK 进行反初始化。
+但有些特殊场景，例如您只在进入特定界面后才使用 IM SDK，退出界面后不再使用，此时可以调用[`logout`](../../api/v2timmanager/logout.md) 接口登出 SDK。登出成功后，不会再收到其他人发送的新消息。注意这种情况下，登出成功后还需要调 [`unInitSDK`](../../api/v2timmanager/uninitsdk.md) 对 SDK 进行反初始化。
 
 示例代码如下：
 

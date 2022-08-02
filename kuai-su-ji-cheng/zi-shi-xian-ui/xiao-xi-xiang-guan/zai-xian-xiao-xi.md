@@ -1,5 +1,5 @@
 ## 功能描述
-某些场景下，您可能希望发出去的消息只被在线用户接收，即当接收者不在线时就不会感知到该消息。您只需在 `sendMessage` 时，将参数 `onlineUserOnly` 设置为 `true`，此时发送出去的消息跟普通消息相比，会有如下差异点：
+某些场景下，您可能希望发出去的消息只被在线用户接收，即当接收者不在线时就不会感知到该消息。您只需在 [`sendMessage`](../../../api/v2timmessagemanager/sendmessage.md) 时，将参数 `onlineUserOnly` 设置为 `true`，此时发送出去的消息跟普通消息相比，会有如下差异点：
 
 1. 不支持离线存储，即如果接收方不在线就无法收到。
 2. 不支持多端漫游，即如果接收方在一台终端设备上一旦接收过该消息，无论是否已读，都不会在另一台终端上再次收到。
@@ -9,7 +9,7 @@
 
 ### 实现“对方正在输入”功能
 
-在 C2C 单聊场景下，您可以通过 `sendMessage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/sendMessage.html)) 接口发送 "自己正在输入" 的提示性消息，接收方收到该消息时可以在 UI 界面展示 "对方正在输入"，
+在 C2C 单聊场景下，您可以通过 [`sendMessage`](../../../api/v2timmessagemanager/sendmessage.md) 接口发送 "自己正在输入" 的提示性消息，接收方收到该消息时可以在 UI 界面展示 "对方正在输入"，
 
 示例代码如下：
 
@@ -28,5 +28,6 @@ V2TimValueCallback<V2TimMsgCreateInfoResult> createCustomMessageRes =
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png" />
 

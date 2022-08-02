@@ -13,8 +13,8 @@
 
 ## 发送群定向消息
 定向消息是指，向群内部分指定的成员发送消息，而未被指定的群成员无法收到该消息。可以按照下面的方式实现：
-1. 调用 `createXXXMessage` (其中 XXX 表示具体的消息类型) 接口创建一条原始消息对象 `V2TIMMessage`。
-2. 调用 `createTargetedGroupMessage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/createTargetedGroupMessage.html)) 接口根据原始消息对象创建定向消息对象 `V2TimMessage`，并指定消息接收成员列表。
+1. 调用 `createXXXMessage` (其中 XXX 表示具体的消息类型) 接口创建一条原始消息对象 [`V2TIMMessage`](../../../api/guan-jian-lei/message/v2timmessage.md)。
+2. 调用 [`createTargetedGroupMessage`](../../../api/v2timmessagemanager/createtargetedgroupmessage.md) 接口根据原始消息对象创建定向消息对象 [`V2TIMMessage`](../../../api/guan-jian-lei/message/v2timmessage.md)，并指定消息接收成员列表。
 3. 调用 `sendMessage` 接口发送定向消息。
 
 示例代码如下：
@@ -39,5 +39,6 @@
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png" />
 

@@ -1,8 +1,8 @@
 ## 功能描述
-IM SDK 提供获取会话的接口，可以获取指定的单个、多个会话的 `V2TimConversation` 对象信息。
+IM SDK 提供获取会话的接口，可以获取指定的单个、多个会话的 [`V2TimConversation`](../../../api/guan-jian-lei/message/v2timconversation.md) 对象信息。
 
 ### 获取指定的单个会话
-您可以调用 `getConversation`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/getConversation.html)) 获取单个会话的信息，它是一个 `V2TimConversation` 对象。
+您可以调用 [`getConversation`](../../../api/v2timconversationmanager/getconversation.md) 获取单个会话的信息，它是一个 [`V2TimConversation`](../../../api/guan-jian-lei/message/v2timconversation.md) 对象。
 
 示例代码如下：
 
@@ -14,7 +14,7 @@ V2TimValueCallback<V2TimConversation> conv = await conversationManager.getConver
 
 ### 获取指定的多个会话
 
-`getConversationList`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/getConversationList.html)) 获取指定的会话列表，列表中存储的是 `V2TimConversation` 对象。
+[`getConversationList`](../../../api/v2timconversationmanager/getconversationlist.md) 获取指定的会话列表，列表中存储的是 [`V2TimConversation`](../../../api/guan-jian-lei/message/v2timconversation.md) 对象。
 
 示例代码如下：
 

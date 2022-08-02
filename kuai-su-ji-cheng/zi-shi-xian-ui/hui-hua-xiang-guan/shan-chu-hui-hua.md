@@ -10,7 +10,7 @@
 
 
 ## 删除会话
-通过调用 `deleteConversation`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/deleteConversation.html)) 接口，删除指定的会话。
+通过调用 [`deleteConversation`](../../../api/v2timconversationmanager/deleteconversation.md) 接口，删除指定的会话。
 
 示例代码如下：
 
@@ -24,5 +24,6 @@ conversationManager.deleteConversation(conversationID: "conversationID");
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png" />
 

@@ -85,7 +85,7 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="cha-xun-xiao-xi.html" />
+    <link rel="next" href="qun-@-xiao-xi.html" />
     
     
     <link rel="prev" href="zai-xian-xiao-xi.html" />
@@ -498,20 +498,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.4.13" data-path="cha-xun-xiao-xi.html">
-            
-                <a href="cha-xun-xiao-xi.html">
-            
-                    
-                    查询消息
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.2.4.14" data-path="qun-@-xiao-xi.html">
+        <li class="chapter " data-level="2.2.4.13" data-path="qun-@-xiao-xi.html">
             
                 <a href="qun-@-xiao-xi.html">
             
@@ -524,7 +511,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.4.15" data-path="qun-ding-xiang-xiao-xi.html">
+        <li class="chapter " data-level="2.2.4.14" data-path="qun-ding-xiang-xiao-xi.html">
             
                 <a href="qun-ding-xiang-xiao-xi.html">
             
@@ -537,7 +524,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.4.16" data-path="xiao-xi-mian-da-rao.html">
+        <li class="chapter " data-level="2.2.4.15" data-path="xiao-xi-mian-da-rao.html">
             
                 <a href="xiao-xi-mian-da-rao.html">
             
@@ -5863,7 +5850,7 @@
 <p>&#x5982;&#x679C;&#x662F;&#x7FA4;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x5728; <a href="https://console.cloud.tencent.com/im" target="_blank">&#x5373;&#x65F6;&#x901A;&#x4FE1; IM &#x63A7;&#x5236;&#x53F0;</a> &gt;<strong>&#x529F;&#x80FD;&#x914D;&#x7F6E;</strong>&gt;<strong>&#x767B;&#x5F55;&#x4E0E;&#x6D88;&#x606F;</strong>&gt;<strong>&#x7FA4;&#x5DF2;&#x8BFB;&#x6D88;&#x606F;&#x56DE;&#x6267;&#x914D;&#x7F6E;</strong> &#x4E2D;&#x8BBE;&#x7F6E;&#x652F;&#x6301;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#x6D88;&#x606F;&#x7684;&#x7FA4;&#x7C7B;&#x578B;&#x3002;
   <img src="https://qcloudimg.tencent-cloud.cn/raw/14efb1ea810fbbcab9c8a4a526a797f1.jpg" alt=""></p>
 <h3 id="&#x53D1;&#x9001;&#x7AEF;&#x8BBE;&#x7F6E;&#x6D88;&#x606F;&#x9700;&#x8981;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;">&#x53D1;&#x9001;&#x7AEF;&#x8BBE;&#x7F6E;&#x6D88;&#x606F;&#x9700;&#x8981;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;</h3>
-<p>&#x53D1;&#x9001;&#x7AEF;&#x521B;&#x5EFA;&#x6D88;&#x606F;&#x540E;&#xFF0C;&#x5148;&#x901A;&#x8FC7;&#x6D88;&#x606F;&#x5BF9;&#x8C61; <code>V2TimMessage</code> &#x7684; <code>needReadReceipt</code>(<a href="https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/models_v2_tim_message/V2TimMessage/needReadReceipt.html" target="_blank">dart</a>) &#x5B57;&#x6BB5;&#x8BBE;&#x7F6E;&#x6D88;&#x606F;&#x9700;&#x8981;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#xFF0C;&#x518D;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x5230;&#x4F1A;&#x8BDD;&#x4E2D;&#x3002;</p>
+<p>&#x53D1;&#x9001;&#x7AEF;&#x521B;&#x5EFA;&#x6D88;&#x606F;&#x540E;&#xFF0C;&#x5148;&#x901A;&#x8FC7;&#x6D88;&#x606F;&#x5BF9;&#x8C61; <a href="../../../api/guan-jian-lei/message/v2timmessage.html"><code>V2TIMMessage</code></a> &#x7684; <code>needReadReceipt</code> &#x5B57;&#x6BB5;&#x8BBE;&#x7F6E;&#x6D88;&#x606F;&#x9700;&#x8981;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#xFF0C;&#x518D;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x5230;&#x4F1A;&#x8BDD;&#x4E2D;&#x3002;</p>
 <p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre><code class="lang-dart">V2TimValueCallback&lt;V2TimMsgCreateInfoResult&gt; createCustomMessageRes =
       <span class="hljs-keyword">await</span> TencentImSDKPlugin.v2TIMManager
@@ -5875,7 +5862,7 @@
   TencentImSDKPlugin.v2TIMManager.getMessageManager().sendMessage(id: createCustomMessageRes.data.id, receiver: <span class="hljs-string">&quot;&quot;</span>, groupID: <span class="hljs-string">&quot;groupID&quot;</span>,onlineUserOnly: <span class="hljs-keyword">true</span>,needReadReceipt: <span class="hljs-keyword">true</span>);
 </code></pre>
 <h3 id="&#x63A5;&#x6536;&#x7AEF;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;">&#x63A5;&#x6536;&#x7AEF;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;</h3>
-<p>&#x63A5;&#x6536;&#x7AEF;&#x6536;&#x5230;&#x6D88;&#x606F;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6D88;&#x606F;&#x5BF9;&#x8C61; <code>V2TIMMessage</code> &#x7684; <code>needReadReceipt</code>(<a href="https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/models_v2_tim_message/V2TimMessage/needReadReceipt.html" target="_blank">dart</a>)  &#x5B57;&#x6BB5;&#x5224;&#x65AD;&#x6D88;&#x606F;&#x662F;&#x5426;&#x9700;&#x8981;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#xFF0C;&#x5F53;&#x7528;&#x6237;&#x67E5;&#x770B;&#x6D88;&#x606F;&#x540E;&#xFF0C;&#x8C03;&#x7528; <code>sendMessageReadReceipts</code>(<a href="https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/sendMessageReadReceipts.html" target="_blank">dart</a>) &#x63A5;&#x53E3;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#x3002;</p>
+<p>&#x63A5;&#x6536;&#x7AEF;&#x6536;&#x5230;&#x6D88;&#x606F;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6D88;&#x606F;&#x5BF9;&#x8C61; <a href="../../../api/guan-jian-lei/message/v2timmessage.html"><code>V2TIMMessage</code></a> &#x7684; <code>needReadReceipt</code>&#x5B57;&#x6BB5;&#x5224;&#x65AD;&#x6D88;&#x606F;&#x662F;&#x5426;&#x9700;&#x8981;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#xFF0C;&#x5F53;&#x7528;&#x6237;&#x67E5;&#x770B;&#x6D88;&#x606F;&#x540E;&#xFF0C;&#x8C03;&#x7528; <a href="../../../api/v2timmessagemanager/sendmessagereadreceipts.html"><code>sendMessageReadReceipts</code></a> &#x63A5;&#x53E3;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#x3002;</p>
 <p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre><code class="lang-java">V2TimCallback sendMessageReadReceipts = await TencentImSDKPlugin.v2TIMManager.getMessageManager().sendMessageReadReceipts(messageIDList: [<span class="hljs-string">&apos;msgids&apos;</span>]);
   <span class="hljs-keyword">if</span>(sendMessageReadReceipts.code == <span class="hljs-number">0</span>){
@@ -5885,7 +5872,7 @@
   }
 </code></pre>
 <h3 id="&#x53D1;&#x9001;&#x7AEF;&#x76D1;&#x542C;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#x901A;&#x77E5;">&#x53D1;&#x9001;&#x7AEF;&#x76D1;&#x542C;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#x901A;&#x77E5;</h3>
-<p>&#x63A5;&#x6536;&#x7AEF;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#x540E;&#xFF0C;&#x53D1;&#x9001;&#x7AEF;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>V2TimAdvancedMsgListener</code> &#x7684; <code>onRecvMessageReadReceipts</code>(<a href="https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_callbacks/OnRecvMessageReadReceipts.html" target="_blank">dart</a>) &#x56DE;&#x8C03;&#x76D1;&#x542C;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#x901A;&#x77E5;&#xFF0C;&#x5728;&#x901A;&#x77E5;&#x4E2D;&#x66F4;&#x65B0; UI&#xFF0C;&#x4F8B;&#x5982;&#x66F4;&#x65B0;&#x4E3A; &#x201C;2 &#x4EBA;&#x5DF2;&#x8BFB;&#x201D;&#x3002;</p>
+<p>&#x63A5;&#x6536;&#x7AEF;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#x540E;&#xFF0C;&#x53D1;&#x9001;&#x7AEF;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <a href="../../../api/guan-jian-lei/listener/v2timadvancedmsglistener.html"><code>V2TimAdvancedMsgListener</code></a> &#x7684; <a href="../../../api/callbacks/onrecvmessagereadreceipts.html"><code>onRecvMessageReadReceipts</code></a> &#x56DE;&#x8C03;&#x76D1;&#x542C;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#x901A;&#x77E5;&#xFF0C;&#x5728;&#x901A;&#x77E5;&#x4E2D;&#x66F4;&#x65B0; UI&#xFF0C;&#x4F8B;&#x5982;&#x66F4;&#x65B0;&#x4E3A; &#x201C;2 &#x4EBA;&#x5DF2;&#x8BFB;&#x201D;&#x3002;</p>
 <p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre><code class="lang-dart">onRecvMessageReadReceipts: (<span class="hljs-built_in">List</span>&lt;V2TimMessageReceipt&gt; receiptList) {
       receiptList.forEach((element) { 
@@ -5898,7 +5885,7 @@
 },
 </code></pre>
 <h3 id="&#x53D1;&#x9001;&#x7AEF;&#x4E3B;&#x52A8;&#x62C9;&#x53D6;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#x4FE1;&#x606F;">&#x53D1;&#x9001;&#x7AEF;&#x4E3B;&#x52A8;&#x62C9;&#x53D6;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#x4FE1;&#x606F;</h3>
-<p>&#x53D1;&#x9001;&#x7AEF;&#x4ECE;&#x5176;&#x4ED6;&#x754C;&#x9762;&#x8FDB;&#x5165;&#x6D88;&#x606F;&#x5217;&#x8868;&#x540E;&#xFF0C;&#x5148;&#x62C9;&#x53D6;&#x5386;&#x53F2;&#x6D88;&#x606F;&#xFF0C;&#x518D;&#x8C03;&#x7528; <code>getMessageReadReceipts</code>(<a href="https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/getMessageReadReceipts.html" target="_blank">dart</a>) &#x63A5;&#x53E3;&#x62C9;&#x53D6;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x53D1;&#x9001;&#x7AEF;&#x4ECE;&#x5176;&#x4ED6;&#x754C;&#x9762;&#x8FDB;&#x5165;&#x6D88;&#x606F;&#x5217;&#x8868;&#x540E;&#xFF0C;&#x5148;&#x62C9;&#x53D6;&#x5386;&#x53F2;&#x6D88;&#x606F;&#xFF0C;&#x518D;&#x8C03;&#x7528; <a href="../../../api/v2timmessagemanager/getmessagereadreceipts.html"><code>getMessageReadReceipts</code></a> &#x63A5;&#x53E3;&#x62C9;&#x53D6;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#x4FE1;&#x606F;&#x3002;</p>
 <p>&#x5176;&#x4E2D;&#x5DF2;&#x8BFB;&#x56DE;&#x6267;&#x4FE1;&#x606F; <code>V2TimessageReceipt</code> &#x5B57;&#x6BB5;&#x542B;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
 <table>
 <thead>
@@ -5956,7 +5943,7 @@
   }
 </code></pre>
 <h3 id="&#x53D1;&#x9001;&#x7AEF;&#x4E3B;&#x52A8;&#x62C9;&#x53D6;&#x7FA4;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x6216;&#x672A;&#x8BFB;&#x6210;&#x5458;&#x5217;&#x8868;">&#x53D1;&#x9001;&#x7AEF;&#x4E3B;&#x52A8;&#x62C9;&#x53D6;&#x7FA4;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x6216;&#x672A;&#x8BFB;&#x6210;&#x5458;&#x5217;&#x8868;</h3>
-<p>&#x53D1;&#x9001;&#x7AEF;&#x5728;&#x9700;&#x8981;&#x67E5;&#x770B;&#x7FA4;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x6216;&#x672A;&#x8BFB;&#x6210;&#x5458;&#x5217;&#x8868;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x8C03;&#x7528; <code>getGroupMessageReadMemberList</code>(<a href="https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/getGroupMessageReadMemberList.html" target="_blank">dart</a>) &#x63A5;&#x53E3;&#x5206;&#x9875;&#x62C9;&#x53D6;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x6216;&#x672A;&#x8BFB;&#x7FA4;&#x6210;&#x5458;&#x5217;&#x8868;&#x3002;</p>
+<p>&#x53D1;&#x9001;&#x7AEF;&#x5728;&#x9700;&#x8981;&#x67E5;&#x770B;&#x7FA4;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x6216;&#x672A;&#x8BFB;&#x6210;&#x5458;&#x5217;&#x8868;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x8C03;&#x7528; <a href="../../../api/v2timmessagemanager/getgroupmessagereadmemberlist.html"><code>getGroupMessageReadMemberList</code></a> &#x63A5;&#x53E3;&#x5206;&#x9875;&#x62C9;&#x53D6;&#x6D88;&#x606F;&#x5DF2;&#x8BFB;&#x6216;&#x672A;&#x8BFB;&#x7FA4;&#x6210;&#x5458;&#x5217;&#x8868;&#x3002;</p>
 <pre><code class="lang-dart">V2TimValueCallback&lt;V2TimGroupMessageReadMemberList&gt; getGroupMessageReadMemberList = <span class="hljs-keyword">await</span>  TencentImSDKPlugin.v2TIMManager.getMessageManager().getGroupMessageReadMemberList(messageID: <span class="hljs-string">&quot;&quot;</span>, filter: GetGroupMessageReadMemberListFilter.V2TIM_GROUP_MESSAGE_READ_MEMBERS_FILTER_READ,);
 
  <span class="hljs-keyword">if</span>(getGroupMessageReadMemberList.code == <span class="hljs-number">0</span>){
@@ -5967,8 +5954,8 @@
  }
 </code></pre>
 <h2 id="&#x4EA4;&#x6D41;&#x4E0E;&#x53CD;&#x9988;">&#x4EA4;&#x6D41;&#x4E0E;&#x53CD;&#x9988;</h2>
-<p>&#x6B22;&#x8FCE;&#x52A0;&#x5165; QQ &#x7FA4;&#x8FDB;&#x884C;&#x6280;&#x672F;&#x4EA4;&#x6D41;&#x548C;&#x53CD;&#x9988;&#x95EE;&#x9898;&#xFF0C;QQ &#x7FA4;&#xFF1A;<strong>788910197</strong>&#x3002;
-<img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png"></p>
+<p>&#x6B22;&#x8FCE;&#x52A0;&#x5165; QQ &#x7FA4;&#x8FDB;&#x884C;&#x6280;&#x672F;&#x4EA4;&#x6D41;&#x548C;&#x53CD;&#x9988;&#x95EE;&#x9898;&#xFF0C;QQ &#x7FA4;&#xFF1A;<strong>788910197</strong>&#x3002;</p>
+<p><img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png"></p>
 
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
 						
@@ -6002,7 +5989,7 @@
 		</a>
 		
 		
-		<a href="cha-xun-xiao-xi.html" class="navigation navigation-next " aria-label="Next page: 查询消息">
+		<a href="qun-@-xiao-xi.html" class="navigation navigation-next " aria-label="Next page: 群 @ 消息">
 			<i class="fa fa-angle-right"></i>
 		</a>
 		
@@ -6012,7 +5999,7 @@
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"title":"已读回执","level":"2.2.4.12","depth":3,"next":{"title":"查询消息","level":"2.2.4.13","depth":3,"path":"kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/cha-xun-xiao-xi.md","ref":"kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/cha-xun-xiao-xi.md","articles":[]},"previous":{"title":"在线消息","level":"2.2.4.11","depth":3,"path":"kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/zai-xian-xiao-xi.md","ref":"kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/zai-xian-xiao-xi.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://testcomm.qq.com/im/doc/flutter/index.html","text":"flutter","selected":true}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/yi-du-hui-zhi.md","mtime":"2022-07-26T02:31:21.087Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-02T03:46:43.267Z"},"basePath":"../../..","book":{"language":""}});
+			gitbook.page.hasChanged({"page":{"title":"已读回执","level":"2.2.4.12","depth":3,"next":{"title":"群 @ 消息","level":"2.2.4.13","depth":3,"path":"kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/qun-@-xiao-xi.md","ref":"kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/qun-@-xiao-xi.md","articles":[]},"previous":{"title":"在线消息","level":"2.2.4.11","depth":3,"path":"kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/zai-xian-xiao-xi.md","ref":"kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/zai-xian-xiao-xi.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints","livereload"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://testcomm.qq.com/im/doc/flutter/index.html","text":"flutter","selected":true}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/yi-du-hui-zhi.md","mtime":"2022-08-02T08:36:58.548Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-02T08:56:31.991Z"},"basePath":"../../..","book":{"language":""}});
 		});
 	</script>
 </div>
@@ -6051,6 +6038,10 @@
     
         
         <script src="../../../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

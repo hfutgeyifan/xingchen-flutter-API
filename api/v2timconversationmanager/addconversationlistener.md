@@ -60,9 +60,33 @@ void
         //会话未读总数变更通知，未读总数会减去设置为免打扰的会话的未读数
         //totalUnreadCount 会话未读总数
       },
+      onConversationGroupCreated: (groupName, conversationList) => {
+        // 会话分组被创建
+        // groupName 会话分组名
+        // conversationList 会话分组初始包含的会话列表
+      },
+      onConversationGroupDeleted: (groupName) => {
+        // 会话分组被删除
+        // groupName 被删除的分组名
+      },
+      onConversationGroupNameChanged: (oldName, newName) => {
+        // 会话分组名变更
+        // oldName 旧名称
+        // newName 新名称
+      },
+      onConversationsAddedToGroup: (groupName, conversationList) => {
+        // 会话分组新增会话
+        // groupName 会话分组名
+        // conversationList 被加入的会话列表
+      },
+      onConversationsDeletedFromGroup: (groupName, conversationList) => {
+        // 会话分组删除会话
+        // groupName 会话分组名
+        // conversationList 被删除的会话列表
+      },
     );
     //添加会话监听器
     TencentImSDKPlugin.v2TIMManager
         .getConversationManager()
-        .addConversationListener(listener: listener);//需要新增的会话监听器
+        .addConversationListener(listener: listener); //需要新增的会话监听器
 ```

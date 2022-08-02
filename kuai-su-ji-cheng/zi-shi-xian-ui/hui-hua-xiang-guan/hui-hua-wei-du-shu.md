@@ -6,9 +6,9 @@
 本文将向您介绍如何实现会话未读消息提醒功能。
 
 ## 获取所有会话未读消息总数
-通常情况下，如果想得到所有会话的未读消息总数，可以遍历会话列表得到每个会话的信息 `V2TimConversation`，然后再把所有的 `V2TimConversation` 的 `unreadCount` 相加起来，展示在 UI 上。
-但 IM SDK 为您提供了直接查询所有会话未读消息总数的 API `getTotalUnreadMessageCount`。
-当会话的未读总数发生变更时，SDK 还会主动通过回调 `onTotalUnreadMessageCountChanged`，将最新的未读总数通知给您。
+通常情况下，如果想得到所有会话的未读消息总数，可以遍历会话列表得到每个会话的信息 [`V2TimConversation`](../../../api/guan-jian-lei/message/v2timconversation.md)，然后再把所有的 [`V2TimConversation`](../../../api/guan-jian-lei/message/v2timconversation.md) 的 `unreadCount` 相加起来，展示在 UI 上。
+但 IM SDK 为您提供了直接查询所有会话未读消息总数的 API [`getTotalUnreadMessageCount`](../../../api/v2timconversationmanager/gettotalunreadmessagecount.md)。
+当会话的未读总数发生变更时，SDK 还会主动通过回调 [`onTotalUnreadMessageCountChanged`](../../../api/callbacks/ontotalunreadmessagecountchanged.md)，将最新的未读总数通知给您。
 
 {% hint style="info" %}
 说明：
@@ -19,7 +19,7 @@
 具体的操作步骤如下文所示。
 
 ### 获取未读总数
-您可以调用 `getTotalUnreadMessageCount`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/getTotalUnreadMessageCount.html)) 获取所有会话的未读消息总数，获取成功后可以使用其更新 UI。
+您可以调用 [`getTotalUnreadMessageCount`](../../../api/v2timconversationmanager/gettotalunreadmessagecount.md) 获取所有会话的未读消息总数，获取成功后可以使用其更新 UI。
 
 示例代码如下：
 
@@ -31,9 +31,9 @@ V2TimValueCallback<int> unread = await conversationManager.getTotalUnreadMessage
 
 
 ### 未读总数变更通知
-您可以调用 `addConversationListener`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/addConversationListener.html)) 添加会话监听器。添加监听器后，才能接收到未读总数变更通知。
+您可以调用 [`addConversationListener`](../../../api/v2timconversationmanager/addconversationlistener.md) 添加会话监听器。添加监听器后，才能接收到未读总数变更通知。
 
-您可以在 `V2TIMConversationListener` 中的 `onTotalUnreadMessageCountChanged`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_callbacks/OnTotalUnreadMessageCountChanged.html)) 中，获取变更后的未读总数。
+您可以在 [`V2TIMConversationListener`](../../../api/guan-jian-lei/listener/v2timconversationlistener.md) 中的 [`onTotalUnreadMessageCountChanged`](../../../api/callbacks/ontotalunreadmessagecountchanged.md) 中，获取变更后的未读总数。
 
 示例代码如下：
 
@@ -48,9 +48,9 @@ conversationManager.addConversationListener(listener: V2TimConversationListener(
 ## 清空会话未读消息数
 用户点击进入会话后退回到会话列表，需要清除未读消息数。清除后，会话列表的小红点或数字角标需要随之消失。
 IM SDK 针对待清空会话未读数的不同会话类型，提供了 3 个 API：
-* 清空**单聊**会话未读消息数 `markC2CMessageAsRead`。
-* 清空**群聊**会话未读消息数 `markGroupMessageAsRead`。
-* 清空**全部**会话未读消息数 `markAllMessageAsRead`。
+* 清空**单聊**会话未读消息数 [`markC2CMessageAsRead`](../../../api/v2timmessagemanager/markc2cmessageasread.md)。
+* 清空**群聊**会话未读消息数 [`markGroupMessageAsRead`](../../../api/v2timmessagemanager/markgroupmessageasread.md)。
+* 清空**全部**会话未读消息数 [`markAllMessageAsRead`](../../../api/v2timmessagemanager/markallmessageasread.md)。
 
 具体的操作步骤如下文所示。
 
@@ -61,7 +61,7 @@ IM SDK 针对待清空会话未读数的不同会话类型，提供了 3 个 API
 {% endhint %}
 
 ### 单聊
-您可以调用 `markC2CMessageAsRead`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/markC2CMessageAsRead.html)) 清空指定单聊会话的未读消息数。
+您可以调用 [`markC2CMessageAsRead`](../../../api/v2timmessagemanager/markc2cmessageasread.md) 清空指定单聊会话的未读消息数。
 
 示例代码如下：
 
@@ -71,9 +71,9 @@ TencentImSDKPlugin.v2TIMManager.getMessageManager().markC2CMessageAsRead(userID:
 ```
 
 
-当 `markC2CMessageAsRead` 调用成功后：
-1. 如果调用者事先调用 `addConversationListener` 添加了会话监听器，会收到 `onConversationChanged` 回调，可以在此回调中更新 UI。
-2. 对端会收到 `onRecvC2CReadReceipt` 回调，回调里面会携带清空会话未读数的时间戳。
+当 [`markC2CMessageAsRead`](../../../api/v2timmessagemanager/markc2cmessageasread.md) 调用成功后：
+1. 如果调用者事先调用 [`addConversationListener`](../../../api/v2timconversationmanager/addconversationlistener.md) 添加了会话监听器，会收到 [`onConversationChanged`](../../../api/callbacks/onconversationchangedcallback.md) 回调，可以在此回调中更新 UI。
+2. 对端会收到 [`onRecvC2CReadReceipt`](../../../api/callbacks/onrecvc2creadreceiptcallback.md) 回调，回调里面会携带清空会话未读数的时间戳。
 
 示例代码如下：
 
@@ -92,7 +92,7 @@ TencentImSDKPlugin.v2TIMManager.getMessageManager().addAdvancedMsgListener(liste
 
 
 ### 群聊
-您可以调用 `markGroupMessageAsRead`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/markGroupMessageAsRead.html)) 清空指定群聊会话的未读消息数。
+您可以调用 [`markGroupMessageAsRead`](../../../api/v2timmessagemanager/markgroupmessageasread.md) 清空指定群聊会话的未读消息数。
 
 示例代码如下：
 
@@ -102,7 +102,7 @@ TencentImSDKPlugin.v2TIMManager.getMessageManager().markGroupMessageAsRead(group
 ```
 
 
-当 `markGroupMessageAsRead` 调用成功后，如果调用者事先调用 `addConversationListener` 添加了会话监听器，会收到 `onConversationChanged` 回调，可以在此回调中更新 UI。
+当 [`markGroupMessageAsRead`](../../../api/v2timmessagemanager/markgroupmessageasread.md) 调用成功后，如果调用者事先调用 [`addConversationListener`](../../../api/v2timconversationmanager/addconversationlistener.md) 添加了会话监听器，会收到 [`onConversationChanged`](../../../api/callbacks/onconversationchangedcallback.md) 回调，可以在此回调中更新 UI。
 
 示例代码如下：
 
@@ -115,7 +115,7 @@ conversationManager.addConversationListener(listener: V2TimConversationListener(
 
 
 ### 所有会话
-您可以调用 `markAllMessageAsRead`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/markAllMessageAsRead.html)) 清空所有会话的未读消息数。
+您可以调用 [`markAllMessageAsRead`](../../../api/v2timmessagemanager/markallmessageasread.md) 清空所有会话的未读消息数。
 
 示例代码如下：
 
@@ -125,7 +125,7 @@ TencentImSDKPlugin.v2TIMManager.getMessageManager().markAllMessageAsRead();
 ```
 
 
-当 `markAllMessageAsRead` 调用成功后，如果调用者事先调用 `addConversationListener` 添加了会话监听器，会收到 `onConversationChanged` 回调，可以在此回调中更新 UI。
+当 [`markAllMessageAsRead`](../../../api/v2timmessagemanager/markallmessageasread.md) 调用成功后，如果调用者事先调用 [`addConversationListener`](../../../api/v2timconversationmanager/addconversationlistener.md) 添加了会话监听器，会收到 [`onConversationChanged`](../../../api/callbacks/onconversationchangedcallback.md) 回调，可以在此回调中更新 UI。
 
 示例代码如下：
 
@@ -139,5 +139,6 @@ conversationManager.addConversationListener(listener: V2TimConversationListener(
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png" />
 

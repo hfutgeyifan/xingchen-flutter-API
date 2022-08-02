@@ -20,9 +20,9 @@
 
 ## 发送群 @ 消息
 
-1. 发送方监听聊天界面的文本输入框，启动群成员选择界面。选择完成后回传选择群成员的 ID 和昵称信息，ID 用来构建消息对象 `V2TimMessage`，昵称用来在文本框显示。
-2. 发送方调用 `createTextAtMessage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/createTextAtMessage.html)) 接口创建一条 @ 文本消息，拿到消息对象 `V2TIMMessage`，并在其中指定需要 @ 的成员。
-3. 发送方调用 `sendMessage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/sendMessage.html)) 接口将刚才创建的 @ 消息对象发送出去。
+1. 发送方监听聊天界面的文本输入框，启动群成员选择界面。选择完成后回传选择群成员的 ID 和昵称信息，ID 用来构建消息对象 [`V2TimMessage`](../../../api/guan-jian-lei/message/v2timmessage.md)，昵称用来在文本框显示。
+2. 发送方调用 [`createTextAtMessage`](../../../api/v2timmessagemanager/createtextatmessage.md) 接口创建一条 @ 文本消息，拿到消息对象 [`V2TimMessage`](../../../api/guan-jian-lei/message/v2timmessage.md)，并在其中指定需要 @ 的成员。
+3. 发送方调用 [`sendMessage`](../../../api/v2timmessagemanager/sendmessage.md) 接口将刚才创建的 @ 消息对象发送出去。
 
 示例代码如下：
 
@@ -42,8 +42,8 @@ TencentImSDKPlugin.v2TIMManager.getMessageManager().createTextAtMessage(text: "1
 
 ## 接收群 @ 消息
 
-1. 在加载和更新会话处，需要调用 `V2TimConversation` 的 `groupAtInfolist` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/models_v2_tim_conversation/V2TimConversation/groupAtInfoList.html)) 接口获取会话的 @ 数据列表。
-2. 通过列表中 `V2TimGroupAtInfo` 对象的 `atType` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/models_v2_tim_group_at_info/V2TimGroupAtInfo/atType.html)) 接口获取 @ 数据类型，并更新到当前会话的 @ 信息。
+1. 在加载和更新会话处，需要调用 [`V2TimConversation`](../../../api/guan-jian-lei/message/v2timconversation.md) 的 [`groupAtInfolist`](../../../api/guan-jian-lei/group/v2timgroupatinfo.md) 接口获取会话的 @ 数据列表。
+2. 通过列表中 [`groupAtInfolist`](../../../api/guan-jian-lei/group/v2timgroupatinfo.md) 对象的 `atType`() 接口获取 @ 数据类型，并更新到当前会话的 @ 信息。
 
 示例代码如下：
 
@@ -71,5 +71,6 @@ V2TimValueCallback<V2TimConversationResult> getConversationList = await TencentI
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png" />
 

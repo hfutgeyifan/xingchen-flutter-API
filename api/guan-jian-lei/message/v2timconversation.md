@@ -99,6 +99,21 @@ description: 会话对象属性
 * 参数类型 : int
 * 参数描述 : 排序字段
 
+### markList
+
+* 参数类型 : List< int? >
+* 参数描述 : 会话标记列表
+
+### customData
+
+* 参数类型 : String
+* 参数描述 : 会话自定义信息
+
+### conversationGroupList
+
+* 参数类型 : List< String? >
+* 参数描述 : 会话所属分组列表
+
 ### toJson
 
 * 参数类型 : Map< String, dynamic > toJson()

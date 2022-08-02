@@ -1,15 +1,16 @@
 ## 功能描述
 用户在登录 App 后，可以像微信或 QQ 那样展示最近会话列表，方便找到目标会话。
 会话列表如下图所示：
+
 <img src="https://imsdk-1252463788.cos.ap-guangzhou.myqcloud.com/res/RPReplay_Final0511.gif" alt="" style="zoom:40%;" />
 
 会话列表功能主要分为获取会话列表、处理会话列表更新。
 本文将为您介绍具体的实现细节。
 
 ## 获取会话列表
-您可以调用 `getConversationList`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/method_channel_im_flutter/MethodChannelIm/getConversationList.html)) 获取会话列表。该接口拉取的是本地缓存的会话，如果服务器会话有更新，SDK 内部会自动同步，然后在 `V2TIMConversationListener` 回调告知客户。
+您可以调用 [`getConversationList`](../../../api/v2timconversationmanager/getconversationlist.md) 获取会话列表。该接口拉取的是本地缓存的会话，如果服务器会话有更新，SDK 内部会自动同步，然后在 [`V2TIMConversationListener`](../../../api/guan-jian-lei/listener/v2timconversationlistener.md) 回调告知客户。
 
-用户的会话以列表的形式返回，列表中存储的是 `V2TIMConversation` 对象。目前 IM SDK 对会话列表的排序规则为：
+用户的会话以列表的形式返回，列表中存储的是 [`V2TIMConversation`](../../../api/guan-jian-lei/message/v2timconversation.md) 对象。目前 IM SDK 对会话列表的排序规则为：
 * Flutter sdk 3.8.0及以后版本, 该接口获取的会话列表默认已经按照会话对象的 `orderKey` 做了排序。`orderKey` 值越大，代表该会话排序越靠前。`orderKey` 字段是整型数，当发送新消息、接收新消息、设置草稿或置顶会话时，会话被激活，`orderKey` 字段会增大。
 * Flutter sdk 3.8.0 以前版本，该接口获取的会话列表默认已经按照会话 `lastMessage` -> `timestamp` 做了排序。`timestamp` 越大，会话越靠前。
 
@@ -19,7 +20,7 @@
 在某些场景下，可能出现会话的 `lastMessage` 为空（例如清空会话消息）。如果您使用 5.5.892 以前的 SDK，使用 `lastMessage` 排序时需要额外处理这种异常。我们建议您升级到 5.5.892 及以后的版本，使用 `orderKey` 字段排序。
 {% endhint %}
 
-您可以使用 `getConversationList` 实现一次性拉取或分页拉取。参考下文说明。
+您可以使用 [`getConversationList`](../../../api/v2timconversationmanager/getconversationlist.md) 实现一次性拉取或分页拉取。参考下文说明。
 
 ### 一次性拉取
 一次性拉取适合会话数量比较少的情况（100 个以内）。此时可以将拉取的 count 设置为 INT_MAX（一般会话数量不会达到 INT_MAX 这么多）。
@@ -34,13 +35,13 @@ V2TimValueCallback<V2TimConversationResult> convList = await TencentImSDKPlugin.
 如果您的应用场景会产生较多的会话数，考虑到加载效率、网络省流，我们建议您采用分页拉取的方式。每次分页拉取的数量建议不超过 100 个。
 
 分页拉取的步骤：
-1. 首次调用 `getConversationList` 时，指定参数 `nextSeq` 为 0（表示从头开始拉取会话列表），指定 `count` 为 50（表示一次拉取 50 个会话对象）。
+1. 首次调用 [`getConversationList`](../../../api/v2timconversationmanager/getconversationlist.md) 时，指定参数 `nextSeq` 为 0（表示从头开始拉取会话列表），指定 `count` 为 50（表示一次拉取 50 个会话对象）。
    
-2. 首次拉取会话列表成功后，`getConversationList` 的回调结果 `V2TIMConversationResult` 中会包含 `nextSeq`（下次分页拉取的字段）、`isFinish`（会话拉取是否完成）。
+2. 首次拉取会话列表成功后，[`getConversationList`](../../../api/v2timconversationmanager/getconversationlist.md) 的回调结果 [`V2TIMConversationResult`](../../../api/guan-jian-lei/message/v2timconversationresult.md) 中会包含 `nextSeq`（下次分页拉取的字段）、`isFinish`（会话拉取是否完成）。
    * 如果 `isFinished` 为 true，表示所有会话已经拉取完成。
    * 如果 `isFinished` 为 false，表示还有更多的会话可以拉取。此时并不意味着要立刻开始拉取 “下一页” 的会话列表。在常见的通信软件中，分页拉取通常由用户的滑动操作触发的，用户每上拉一次会话列表就触发一次分页拉取。
 
-3. 当用户继续上拉会话列表时，如果还有更多的会话可以拉取，可以继续调用 `getConversationList` 接口，并传入新一轮的 `nextSeq` 和 `count` 参数（数值来自上一次拉取返回的 `V2TIMConversationResult` 对象）。
+3. 当用户继续上拉会话列表时，如果还有更多的会话可以拉取，可以继续调用 [`getConversationList`](../../../api/v2timconversationmanager/getconversationlist.md) 接口，并传入新一轮的 `nextSeq` 和 `count` 参数（数值来自上一次拉取返回的 [`V2TIMConversationResult`](../../../api/guan-jian-lei/message/v2timconversationresult.md) 对象）。
 
 4. 重复执行【步骤 3】直至 `isFinished` 返回 true。
 
@@ -67,7 +68,7 @@ IM SDK 会在登录成功后、用户上线后、以及断线重连后，自动�
 3. 移除会话监听器。非必须，可按照业务逻辑按需调用。
 
 ### 添加会话监听器
-您可以调用 `addConversationListener`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/addConversationListener.html)) 添加会话监听器。添加监听器后，您才能接收到会话变更事件。
+您可以调用 [`addConversationListener`](../../../api/v2timconversationmanager/addconversationlistener.md) 添加会话监听器。添加监听器后，您才能接收到会话变更事件。
 
 示例代码如下：
 
@@ -80,7 +81,7 @@ TencentImSDKPlugin.v2TIMManager.getConversationManager().addConversationListener
 
 
 ### 会话新增变更通知
-您可以在 `V2TIMConversationListener`([Android](https://im.sdk.qcloud.com/doc/zh-cn/classcom_1_1tencent_1_1imsdk_1_1v2_1_1V2TIMConversationListener.html) / [iOS & Mac](https://im.sdk.qcloud.com/doc/zh-cn/protocolV2TIMConversationListener-p.html)) 中的事件，获取会话列表变更的通知。
+您可以在 [`V2TIMConversationListener`](../../../api/guan-jian-lei/listener/v2timconversationlistener.md) 中的事件，获取会话列表变更的通知。
 
 目前 IM SDK 支持的会话变更事件有：
 
@@ -91,7 +92,7 @@ TencentImSDKPlugin.v2TIMManager.getConversationManager().addConversationListener
 |onSyncServerFailed | 同步服务器会话失败 | 您可以监听这个事件做一些 UI 异常展示操作。 |
 |onNewConversation | 有会话新增 | 例如收到一个新同事发来的单聊消息、被拉入了一个新的群组中，此时可以重新对会话列表做排序。|
 |onConversationChanged | 有会话更新 | 例如未读计数发生变化、最后一条消息被更新等，此时可以重新对会话列表做排序。|
-|onTotalUnreadMessageCountChanged | 会话未读总数变更通知 | 详情请参考 [会话未读数](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/models_v2_tim_conversation/V2TimConversation/unreadCount.html)。 |
+|onTotalUnreadMessageCountChanged | 会话未读总数变更通知 | 详情请参考 [会话未读数](../../../api/callbacks/ontotalunreadmessagecountchanged.md)。 |
 
 {% hint style="info" %}
 说明：
@@ -120,7 +121,7 @@ TencentImSDKPlugin.v2TIMManager.getConversationManager().addConversationListener
 
 
 ### 移除会话监听器
-您可以调用 `removeConversationListener`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/removeConversationListener.html)) 移除会话监听器。移除后，您将无法再接收到会话变更事件。
+您可以调用 [`removeConversationListener`](../../../api/v2timconversationmanager/removeconversationlistener.md) 移除会话监听器。移除后，您将无法再接收到会话变更事件。
 该步骤不是必须的，您可以按照自己的业务逻辑按需调用。
 
 示例代码如下：
@@ -133,9 +134,9 @@ conversationManager.removeConversationListener(conversationListener);
 
 
 ### 发送不更新 `lastMessage` 的消息
-会话列表界面，通常需要展示每个会话的最新一条消息预览及发送时间，此时您可以使用 `V2TIMConversation` 的 `lastMessage` 作为数据源实现。但是某些场景下，如果您不希望一些消息（例如系统提示等）显示为会话的最新消息，可以在 `sendMessage` 时设置 `isExcludedFromLastMessage` 为 `false`/`no`。
+会话列表界面，通常需要展示每个会话的最新一条消息预览及发送时间，此时您可以使用 [`V2TIMConversation`](../../../api/guan-jian-lei/message/v2timconversation.md) 的 `lastMessage` 作为数据源实现。但是某些场景下，如果您不希望一些消息（例如系统提示等）显示为会话的最新消息，可以在 `sendMessage` 时设置 `isExcludedFromLastMessage` 为 `false`/`no`。
 
-发送消息参考 [发送消息](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/method_channel_im_flutter/MethodChannelIm/sendMessage.html)。
+发送消息参考 [发送消息](../../../api/v2timmessagemanager/sendmessage.md)。
 
 
 {% hint style="info" %}
@@ -147,5 +148,6 @@ conversationManager.removeConversationListener(conversationListener);
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png" />
 

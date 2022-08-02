@@ -10,7 +10,7 @@
 
 ### 向单聊插入本地消息
 
-您可以调用 `insertC2CMessageToLocalStorage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/insertC2CMessageToLocalStorage.html)) 向单聊插入本地消息。目前Flutter端仅支持插入自定义消息。
+您可以调用 [`insertC2CMessageToLocalStorage`](../../../api/v2timmessagemanager/insertc2cmessagetolocalstorage.md) 向单聊插入本地消息。目前Flutter端仅支持插入自定义消息。
 
 示例代码如下：
 
@@ -23,7 +23,7 @@ TencentImSDKPlugin.v2TIMManager.getMessageManager().insertC2CMessageToLocalStora
 
 ### 向群聊插入本地消息
 
-您可以调用 `insertGroupMessageToLocalStorage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/insertGroupMessageToLocalStorage.html)) 向群聊插入本地消息。
+您可以调用 [`insertGroupMessageToLocalStorage`](../../../api/v2timmessagemanager/insertgroupmessagetolocalstorage.md) 向群聊插入本地消息。
 
 示例代码如下：
 
@@ -35,5 +35,6 @@ TencentImSDKPlugin.v2TIMManager.getMessageManager().insertGroupMessageToLocalSto
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png" />
 

@@ -1,12 +1,12 @@
 ---
-description: 消息已读回执通
+description: 消息已读回执通知
 ---
 
 # OnRecvMessageReadReceipts
 
 ## 功能介绍
 
-消息已读回执通
+消息已读回执通知
 
 * 如果自己发送的消息支持已读回执，消息接收端调用 [sendMessageReadReceipts](../v2timmessagemanager/sendmessagereadreceipts.md)，自己会收到该通知
 

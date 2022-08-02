@@ -8,15 +8,15 @@
 {% endhint %}
 
 ## 变更消息
-会话参与者可以调用 `modifyMessage`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin/latest/manager_v2_tim_message_manager/V2TIMMessageManager/modifyMessage.html)) 接口对会话里的消息做二次修改。
+会话参与者可以调用 [`modifyMessage`](../../../api/v2timmessagemanager/modifymessage.md) 接口对会话里的消息做二次修改。
 修改消息时，IM SDK 仅限制了会话参与者才能修改，如果您需要更多限制，例如限制只有消息发送者才能修改，可以自行在业务层处理。
 
 目前消息支持修改的信息如下：
-1、`localCustomData` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/models_v2_tim_message/V2TimMessage/localCustomData.html)) 
-2、`localCustomInt` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/models_v2_tim_message/V2TimMessage/localCustomInt.html)) 
-3、`cloudCustomData` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/models_v2_tim_message/V2TimMessage/cloudCustomData.html)) 
-4、`V2TIMTextElem` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/models_v2_tim_text_elem/V2TimTextElem-class.html)) 
-5、`V2TIMCustomElem` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/models_v2_tim_custom_elem/V2TimCustomElem-class.html))
+1、[`localCustomData`](../../../api/guan-jian-lei/message/v2timmessage.md) 
+2、[`localCustomInt`]([../../../api/guan-jian-lei/message/v2timmessage.md) 
+3、[`cloudCustomData`](../../../api/guan-jian-lei/message/v2timmessage.md) 
+4、[`V2TIMTextElem`](../../../api/guan-jian-lei/message/v2timtextelem.md) 
+5、[`V2TIMCustomElem`](../../../api/guan-jian-lei/message/v2timcustomelem.md)
 
 示例代码如下：
 
@@ -42,9 +42,9 @@ V2TimValueCallback<List<V2TimMessage>> msgListRes = await TencentImSDKPlugin.v2T
 
 
 ## 监听消息变更回调
-会话的参与者调用 `addAdvancedMsgListener` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/addAdvancedMsgListener.html)) 添加高级消息监听器。
+会话的参与者调用 [`addAdvancedMsgListener`](../../../api/v2timmessagemanager/addadvancedmsglistener.md) 添加高级消息监听器。
 
-当会话里的消息被修改后，会话的参与者都会收到 `onRecvMessageModified`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_callbacks/OnRecvMessageModified.html)) 回调，回调里面会携带修改之后的消息对象。
+当会话里的消息被修改后，会话的参与者都会收到 [`onRecvMessageModified`](../../../api/callbacks/onrecvmessagemodified.md) 回调，回调里面会携带修改之后的消息对象。
 
 示例代码如下：
 
@@ -59,5 +59,6 @@ onRecvMessageModified: (V2TimMessage message) {
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png" />
 

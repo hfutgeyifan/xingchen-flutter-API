@@ -1,5 +1,5 @@
 ## 功能描述
-* 拉取历史消息的 API 在类 `TencentImSDKPlugin.v2TIMManager.getMessageManager()` 中。
+* 拉取历史消息的 API 在类 [`TencentImSDKPlugin.v2TIMManager.getMessageManager()`](../../../api/v2timmanager/getmessagemanager.md) 中。
 * 除了支持单聊、群聊历史消息的拉取外，还提供了高级接口以支持按指定方向拉取、按指定起点和指定时间范围拉取。
 * 除了支持单独拉取本地历史消息外，还支持拉取云端历史消息。
   
@@ -25,11 +25,11 @@
 
 ## 拉取单聊历史消息
 
-您可以调用接口 `getC2CHistoryMessageList` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/getC2CHistoryMessageList.html)) 获取单聊历史消息。
+您可以调用接口 [`getC2CHistoryMessageList`](../../../api/v2timmessagemanager/getc2chistorymessagelist.md) 获取单聊历史消息。
 在网络正常的情况下会拉取最新的云端数据。如果网络出现异常，SDK 会返回本地存储的历史消息。
-如果您仅仅想拉取本地历史消息，可以参考 [高级接口](#advance) 。
+如果您仅仅想拉取本地历史消息，可以参考 [高级接口](#高级接口) 。
 
-本接口支持分页拉取，参考：[分页拉取](#advance_page)。
+本接口支持分页拉取，参考：[分页拉取](#分页拉取)。
 
 示例代码如下：
 
@@ -50,11 +50,11 @@ TencentImSDKPlugin.v2TIMManager.getMessageManager().getC2CHistoryMessageList(
 [](id:group)
 ## 拉取群聊历史消息
 
-您可以调用接口 `getGroupHistoryMessageList` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/getGroupHistoryMessageList.html)) 获取群聊历史消息。
+您可以调用接口 [`getGroupHistoryMessageList`](../../../api/v2timmessagemanager/getgrouphistorymessagelist.md) 获取群聊历史消息。
 在网络正常的情况下会拉取最新的云端数据。如果网络出现异常，SDK 会返回本地存储的历史消息。
-如果您仅仅想拉取本地历史消息，可以参考 [高级接口](#advance) 。
+如果您仅仅想拉取本地历史消息，可以参考 [高级接口](#高级接口) 。
 
-本接口支持分页拉取，参考：[分页拉取](#advance_page)。
+本接口支持分页拉取，参考：[分页拉取](#分页拉取)。
 
 {% hint style="info" %}
 注意：
@@ -85,7 +85,7 @@ TencentImSDKPlugin.v2TIMManager
 [](id:advance)
 ### 高级接口
 
-如果以上的普通接口无法满足您对拉取历史消息的需求，我们还提供了高级接口 `getHistoryMessageList` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/getHistoryMessageList.html))。
+如果以上的普通接口无法满足您对拉取历史消息的需求，我们还提供了高级接口 [`getHistoryMessageList`](../../../api/v2timmessagemanager/gethistorymessagelist.md)。
 
 该接口除了支持普通拉取单聊、群聊历史消息外，还支持以下高级特性：
 * 支持设置拉取消息的位置：从本地拉取、从云端拉取。
@@ -131,7 +131,7 @@ Future<V2TimValueCallback<List<V2TimMessage>>> getHistoryMessageList({
 [](id:advance_page)
 ### 分页拉取
 
-[拉取单聊历史消息](#c2c)、[拉取群聊历史消息](#group) 以及 [高级接口](#advance) 均可以按照相同的方式实现分页，即使用 `lastMsg` 和 `count` 来实现。
+[拉取单聊历史消息](#拉取单聊历史消息)、[拉取群聊历史消息](#拉取群聊历史消息) 以及 [高级接口](#高级接口) 均可以按照相同的方式实现分页，即使用 `lastMsg` 和 `count` 来实现。
 
 * 通过 `lastMsg` 和 `count` 来实现分页。第一次拉取时 `lastMsg` 可以设置为空，使用消息列表中返回来最后一条消息作为下一次拉取的 `lastMsg` 从而拉去下一页数据。
 * 当 `lastMsg` 设置为空时，SDK 会默认从最新的消息开始返回。
@@ -169,7 +169,7 @@ TencentImSDKPlugin.v2TIMManager.getMessageManager().getHistoryMessageList(
 ### 跳转到群 @ 消息后拉取
 
 在群聊会话中，收到群 @ 消息后，一般需要通过点击群 @ 提示条，跳转到群 @ 消息的位置，并拉取附近的消息列表用于显示。
-由于群 @ 消息本身也需要显示，可以将 lastMsgSeq 设置成群 @ 消息的 `sequence` ，并使用 [高级接口](#advance) 来拉取。
+由于群 @ 消息本身也需要显示，可以将 lastMsgSeq 设置成群 @ 消息的 `sequence` ，并使用 [高级接口](#高级接口) 来拉取。
 
 示例代码将演示：点击群 @ 提示后，跳转到群 @ 消息，并拉取前后各 20 条消息用于展示。
 
@@ -225,15 +225,15 @@ SDK 目前的策略是：
 3. 将本地和云端消息进行合并，更新消息状态等信息。
 4. 从合并的消息列表中，返回 count 条消息。
 
-一般出现消息 “丢失” 时，指的是在第 2 步中拉取的无效消息过多，导致触发了 [问题 1 中的限频机制](#qa1) ，从而导致实际拉取的云端消息不够。
-建议按照  [问题 1 中的解决方法](#qa1) 来处理，如果仍然无法解决，欢迎加入 QQ 群（**468195767**）反馈。
+一般出现消息 “丢失” 时，指的是在第 2 步中拉取的无效消息过多，导致触发了 [问题 1 中的限频机制](#1-拉历史消息时日志中出现-total-count-of-request-cloud-message-exceed-max-limit-信息) ，从而导致实际拉取的云端消息不够。
+建议按照  [问题 1 中的解决方法](#1-拉历史消息时日志中出现-total-count-of-request-cloud-message-exceed-max-limit-信息) 来处理，如果仍然无法解决，欢迎加入 QQ 群（**468195767**）反馈。
 
 [](id:qa3)
 ### 3. 拉取的历史消息，群名片等群成员信息没有实时更新？
 * SDK 会在消息产生时，更新当前的群名片、role 等群成员信息并存储在本地数据库中。
 * 当拉取群历史消息时，会直接返回消息产生时的群成员信息，不会实时更新。
 
-如果您需要获取最新的群成员信息，您可以使用 `getGroupMembersInfo`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/getGroupMembersInfo.html))。
+如果您需要获取最新的群成员信息，您可以使用 [`getGroupMembersInfo`](../../../api/v2timgroupmanager/getgroupmembersinfo.md)。
 
 
 [](id:qa4)
@@ -243,5 +243,6 @@ SDK 内部已对消息拉取做了性能优化，您如果碰到消息卡顿的�
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png" />
 

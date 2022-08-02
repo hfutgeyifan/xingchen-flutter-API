@@ -1,14 +1,14 @@
 ## 功能描述
-群组管理功能指的是创建群组、加入群组、获取已加入的群组、退出群组和解散群组等，相关方法在核心类 `TencentImSDKPlugin.v2TIMManager.getGroupManager()`  中。
+群组管理功能指的是创建群组、加入群组、获取已加入的群组、退出群组和解散群组等，相关方法在核心类 [`TencentImSDKPlugin.v2TIMManager.getGroupManager()`](../../../api/v2timmanager/getgroupmanager.md)中。
 
 [](id:listener)
 
 ## 群事件监听
 下文描述的群组管理功能中，有些会触发群事件通知回调，例如有人进群、有人退群等，这些事件都是由 IM 服务器自动触发的。
 
-您可以调用 `addGroupListener` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/addGroupListener.html)) 添加群事件监听器。
+您可以调用 [`addGroupListener`](../../../api/v2timmanager/addgrouplistener.md) 添加群事件监听器。
 
-当不想再接收群事件时，可调用 `removeGroupListener` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/removeGroupListener.html)) 移除群事件监听器。
+当不想再接收群事件时，可调用 [`removeGroupListener`](../../../api/v2timmanager/removegrouplistener.md) 移除群事件监听器。
 
 {% hint style="info" %}
 警告：
@@ -25,7 +25,7 @@ TencentImSDKPlugin.v2TIMManager.setGroupListener(listener: V2TimGroupListener())
 
 
 ## 创建群组
-如果您想在创建群组的同时初始化群的信息，例如群简介、群头像、以及最初的几个群成员等，可以调用高级接口 `createGroup` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/method_channel_im_flutter/MethodChannelIm/createGroup.html)) 实现。创建成功的回调中会抛出 `groupID`。
+如果您想在创建群组的同时初始化群的信息，例如群简介、群头像、以及最初的几个群成员等，可以调用高级接口 [`createGroup`](../../../api/v2timgroupmanager/creategroup.md) 实现。创建成功的回调中会抛出 `groupID`。
 
 示例代码如下：
 
@@ -64,13 +64,13 @@ groupManager.createGroup(
 {% hint style="info" %}
 警告：
 
-接收以下群事件需要您按照 [群事件监听](#advance_page) 中所述，提前调用 `addGroupListener` 添加群事件监听器。
+接收以下群事件需要您按照 [群事件监听](#群事件监听) 中所述，提前调用 [`addGroupListener`](../../../api/v2timmanager/addgrouplistener.md) 添加群事件监听器。
 {% endhint %}
 
 #### 自由加群
 临时会议群（Meeting）、直播群（AVChatRoom）和社群（Community）主要用于满足成员随意进出的交互场景，例如在线会议，秀场直播等。因此这几种类型群的入群流程最为简单:
-1. 加群者调用 `joinGroup` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/joinGroup.html)) 加入群组。
-2. 加群者加群成功后，全体群成员（包括加群者本人）都会收到 `onMemberEnter` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_V2TimGroupListener/V2TimGroupListener/onMemberEnter.html)) 回调。
+1. 加群者调用 [`joinGroup`](../../../api/v2timmanager/joingroup.md) 加入群组。
+2. 加群者加群成功后，全体群成员（包括加群者本人）都会收到 [`onMemberEnter`](../../../api/callbacks/onmemberentercallback.md) 回调。
 
 示例代码如下：
 
@@ -90,8 +90,8 @@ TencentImSDKPlugin.v2TIMManager.joinGroup(groupID: "groupID",message: "hello",gr
 #### 邀请加群
 好友工作群（Work）类似微信群和企业微信群，适用于工作交流，在交互设计上限制用户主动加入，只能由现有的群成员邀请才能加群。
 加群步骤为：
-1. 现有的群成员调用 `inviteUserToGroup` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/inviteUserToGroup.html)) 邀请另一个用户入群。
-2. 全体群成员（包括邀请者自己）会收到 `onMemberInvited` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_V2TimGroupListener/V2TimGroupListener/onMemberInvited.html)) 回调。您可以在这个回调中做一些 UI 上的提示。
+1. 现有的群成员调用 [`inviteUserToGroup`](../../../api/v2timgroupmanager/inviteusertogroup.md) 邀请另一个用户入群。
+2. 全体群成员（包括邀请者自己）会收到 [`onMemberInvited`](../../../api/callbacks/onmemberinvitedcallback.md) 回调。您可以在这个回调中做一些 UI 上的提示。
 
 示例代码如下：
 
@@ -114,15 +114,15 @@ TencentImSDKPlugin.v2TIMManager.addGroupListener(listener: V2TimGroupListener(on
 ![](https://main.qcloudimg.com/raw/8b0de43bea607a6a75571c1885ca75aa.svg)
 
 流程说明：
-1. 申请者调用 `joinGroup` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/joinGroup.html)) 申请加群。
+1. 申请者调用 [`joinGroup`](../../../api/v2timmanager/joingroup.md) 申请加群。
 
-2. 群主或管理员收到加群申请通知 `onReceiveJoinApplication` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_V2TimGroupListener/V2TimGroupListener/onReceiveJoinApplication.html)) ，在其中调用 `getGroupApplicationList` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/getGroupApplicationList.html))获取加群申请列表。
+2. 群主或管理员收到加群申请通知 [`onReceiveJoinApplication`](../../../api/callbacks/onreceivejoinapplicationcallback.md) ，在其中调用 [`getGroupApplicationList`](../../../api/v2timgroupmanager/getgroupapplicationlist.md)获取加群申请列表。
 
-3. 群主或管理员遍历加群申请列表，逐一调用 `acceptGroupApplication` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/acceptGroupApplication.html)) 同意加群，或调用 `refuseGroupApplication` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/refuseGroupApplication.html)) 拒绝加群请求。
+3. 群主或管理员遍历加群申请列表，逐一调用 [`acceptGroupApplication`](../../../api/v2timgroupmanager/acceptgroupapplication.md) 同意加群，或调用 [`refuseGroupApplication`](../../../api/v2timgroupmanager/refusegroupapplication.md) 拒绝加群请求。
 
-4. 请求加群被同意或者拒绝后，申请者会收到 `onApplicationProcessed` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_V2TimGroupListener/V2TimGroupListener/onApplicationProcessed.html)) 回调。其中 `isAgreeJoin` 为 `true` 表示同意加群，反之被拒绝。
+4. 请求加群被同意或者拒绝后，申请者会收到 [`onApplicationProcessed`](../../../api/callbacks/onapplicationprocessedcallback.md) 回调。其中 `isAgreeJoin` 为 `true` 表示同意加群，反之被拒绝。
    
-5. 同意加群后，全员（包括请求者）收到 `onMemberEnter` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_V2TimGroupListener/V2TimGroupListener/onMemberEnter.html)) 回调，通知群组成员有人进群。
+5. 同意加群后，全员（包括请求者）收到 [`onMemberEnter`](../../../api/callbacks/onmemberentercallback.md) 回调，通知群组成员有人进群。
 
 示例代码如下：
 
@@ -162,7 +162,7 @@ TencentImSDKPlugin.v2TIMManager.addGroupListener(listener: V2TimGroupListener(on
 ```
 
 
-群主或管理员也可以通过 `setGroupInfo` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/setGroupInfo.html)) 接口调整加群选项（`V2TIMGroupAddOpt`），可以设置为更严格的 “禁止任何人加群”，也可以设置为更宽松的 “放开审批流程”。
+群主或管理员也可以通过 [`setGroupInfo`](../../../api/v2timgroupmanager/setgroupinfo.md) 接口调整加群选项（`V2TIMGroupAddOpt`），可以设置为更严格的 “禁止任何人加群”，也可以设置为更宽松的 “放开审批流程”。
 
 `V2TIMGroupAddOpt` 的可选项有：
 
@@ -174,7 +174,7 @@ TencentImSDKPlugin.v2TIMManager.addGroupListener(listener: V2TimGroupListener(on
 
 
 ## 获取已加入的群组
-您可以调用 `getJoinedGroupList` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/getJoinedGroupList.html)) 获取已加入的好友工作群（Work）、陌生人社交群（Public）、临时会议群（Meeting）、社群（Community，**不支持**话题功能）列表。但直播群（AVChatRoom）和 社群（Community，**支持**话题的社群）不包含在此列表中。
+您可以调用 [`getJoinedGroupList`](../../../api/v2timgroupmanager/getjoinedgrouplist.md) 获取已加入的好友工作群（Work）、陌生人社交群（Public）、临时会议群（Meeting）、社群（Community，**不支持**话题功能）列表。但直播群（AVChatRoom）和 社群（Community，**支持**话题的社群）不包含在此列表中。
 
 代码示例如下：
 
@@ -189,14 +189,14 @@ V2TimValueCallback<List<V2TimGroupInfo>> groupRes  =await groupManager.getJoined
 
 ## 退出群组
 
-您可以调用 `quitGroup` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/quitGroup.html)) 退出群组。
-退群者会收到 `onQuitFromGroup` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_V2TimGroupListener/V2TimGroupListener/onQuitFromGroup.html)) 回调。
-群组内其他成员会收到 `onMemberLeave` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_V2TimGroupListener/V2TimGroupListener/onMemberLeave.html)) 回调。
+您可以调用 [`quitGroup`](../../../api/v2timmanager/quitgroup.md) 退出群组。
+退群者会收到 [`onQuitFromGroup`](../../../api/callbacks/onquitfromgroupcallback.md) 回调。
+群组内其他成员会收到 [`onMemberLeave`](../../../api/callbacks/onmemberleavecallback.md) 回调。
 
 {% hint style="info" %}
 警告：
 
-对于陌生人社交群（Public）、临时会议群（Meeting）、社群（Community）和直播群（AVChatRoom），群主**不可以**退群，只能 [解散群组](#dismiss)。
+对于陌生人社交群（Public）、临时会议群（Meeting）、社群（Community）和直播群（AVChatRoom），群主**不可以**退群，只能 [解散群组](#解散群组)。
 {% endhint %}
 
 示例代码如下：
@@ -217,9 +217,9 @@ TencentImSDKPlugin.v2TIMManager.quitGroup(groupID: "groupID");
 
 ## 解散群组
 
-您可以调用 `dismissGroup` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/dismissGroup.html)) 解散群组，全员会收到 `onGroupDismissed` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_V2TimGroupListener/V2TimGroupListener/onGroupDismissed.html)) 回调。
+您可以调用 [`dismissGroup`](../../../api/v2timmanager/dismissgroup.md) 解散群组，全员会收到 [`onGroupDismissed`](../../../api/callbacks/ongroupdismissedcallback.md) 回调。
 
-如果您在服务器端设置了允许自动解散不活跃的群，当群被服务器端自动解散后，SDK 会收到 `onGroupRecycled` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_V2TimGroupListener/V2TimGroupListener/onGroupRecycled.html)) 回调。
+如果您在服务器端设置了允许自动解散不活跃的群，当群被服务器端自动解散后，SDK 会收到 [`onGroupRecycled`](../../../api/callbacks/ongrouprecycledcallback.md) 回调。
 
 示例代码如下：
 
@@ -238,10 +238,11 @@ TencentImSDKPlugin.v2TIMManager.addGroupListener(listener: V2TimGroupListener(on
 
 
 ## 接收群组自定义系统通知
-如果您在自己的服务器端调用 REST API [向群组中发送自定义系统通知](https://cloud.tencent.com/document/product/269/1630)，那么 SDK 会回调 `onReceiveRESTCustomData`。
+如果您在自己的服务器端调用 REST API [向群组中发送自定义系统通知](https://cloud.tencent.com/document/product/269/1630)，那么 SDK 会回调 [`onReceiveRESTCustomData`](../../../api/callbacks/onreceiverestcustomdatacallback.md)。
 
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png" />
 

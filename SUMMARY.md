@@ -30,7 +30,6 @@
     * [撤回消息](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/che-hui-xiao-xi.md)
     * [在线消息](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/zai-xian-xiao-xi.md)
     * [已读回执](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/yi-du-hui-zhi.md)
-    * [查询消息](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/cha-xun-xiao-xi.md)
     * [群 @ 消息](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/qun-@-xiao-xi.md)
     * [群定向消息](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/qun-ding-xiang-xiao-xi.md)
     * [消息免打扰](kuai-su-ji-cheng/zi-shi-xian-ui/xiao-xi-xiang-guan/xiao-xi-mian-da-rao.md)

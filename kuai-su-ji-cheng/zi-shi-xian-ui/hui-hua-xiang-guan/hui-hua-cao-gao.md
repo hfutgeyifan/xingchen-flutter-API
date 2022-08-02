@@ -1,5 +1,5 @@
 ## 功能描述
-在发送消息时，可能会遇到消息尚未编辑完，就要切换至其它聊天窗口的情况。这些未编辑完的消息可通过 `setConversationDraft` 接口保存，以便于下次回到这个聊天界面时，通过 V2TIMConversation 对象的 draftText 字段，获取到尚未编辑完的内容，继续编辑。
+在发送消息时，可能会遇到消息尚未编辑完，就要切换至其它聊天窗口的情况。这些未编辑完的消息可通过 [`setConversationDraft`](../../../api/v2timconversationmanager/setconversationdraft.md) 接口保存，以便于下次回到这个聊天界面时，通过 V2TIMConversation 对象的 draftText 字段，获取到尚未编辑完的内容，继续编辑。
 
 {% hint style="info" %}
 警告：
@@ -9,7 +9,7 @@
 {% endhint %}
 
 ## 设置会话草稿
-通过调用 `setConversationDraft`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/setConversationDraft.html)) 接口，设置会话草稿。
+通过调用 [`setConversationDraft`](../../../api/v2timconversationmanager/setconversationdraft.md) 接口，设置会话草稿。
 如果这个接口的 draftText 参数为空，表示取消草稿。
 
 示例代码如下：
@@ -23,5 +23,6 @@ conversationManager.setConversationDraft(conversationID: "conversationID",draftT
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png" />
 
