@@ -64,7 +64,6 @@ description: demo体验
                             <img src="https://main.qcloudimg.com/raw/b0211b0870806899009a17a4216ea65c.svg" data-nonescope="true">
                                 <p class="titlename">Android</p>
                 <p style="color:#586376;"><img style="width:100px; max-width: inherit;" src="https://qcloudimg.tencent-cloud.cn/raw/ca2aaff551410c74fce48008c771b9f6.png" /></p>
-                                <a href="https://cloud.tencent.com/document/product/269/68823">快速入门</a>
             </div>
 </div>
 
@@ -73,7 +72,6 @@ description: demo体验
                             <img src="https://main.qcloudimg.com/raw/613f2e15bed7c8297110676b52784b71.svg" data-nonescope="true">
                                 <p class="titlename">iOS</p>
                 <p style="color:#586376;"><img style="width:100px; max-width: inherit;" src="https://qcloudimg.tencent-cloud.cn/raw/455db8a485d2a12ba2a405f329666c7d.png" /></p>
-                                <a href="https://cloud.tencent.com/document/product/269/68823">快速入门</a>
             </div>
 </div>
 </div>

@@ -16,8 +16,8 @@ description: 在uikit中初始化在native端已登录的用户信息
 ## 参数详解
 
 | 参数名称     | 参数类型                                                              | 是否必填 | 描述                                                    |
-| -------- | ----------------------------------------------------------------- | ---- | ----------------------------------------------------- |
-| onTUIKitCallbackListener | Function([TIMCallback](TIMCallback.md) TIMCallback)            | 否    | 该监听用于返回包括：SDK API 错误 / Flutter 报错 / 一些可能需要弹窗提示用户的场景信息。 | 
+| -------- | ------------------------------------------------------------------------- | --------- | -------------------------------------------- |
+| onTUIKitCallbackListener | Function([TIMCallback](TIMCallback.md) TIMCallback)                      | 否    | 返回：SDK API 错误/Flutter 报错/一些可能需要弹窗提示用户的场景信息。| 
 | language | [LanguageEnum](LanguageEnum.md) | 否    | UIKit系统语言                                                |
 | config | [TIMUIKitConfig](TIMUIKitConfig.md) | 否    | UIKit全局设置                                                |
 | userId | String | 是    | 在native层中登录的用户的userid                                             |

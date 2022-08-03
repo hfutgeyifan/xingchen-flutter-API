@@ -4,7 +4,24 @@
 
 ![](https://main.qcloudimg.com/raw/4658a0d24c33f6ec42b07bc8e36234d9.png)
 
-## 功能概览
+## UIKit SDK API 功能概览
+
+| 模块名称                                                      | 模块功能简介                                      |
+| --------------------------------------------------------- | ------------------------------------------- |
+| [TIMUIKitCore](uikit-sdk-api/TIMUIKitCore/README.md)                         | 提供TIMUIKit的核心入口 |
+| [TIMUIKitConversation](uikit-sdk-api/TIMUIKitConversation/README.md)           | 会话列表组件                                |
+| [TIMUIKitChat](uikit-sdk-api/TIMUIKitChat/README.md)               | 聊天组件    |
+| [TIMUIKitAddFriend](uikit-sdk-api/TIMUIKitAddFriend/README.md)       | 添加好友组件                                 |
+| [TIMUIKitAddGroup](uikit-sdk-api/TIMUIKitAddGroup/README.md) | 添加群组组件                      |
+| [TIMUIKitBlackList](uikit-sdk-api/TIMUIKitBlackList/README.md)     | 黑名单列表组件              |
+| [TIMUIKitContact](uikit-sdk-api/TIMUIKitContact/README.md)   | 好友列表组件                                 |
+| [TIMUIKitGroup](uikit-sdk-api/TIMUIKitGroup/README.md)                                 | 群组列表组件                             |
+| [TIMUIKitGroupProfile](uikit-sdk-api/TIMUIKitGroupProfile/README.md)                                       | 群组信息组件                             |
+| [TIMUIKitNewContact](uikit-sdk-api/TIMUIKitNewContact/README.md)                               | 新的联系人列表组件                          |
+| [TIMUIKitProfile](uikit-sdk-api/TIMUIKitProfile/README.md)                                       | 用户信息组件                             |
+| [TIMUIKitSearch](uikit-sdk-api/TIMUIKitSearch/README.md)                               | 搜索组件                           |
+
+## SDK API 功能概览
 
 | 模块名称                                                      | 模块功能简介                                      |
 | --------------------------------------------------------- | ------------------------------------------- |
@@ -23,6 +40,6 @@
 
 [IM-flutter 首页](https://cloud.tencent.com/document/product/269)
 
-[IM-flutter 快速入门](https://cloud.tencent.com/document/product/269/68823)
+[IM-flutter 快速入门](kuai-su-ru-men.md)
 
 [IM-flutter github案例](https://github.com/TencentCloud/TIMSDK/tree/master/Flutter/IMSDK/im-flutter-plugin/tencent_im_sdk_plugin)

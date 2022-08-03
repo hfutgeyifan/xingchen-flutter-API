@@ -147,13 +147,13 @@ V2TIMManager.getInstance().addGroupListener(v2TIMGroupListener);
 ## 话题消息
 话题消息相关功能跟普通消息使用方法一样，涉及的接口有：
 
-| 功能                                     | 接口   |  说明  ｜
-| --------------------------------------- | ------------ |--------------｜
-| 发送消息	    | [sendMessage](../../../api/v2timmessagemanager/sendmessage.md)   | 参数 groupID 填为话题 topicID ｜
-| 接收消息	    | [V2TIMAdvancedMsgListener (dart) 中的 onRecvNewMessage 方法](../../../api/callbacks/onrecvnewmessagecallback.md)  |消息中的 groupID 即为话题 topicID｜
-| 标记消息已读	 | [markGroupMessageAsRead](../../../api/v2timmessagemanager/markgroupmessageasread.md)   |参数 groupID 填为话题 topicID｜
-| 获取历史消息	 | [getGroupHistoryMessageList](../../../api/v2timmessagemanager/getgrouphistorymessagelist.md)    |参数 groupID 填为话题 topicID｜
-| 撤回消息	    | [revokeMessage](../../../api/v2timmessagemanager/revokemessage.md) |参数 groupID 填为话题 topicID｜
+| 功能                                     | 接口   |  说明  |
+| --------------------------------------- | ------------ |--------------|
+| 发送消息	    | [sendMessage](../../../api/v2timmessagemanager/sendmessage.md)   | 参数 groupID 填为话题 topicID |
+| 接收消息	    | [V2TIMAdvancedMsgListener中的 onRecvNewMessage 方法](../../../api/callbacks/onrecvnewmessagecallback.md)  |消息中的 groupID 即为话题 topicID|
+| 标记消息已读	 | [markGroupMessageAsRead](../../../api/v2timmessagemanager/markgroupmessageasread.md)   |参数 groupID 填为话题 topicID|
+| 获取历史消息	 | [getGroupHistoryMessageList](../../../api/v2timmessagemanager/getgrouphistorymessagelist.md)    |参数 groupID 填为话题 topicID|
+| 撤回消息	    | [revokeMessage](../../../api/v2timmessagemanager/revokemessage.md) |参数 groupID 填为话题 topicID|
 
 ## 交流与反馈
 

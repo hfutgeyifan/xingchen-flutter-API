@@ -37,9 +37,9 @@ IM 提供了三种方式来集成，您可以选择最合适的方案来集成�
 
 |   | 适用场景 |
 |---------|---------|
-| [使用DEMO](#第三部分:使用Demo) | IM Demo 是一个完整的聊天 App，代码已开源，如果您需要实现聊天类似场景，可以使用 Demo 进行二次开发。 可立即 [体验 Demo](https://cloud.tencent.com/document/product/269/36852)。 |
-| [含 UI 集成](#第四部分：含UI集成，使用TUIKit组件库，半天完成IM能力植入) | IM 的 UI 组件库`TUIKit`提供了通用的 UI 组件，例如会话列表、聊天界面和联系人列表等，开发者可根据实际业务需求通过该组件库快速地搭建自定义 IM 应用。**推荐优先使用该方案**。 |
-| [自实现 UI 集成](#第五部分：自实现UI集成) | 如果 TUIKit 不能满足您应用的界面需求，或者您需要比较多的定制，可以使用该方案。 |
+| [使用DEMO](#第三部分使用demo) | IM Demo 是一个完整的聊天 App，代码已开源，如果您需要实现聊天类似场景，可以使用 Demo 进行二次开发。 可立即 [体验 Demo](demo-ti-yan.md)。 |
+| [含 UI 集成](#第四部分：含ui集成，使用tuikit组件库，半天完成im能力植入) | IM 的 UI 组件库`TUIKit`提供了通用的 UI 组件，例如会话列表、聊天界面和联系人列表等，开发者可根据实际业务需求通过该组件库快速地搭建自定义 IM 应用。**推荐优先使用该方案**。 |
+| [自实现 UI 集成](#第五部分：自实现ui集成) | 如果 TUIKit 不能满足您应用的界面需求，或者您需要比较多的定制，可以使用该方案。 |
 
 
 为帮助您更好的理解 IM SDK 的各 API，我们还提供了[ API Example](https://github.com/TencentCloud/TIMSDK/tree/master/Flutter/IMSDK/im-flutter-plugin/tencent_im_sdk_plugin/example)，演示各 API 的调用及监听的触发。
@@ -301,6 +301,7 @@ return Scaffold(
 #### 实现：会话聊天页面
 
 该页面由顶部主体聊天历史记录及底部发送消息模块组成。
+
 <img style="width:300px; max-width: inherit;" src="https://qcloudimg.tencent-cloud.cn/raw/0c361254fa5117f7580f39e8b523e472.png" />
 
 请创建一个 `Chat` 类，`body` 中使用 `TIMUIKitChat` 组件，渲染聊天页面。
@@ -506,6 +507,7 @@ V2TimValueCallback<V2TimMessage> res = await TencentImSDKPlugin.v2TIMManager
 [本节详细文档](kuai-su-ji-cheng/zi-shi-xian-ui/hui-hua-xiang-guan/hui-hua-lie-biao.md)
 
 在上一个步骤中，完成发送测试消息，现在可登录另一个测试账户，拉取会话列表。
+
 <img style="width:300px; max-width: inherit;" src="https://qcloudimg.tencent-cloud.cn/raw/e2fdd7632ebc0c5cde68c91afa914201.jpg" />
 
 
@@ -558,6 +560,7 @@ await TencentImSDKPlugin.v2TIMManager
 ```
 
 2. 处理回调事件，将最新的会话列表展示在界面上。
+
 ```dart
 import 'package:tencent_im_sdk_plugin/tencent_im_sdk_plugin.dart';
 
@@ -676,7 +679,7 @@ TencentImSDKPlugin.v2TIMManager
 
 ![](https://qcloudimg.tencent-cloud.cn/raw/d95efdd4ae50f13f38f4c383ca755ae7.png)
 
-1. 打开 `android\app\src\main\AndroidManifest.xml`，根据如下，补全 `xmlns:tools="http://schemas.android.com/tools"` / `android:label="@string/android_label"` 及 `tools:replace="android:label"`。
+打开 `android\app\src\main\AndroidManifest.xml`，根据如下，补全 `xmlns:tools="http://schemas.android.com/tools"` / `android:label="@string/android_label"` 及 `tools:replace="android:label"`。
 
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -690,7 +693,7 @@ TencentImSDKPlugin.v2TIMManager
         android:requestLegacyExternalStorage="true">
 ``` 
 
-2. 打开 `android\app\build.gradle`，补全 `defaultConfig` 中 `minSdkVersion` 及 `targetSdkVersion`。
+打开 `android\app\build.gradle`，补全 `defaultConfig` 中 `minSdkVersion` 及 `targetSdkVersion`。
 
 ```gradle
 defaultConfig {

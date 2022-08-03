@@ -17,7 +17,7 @@
 
 ![](https://qcloudimg.tencent-cloud.cn/raw/2ed516e8c5a960fb03abcbc351d8a066.png)
 
-如果您的应用已经自行完成厂商离线推送，仅需查看本教程 [第一步](#步骤1:汇总常量类) 和 [第五步](#步骤5:前后台切换监听)，在控制台内录入厂商信息，并在应用登录后，上报证书 ID 即可。
+如果您的应用已经自行完成厂商离线推送，仅需查看本教程 [第一步](#步骤1汇总常量类) 和 [第五步](#步骤5前后台切换监听)，在控制台内录入厂商信息，并在应用登录后，上报证书 ID 即可。
 
 ## 插件API概览
 
@@ -138,7 +138,7 @@ OPPO 对于公信通道有每日上限，对于通讯类型消息，建议参见
 {% hint style="info" %}
 说明：
 
-vivo 要求应用在上架后，才能使用正式推送服务。如果您需要在开发中调试 vivo 机器，请参见本文最后一节 [vivo 调试](#vivotest) 内容，开启测试模式。
+vivo 要求应用在上架后，才能使用正式推送服务。如果您需要在开发中调试 vivo 机器，请参见本文最后一节 [vivo 调试](#vivo-调试) 内容，开启测试模式。
 {% endhint %}
 
 ##### 上传证书至控制台
@@ -636,7 +636,7 @@ TIMUIKitChat(
 ```
 
 #### 处理单击回调 
-1. 此时填上 [步骤3](#步骤3:应用启动时初始化) 初始化时，为 pushClickAction 埋的坑。
+1. 此时填上 [步骤3](#步骤3应用启动时初始化) 初始化时，为 pushClickAction 埋的坑。
 2. 初始化时，注册该回调方法，可拿到含推送本体及 ext 信息在内的 Map。
 3. 如果上一步创建 OfflinePushInfo 时，在 ext 内传入了含 conversationID 的 JSON，此时即可直接跳转到对应 Chat。
 
@@ -689,7 +689,7 @@ void handleClickNotification(Map<String, dynamic> msg) async {
 
 ### 步骤7: 使用 TRTC 打单聊语音/视频通话，发送离线推送
 
-一般情况下，发起 TRTC 通话使用信令消息通知对方。您可在信令消息中，按照 [步骤6](#步骤6:发消息配置及单击通知跳转)，加入`offlinePushInfo`字段。
+一般情况下，发起 TRTC 通话使用信令消息通知对方。您可在信令消息中，按照 [步骤6](#步骤6发消息配置及单击通知跳转)，加入`offlinePushInfo`字段。
 
 #### Flutter 通话插件接入
 1. 如果您使用到我们的 [tim_ui_kit_calling_plugin](https://pub.dev/packages/tim_ui_kit_calling_plugin) 插件，请将其升级至0.2.0版本以上，即可使用离线推送能力。
@@ -797,7 +797,7 @@ TIMUIKitChat(
 ![](https://qcloudimg.tencent-cloud.cn/raw/c2db1213278de5d43558046efc8e4b23.png)
 3. 此时可推送测试消息至测试设备。可参见 [vivo 单播推送文档](https://dev.vivo.com.cn/documentCenter/doc/363#w2-98542835)。
 4. 由于腾讯云 IM 控制台的测试推送，和直接使用 IM SDK 发送聊天消息的推送，均不能修改推送模式为测试。因此请使用我们提供的，可触发测试消息的 JS 脚本，[单击此处下载](https://tuikit-1251787278.cos.ap-guangzhou.myqcloud.com/testvivo.js)。
-5. 下载后，请根据顶部五行注释，填入vivo相关参数。默认ext为`conversationID`，如果在处理单击回调跳转（可参见 [步骤6](#step_6)）时需要其他字段，请自行修改 JS 代码。
+5. 下载后，请根据顶部五行注释，填入vivo相关参数。默认ext为`conversationID`，如果在处理单击回调跳转（可参见 [步骤6](#步骤6发消息配置及单击通知跳转)）时需要其他字段，请自行修改 JS 代码。
 ![](https://qcloudimg.tencent-cloud.cn/raw/3f564ffd8f34feda3c87f065b9d2dfa0.png)
 6. 执行脚本。`npm install axios` `npm install js-md5` 后`node testvivo`。推送结果会显示在 log 最后一行。
 ![](https://qcloudimg.tencent-cloud.cn/raw/27913289ee4d2e14f697923176775cc0.png)
@@ -989,7 +989,7 @@ cPush.displayDefaultNotificationForMessage(
 
 ### 点击通知跳转
 
-本步骤与 [上文离线推送的步骤6](#步骤6:发消息配置及单击通知跳转) 点击回调一致，均为在 ext 中，读取需要跳转的 conversation，并导航过去。
+本步骤与 [上文离线推送的步骤6](#步骤6发消息配置及单击通知跳转) 点击回调一致，均为在 ext 中，读取需要跳转的 conversation，并导航过去。
 
 如果您在上一步使用 `displayDefaultNotificationForMessage`，或在 `displayNotification` 中使用与default相同的ext生成函数，此时的ext结构为：` "conversationID": "对应的conversation"`。
 

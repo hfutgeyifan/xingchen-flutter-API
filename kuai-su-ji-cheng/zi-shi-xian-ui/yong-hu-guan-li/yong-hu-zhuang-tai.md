@@ -275,4 +275,4 @@ IMSDK 提供了用户状态管理的功能，每个用户拥有两种不同类�
 
 欢迎加入 QQ 群进行技术交流和反馈问题。
 
-<img src="https://qcloudimg.tencent-cloud.cn/raw/960ce9d76ea2cebffcb7629741279b90.png" alt="" style="zoom:50%;" />
+<img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png" />

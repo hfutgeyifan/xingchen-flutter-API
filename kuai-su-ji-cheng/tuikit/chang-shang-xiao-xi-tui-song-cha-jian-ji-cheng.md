@@ -11,11 +11,11 @@
 
 本教程含接入腾讯云即时通信 IM 离线推送全流程。插件已封装上述厂商的 SDK，使用时仅需简单改造调用即可。
 
-如果您的应用不需要离线推送，或场景不满足离线推送的需求，请直接看本文最后一节 [“在线推送-在本地创建新消息通知”](#online_push) 在线推送部分。
+如果您的应用不需要离线推送，或场景不满足离线推送的需求，请直接看本文最后一节 [“在线推送-在本地创建新消息通知”](#在线推送-在本地创建新消息通知) 在线推送部分。
 
 ![](https://qcloudimg.tencent-cloud.cn/raw/58f36a132a9fa46b84b12070777b8e9b.png)
 
-如果您的应用已经自行完成厂商离线推送，仅需查看本教程 [第一步](#step_1) 和 [第五步](#step_5)，在控制台内录入厂商信息，并在应用登录后，上报证书 ID 即可。
+如果您的应用已经自行完成厂商离线推送，仅需查看本教程 [第一步](#步骤1-汇总常量类) 和 [第五步](#步骤5-前后台切换监听)，在控制台内录入厂商信息，并在应用登录后，上报证书 ID 即可。
 
 ## 插件 API 概览
 
@@ -42,7 +42,7 @@
 | displayNotification | 在客户端本地，手动创建一条消息通知 |
 | displayDefaultNotificationForMessage | 在客户端本地，按照默认的规则，自动为一个 `V2TimMessage` 创建一个消息通知 |
 
-## 接入准备（注册厂商）[](id:firstone)
+## 接入准备（注册厂商）
 
 需要完成厂商开发者账号申请（一般需要企业认证），创建应用，申请 PUSH 权限，拿到 key 信息。
 
@@ -136,7 +136,7 @@ OPPO 对于公信通道有每日上限，对于通讯类型消息，建议参见
 {% hint style="info" %}
 说明：
 
-要求应用在上架后，才能使用正式推送服务。如果您需要在开发中调试 vivo 机器，请参见本文最后一节 [vivo 调试](#vivotest) 内容，开启测试模式。
+要求应用在上架后，才能使用正式推送服务。如果您需要在开发中调试 vivo 机器，请参见本文最后一节 [vivo 调试](#vivo-调试) 内容，开启测试模式。
 {% endhint %}
 
 ##### 上传证书至控制台
@@ -232,8 +232,8 @@ flutter pub add tim_ui_kit_push_plugin
 
 [并根据该指南](https://cloud.tencent.com/document/product/269/76803)，在插件市场，启用推送插件。
 
-### 步骤1: 汇总常量类[](id:step_1)
-1. 完成 [接入准备（注册厂商）](#firstone)的配置后，可在即时通信 IM 的控制台首页右侧，查看我们后台为您的厂商渠道 App 信息分配的证书 ID。
+### 步骤1: 汇总常量类
+1. 完成 [接入准备（注册厂商）](#接入准备（注册厂商）)的配置后，可在即时通信 IM 的控制台首页右侧，查看我们后台为您的厂商渠道 App 信息分配的证书 ID。
 ![](https://qcloudimg.tencent-cloud.cn/raw/d490ff0743604effa7f43f35c14668de.png)
 2. 请将这些信息，配上厂商渠道的账号信息，实例化一个静态的`PushAppInfo`类，汇总起来。后续步骤需要传入此对象。
 3. 该类支持配置所有您需要接入厂商推送机型的信息。无需完整填写构造函数字段。若需要使用某个厂商平台，请完整填写该平台相关字段。
@@ -265,7 +265,7 @@ static final PushAppInfo appInfo = PushAppInfo(
 可参见我们DEMO [lib/utils/push/push_constant.dart文件](https://github.com/TencentCloud/TIMSDK/tree/master/Flutter/Demo/im-flutter-uikit/lib/utils/push/push_constant.dart) 中的做法。
 {% endhint %}
 
-### 步骤2: 代码中添加厂商工程配置[](id:step_2)
+### 步骤2: 代码中添加厂商工程配置
 
 #### Google FCM
 
@@ -472,7 +472,7 @@ defaultConfig {
     <!--魅族 结束-->
 ```
 
-### 步骤3: 应用启动时初始化[](id:step_3)
+### 步骤3: 应用启动时初始化
 1. 调用插件`init`方法。该步骤会完成初始化各厂商通道。
 2. 该步骤建议在应用启动后就执行调用。
 {% hint style="info" %}
@@ -515,7 +515,7 @@ cPush.createNotificationChannel(
 cPush.requireNotificationPermission();
 ```
 
-### 步骤4: 上报 Token 及证书 ID[](id:step_4)
+### 步骤4: 上报 Token 及证书 ID
 
 需要将当前设备对应厂商的证书 ID 及 Device Token 上报至腾讯云即时通信后台，服务端才可正常使用厂商通道下行通知。
 
@@ -538,7 +538,7 @@ final TimUiKitPushPlugin cPush = TimUiKitPushPlugin(
 final bool isUploadSuccess = await cPush.uploadToken(PushConfig.appInfo);
 ```
 
-### 步骤5: 前后台切换监听[](id:step_5)
+### 步骤5: 前后台切换监听
 1. 需要在每次切换前后台时，通过 IM SDK 上报 IM 后端当前状态。
 2. 若为前台在线状态，则收到新消息不触发 notification 推送；反之则会进行推送。
 3. 具体请参见 [Flutter 官方监听前后台切换方案](https://docs.flutter.dev/get-started/flutter-for/android-devs#how-do-i-listen-to-android-activity-lifecycle-events)。
@@ -600,7 +600,7 @@ OPPO角标属于OPPO侧高级权益，不默认开放。如需使用，请自行
   }
 ```
 
-### 步骤6: 发消息配置及单击通知跳转[](id:step_6)
+### 步骤6: 发消息配置及单击通知跳转
 
 #### 发送消息
 
@@ -645,7 +645,7 @@ TIMUIKitChat(
 ```
 
 #### 处理单击回调 
-1. 此时填上 [步骤3](#step_3) 初始化时，为 pushClickAction 埋的坑。
+1. 此时填上 [步骤3](#步骤3-应用启动时初始化) 初始化时，为 pushClickAction 埋的坑。
 2. 初始化时，注册该回调方法，可拿到含推送本体及 ext 信息在内的 Map。
 3. 如果上一步创建 OfflinePushInfo 时，在 ext 内传入了含 conversationID 的 JSON，此时即可直接跳转到对应 Chat。
 
@@ -702,9 +702,9 @@ void handleClickNotification(Map<String, dynamic> msg) async {
   }
 ```
 
-### 步骤7: 使用 TRTC 打单聊语音/视频通话，发送离线推送[](id:step_7)
+### 步骤7: 使用 TRTC 打单聊语音/视频通话，发送离线推送
 
-一般情况下，发起 TRTC 通话使用信令消息通知对方。您可在信令消息中，按照 [步骤6](#step_6)，加入`offlinePushInfo`字段。
+一般情况下，发起 TRTC 通话使用信令消息通知对方。您可在信令消息中，按照 [步骤6](#步骤6-发消息配置及单击通知跳转)，加入`offlinePushInfo`字段。
 
 #### Flutter 通话插件接入
 1. 如果您使用到我们的 [tim_ui_kit_calling_plugin](https://pub.dev/packages/tim_ui_kit_calling_plugin) 插件，请将其升级至0.2.0版本以上，即可使用离线推送能力。
@@ -804,7 +804,7 @@ TIMUIKitChat(
 
 您可使用 [离线推送自查](https://console.cloud.tencent.com/im/tool-push-check) 工具，检测终端状态/证书上报及发送测试消息。
 ![](https://qcloudimg.tencent-cloud.cn/raw/0ef072fe382b3b84e8602ae9d637d773.png)
-### vivo 调试[](id:vivotest)
+### vivo 调试
 由于 vivo 官方限制，应用在 vivo 应用市场上架前，不允许使用正式 PUSH 能力，[详见此文档](https://dev.vivo.com.cn/documentCenter/doc/151)。
 开发过程中，需要调试，请参见本步骤：
 1. 获取测试设备（vivo 真机）的 regId（我们称做 Device Token）。
@@ -812,7 +812,7 @@ TIMUIKitChat(
 ![](https://qcloudimg.tencent-cloud.cn/raw/c2db1213278de5d43558046efc8e4b23.png)
 3. 此时可推送测试消息至测试设备。可参见 [vivo 单播推送文档](https://dev.vivo.com.cn/documentCenter/doc/363#w2-98542835)。
 4. 由于腾讯云 IM 控制台的测试推送，和直接使用 IM SDK 发送聊天消息的推送，均不能修改推送模式为测试。因此请使用我们提供的，可触发测试消息的JS脚本，[单击此处下载](https://tuikit-1251787278.cos.ap-guangzhou.myqcloud.com/testvivo.js)
-5. 下载后，请根据顶部五行注释，填入vivo相关参数。默认ext为`conversationID`，如果在处理单击回调跳转（可参见 [步骤6](#step_6)）时需要其他字段，请自行修改JS代码。
+5. 下载后，请根据顶部五行注释，填入vivo相关参数。默认ext为`conversationID`，如果在处理单击回调跳转（可参见 [步骤6](#步骤6-发消息配置及单击通知跳转)）时需要其他字段，请自行修改JS代码。
 ![](https://qcloudimg.tencent-cloud.cn/raw/3f564ffd8f34feda3c87f065b9d2dfa0.png)
 6. 执行脚本。`npm install axios` `npm install js-md5` 后`node testvivo`。推送结果会显示在 log 最后一行。
 ![](https://qcloudimg.tencent-cloud.cn/raw/27913289ee4d2e14f697923176775cc0.png)
@@ -869,7 +869,7 @@ OPPO 手机收不到推送一般有以下几种情况：
 - 如果离线推送消息出现推送不及时或者偶尔收不到情况，需要看下厂商的推送限制。
 
 
-## 在线推送-在本地创建新消息通知[](id:online_push)
+## 在线推送-在本地创建新消息通知
 
 本文以上部分介绍了，如何使用本插件，结合腾讯云IM后端的推送服务，实现通过厂商通道的离线推送。
 
@@ -1005,7 +1005,7 @@ cPush.displayDefaultNotificationForMessage(
 
 ### 点击通知跳转
 
-本步骤与[上文离线推送的步骤6](#step_6)点击回调一致，均为在ext中，读取需要跳转的conversation，并导航过去。
+本步骤与[上文离线推送的步骤6](#步骤6-发消息配置及单击通知跳转)点击回调一致，均为在ext中，读取需要跳转的conversation，并导航过去。
 
 如果您在上一步使用 `displayDefaultNotificationForMessage`，或在 `displayNotification` 中使用与default相同的ext生成函数，此时的ext结构为：` "conversationID": "对应的conversation"`。
 

@@ -22,7 +22,7 @@ description: 初始化 SDK√
 
 | 参数名称     | 参数类型                                                              | 是否必填 | 描述                                                    |
 | -------- | ----------------------------------------------------------------- | ---- | ----------------------------------------------------- |
-| onTUIKitCallbackListener | Function([TIMCallback](TIMCallback.md) TIMCallback)            | 否    | 该监听用于返回包括：SDK API 错误 / Flutter 报错 / 一些可能需要弹窗提示用户的场景信息。 | 
+| onTUIKitCallbackListener | Function([TIMCallback](TIMCallback.md) TIMCallback)            | 否    | 返回：SDK API 错误/Flutter 报错/一些可能需要弹窗提示用户的场景信息。| 
 | sdkAppID | int                                         | 是    | 应用ID，可在[控制台](https://console.cloud.tencent.com/im)中获取 |
 | loglevel | [LogLevelEnum](../../api/enums/loglevelenum.md)                          | 是    | 打印日志等级                                 |
 | listener | [V2TimSDKListener](../../api/guan-jian-lei/listener/v2timsdklistener.md) | 是    | SDK监听器                                       |
