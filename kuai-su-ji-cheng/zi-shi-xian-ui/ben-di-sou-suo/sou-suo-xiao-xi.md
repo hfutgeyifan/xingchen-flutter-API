@@ -11,7 +11,7 @@
 
 ## 消息搜索类介绍
 ### 消息搜索参数类
-消息搜索参数类为 `V2TimMessageSearchParam`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/models_v2_tim_message_search_param/V2TimMessageSearchParam-class.html))。搜索消息时，SDK 会按照该对象的设置，执行不同的搜索逻辑。
+消息搜索参数类为 [`V2TimMessageSearchParam`](../../../api/guan-jian-lei/message/v2timmessagesearchparam.md)。搜索消息时，SDK 会按照该对象的设置，执行不同的搜索逻辑。
 
 `V2TIMMessageSearchParam` 的参数说明如下：
 
@@ -20,7 +20,7 @@
 | keywordList | 关键字列表 | 最多支持 5 个。当消息发送者以及消息类型均未指定时，必须设置关键字列表；否则，关键字列表可以为空。 |
 | keywordListMatchType | 指定关键字列表匹配类型 | 可设置为 “或” 关系搜索，或 “与” 关系搜索。取值分别为 V2TIM_KEYWORD_LIST_MATCH_TYPE_OR 和 V2TIM_KEYWORD_LIST_MATCH_TYPE_AND。默认为 “或” 关系搜索。 |
 | senderUserIDList | 指定 userID 发送的消息 | 最多支持 5 个。 |
-| messageTypeList | 指定搜索的消息类型集合 | 传空表示搜索支持的全部类型消息（`V2TIMFaceElem` 和 `V2TIMGroupTipsElem` 不支持搜索）。其他类型取值参考  `V2TIMElemType`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/models_v2_tim_message/V2TimMessage/elemType.html))。 |
+| messageTypeList | 指定搜索的消息类型集合 | 传空表示搜索支持的全部类型消息（`V2TIMFaceElem` 和 `V2TIMGroupTipsElem` 不支持搜索）。其他类型取值参考  [`V2TIMElemType`](../../../api/enums/messageelemtype.md)。 |
 | conversationID | 搜索 “全部会话” 还是搜索 “指定的会话” | conversationID 为空，搜索全部会话；conversationID 不为空，搜索指定会话。 |
 | searchTimePosition | 搜索的起始时间点 | 默认为 0（从现在开始搜索）。UTC 时间戳，单位：秒。 |
 | searchTimePeriod | 从起始时间点开始的过去时间范围 | 默认为 0（不限制时间范围）。24x60x60 代表过去一天。单位：秒。|
@@ -28,14 +28,14 @@
 | pageSize | 每页结果数量 | 用于分页展示查找结果，如不希望分页可将其设置成 0。但如果结果数量太多，一次性拉取可能会引发性能问题。 |
 
 ### 消息搜索结果类
-消息搜索结果类为 `V2TIMMessageSearchResult`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/models_v2_tim_message_search_result/V2TimMessageSearchResult-class.html))。参数说明如下：
+消息搜索结果类为 [`V2TIMMessageSearchResult`](../../../api/guan-jian-lei/message/v2timmessagesearchresult.md)。参数说明如下：
 
 | 参数 | 含义 | 说明 |
 | --- | --- | --- |
 | totalCount | 搜索结果总数 | 如果搜索指定会话，返回满足搜索条件的**消息总数**；<br>如果搜索全部会话，返回满足搜索条件的消息所在的所有**会话总数量**。|
 | messageSearchResultItems | 指定关键字列表匹配类型 | 如果搜索指定会话，返回结果列表只包含该会话结果；<br>如果搜索全部会话，会对满足搜索条件的消息根据会话 ID 分组，分页返回分组结果。|
 
-其中 `messageSearchResultItems` 是个列表，内含 `V2TIMMessageSearchResultItem`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/models_v2_tim_message_search_result_item/V2TimMessageSearchResultItem-class.html)) 对象，参数说明如下：
+其中 `messageSearchResultItems` 是个列表，内含 [`V2TIMMessageSearchResultItem`](../../../api/guan-jian-lei/message/v2timmessagesearchresultitem.md) 对象，参数说明如下：
 
 | 参数 | 含义 | 说明 |
 | --- | --- | --- |
@@ -45,9 +45,9 @@
 
 
 ## 搜索全部会话的消息
-当用户在搜索框输入关键字搜索消息时，您可以调用 `searchLocalMessages` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/searchLocalMessages.html)) 搜索 IM SDK 本地存储的消息。
+当用户在搜索框输入关键字搜索消息时，您可以调用 [`searchLocalMessages`](../../../api/v2timmessagemanager/searchlocalmessages.md) 搜索 IM SDK 本地存储的消息。
 
-如果您希望在全部会话范围内搜索，只需要将 `V2TIMMessageSearchParam` 中的 `conversationID` 设置为空（`null`/`nil`) 或者不设置即可。
+如果您希望在全部会话范围内搜索，只需要将 [`V2TimMessageSearchParam`](../../../api/guan-jian-lei/message/v2timmessagesearchparam.md) 中的 `conversationID` 设置为空（`null`/`nil`) 或者不设置即可。
 
 示例代码如下：
 
@@ -59,7 +59,7 @@ V2TimValueCallback<V2TimMessageSearchResult> searchMessage = await messageManage
 
 
 ## 搜索指定会话的消息
-当用户在搜索框输入关键字搜索消息时，您可以调用 `searchLocalMessages` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/searchLocalMessages.html)) 搜索 IM SDK 本地存储的消息。
+当用户在搜索框输入关键字搜索消息时，您可以调用 [`searchLocalMessages`](../../../api/v2timmessagemanager/searchlocalmessages.md) 搜索 IM SDK 本地存储的消息。
 
 示例代码如下：
 
@@ -105,12 +105,12 @@ V2TimValueCallback<V2TimMessageSearchResult> searchMessage = await messageManage
 
 
 ## 搜索自定义消息
-通常情况下，如果您使用接口 `createCustomMessage(data)`([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/createCustomMessage.html))创建自定义消息，该消息无法被搜到，因为 SDK 将该自定义消息保存为二进制数据流。
+通常情况下，如果您使用接口 [`createCustomMessage(data)`](../../../api/v2timmessagemanager/createcustommessage.md)创建自定义消息，该消息无法被搜到，因为 SDK 将该自定义消息保存为二进制数据流。
 
-如果您希望自定义消息可以被搜到，需要使用接口 `createCustomMessage(data, description, extension)` [dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/createCustomMessage.html) 来创建并发送自定义消息，把需要搜索的文本放到 `description` 参数中。
+如果您希望自定义消息可以被搜到，需要使用接口 `createCustomMessage(data, description, extension)` 来创建并发送自定义消息，把需要搜索的文本放到 `description` 参数中。
 
 如果您配置了离线推送功能，设置参数 `description` 后，自定义消息也会有离线推送且通知栏展示该参数内容。
-如果不需要离线推送可以用发消息接口 `sendMessage` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/sendMessage.html)) 的参数 `V2TIMOfflinePushInfo` 中的 `disablePush` 来控制。
+如果不需要离线推送可以用发消息接口 [`sendMessage`](../../../api/v2timmessagemanager/sendmessage.md) 的参数 [`V2TIMOfflinePushInfo`](../../../api/guan-jian-lei/message/v2timofflinepushinfo.md) 中的 `disablePush` 来控制。
 
 如果推送的通知栏内容不想展示为被搜索的文本，可以用参数 `V2TIMOfflinePushInfo` 中的 `desc` 来另外设置推送内容。
 
@@ -118,7 +118,7 @@ V2TimValueCallback<V2TimMessageSearchResult> searchMessage = await messageManage
 ## 搜索富媒体消息
 富媒体消息包含文件、图片、语音、视频消息。
 
-对于文件消息，界面通常显示文件名。如果调用 `createFileMessage` 创建文件消息时传入 `fileName` 参数，`fileName` 会作为文件消息被搜索的内容，与搜索关键词进行匹配。如果未设置 `fileName`，SDK 则会自动从 `filePath` 提取文件名作为搜索内容。
+对于文件消息，界面通常显示文件名。如果调用 [`createFileMessage`](../../../api/v2timmessagemanager/createfilemessage.md) 创建文件消息时传入 `fileName` 参数，`fileName` 会作为文件消息被搜索的内容，与搜索关键词进行匹配。如果未设置 `fileName`，SDK 则会自动从 `filePath` 提取文件名作为搜索内容。
 `fileName` 和 `filePath` 信息会保存到本地和服务器，换设备拉取相关信息后均可搜索。
 
 对于图片、语音、视频消息，并没有类似 `fileName` 这种名称，界面通常显示缩略图或时长，此时指定 `keywordList` 搜索无效。
@@ -127,5 +127,6 @@ V2TimValueCallback<V2TimMessageSearchResult> searchMessage = await messageManage
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png" />
 

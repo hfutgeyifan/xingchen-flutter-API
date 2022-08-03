@@ -18,6 +18,11 @@ IM API中使用到的回调函数类型
 | [OnBlackListAddCallback](onblacklistaddcallback.md)                                 | 黑名单列表新增用户的回调                        |
 | [OnBlackListDeletedCallback](onblacklistdeletedcallback.md)                         | 黑名单列表删除用户的回调                        |
 | [OnConversationChangedCallback](onconversationchangedcallback.md)                   | 某些会话的关键信息发生变化                       |
+| [OnConversationGroupCreated](OnConversationGroupCreated.md)                   | 会话分组被创建                       |
+| [onConversationGroupDeleted](OnConversationGroupDeleted.md)                   | 会话分组被删除                       |
+| [onConversationGroupNameChanged](OnConversationGroupNameChanged.md)                   | 会话分组名变更                       |
+| [onConversationsAddedToGroup](OnConversationsAddedToGroup.md)                   | 会话分组新增会话                       |
+| [onConversationsDeletedFromGroup](onConversationsDeletedFromGroup.md)                   | 会话分组删除会话                       |
 | [OnFriendApplicationListAddedCallback](onfriendapplicationlistaddedcallback.md)     | 好友请求数量增加的回调                         |
 | [OnFriendApplicationListDeletedCallback](onfriendapplicationlistdeletedcallback.md) | 好友请求数量减少的回调                         |
 | [OnFriendApplicationListReadCallback](onfriendapplicationlistreadcallback.md)       | 好友请求已读的回调                           |
@@ -51,6 +56,9 @@ IM API中使用到的回调函数类型
 | [OnRecvNewMessageCallback](onrecvnewmessagecallback.md)                             | 收到新消息                               |
 | [OnRevokeAdministratorCallback](onrevokeadministratorcallback.md)                   | 取消管理员身份                             |
 | [OnSendMessageProgressCallback](onsendmessageprogresscallback.md)                   | 文件上传进度回调                            |
+| [OnTopicCreated](onTopicCreated.md)                   | 话题创建通知                            |
+| [OnTopicDeleted](onTopicDeleted.md)                   | 话题删除通知                            |
+| [OnTopicInfoChanged](onTopicInfoChanged.md)                   | 话题信息更新通知                            |
 | [OnTotalUnreadMessageCountChanged](ontotalunreadmessagecountchanged.md)             | 会话未读总数变更通知                          |
 | [OnUserStatusChanged](onuserstatuschanged.md)                                       | 用户状态变更通知                            |
 | [V2TimUserFullInfoCallback](v2timuserfullinfocallback.md)                           | 登录用户的资料发生了更新更新                      |

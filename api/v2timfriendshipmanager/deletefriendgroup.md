@@ -42,5 +42,4 @@ V2TimCallback
     if (deleteFriendGroupRes.code == 0) {
       // 删除成功
     }
-
 ```

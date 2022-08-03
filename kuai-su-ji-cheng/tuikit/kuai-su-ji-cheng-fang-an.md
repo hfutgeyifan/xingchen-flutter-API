@@ -15,7 +15,7 @@ Flutter TUIKit 是基于 Flutter IM SDK 实现的一套 UI 组件，其中包含
 - [TIMUIKitNewContact](../../uikit-sdk-api/TIMUIKitNewContact/README.md) 新的联系人
 - [TIMUIKitSearch](../../uikit-sdk-api/TIMUIKitSearch/README.md) 本地搜索
 
-![](https://qcloudimg.tencent-cloud.cn/raw/bbfe2ade260d26e77296f0c27f6af36e.png)
+![20220803114949](https://tuikit-1251787278.cos.ap-guangzhou.myqcloud.com/20220803114949.png)
 上图项目源码：[im-flutter-uikit](https://github.com/tencentyun/TIMSDK/tree/master/Flutter/Demo/im-flutter-uikit)，项目已开源，您可直接使用。
 ## 支持平台
 - Android

@@ -42,25 +42,25 @@ description: 聊天的监听器回调
 
 ### onConversationGroupCreated
 
-* 参数类型 : OnConversationGroupCreated
+* 参数类型 : [OnConversationGroupCreated](../../callbacks/OnConversationGroupCreated.md)
 * 参数描述 : 会话分组被创建
 
 ### onConversationGroupDeleted
 
-* 参数类型 : OnConversationGroupDeleted
+* 参数类型 : [OnConversationGroupDeleted](../../callbacks/OnConversationGroupDeleted.md)
 * 参数描述 : 会话分组被删除
 
 ### onConversationGroupNameChanged
 
-* 参数类型 : OnConversationGroupNameChanged
+* 参数类型 : [OnConversationGroupNameChanged](../../callbacks/OnConversationGroupNameChanged.md)
 * 参数描述 : 会话分组名变更
 
 ### onConversationsAddedToGroup
 
-* 参数类型 : OnConversationsAddedToGroup
+* 参数类型 : [OnConversationsAddedToGroup](../../callbacks/OnConversationsAddedToGroup.md)
 * 参数描述 : 会话分组新增会话
 
 ### onConversationsDeletedFromGroup
 
-* 参数类型 : OnConversationsDeletedFromGroup
+* 参数类型 : [OnConversationsDeletedFromGroup](../../callbacks/onConversationsDeletedFromGroup.md)
 * 参数描述 : 会话分组删除会话

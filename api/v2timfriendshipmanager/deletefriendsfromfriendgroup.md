@@ -54,8 +54,3 @@ V2TimValueCallback<List<V2TimFriendOperationResult>>
       });
     }
 ```
-
-##
-
-```dart
-```

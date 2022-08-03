@@ -1,10 +1,10 @@
 ## 功能描述
-群资料指的是与群组相关的一些信息，相关方法在核心类 `TencentImSDKPlugin.v2TIMManager.getGroupManager()`中。
+群资料指的是与群组相关的一些信息，相关方法在核心类 [`TencentImSDKPlugin.v2TIMManager.getGroupManager()`](../../../api/v2timmanager/getgroupmanager.md)中。
 
 [](id:getGroupsInfo)
 
 ## 获取群资料
-您可以调用 `getGroupsInfo` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/getGroupsInfo.html)) 获取群资料。该接口支持一次传入多个 `groupID`，批量获取多个群的群资料。
+您可以调用 [`getGroupsInfo`](../../../api/v2timgroupmanager/getgroupsinfo.md) 获取群资料。该接口支持一次传入多个 `groupID`，批量获取多个群的群资料。
 
 代码示例如下：
 
@@ -19,9 +19,9 @@ V2TimValueCallback<List<V2TimGroupInfoResult>> groupinfos = await groupManager.g
 
 ## 修改群资料
 
-您可以调用 `setGroupInfo` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/setGroupInfo.html)) 修改群资料。
+您可以调用 [`setGroupInfo`](../../../api/v2timgroupmanager/setgroupinfo.md) 修改群资料。
 
-如果您事先调用 `addGroupListener` 添加了群组事件监听器，群资料被修改后，全员会收到 `onGroupInfoChanged` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_V2TimGroupListener/V2TimGroupListener/onGroupInfoChanged.html)) 回调。
+如果您事先调用 [`addGroupListener`](../../../api/v2timmanager/addgrouplistener.md) 添加了群组事件监听器，群资料被修改后，全员会收到 [`onGroupInfoChanged`](../../../api/callbacks/ongroupinfochangedcallback.md) 回调。
 
 不同类型的群组，可以修改群资料的成员角色不同：
 
@@ -50,7 +50,7 @@ TencentImSDKPlugin.v2TIMManager.addGroupListener(listener: V2TimGroupListener(on
 
 
 ## 设置群消息的接收选项
-任何群成员都可以调用 `setGroupReceiveMessageOpt` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/setGroupReceiveMessageOpt.html)) 接口修改群消息接收选项。
+任何群成员都可以调用 [`setGroupReceiveMessageOpt`](../../../api/v2timmessagemanager/setgroupreceivemessageopt.md) 接口修改群消息接收选项。
 
 `V2TIMReceiveMessageOpt` 的可选项有：
 
@@ -67,8 +67,8 @@ TencentImSDKPlugin.v2TIMManager.addGroupListener(listener: V2TimGroupListener(on
 
 **接收群内消息但不提醒，在会话列表界面显示小圆点（不显示未读数）**
 1. 群消息接收选项设置为 `V2TIM_RECEIVE_NOT_NOTIFY_MESSAGE`。
-2. 当群内收到新消息，会话列表需要更新时，可以通过会话 `V2TIMConversation` 中的 `unreadCount` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/models_v2_tim_conversation/V2TimConversation/unreadCount.html)) 获取到消息未读数。
-3. 根据 `V2TIMConversation` 的 `recvOpt` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/models_v2_tim_group_info/V2TimGroupInfo/recvOpt.html)](https://im.sdk.qcloud.com/doc/zh-cn/interfaceV2TIMConversation.html#a851651878491c64d73aa83131134e6cc)) 判断获取到的群消息接收选项为 `V2TIM_RECEIVE_NOT_NOTIFY_MESSAGE` 时显示小红点而非消息未读数。
+2. 当群内收到新消息，会话列表需要更新时，可以通过会话 [`V2TIMConversation`](../../../api/guan-jian-lei/message/v2timconversation.md) 中的 `unreadCount` 获取到消息未读数。
+3. 根据 [`V2TIMConversation`](../../../api/guan-jian-lei/message/v2timconversation.md) 的 `recvOpt`判断获取到的群消息接收选项为 `V2TIM_RECEIVE_NOT_NOTIFY_MESSAGE` 时显示小红点而非消息未读数。
 
 {% hint style="info" %}
 说明：
@@ -92,5 +92,6 @@ groupManager.setGroupInfo(info: V2TimGroupInfo.fromJson({
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img src="https://qcloudimg.tencent-cloud.cn/raw/c97611d74aa0e836f9d4ca42a447e8bc.png" alt="image-20220531115108668" style="zoom: 25%;" />
 

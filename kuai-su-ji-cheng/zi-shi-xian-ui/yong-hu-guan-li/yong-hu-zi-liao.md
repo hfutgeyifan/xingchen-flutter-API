@@ -1,11 +1,11 @@
 ## 功能描述
-用户可以设置和获取个人的昵称、头像、签名等资料信息，也可以获取到陌生人的资料信息。相关方法在核心类 ` TencentImSDKPlugin.v2TIMManager.getFriendshipManager()`中。
+用户可以设置和获取个人的昵称、头像、签名等资料信息，也可以获取到陌生人的资料信息。相关方法在核心类 [`TencentImSDKPlugin.v2TIMManager.getFriendshipManager()`](../../../api/v2timmanager/getfriendshipmanager.md)中。
 
 
 ## 关系链事件监听器
-您可以调用 `addFriendListener` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/addFriendListener.html)) 添加关系链事件监听器。
+您可以调用 [`addFriendListener`](../../../api/v2timfriendshipmanager/addfriendlistener.md) 添加关系链事件监听器。
 
-当不想再接收关系链事件时，可调用 `removeFriendListener` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/removeFriendListener.html)) 移除关系链事件监听器。
+当不想再接收关系链事件时，可调用 [`removeFriendListener`](../../../api/v2timfriendshipmanager/removefriendlistener.md) 移除关系链事件监听器。
 
 {% hint style="info" %}
 警告：
@@ -36,10 +36,10 @@ V2TimFriendshipListener frindshipListener = V2TimFriendshipListener(
 
 ## 用户资料管理
 ### 查询和修改自己的资料
-您可以调用 `getUsersInfo` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/getUsersInfo.html)) 接口查询个人资料，其中参数 `userIDList` 需填入自己的 UserID。
+您可以调用 [`getUsersInfo`](../../../api/v2timmanager/getusersinfo.md) 接口查询个人资料，其中参数 `userIDList` 需填入自己的 UserID。
 
-您可以调用 `setSelfInfo` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/setSelfInfo.html)) 接口修改个人资料。
-资料修改成功后，您会收到 `onSelfInfoUpdated` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_V2TimSDKListener/V2TimSDKListener/onSelfInfoUpdated.html)) 回调。
+您可以调用 [`setSelfInfo`](../../../api/v2timmanager/setselfinfo.md) 接口修改个人资料。
+资料修改成功后，您会收到 [`onSelfInfoUpdated`](../../../api/callbacks/v2timuserfullinfocallback.md) 回调。
 
 示例代码如下：
 
@@ -56,7 +56,7 @@ TencentImSDKPlugin.v2TIMManager.getUsersInfo(userIDList: [self.data]);
 
 
 ### 查询非好友用户资料
-您可以调用 `getUsersInfo` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/getUsersInfo.html)) 接口查询非好友资料，其中参数 `userIDList` 填入非好友的 UserID 即可。
+您可以调用 [`getUsersInfo`](../../../api/v2timmanager/getusersinfo.md) 接口查询非好友资料，其中参数 `userIDList` 填入非好友的 UserID 即可。
 
 {% hint style="info" %}
 说明：
@@ -65,7 +65,7 @@ TencentImSDKPlugin.v2TIMManager.getUsersInfo(userIDList: [self.data]);
 {% endhint %}
 
 ### 查询和修改好友资料
-您可以调用 `getFriendsInfo` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/getFriendsInfo.html)) 接口查询指定的好友资料，从回调信息中通过 `V2TIMFriendInfoResult` 的 `relation` 字段可以得到该用户与自己的关系：
+您可以调用 [`getFriendsInfo`](../../../api/v2timfriendshipmanager/getfriendsinfo.md) 接口查询指定的好友资料，从回调信息中通过 [`V2TIMFriendInfoResult`](../../../api/guan-jian-lei/user/v2timfriendinforesult.md) 的 `relation` 字段可以得到该用户与自己的关系：
 
 | relation | 与自己的关系 |
 | --- | --- |
@@ -82,7 +82,7 @@ V2TimValueCallback<List<V2TimFriendInfoResult>> friendsInfo = await friendshipMa
 ```
 
 
-您可以调用 `setFriendInfo` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/im_flutter_plugin_platform_interface/ImFlutterPlatform/setFriendInfo.html)) 接口修改好友备注等资料。
+您可以调用 [`setFriendInfo`](../../../api/v2timfriendshipmanager/setfriendinfo.md) 接口修改好友备注等资料。
 
 
 
@@ -101,5 +101,6 @@ TencentImSDKPlugin.v2TIMManager.setSelfInfo(userFullInfo: V2TimUserFullInfo(nick
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png" />
 

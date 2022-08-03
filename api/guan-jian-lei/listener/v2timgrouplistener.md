@@ -89,3 +89,18 @@ description: 群组信息的监听器回调
 
 * 参数类型 : [OnRevokeAdministratorCallback](../../callbacks/onrevokeadministratorcallback.md)
 * 参数描述 : 取消管理员身份
+
+### onTopicCreated
+
+* 参数类型 : [OnTopicCreated](../../callbacks/onTopicCreated.md)
+* 参数描述 : 话题创建通知
+
+### onTopicDeleted
+
+* 参数类型 : [OnTopicDeleted](../../callbacks/onTopicDeleted.md)
+* 参数描述 : 话题删除通知
+
+### onTopicInfoChanged
+
+* 参数类型 : [OnTopicInfoChanged](../../callbacks/onTopicInfoChanged.md)
+* 参数描述 : 话题信息更新通知

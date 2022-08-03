@@ -27,13 +27,14 @@ List<V2TimConversation> conversationList
 ## 代码示例
 
 ```dart
-    //设置群组监听器
-    V2TimGroupListener listener = V2TimGroupListener(
-      onNewConversation: (List<V2TimConversation> conversationList) => {
-        //有新的会话（比如收到一个新同事发来的单聊消息、或者被拉入了一个新的群组中），可以根据会话的 lastMessage -> timestamp 重新对会话列表做排序
-        //conversationList 新的会话列表
-      }
-    );
-    //添加群组监听器
-    TencentImSDKPlugin.v2TIMManager.addGroupListener(listener: listener);
+    //设置会话监听器
+    V2TimConversationListener listener = V2TimConversationListener(
+        onNewConversation: (List<V2TimConversation> conversationList) => {
+              //有新的会话（比如收到一个新同事发来的单聊消息、或者被拉入了一个新的群组中），可以根据会话的 lastMessage -> timestamp 重新对会话列表做排序
+              //conversationList 新的会话列表
+            });
+    //添加会话监听器
+    TencentImSDKPlugin.v2TIMManager
+        .getConversationManager()
+        .addConversationListener(listener: listener);
 ```

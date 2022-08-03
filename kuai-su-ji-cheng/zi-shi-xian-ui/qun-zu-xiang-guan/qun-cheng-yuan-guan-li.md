@@ -1,16 +1,16 @@
 ## 功能描述
-群成员管理指的是对成员进行列表拉取、禁言、踢人、授权、转让群主等操作。相关方法在核心类 `TencentImSDKPlugin.v2TIMManager.getGroupManager()`  中。
+群成员管理指的是对成员进行列表拉取、禁言、踢人、授权、转让群主等操作。相关方法在核心类 [`TencentImSDKPlugin.v2TIMManager.getGroupManager()`](../../../api/v2timmanager/getgroupmanager.md)  中。
 
 [](id:getGroupMemberList)
 
 ## 获取群成员列表
 
-您可以调用 `getGroupMemberList` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/method_channel_im_flutter/MethodChannelIm/getGroupMemberList.html)) 获取指定群的群成员列表。该列表中包含了各个群成员的资料信息，例如用户ID（`userID`）、群名片（`nameCard`）、头像（`faceUrl`）、昵称（`nickName`）、进群时间（`joinTime`）等信息。
+您可以调用 [`getGroupMemberList`](../../../api/v2timgroupmanager/getgroupmemberlist.md) 获取指定群的群成员列表。该列表中包含了各个群成员的资料信息，例如用户ID（`userID`）、群名片（`nameCard`）、头像（`faceUrl`）、昵称（`nickName`）、进群时间（`joinTime`）等信息。
 
 一个群中的成员人数可能很多（例如 5000+），群成员列表的拉取接口支持过滤器（`filter`）和分页拉取（`nextSeq`）两个高级特性。
 
 ### 过滤器（filter）
-在调用 `getGroupMemberList` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/method_channel_im_flutter/MethodChannelIm/getGroupMemberList.html)) 接口时，您可以指定 `filter` 确定是否仅拉取特定角色的信息列表。
+在调用 [`getGroupMemberList`](../../../api/v2timgroupmanager/getgroupmemberlist.md) 接口时，您可以指定 `filter` 确定是否仅拉取特定角色的信息列表。
 
 | 过滤器                           | 过滤类型                 |
 | -------------------------------- | --------------------- |
@@ -33,13 +33,13 @@ groupManager.getGroupMemberList(count: 10,filter: GroupMemberFilterTypeEnum.V2TI
 很多情况下，用户界面上并不需要展示全部的群成员信息，只需展示群成员列表的第一页即可。等用户单击“下一页”或在列表页上拉刷新时，才需要拉取更多的群成员。针对此类场景，您可以使用分页拉取。
 
 分页拉取的步骤为：
-1. 首次调用 `getGroupMemberList` 时，指定参数 `nextSeq` 为 0（表示从头开始拉取会话列表），一次最多拉取 50 个群成员对象。
+1. 首次调用 [`getGroupMemberList`](../../../api/v2timgroupmanager/getgroupmemberlist.md) 时，指定参数 `nextSeq` 为 0（表示从头开始拉取会话列表），一次最多拉取 50 个群成员对象。
    
-2. 首次拉取群成员列表成功后，`getGroupMemberList` 的回调结果 `V2TIMGroupMemberInfoResult` 中会包含 `nextSeq`（下次分页拉取的字段）：
+2. 首次拉取群成员列表成功后，[`getGroupMemberList`](../../../api/v2timgroupmanager/getgroupmemberlist.md) 的回调结果 [`V2TIMGroupMemberInfoResult`](../../../api/guan-jian-lei/group/v2timgroupmemberinforesult.md) 中会包含 `nextSeq`（下次分页拉取的字段）：
    * 如果 `nextSeq` 等于 0，表示已经拉取了全部的群成员。
    * 如果 `nextSeq` 大于 0，表示还有更多的群成员可以拉取。此时并不意味着要立刻开始拉取 “下一页” 的成员列表。在常见的通信软件中，分页拉取通常由用户的滑动操作触发的，用户通过上拉触发一次分页拉取。
 
-3. 当用户继续上拉群成员列表时，如果还有更多的群成员可以拉取，可以继续调用 `getGroupMemberList` 接口，并传入新一轮的 `nextSeq`参数（`nextSeq` 数值来自上一次拉取返回的 `V2TIMGroupMemberInfoResult` 对象）。
+3. 当用户继续上拉群成员列表时，如果还有更多的群成员可以拉取，可以继续调用 [`getGroupMemberList`](../../../api/v2timgroupmanager/getgroupmemberlist.md) 接口，并传入新一轮的 `nextSeq`参数（`nextSeq` 数值来自上一次拉取返回的 [`V2TIMGroupMemberInfoResult`](../../../api/guan-jian-lei/group/v2timgroupmemberinforesult.md) 对象）。
 
 4. 重复执行【步骤 3】直至 `nextSeq` 等于 0，拉取结束。
 
@@ -57,17 +57,17 @@ groupManager.getGroupMemberList(count: 10,filter: GroupMemberFilterTypeEnum.V2TI
 ## 禁言
 
 ### 禁言指定群成员
-群主或管理员可以通过 `muteGroupMember` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/method_channel_im_flutter/MethodChannelIm/muteGroupMember.html)) 禁言某一个群成员并设置禁言时间。禁言时间单位为秒，禁言信息存储于群成员的 `muteUtil` 属性字段中。
+群主或管理员可以通过 [`muteGroupMember`](../../../api/v2timgroupmanager/mutegroupmember.md) 禁言某一个群成员并设置禁言时间。禁言时间单位为秒，禁言信息存储于群成员的 `muteUtil` 属性字段中。
 
-群成员被禁言后，全员（包括被禁言的群成员）都会收到 `onMemberInfoChanged` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_V2TimGroupListener/V2TimGroupListener/onMemberInfoChanged.html)) 事件回调。
+群成员被禁言后，全员（包括被禁言的群成员）都会收到 [`onMemberInfoChanged`](../../../api/callbacks/onmemberinfochangedcallback.md)事件回调。
 
 ### 禁言整个群
-群主或管理员也可以通过 `setGroupInfo` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/method_channel_im_flutter/MethodChannelIm/setGroupInfo.html)) 接口对整个群进行禁言，将 `allMuted`属性字段设置为 `true` 即可。全群禁言没有时间限制，需通过将群资料 `setAllMuted(false)` 解除禁言。
+群主或管理员也可以通过 [`setGroupInfo`](../../../api/v2timgroupmanager/setgroupinfo.md) 接口对整个群进行禁言，将 `allMuted`属性字段设置为 `true` 即可。全群禁言没有时间限制，需通过将群资料 `setAllMuted(false)` 解除禁言。
 
 {% hint style="info" %}
 说明：
 
-全员禁言后触发 `onGroupInfoChanged` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_callbacks/OnGroupInfoChangedCallback.html)) 事件回调，该功能默认是关闭的，可在控制台内自行开通。
+全员禁言后触发 [`onGroupInfoChanged`](../../../api/callbacks/ongroupinfochangedcallback.md) 事件回调，该功能默认是关闭的，可在控制台内自行开通。
 方式: [进入即时通信IM控制台群组配置模块](https://console.cloud.tencent.com/im/qun-setting)，选择群系统通知配置，为各种类型群，单击操作中**编辑**，修改“群禁言变更通知”，即可。
 ![20220713093743](https://tuikit-1251787278.cos.ap-guangzhou.myqcloud.com/20220713093743.png)
 {% endhint %}
@@ -101,11 +101,11 @@ TencentImSDKPlugin.v2TIMManager.addGroupListener(listener: V2TimGroupListener(on
 
 [](id:kickGroupMember)
 ## 踢人
-群主或管理员调用 `kickGroupMember` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/method_channel_im_flutter/MethodChannelIm/kickGroupMember.html)) 接口可以将指定的普通群成员踢出群组。
+群主或管理员调用 [`kickGroupMember`](../../../api/v2timgroupmanager/kickgroupmember.md) 接口可以将指定的普通群成员踢出群组。
 
-普通群成员被踢后，全员（包括被踢人）会收到 `onMemberKicked` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_callbacks/OnMemberKickedCallback.html)) 回调。
+普通群成员被踢后，全员（包括被踢人）会收到 [`onMemberKicked`](../../../api/callbacks/onmemberkickedcallback.md) 回调。
 
-由于直播群（AVChatRoom）对进群没有限制，因此直播群（AVChatRoom）没有支持踢人的接口，您可以使用 `muteGroupMember` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/method_channel_im_flutter/MethodChannelIm/muteGroupMember.html) 禁言指定成员达到类似的成员管控的目的。禁言操作参考 [禁言](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/method_channel_im_flutter/MethodChannelIm/muteGroupMember.html)。
+由于直播群（AVChatRoom）对进群没有限制，因此直播群（AVChatRoom）没有支持踢人的接口，您可以使用 [`muteGroupMember`](../../../api/v2timgroupmanager/mutegroupmember.md) 禁言指定成员达到类似的成员管控的目的。禁言操作参考 [禁言](../../../api/v2timgroupmanager/mutegroupmember.md)。
 
 {% hint style="info" %}
 说明：
@@ -123,7 +123,7 @@ groupManager.kickGroupMember(groupID: '',memberList: []);
 
 
 ## 设置管理员
-群主调用 `setGroupMemberRole` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/method_channel_im_flutter/MethodChannelIm/setGroupMemberRole.html)) 可以对陌生人社交群（Public）或临时会议群（Meeting）中的群成员进行管理员授权。
+群主调用 [`setGroupMemberRole`](../../../api/v2timgroupmanager/setgroupmemberrole.md) 可以对陌生人社交群（Public）或临时会议群（Meeting）中的群成员进行管理员授权。
 
 普通成员被授权后，拥有跟管理员同样的权限，例如支持以下操作：
 * 修改群组基本资料
@@ -133,9 +133,9 @@ groupManager.kickGroupMember(groupID: '',memberList: []);
 
 更多详情可参考 [群成员角色介绍](https://cloud.tencent.com/document/product/269/1502#.E7.BE.A4.E6.88.90.E5.91.98.E8.A7.92.E8.89.B2.E4.BB.8B.E7.BB.8D)。
 
-普通成员被授权为管理员后，全员（包括被设置的成员）会收到 `onGrantAdministrator` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_callbacks/OnGrantAdministratorCallback.html)) 回调。
+普通成员被授权为管理员后，全员（包括被设置的成员）会收到 [`onGrantAdministrator`](../../../api/callbacks/ongrantadministratorcallback.md) 回调。
 
-普通成员被取消管理员授权后，全员（包括被设置的成员）会收到 `onRevokeAdministrator` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_callbacks/OnRevokeAdministratorCallback.html)) 回调。
+普通成员被取消管理员授权后，全员（包括被设置的成员）会收到 [`onRevokeAdministrator`](../../../api/callbacks/onrevokeadministratorcallback.md) 回调。
 
 示例代码如下：
 
@@ -159,9 +159,9 @@ TencentImSDKPlugin.v2TIMManager.addGroupListener(listener: V2TimGroupListener(on
 [](id:transfer)
 
 ## 转让群主
-群主可以调用 [transferGroupOwner](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/method_channel_im_flutter/MethodChannelIm/transferGroupOwner.html) 把群主转让给其他群成员。
+群主可以调用 [transferGroupOwner](../../../api/v2timgroupmanager/transfergroupowner.md) 把群主转让给其他群成员。
 
-群主转让后，全员会收到 [onGroupInfoChanged](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/enum_callbacks/OnGroupInfoChangedCallback.html) 回调，其中 `V2TIMGroupChangeInfo` 的 type 为 `V2TIMGroupChangeInfo.V2TIM_GROUP_INFO_CHANGE_TYPE_OWNER`，value 值为新群主的 UserID。
+群主转让后，全员会收到 [onGroupInfoChanged](../../../api/callbacks/ongroupinfochangedcallback.md) 回调，其中 `V2TIMGroupChangeInfo` 的 type 为 `V2TIMGroupChangeInfo.V2TIM_GROUP_INFO_CHANGE_TYPE_OWNER`，value 值为新群主的 UserID。
 
 示例代码如下：
 
@@ -173,7 +173,7 @@ groupManager.transferGroupOwner(groupID: "", userID: "userID");
 
 
 ## 获取群在线人数
-调用 `getGroupOnlineMemberCount` ([dart](https://pub.dev/documentation/tencent_im_sdk_plugin_platform_interface/latest/method_channel_im_flutter/MethodChannelIm/getGroupOnlineMemberCount.html)) 可以获取群在线人数。
+调用 [`getGroupOnlineMemberCount`](../../../api/v2timgroupmanager/getgrouponlinemembercount.md) 可以获取群在线人数。
 
 {% hint style="info" %}
 说明：
@@ -193,5 +193,6 @@ groupManager.getGroupOnlineMemberCount(groupID: '');
 ## 交流与反馈
 
 欢迎加入 QQ 群进行技术交流和反馈问题，QQ 群：**788910197**。
+
 <img style="width: 200px; max-width: inherit; zoom: 50%;" src="https://qcloudimg.tencent-cloud.cn/raw/f351a1640d265047db85ffab1cd086a7.png" />
 

@@ -2,6 +2,7 @@
 
 * [Flutter](README.md)
 * [demo体验](demo-ti-yan.md)
+* [快速入门](kuai-su-ru-men.md)
 
 ## 快速集成
 
@@ -78,7 +79,9 @@
       * [getUsersInfo](uikit-sdk-api/TIMUIKitCore/getUsersInfo.md)
       * [setSelfInfo](uikit-sdk-api/TIMUIKitCore/setSelfInfo.md)
       * [setOfflinePushStatus](uikit-sdk-api/TIMUIKitCore/setOfflinePushStatus.md)
+      * [setDataFromNative](uikit-sdk-api/TIMUIKitCore/setDataFromNative.md)
       * [TIMCallback](uikit-sdk-api/TIMUIKitCore/TIMCallback.md)
+      * [TIMUIKitConfig](uikit-sdk-api/TIMUIKitCore/TIMUIKitConfig.md)
       * [LanguageEnum](uikit-sdk-api/TIMUIKitCore/LanguageEnum.md)
       * [TIMCallbackType](uikit-sdk-api/TIMUIKitCore/TIMCallbackType.md)
       * [AppStatus](uikit-sdk-api/TIMUIKitCore/AppStatus.md)
@@ -386,6 +389,11 @@
     * [OnBlackListAddCallback](api/callbacks/onblacklistaddcallback.md)
     * [OnBlackListDeletedCallback](api/callbacks/onblacklistdeletedcallback.md)
     * [OnConversationChangedCallback](api/callbacks/onconversationchangedcallback.md)
+    * [OnConversationGroupCreated](api/callbacks/OnConversationGroupCreated.md)
+    * [onConversationGroupDeleted](api/callbacks/OnConversationGroupDeleted.md)
+    * [onConversationGroupNameChanged](api/callbacks/OnConversationGroupNameChanged.md)
+    * [onConversationsAddedToGroup](api/callbacks/OnConversationsAddedToGroup.md)
+    * [onConversationsDeletedFromGroup](api/callbacks/onConversationsDeletedFromGroup.md)
     * [OnFriendApplicationListAddedCallback](api/callbacks/onfriendapplicationlistaddedcallback.md)
     * [OnFriendApplicationListDeletedCallback](api/callbacks/onfriendapplicationlistdeletedcallback.md)
     * [OnFriendApplicationListReadCallback](api/callbacks/onfriendapplicationlistreadcallback.md)
@@ -419,6 +427,9 @@
     * [OnRecvNewMessageCallback](api/callbacks/onrecvnewmessagecallback.md)
     * [OnRevokeAdministratorCallback](api/callbacks/onrevokeadministratorcallback.md)
     * [OnSendMessageProgressCallback](api/callbacks/onsendmessageprogresscallback.md)
+    * [OnTopicCreated](api/callbacks/onTopicCreated.md)
+    * [OnTopicDeleted](api/callbacks/onTopicDeleted.md)
+    * [OnTopicInfoChanged](api/callbacks/onTopicInfoChanged.md)
     * [OnTotalUnreadMessageCountChanged](api/callbacks/ontotalunreadmessagecountchanged.md)
     * [OnUserStatusChanged](api/callbacks/onuserstatuschanged.md)
     * [V2TimUserFullInfoCallback](api/callbacks/v2timuserfullinfocallback.md)

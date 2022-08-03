@@ -14,8 +14,9 @@ description: 初始化 SDK√
 2. 设置 [LogLevelEnum](../../api/enums/loglevelenum.md)。
 3. 设置 [V2TimSDKListener](../../api/guan-jian-lei/listener/v2timsdklistener.md)。
 4. 设置 [onTUIKitCallbackListener](TIMCallback.md)。
-5. 调用 initSDK 初始化 SDK。
-6. 在 Android 平台上，IM SDK 的日志在 4.8.50 版本之前默认存储于 /sdcard/tencenet/imsdklogs/应用包名 目录下，4.8.50 及之后的版本存储于 /sdcard/Android/data/包名/files/log/tencent/imsdk 目录下。
+5. 设置 [TIMUIKitConfig](TIMUIKitConfig.md)
+6. 调用 initSDK 初始化 SDK。
+7. 在 Android 平台上，IM SDK 的日志在 4.8.50 版本之前默认存储于 /sdcard/tencenet/imsdklogs/应用包名 目录下，4.8.50 及之后的版本存储于 /sdcard/Android/data/包名/files/log/tencent/imsdk 目录下。
 
 ## 参数详解
 
@@ -26,6 +27,7 @@ description: 初始化 SDK√
 | loglevel | [LogLevelEnum](../../api/enums/loglevelenum.md)                          | 是    | 打印日志等级                                 |
 | listener | [V2TimSDKListener](../../api/guan-jian-lei/listener/v2timsdklistener.md) | 是    | SDK监听器                                       |
 | language | [LanguageEnum](LanguageEnum.md) | 否    | UIKit系统语言                                                |
+| config | [TIMUIKitConfig](TIMUIKitConfig.md) | 否    | UIKit全局设置                                                |
 
 ## 返回值
 
@@ -114,6 +116,7 @@ Future<bool?>
       loglevel: LogLevelEnum.V2TIM_LOG_DEBUG,//打印日志等级
       listener: sdkListener,//SDK监听器
       language: LanguageEnum.en//UIKit系统语言
+      config: TIMUIKitConfig(isShowOnlineStatus: true)//UIKit全局设置
     );
     if (isInitSuccess == null || !isInitSuccess) {
       Utils.toast(imt("即时通信 SDK初始化失败"));
