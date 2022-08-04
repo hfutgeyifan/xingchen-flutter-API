@@ -42,12 +42,12 @@ description: 用于自定义构建用户信息页面不同部分的构造器
 
 ### searchBar
 
-* 参数类型 : Widget Function([V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md) conversation)
+* 参数类型 : Widget Function([V2TimConversation](../../api/keyClass/message/v2timconversation.md) conversation)
 * 参数描述 : 搜索组件（自定义）
 
 ### portraitBar
 
-* 参数类型 : Widget Function([V2TimUserFullInfo](../../api/guan-jian-lei/user/v2timuserfullinfo.md)? userInfo)
+* 参数类型 : Widget Function([V2TimUserFullInfo](../../api/keyClass/user/v2timuserfullinfo.md)? userInfo)
 * 参数描述 : 用户头像栏
 
 ### nicknameBar
@@ -77,35 +77,35 @@ description: 用于自定义构建用户信息页面不同部分的构造器
 
 ### userInfoCard
 
-* 参数类型 : Widget Function([V2TimUserFullInfo](../../api/guan-jian-lei/user/v2timuserfullinfo.md)? userInfo)
+* 参数类型 : Widget Function([V2TimUserFullInfo](../../api/keyClass/user/v2timuserfullinfo.md)? userInfo)
 * 参数描述 : 用户信息卡片
 
 ### addAndDeleteArea
 
-* 参数类型 : Widget Function([V2TimFriendInfo](../../api/guan-jian-lei/user/v2timfriendinfo.md) friendInfo, [V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md) conversation, int friendType, bool isDisturb)
+* 参数类型 : Widget Function([V2TimFriendInfo](../../api/keyClass/user/v2timfriendinfo.md) friendInfo, [V2TimConversation](../../api/keyClass/message/v2timconversation.md) conversation, int friendType, bool isDisturb)
 * 参数描述 : 添加或删除功能
 
 ### customBuilderOne
 
-* 参数类型 : Widget Function(bool isFriend, [V2TimFriendInfo](../../api/guan-jian-lei/user/v2timfriendinfo.md) friendInfo, [V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md) conversation)
+* 参数类型 : Widget Function(bool isFriend, [V2TimFriendInfo](../../api/keyClass/user/v2timfriendinfo.md) friendInfo, [V2TimConversation](../../api/keyClass/message/v2timconversation.md) conversation)
 * 参数描述 : 自定义区域一（自定义）
 
 ### customBuilderTwo
 
-* 参数类型 : Widget Function(bool isFriend, [V2TimFriendInfo](../../api/guan-jian-lei/user/v2timfriendinfo.md) friendInfo, [V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md) conversation)
+* 参数类型 : Widget Function(bool isFriend, [V2TimFriendInfo](../../api/keyClass/user/v2timfriendinfo.md) friendInfo, [V2TimConversation](../../api/keyClass/message/v2timconversation.md) conversation)
 * 参数描述 : 自定义区域二（自定义）
 
 ### customBuilderThree
 
-* 参数类型 : Widget Function(bool isFriend, [V2TimFriendInfo](../../api/guan-jian-lei/user/v2timfriendinfo.md) friendInfo, [V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md) conversation)
+* 参数类型 : Widget Function(bool isFriend, [V2TimFriendInfo](../../api/keyClass/user/v2timfriendinfo.md) friendInfo, [V2TimConversation](../../api/keyClass/message/v2timconversation.md) conversation)
 * 参数描述 : 自定义区域三（自定义）
 
 ### customBuilderFour
 
-* 参数类型 : Widget Function(bool isFriend, [V2TimFriendInfo](../../api/guan-jian-lei/user/v2timfriendinfo.md) friendInfo, [V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md) conversation)
+* 参数类型 : Widget Function(bool isFriend, [V2TimFriendInfo](../../api/keyClass/user/v2timfriendinfo.md) friendInfo, [V2TimConversation](../../api/keyClass/message/v2timconversation.md) conversation)
 * 参数描述 : 自定义区域四（自定义）
 
 ### customBuilderFive
 
-* 参数类型 : Widget Function(bool isFriend, [V2TimFriendInfo](../../api/guan-jian-lei/user/v2timfriendinfo.md) friendInfo, [V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md) conversation)
+* 参数类型 : Widget Function(bool isFriend, [V2TimFriendInfo](../../api/keyClass/user/v2timfriendinfo.md) friendInfo, [V2TimConversation](../../api/keyClass/message/v2timconversation.md) conversation)
 * 参数描述 : 自定义区域五（自定义）

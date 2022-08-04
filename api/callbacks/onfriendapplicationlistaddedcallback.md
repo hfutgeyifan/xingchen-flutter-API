@@ -20,7 +20,7 @@ List<V2TimFriendApplication> applicationList
 
 | 参数名称            | 参数类型                                                                              | 参数描述        |
 | --------------- | --------------------------------------------------------------------------------- | ----------- |
-| applicationList | List< [V2TimFriendApplication](../guan-jian-lei/user/v2timfriendapplication.md) > | 新增的好友请求信息列表 |
+| applicationList | List< [V2TimFriendApplication](../keyClass/user/v2timfriendapplication.md) > | 新增的好友请求信息列表 |
 
 ## 代码示例
 

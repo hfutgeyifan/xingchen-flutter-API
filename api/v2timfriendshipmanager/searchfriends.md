@@ -8,13 +8,13 @@ description: 搜索好友√
 
 搜索好友
 
-* 接口返回本地存储的用户资料，可以根据 [V2TIMFriendInfoResult](../guan-jian-lei/user/v2timfriendinforesult.md) 中的 relation 来判断是否为好友。
+* 接口返回本地存储的用户资料，可以根据 [V2TIMFriendInfoResult](../keyClass/user/v2timfriendinforesult.md) 中的 relation 来判断是否为好友。
 
 ## 参数详解
 
 | 参数名称        | 参数类型                                                                      | 是否必填 | 描述        |
 | ----------- | ------------------------------------------------------------------------- | ---- | --------- |
-| searchParam | [V2TimFriendSearchParam](../guan-jian-lei/user/v2timfriendsearchparam.md) | 是    | 搜索好友的搜索条件 |
+| searchParam | [V2TimFriendSearchParam](../keyClass/user/v2timfriendsearchparam.md) | 是    | 搜索好友的搜索条件 |
 
 ## 返回值
 
@@ -34,7 +34,7 @@ V2TimValueCallback<List<V2TimFriendInfoResult>>
 | ---- | ------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | code | int                                                                             | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                                          | 请求结果描述                                                         |
-| data | List< [V2TimFriendInfoResult](../guan-jian-lei/user/v2timfriendinforesult.md) > | 查询到的结果信息                                                       |
+| data | List< [V2TimFriendInfoResult](../keyClass/user/v2timfriendinforesult.md) > | 查询到的结果信息                                                       |
 
 ## 代码示例
 

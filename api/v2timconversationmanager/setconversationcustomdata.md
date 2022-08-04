@@ -39,7 +39,7 @@ V2TimValueCallback<List<V2TimConversationOperationResult>>
 | ---- | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | code | int                                                                                             | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                                                          | 请求结果描述                                                         |
-| data | List< [V2TimConversationOperationResult](../guan-jian-lei/message/v2timconversationresult.md) > | 设置请求结果列表                                                       |
+| data | List< [V2TimConversationOperationResult](../keyClass/message/v2timconversationresult.md) > | 设置请求结果列表                                                       |
 
 ## 代码示例
 

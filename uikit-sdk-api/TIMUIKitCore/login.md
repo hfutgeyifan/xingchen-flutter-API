@@ -14,8 +14,8 @@ description: 用户登录√
 
 * App 启动后首次使用 IM SDK 的功能。
 * 登录时票据过期：`login` 接口的回调会返回 `ERR_USER_SIG_EXPIRED（6206）` 或 `ERR_SVR_ACCOUNT_USERSIG_EXPIRED（70001）` 错误码，此时请您生成新的 userSig 重新登录。
-* 在线时票据过期：用户在线期间也可能收到 [`onUserSigExpired`](../../api/guan-jian-lei/listener/v2timsdklistener.md) 回调，此时需要您生成新的 userSig 并重新登录。
-* 在线时被踢下线：用户在线情况下被踢，IM SDK 会通过 [`onKickedOffline`](../../api/guan-jian-lei/listener/v2timsdklistener.md) 回调通知给您，此时可以在 UI 提示用户，并调用 `login` 重新登录。
+* 在线时票据过期：用户在线期间也可能收到 [`onUserSigExpired`](../../api/keyClass/listener/v2timsdklistener.md) 回调，此时需要您生成新的 userSig 并重新登录。
+* 在线时被踢下线：用户在线情况下被踢，IM SDK 会通过 [`onKickedOffline`](../../api/keyClass/listener/v2timsdklistener.md) 回调通知给您，此时可以在 UI 提示用户，并调用 `login` 重新登录。
 
 以下场景无需调用 `login` 接口：
 

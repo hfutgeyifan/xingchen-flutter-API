@@ -17,8 +17,8 @@ description: 用于自定义构建整个群组信息页面的构造器
 | 参数名称            | 参数类型                                                                                           | 是否必填 | 描述     |
 | --------------- | ---------------------------------------------------------------------------------------------- | ---- | ------ |
 | context         | BuildContext                                                                                   | 是    | 构造器上下文 |
-| groupInfo       | [V2TimGroupInfo](../../api/guan-jian-lei/group/v2timgroupinfo.md)                              | 是    | 群组信息   |
-| groupMemberList | List< [V2TimGroupMemberFullInfo](../../api/guan-jian-lei/group/v2timgroupmemberfullinfo.md)? > | 是    | 群组成员信息 |
+| groupInfo       | [V2TimGroupInfo](../../api/keyClass/group/v2timgroupinfo.md)                              | 是    | 群组信息   |
+| groupMemberList | List< [V2TimGroupMemberFullInfo](../../api/keyClass/group/v2timgroupmemberfullinfo.md)? > | 是    | 群组成员信息 |
 
 ## 返回值
 

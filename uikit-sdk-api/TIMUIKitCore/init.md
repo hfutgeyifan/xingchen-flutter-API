@@ -12,7 +12,7 @@ description: 初始化 SDK√
 
 1. 准备 [SDKAppID](https://cloud.tencent.com/login)。
 2. 设置 [LogLevelEnum](../../api/enums/loglevelenum.md)。
-3. 设置 [V2TimSDKListener](../../api/guan-jian-lei/listener/v2timsdklistener.md)。
+3. 设置 [V2TimSDKListener](../../api/keyClass/listener/v2timsdklistener.md)。
 4. 设置 [onTUIKitCallbackListener](TIMCallback.md)。
 5. 设置 [TIMUIKitConfig](TIMUIKitConfig.md)
 6. 调用 initSDK 初始化 SDK。
@@ -25,7 +25,7 @@ description: 初始化 SDK√
 | onTUIKitCallbackListener | Function([TIMCallback](TIMCallback.md) TIMCallback)            | 否    | 返回：SDK API 错误/Flutter 报错/一些可能需要弹窗提示用户的场景信息。| 
 | sdkAppID | int                                         | 是    | 应用ID，可在[控制台](https://console.cloud.tencent.com/im)中获取 |
 | loglevel | [LogLevelEnum](../../api/enums/loglevelenum.md)                          | 是    | 打印日志等级                                 |
-| listener | [V2TimSDKListener](../../api/guan-jian-lei/listener/v2timsdklistener.md) | 是    | SDK监听器                                       |
+| listener | [V2TimSDKListener](../../api/keyClass/listener/v2timsdklistener.md) | 是    | SDK监听器                                       |
 | language | [LanguageEnum](LanguageEnum.md) | 否    | UIKit系统语言                                                |
 | config | [TIMUIKitConfig](TIMUIKitConfig.md) | 否    | UIKit全局设置                                                |
 

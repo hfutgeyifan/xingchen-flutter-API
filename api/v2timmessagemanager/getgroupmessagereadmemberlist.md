@@ -43,7 +43,7 @@ V2TimValueCallback<V2TimGroupMessageReadMemberList>
 | ---- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | code | int                                                                                          | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                                                       | 请求结果描述                                                         |
-| data | [V2TimGroupMessageReadMemberList](../guan-jian-lei/group/v2timgroupmessagereadmemberlist.md) | 群消息已读或未读群成员列表                                                  |
+| data | [V2TimGroupMessageReadMemberList](../keyClass/group/v2timgroupmessagereadmemberlist.md) | 群消息已读或未读群成员列表                                                  |
 
 ## 代码示例  &#x20;
 

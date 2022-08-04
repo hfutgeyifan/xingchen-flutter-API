@@ -12,7 +12,7 @@ description: 创建一个信令请求√
 
 | 参数名称 | 参数类型                                                                 | 是否必填 | 描述         |
 | ---- | -------------------------------------------------------------------- | ---- | ---------- |
-| info | [V2TimSignalingInfo](../guan-jian-lei/message/v2timsignalinginfo.md) | 是    | 创建的信令消息的设置 |
+| info | [V2TimSignalingInfo](../keyClass/message/v2timsignalinginfo.md) | 是    | 创建的信令消息的设置 |
 
 ## 返回值
 

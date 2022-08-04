@@ -20,7 +20,7 @@ List<V2TimFriendInfo> users
 
 | 参数名称  | 参数类型                                                                | 参数描述      |
 | ----- | ------------------------------------------------------------------- | --------- |
-| users | List< [V2TimFriendInfo](../guan-jian-lei/user/v2timfriendinfo.md) > | 新增的好友信息列表 |
+| users | List< [V2TimFriendInfo](../keyClass/user/v2timfriendinfo.md) > | 新增的好友信息列表 |
 
 ## 代码示例
 

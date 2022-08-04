@@ -14,9 +14,9 @@ description: 黑名单列表组件
 
 | 参数           | 说明                 | 类型                                                                                                                   | 是否必填 |
 | ------------ | ------------------ | -------------------------------------------------------------------------------------------------------------------- | ---- |
-| onTapItem    | 黑名单用户模块点击触发的函数     | void Function([V2TimFriendInfo](../../api/guan-jian-lei/user/v2timfriendinfo.md) groupInfo)                          | 否    |
+| onTapItem    | 黑名单用户模块点击触发的函数     | void Function([V2TimFriendInfo](../../api/keyClass/user/v2timfriendinfo.md) groupInfo)                          | 否    |
 | emptyBuilder | 黑名单无成员时的样式构造器      | Widget Function(BuildContext context)                                                                                | 否    |
-| itemBuilder  | 用于自定义构建黑名单用户模块的构造器 | Widget Function( BuildContext context, [V2TimFriendInfo](../../api/guan-jian-lei/user/v2timfriendinfo.md) groupInfo) | 否    |
+| itemBuilder  | 用于自定义构建黑名单用户模块的构造器 | Widget Function( BuildContext context, [V2TimFriendInfo](../../api/keyClass/user/v2timfriendinfo.md) groupInfo) | 否    |
 | lifeCycle    | 黑名单列表操作时的钩子函数      | [BlockListLifeCycle](BlockListLifeCycle.md)                                                                          | 否    |
 
 ## 代码示例与效果展示

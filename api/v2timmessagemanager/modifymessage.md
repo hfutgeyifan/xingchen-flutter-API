@@ -31,7 +31,7 @@ description: 消息变更 4.0.1及以后版本支持√
 
 | 参数名称    | 参数类型                                                     | 是否必填 | 描述      |
 | ------- | -------------------------------------------------------- | ---- | ------- |
-| message | [V2TimMessage](../guan-jian-lei/message/v2timmessage.md) | 是    | 需要修改的消息 |
+| message | [V2TimMessage](../keyClass/message/v2timmessage.md) | 是    | 需要修改的消息 |
 
 ## 返回值
 
@@ -55,7 +55,7 @@ V2TimValueCallback<V2TimMessageChangeInfo>
 | ---- | ---------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | code | int                                                                          | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                                       | 请求结果描述                                                         |
-| data | [V2TimMessageChangeInfo](../guan-jian-lei/message/v2timmessagechangeinfo.md) | 修改后的信息                                                         |
+| data | [V2TimMessageChangeInfo](../keyClass/message/v2timmessagechangeinfo.md) | 修改后的信息                                                         |
 
 ## 代码示例  &#x20;
 

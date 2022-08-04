@@ -18,7 +18,7 @@ description: 移除信令监听器√
 
 | 参数名称     | 参数类型                                                                          | 是否必填 | 描述         |
 | -------- | ----------------------------------------------------------------------------- | ---- | ---------- |
-| listener | [V2TimSignalingListener](../guan-jian-lei/listener/v2timsignalinglistener.md) | 是    | 需要移除的信令监听器 |
+| listener | [V2TimSignalingListener](../keyClass/listener/v2timsignalinglistener.md) | 是    | 需要移除的信令监听器 |
 
 ## 返回值
 

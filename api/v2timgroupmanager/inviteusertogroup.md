@@ -43,7 +43,7 @@ V2TimValueCallback<List<V2TimGroupMemberOperationResult>>
 | ---- | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | code | int                                                                                                  | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                                                               | 请求结果描述                                                         |
-| data | List< [V2TimGroupMemberOperationResult](../guan-jian-lei/group/v2timgroupmemberoperationresult.md) > | 每一个用户的请求结果                                                     |
+| data | List< [V2TimGroupMemberOperationResult](../keyClass/group/v2timgroupmemberoperationresult.md) > | 每一个用户的请求结果                                                     |
 
 ## 代码示例
 

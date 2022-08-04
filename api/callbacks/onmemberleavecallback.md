@@ -22,7 +22,7 @@ V2TimGroupMemberInfo member
 | 参数名称    | 参数类型                                                                   | 参数描述  |
 | ------- | ---------------------------------------------------------------------- | ----- |
 | groupID | String                                                                 | 群 ID  |
-| member  | [V2TimGroupMemberInfo](../guan-jian-lei/group/v2timgroupmemberinfo.md) | 离开的成员 |
+| member  | [V2TimGroupMemberInfo](../keyClass/group/v2timgroupmemberinfo.md) | 离开的成员 |
 
 ## 代码示例
 

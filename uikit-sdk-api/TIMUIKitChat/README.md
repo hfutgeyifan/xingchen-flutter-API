@@ -20,18 +20,18 @@ description: 聊天组件
 | onTapAvatar                | 点击头像的回调函数               | void Function(String userID)                                                                                                                                               | 否    |
 | messageItemBuilder         | 用于自定义不同种类消息样式的构造器       | [MessageItemBuilder](MessageItemBuilder.md)                                                                                                                                | 否    |
 | showTotalUnReadCount       | 是否展示当前未读消息总数            | bool                                                                                                                                                                       | 否    |
-| extraTipsActionItemBuilder | 新增的长按弹出消息操作功能的自定义选项的构造器 | Widget? Function([V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md) message, Function() closeTooltip, \[Key? key])                                            | 否    |
+| extraTipsActionItemBuilder | 新增的长按弹出消息操作功能的自定义选项的构造器 | Widget? Function([V2TimMessage](../../api/keyClass/message/v2timmessage.md) message, Function() closeTooltip, \[Key? key])                                            | 否    |
 | draftText                  | 会话的草稿文本                 | String                                                                                                                                                                     | 否    |
-| initFindingMsg             | 进入页面需要查询的消息             | [V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md)                                                                                                            | 否    |
+| initFindingMsg             | 进入页面需要查询的消息             | [V2TimMessage](../../api/keyClass/message/v2timmessage.md)                                                                                                            | 否    |
 | textFieldHintText          | 输入框默认提示语                | String                                                                                                                                                                     | 否    |
 | appBarConfig               | 上方抬头栏设置                 | AppBar                                                                                                                                                                     | 否    |
 | mainHistoryListConfig      | 历史消息列表的ListView配置       | [TIMUIKitHistoryMessageListConfig](TIMUIKitHistoryMessageListConfig.md)                                                                                                                                           | 否    |
 | morePanelConfig            | 更多操作选项设置                | [MorePanelConfig](MorePanelConfig.md)                                                                                                                                      | 否    |
 | tongueItemBuilder          | 小舌头构造器（右下角按钮提示框样式构造器）   | Widget Function( [VoidCallback](../../api/callbacks/voidcallback.md) onClick, [MessageListTongueType](MessageListTongueType.md) valueType, int unreadCount)                | 否    |
-| groupAtInfoList            | 群组消息@信息列表               | List< [V2TimGroupAtInfo](../../api/guan-jian-lei/group/v2timgroupatinfo.md)? >                                                                                             | 否    |
+| groupAtInfoList            | 群组消息@信息列表               | List< [V2TimGroupAtInfo](../../api/keyClass/group/v2timgroupatinfo.md)? >                                                                                             | 否    |
 | config                     | 消息页面设置                  | [TIMUIKitChatConfig](TIMUIKitChatConfig.md)                                                                                                                                | 否    |
 | onDealWithGroupApplication | 点击处理加群申请后的回调函数          | ValueChanged< String >                                                                                                                                                     | 否    |
-| abstractMessageBuilder     | 针对不同类型消息概述构造器           | String Function([V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md) message)                                                                                   | 否    |
+| abstractMessageBuilder     | 针对不同类型消息概述构造器           | String Function([V2TimMessage](../../api/keyClass/message/v2timmessage.md) message)                                                                                   | 否    |
 | toolTipsConfig             | 长按消息显示的消息操作选项设置         | [ToolTipsConfig](ToolTipsConfig.md)                                                                                                                                        | 否    |
 | lifeCycle                  | 聊天消息操作时的钩子函数            | [ChatLifeCycle](ChatLifeCycle.md)                                                                                                                                          | 否    |
 | topFixWidget               | 聊天页面上方自定义widget         | Widget                                                                                                                                                                     | 否    |
@@ -276,7 +276,7 @@ extraTipsActionItemBuilder为新增的长按弹出消息操作功能的自定义
 draftText为会话的草稿文本
 
 * 代码示例为使用draftText做到自定义会话的草稿文本。
-* 您也可以通过[setConversationDraft](../../api/v2timconversationmanager/setconversationdraft.md)为一个会话设置草稿文本，通过会话属性中的[draftText](../../api/guan-jian-lei/message/v2timconversation.md)来获取会话草稿。
+* 您也可以通过[setConversationDraft](../../api/v2timconversationmanager/setconversationdraft.md)为一个会话设置草稿文本，通过会话属性中的[draftText](../../api/keyClass/message/v2timconversation.md)来获取会话草稿。
 
 #### 代码示例
 

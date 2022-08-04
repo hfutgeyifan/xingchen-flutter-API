@@ -40,7 +40,7 @@ V2TimValueCallback<List<V2TimGroupInfo>>
 | ---- | ------------------------------------------------------------------ | -------------------------------------------------------------- |
 | code | int                                                                | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                             | 请求结果描述                                                         |
-| data | List< [V2TimGroupInfo](../guan-jian-lei/group/v2timgroupinfo.md) > | 查询到的群组列表                                                       |
+| data | List< [V2TimGroupInfo](../keyClass/group/v2timgroupinfo.md) > | 查询到的群组列表                                                       |
 
 ## 代码示例
 

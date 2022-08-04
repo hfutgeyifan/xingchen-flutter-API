@@ -21,7 +21,7 @@ OnConversationGroupCreated = void Function(
 | 参数名称             | 参数类型                                                                       | 参数描述    |
 | ---------------- | -------------------------------------------------------------------------- | ------- |
 | groupName | String | 创建的会话分组名 |
-| conversationList | List< [V2TimConversation](../guan-jian-lei/message/v2timconversation.md) > | 创建的会话分组中的初始化会话列表 |
+| conversationList | List< [V2TimConversation](../keyClass/message/v2timconversation.md) > | 创建的会话分组中的初始化会话列表 |
 
 ## 代码示例
 

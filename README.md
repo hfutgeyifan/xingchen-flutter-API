@@ -32,7 +32,7 @@
 | [V2TIMConversationManager](api/v2timconversationmanager/README.md) | 会话接口，包含了会话的获取，删除和更新的逻辑                      |
 | [V2TIMFriendshipManager](api/v2timfriendshipmanager/README.md)     | 关系链接口，包含了好友的添加和删除，黑名单的添加和删除等逻辑              |
 | [V2TIMOfflinePushManager](api/v2timofflinepushmanager/README.md)   | 提供离线推送相关的接口                                 |
-| [关键类](api/guan-jian-lei/README.md)                                 | IM API中使用到的数据类型                             |
+| [关键类](api/keyClass/README.md)                                 | IM API中使用到的数据类型                             |
 | [Enums](api/enums/README.md)                                       | IM API中使用到的枚举类型                             |
 | [callbacks](api/callbacks/README.md)                               | IM API中使用到的回调函数类型                           |
 
@@ -40,6 +40,6 @@
 
 [IM-flutter 首页](https://cloud.tencent.com/document/product/269)
 
-[IM-flutter 快速入门](kuai-su-ru-men.md)
+[IM-flutter 快速入门](quickStart.md)
 
 [IM-flutter github案例](https://github.com/TencentCloud/TIMSDK/tree/master/Flutter/IMSDK/im-flutter-plugin/tencent_im_sdk_plugin)

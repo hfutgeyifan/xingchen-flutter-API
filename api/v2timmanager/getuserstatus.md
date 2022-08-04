@@ -40,7 +40,7 @@ V2TimValueCallback<List<V2TimUserStatus>>
 | ---- | ------------------------------------------------------------------- | -------------------------------------------------------------- |
 | code | int                                                                 | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                              | 请求结果描述                                                         |
-| data | List< [V2TimUserStatus](../guan-jian-lei/user/v2timuserstatus.md) > | 查询到的用户在线状态列表                                                   |
+| data | List< [V2TimUserStatus](../keyClass/user/v2timuserstatus.md) > | 查询到的用户在线状态列表                                                   |
 
 ## 代码示例  &#x20;
 

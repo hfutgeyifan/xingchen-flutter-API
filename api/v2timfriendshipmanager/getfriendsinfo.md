@@ -8,7 +8,7 @@ description: 获取指定好友资料√
 
 获取指定好友资料
 
-* 从回调信息中通过 [`V2TIMFriendInfoResult`](../guan-jian-lei/user/v2timfriendinforesult.md) 的 `relation` 字段可以得到该用户与自己的关系。
+* 从回调信息中通过 [`V2TIMFriendInfoResult`](../keyClass/user/v2timfriendinforesult.md) 的 `relation` 字段可以得到该用户与自己的关系。
 
 {% hint style="info" %}
 注意：
@@ -40,7 +40,7 @@ V2TimValueCallback<List<V2TimFriendInfoResult>>
 | ---- | ------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | code | int                                                                             | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                                          | 请求结果描述                                                         |
-| data | List< [V2TimFriendInfoResult](../guan-jian-lei/user/v2timfriendinforesult.md) > | 查询到的结果信息                                                       |
+| data | List< [V2TimFriendInfoResult](../keyClass/user/v2timfriendinforesult.md) > | 查询到的结果信息                                                       |
 
 ## 代码示例
 

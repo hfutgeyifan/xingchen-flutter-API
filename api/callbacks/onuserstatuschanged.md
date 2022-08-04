@@ -24,7 +24,7 @@ List<V2TimUserStatus> userStatusList
 
 | 参数名称           | 参数类型                                                                | 参数描述        |
 | -------------- | ------------------------------------------------------------------- | ----------- |
-| userStatusList | List< [V2TimUserStatus](../guan-jian-lei/user/v2timuserstatus.md) > | 用户状态变化的用户列表 |
+| userStatusList | List< [V2TimUserStatus](../keyClass/user/v2timuserstatus.md) > | 用户状态变化的用户列表 |
 
 ## 代码示例
 

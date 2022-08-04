@@ -32,7 +32,7 @@ description: 创建自定义群组√
 | faceUrl        | String                                                                   | 否    | 群头像Url        |
 | isAllMuted     | bool                                                                     | 否    | 是否全体禁言        |
 | addOpt         | [GroupAddOptTypeEnum](../enums/groupaddopttypeenum.md)                   | 否    | 加群选项          |
-| memberList     | List<  [V2TimGroupMember](../guan-jian-lei/group/v2timgroupmember.md)  > | 否    | 初始成员列表        |
+| memberList     | List<  [V2TimGroupMember](../keyClass/group/v2timgroupmember.md)  > | 否    | 初始成员列表        |
 | isSupportTopic | bool                                                                     | 否    | 是否支持话题        |
 
 ## 返回值

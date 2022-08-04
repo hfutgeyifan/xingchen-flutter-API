@@ -20,7 +20,7 @@ V2TimUserFullInfo info
 
 | 参数名称 | 参数类型                                                            | 参数描述    |
 | ---- | --------------------------------------------------------------- | ------- |
-| info | [V2TimUserFullInfo](../guan-jian-lei/user/v2timuserfullinfo.md) | 登录用户的资料 |
+| info | [V2TimUserFullInfo](../keyClass/user/v2timuserfullinfo.md) | 登录用户的资料 |
 
 ## 代码示例
 

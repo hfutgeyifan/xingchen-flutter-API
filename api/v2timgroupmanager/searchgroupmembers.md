@@ -20,7 +20,7 @@ web 不支持搜索
 
 | 参数名称  | 参数类型                                                                                 | 是否必填 | 描述         |
 | ----- | ------------------------------------------------------------------------------------ | ---- | ---------- |
-| param | [V2TimGroupMemberSearchParam](../guan-jian-lei/group/v2timgroupmembersearchparam.md) | 是    | 搜索群成员的搜索参数 |
+| param | [V2TimGroupMemberSearchParam](../keyClass/group/v2timgroupmembersearchparam.md) | 是    | 搜索群成员的搜索参数 |
 
 ## 返回值
 
@@ -42,7 +42,7 @@ V2TimValueCallback<V2GroupMemberInfoSearchResult>
 | ---- | ---------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | code | int                                                                                      | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                                                   | 请求结果描述                                                         |
-| data | [V2GroupMemberInfoSearchResult](../guan-jian-lei/group/v2groupmemberinfosearchresult.md) | 群成员搜索结果                                                        |
+| data | [V2GroupMemberInfoSearchResult](../keyClass/group/v2groupmemberinfosearchresult.md) | 群成员搜索结果                                                        |
 
 ## 代码示例
 

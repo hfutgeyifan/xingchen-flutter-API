@@ -14,7 +14,7 @@ description: 搜索群资料√
 
 | 参数名称        | 参数类型                                                                     | 是否必填 | 描述       |
 | ----------- | ------------------------------------------------------------------------ | ---- | -------- |
-| searchParam | [V2TimGroupSearchParam](../guan-jian-lei/group/v2timgroupsearchparam.md) | 是    | 搜索群的搜索参数 |
+| searchParam | [V2TimGroupSearchParam](../keyClass/group/v2timgroupsearchparam.md) | 是    | 搜索群的搜索参数 |
 
 ## 返回值
 
@@ -34,7 +34,7 @@ V2TimValueCallback<List<V2TimGroupInfo>>
 | ---- | ------------------------------------------------------------------ | -------------------------------------------------------------- |
 | code | int                                                                | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                             | 请求结果描述                                                         |
-| data | List< [V2TimGroupInfo](../guan-jian-lei/group/v2timgroupinfo.md) > | 搜索到的群消息列表                                                      |
+| data | List< [V2TimGroupInfo](../keyClass/group/v2timgroupinfo.md) > | 搜索到的群消息列表                                                      |
 
 ## 代码示例
 

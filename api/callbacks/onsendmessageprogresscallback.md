@@ -21,7 +21,7 @@ int progress
 
 | 参数名称     | 参数类型                                                     | 参数描述         |
 | -------- | -------------------------------------------------------- | ------------ |
-| message  | [V2TimMessage](../guan-jian-lei/message/v2timmessage.md) | 上传文件的消息属性    |
+| message  | [V2TimMessage](../keyClass/message/v2timmessage.md) | 上传文件的消息属性    |
 | progress | int                                                      | 文件上传进度 0-100 |
 
 ## 代码示例

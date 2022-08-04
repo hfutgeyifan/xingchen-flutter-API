@@ -15,11 +15,11 @@ description: 发送回复消息√
 | id                        | String                                                         | 是    | 发送的回复消息的id     |
 | receiver                  | String                                                         | 是    | 单聊消息接收者 userID |
 | groupID                   | String                                                         | 是    | 群聊 groupID     |
-| replyMessage              | [V2TimMessage](../guan-jian-lei/message/v2timmessage.md)       | 是    | 被回复的消息         |
+| replyMessage              | [V2TimMessage](../keyClass/message/v2timmessage.md)       | 是    | 被回复的消息         |
 | priority                  | [MessagePriorityEnum](../enums/messagepriority.md)             | 否    | 消息优先级          |
 | onlineUserOnly            | bool                                                           | 否    | 是否只有在线用户才能收到   |
 | needReadReceipt           | bool                                                           | 否    | 消息是否需要已读回执     |
-| offlinePushInfo           | [OfflinePushInfo](../guan-jian-lei/message/offlinepushinfo.md) | 否    | 离线推送信息         |
+| offlinePushInfo           | [OfflinePushInfo](../keyClass/message/offlinepushinfo.md) | 否    | 离线推送信息         |
 | isExcludedFromUnreadCount | bool                                                           | 否    | 发送消息是否计入会话未读数  |
 | localCustomData           | String                                                         | 否    | 消息本地数据         |
 
@@ -80,7 +80,7 @@ V2TimValueCallback<V2TimMessage>
 | ---- | -------------------------------------------------------- | -------------------------------------------------------------- |
 | code | int                                                      | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                   | 请求结果描述                                                         |
-| data | [V2TimMessage](../guan-jian-lei/message/v2timmessage.md) | 创建的回复信息                                                        |
+| data | [V2TimMessage](../keyClass/message/v2timmessage.md) | 创建的回复信息                                                        |
 
 ## 代码示例  &#x20;
 

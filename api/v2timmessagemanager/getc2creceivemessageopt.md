@@ -36,7 +36,7 @@ V2TimValueCallback<List<V2TimReceiveMessageOptInfo>>
 | ---- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | code | int                                                                                          | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                                                       | 请求结果描述                                                         |
-| data | List< [V2TimReceiveMessageOptInfo](../guan-jian-lei/message/v2timreceivemessageoptinfo.md) > | 查询到的消息接收选项列表                                                   |
+| data | List< [V2TimReceiveMessageOptInfo](../keyClass/message/v2timreceivemessageoptinfo.md) > | 查询到的消息接收选项列表                                                   |
 
 ## 代码示例  &#x20;
 

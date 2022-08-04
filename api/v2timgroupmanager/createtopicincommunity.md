@@ -21,7 +21,7 @@ web版本不支持
 | 参数名称      | 参数类型                                                       | 是否必填 | 描述          |
 | --------- | ---------------------------------------------------------- | ---- | ----------- |
 | groupID   | String                                                     | 是    | 需要创建话题的群组id |
-| topicInfo | [V2TimTopicInfo](../guan-jian-lei/topic/v2timtopicinfo.md) | 是    | 创建话题的设置     |
+| topicInfo | [V2TimTopicInfo](../keyClass/topic/v2timtopicinfo.md) | 是    | 创建话题的设置     |
 
 ## 返回值
 

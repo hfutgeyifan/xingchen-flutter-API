@@ -20,7 +20,7 @@ OnTopicInfoChanged = void Function(
 | 参数名称       | 参数类型                                                                           | 参数描述    |
 | ---------- | ------------------------------------------------------------------------------ | ------- |
 | groupID    | String                                                                         | 话题信息更新的群组id   |
-| topicInfo    | [V2TimTopicInfo](../guan-jian-lei/topic/v2timtopicinfo.md)          | 话题信息更新的属性     |
+| topicInfo    | [V2TimTopicInfo](../keyClass/topic/v2timtopicinfo.md)          | 话题信息更新的属性     |
 
 ## 代码示例
 

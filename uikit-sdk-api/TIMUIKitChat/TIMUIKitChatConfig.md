@@ -87,12 +87,12 @@ description: 消息页面设置
 
 ### notificationBody
 
-* 参数类型 : String Function([V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md) message, String convID, [ConvType](ConvType.md) convType)
+* 参数类型 : String Function([V2TimMessage](../../api/keyClass/message/v2timmessage.md) message, String convID, [ConvType](ConvType.md) convType)
 * 参数描述 : 离线推送消息样式构造器
 
 ### notificationExt
 
-* 参数类型 : String Function([V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md) message, String convID, [ConvType](ConvType.md) convType)
+* 参数类型 : String Function([V2TimMessage](../../api/keyClass/message/v2timmessage.md) message, String convID, [ConvType](ConvType.md) convType)
 * 参数描述 : 离线推送消息的额外信息
 
 ### urlPreviewType

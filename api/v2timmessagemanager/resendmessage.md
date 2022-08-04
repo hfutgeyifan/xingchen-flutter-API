@@ -77,7 +77,7 @@ V2TimValueCallback<V2TimMessage>
 | ---- | -------------------------------------------------------- | -------------------------------------------------------------- |
 | code | int                                                      | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                   | 请求结果描述                                                         |
-| data | [V2TimMessage](../guan-jian-lei/message/v2timmessage.md) | 重发后的消息                                                         |
+| data | [V2TimMessage](../keyClass/message/v2timmessage.md) | 重发后的消息                                                         |
 
 ## 代码示例  &#x20;
 

@@ -21,7 +21,7 @@ OnConversationsDeletedFromGroup = void Function(
 | 参数名称             | 参数类型                                                                       | 参数描述    |
 | ---------------- | -------------------------------------------------------------------------- | ------- |
 | groupName | String | 被删除的会话的分组名 |
-| conversationList | List< [V2TimConversation](../guan-jian-lei/message/v2timconversation.md) > | 删除的会话列表 |
+| conversationList | List< [V2TimConversation](../keyClass/message/v2timconversation.md) > | 删除的会话列表 |
 
 ## 代码示例
 

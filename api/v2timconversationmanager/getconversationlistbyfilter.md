@@ -12,7 +12,7 @@ description: 获取会话列表的高级接口
 
 | 参数名称   | 参数类型                                                                                             | 是否必填 | 描述      |
 | ------ | ------------------------------------------------------------------------------------------------ | ---- | ------- |
-| filter | [V2TimConversationListFilter](../../sdkapi/guan-jian-lei/message/v2timconversationlistfilter.md) | 是    | 会话列表过滤器 |
+| filter | [V2TimConversationListFilter](../../sdkapi/keyClass/message/v2timconversationlistfilter.md) | 是    | 会话列表过滤器 |
 
 ## 返回值
 
@@ -36,7 +36,7 @@ V2TimValueCallback<V2TimConversationResult>
 | ---- | ------------------------------------------------------------------------------ | -------------------------------------------------------------- |
 | code | int                                                                            | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                                         | 请求结果描述                                                         |
-| data | [V2TimConversationResult](../guan-jian-lei/message/v2timconversationresult.md) | 此次拉取到的消息信息                                                     |
+| data | [V2TimConversationResult](../keyClass/message/v2timconversationresult.md) | 此次拉取到的消息信息                                                     |
 
 ## 代码示例
 

@@ -18,7 +18,7 @@ web不支持该接口
 
 | 参数名称        | 参数类型                                                                           | 是否必填 | 描述     |
 | ----------- | ------------------------------------------------------------------------------ | ---- | ------ |
-| searchParam | [V2TimMessageSearchParam](../guan-jian-lei/message/v2timmessagesearchparam.md) | 是    | 搜索设置参数 |
+| searchParam | [V2TimMessageSearchParam](../keyClass/message/v2timmessagesearchparam.md) | 是    | 搜索设置参数 |
 
 ## 返回值
 
@@ -41,7 +41,7 @@ V2TimValueCallback<V2TimMessageSearchResult>
 | ---- | -------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | code | int                                                                              | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                                           | 请求结果描述                                                         |
-| data | [V2TimMessageSearchResult](../guan-jian-lei/message/v2timmessagesearchresult.md) | 符合搜索条件的所有信息                                                    |
+| data | [V2TimMessageSearchResult](../keyClass/message/v2timmessagesearchresult.md) | 符合搜索条件的所有信息                                                    |
 
 ## 代码示例  &#x20;
 

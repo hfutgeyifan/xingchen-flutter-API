@@ -18,7 +18,7 @@ description: 移除群组监听器√
 
 | 参数名称     | 参数类型                                                                  | 是否必填 | 描述         |
 | -------- | --------------------------------------------------------------------- | ---- | ---------- |
-| listener | [V2TimGroupListener](../guan-jian-lei/listener/v2timgrouplistener.md) | 是    | 需要移除的群组监听器 |
+| listener | [V2TimGroupListener](../keyClass/listener/v2timgrouplistener.md) | 是    | 需要移除的群组监听器 |
 
 ## 返回值
 

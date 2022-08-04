@@ -22,7 +22,7 @@ List<V2TimConversation> conversationList
 
 | 参数名称             | 参数类型                                                                       | 参数描述    |
 | ---------------- | -------------------------------------------------------------------------- | ------- |
-| conversationList | List< [V2TimConversation](../guan-jian-lei/message/v2timconversation.md) > | 改变的会话列表 |
+| conversationList | List< [V2TimConversation](../keyClass/message/v2timconversation.md) > | 改变的会话列表 |
 
 ## 代码示例
 

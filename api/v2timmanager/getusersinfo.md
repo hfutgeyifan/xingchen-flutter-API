@@ -40,7 +40,7 @@ V2TimValueCallback<List<V2TimUserFullInfo>>
 | ---- | ----------------------------------------------------------------------- | -------------------------------------------------------------- |
 | code | int                                                                     | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                                  | 请求结果描述                                                         |
-| data | List< [V2TimUserFullInfo](../guan-jian-lei/user/v2timuserfullinfo.md) > | 查询到的用户资料列表                                                     |
+| data | List< [V2TimUserFullInfo](../keyClass/user/v2timuserfullinfo.md) > | 查询到的用户资料列表                                                     |
 
 ## 代码示例  &#x20;
 

@@ -41,7 +41,7 @@ V2TimValueCallback<V2TimGroupApplicationResult>
 | ---- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------- |
 | code | int                                                                                  | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                                               | 请求结果描述                                                         |
-| data | [V2TimGroupApplicationResult](../guan-jian-lei/group/v2timgroupapplicationresult.md) | 查询到的申请加群信息                                                     |
+| data | [V2TimGroupApplicationResult](../keyClass/group/v2timgroupapplicationresult.md) | 查询到的申请加群信息                                                     |
 
 ## 代码示例
 

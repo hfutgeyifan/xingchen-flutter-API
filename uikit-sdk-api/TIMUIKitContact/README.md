@@ -14,7 +14,7 @@ description: 好友列表组件
 
 | 参数                 | 说明                   | 类型                                                                                     | 是否必填 |
 | ------------------ | -------------------- | -------------------------------------------------------------------------------------- | ---- |
-| onTapItem          | 用户模块点击触发的函数          | void Function([V2TimFriendInfo](../../api/guan-jian-lei/user/v2timfriendinfo.md) item) | 否    |
+| onTapItem          | 用户模块点击触发的函数          | void Function([V2TimFriendInfo](../../api/keyClass/user/v2timfriendinfo.md) item) | 否    |
 | topList            | 好友列表页面顶部模块           | List< [TopListItem](TopListItem.md) >                                                  | 否    |
 | topListItemBuilder | 用于自定义构好友列表页面顶部模块的构造器 | Widget? Function([TopListItem](TopListItem.md) item)                                   | 否    |
 | emptyBuilder       | 无好友时的样式构造器           | Widget Function(BuildContext context)                                                  | 否    |

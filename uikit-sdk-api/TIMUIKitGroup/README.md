@@ -14,10 +14,10 @@ description: 群组列表组件
 
 | 参数             | 说明              | 类型                                                                                                                  | 是否必填 |
 | -------------- | --------------- | ------------------------------------------------------------------------------------------------------------------- | ---- |
-| onTapItem      | 群组模块点击触发的函数     | void Function([V2TimGroupInfo](../../api/guan-jian-lei/group/v2timgroupinfo.md) groupInfo)                          | 否    |
+| onTapItem      | 群组模块点击触发的函数     | void Function([V2TimGroupInfo](../../api/keyClass/group/v2timgroupinfo.md) groupInfo)                          | 否    |
 | emptyBuilder   | 无群组时的样式构造器      | Widget Function(BuildContext context)                                                                               | 否    |
-| itemBuilder    | 用于自定义构建群组模块的构造器 | Widget Function( BuildContext context, [V2TimGroupInfo](../../api/guan-jian-lei/group/v2timgroupinfo.md) groupInfo) | 否    |
-| groupCollector | 群组列表展示的过滤器      | bool Function([V2TimGroupInfo](../../api/guan-jian-lei/group/v2timgroupinfo.md)? groupInfo)                         | 否    |
+| itemBuilder    | 用于自定义构建群组模块的构造器 | Widget Function( BuildContext context, [V2TimGroupInfo](../../api/keyClass/group/v2timgroupinfo.md) groupInfo) | 否    |
+| groupCollector | 群组列表展示的过滤器      | bool Function([V2TimGroupInfo](../../api/keyClass/group/v2timgroupinfo.md)? groupInfo)                         | 否    |
 
 ## 代码示例与效果展示
 

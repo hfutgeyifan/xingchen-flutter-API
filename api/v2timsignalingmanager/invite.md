@@ -16,7 +16,7 @@ description: 邀请某个人√
 | data            | String                                                         | 是    | 邀请时附带的定义消息 |
 | timeout         | int                                                            | 否    | 邀请超时时间（单位 秒） 默认为30秒，若传0则表示永不失效。    |
 | onlineUserOnly  | bool                                                           | 否    | 是否只发给在线用户  |
-| offlinePushInfo | [OfflinePushInfo](../guan-jian-lei/message/offlinepushinfo.md) | 否    | 离线推送设置     |
+| offlinePushInfo | [OfflinePushInfo](../keyClass/message/offlinepushinfo.md) | 否    | 离线推送设置     |
 
 ## 返回值
 

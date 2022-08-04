@@ -41,7 +41,7 @@ V2TimValueCallback<List<V2TimMessageReceipt>>
 | ---- | ------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | code | int                                                                             | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                                          | 请求结果描述                                                         |
-| data | List< [V2TimMessageReceipt](../guan-jian-lei/message/v2timmessagereceipt.md)  > | 消息已读回执信息列表                                                     |
+| data | List< [V2TimMessageReceipt](../keyClass/message/v2timmessagereceipt.md)  > | 消息已读回执信息列表                                                     |
 
 ## 代码示例  &#x20;
 

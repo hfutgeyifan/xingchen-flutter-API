@@ -1,0 +1,6106 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ReceiveMsgOptEnum · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="用户接收消息设置类型">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-bookstyle/book.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="simplemsglistenertype.html" />
+    
+    
+    <link rel="prev" href="messagestatus.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+	<div class="header-inner">
+		<!-- LOGO -->
+		<div class="logo"></div>
+		<span class="title"></span>
+
+		<!-- Search -->
+		
+
+		<!-- Nav -->
+		<ul class="header-nav">
+			
+		</ul>
+	</div>
+
+	<div class="book-summary">
+		<!-- <div class="book-summary-title">文档目录</div> -->
+		
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+		
+		
+		<nav role="navigation">
+			
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Flutter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../demoExperience.html">
+            
+                <a href="../../demoExperience.html">
+            
+                    
+                    demo体验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../quickStart.html">
+            
+                <a href="../../quickStart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">快速集成</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../quickIntegration/tuikit/">
+            
+                <a href="../../quickIntegration/tuikit/">
+            
+                    
+                    TUIKit 快速集成方案（推荐）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../quickIntegration/tuikit/pluginMarketplaceGuide.html">
+            
+                <a href="../../quickIntegration/tuikit/pluginMarketplaceGuide.html">
+            
+                    
+                    插件市场使用指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../quickIntegration/tuikit/fastIntegrationSolution.html">
+            
+                <a href="../../quickIntegration/tuikit/fastIntegrationSolution.html">
+            
+                    
+                    快速集成方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../quickIntegration/tuikit/UICompositionDocumentation.html">
+            
+                <a href="../../quickIntegration/tuikit/UICompositionDocumentation.html">
+            
+                    
+                    UI 组成文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../quickIntegration/tuikit/audioAndVideoCallPluginIntegration.html">
+            
+                <a href="../../quickIntegration/tuikit/audioAndVideoCallPluginIntegration.html">
+            
+                    
+                    音视频通话插件集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../quickIntegration/tuikit/manufacturerMessagePushPluginIntegration.html">
+            
+                <a href="../../quickIntegration/tuikit/manufacturerMessagePushPluginIntegration.html">
+            
+                    
+                    厂商消息推送插件集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../../quickIntegration/tuikit/customEmojiPluginIntegration.html">
+            
+                <a href="../../quickIntegration/tuikit/customEmojiPluginIntegration.html">
+            
+                    
+                    自定义表情插件集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../../quickIntegration/tuikit/geolocationPluginIntegration.html">
+            
+                <a href="../../quickIntegration/tuikit/geolocationPluginIntegration.html">
+            
+                    
+                    地理位置插件集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../quickIntegration/selfImplementingUI/">
+            
+                <a href="../../quickIntegration/selfImplementingUI/">
+            
+                    
+                    自实现 UI 快速集成方案
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../../quickIntegration/selfImplementingUI/integratedSDK.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/integratedSDK.html">
+            
+                    
+                    集成 SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../../quickIntegration/selfImplementingUI/initialization.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/initialization.html">
+            
+                    
+                    初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../../quickIntegration/selfImplementingUI/loginAndlogout.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/loginAndlogout.html">
+            
+                    
+                    登录登出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../../quickIntegration/selfImplementingUI/messageRelatedOperations/">
+            
+                <a href="../../quickIntegration/selfImplementingUI/messageRelatedOperations/">
+            
+                    
+                    消息相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.4.1" data-path="../../quickIntegration/selfImplementingUI/messageRelatedOperations/messageIntroduction.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/messageRelatedOperations/messageIntroduction.html">
+            
+                    
+                    消息介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4.2" data-path="../../quickIntegration/selfImplementingUI/messageRelatedOperations/sendMessage.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/messageRelatedOperations/sendMessage.html">
+            
+                    
+                    发送消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4.3" data-path="../../quickIntegration/selfImplementingUI/messageRelatedOperations/receiveMessage.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/messageRelatedOperations/receiveMessage.html">
+            
+                    
+                    接收消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4.4" data-path="../../quickIntegration/selfImplementingUI/messageRelatedOperations/historyMessage.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/messageRelatedOperations/historyMessage.html">
+            
+                    
+                    历史消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4.5" data-path="../../quickIntegration/selfImplementingUI/messageRelatedOperations/forwardMessage.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/messageRelatedOperations/forwardMessage.html">
+            
+                    
+                    转发消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4.6" data-path="../../quickIntegration/selfImplementingUI/messageRelatedOperations/modifyMessage.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/messageRelatedOperations/modifyMessage.html">
+            
+                    
+                    消息变更
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4.7" data-path="../../quickIntegration/selfImplementingUI/messageRelatedOperations/insertMessage.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/messageRelatedOperations/insertMessage.html">
+            
+                    
+                    插入消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4.8" data-path="../../quickIntegration/selfImplementingUI/messageRelatedOperations/deleteMessage.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/messageRelatedOperations/deleteMessage.html">
+            
+                    
+                    删除消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4.9" data-path="../../quickIntegration/selfImplementingUI/messageRelatedOperations/clearMessage.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/messageRelatedOperations/clearMessage.html">
+            
+                    
+                    清空消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4.10" data-path="../../quickIntegration/selfImplementingUI/messageRelatedOperations/revokeMessage.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/messageRelatedOperations/revokeMessage.html">
+            
+                    
+                    撤回消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4.11" data-path="../../quickIntegration/selfImplementingUI/messageRelatedOperations/onlineMessage.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/messageRelatedOperations/onlineMessage.html">
+            
+                    
+                    在线消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4.12" data-path="../../quickIntegration/selfImplementingUI/messageRelatedOperations/messageReadReceipt.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/messageRelatedOperations/messageReadReceipt.html">
+            
+                    
+                    已读回执
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4.13" data-path="../../quickIntegration/selfImplementingUI/messageRelatedOperations/groupAtMessage.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/messageRelatedOperations/groupAtMessage.html">
+            
+                    
+                    群 @ 消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4.14" data-path="../../quickIntegration/selfImplementingUI/messageRelatedOperations/groupDirectedMessage.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/messageRelatedOperations/groupDirectedMessage.html">
+            
+                    
+                    群定向消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4.15" data-path="../../quickIntegration/selfImplementingUI/messageRelatedOperations/messageDisturb.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/messageRelatedOperations/messageDisturb.html">
+            
+                    
+                    消息免打扰
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/">
+            
+                <a href="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/">
+            
+                    
+                    会话相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.5.1" data-path="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/conversationIntroduction.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/conversationIntroduction.html">
+            
+                    
+                    会话介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5.2" data-path="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/conversationList.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/conversationList.html">
+            
+                    
+                    会话列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5.3" data-path="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/getConversation.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/getConversation.html">
+            
+                    
+                    获取会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5.4" data-path="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/conversationUnreadCount.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/conversationUnreadCount.html">
+            
+                    
+                    会话未读数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5.5" data-path="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/pinConversation.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/pinConversation.html">
+            
+                    
+                    置顶会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5.6" data-path="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/deleteConversation.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/deleteConversation.html">
+            
+                    
+                    删除会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5.7" data-path="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/conversationDraft.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/conversationDraft.html">
+            
+                    
+                    会话草稿
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5.8" data-path="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/markConversation.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/markConversation.html">
+            
+                    
+                    会话标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5.9" data-path="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/conversationGroups.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/conversationRelatedOperations/conversationGroups.html">
+            
+                    
+                    会话分组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../../quickIntegration/selfImplementingUI/groupsRelatedOperations/">
+            
+                <a href="../../quickIntegration/selfImplementingUI/groupsRelatedOperations/">
+            
+                    
+                    群组相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.6.1" data-path="../../quickIntegration/selfImplementingUI/groupsRelatedOperations/groupsIntroduction.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/groupsRelatedOperations/groupsIntroduction.html">
+            
+                    
+                    群组介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6.2" data-path="../../quickIntegration/selfImplementingUI/groupsRelatedOperations/groupsManagement.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/groupsRelatedOperations/groupsManagement.html">
+            
+                    
+                    群组管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6.3" data-path="../../quickIntegration/selfImplementingUI/groupsRelatedOperations/groupsInformation.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/groupsRelatedOperations/groupsInformation.html">
+            
+                    
+                    群资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6.4" data-path="../../quickIntegration/selfImplementingUI/groupsRelatedOperations/groupMemberManagement.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/groupsRelatedOperations/groupMemberManagement.html">
+            
+                    
+                    群成员管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6.5" data-path="../../quickIntegration/selfImplementingUI/groupsRelatedOperations/groupMemberInformation.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/groupsRelatedOperations/groupMemberInformation.html">
+            
+                    
+                    群成员资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6.6" data-path="../../quickIntegration/selfImplementingUI/groupsRelatedOperations/groupCustomAttributes.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/groupsRelatedOperations/groupCustomAttributes.html">
+            
+                    
+                    群自定义属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6.7" data-path="../../quickIntegration/selfImplementingUI/groupsRelatedOperations/communityManagement.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/groupsRelatedOperations/communityManagement.html">
+            
+                    
+                    社群管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../../quickIntegration/selfImplementingUI/usersRelatedOperations/">
+            
+                <a href="../../quickIntegration/selfImplementingUI/usersRelatedOperations/">
+            
+                    
+                    用户管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.7.1" data-path="../../quickIntegration/selfImplementingUI/usersRelatedOperations/usersInformation.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/usersRelatedOperations/usersInformation.html">
+            
+                    
+                    用户资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7.2" data-path="../../quickIntegration/selfImplementingUI/usersRelatedOperations/usersStatus.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/usersRelatedOperations/usersStatus.html">
+            
+                    
+                    用户状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7.3" data-path="../../quickIntegration/selfImplementingUI/usersRelatedOperations/friendsManagement.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/usersRelatedOperations/friendsManagement.html">
+            
+                    
+                    好友管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7.4" data-path="../../quickIntegration/selfImplementingUI/usersRelatedOperations/friendsGroup.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/usersRelatedOperations/friendsGroup.html">
+            
+                    
+                    好友分组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7.5" data-path="../../quickIntegration/selfImplementingUI/usersRelatedOperations/blackList.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/usersRelatedOperations/blackList.html">
+            
+                    
+                    黑名单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../../quickIntegration/selfImplementingUI/offlinePush.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/offlinePush.html">
+            
+                    
+                    离线推送
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9" data-path="../../quickIntegration/selfImplementingUI/localSearch/">
+            
+                <a href="../../quickIntegration/selfImplementingUI/localSearch/">
+            
+                    
+                    本地搜索
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.9.1" data-path="../../quickIntegration/selfImplementingUI/localSearch/searchMessage.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/localSearch/searchMessage.html">
+            
+                    
+                    搜索消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9.2" data-path="../../quickIntegration/selfImplementingUI/localSearch/searchUsers.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/localSearch/searchUsers.html">
+            
+                    
+                    搜索好友
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9.3" data-path="../../quickIntegration/selfImplementingUI/localSearch/searchGroups.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/localSearch/searchGroups.html">
+            
+                    
+                    搜索群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9.4" data-path="../../quickIntegration/selfImplementingUI/localSearch/searchGroupsMembers.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/localSearch/searchGroupsMembers.html">
+            
+                    
+                    搜索群成员
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.10" data-path="../../quickIntegration/selfImplementingUI/signalingRelatedOperations/">
+            
+                <a href="../../quickIntegration/selfImplementingUI/signalingRelatedOperations/">
+            
+                    
+                    信令相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.10.1" data-path="../../quickIntegration/selfImplementingUI/signalingRelatedOperations/signalingManagement.html">
+            
+                <a href="../../quickIntegration/selfImplementingUI/signalingRelatedOperations/signalingManagement.html">
+            
+                    
+                    信令管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">API</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../uikit-sdk-api/">
+            
+                <a href="../../uikit-sdk-api/">
+            
+                    
+                    UIKit SDK API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../uikit-sdk-api/TIMUIKitCore/">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitCore/">
+            
+                    
+                    TIMUIKitCore
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1" data-path="../../uikit-sdk-api/TIMUIKitCore/getInstance.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitCore/getInstance.html">
+            
+                    
+                    getInstance
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1.1" data-path="../../uikit-sdk-api/TIMUIKitCore/init.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitCore/init.html">
+            
+                    
+                    init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.1.2" data-path="../../uikit-sdk-api/TIMUIKitCore/unInit.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitCore/unInit.html">
+            
+                    
+                    unInit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.1.3" data-path="../../uikit-sdk-api/TIMUIKitCore/login.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitCore/login.html">
+            
+                    
+                    login
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.1.4" data-path="../../uikit-sdk-api/TIMUIKitCore/logout.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitCore/logout.html">
+            
+                    
+                    logout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.1.5" data-path="../../uikit-sdk-api/TIMUIKitCore/getUsersInfo.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitCore/getUsersInfo.html">
+            
+                    
+                    getUsersInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.1.6" data-path="../../uikit-sdk-api/TIMUIKitCore/setSelfInfo.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitCore/setSelfInfo.html">
+            
+                    
+                    setSelfInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.1.7" data-path="../../uikit-sdk-api/TIMUIKitCore/setOfflinePushStatus.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitCore/setOfflinePushStatus.html">
+            
+                    
+                    setOfflinePushStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.1.8" data-path="../../uikit-sdk-api/TIMUIKitCore/setDataFromNative.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitCore/setDataFromNative.html">
+            
+                    
+                    setDataFromNative
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.1.9" data-path="../../uikit-sdk-api/TIMUIKitCore/TIMCallback.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitCore/TIMCallback.html">
+            
+                    
+                    TIMCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.1.10" data-path="../../uikit-sdk-api/TIMUIKitCore/TIMUIKitConfig.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitCore/TIMUIKitConfig.html">
+            
+                    
+                    TIMUIKitConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.1.11" data-path="../../uikit-sdk-api/TIMUIKitCore/LanguageEnum.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitCore/LanguageEnum.html">
+            
+                    
+                    LanguageEnum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.1.12" data-path="../../uikit-sdk-api/TIMUIKitCore/TIMCallbackType.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitCore/TIMCallbackType.html">
+            
+                    
+                    TIMCallbackType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.1.13" data-path="../../uikit-sdk-api/TIMUIKitCore/AppStatus.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitCore/AppStatus.html">
+            
+                    
+                    AppStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.2" data-path="../../uikit-sdk-api/TIMUIKitCore/getSDKInstance.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitCore/getSDKInstance.html">
+            
+                    
+                    getSDKInstance
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../uikit-sdk-api/TIMUIKitConversation/">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitConversation/">
+            
+                    
+                    TIMUIKitConversation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../../uikit-sdk-api/TIMUIKitConversation/TIMUIKitConversationController.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitConversation/TIMUIKitConversationController.html">
+            
+                    
+                    TIMUIKitConversationController
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../../uikit-sdk-api/TIMUIKitConversation/ConversationLifeCycle.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitConversation/ConversationLifeCycle.html">
+            
+                    
+                    ConversationLifeCycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../../uikit-sdk-api/TIMUIKitChat/">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitChat/">
+            
+                    
+                    TIMUIKitChat
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="../../uikit-sdk-api/TIMUIKitChat/MessageListTongueType.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitChat/MessageListTongueType.html">
+            
+                    
+                    MessageListTongueType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="../../uikit-sdk-api/TIMUIKitChat/TIMUIKitHistoryMessageListConfig.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitChat/TIMUIKitHistoryMessageListConfig.html">
+            
+                    
+                    TIMUIKitHistoryMessageListConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3" data-path="../../uikit-sdk-api/TIMUIKitChat/MessageItemBuilder.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitChat/MessageItemBuilder.html">
+            
+                    
+                    MessageItemBuilder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.4" data-path="../../uikit-sdk-api/TIMUIKitChat/MorePanelConfig.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitChat/MorePanelConfig.html">
+            
+                    
+                    MorePanelConfig
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.4.1" data-path="../../uikit-sdk-api/TIMUIKitChat/MorePanelItem.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitChat/MorePanelItem.html">
+            
+                    
+                    MorePanelItem
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.5" data-path="../../uikit-sdk-api/TIMUIKitChat/TIMUIKitChatConfig.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitChat/TIMUIKitChatConfig.html">
+            
+                    
+                    TIMUIKitChatConfig
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.5.1" data-path="../../uikit-sdk-api/TIMUIKitChat/GroupReceptAllowType.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitChat/GroupReceptAllowType.html">
+            
+                    
+                    GroupReceptAllowType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.5.2" data-path="../../uikit-sdk-api/TIMUIKitChat/UrlPreviewType.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitChat/UrlPreviewType.html">
+            
+                    
+                    UrlPreviewType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.5.3" data-path="../../uikit-sdk-api/TIMUIKitChat/ConvType.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitChat/ConvType.html">
+            
+                    
+                    ConvType
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.6" data-path="../../uikit-sdk-api/TIMUIKitChat/ToolTipsConfig.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitChat/ToolTipsConfig.html">
+            
+                    
+                    ToolTipsConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.7" data-path="../../uikit-sdk-api/TIMUIKitChat/ChatLifeCycle.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitChat/ChatLifeCycle.html">
+            
+                    
+                    ChatLifeCycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../../uikit-sdk-api/TIMUIKitAddFriend/">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitAddFriend/">
+            
+                    
+                    TIMUIKitAddFriend
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.4.1" data-path="../../uikit-sdk-api/TIMUIKitAddFriend/AddFriendLifeCycle.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitAddFriend/AddFriendLifeCycle.html">
+            
+                    
+                    AddFriendLifeCycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../../uikit-sdk-api/TIMUIKitAddGroup/">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitAddGroup/">
+            
+                    
+                    TIMUIKitAddGroup
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.5.1" data-path="../../uikit-sdk-api/TIMUIKitAddGroup/AddGroupLifeCycle.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitAddGroup/AddGroupLifeCycle.html">
+            
+                    
+                    AddGroupLifeCycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../../uikit-sdk-api/TIMUIKitBlackList/">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitBlackList/">
+            
+                    
+                    TIMUIKitBlackList
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.6.1" data-path="../../uikit-sdk-api/TIMUIKitBlackList/BlockListLifeCycle.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitBlackList/BlockListLifeCycle.html">
+            
+                    
+                    BlockListLifeCycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../../uikit-sdk-api/TIMUIKitContact/">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitContact/">
+            
+                    
+                    TIMUIKitContact
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.7.1" data-path="../../uikit-sdk-api/TIMUIKitContact/FriendListLifeCycle.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitContact/FriendListLifeCycle.html">
+            
+                    
+                    FriendListLifeCycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7.2" data-path="../../uikit-sdk-api/TIMUIKitContact/TopListItem.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitContact/TopListItem.html">
+            
+                    
+                    TopListItem
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../../uikit-sdk-api/TIMUIKitGroup/">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitGroup/">
+            
+                    
+                    TIMUIKitGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="../../uikit-sdk-api/TIMUIKitGroupProfile/">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitGroupProfile/">
+            
+                    
+                    TIMUIKitGroupProfile
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.9.1" data-path="../../uikit-sdk-api/TIMUIKitGroupProfile/GroupProfileWidgetBuilder.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitGroupProfile/GroupProfileWidgetBuilder.html">
+            
+                    
+                    GroupProfileWidgetBuilder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9.2" data-path="../../uikit-sdk-api/TIMUIKitGroupProfile/GroupProfileWidgetEnum.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitGroupProfile/GroupProfileWidgetEnum.html">
+            
+                    
+                    GroupProfileWidgetEnum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9.3" data-path="../../uikit-sdk-api/TIMUIKitGroupProfile/GroupProfileBuilder.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitGroupProfile/GroupProfileBuilder.html">
+            
+                    
+                    GroupProfileBuilder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9.4" data-path="../../uikit-sdk-api/TIMUIKitGroupProfile/GroupProfileLifeCycle.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitGroupProfile/GroupProfileLifeCycle.html">
+            
+                    
+                    GroupProfileLifeCycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="../../uikit-sdk-api/TIMUIKitNewContact/">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitNewContact/">
+            
+                    
+                    TIMUIKitNewContact
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.10.1" data-path="../../uikit-sdk-api/TIMUIKitNewContact/NewContactLifeCycle.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitNewContact/NewContactLifeCycle.html">
+            
+                    
+                    NewContactLifeCycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="../../uikit-sdk-api/TIMUIKitProfile/">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitProfile/">
+            
+                    
+                    TIMUIKitProfile
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.11.1" data-path="../../uikit-sdk-api/TIMUIKitProfile/TIMUIKitProfileController.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitProfile/TIMUIKitProfileController.html">
+            
+                    
+                    TIMUIKitProfileController
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11.2" data-path="../../uikit-sdk-api/TIMUIKitProfile/ProfileWidgetBuilder.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitProfile/ProfileWidgetBuilder.html">
+            
+                    
+                    ProfileWidgetBuilder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11.3" data-path="../../uikit-sdk-api/TIMUIKitProfile/ProfileWidgetEnum.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitProfile/ProfileWidgetEnum.html">
+            
+                    
+                    ProfileWidgetEnum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11.4" data-path="../../uikit-sdk-api/TIMUIKitProfile/ProfileBuilder.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitProfile/ProfileBuilder.html">
+            
+                    
+                    ProfileBuilder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11.5" data-path="../../uikit-sdk-api/TIMUIKitProfile/OnSelProfileLifeCycle.html">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitProfile/OnSelProfileLifeCycle.html">
+            
+                    
+                    ProfileLifeCycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="../../uikit-sdk-api/TIMUIKitSearch/">
+            
+                <a href="../../uikit-sdk-api/TIMUIKitSearch/">
+            
+                    
+                    TIMUIKitSearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SDKAPI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../v2timmanager/">
+            
+                <a href="../v2timmanager/">
+            
+                    
+                    V2TIMManager
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1.1" data-path="../v2timmanager/initsdk.html">
+            
+                <a href="../v2timmanager/initsdk.html">
+            
+                    
+                    initSDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.2" data-path="../v2timmanager/uninitsdk.html">
+            
+                <a href="../v2timmanager/uninitsdk.html">
+            
+                    
+                    unInitSDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.3" data-path="../v2timmanager/getversion.html">
+            
+                <a href="../v2timmanager/getversion.html">
+            
+                    
+                    getVersion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.4" data-path="../v2timmanager/getservertime.html">
+            
+                <a href="../v2timmanager/getservertime.html">
+            
+                    
+                    getServerTime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.5" data-path="../v2timmanager/login.html">
+            
+                <a href="../v2timmanager/login.html">
+            
+                    
+                    login
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.6" data-path="../v2timmanager/logout.html">
+            
+                <a href="../v2timmanager/logout.html">
+            
+                    
+                    logout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.7" data-path="../v2timmanager/getloginuser.html">
+            
+                <a href="../v2timmanager/getloginuser.html">
+            
+                    
+                    getLoginUser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.8" data-path="../v2timmanager/getloginstatus.html">
+            
+                <a href="../v2timmanager/getloginstatus.html">
+            
+                    
+                    getLoginStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.9" data-path="../v2timmanager/addgrouplistener.html">
+            
+                <a href="../v2timmanager/addgrouplistener.html">
+            
+                    
+                    addGroupListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.10" data-path="../v2timmanager/setgrouplistener.html">
+            
+                <a href="../v2timmanager/setgrouplistener.html">
+            
+                    
+                    setGroupListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.11" data-path="../v2timmanager/removegrouplistener.html">
+            
+                <a href="../v2timmanager/removegrouplistener.html">
+            
+                    
+                    removeGroupListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.12" data-path="../v2timmanager/joingroup.html">
+            
+                <a href="../v2timmanager/joingroup.html">
+            
+                    
+                    joinGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.13" data-path="../v2timmanager/quitgroup.html">
+            
+                <a href="../v2timmanager/quitgroup.html">
+            
+                    
+                    quitGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.14" data-path="../v2timmanager/dismissgroup.html">
+            
+                <a href="../v2timmanager/dismissgroup.html">
+            
+                    
+                    dismissGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.15" data-path="../v2timmanager/getusersinfo.html">
+            
+                <a href="../v2timmanager/getusersinfo.html">
+            
+                    
+                    getUsersInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.16" data-path="../v2timmanager/getuserstatus.html">
+            
+                <a href="../v2timmanager/getuserstatus.html">
+            
+                    
+                    getUserStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.17" data-path="../v2timmanager/setselfinfo.html">
+            
+                <a href="../v2timmanager/setselfinfo.html">
+            
+                    
+                    setSelfInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.18" data-path="../v2timmanager/setselfstatus.html">
+            
+                <a href="../v2timmanager/setselfstatus.html">
+            
+                    
+                    setSelfStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.19" data-path="../v2timmanager/subscribeuserstatus.html">
+            
+                <a href="../v2timmanager/subscribeuserstatus.html">
+            
+                    
+                    subscribeUserStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.20" data-path="../v2timmanager/unsubscribeuserstatus.html">
+            
+                <a href="../v2timmanager/unsubscribeuserstatus.html">
+            
+                    
+                    unsubscribeUserStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.21" data-path="../v2timmanager/getconversationmanager.html">
+            
+                <a href="../v2timmanager/getconversationmanager.html">
+            
+                    
+                    getConversationManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.22" data-path="../v2timmanager/getfriendshipmanager.html">
+            
+                <a href="../v2timmanager/getfriendshipmanager.html">
+            
+                    
+                    getFriendshipManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.23" data-path="../v2timmanager/getgroupmanager.html">
+            
+                <a href="../v2timmanager/getgroupmanager.html">
+            
+                    
+                    getGroupManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.24" data-path="../v2timmanager/getmessagemanager.html">
+            
+                <a href="../v2timmanager/getmessagemanager.html">
+            
+                    
+                    getMessageManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.25" data-path="../v2timmanager/getofflinepushmanager.html">
+            
+                <a href="../v2timmanager/getofflinepushmanager.html">
+            
+                    
+                    getOfflinePushManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.26" data-path="../v2timmanager/getsignalingmanager.html">
+            
+                <a href="../v2timmanager/getsignalingmanager.html">
+            
+                    
+                    getSignalingManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.27" data-path="../v2timmanager/setapnslistener.html">
+            
+                <a href="../v2timmanager/setapnslistener.html">
+            
+                    
+                    setAPNSListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../v2timmessagemanager/">
+            
+                <a href="../v2timmessagemanager/">
+            
+                    
+                    V2TIMMessageManager
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.2.1" data-path="../v2timmessagemanager/addadvancedmsglistener.html">
+            
+                <a href="../v2timmessagemanager/addadvancedmsglistener.html">
+            
+                    
+                    addAdvancedMsgListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.2" data-path="../v2timmessagemanager/removeadvancedmsglistener.html">
+            
+                <a href="../v2timmessagemanager/removeadvancedmsglistener.html">
+            
+                    
+                    removeAdvancedMsgListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.3" data-path="../v2timmessagemanager/createtextmessage.html">
+            
+                <a href="../v2timmessagemanager/createtextmessage.html">
+            
+                    
+                    createTextMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.4" data-path="../v2timmessagemanager/createtextatmessage.html">
+            
+                <a href="../v2timmessagemanager/createtextatmessage.html">
+            
+                    
+                    createTextAtMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.5" data-path="../v2timmessagemanager/createcustommessage.html">
+            
+                <a href="../v2timmessagemanager/createcustommessage.html">
+            
+                    
+                    createCustomMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.6" data-path="../v2timmessagemanager/createimagemessage.html">
+            
+                <a href="../v2timmessagemanager/createimagemessage.html">
+            
+                    
+                    createImageMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.7" data-path="../v2timmessagemanager/createsoundmessage.html">
+            
+                <a href="../v2timmessagemanager/createsoundmessage.html">
+            
+                    
+                    createSoundMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.8" data-path="../v2timmessagemanager/createvideomessage.html">
+            
+                <a href="../v2timmessagemanager/createvideomessage.html">
+            
+                    
+                    createVideoMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.9" data-path="../v2timmessagemanager/createfilemessage.html">
+            
+                <a href="../v2timmessagemanager/createfilemessage.html">
+            
+                    
+                    createFileMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.10" data-path="../v2timmessagemanager/createlocationmessage.html">
+            
+                <a href="../v2timmessagemanager/createlocationmessage.html">
+            
+                    
+                    createLocationMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.11" data-path="../v2timmessagemanager/createfacemessage.html">
+            
+                <a href="../v2timmessagemanager/createfacemessage.html">
+            
+                    
+                    createFaceMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.12" data-path="../v2timmessagemanager/createmergermessage.html">
+            
+                <a href="../v2timmessagemanager/createmergermessage.html">
+            
+                    
+                    createMergerMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.13" data-path="../v2timmessagemanager/downloadmergermessage.html">
+            
+                <a href="../v2timmessagemanager/downloadmergermessage.html">
+            
+                    
+                    downloadMergerMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.14" data-path="../v2timmessagemanager/createforwardmessage.html">
+            
+                <a href="../v2timmessagemanager/createforwardmessage.html">
+            
+                    
+                    createForwardMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.15" data-path="../v2timmessagemanager/createtargetedgroupmessage.html">
+            
+                <a href="../v2timmessagemanager/createtargetedgroupmessage.html">
+            
+                    
+                    createTargetedGroupMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.16" data-path="../v2timmessagemanager/sendmessage.html">
+            
+                <a href="../v2timmessagemanager/sendmessage.html">
+            
+                    
+                    sendMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.17" data-path="../v2timmessagemanager/setc2creceivemessageopt.html">
+            
+                <a href="../v2timmessagemanager/setc2creceivemessageopt.html">
+            
+                    
+                    setC2CReceiveMessageOpt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.18" data-path="../v2timmessagemanager/getc2creceivemessageopt.html">
+            
+                <a href="../v2timmessagemanager/getc2creceivemessageopt.html">
+            
+                    
+                    getC2CReceiveMessageOpt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.19" data-path="../v2timmessagemanager/setgroupreceivemessageopt.html">
+            
+                <a href="../v2timmessagemanager/setgroupreceivemessageopt.html">
+            
+                    
+                    setGroupReceiveMessageOpt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.20" data-path="../v2timmessagemanager/getc2chistorymessagelist.html">
+            
+                <a href="../v2timmessagemanager/getc2chistorymessagelist.html">
+            
+                    
+                    getC2CHistoryMessageList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.21" data-path="../v2timmessagemanager/getgrouphistorymessagelist.html">
+            
+                <a href="../v2timmessagemanager/getgrouphistorymessagelist.html">
+            
+                    
+                    getGroupHistoryMessageList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.22" data-path="../v2timmessagemanager/gethistorymessagelist.html">
+            
+                <a href="../v2timmessagemanager/gethistorymessagelist.html">
+            
+                    
+                    getHistoryMessageList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.23" data-path="../v2timmessagemanager/appendmessage.html">
+            
+                <a href="../v2timmessagemanager/appendmessage.html">
+            
+                    
+                    appendMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.24" data-path="../v2timmessagemanager/resendmessage.html">
+            
+                <a href="../v2timmessagemanager/resendmessage.html">
+            
+                    
+                    reSendMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.25" data-path="../v2timmessagemanager/sendreplymessage.html">
+            
+                <a href="../v2timmessagemanager/sendreplymessage.html">
+            
+                    
+                    sendReplyMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.26" data-path="../v2timmessagemanager/revokemessage.html">
+            
+                <a href="../v2timmessagemanager/revokemessage.html">
+            
+                    
+                    revokeMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.27" data-path="../v2timmessagemanager/modifymessage.html">
+            
+                <a href="../v2timmessagemanager/modifymessage.html">
+            
+                    
+                    modifyMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.28" data-path="../v2timmessagemanager/markc2cmessageasread.html">
+            
+                <a href="../v2timmessagemanager/markc2cmessageasread.html">
+            
+                    
+                    markC2CMessageAsRead
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.29" data-path="../v2timmessagemanager/markgroupmessageasread.html">
+            
+                <a href="../v2timmessagemanager/markgroupmessageasread.html">
+            
+                    
+                    markGroupMessageAsRead
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.30" data-path="../v2timmessagemanager/markallmessageasread.html">
+            
+                <a href="../v2timmessagemanager/markallmessageasread.html">
+            
+                    
+                    markAllMessageAsRead
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.31" data-path="../v2timmessagemanager/deletemessagefromlocalstorage.html">
+            
+                <a href="../v2timmessagemanager/deletemessagefromlocalstorage.html">
+            
+                    
+                    deleteMessageFromLocalStorage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.32" data-path="../v2timmessagemanager/deletemessages.html">
+            
+                <a href="../v2timmessagemanager/deletemessages.html">
+            
+                    
+                    deleteMessages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.33" data-path="../v2timmessagemanager/clearc2chistorymessage.html">
+            
+                <a href="../v2timmessagemanager/clearc2chistorymessage.html">
+            
+                    
+                    clearC2CHistoryMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.34" data-path="../v2timmessagemanager/cleargrouphistorymessage.html">
+            
+                <a href="../v2timmessagemanager/cleargrouphistorymessage.html">
+            
+                    
+                    clearGroupHistoryMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.35" data-path="../v2timmessagemanager/insertc2cmessagetolocalstorage.html">
+            
+                <a href="../v2timmessagemanager/insertc2cmessagetolocalstorage.html">
+            
+                    
+                    insertC2CMessageToLocalStorage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.36" data-path="../v2timmessagemanager/insertgroupmessagetolocalstorage.html">
+            
+                <a href="../v2timmessagemanager/insertgroupmessagetolocalstorage.html">
+            
+                    
+                    insertGroupMessageToLocalStorage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.37" data-path="../v2timmessagemanager/searchlocalmessages.html">
+            
+                <a href="../v2timmessagemanager/searchlocalmessages.html">
+            
+                    
+                    searchLocalMessages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.38" data-path="../v2timmessagemanager/sendmessagereadreceipts.html">
+            
+                <a href="../v2timmessagemanager/sendmessagereadreceipts.html">
+            
+                    
+                    sendMessageReadReceipts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.39" data-path="../v2timmessagemanager/getmessagereadreceipts.html">
+            
+                <a href="../v2timmessagemanager/getmessagereadreceipts.html">
+            
+                    
+                    getMessageReadReceipts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.40" data-path="../v2timmessagemanager/getgroupmessagereadmemberlist.html">
+            
+                <a href="../v2timmessagemanager/getgroupmessagereadmemberlist.html">
+            
+                    
+                    getGroupMessageReadMemberList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.41" data-path="../v2timmessagemanager/setlocalcustomdata.html">
+            
+                <a href="../v2timmessagemanager/setlocalcustomdata.html">
+            
+                    
+                    setLocalCustomData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.42" data-path="../v2timmessagemanager/setlocalcustomint.html">
+            
+                <a href="../v2timmessagemanager/setlocalcustomint.html">
+            
+                    
+                    setLocalCustomInt
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../v2timgroupmanager/">
+            
+                <a href="../v2timgroupmanager/">
+            
+                    
+                    V2TIMGroupManager
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.3.1" data-path="../v2timgroupmanager/creategroup.html">
+            
+                <a href="../v2timgroupmanager/creategroup.html">
+            
+                    
+                    createGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.2" data-path="../v2timgroupmanager/getjoinedgrouplist.html">
+            
+                <a href="../v2timgroupmanager/getjoinedgrouplist.html">
+            
+                    
+                    getJoinedGroupList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.3" data-path="../v2timgroupmanager/getgroupsinfo.html">
+            
+                <a href="../v2timgroupmanager/getgroupsinfo.html">
+            
+                    
+                    getGroupsInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.4" data-path="../v2timgroupmanager/searchgroups.html">
+            
+                <a href="../v2timgroupmanager/searchgroups.html">
+            
+                    
+                    searchGroups
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.5" data-path="../v2timgroupmanager/setgroupinfo.html">
+            
+                <a href="../v2timgroupmanager/setgroupinfo.html">
+            
+                    
+                    setGroupInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.6" data-path="../v2timgroupmanager/initgroupattributes.html">
+            
+                <a href="../v2timgroupmanager/initgroupattributes.html">
+            
+                    
+                    initGroupAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.7" data-path="../v2timgroupmanager/setgroupattributes.html">
+            
+                <a href="../v2timgroupmanager/setgroupattributes.html">
+            
+                    
+                    setGroupAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.8" data-path="../v2timgroupmanager/deletegroupattributes.html">
+            
+                <a href="../v2timgroupmanager/deletegroupattributes.html">
+            
+                    
+                    deleteGroupAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.9" data-path="../v2timgroupmanager/getgroupattributes.html">
+            
+                <a href="../v2timgroupmanager/getgroupattributes.html">
+            
+                    
+                    getGroupAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.10" data-path="../v2timgroupmanager/getgrouponlinemembercount.html">
+            
+                <a href="../v2timgroupmanager/getgrouponlinemembercount.html">
+            
+                    
+                    getGroupOnlineMemberCount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.11" data-path="../v2timgroupmanager/getgroupmemberlist.html">
+            
+                <a href="../v2timgroupmanager/getgroupmemberlist.html">
+            
+                    
+                    getGroupMemberList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.12" data-path="../v2timgroupmanager/getgroupmembersinfo.html">
+            
+                <a href="../v2timgroupmanager/getgroupmembersinfo.html">
+            
+                    
+                    getGroupMembersInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.13" data-path="../v2timgroupmanager/searchgroupmembers.html">
+            
+                <a href="../v2timgroupmanager/searchgroupmembers.html">
+            
+                    
+                    searchGroupMembers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.14" data-path="../v2timgroupmanager/setgroupmemberinfo.html">
+            
+                <a href="../v2timgroupmanager/setgroupmemberinfo.html">
+            
+                    
+                    setGroupMemberInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.15" data-path="../v2timgroupmanager/mutegroupmember.html">
+            
+                <a href="../v2timgroupmanager/mutegroupmember.html">
+            
+                    
+                    muteGroupMember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.16" data-path="../v2timgroupmanager/inviteusertogroup.html">
+            
+                <a href="../v2timgroupmanager/inviteusertogroup.html">
+            
+                    
+                    inviteUserToGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.17" data-path="../v2timgroupmanager/kickgroupmember.html">
+            
+                <a href="../v2timgroupmanager/kickgroupmember.html">
+            
+                    
+                    kickGroupMember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.18" data-path="../v2timgroupmanager/setgroupmemberrole.html">
+            
+                <a href="../v2timgroupmanager/setgroupmemberrole.html">
+            
+                    
+                    setGroupMemberRole
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.19" data-path="../v2timgroupmanager/transfergroupowner.html">
+            
+                <a href="../v2timgroupmanager/transfergroupowner.html">
+            
+                    
+                    transferGroupOwner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.20" data-path="../v2timgroupmanager/getgroupapplicationlist.html">
+            
+                <a href="../v2timgroupmanager/getgroupapplicationlist.html">
+            
+                    
+                    getGroupApplicationList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.21" data-path="../v2timgroupmanager/acceptgroupapplication.html">
+            
+                <a href="../v2timgroupmanager/acceptgroupapplication.html">
+            
+                    
+                    acceptGroupApplication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.22" data-path="../v2timgroupmanager/refusegroupapplication.html">
+            
+                <a href="../v2timgroupmanager/refusegroupapplication.html">
+            
+                    
+                    refuseGroupApplication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.23" data-path="../v2timgroupmanager/setgroupapplicationread.html">
+            
+                <a href="../v2timgroupmanager/setgroupapplicationread.html">
+            
+                    
+                    setGroupApplicationRead
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.24" data-path="../v2timgroupmanager/getjoinedcommunitylist.html">
+            
+                <a href="../v2timgroupmanager/getjoinedcommunitylist.html">
+            
+                    
+                    getJoinedCommunityList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.25" data-path="../v2timgroupmanager/createtopicincommunity.html">
+            
+                <a href="../v2timgroupmanager/createtopicincommunity.html">
+            
+                    
+                    createTopicInCommunity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.26" data-path="../v2timgroupmanager/deletetopicfromcommunity.html">
+            
+                <a href="../v2timgroupmanager/deletetopicfromcommunity.html">
+            
+                    
+                    deleteTopicFromCommunity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.27" data-path="../v2timgroupmanager/settopicinfo.html">
+            
+                <a href="../v2timgroupmanager/settopicinfo.html">
+            
+                    
+                    setTopicInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.28" data-path="../v2timgroupmanager/gettopicinfolist.html">
+            
+                <a href="../v2timgroupmanager/gettopicinfolist.html">
+            
+                    
+                    getTopicInfoList
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="../v2timsignalingmanager/">
+            
+                <a href="../v2timsignalingmanager/">
+            
+                    
+                    V2TIMSignalingManager
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.4.1" data-path="../v2timsignalingmanager/addsignalinglistener.html">
+            
+                <a href="../v2timsignalingmanager/addsignalinglistener.html">
+            
+                    
+                    addSignalingListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4.2" data-path="../v2timsignalingmanager/removesignalinglistener.html">
+            
+                <a href="../v2timsignalingmanager/removesignalinglistener.html">
+            
+                    
+                    removeSignalingListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4.3" data-path="../v2timsignalingmanager/invite.html">
+            
+                <a href="../v2timsignalingmanager/invite.html">
+            
+                    
+                    invite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4.4" data-path="../v2timsignalingmanager/inviteingroup.html">
+            
+                <a href="../v2timsignalingmanager/inviteingroup.html">
+            
+                    
+                    inviteInGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4.5" data-path="../v2timsignalingmanager/cancel.html">
+            
+                <a href="../v2timsignalingmanager/cancel.html">
+            
+                    
+                    cancel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4.6" data-path="../v2timsignalingmanager/accept.html">
+            
+                <a href="../v2timsignalingmanager/accept.html">
+            
+                    
+                    accept
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4.7" data-path="../v2timsignalingmanager/reject.html">
+            
+                <a href="../v2timsignalingmanager/reject.html">
+            
+                    
+                    reject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4.8" data-path="../v2timsignalingmanager/getsignalinginfo.html">
+            
+                <a href="../v2timsignalingmanager/getsignalinginfo.html">
+            
+                    
+                    getSignalingInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4.9" data-path="../v2timsignalingmanager/addinvitedsignaling.html">
+            
+                <a href="../v2timsignalingmanager/addinvitedsignaling.html">
+            
+                    
+                    addInvitedSignaling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="../v2timconversationmanager/">
+            
+                <a href="../v2timconversationmanager/">
+            
+                    
+                    V2TIMConversationManager
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.5.1" data-path="../v2timconversationmanager/addconversationlistener.html">
+            
+                <a href="../v2timconversationmanager/addconversationlistener.html">
+            
+                    
+                    addConversationListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5.2" data-path="../v2timconversationmanager/removeconversationlistener.html">
+            
+                <a href="../v2timconversationmanager/removeconversationlistener.html">
+            
+                    
+                    removeConversationListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5.3" data-path="../v2timconversationmanager/getconversationlist.html">
+            
+                <a href="../v2timconversationmanager/getconversationlist.html">
+            
+                    
+                    getConversationList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5.4" data-path="../v2timconversationmanager/getconversationlistbyfilter.html">
+            
+                <a href="../v2timconversationmanager/getconversationlistbyfilter.html">
+            
+                    
+                    getConversationListByFilter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5.5" data-path="../v2timconversationmanager/getconversation.html">
+            
+                <a href="../v2timconversationmanager/getconversation.html">
+            
+                    
+                    getConversation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5.6" data-path="../v2timconversationmanager/getconversationlistbyconversaionids.html">
+            
+                <a href="../v2timconversationmanager/getconversationlistbyconversaionids.html">
+            
+                    
+                    getConversationListByConversaionIds
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5.7" data-path="../v2timconversationmanager/deleteconversation.html">
+            
+                <a href="../v2timconversationmanager/deleteconversation.html">
+            
+                    
+                    deleteConversation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5.8" data-path="../v2timconversationmanager/setconversationdraft.html">
+            
+                <a href="../v2timconversationmanager/setconversationdraft.html">
+            
+                    
+                    setConversationDraft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5.9" data-path="../v2timconversationmanager/setconversationcustomdata.html">
+            
+                <a href="../v2timconversationmanager/setconversationcustomdata.html">
+            
+                    
+                    setConversationCustomData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5.10" data-path="../v2timconversationmanager/createconversationgroup.html">
+            
+                <a href="../v2timconversationmanager/createconversationgroup.html">
+            
+                    
+                    createConversationGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5.11" data-path="../v2timconversationmanager/getconversationgroupList.html">
+            
+                <a href="../v2timconversationmanager/getconversationgroupList.html">
+            
+                    
+                    getConversationGroupList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5.12" data-path="../v2timconversationmanager/deleteconversationgroup.html">
+            
+                <a href="../v2timconversationmanager/deleteconversationgroup.html">
+            
+                    
+                    deleteConversationGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5.13" data-path="../v2timconversationmanager/renameconversationgroup.html">
+            
+                <a href="../v2timconversationmanager/renameconversationgroup.html">
+            
+                    
+                    renameConversationGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5.14" data-path="../v2timconversationmanager/addconversationstogroup.html">
+            
+                <a href="../v2timconversationmanager/addconversationstogroup.html">
+            
+                    
+                    addConversationsToGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5.15" data-path="../v2timconversationmanager/deleteconversationsfromgroup.html">
+            
+                <a href="../v2timconversationmanager/deleteconversationsfromgroup.html">
+            
+                    
+                    deleteConversationsFromGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5.16" data-path="../v2timconversationmanager/markconversation.html">
+            
+                <a href="../v2timconversationmanager/markconversation.html">
+            
+                    
+                    markConversation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5.17" data-path="../v2timconversationmanager/gettotalunreadmessagecount.html">
+            
+                <a href="../v2timconversationmanager/gettotalunreadmessagecount.html">
+            
+                    
+                    getTotalUnreadMessageCount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5.18" data-path="../v2timconversationmanager/pinconversation.html">
+            
+                <a href="../v2timconversationmanager/pinconversation.html">
+            
+                    
+                    pinConversation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5.19" data-path="../v2timconversationmanager/setconversationlistener.html">
+            
+                <a href="../v2timconversationmanager/setconversationlistener.html">
+            
+                    
+                    setConversationListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6" data-path="../v2timfriendshipmanager/">
+            
+                <a href="../v2timfriendshipmanager/">
+            
+                    
+                    V2TIMFriendshipManager
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.6.1" data-path="../v2timfriendshipmanager/setfriendlistener.html">
+            
+                <a href="../v2timfriendshipmanager/setfriendlistener.html">
+            
+                    
+                    setFriendListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.2" data-path="../v2timfriendshipmanager/addfriendlistener.html">
+            
+                <a href="../v2timfriendshipmanager/addfriendlistener.html">
+            
+                    
+                    addFriendListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.3" data-path="../v2timfriendshipmanager/removefriendlistener.html">
+            
+                <a href="../v2timfriendshipmanager/removefriendlistener.html">
+            
+                    
+                    removeFriendListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.4" data-path="../v2timfriendshipmanager/getfriendlist.html">
+            
+                <a href="../v2timfriendshipmanager/getfriendlist.html">
+            
+                    
+                    getFriendList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.5" data-path="../v2timfriendshipmanager/getfriendsinfo.html">
+            
+                <a href="../v2timfriendshipmanager/getfriendsinfo.html">
+            
+                    
+                    getFriendsInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.6" data-path="../v2timfriendshipmanager/searchfriends.html">
+            
+                <a href="../v2timfriendshipmanager/searchfriends.html">
+            
+                    
+                    searchFriends
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.7" data-path="../v2timfriendshipmanager/addfriend.html">
+            
+                <a href="../v2timfriendshipmanager/addfriend.html">
+            
+                    
+                    addFriend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.8" data-path="../v2timfriendshipmanager/deletefromfriendlist.html">
+            
+                <a href="../v2timfriendshipmanager/deletefromfriendlist.html">
+            
+                    
+                    deleteFromFriendList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.9" data-path="../v2timfriendshipmanager/checkfriend.html">
+            
+                <a href="../v2timfriendshipmanager/checkfriend.html">
+            
+                    
+                    checkFriend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.10" data-path="../v2timfriendshipmanager/getfriendapplicationlist.html">
+            
+                <a href="../v2timfriendshipmanager/getfriendapplicationlist.html">
+            
+                    
+                    getFriendApplicationList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.11" data-path="../v2timfriendshipmanager/acceptfriendapplication.html">
+            
+                <a href="../v2timfriendshipmanager/acceptfriendapplication.html">
+            
+                    
+                    acceptFriendApplication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.12" data-path="../v2timfriendshipmanager/refusefriendapplication.html">
+            
+                <a href="../v2timfriendshipmanager/refusefriendapplication.html">
+            
+                    
+                    refuseFriendApplication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.13" data-path="../v2timfriendshipmanager/deletefriendapplication.html">
+            
+                <a href="../v2timfriendshipmanager/deletefriendapplication.html">
+            
+                    
+                    deleteFriendApplication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.14" data-path="../v2timfriendshipmanager/setfriendapplicationread.html">
+            
+                <a href="../v2timfriendshipmanager/setfriendapplicationread.html">
+            
+                    
+                    setFriendApplicationRead
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.15" data-path="../v2timfriendshipmanager/addtoblacklist.html">
+            
+                <a href="../v2timfriendshipmanager/addtoblacklist.html">
+            
+                    
+                    addToBlackList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.16" data-path="../v2timfriendshipmanager/deletefromblacklist.html">
+            
+                <a href="../v2timfriendshipmanager/deletefromblacklist.html">
+            
+                    
+                    deleteFromBlackList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.17" data-path="../v2timfriendshipmanager/getblacklist.html">
+            
+                <a href="../v2timfriendshipmanager/getblacklist.html">
+            
+                    
+                    getBlackList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.18" data-path="../v2timfriendshipmanager/createfriendgroup.html">
+            
+                <a href="../v2timfriendshipmanager/createfriendgroup.html">
+            
+                    
+                    createFriendGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.19" data-path="../v2timfriendshipmanager/deletefriendsfromfriendgroup.html">
+            
+                <a href="../v2timfriendshipmanager/deletefriendsfromfriendgroup.html">
+            
+                    
+                    deleteFriendsFromFriendGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.20" data-path="../v2timfriendshipmanager/getfriendgroups.html">
+            
+                <a href="../v2timfriendshipmanager/getfriendgroups.html">
+            
+                    
+                    getFriendGroups
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.21" data-path="../v2timfriendshipmanager/deletefriendgroup.html">
+            
+                <a href="../v2timfriendshipmanager/deletefriendgroup.html">
+            
+                    
+                    deleteFriendGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.22" data-path="../v2timfriendshipmanager/renamefriendgroup.html">
+            
+                <a href="../v2timfriendshipmanager/renamefriendgroup.html">
+            
+                    
+                    renameFriendGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.23" data-path="../v2timfriendshipmanager/addfriendstofriendgroup.html">
+            
+                <a href="../v2timfriendshipmanager/addfriendstofriendgroup.html">
+            
+                    
+                    addFriendsToFriendGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6.24" data-path="../v2timfriendshipmanager/setfriendinfo.html">
+            
+                <a href="../v2timfriendshipmanager/setfriendinfo.html">
+            
+                    
+                    setFriendInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.7" data-path="../v2timofflinepushmanager/">
+            
+                <a href="../v2timofflinepushmanager/">
+            
+                    
+                    V2TIMOfflinePushManager
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.7.1" data-path="../v2timofflinepushmanager/dobackground.html">
+            
+                <a href="../v2timofflinepushmanager/dobackground.html">
+            
+                    
+                    doBackground
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.7.2" data-path="../v2timofflinepushmanager/doforeground.html">
+            
+                <a href="../v2timofflinepushmanager/doforeground.html">
+            
+                    
+                    doForeground
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.7.3" data-path="../v2timofflinepushmanager/setofflinepushconfig.html">
+            
+                <a href="../v2timofflinepushmanager/setofflinepushconfig.html">
+            
+                    
+                    setOfflinePushConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8" data-path="../keyClass/">
+            
+                <a href="../keyClass/">
+            
+                    
+                    关键类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.8.1" data-path="../keyClass/group/">
+            
+                <a href="../keyClass/group/">
+            
+                    
+                    Group
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.8.1.1" data-path="../keyClass/group/v2timgroupmember.html">
+            
+                <a href="../keyClass/group/v2timgroupmember.html">
+            
+                    
+                    V2TimGroupMember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.1.2" data-path="../keyClass/group/v2timgroupmemberinforesult.html">
+            
+                <a href="../keyClass/group/v2timgroupmemberinforesult.html">
+            
+                    
+                    V2TimGroupMemberInfoResult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.1.3" data-path="../keyClass/group/v2timgroupatinfo.html">
+            
+                <a href="../keyClass/group/v2timgroupatinfo.html">
+            
+                    
+                    V2TimGroupAtInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.1.4" data-path="../keyClass/group/v2timgroupinfo.html">
+            
+                <a href="../keyClass/group/v2timgroupinfo.html">
+            
+                    
+                    V2TimGroupInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.1.5" data-path="../keyClass/group/v2timgroupapplicationresult.html">
+            
+                <a href="../keyClass/group/v2timgroupapplicationresult.html">
+            
+                    
+                    V2TimGroupApplicationResult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.1.6" data-path="../keyClass/group/v2timgroupapplication.html">
+            
+                <a href="../keyClass/group/v2timgroupapplication.html">
+            
+                    
+                    V2TimGroupApplication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.1.7" data-path="../keyClass/group/v2timgroupmemberchangeinfo.html">
+            
+                <a href="../keyClass/group/v2timgroupmemberchangeinfo.html">
+            
+                    
+                    V2TIMGroupMemberChangeInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.1.8" data-path="../keyClass/group/v2timgroupinforesult.html">
+            
+                <a href="../keyClass/group/v2timgroupinforesult.html">
+            
+                    
+                    V2TimGroupInfoResult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.1.9" data-path="../keyClass/group/v2timgroupchangeinfo.html">
+            
+                <a href="../keyClass/group/v2timgroupchangeinfo.html">
+            
+                    
+                    V2TimGroupChangeInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.1.10" data-path="../keyClass/group/v2timgroupmembersearchparam.html">
+            
+                <a href="../keyClass/group/v2timgroupmembersearchparam.html">
+            
+                    
+                    V2TimGroupMemberSearchParam
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.1.11" data-path="../keyClass/group/v2timtopicoperationresult.html">
+            
+                <a href="../keyClass/group/v2timtopicoperationresult.html">
+            
+                    
+                    V2TimTopicOperationResult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.1.12" data-path="../keyClass/group/v2timgroupmemberoperationresult.html">
+            
+                <a href="../keyClass/group/v2timgroupmemberoperationresult.html">
+            
+                    
+                    V2TimGroupMemberOperationResult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.1.13" data-path="../keyClass/group/v2timgrouptipselem.html">
+            
+                <a href="../keyClass/group/v2timgrouptipselem.html">
+            
+                    
+                    V2TimGroupTipsElem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.1.14" data-path="../keyClass/group/v2timgroupsearchparam.html">
+            
+                <a href="../keyClass/group/v2timgroupsearchparam.html">
+            
+                    
+                    V2TimGroupSearchParam
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.1.15" data-path="../keyClass/group/v2timgroupmessagereadmemberlist.html">
+            
+                <a href="../keyClass/group/v2timgroupmessagereadmemberlist.html">
+            
+                    
+                    V2TimGroupMessageReadMemberList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.1.16" data-path="../keyClass/group/v2groupmemberinfosearchresult.html">
+            
+                <a href="../keyClass/group/v2groupmemberinfosearchresult.html">
+            
+                    
+                    V2GroupMemberInfoSearchResult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.1.17" data-path="../keyClass/group/v2timgroupmemberfullinfo.html">
+            
+                <a href="../keyClass/group/v2timgroupmemberfullinfo.html">
+            
+                    
+                    V2TimGroupMemberFullInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.1.18" data-path="../keyClass/group/v2timgroupmemberinfo.html">
+            
+                <a href="../keyClass/group/v2timgroupmemberinfo.html">
+            
+                    
+                    V2TimGroupMemberInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.1.19" data-path="../keyClass/group/enumutils.html">
+            
+                <a href="../keyClass/group/enumutils.html">
+            
+                    
+                    EnumUtils
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.2" data-path="../keyClass/user/">
+            
+                <a href="../keyClass/user/">
+            
+                    
+                    User
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.8.2.1" data-path="../keyClass/user/v2timuserinfo.html">
+            
+                <a href="../keyClass/user/v2timuserinfo.html">
+            
+                    
+                    V2TimUserInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.2.2" data-path="../keyClass/user/v2timuserstatus.html">
+            
+                <a href="../keyClass/user/v2timuserstatus.html">
+            
+                    
+                    V2TimUserStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.2.3" data-path="../keyClass/user/v2timuserfullinfo.html">
+            
+                <a href="../keyClass/user/v2timuserfullinfo.html">
+            
+                    
+                    V2TimUserFullInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.2.4" data-path="../keyClass/user/v2timfriendgroup.html">
+            
+                <a href="../keyClass/user/v2timfriendgroup.html">
+            
+                    
+                    V2TimFriendGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.2.5" data-path="../keyClass/user/v2timfriendcheckresult.html">
+            
+                <a href="../keyClass/user/v2timfriendcheckresult.html">
+            
+                    
+                    V2TimFriendCheckResult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.2.6" data-path="../keyClass/user/v2timfriendapplicationresult.html">
+            
+                <a href="../keyClass/user/v2timfriendapplicationresult.html">
+            
+                    
+                    V2TimFriendApplicationResult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.2.7" data-path="../keyClass/user/v2timfriendapplication.html">
+            
+                <a href="../keyClass/user/v2timfriendapplication.html">
+            
+                    
+                    V2TimFriendApplication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.2.8" data-path="../keyClass/user/v2timfriendsearchparam.html">
+            
+                <a href="../keyClass/user/v2timfriendsearchparam.html">
+            
+                    
+                    V2TimFriendSearchParam
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.2.9" data-path="../keyClass/user/v2timfriendoperationresult.html">
+            
+                <a href="../keyClass/user/v2timfriendoperationresult.html">
+            
+                    
+                    V2TimFriendOperationResult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.2.10" data-path="../keyClass/user/v2timfriendinforesult.html">
+            
+                <a href="../keyClass/user/v2timfriendinforesult.html">
+            
+                    
+                    V2TimFriendInfoResult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.2.11" data-path="../keyClass/user/v2timfriendinfo.html">
+            
+                <a href="../keyClass/user/v2timfriendinfo.html">
+            
+                    
+                    V2TimFriendInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3" data-path="../keyClass/message/">
+            
+                <a href="../keyClass/message/">
+            
+                    
+                    Message
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.8.3.1" data-path="../keyClass/message/v2timmessage.html">
+            
+                <a href="../keyClass/message/v2timmessage.html">
+            
+                    
+                    V2TimMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.2" data-path="../keyClass/message/v2timvideoelem.html">
+            
+                <a href="../keyClass/message/v2timvideoelem.html">
+            
+                    
+                    V2TimVideoElem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.3" data-path="../keyClass/message/v2timtextelem.html">
+            
+                <a href="../keyClass/message/v2timtextelem.html">
+            
+                    
+                    V2TimTextElem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.4" data-path="../keyClass/message/v2timsoundelem.html">
+            
+                <a href="../keyClass/message/v2timsoundelem.html">
+            
+                    
+                    V2TimSoundElem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.5" data-path="../keyClass/message/offlinepushinfo.html">
+            
+                <a href="../keyClass/message/offlinepushinfo.html">
+            
+                    
+                    OfflinePushInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.6" data-path="../keyClass/message/v2timofflinepushinfo.html">
+            
+                <a href="../keyClass/message/v2timofflinepushinfo.html">
+            
+                    
+                    V2TimOfflinePushInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.7" data-path="../keyClass/message/v2timmergerelem.html">
+            
+                <a href="../keyClass/message/v2timmergerelem.html">
+            
+                    
+                    V2TimMergerElem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.8" data-path="../keyClass/message/v2timlocationelem.html">
+            
+                <a href="../keyClass/message/v2timlocationelem.html">
+            
+                    
+                    V2TimLocationElem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.9" data-path="../keyClass/message/v2timfileelem.html">
+            
+                <a href="../keyClass/message/v2timfileelem.html">
+            
+                    
+                    V2TimFileElem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.10" data-path="../keyClass/message/v2timfaceelem.html">
+            
+                <a href="../keyClass/message/v2timfaceelem.html">
+            
+                    
+                    V2TimFaceElem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.11" data-path="../keyClass/message/v2timcustomelem.html">
+            
+                <a href="../keyClass/message/v2timcustomelem.html">
+            
+                    
+                    V2TimCustomElem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.12" data-path="../keyClass/message/v2timconversationresult.html">
+            
+                <a href="../keyClass/message/v2timconversationresult.html">
+            
+                    
+                    V2TimConversationResult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.13" data-path="../keyClass/message/v2timconversation.html">
+            
+                <a href="../keyClass/message/v2timconversation.html">
+            
+                    
+                    V2TimConversation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.14" data-path="../../sdkapi/keyClass/message/v2timconversationlistfilter.md">
+            
+                <span>
+            
+                    
+                    V2TimConversationListFilter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.15" data-path="../keyClass/message/v2timsdklistener-1.html">
+            
+                <a href="../keyClass/message/v2timsdklistener-1.html">
+            
+                    
+                    V2TimMsgCreateInfoResult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.16" data-path="../keyClass/message/v2timreceivemessageoptinfo.html">
+            
+                <a href="../keyClass/message/v2timreceivemessageoptinfo.html">
+            
+                    
+                    V2TimReceiveMessageOptInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.17" data-path="../keyClass/message/v2timsignalinginfo.html">
+            
+                <a href="../keyClass/message/v2timsignalinginfo.html">
+            
+                    
+                    V2TimSignalingInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.18" data-path="../keyClass/message/v2timmessagesearchresultitem.html">
+            
+                <a href="../keyClass/message/v2timmessagesearchresultitem.html">
+            
+                    
+                    V2TimMessageSearchResultItem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.19" data-path="../keyClass/message/v2timmessagesearchresult.html">
+            
+                <a href="../keyClass/message/v2timmessagesearchresult.html">
+            
+                    
+                    V2TimMessageSearchResult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.20" data-path="../keyClass/message/v2timmessagesearchparam.html">
+            
+                <a href="../keyClass/message/v2timmessagesearchparam.html">
+            
+                    
+                    V2TimMessageSearchParam
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.21" data-path="../keyClass/message/v2timmessagereceipt.html">
+            
+                <a href="../keyClass/message/v2timmessagereceipt.html">
+            
+                    
+                    V2TimMessageReceipt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.3.22" data-path="../keyClass/message/v2timmessagechangeinfo.html">
+            
+                <a href="../keyClass/message/v2timmessagechangeinfo.html">
+            
+                    
+                    V2TimMessageChangeInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.4" data-path="../keyClass/topic/">
+            
+                <a href="../keyClass/topic/">
+            
+                    
+                    Topic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.8.4.1" data-path="../keyClass/topic/v2timtopicinfo.html">
+            
+                <a href="../keyClass/topic/v2timtopicinfo.html">
+            
+                    
+                    V2TimTopicInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.4.2" data-path="../keyClass/topic/v2timtopicinforesult.html">
+            
+                <a href="../keyClass/topic/v2timtopicinforesult.html">
+            
+                    
+                    V2TIMTopicInfoResult
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.5" data-path="../keyClass/listener/">
+            
+                <a href="../keyClass/listener/">
+            
+                    
+                    Listener
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.8.5.1" data-path="../keyClass/listener/v2timsdklistener.html">
+            
+                <a href="../keyClass/listener/v2timsdklistener.html">
+            
+                    
+                    V2TimSDKListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.5.2" data-path="../keyClass/listener/v2timgrouplistener.html">
+            
+                <a href="../keyClass/listener/v2timgrouplistener.html">
+            
+                    
+                    V2TimGroupListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.5.3" data-path="../keyClass/listener/v2timconversationlistener.html">
+            
+                <a href="../keyClass/listener/v2timconversationlistener.html">
+            
+                    
+                    V2TimConversationListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.5.4" data-path="../keyClass/listener/v2timfriendshiplistener.html">
+            
+                <a href="../keyClass/listener/v2timfriendshiplistener.html">
+            
+                    
+                    V2TimFriendshipListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.5.5" data-path="../keyClass/listener/v2timadvancedmsglistener.html">
+            
+                <a href="../keyClass/listener/v2timadvancedmsglistener.html">
+            
+                    
+                    V2TimAdvancedMsgListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.5.6" data-path="../keyClass/listener/v2timsignalinglistener.html">
+            
+                <a href="../keyClass/listener/v2timsignalinglistener.html">
+            
+                    
+                    V2TimSignalingListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.6" data-path="../keyClass/v2timvaluecallback.html">
+            
+                <a href="../keyClass/v2timvaluecallback.html">
+            
+                    
+                    V2TimValueCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8.7" data-path="../keyClass/v2timcallback.html">
+            
+                <a href="../keyClass/v2timcallback.html">
+            
+                    
+                    V2TimCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Enums
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.9.1" data-path="allowtype.html">
+            
+                <a href="allowtype.html">
+            
+                    
+                    AllowType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.2" data-path="conversationtype.html">
+            
+                <a href="conversationtype.html">
+            
+                    
+                    ConversationType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.3" data-path="../../sdkapi/enums/v2timconversationmarktype.html">
+            
+                <a href="../../sdkapi/enums/v2timconversationmarktype.html">
+            
+                    
+                    V2TimConversationMarkType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.4" data-path="friendapplicationtypeenum.html">
+            
+                <a href="friendapplicationtypeenum.html">
+            
+                    
+                    FriendApplicationTypeEnum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.5" data-path="friendresponsetypeenum.html">
+            
+                <a href="friendresponsetypeenum.html">
+            
+                    
+                    FriendResponseTypeEnum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.6" data-path="friendtypeenum.html">
+            
+                <a href="friendtypeenum.html">
+            
+                    
+                    FriendTypeEnum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.7" data-path="groupaddopttypeenum.html">
+            
+                <a href="groupaddopttypeenum.html">
+            
+                    
+                    GroupAddOptTypeEnum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.8" data-path="groupapplicationtypeenum.html">
+            
+                <a href="groupapplicationtypeenum.html">
+            
+                    
+                    GroupApplicationTypeEnum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.9" data-path="groupmemberfiltertypeenum.html">
+            
+                <a href="groupmemberfiltertypeenum.html">
+            
+                    
+                    GroupMemberFilterTypeEnum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.10" data-path="getgroupmessagereadmemberlistfilter.html">
+            
+                <a href="getgroupmessagereadmemberlistfilter.html">
+            
+                    
+                    GetGroupMessageReadMemberListFilter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.11" data-path="groupapplicationhandleresult.html">
+            
+                <a href="groupapplicationhandleresult.html">
+            
+                    
+                    GroupApplicationHandleResult
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.12" data-path="groupapplicationhandlestatus.html">
+            
+                <a href="groupapplicationhandlestatus.html">
+            
+                    
+                    GroupApplicationHandleStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.13" data-path="groupchangeinfotype.html">
+            
+                <a href="groupchangeinfotype.html">
+            
+                    
+                    GroupChangeInfoType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.14" data-path="groupmemberroletypeenum.html">
+            
+                <a href="groupmemberroletypeenum.html">
+            
+                    
+                    GroupMemberRoleTypeEnum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.15" data-path="groupmemberroletype.html">
+            
+                <a href="groupmemberroletype.html">
+            
+                    
+                    GroupMemberRoleType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.16" data-path="grouptipselemtype.html">
+            
+                <a href="grouptipselemtype.html">
+            
+                    
+                    GroupTipsElemType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.17" data-path="grouptype.html">
+            
+                <a href="grouptype.html">
+            
+                    
+                    GroupType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.18" data-path="historymsggettypeenum.html">
+            
+                <a href="historymsggettypeenum.html">
+            
+                    
+                    HistoryMsgGetTypeEnum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.19" data-path="listenertype.html">
+            
+                <a href="listenertype.html">
+            
+                    
+                    ListenerType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.20" data-path="loglevelenum.html">
+            
+                <a href="loglevelenum.html">
+            
+                    
+                    LogLevelEnum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.21" data-path="messageelemtype.html">
+            
+                <a href="messageelemtype.html">
+            
+                    
+                    MessageElemType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.22" data-path="messagepriority.html">
+            
+                <a href="messagepriority.html">
+            
+                    
+                    MessagePriority
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.23" data-path="messagestatus.html">
+            
+                <a href="messagestatus.html">
+            
+                    
+                    MessageStatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.2.9.24" data-path="receivemsgoptenum.html">
+            
+                <a href="receivemsgoptenum.html">
+            
+                    
+                    ReceiveMsgOptEnum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.25" data-path="simplemsglistenertype.html">
+            
+                <a href="simplemsglistenertype.html">
+            
+                    
+                    SimpleMsgListenerType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.26" data-path="userstatustype.html">
+            
+                <a href="userstatustype.html">
+            
+                    
+                    UserStatusType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.27" data-path="v2tim/_image/_type.md">
+            
+                <span>
+            
+                    
+                    V2TIM_IMAGE_TYPE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9.28" data-path="v2timkeywordlistmatchtype.html">
+            
+                <a href="v2timkeywordlistmatchtype.html">
+            
+                    
+                    V2TIMKeywordListMatchType
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10" data-path="../callbacks/">
+            
+                <a href="../callbacks/">
+            
+                    
+                    Callbacks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.10.1" data-path="../callbacks/voidcallback.html">
+            
+                <a href="../callbacks/voidcallback.html">
+            
+                    
+                    VoidCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.2" data-path="../callbacks/errorcallback.html">
+            
+                <a href="../callbacks/errorcallback.html">
+            
+                    
+                    ErrorCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.3" data-path="../callbacks/onapplicationprocessedcallback.html">
+            
+                <a href="../callbacks/onapplicationprocessedcallback.html">
+            
+                    
+                    OnApplicationProcessedCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.4" data-path="../callbacks/onblacklistaddcallback.html">
+            
+                <a href="../callbacks/onblacklistaddcallback.html">
+            
+                    
+                    OnBlackListAddCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.5" data-path="../callbacks/onblacklistdeletedcallback.html">
+            
+                <a href="../callbacks/onblacklistdeletedcallback.html">
+            
+                    
+                    OnBlackListDeletedCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.6" data-path="../callbacks/onconversationchangedcallback.html">
+            
+                <a href="../callbacks/onconversationchangedcallback.html">
+            
+                    
+                    OnConversationChangedCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.7" data-path="../callbacks/OnConversationGroupCreated.html">
+            
+                <a href="../callbacks/OnConversationGroupCreated.html">
+            
+                    
+                    OnConversationGroupCreated
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.8" data-path="../callbacks/OnConversationGroupDeleted.html">
+            
+                <a href="../callbacks/OnConversationGroupDeleted.html">
+            
+                    
+                    onConversationGroupDeleted
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.9" data-path="../callbacks/OnConversationGroupNameChanged.html">
+            
+                <a href="../callbacks/OnConversationGroupNameChanged.html">
+            
+                    
+                    onConversationGroupNameChanged
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.10" data-path="../callbacks/OnConversationsAddedToGroup.html">
+            
+                <a href="../callbacks/OnConversationsAddedToGroup.html">
+            
+                    
+                    onConversationsAddedToGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.11" data-path="../callbacks/onConversationsDeletedFromGroup.html">
+            
+                <a href="../callbacks/onConversationsDeletedFromGroup.html">
+            
+                    
+                    onConversationsDeletedFromGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.12" data-path="../callbacks/onfriendapplicationlistaddedcallback.html">
+            
+                <a href="../callbacks/onfriendapplicationlistaddedcallback.html">
+            
+                    
+                    OnFriendApplicationListAddedCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.13" data-path="../callbacks/onfriendapplicationlistdeletedcallback.html">
+            
+                <a href="../callbacks/onfriendapplicationlistdeletedcallback.html">
+            
+                    
+                    OnFriendApplicationListDeletedCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.14" data-path="../callbacks/onfriendapplicationlistreadcallback.html">
+            
+                <a href="../callbacks/onfriendapplicationlistreadcallback.html">
+            
+                    
+                    OnFriendApplicationListReadCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.15" data-path="../callbacks/onfriendinfochangedcallback.html">
+            
+                <a href="../callbacks/onfriendinfochangedcallback.html">
+            
+                    
+                    OnFriendInfoChangedCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.16" data-path="../callbacks/onfriendlistaddedcallback.html">
+            
+                <a href="../callbacks/onfriendlistaddedcallback.html">
+            
+                    
+                    OnFriendListAddedCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.17" data-path="../callbacks/onfriendlistdeletedcallback.html">
+            
+                <a href="../callbacks/onfriendlistdeletedcallback.html">
+            
+                    
+                    OnFriendListDeletedCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.18" data-path="../callbacks/ongrantadministratorcallback.html">
+            
+                <a href="../callbacks/ongrantadministratorcallback.html">
+            
+                    
+                    OnGrantAdministratorCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.19" data-path="../callbacks/ongroupattributechangedcallback.html">
+            
+                <a href="../callbacks/ongroupattributechangedcallback.html">
+            
+                    
+                    OnGroupAttributeChangedCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.20" data-path="../callbacks/ongroupcreatedcallback.html">
+            
+                <a href="../callbacks/ongroupcreatedcallback.html">
+            
+                    
+                    OnGroupCreatedCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.21" data-path="../callbacks/ongroupdismissedcallback.html">
+            
+                <a href="../callbacks/ongroupdismissedcallback.html">
+            
+                    
+                    OnGroupDismissedCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.22" data-path="../callbacks/ongroupinfochangedcallback.html">
+            
+                <a href="../callbacks/ongroupinfochangedcallback.html">
+            
+                    
+                    OnGroupInfoChangedCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.23" data-path="../callbacks/ongrouprecycledcallback.html">
+            
+                <a href="../callbacks/ongrouprecycledcallback.html">
+            
+                    
+                    OnGroupRecycledCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.24" data-path="../callbacks/oninvitationcancelledcallback.html">
+            
+                <a href="../callbacks/oninvitationcancelledcallback.html">
+            
+                    
+                    OnInvitationCancelledCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.25" data-path="../callbacks/oninvitationtimeoutcallback.html">
+            
+                <a href="../callbacks/oninvitationtimeoutcallback.html">
+            
+                    
+                    OnInvitationTimeoutCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.26" data-path="../callbacks/oninviteeacceptedcallback.html">
+            
+                <a href="../callbacks/oninviteeacceptedcallback.html">
+            
+                    
+                    OnInviteeAcceptedCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.27" data-path="../callbacks/oninviteerejectedcallback.html">
+            
+                <a href="../callbacks/oninviteerejectedcallback.html">
+            
+                    
+                    OnInviteeRejectedCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.28" data-path="../callbacks/onmemberentercallback.html">
+            
+                <a href="../callbacks/onmemberentercallback.html">
+            
+                    
+                    OnMemberEnterCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.29" data-path="../callbacks/onmemberinfochangedcallback.html">
+            
+                <a href="../callbacks/onmemberinfochangedcallback.html">
+            
+                    
+                    OnMemberInfoChangedCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.30" data-path="../callbacks/onmemberinvitedcallback.html">
+            
+                <a href="../callbacks/onmemberinvitedcallback.html">
+            
+                    
+                    OnMemberInvitedCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.31" data-path="../callbacks/onmemberkickedcallback.html">
+            
+                <a href="../callbacks/onmemberkickedcallback.html">
+            
+                    
+                    OnMemberKickedCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.32" data-path="../callbacks/onmemberleavecallback.html">
+            
+                <a href="../callbacks/onmemberleavecallback.html">
+            
+                    
+                    OnMemberLeaveCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.33" data-path="../callbacks/onnewconversation.html">
+            
+                <a href="../callbacks/onnewconversation.html">
+            
+                    
+                    OnNewConversation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.34" data-path="../callbacks/onquitfromgroupcallback.html">
+            
+                <a href="../callbacks/onquitfromgroupcallback.html">
+            
+                    
+                    OnQuitFromGroupCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.35" data-path="../callbacks/onreceivejoinapplicationcallback.html">
+            
+                <a href="../callbacks/onreceivejoinapplicationcallback.html">
+            
+                    
+                    OnReceiveJoinApplicationCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.36" data-path="../callbacks/onreceivenewinvitationcallback.html">
+            
+                <a href="../callbacks/onreceivenewinvitationcallback.html">
+            
+                    
+                    OnReceiveNewInvitationCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.37" data-path="../callbacks/onreceiverestcustomdatacallback.html">
+            
+                <a href="../callbacks/onreceiverestcustomdatacallback.html">
+            
+                    
+                    OnReceiveRESTCustomDataCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.38" data-path="../callbacks/onrecvc2creadreceiptcallback.html">
+            
+                <a href="../callbacks/onrecvc2creadreceiptcallback.html">
+            
+                    
+                    OnRecvC2CReadReceiptCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.39" data-path="../callbacks/onrecvmessagemodified.html">
+            
+                <a href="../callbacks/onrecvmessagemodified.html">
+            
+                    
+                    OnRecvMessageModified
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.40" data-path="../callbacks/onrecvmessagereadreceipts.html">
+            
+                <a href="../callbacks/onrecvmessagereadreceipts.html">
+            
+                    
+                    OnRecvMessageReadReceipts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.41" data-path="../callbacks/onrecvmessagerevokedcallback.html">
+            
+                <a href="../callbacks/onrecvmessagerevokedcallback.html">
+            
+                    
+                    OnRecvMessageRevokedCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.42" data-path="../callbacks/onrecvnewmessagecallback.html">
+            
+                <a href="../callbacks/onrecvnewmessagecallback.html">
+            
+                    
+                    OnRecvNewMessageCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.43" data-path="../callbacks/onrevokeadministratorcallback.html">
+            
+                <a href="../callbacks/onrevokeadministratorcallback.html">
+            
+                    
+                    OnRevokeAdministratorCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.44" data-path="../callbacks/onsendmessageprogresscallback.html">
+            
+                <a href="../callbacks/onsendmessageprogresscallback.html">
+            
+                    
+                    OnSendMessageProgressCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.45" data-path="../callbacks/onTopicCreated.html">
+            
+                <a href="../callbacks/onTopicCreated.html">
+            
+                    
+                    OnTopicCreated
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.46" data-path="../callbacks/onTopicDeleted.html">
+            
+                <a href="../callbacks/onTopicDeleted.html">
+            
+                    
+                    OnTopicDeleted
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.47" data-path="../callbacks/onTopicInfoChanged.html">
+            
+                <a href="../callbacks/onTopicInfoChanged.html">
+            
+                    
+                    OnTopicInfoChanged
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.48" data-path="../callbacks/ontotalunreadmessagecountchanged.html">
+            
+                <a href="../callbacks/ontotalunreadmessagecountchanged.html">
+            
+                    
+                    OnTotalUnreadMessageCountChanged
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.49" data-path="../callbacks/onuserstatuschanged.html">
+            
+                <a href="../callbacks/onuserstatuschanged.html">
+            
+                    
+                    OnUserStatusChanged
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.10.50" data-path="../callbacks/v2timuserfullinfocallback.html">
+            
+                <a href="../callbacks/v2timuserfullinfocallback.html">
+            
+                    
+                    V2TimUserFullInfoCallback
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+		</nav>
+		
+		
+	</div>
+
+	<!-- Content nav -->
+	<div class="book-anchor">
+		<div class="book-anchor-title">本页目录:</div>
+		<div class="book-anchor-body">
+
+		</div>
+	</div>
+
+	<div class="book-body">
+		
+		<div class="body-inner">
+			
+			
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ReceiveMsgOptEnum</a>
+    </h1>
+</div>
+
+
+
+
+			<div class="page-wrapper" tabindex="-1" role="main">
+				<div class="page-inner">
+					
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+					<section class="normal markdown-section">
+						
+						<h1 id="receivemsgoptenum">ReceiveMsgOptEnum</h1>
+<h2 id="&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x4ECB;&#x7ECD;">&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x4ECB;&#x7ECD;</h2>
+<p>&#x7528;&#x6237;&#x63A5;&#x6536;&#x6D88;&#x606F;&#x8BBE;&#x7F6E;&#x7C7B;&#x578B;</p>
+<h2 id="&#x679A;&#x4E3E;&#x503C;&#x5217;&#x8868;">&#x679A;&#x4E3E;&#x503C;&#x5217;&#x8868;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x679A;&#x4E3E;&#x503C;&#x540D;&#x79F0;</th>
+<th>&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x63CF;&#x8FF0;</th>
+<th>&#x679A;&#x4E3E;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V2TIM_RECEIVE_MESSAGE</td>
+<td>&#x5728;&#x7EBF;&#x6B63;&#x5E38;&#x63A5;&#x6536;&#x6D88;&#x606F;&#xFF0C;&#x79BB;&#x7EBF;&#x65F6;&#x4F1A;&#x8FDB;&#x884C;&#x79BB;&#x7EBF;&#x63A8;&#x9001;</td>
+<td>0</td>
+</tr>
+<tr>
+<td>V2TIM_NOT_RECEIVE_MESSAGE</td>
+<td>&#x4E0D;&#x4F1A;&#x63A5;&#x6536;&#x5230;&#x6D88;&#x606F;</td>
+<td>1</td>
+</tr>
+<tr>
+<td>V2TIM_RECEIVE_NOT_NOTIFY_MESSAGE</td>
+<td>&#x5728;&#x7EBF;&#x6B63;&#x5E38;&#x63A5;&#x6536;&#x6D88;&#x606F;&#xFF0C;&#x79BB;&#x7EBF;&#x4E0D;&#x4F1A;&#x6709;&#x63A8;&#x9001;&#x901A;&#x77E5;</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+						
+					</section>
+					
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+				</div>
+			</div>
+			
+		</div>
+
+		
+		
+		<a href="messagestatus.html" class="navigation navigation-prev " aria-label="Previous page: MessageStatus">
+			<i class="fa fa-angle-left"></i>
+		</a>
+		
+		
+		<a href="simplemsglistenertype.html" class="navigation navigation-next " aria-label="Next page: SimpleMsgListenerType">
+			<i class="fa fa-angle-right"></i>
+		</a>
+		
+		
+		
+	</div>
+	<script>
+		var gitbook = gitbook || [];
+		gitbook.push(function() {
+			gitbook.page.hasChanged({"page":{"description":"用户接收消息设置类型","title":"ReceiveMsgOptEnum","level":"3.2.9.24","depth":3,"next":{"title":"SimpleMsgListenerType","level":"3.2.9.25","depth":3,"path":"api/enums/simplemsglistenertype.md","ref":"api/enums/simplemsglistenertype.md","articles":[]},"previous":{"title":"MessageStatus","level":"3.2.9.23","depth":3,"path":"api/enums/messagestatus.md","ref":"api/enums/messagestatus.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","back-to-top-button","code","pageview-count","popup","splitter","theme-bookstyle","chapter-fold","versions-select","hints","livereload"],"pluginsConfig":{"chapter-fold":{},"theme-bookstyle":{"search-placeholder":"输入关键字搜索"},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"highlight":{},"back-to-top-button":{},"pageview-count":{},"versions":{"options":[{"value":"https://testcomm.qq.com/im/doc/flutter/index.html","text":"flutter","selected":true}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/enums/receivemsgoptenum.md","mtime":"2022-07-14T05:17:17.722Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-04T02:59:07.270Z"},"basePath":"../..","book":{"language":""}});
+		});
+	</script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-bookstyle/book.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -8,7 +8,7 @@ description: 获取信令信息√
 
 获取信令信息
 
-* 如果 invite 设置 onlineUserOnly 为 false，每次信令操作（包括 invite、cancel、accept、reject、timeout）都会产生一条自定义消息， 该消息会通过 [V2TIMAdvancedMsgListener](../guan-jian-lei/listener/v2timadvancedmsglistener.md) 的 [onRecvNewMessage](../callbacks/onrecvnewmessagecallback.md) 抛给用户，用户也可以通过历史消息拉取，如果需要根据信令信息做自定义化文本展示，可以调用下面接口获取信令信息。
+* 如果 invite 设置 onlineUserOnly 为 false，每次信令操作（包括 invite、cancel、accept、reject、timeout）都会产生一条自定义消息， 该消息会通过 [V2TIMAdvancedMsgListener](../keyClass/listener/v2timadvancedmsglistener.md) 的 [onRecvNewMessage](../callbacks/onrecvnewmessagecallback.md) 抛给用户，用户也可以通过历史消息拉取，如果需要根据信令信息做自定义化文本展示，可以调用下面接口获取信令信息。
 * 如果返回值为 null，则查询的 msg 不是一条信令消息。
 
 ## 参数详解
@@ -45,7 +45,7 @@ V2TimValueCallback<V2TimSignalingInfo>
 | ---- | -------------------------------------------------------------------- | -------------------------------------------------------------- |
 | code | int                                                                  | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                               | 请求结果描述                                                         |
-| data | [V2TimSignalingInfo](../guan-jian-lei/message/v2timsignalinginfo.md) | 查询到的信令信息                                                       |
+| data | [V2TimSignalingInfo](../keyClass/message/v2timsignalinginfo.md) | 查询到的信令信息                                                       |
 
 ## 代码示例
 

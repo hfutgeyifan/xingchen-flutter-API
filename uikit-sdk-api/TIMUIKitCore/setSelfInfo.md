@@ -14,7 +14,7 @@ description: 修改个人资料√
 
 | 参数名称         | 参数类型                                                            | 是否必填 | 描述         |
 | ------------ | --------------------------------------------------------------- | ---- | ---------- |
-| userFullInfo | [V2TimUserFullInfo](../../api/guan-jian-lei/user/v2timuserfullinfo.md) | 是    | 需要修改的用户的信息 |
+| userFullInfo | [V2TimUserFullInfo](../../api/keyClass/user/v2timuserfullinfo.md) | 是    | 需要修改的用户的信息 |
 
 ## 返回值
 

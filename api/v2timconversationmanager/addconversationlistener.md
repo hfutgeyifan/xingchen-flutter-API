@@ -20,7 +20,7 @@ description: 添加会话监听器√
 
 | 参数名称     | 参数类型                                                                                | 是否必填 | 描述         |
 | -------- | ----------------------------------------------------------------------------------- | ---- | ---------- |
-| listener | [V2TimConversationListener](../guan-jian-lei/listener/v2timconversationlistener.md) | 是    | 需要新增的会话监听器 |
+| listener | [V2TimConversationListener](../keyClass/listener/v2timconversationlistener.md) | 是    | 需要新增的会话监听器 |
 
 ## 返回值
 

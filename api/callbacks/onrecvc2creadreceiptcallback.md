@@ -22,7 +22,7 @@ List<V2TimMessageReceipt> receiptList
 
 | 参数名称        | 参数类型                                                                           | 参数描述   |
 | ----------- | ------------------------------------------------------------------------------ | ------ |
-| receiptList | List< [V2TimMessageReceipt](../guan-jian-lei/message/v2timmessagereceipt.md) > | 消息已读列表 |
+| receiptList | List< [V2TimMessageReceipt](../keyClass/message/v2timmessagereceipt.md) > | 消息已读列表 |
 
 ## 代码示例
 

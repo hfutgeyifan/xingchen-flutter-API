@@ -43,7 +43,7 @@ V2TimValueCallback<List<V2TimTopicInfoResult>>
 | ---- | ------------------------------------------------------------------------------ | -------------------------------------------------------------- |
 | code | int                                                                            | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                                         | 请求结果描述                                                         |
-| data | List< [V2TimTopicInfoResult](../guan-jian-lei/topic/v2timtopicinforesult.md) > | 获取到的话题信息列表                                                     |
+| data | List< [V2TimTopicInfoResult](../keyClass/topic/v2timtopicinforesult.md) > | 获取到的话题信息列表                                                     |
 
 ## 代码示例
 

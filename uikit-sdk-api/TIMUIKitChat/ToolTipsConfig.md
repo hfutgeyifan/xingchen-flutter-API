@@ -42,5 +42,5 @@ description: 长按消息显示的消息操作选项设置
 
 ### additionalItemBuilder
 
-* 参数类型 : Widget? Function([V2TimMessage](../../api/guan-jian-lei/message/v2timmessage.md) message, Function() closeTooltip, \[Key? key])
+* 参数类型 : Widget? Function([V2TimMessage](../../api/keyClass/message/v2timmessage.md) message, Function() closeTooltip, \[Key? key])
 * 参数描述 : 自定义操作模块构造器

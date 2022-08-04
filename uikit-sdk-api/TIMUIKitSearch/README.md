@@ -14,8 +14,8 @@ description: 搜索组件
 
 | 参数                          | 说明                             | 类型                                                                                                                   | 是否必填 |
 | --------------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------- | ---- |
-| onTapConversation           | 点击用户模块、群组模块、搜索详细聊天记录内信息模块的回调函数 | Function([V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md), V2TimMessage?)                   | 是    |
-| onEnterSearchInConversation | 点击聊天历史模块的回调函数                  | Function([V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md) conversation, String initKeyword) | 是    |
+| onTapConversation           | 点击用户模块、群组模块、搜索详细聊天记录内信息模块的回调函数 | Function([V2TimConversation](../../api/keyClass/message/v2timconversation.md), V2TimMessage?)                   | 是    |
+| onEnterSearchInConversation | 点击聊天历史模块的回调函数                  | Function([V2TimConversation](../../api/keyClass/message/v2timconversation.md) conversation, String initKeyword) | 是    |
 
 ## 代码示例与效果展示
 

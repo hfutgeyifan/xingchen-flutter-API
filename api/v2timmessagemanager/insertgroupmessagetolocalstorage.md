@@ -84,7 +84,7 @@ V2TimValueCallback<V2TimMessage>
 | ---- | -------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | code | int                                                                        | 请求结果[错误码](https://cloud.tencent.com/document/product/269/1671) |
 | desc | String                                                                     | 请求结果描述                                                         |
-| data | [V2TimMsgCreateInfoResult](../guan-jian-lei/message/v2timsdklistener-1.md) | 创建后的Text信息                                                     |
+| data | [V2TimMsgCreateInfoResult](../keyClass/message/v2timsdklistener-1.md) | 创建后的Text信息                                                     |
 
 ## 代码示例  &#x20;
 

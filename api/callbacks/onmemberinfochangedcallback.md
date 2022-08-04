@@ -22,7 +22,7 @@ List<V2TimGroupMemberChangeInfo> v2TIMGroupMemberChangeInfoList
 | 参数名称                           | 参数类型                                                                                       | 参数描述      |
 | ------------------------------ | ------------------------------------------------------------------------------------------ | --------- |
 | groupID                        | String                                                                                     | 群 ID      |
-| v2TIMGroupMemberChangeInfoList | List< [V2TimGroupMemberChangeInfo](../guan-jian-lei/group/v2timgroupmemberchangeinfo.md) > | 被修改的群成员信息 |
+| v2TIMGroupMemberChangeInfoList | List< [V2TimGroupMemberChangeInfo](../keyClass/group/v2timgroupmemberchangeinfo.md) > | 被修改的群成员信息 |
 
 ## 代码示例
 

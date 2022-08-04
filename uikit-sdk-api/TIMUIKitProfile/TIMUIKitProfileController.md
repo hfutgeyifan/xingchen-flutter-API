@@ -12,32 +12,32 @@ description: 关于用户信息操作的控制器
 
 ### deleteFriend
 
-* 参数类型 : Future< [V2TimFriendOperationResult](../../api/guan-jian-lei/user/v2timfriendoperationresult.md)? > Function(String userID)
+* 参数类型 : Future< [V2TimFriendOperationResult](../../api/keyClass/user/v2timfriendoperationresult.md)? > Function(String userID)
 * 参数描述 : 删除好友操作
 
 ### pinedConversation
 
-* 参数类型 : Future< [V2TimCallback](../../api/guan-jian-lei/v2timcallback.md) > Function(bool isPined, String convID)
+* 参数类型 : Future< [V2TimCallback](../../api/keyClass/v2timcallback.md) > Function(bool isPined, String convID)
 * 参数描述 : 会话置顶操作
 
 ### addUserToBlackList
 
-* 参数类型 : Future< List< [V2TimFriendOperationResult](../../api/guan-jian-lei/user/v2timfriendoperationresult.md) >? > Function(bool shouldAdd, String userID)
+* 参数类型 : Future< List< [V2TimFriendOperationResult](../../api/keyClass/user/v2timfriendoperationresult.md) >? > Function(bool shouldAdd, String userID)
 * 参数描述 : 将用户添加到黑名单操作
 
 ### changeFriendVerificationMethod
 
-* 参数类型 : Future< [V2TimCallback](../../api/guan-jian-lei/v2timcallback.md) > Function(int allowType)
+* 参数类型 : Future< [V2TimCallback](../../api/keyClass/v2timcallback.md) > Function(int allowType)
 * 参数描述 : 修改好友验证方式操作
 
 ### updateRemarks
 
-* 参数类型 : Future< [V2TimCallback](../../api/guan-jian-lei/v2timcallback.md) > Function(String userID, String remark)
+* 参数类型 : Future< [V2TimCallback](../../api/keyClass/v2timcallback.md) > Function(String userID, String remark)
 * 参数描述 : 更新备注操作
 
 ### setMessageDisturb
 
-* 参数类型 : Future< [V2TimCallback](../../api/guan-jian-lei/v2timcallback.md) > Function(String userID, bool isDisturb)
+* 参数类型 : Future< [V2TimCallback](../../api/keyClass/v2timcallback.md) > Function(String userID, bool isDisturb)
 * 参数描述 : 设置是否接收用户消息
 
 ### showTextInputBottomSheet
@@ -57,5 +57,5 @@ description: 关于用户信息操作的控制器
 
 ### addFriend
 
-* 参数类型 : Future< [V2TimFriendOperationResult](../../api/guan-jian-lei/user/v2timfriendoperationresult.md)? > Function(String userID)
+* 参数类型 : Future< [V2TimFriendOperationResult](../../api/keyClass/user/v2timfriendoperationresult.md)? > Function(String userID)
 * 参数描述 : 添加好友操作

@@ -9,6 +9,6 @@
 | [V2TIMConversationManager](v2timconversationmanager/README.md) | 会话接口，包含了会话的获取，删除和更新的逻辑                      |
 | [V2TIMFriendshipManager](v2timfriendshipmanager/README.md)     | 关系链接口，包含了好友的添加和删除，黑名单的添加和删除等逻辑              |
 | [V2TIMOfflinePushManager](v2timofflinepushmanager/README.md)   | 提供离线推送相关的接口                                 |
-| [关键类](guan-jian-lei/README.md)                                 | IM API中使用到的数据类型                             |
+| [关键类](keyClass/README.md)                                 | IM API中使用到的数据类型                             |
 | [Enums](enums/README.md)                                       | IM API中使用到的枚举类型                             |
 | [callbacks](callbacks/README.md)                               | IM API中使用到的回调函数类型                           |

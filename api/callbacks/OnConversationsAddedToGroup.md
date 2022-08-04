@@ -21,7 +21,7 @@ OnConversationsAddedToGroup = void Function(
 | 参数名称             | 参数类型                                                                       | 参数描述    |
 | ---------------- | -------------------------------------------------------------------------- | ------- |
 | groupName | String | 被新增的会话的分组名 |
-| conversationList | List< [V2TimConversation](../guan-jian-lei/message/v2timconversation.md) > | 新增的会话列表 |
+| conversationList | List< [V2TimConversation](../keyClass/message/v2timconversation.md) > | 新增的会话列表 |
 
 ## 代码示例
 

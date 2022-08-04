@@ -24,7 +24,7 @@ description: 修改群资料√
 
 | 参数名称 | 参数类型                                                       | 是否必填 | 描述      |
 | ---- | ---------------------------------------------------------- | ---- | ------- |
-| info | [V2TimGroupInfo](../guan-jian-lei/group/v2timgroupinfo.md) | 是    | 群资料设置信息 |
+| info | [V2TimGroupInfo](../keyClass/group/v2timgroupinfo.md) | 是    | 群资料设置信息 |
 
 ## 返回值
 

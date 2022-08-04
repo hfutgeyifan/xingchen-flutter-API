@@ -12,7 +12,7 @@ description: 初始化 SDK√
 
 1. 准备 [SDKAppID](https://cloud.tencent.com/login)。
 2. 设置 [LogLevelEnum](../enums/loglevelenum.md)。
-3. 设置 [V2TimSDKListener](../guan-jian-lei/listener/v2timsdklistener.md)。
+3. 设置 [V2TimSDKListener](../keyClass/listener/v2timsdklistener.md)。
 4. 调用 initSDK 初始化 SDK。
 5. 在 Android 平台上，IM SDK 的日志在 4.8.50 版本之前默认存储于 /sdcard/tencenet/imsdklogs/应用包名 目录下，4.8.50 及之后的版本存储于 /sdcard/Android/data/包名/files/log/tencent/imsdk 目录下。
 
@@ -22,7 +22,7 @@ description: 初始化 SDK√
 | -------- | ----------------------------------------------------------------- | ---- | ----------------------------------------------------- |
 | sdkAppID | int                                                               | 是    | 应用ID，可在[控制台](https://console.cloud.tencent.com/im)中获取 |
 | loglevel | [LogLevelEnum](../enums/loglevelenum.md)                          | 是    | 打印日志等级                                               |
-| listener | [V2TimSDKListener](../guan-jian-lei/listener/v2timsdklistener.md) | 是    | SDK监听器                                                |
+| listener | [V2TimSDKListener](../keyClass/listener/v2timsdklistener.md) | 是    | SDK监听器                                                |
 
 ## 返回值
 

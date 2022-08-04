@@ -14,7 +14,7 @@ description: 添加群组组件
 
 | 参数              | 说明           | 类型                                                                                                               | 是否必填 |
 | --------------- | ------------ | ---------------------------------------------------------------------------------------------------------------- | ---- |
-| onTapExistGroup | 当添加已在群组时的函数  | Function(String groupID, [V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md) conversation) | 是    |
+| onTapExistGroup | 当添加已在群组时的函数  | Function(String groupID, [V2TimConversation](../../api/keyClass/message/v2timconversation.md) conversation) | 是    |
 | lifeCycle       | 添加好友群组时的钩子函数 | [AddGroupLifeCycle](AddGroupLifeCycle.md)                                                                        | 否    |
 
 ## 代码示例与效果展示

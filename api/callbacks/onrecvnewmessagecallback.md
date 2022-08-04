@@ -20,7 +20,7 @@ V2TimMessage message
 
 | 参数名称    | 参数类型                                                     | 参数描述   |
 | ------- | -------------------------------------------------------- | ------ |
-| message | [V2TimMessage](../guan-jian-lei/message/v2timmessage.md) | 收到的新消息 |
+| message | [V2TimMessage](../keyClass/message/v2timmessage.md) | 收到的新消息 |
 
 ## 代码示例
 

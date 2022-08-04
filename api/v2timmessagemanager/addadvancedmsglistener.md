@@ -8,7 +8,7 @@ description: 添加高级消息的事件监听器√
 
 添加高级消息的事件监听器
 
-* 通过 `addAdvancedMsgListener` 监听接收所有类型消息（文本、自定义、富媒体消息），相关回调在 [`V2TimAdvancedMsgListener`](../guan-jian-lei/listener/v2timadvancedmsglistener.md) 中定义。
+* 通过 `addAdvancedMsgListener` 监听接收所有类型消息（文本、自定义、富媒体消息），相关回调在 [`V2TimAdvancedMsgListener`](../keyClass/listener/v2timadvancedmsglistener.md) 中定义。
 
 {% hint style="info" %}
 注意：
@@ -20,7 +20,7 @@ description: 添加高级消息的事件监听器√
 
 | 参数名称     | 参数类型                                                                              | 是否必填 | 描述      |
 | -------- | --------------------------------------------------------------------------------- | ---- | ------- |
-| listener | [V2TimAdvancedMsgListener](../guan-jian-lei/listener/v2timadvancedmsglistener.md) | 是    | 高级消息监听器 |
+| listener | [V2TimAdvancedMsgListener](../keyClass/listener/v2timadvancedmsglistener.md) | 是    | 高级消息监听器 |
 
 ## 返回值
 

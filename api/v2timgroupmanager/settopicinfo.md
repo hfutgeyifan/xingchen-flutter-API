@@ -20,7 +20,7 @@ web版本不支持
 
 | 参数名称      | 参数类型                                                       | 是否必填 | 描述         |
 | --------- | ---------------------------------------------------------- | ---- | ---------- |
-| topicInfo | [V2TimTopicInfo](../guan-jian-lei/topic/v2timtopicinfo.md) | 是    | 需要修改的话题的设置 |
+| topicInfo | [V2TimTopicInfo](../keyClass/topic/v2timtopicinfo.md) | 是    | 需要修改的话题的设置 |
 | groupID   |  String                                                    | 是    | 话题所在的群组id |
 
 ## 返回值

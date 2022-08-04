@@ -22,5 +22,5 @@ description: 聊天列表操作时的钩子函数
 
 ### conversationListWillMount
 
-* 参数类型 : Future< List< [V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md)? > > Function( List< [V2TimConversation](../../api/guan-jian-lei/message/v2timconversation.md)? > conversationList)
+* 参数类型 : Future< List< [V2TimConversation](../../api/keyClass/message/v2timconversation.md)? > > Function( List< [V2TimConversation](../../api/keyClass/message/v2timconversation.md)? > conversationList)
 * 参数描述 : 在获取到会话列表信息后的钩子函数(uikit初始化会话列表信息时会调用)

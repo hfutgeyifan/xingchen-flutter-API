@@ -23,8 +23,8 @@ List<V2TimGroupMemberInfo> memberList
 | 参数名称       | 参数类型                                                                           | 参数描述 |
 | ---------- | ------------------------------------------------------------------------------ | ---- |
 | groupID    | String                                                                         | 群 ID |
-| opUser     | [V2TimGroupMemberInfo](../guan-jian-lei/group/v2timgroupmemberinfo.md)         | 处理人  |
-| memberList | List< [V2TimGroupMemberInfo](../guan-jian-lei/group/v2timgroupmemberinfo.md) > | 被踢成员 |
+| opUser     | [V2TimGroupMemberInfo](../keyClass/group/v2timgroupmemberinfo.md)         | 处理人  |
+| memberList | List< [V2TimGroupMemberInfo](../keyClass/group/v2timgroupmemberinfo.md) > | 被踢成员 |
 
 ## 代码示例
 

@@ -18,7 +18,7 @@ description: 设置关系链监听器√
 
 | 参数名称     | 参数类型                                                                            | 是否必填 | 描述          |
 | -------- | ------------------------------------------------------------------------------- | ---- | ----------- |
-| listener | [V2TimFriendshipListener](../guan-jian-lei/listener/v2timfriendshiplistener.md) | 是    | 需要设置的关系链监听器 |
+| listener | [V2TimFriendshipListener](../keyClass/listener/v2timfriendshiplistener.md) | 是    | 需要设置的关系链监听器 |
 
 ## 返回值
 

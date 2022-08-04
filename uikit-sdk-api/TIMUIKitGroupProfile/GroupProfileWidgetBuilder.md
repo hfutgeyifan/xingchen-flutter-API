@@ -12,12 +12,12 @@ description: 用于自定义构建群组信息页面不同部分的构造器
 
 ### detailCard
 
-* 参数类型 : Widget Function([V2TimGroupInfo](../../api/guan-jian-lei/group/v2timgroupinfo.md) groupInfo, Function(String updateGroupName)? updateGroupName)
+* 参数类型 : Widget Function([V2TimGroupInfo](../../api/keyClass/group/v2timgroupinfo.md) groupInfo, Function(String updateGroupName)? updateGroupName)
 * 参数描述 : 群组详细信息
 
 ### memberListTile
 
-* 参数类型 : Widget Function(List< [V2TimGroupMemberFullInfo](../../api/guan-jian-lei/group/v2timgroupmemberfullinfo.md)? > memberList)
+* 参数类型 : Widget Function(List< [V2TimGroupMemberFullInfo](../../api/keyClass/group/v2timgroupmemberfullinfo.md)? > memberList)
 * 参数描述 : 群组成员列表
 
 ### groupNotice
@@ -67,30 +67,30 @@ description: 用于自定义构建群组信息页面不同部分的构造器
 
 ### buttonArea
 
-* 参数类型 : Widget Function([V2TimGroupInfo](../../api/guan-jian-lei/group/v2timgroupinfo.md) groupInfo, List< [V2TimGroupMemberFullInfo](../../api/guan-jian-lei/group/v2timgroupmemberfullinfo.md)? > groupMemberList)
+* 参数类型 : Widget Function([V2TimGroupInfo](../../api/keyClass/group/v2timgroupinfo.md) groupInfo, List< [V2TimGroupMemberFullInfo](../../api/keyClass/group/v2timgroupmemberfullinfo.md)? > groupMemberList)
 * 参数描述 : 按钮功能区
 
 ### customBuilderOne
 
-* 参数类型 : Widget Function([V2TimGroupInfo](../../api/guan-jian-lei/group/v2timgroupinfo.md) groupInfo, List< [V2TimGroupMemberFullInfo](../../api/guan-jian-lei/group/v2timgroupmemberfullinfo.md)? > groupMemberList)
+* 参数类型 : Widget Function([V2TimGroupInfo](../../api/keyClass/group/v2timgroupinfo.md) groupInfo, List< [V2TimGroupMemberFullInfo](../../api/keyClass/group/v2timgroupmemberfullinfo.md)? > groupMemberList)
 * 参数描述 : 自定义区域一（自定义）
 
 ### customBuilderTwo
 
-* 参数类型 : Widget Function([V2TimGroupInfo](../../api/guan-jian-lei/group/v2timgroupinfo.md) groupInfo, List< [V2TimGroupMemberFullInfo](../../api/guan-jian-lei/group/v2timgroupmemberfullinfo.md)? > groupMemberList)
+* 参数类型 : Widget Function([V2TimGroupInfo](../../api/keyClass/group/v2timgroupinfo.md) groupInfo, List< [V2TimGroupMemberFullInfo](../../api/keyClass/group/v2timgroupmemberfullinfo.md)? > groupMemberList)
 * 参数描述 : 自定义区域二（自定义）
 
 ### customBuilderThree
 
-* 参数类型 : Widget Function([V2TimGroupInfo](../../api/guan-jian-lei/group/v2timgroupinfo.md) groupInfo, List< [V2TimGroupMemberFullInfo](../../api/guan-jian-lei/group/v2timgroupmemberfullinfo.md)? > groupMemberList)
+* 参数类型 : Widget Function([V2TimGroupInfo](../../api/keyClass/group/v2timgroupinfo.md) groupInfo, List< [V2TimGroupMemberFullInfo](../../api/keyClass/group/v2timgroupmemberfullinfo.md)? > groupMemberList)
 * 参数描述 : 自定义区域三（自定义）
 
 ### customBuilderFour
 
-* 参数类型 : Widget Function([V2TimGroupInfo](../../api/guan-jian-lei/group/v2timgroupinfo.md) groupInfo, List< [V2TimGroupMemberFullInfo](../../api/guan-jian-lei/group/v2timgroupmemberfullinfo.md)? > groupMemberList)
+* 参数类型 : Widget Function([V2TimGroupInfo](../../api/keyClass/group/v2timgroupinfo.md) groupInfo, List< [V2TimGroupMemberFullInfo](../../api/keyClass/group/v2timgroupmemberfullinfo.md)? > groupMemberList)
 * 参数描述 : 自定义区域四（自定义）
 
 ### customBuilderFive
 
-* 参数类型 : Widget Function([V2TimGroupInfo](../../api/guan-jian-lei/group/v2timgroupinfo.md) groupInfo, List< [V2TimGroupMemberFullInfo](../../api/guan-jian-lei/group/v2timgroupmemberfullinfo.md)? > groupMemberList)
+* 参数类型 : Widget Function([V2TimGroupInfo](../../api/keyClass/group/v2timgroupinfo.md) groupInfo, List< [V2TimGroupMemberFullInfo](../../api/keyClass/group/v2timgroupmemberfullinfo.md)? > groupMemberList)
 * 参数描述 : 自定义区域五（自定义）

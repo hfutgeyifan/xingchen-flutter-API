@@ -23,7 +23,7 @@ String opReason
 | 参数名称     | 参数类型                                                                   | 参数描述 |
 | -------- | ---------------------------------------------------------------------- | ---- |
 | groupID  | String                                                                 | 群 ID |
-| member   | [V2TimGroupMemberInfo](../guan-jian-lei/group/v2timgroupmemberinfo.md) | 申请人  |
+| member   | [V2TimGroupMemberInfo](../keyClass/group/v2timgroupmemberinfo.md) | 申请人  |
 | opReason | String                                                                 | 申请原因 |
 
 ## 代码示例
