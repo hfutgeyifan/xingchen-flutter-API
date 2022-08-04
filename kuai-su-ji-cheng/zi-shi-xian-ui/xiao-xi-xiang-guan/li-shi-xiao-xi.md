@@ -225,8 +225,8 @@ SDK 目前的策略是：
 3. 将本地和云端消息进行合并，更新消息状态等信息。
 4. 从合并的消息列表中，返回 count 条消息。
 
-一般出现消息 “丢失” 时，指的是在第 2 步中拉取的无效消息过多，导致触发了 [问题 1 中的限频机制](#1-拉历史消息时日志中出现-total-count-of-request-cloud-message-exceed-max-limit-信息) ，从而导致实际拉取的云端消息不够。
-建议按照  [问题 1 中的解决方法](#1-拉历史消息时日志中出现-total-count-of-request-cloud-message-exceed-max-limit-信息) 来处理，如果仍然无法解决，欢迎加入 QQ 群（**468195767**）反馈。
+一般出现消息 “丢失” 时，指的是在第 2 步中拉取的无效消息过多，导致触发了 [问题 1 中的限频机制](#1-拉历史消息时，日志中出现-total-count-of-request-cloud-message-exceed-max-limit-信息) ，从而导致实际拉取的云端消息不够。
+建议按照  [问题 1 中的解决方法](#1-拉历史消息时，日志中出现-total-count-of-request-cloud-message-exceed-max-limit-信息) 来处理，如果仍然无法解决，欢迎加入 QQ 群（**468195767**）反馈。
 
 [](id:qa3)
 ### 3. 拉取的历史消息，群名片等群成员信息没有实时更新？

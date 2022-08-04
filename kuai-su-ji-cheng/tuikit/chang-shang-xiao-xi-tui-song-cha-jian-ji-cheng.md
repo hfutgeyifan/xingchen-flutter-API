@@ -230,7 +230,7 @@ apksigner sign --ks keystore.jks --ks-pass pass:您创建的keystore密码 --out
 flutter pub add tim_ui_kit_push_plugin
 ```
 
-[并根据该指南](https://cloud.tencent.com/document/product/269/76803)，在插件市场，启用推送插件。
+[并根据该指南](cha-jian-shi-chang-shi-yong-zhi-nan.md)，在插件市场，启用推送插件。
 
 ### 步骤1: 汇总常量类
 1. 完成 [接入准备（注册厂商）](#接入准备（注册厂商）)的配置后，可在即时通信 IM 的控制台首页右侧，查看我们后台为您的厂商渠道 App 信息分配的证书 ID。
@@ -887,7 +887,7 @@ OPPO 手机收不到推送一般有以下几种情况：
 flutter pub add tim_ui_kit_push_plugin
 ```
 
-[并根据该指南](https://cloud.tencent.com/document/product/269/76803)，在插件市场，启用推送插件。
+[并根据该指南](cha-jian-shi-chang-shi-yong-zhi-nan.md)，在插件市场，启用推送插件。
 
 #### Android
 

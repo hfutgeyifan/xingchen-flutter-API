@@ -8,7 +8,7 @@
 | msgID | 消息 ID | 消息创建的时候为空，调用 [`sendMessage`](../../../api/v2timmessagemanager/sendmessage.md) 的时候同步返回。|
 | timestamp | 消息时间戳 | 消息发送到服务端的时间。可用于消息排序。|
 | sender | 消息发送者的 userID | 客户自己设置，跟 login 时传入的 userID 一致。 |
-| nickName | 消息发送者的昵称 | 客户自己设置。调用 [`setSelfInfo`](../../../api/v2timmanager/setselfinfo.md) 设置及修改。详情可参考 [用户资料](https://cloud.tencent.com/document/product/269/75418)。|
+| nickName | 消息发送者的昵称 | 客户自己设置。调用 [`setSelfInfo`](../../../api/v2timmanager/setselfinfo.md) 设置及修改。详情可参考 [用户资料](../yong-hu-guan-li/yong-hu-zi-liao.md)。|
 | friendRemark | 消息发送者的好友备注 | 接收方使用。例如 alice 给好友 bob 备注为 "bob01"。当 bob 给 alice 发消息，此时对于 alice 而言，消息中的 friendRemark 为 "bob01"。调用 [`setFriendInfo`](../../../api/v2timfriendshipmanager/setfriendinfo.md) 设置。|
 | nameCard | 发送者的群名片 | 仅群聊消息有效。例如 alice 修改自己的群名片为 "doctorA"，那么 alice 往群里发送的消息，群成员收到的消息 nameCard 字段值为 "doctorA"。接收者可以将这个字段优先作为用户名称的显示。调用 [`setGroupMemberInfo`](../../../api/v2timgroupmanager/setgroupmemberinfo.md) 设置。|
 | faceURL | 消息发送者头像 | 客户自己设置的头像 URL，可以通过它下载头像图片。|
@@ -20,7 +20,7 @@
 | isSelf | 消息发送者是否是自己 | 可用于消息筛选。|
 | needReadReceipt | 消息是否需要已读回执 | 发送方设置。6.1 以上版本有效，需要购买旗舰版套餐。详情可参考 [已读回执](../../../api/v2timmessagemanager/sendmessagereadreceipts.md) |
 | priority | 消息优先级 | 仅群聊消息有效。通过 [`sendMessage`](../../../api/v2timmessagemanager/sendmessage.md) 接口设置。|
-| groupAtUserList | 群消息被 @ 的用户列表 | 仅群聊消息有效。列表中存储的是 userID。详情可参考 [群 @ 消息](https://pub.dev/documentation/tencent_im_sdk_plugin/latest/manager_v2_tim_message_manager/V2TIMMessageManager/createTextAtMessage.html) |
+| groupAtUserList | 群消息被 @ 的用户列表 | 仅群聊消息有效。列表中存储的是 userID。详情可参考 [群 @ 消息](../../../api/v2timmessagemanager/createtextatmessage.md) |
 | elemType | 消息类型 | 目前支持：文本、自定义内容、图片、语音、视频、文件、地理位置、表情、群 tips、合并转发消息。详情可参考 消息分类。 |
 | textElem | 文本消息存储元素 | 发送文本消息需要创建并填充该元素；收到消息判断 elemType 为 TEXT 时，可以从 textElem 中解析出内容。详情可参考 [发送消息](../../../api/v2timmessagemanager/sendmessage.md) / [接收消息](../../../api/callbacks/onrecvnewmessagecallback.md)。 |
 | customElem | 自定义消息存储元素 | 发送自定义消息需要创建并填充该元素；收到消息判断 elemType 为 CUSTOM 时，可以从 customElem 中解析出内容。|

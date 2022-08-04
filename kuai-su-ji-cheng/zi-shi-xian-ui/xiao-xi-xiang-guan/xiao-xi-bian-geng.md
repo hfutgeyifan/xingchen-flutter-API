@@ -13,7 +13,7 @@
 
 目前消息支持修改的信息如下：
 1、[`localCustomData`](../../../api/guan-jian-lei/message/v2timmessage.md) 
-2、[`localCustomInt`]([../../../api/guan-jian-lei/message/v2timmessage.md) 
+2、[`localCustomInt`](../../../api/guan-jian-lei/message/v2timmessage.md) 
 3、[`cloudCustomData`](../../../api/guan-jian-lei/message/v2timmessage.md) 
 4、[`V2TIMTextElem`](../../../api/guan-jian-lei/message/v2timtextelem.md) 
 5、[`V2TIMCustomElem`](../../../api/guan-jian-lei/message/v2timcustomelem.md)

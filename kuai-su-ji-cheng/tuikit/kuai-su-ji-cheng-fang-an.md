@@ -79,7 +79,7 @@ end
 {% hint style="info" %}
 说明：
 
-如您需要用到推送能力，还需要添加推送相关权限，详情可查看 [Flutter 厂商消息推送插件集成指南](https://cloud.tencent.com/document/product/269/74605)。
+如您需要用到推送能力，还需要添加推送相关权限，详情可查看 [Flutter 厂商消息推送插件集成指南](chang-shang-xiao-xi-tui-song-cha-jian-ji-cheng.md)。
 {% endhint %}
 
 ### 步骤2: 安装依赖

@@ -16,7 +16,7 @@ TUICalling 是基于腾讯云实时音视频（TRTC）和即时通信 IM 服务�
 - [destroy](#destroy): 销毁 TUICalling。
 - [setCallingListener](#setcallinglistener): 设置监听器。
 - [removeCallingListener](#removecallinglistener): 移除监听器。
-- [enableCustomViewRoute](#enableCustomViewRoute): 开启/关闭自定义视图。
+- [enableCustomViewRoute](#enablecustomviewroute): 开启/关闭自定义视图。
 
 ### 基础组件
 - `CallMessageItem` 音视频通话自定义消息。
@@ -34,7 +34,7 @@ flutter pub add tim_ui_kit_calling_plugin
 flutter pub get
 ```
 
-[并根据该指南](https://cloud.tencent.com/document/product/269/76803)，在插件市场，启用推送插件。
+[并根据该指南](cha-jian-shi-chang-shi-yong-zhi-nan.md)，在插件市场，启用推送插件。
 
 ## 操作步骤
 ### 步骤1：引入 navigatorKey

@@ -22,7 +22,7 @@
 ![](https://qcloudimg.tencent-cloud.cn/raw/90c2884f71a358d271c3543dc27a387f.png)
 
 ### 拒绝邀请
-被邀请者收到邀请通知 [[onReceiveNewInvitation](../../../api/callbacks/onreceivenewinvitationcallback.md)后可以在超时前且邀请者取消前拒绝邀请 [reject](../../../api/v2timsignalingmanager/reject.md)，邀请者会收到拒绝邀请通知 [onInviteeRejected](../../../api/callbacks/oninviteerejectedcallback.md)，所有被邀请者处理完后（包括接受、拒绝、超时）该邀请流程结束。
+被邀请者收到邀请通知 [onReceiveNewInvitation](../../../api/callbacks/onreceivenewinvitationcallback.md)后可以在超时前且邀请者取消前拒绝邀请 [reject](../../../api/v2timsignalingmanager/reject.md)，邀请者会收到拒绝邀请通知 [onInviteeRejected](../../../api/callbacks/oninviteerejectedcallback.md)，所有被邀请者处理完后（包括接受、拒绝、超时）该邀请流程结束。
 ### 邀请超时
 若邀请接口的超时时间大于0，且被邀请者未在超时时间之内响应则邀请超时，邀请者和被邀请者都会收到超时通知 [onInvitationTimeout](../../../api/callbacks/oninvitationtimeoutcallback.md)，所有被邀请者处理完后（包括接受、拒绝、超时）该邀请流程结束。若邀请接口的超时时间等于0，则不会有超时通知。
 

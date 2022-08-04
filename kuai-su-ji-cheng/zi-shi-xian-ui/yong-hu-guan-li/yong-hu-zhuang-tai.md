@@ -32,7 +32,7 @@ IMSDK 提供了用户状态管理的功能，每个用户拥有两种不同类�
 
 ## 设置自己的自定义状态
 您可以调用接口 [`setSelfStatus`](../../../api/v2timmanager/setselfstatus.md) 设置 `customStatus` 字段来设置自己的自定义状态。
-如果您提前调用 [`initSDK`](../../../api/v2timmanager/initsdk.md) 添加了 SDK 监听器，设置成功后会触发 [`onUserStatusChanged`](../../../api/callbacks/onuserstatuschanged.md回调。详情请参见下文的 [状态变更通知](#状态变更通知)。
+如果您提前调用 [`initSDK`](../../../api/v2timmanager/initsdk.md) 添加了 SDK 监听器，设置成功后会触发 [`onUserStatusChanged`](../../../api/callbacks/onuserstatuschanged.md)回调。详情请参见下文的 [状态变更通知](#状态变更通知)。
 
 自定义状态清除机制：
 1. 您可以在调用 [`setSelfStatus`](../../../api/v2timmanager/setselfstatus.md) 接口时，通过将 `customStatus` 字段设置为空来主动清除。
